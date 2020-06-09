@@ -1,0 +1,3439 @@
+FUNCTION	id_QTVO	:
+PARAM	v_fyNyT1z	
+PARAM	v_id_lmHL3ko	
+t0	:=	#0	
+t1	:=	#0	
+t2	:=	#0	
+IF	v_fyNyT1z	>	#0	GOTO	label9	
+GOTO	label10	
+LABEL	label9	:	
+t2	:=	#1	
+LABEL	label10	:	
+IF	t2	!=	#0	GOTO	label8	
+GOTO	label6	
+LABEL	label8	:	
+t5	:=	#0	
+IF	v_id_lmHL3ko	>	#0	GOTO	label11	
+GOTO	label12	
+LABEL	label11	:	
+t5	:=	#1	
+LABEL	label12	:	
+IF	t5	!=	#0	GOTO	label7	
+GOTO	label6	
+LABEL	label7	:	
+t8	:=	#0	
+t10	:=	#2147483647	-	v_id_lmHL3ko	
+IF	v_fyNyT1z	>	t10	GOTO	label13	
+GOTO	label14	
+LABEL	label13	:	
+t8	:=	#1	
+LABEL	label14	:	
+IF	t8	!=	#0	GOTO	label5	
+GOTO	label6	
+LABEL	label5	:	
+t1	:=	#1	
+LABEL	label6	:	
+IF	t1	!=	#0	GOTO	label2	
+GOTO	label4	
+LABEL	label4	:	
+t13	:=	#0	
+t14	:=	#0	
+IF	v_fyNyT1z	<	#0	GOTO	label19	
+GOTO	label20	
+LABEL	label19	:	
+t14	:=	#1	
+LABEL	label20	:	
+IF	t14	!=	#0	GOTO	label18	
+GOTO	label16	
+LABEL	label18	:	
+t17	:=	#0	
+IF	v_id_lmHL3ko	<	#0	GOTO	label21	
+GOTO	label22	
+LABEL	label21	:	
+t17	:=	#1	
+LABEL	label22	:	
+IF	t17	!=	#0	GOTO	label17	
+GOTO	label16	
+LABEL	label17	:	
+t20	:=	#0	
+t23	:=	#0	-	#2147483648	
+t22	:=	t23	-	v_id_lmHL3ko	
+IF	v_fyNyT1z	<	t22	GOTO	label23	
+GOTO	label24	
+LABEL	label23	:	
+t20	:=	#1	
+LABEL	label24	:	
+IF	t20	!=	#0	GOTO	label15	
+GOTO	label16	
+LABEL	label15	:	
+t13	:=	#1	
+LABEL	label16	:	
+IF	t13	!=	#0	GOTO	label2	
+GOTO	label3	
+LABEL	label2	:	
+t0	:=	#1	
+LABEL	label3	:	
+IF	t0	!=	#0	GOTO	label0	
+GOTO	label1	
+LABEL	label0	:	
+RETURN	v_fyNyT1z	
+LABEL	label1	:	
+t27	:=	v_fyNyT1z	+	v_id_lmHL3ko	
+RETURN	t27	
+FUNCTION	id_lMNBLv	:
+PARAM	v_id_EXbiNzV	
+PARAM	v_id_ZK	
+t30	:=	#0	
+t31	:=	#0	
+IF	v_id_EXbiNzV	>	#0	GOTO	label32	
+GOTO	label33	
+LABEL	label32	:	
+t31	:=	#1	
+LABEL	label33	:	
+IF	t31	!=	#0	GOTO	label31	
+GOTO	label29	
+LABEL	label31	:	
+t34	:=	#0	
+IF	v_id_ZK	<	#0	GOTO	label34	
+GOTO	label35	
+LABEL	label34	:	
+t34	:=	#1	
+LABEL	label35	:	
+IF	t34	!=	#0	GOTO	label30	
+GOTO	label29	
+LABEL	label30	:	
+t37	:=	#0	
+t39	:=	#2147483647	+	v_id_ZK	
+IF	v_id_EXbiNzV	>	t39	GOTO	label36	
+GOTO	label37	
+LABEL	label36	:	
+t37	:=	#1	
+LABEL	label37	:	
+IF	t37	!=	#0	GOTO	label28	
+GOTO	label29	
+LABEL	label28	:	
+t30	:=	#1	
+LABEL	label29	:	
+IF	t30	!=	#0	GOTO	label25	
+GOTO	label27	
+LABEL	label27	:	
+t42	:=	#0	
+t43	:=	#0	
+IF	v_id_EXbiNzV	<	#0	GOTO	label42	
+GOTO	label43	
+LABEL	label42	:	
+t43	:=	#1	
+LABEL	label43	:	
+IF	t43	!=	#0	GOTO	label41	
+GOTO	label39	
+LABEL	label41	:	
+t46	:=	#0	
+IF	v_id_ZK	>	#0	GOTO	label44	
+GOTO	label45	
+LABEL	label44	:	
+t46	:=	#1	
+LABEL	label45	:	
+IF	t46	!=	#0	GOTO	label40	
+GOTO	label39	
+LABEL	label40	:	
+t49	:=	#0	
+t52	:=	#0	-	#2147483648	
+t51	:=	t52	+	v_id_ZK	
+IF	v_id_EXbiNzV	<	t51	GOTO	label46	
+GOTO	label47	
+LABEL	label46	:	
+t49	:=	#1	
+LABEL	label47	:	
+IF	t49	!=	#0	GOTO	label38	
+GOTO	label39	
+LABEL	label38	:	
+t42	:=	#1	
+LABEL	label39	:	
+IF	t42	!=	#0	GOTO	label25	
+GOTO	label26	
+LABEL	label25	:	
+RETURN	v_id_EXbiNzV	
+LABEL	label26	:	
+t56	:=	v_id_EXbiNzV	-	v_id_ZK	
+RETURN	t56	
+FUNCTION	id_c9M6VE	:
+PARAM	v_id_fNC	
+PARAM	v_id_twj4	
+t59	:=	#0	
+t60	:=	#0	
+t61	:=	#0	
+IF	v_id_fNC	>	#0	GOTO	label59	
+GOTO	label60	
+LABEL	label59	:	
+t61	:=	#1	
+LABEL	label60	:	
+IF	t61	!=	#0	GOTO	label58	
+GOTO	label56	
+LABEL	label58	:	
+t64	:=	#0	
+IF	v_id_twj4	>	#0	GOTO	label61	
+GOTO	label62	
+LABEL	label61	:	
+t64	:=	#1	
+LABEL	label62	:	
+IF	t64	!=	#0	GOTO	label57	
+GOTO	label56	
+LABEL	label57	:	
+t67	:=	#0	
+t69	:=	#2147483647	/	v_id_twj4	
+IF	v_id_fNC	>	t69	GOTO	label63	
+GOTO	label64	
+LABEL	label63	:	
+t67	:=	#1	
+LABEL	label64	:	
+IF	t67	!=	#0	GOTO	label55	
+GOTO	label56	
+LABEL	label55	:	
+t60	:=	#1	
+LABEL	label56	:	
+IF	t60	!=	#0	GOTO	label50	
+GOTO	label54	
+LABEL	label54	:	
+t72	:=	#0	
+t73	:=	#0	
+IF	v_id_fNC	>	#0	GOTO	label69	
+GOTO	label70	
+LABEL	label69	:	
+t73	:=	#1	
+LABEL	label70	:	
+IF	t73	!=	#0	GOTO	label68	
+GOTO	label66	
+LABEL	label68	:	
+t76	:=	#0	
+IF	v_id_twj4	<=	#0	GOTO	label71	
+GOTO	label72	
+LABEL	label71	:	
+t76	:=	#1	
+LABEL	label72	:	
+IF	t76	!=	#0	GOTO	label67	
+GOTO	label66	
+LABEL	label67	:	
+t79	:=	#0	
+t82	:=	#2147483648	/	v_id_fNC	
+t81	:=	#0	-	t82	
+IF	v_id_twj4	<	t81	GOTO	label73	
+GOTO	label74	
+LABEL	label73	:	
+t79	:=	#1	
+LABEL	label74	:	
+IF	t79	!=	#0	GOTO	label65	
+GOTO	label66	
+LABEL	label65	:	
+t72	:=	#1	
+LABEL	label66	:	
+IF	t72	!=	#0	GOTO	label50	
+GOTO	label53	
+LABEL	label53	:	
+t85	:=	#0	
+t86	:=	#0	
+IF	v_id_fNC	<=	#0	GOTO	label79	
+GOTO	label80	
+LABEL	label79	:	
+t86	:=	#1	
+LABEL	label80	:	
+IF	t86	!=	#0	GOTO	label78	
+GOTO	label76	
+LABEL	label78	:	
+t89	:=	#0	
+IF	v_id_twj4	>	#0	GOTO	label81	
+GOTO	label82	
+LABEL	label81	:	
+t89	:=	#1	
+LABEL	label82	:	
+IF	t89	!=	#0	GOTO	label77	
+GOTO	label76	
+LABEL	label77	:	
+t92	:=	#0	
+t95	:=	#2147483648	/	v_id_twj4	
+t94	:=	#0	-	t95	
+IF	v_id_fNC	<	t94	GOTO	label83	
+GOTO	label84	
+LABEL	label83	:	
+t92	:=	#1	
+LABEL	label84	:	
+IF	t92	!=	#0	GOTO	label75	
+GOTO	label76	
+LABEL	label75	:	
+t85	:=	#1	
+LABEL	label76	:	
+IF	t85	!=	#0	GOTO	label50	
+GOTO	label52	
+LABEL	label52	:	
+t98	:=	#0	
+t99	:=	#0	
+IF	v_id_fNC	<=	#0	GOTO	label90	
+GOTO	label91	
+LABEL	label90	:	
+t99	:=	#1	
+LABEL	label91	:	
+IF	t99	!=	#0	GOTO	label89	
+GOTO	label86	
+LABEL	label89	:	
+t102	:=	#0	
+IF	v_id_twj4	<=	#0	GOTO	label92	
+GOTO	label93	
+LABEL	label92	:	
+t102	:=	#1	
+LABEL	label93	:	
+IF	t102	!=	#0	GOTO	label88	
+GOTO	label86	
+LABEL	label88	:	
+t105	:=	#0	
+IF	v_id_fNC	!=	#0	GOTO	label94	
+GOTO	label95	
+LABEL	label94	:	
+t105	:=	#1	
+LABEL	label95	:	
+IF	t105	!=	#0	GOTO	label87	
+GOTO	label86	
+LABEL	label87	:	
+t108	:=	#0	
+t110	:=	#2147483647	/	v_id_fNC	
+IF	v_id_twj4	<	t110	GOTO	label96	
+GOTO	label97	
+LABEL	label96	:	
+t108	:=	#1	
+LABEL	label97	:	
+IF	t108	!=	#0	GOTO	label85	
+GOTO	label86	
+LABEL	label85	:	
+t98	:=	#1	
+LABEL	label86	:	
+IF	t98	!=	#0	GOTO	label50	
+GOTO	label51	
+LABEL	label50	:	
+t59	:=	#1	
+LABEL	label51	:	
+IF	t59	!=	#0	GOTO	label48	
+GOTO	label49	
+LABEL	label48	:	
+RETURN	v_id_fNC	
+LABEL	label49	:	
+t114	:=	v_id_fNC	*	v_id_twj4	
+RETURN	t114	
+FUNCTION	id_PMY4lU	:
+PARAM	v_id_g	
+PARAM	v_id_RDFCd1mc	
+t117	:=	#0	
+t118	:=	#0	
+IF	v_id_RDFCd1mc	==	#0	GOTO	label103	
+GOTO	label104	
+LABEL	label103	:	
+t118	:=	#1	
+LABEL	label104	:	
+IF	t118	!=	#0	GOTO	label100	
+GOTO	label102	
+LABEL	label102	:	
+t121	:=	#0	
+t122	:=	#0	
+t124	:=	#0	-	#2147483648	
+IF	v_id_g	==	t124	GOTO	label108	
+GOTO	label109	
+LABEL	label108	:	
+t122	:=	#1	
+LABEL	label109	:	
+IF	t122	!=	#0	GOTO	label107	
+GOTO	label106	
+LABEL	label107	:	
+t126	:=	#0	
+t128	:=	#0	-	#1	
+IF	v_id_RDFCd1mc	==	t128	GOTO	label110	
+GOTO	label111	
+LABEL	label110	:	
+t126	:=	#1	
+LABEL	label111	:	
+IF	t126	!=	#0	GOTO	label105	
+GOTO	label106	
+LABEL	label105	:	
+t121	:=	#1	
+LABEL	label106	:	
+IF	t121	!=	#0	GOTO	label100	
+GOTO	label101	
+LABEL	label100	:	
+t117	:=	#1	
+LABEL	label101	:	
+IF	t117	!=	#0	GOTO	label98	
+GOTO	label99	
+LABEL	label98	:	
+RETURN	v_id_g	
+LABEL	label99	:	
+t131	:=	v_id_g	/	v_id_RDFCd1mc	
+RETURN	t131	
+FUNCTION	id_cg15Pl	:
+PARAM	v_id_SaRbFEh	
+PARAM	v_id_y8C_	
+IF	v_id_SaRbFEh	<	#0	GOTO	label112	
+GOTO	label114	
+LABEL	label114	:	
+IF	v_id_SaRbFEh	>=	v_id_y8C_	GOTO	label112	
+GOTO	label113	
+LABEL	label112	:	
+RETURN	#0	
+LABEL	label113	:	
+RETURN	v_id_SaRbFEh	
+FUNCTION	id_rjeni	:
+PARAM	v_id_T6dTq	
+DEC	t140	16
+v_id_KB9JgcR	:=	&t140	
+DEC	v_id_zB	4
+DEC	t141	36
+v_id_o9mTF4	:=	&t141	
+DEC	v_id_QqpjDxD	4
+DEC	v_id_aE7Iv	4
+DEC	v_id_wtNevrOlR	4
+DEC	v_id_ZOBgitm	4
+DEC	v_id_pBx9W	4
+DEC	t142	24
+v_id_pdsmJL	:=	&t142	
+t146	:=	#0	*	#4	
+t147	:=	v_id_KB9JgcR	+	t146	
+*t147	:=	#44262	
+t152	:=	#1	*	#4	
+t153	:=	v_id_KB9JgcR	+	t152	
+*t153	:=	#22383	
+t158	:=	#2	*	#4	
+t159	:=	v_id_KB9JgcR	+	t158	
+*t159	:=	#18818	
+t164	:=	#3	*	#4	
+t165	:=	v_id_KB9JgcR	+	t164	
+*t165	:=	#50242	
+v_id_zB	:=	#35048	
+t172	:=	#0	*	#4	
+t173	:=	v_id_o9mTF4	+	t172	
+*t173	:=	#26776	
+t178	:=	#1	*	#4	
+t179	:=	v_id_o9mTF4	+	t178	
+*t179	:=	#40463	
+t184	:=	#2	*	#4	
+t185	:=	v_id_o9mTF4	+	t184	
+*t185	:=	#2418	
+t190	:=	#3	*	#4	
+t191	:=	v_id_o9mTF4	+	t190	
+*t191	:=	#65136	
+t196	:=	#4	*	#4	
+t197	:=	v_id_o9mTF4	+	t196	
+*t197	:=	#62159	
+t202	:=	#5	*	#4	
+t203	:=	v_id_o9mTF4	+	t202	
+*t203	:=	#57449	
+t208	:=	#6	*	#4	
+t209	:=	v_id_o9mTF4	+	t208	
+*t209	:=	#24015	
+t214	:=	#7	*	#4	
+t215	:=	v_id_o9mTF4	+	t214	
+*t215	:=	#5049	
+t220	:=	#8	*	#4	
+t221	:=	v_id_o9mTF4	+	t220	
+*t221	:=	#31038	
+v_id_QqpjDxD	:=	#34063	
+v_id_aE7Iv	:=	#61323	
+v_id_wtNevrOlR	:=	#59408	
+v_id_ZOBgitm	:=	#33710	
+v_id_pBx9W	:=	#40235	
+t236	:=	#0	*	#4	
+t237	:=	v_id_pdsmJL	+	t236	
+*t237	:=	#61289	
+t242	:=	#1	*	#4	
+t243	:=	v_id_pdsmJL	+	t242	
+*t243	:=	#53582	
+t248	:=	#2	*	#4	
+t249	:=	v_id_pdsmJL	+	t248	
+*t249	:=	#31904	
+t254	:=	#3	*	#4	
+t255	:=	v_id_pdsmJL	+	t254	
+*t255	:=	#44437	
+t260	:=	#4	*	#4	
+t261	:=	v_id_pdsmJL	+	t260	
+*t261	:=	#45257	
+t266	:=	#5	*	#4	
+t267	:=	v_id_pdsmJL	+	t266	
+*t267	:=	#39305	
+t274	:=	#0	*	#4	
+t275	:=	v_id_o9mTF4	+	t274	
+t270	:=	#0	-	*t275	
+t276	:=	t270	*	#4	
+t277	:=	v_id_pdsmJL	+	t276	
+t278	:=	#0	
+IF	v_id_aE7Iv	!=	#0	GOTO	label118	
+GOTO	label117	
+LABEL	label117	:	
+t278	:=	#1	
+LABEL	label118	:	
+t284	:=	#5	*	#4	
+t285	:=	v_id_pdsmJL	+	t284	
+t279	:=	*t285	+	#16576	
+IF	t278	>=	t279	GOTO	label115	
+GOTO	label116	
+LABEL	label115	:	
+LABEL	label116	:	
+t287	:=	#0	
+t288	:=	#0	
+t290	:=	v_id_QqpjDxD	*	v_id_pBx9W	
+IF	t290	==	v_id_ZOBgitm	GOTO	label121	
+GOTO	label122	
+LABEL	label121	:	
+t288	:=	#1	
+LABEL	label122	:	
+t289	:=	v_id_QqpjDxD	/	v_id_aE7Iv	
+IF	t288	==	t289	GOTO	label119	
+GOTO	label120	
+LABEL	label119	:	
+t287	:=	#1	
+LABEL	label120	:	
+RETURN	t287	
+ARG	#56628	
+t299	:=	CALL	id_rjeni	
+t298	:=	t299	/	#38961	
+t303	:=	v_id_ZOBgitm	*	v_id_wtNevrOlR	
+t302	:=	#0	-	t303	
+t296	:=	t298	+	t302	
+IF	t296	<=	#9910	GOTO	label123	
+GOTO	label124	
+LABEL	label123	:	
+LABEL	label124	:	
+t309	:=	#0	*	#4	
+t310	:=	v_id_KB9JgcR	+	t309	
+WRITE	*t310	
+t314	:=	#1	*	#4	
+t315	:=	v_id_KB9JgcR	+	t314	
+WRITE	*t315	
+t319	:=	#2	*	#4	
+t320	:=	v_id_KB9JgcR	+	t319	
+WRITE	*t320	
+t324	:=	#3	*	#4	
+t325	:=	v_id_KB9JgcR	+	t324	
+WRITE	*t325	
+WRITE	v_id_zB	
+t330	:=	#0	*	#4	
+t331	:=	v_id_o9mTF4	+	t330	
+WRITE	*t331	
+t335	:=	#1	*	#4	
+t336	:=	v_id_o9mTF4	+	t335	
+WRITE	*t336	
+t340	:=	#2	*	#4	
+t341	:=	v_id_o9mTF4	+	t340	
+WRITE	*t341	
+t345	:=	#3	*	#4	
+t346	:=	v_id_o9mTF4	+	t345	
+WRITE	*t346	
+t350	:=	#4	*	#4	
+t351	:=	v_id_o9mTF4	+	t350	
+WRITE	*t351	
+t355	:=	#5	*	#4	
+t356	:=	v_id_o9mTF4	+	t355	
+WRITE	*t356	
+t360	:=	#6	*	#4	
+t361	:=	v_id_o9mTF4	+	t360	
+WRITE	*t361	
+t365	:=	#7	*	#4	
+t366	:=	v_id_o9mTF4	+	t365	
+WRITE	*t366	
+t370	:=	#8	*	#4	
+t371	:=	v_id_o9mTF4	+	t370	
+WRITE	*t371	
+WRITE	v_id_QqpjDxD	
+WRITE	v_id_aE7Iv	
+WRITE	v_id_wtNevrOlR	
+WRITE	v_id_ZOBgitm	
+WRITE	v_id_pBx9W	
+t380	:=	#0	*	#4	
+t381	:=	v_id_pdsmJL	+	t380	
+WRITE	*t381	
+t385	:=	#1	*	#4	
+t386	:=	v_id_pdsmJL	+	t385	
+WRITE	*t386	
+t390	:=	#2	*	#4	
+t391	:=	v_id_pdsmJL	+	t390	
+WRITE	*t391	
+t395	:=	#3	*	#4	
+t396	:=	v_id_pdsmJL	+	t395	
+WRITE	*t396	
+t400	:=	#4	*	#4	
+t401	:=	v_id_pdsmJL	+	t400	
+WRITE	*t401	
+t405	:=	#5	*	#4	
+t406	:=	v_id_pdsmJL	+	t405	
+WRITE	*t406	
+t407	:=	#0	
+t408	:=	#0	-	v_id_aE7Iv	
+t414	:=	v_id_QqpjDxD	*	#4	
+t415	:=	v_id_o9mTF4	+	t414	
+ARG	*t415	
+t409	:=	CALL	id_rjeni	
+IF	t408	<	t409	GOTO	label125	
+GOTO	label126	
+LABEL	label125	:	
+t407	:=	#1	
+LABEL	label126	:	
+RETURN	t407	
+t421	:=	#0	-	#40444	
+t420	:=	#0	-	t421	
+ARG	t420	
+t419	:=	CALL	id_rjeni	
+v_id_QqpjDxD	:=	#8472	
+t424	:=	#8472	
+ARG	t424	
+t423	:=	CALL	id_rjeni	
+t418	:=	t419	*	t423	
+t427	:=	#0	
+ARG	v_id_pBx9W	
+t428	:=	CALL	id_rjeni	
+IF	t428	!=	#0	GOTO	label130	
+GOTO	label129	
+LABEL	label129	:	
+t427	:=	#1	
+LABEL	label130	:	
+t416	:=	t418	/	t427	
+t434	:=	#8	*	#4	
+t435	:=	v_id_o9mTF4	+	t434	
+t417	:=	#36686	+	*t435	
+IF	t416	==	t417	GOTO	label127	
+GOTO	label128	
+LABEL	label127	:	
+t438	:=	#0	
+IF	v_id_ZOBgitm	!=	#0	GOTO	label132	
+GOTO	label131	
+LABEL	label131	:	
+t438	:=	#1	
+LABEL	label132	:	
+t436	:=	v_id_QqpjDxD	*	t438	
+t440	:=	#0	
+IF	#36287	!=	#0	GOTO	label134	
+GOTO	label133	
+LABEL	label133	:	
+t440	:=	#1	
+LABEL	label134	:	
+GOTO	label135	
+LABEL	label128	:	
+DEC	t442	40
+v_id_y3_J	:=	&t442	
+DEC	v_id_GmyYzWzY1	4
+t446	:=	#0	*	#4	
+t447	:=	v_id_y3_J	+	t446	
+*t447	:=	#11994	
+t452	:=	#1	*	#4	
+t453	:=	v_id_y3_J	+	t452	
+*t453	:=	#2803	
+t458	:=	#2	*	#4	
+t459	:=	v_id_y3_J	+	t458	
+*t459	:=	#60302	
+t464	:=	#3	*	#4	
+t465	:=	v_id_y3_J	+	t464	
+*t465	:=	#17043	
+t470	:=	#4	*	#4	
+t471	:=	v_id_y3_J	+	t470	
+*t471	:=	#33842	
+t476	:=	#5	*	#4	
+t477	:=	v_id_y3_J	+	t476	
+*t477	:=	#28829	
+t482	:=	#6	*	#4	
+t483	:=	v_id_y3_J	+	t482	
+*t483	:=	#12830	
+t488	:=	#7	*	#4	
+t489	:=	v_id_y3_J	+	t488	
+*t489	:=	#27714	
+t494	:=	#8	*	#4	
+t495	:=	v_id_y3_J	+	t494	
+*t495	:=	#62539	
+t500	:=	#9	*	#4	
+t501	:=	v_id_y3_J	+	t500	
+*t501	:=	#53065	
+v_id_GmyYzWzY1	:=	#23467	
+t505	:=	#0	
+t507	:=	#0	
+t515	:=	#1	*	#4	
+t516	:=	v_id_pdsmJL	+	t515	
+ARG	*t516	
+t511	:=	CALL	id_rjeni	
+t509	:=	#0	-	t511	
+t510	:=	#2368	-	#30306	
+IF	t509	<	t510	GOTO	label140	
+GOTO	label141	
+LABEL	label140	:	
+t507	:=	#1	
+LABEL	label141	:	
+IF	t507	==	#58738	GOTO	label138	
+GOTO	label139	
+LABEL	label138	:	
+t505	:=	#1	
+LABEL	label139	:	
+t523	:=	v_id_T6dTq	*	#4	
+t524	:=	v_id_y3_J	+	t523	
+t519	:=	*t524	/	v_id_GmyYzWzY1	
+t506	:=	#0	-	t519	
+IF	t505	!=	t506	GOTO	label136	
+GOTO	label137	
+LABEL	label136	:	
+LABEL	label137	:	
+t526	:=	#0	
+t527	:=	v_id_T6dTq	-	#54558	
+IF	t527	<=	v_id_wtNevrOlR	GOTO	label142	
+GOTO	label143	
+LABEL	label142	:	
+t526	:=	#1	
+LABEL	label143	:	
+ARG	t526	
+t531	:=	CALL	id_rjeni	
+ARG	#59397	
+t534	:=	CALL	id_rjeni	
+t532	:=	#0	-	t534	
+v_id_QqpjDxD	:=	v_id_T6dTq	
+t537	:=	v_id_T6dTq	
+t540	:=	t537	*	#4	
+t541	:=	v_id_o9mTF4	+	t540	
+IF	t532	!=	*t541	GOTO	label144	
+GOTO	label145	
+LABEL	label144	:	
+LABEL	label145	:	
+LABEL	label135	:	
+t543	:=	#0	
+t547	:=	v_id_aE7Iv	*	#4	
+t548	:=	v_id_o9mTF4	+	t547	
+IF	*t548	!=	#0	GOTO	label147	
+GOTO	label146	
+LABEL	label146	:	
+t543	:=	#1	
+LABEL	label147	:	
+t552	:=	#0	*	#4	
+t553	:=	v_id_KB9JgcR	+	t552	
+WRITE	*t553	
+t557	:=	#1	*	#4	
+t558	:=	v_id_KB9JgcR	+	t557	
+WRITE	*t558	
+t562	:=	#2	*	#4	
+t563	:=	v_id_KB9JgcR	+	t562	
+WRITE	*t563	
+t567	:=	#3	*	#4	
+t568	:=	v_id_KB9JgcR	+	t567	
+WRITE	*t568	
+WRITE	v_id_zB	
+t573	:=	#0	*	#4	
+t574	:=	v_id_o9mTF4	+	t573	
+WRITE	*t574	
+t578	:=	#1	*	#4	
+t579	:=	v_id_o9mTF4	+	t578	
+WRITE	*t579	
+t583	:=	#2	*	#4	
+t584	:=	v_id_o9mTF4	+	t583	
+WRITE	*t584	
+t588	:=	#3	*	#4	
+t589	:=	v_id_o9mTF4	+	t588	
+WRITE	*t589	
+t593	:=	#4	*	#4	
+t594	:=	v_id_o9mTF4	+	t593	
+WRITE	*t594	
+t598	:=	#5	*	#4	
+t599	:=	v_id_o9mTF4	+	t598	
+WRITE	*t599	
+t603	:=	#6	*	#4	
+t604	:=	v_id_o9mTF4	+	t603	
+WRITE	*t604	
+t608	:=	#7	*	#4	
+t609	:=	v_id_o9mTF4	+	t608	
+WRITE	*t609	
+t613	:=	#8	*	#4	
+t614	:=	v_id_o9mTF4	+	t613	
+WRITE	*t614	
+WRITE	v_id_QqpjDxD	
+WRITE	v_id_aE7Iv	
+WRITE	v_id_wtNevrOlR	
+WRITE	v_id_ZOBgitm	
+WRITE	v_id_pBx9W	
+t623	:=	#0	*	#4	
+t624	:=	v_id_pdsmJL	+	t623	
+WRITE	*t624	
+t628	:=	#1	*	#4	
+t629	:=	v_id_pdsmJL	+	t628	
+WRITE	*t629	
+t633	:=	#2	*	#4	
+t634	:=	v_id_pdsmJL	+	t633	
+WRITE	*t634	
+t638	:=	#3	*	#4	
+t639	:=	v_id_pdsmJL	+	t638	
+WRITE	*t639	
+t643	:=	#4	*	#4	
+t644	:=	v_id_pdsmJL	+	t643	
+WRITE	*t644	
+t648	:=	#5	*	#4	
+t649	:=	v_id_pdsmJL	+	t648	
+WRITE	*t649	
+t650	:=	#0	
+t657	:=	v_id_zB	*	#4	
+t658	:=	v_id_o9mTF4	+	t657	
+t653	:=	*t658	/	#497	
+t660	:=	t653	*	#4	
+t661	:=	v_id_KB9JgcR	+	t660	
+IF	*t661	!=	#0	GOTO	label149	
+GOTO	label148	
+LABEL	label148	:	
+t650	:=	#1	
+LABEL	label149	:	
+RETURN	t650	
+FUNCTION	id_td	:
+PARAM	v_id_ICgLm2	
+PARAM	v_id_wi9YTms	
+PARAM	v_id_L0Zjak	
+PARAM	v_id_j3t	
+DEC	v_id_Q_sXH2nMDz	4
+DEC	v_id_UMMo	4
+DEC	v_id_UAP	4
+DEC	v_id_pDSJD	4
+DEC	v_id_g0	4
+DEC	v_id_Fe	4
+DEC	t662	36
+v_id_k	:=	&t662	
+DEC	v_id_ya	4
+DEC	v_id_nM	4
+DEC	v_id_yf1yR	4
+DEC	t663	4
+v_id_t8Ex11_Hzr	:=	&t663	
+DEC	v_id_dhdGj	4
+DEC	v_id_dDS8OfKr	4
+v_id_Q_sXH2nMDz	:=	#10438	
+v_id_UMMo	:=	#33315	
+v_id_UAP	:=	#56235	
+v_id_pDSJD	:=	#49398	
+v_id_g0	:=	#43225	
+v_id_Fe	:=	#31143	
+t679	:=	#0	*	#4	
+t680	:=	v_id_k	+	t679	
+*t680	:=	#57870	
+t685	:=	#1	*	#4	
+t686	:=	v_id_k	+	t685	
+*t686	:=	#14376	
+t691	:=	#2	*	#4	
+t692	:=	v_id_k	+	t691	
+*t692	:=	#46514	
+t697	:=	#3	*	#4	
+t698	:=	v_id_k	+	t697	
+*t698	:=	#3224	
+t703	:=	#4	*	#4	
+t704	:=	v_id_k	+	t703	
+*t704	:=	#50663	
+t709	:=	#5	*	#4	
+t710	:=	v_id_k	+	t709	
+*t710	:=	#58508	
+t715	:=	#6	*	#4	
+t716	:=	v_id_k	+	t715	
+*t716	:=	#6027	
+t721	:=	#7	*	#4	
+t722	:=	v_id_k	+	t721	
+*t722	:=	#45429	
+t727	:=	#8	*	#4	
+t728	:=	v_id_k	+	t727	
+*t728	:=	#10016	
+v_id_ya	:=	#39869	
+v_id_nM	:=	#8722	
+v_id_yf1yR	:=	#22846	
+t739	:=	#0	*	#4	
+t740	:=	v_id_t8Ex11_Hzr	+	t739	
+*t740	:=	#2047	
+v_id_dhdGj	:=	#5725	
+v_id_dDS8OfKr	:=	#10376	
+WRITE	v_id_Q_sXH2nMDz	
+WRITE	v_id_UMMo	
+WRITE	v_id_UAP	
+WRITE	v_id_pDSJD	
+WRITE	v_id_g0	
+WRITE	v_id_Fe	
+t755	:=	#0	*	#4	
+t756	:=	v_id_k	+	t755	
+WRITE	*t756	
+t760	:=	#1	*	#4	
+t761	:=	v_id_k	+	t760	
+WRITE	*t761	
+t765	:=	#2	*	#4	
+t766	:=	v_id_k	+	t765	
+WRITE	*t766	
+t770	:=	#3	*	#4	
+t771	:=	v_id_k	+	t770	
+WRITE	*t771	
+t775	:=	#4	*	#4	
+t776	:=	v_id_k	+	t775	
+WRITE	*t776	
+t780	:=	#5	*	#4	
+t781	:=	v_id_k	+	t780	
+WRITE	*t781	
+t785	:=	#6	*	#4	
+t786	:=	v_id_k	+	t785	
+WRITE	*t786	
+t790	:=	#7	*	#4	
+t791	:=	v_id_k	+	t790	
+WRITE	*t791	
+t795	:=	#8	*	#4	
+t796	:=	v_id_k	+	t795	
+WRITE	*t796	
+WRITE	v_id_ya	
+WRITE	v_id_nM	
+WRITE	v_id_yf1yR	
+t803	:=	#0	*	#4	
+t804	:=	v_id_t8Ex11_Hzr	+	t803	
+WRITE	*t804	
+WRITE	v_id_dhdGj	
+WRITE	v_id_dDS8OfKr	
+t807	:=	#0	
+t808	:=	v_id_nM	-	#25514	
+IF	t808	!=	#0	GOTO	label152	
+GOTO	label151	
+LABEL	label152	:	
+t815	:=	#0	*	#4	
+t816	:=	v_id_t8Ex11_Hzr	+	t815	
+t817	:=	#0	-	#27883	
+t811	:=	*t816	*	t817	
+IF	t811	!=	#0	GOTO	label150	
+GOTO	label151	
+LABEL	label150	:	
+t807	:=	#1	
+LABEL	label151	:	
+RETURN	t807	
+DEC	v_id_Lio	4
+DEC	v_id_G7qOsfFiM3	4
+DEC	v_id_XSE	4
+DEC	v_id_KMBjeiiSo	4
+DEC	v_id_NgvfsM	4
+DEC	v_id___2I4x	4
+DEC	v_id_jp8y6CvhbU	4
+DEC	v_id_u2yWgeRk	4
+v_id_Lio	:=	#21080	
+v_id_G7qOsfFiM3	:=	#23012	
+v_id_XSE	:=	#16905	
+v_id_KMBjeiiSo	:=	#14942	
+v_id_NgvfsM	:=	#65235	
+v_id___2I4x	:=	#17403	
+v_id_jp8y6CvhbU	:=	#25380	
+v_id_u2yWgeRk	:=	#33014	
+t836	:=	#0	
+t837	:=	#0	
+IF	v_id_pDSJD	!=	#0	GOTO	label158	
+GOTO	label157	
+LABEL	label157	:	
+t837	:=	#1	
+LABEL	label158	:	
+IF	t837	<	v_id_Lio	GOTO	label155	
+GOTO	label156	
+LABEL	label155	:	
+t836	:=	#1	
+LABEL	label156	:	
+t840	:=	#0	
+t841	:=	#8102	/	#9242	
+IF	t841	!=	#0	GOTO	label159	
+GOTO	label161	
+LABEL	label161	:	
+IF	v_id_G7qOsfFiM3	!=	#0	GOTO	label159	
+GOTO	label160	
+LABEL	label159	:	
+t840	:=	#1	
+LABEL	label160	:	
+t845	:=	#0	
+t848	:=	#0	
+IF	v_id_yf1yR	!=	#0	GOTO	label165	
+GOTO	label164	
+LABEL	label164	:	
+t848	:=	#1	
+LABEL	label165	:	
+v_id_NgvfsM	:=	v_id___2I4x	
+t850	:=	v_id___2I4x	
+t854	:=	v_id_UAP	+	#10703	
+t853	:=	t854	+	v_id_jp8y6CvhbU	
+t858	:=	#0	
+t862	:=	#0	*	#4	
+t863	:=	v_id_t8Ex11_Hzr	+	t862	
+IF	*t863	!=	#0	GOTO	label167	
+GOTO	label166	
+LABEL	label166	:	
+t858	:=	#1	
+LABEL	label167	:	
+ARG	t858	
+ARG	t853	
+ARG	t850	
+ARG	t848	
+t846	:=	CALL	id_td	
+IF	t846	==	v_id_XSE	GOTO	label162	
+GOTO	label163	
+LABEL	label162	:	
+t845	:=	#1	
+LABEL	label163	:	
+t864	:=	#0	
+t868	:=	v_id_Lio	*	#4	
+t869	:=	v_id_k	+	t868	
+IF	*t869	!=	#0	GOTO	label169	
+GOTO	label168	
+LABEL	label168	:	
+t864	:=	#1	
+LABEL	label169	:	
+ARG	t864	
+ARG	t845	
+ARG	t840	
+ARG	t836	
+t835	:=	CALL	id_td	
+IF	t835	!=	#0	GOTO	label154	
+GOTO	label153	
+LABEL	label153	:	
+LABEL	label154	:	
+DEC	v_id_MA	4
+v_id_MA	:=	#25079	
+v_id_UAP	:=	v_id_MA	
+t874	:=	v_id_MA	
+t877	:=	t874	*	#4	
+t878	:=	v_id_t8Ex11_Hzr	+	t877	
+IF	*t878	!=	#0	GOTO	label172	
+GOTO	label171	
+LABEL	label172	:	
+t881	:=	v_id_KMBjeiiSo	*	v_id_g0	
+t879	:=	t881	/	v_id_pDSJD	
+t880	:=	#20223	/	#4800	
+IF	t879	<	t880	GOTO	label170	
+GOTO	label171	
+LABEL	label170	:	
+LABEL	label171	:	
+t888	:=	#0	
+t890	:=	#10206	/	v_id_KMBjeiiSo	
+t889	:=	t890	*	v_id_KMBjeiiSo	
+IF	t889	!=	#0	GOTO	label173	
+GOTO	label175	
+LABEL	label175	:	
+t894	:=	#13195	-	v_id_nM	
+IF	t894	!=	#0	GOTO	label173	
+GOTO	label174	
+LABEL	label173	:	
+t888	:=	#1	
+LABEL	label174	:	
+v_id_ya	:=	t888	
+t898	:=	#0	
+t900	:=	#10827	/	v_id_dhdGj	
+ARG	t900	
+t899	:=	CALL	id_rjeni	
+IF	t899	!=	#0	GOTO	label176	
+GOTO	label177	
+LABEL	label176	:	
+t898	:=	#1	
+LABEL	label177	:	
+t906	:=	#0	*	#4	
+t907	:=	v_id_t8Ex11_Hzr	+	t906	
+t897	:=	t898	+	*t907	
+t910	:=	#0	
+IF	v_id_L0Zjak	<	#50697	GOTO	label178	
+GOTO	label180	
+LABEL	label180	:	
+IF	#64357	!=	#0	GOTO	label178	
+GOTO	label179	
+LABEL	label178	:	
+t910	:=	#1	
+LABEL	label179	:	
+t914	:=	#0	-	#46058	
+t917	:=	v_id_Fe	*	v_id_MA	
+t916	:=	t917	-	#52744	
+t921	:=	#0	
+t922	:=	v_id_nM	/	#4546	
+IF	t922	!=	#0	GOTO	label183	
+GOTO	label182	
+LABEL	label183	:	
+IF	#56434	!=	#0	GOTO	label181	
+GOTO	label182	
+LABEL	label181	:	
+t921	:=	#1	
+LABEL	label182	:	
+ARG	t921	
+ARG	t916	
+ARG	t914	
+ARG	t910	
+t909	:=	CALL	id_td	
+t908	:=	t909	/	v_id_wi9YTms	
+DEC	v_id_wQX0lPl	4
+DEC	v_id_dAVF	4
+v_id_wQX0lPl	:=	#12723	
+v_id_dAVF	:=	#60856	
+t934	:=	#0	
+IF	v_id_wQX0lPl	!=	#0	GOTO	label188	
+GOTO	label187	
+LABEL	label187	:	
+t934	:=	#1	
+LABEL	label188	:	
+t933	:=	#0	-	t934	
+t931	:=	v_id_yf1yR	*	t933	
+IF	t931	!=	#0	GOTO	label186	
+GOTO	label185	
+LABEL	label186	:	
+IF	v_id_UAP	!=	#0	GOTO	label184	
+GOTO	label185	
+LABEL	label184	:	
+LABEL	label185	:	
+t940	:=	#0	
+IF	#20707	!=	#0	GOTO	label190	
+GOTO	label189	
+LABEL	label189	:	
+t940	:=	#1	
+LABEL	label190	:	
+v_id_dAVF	:=	t940	
+t938	:=	t940	
+v_id_XSE	:=	t938	
+WRITE	v_id_MA	
+t947	:=	#0	-	#40606	
+t946	:=	#0	-	t947	
+t950	:=	#0	
+IF	#16401	!=	#0	GOTO	label192	
+GOTO	label191	
+LABEL	label191	:	
+t950	:=	#1	
+LABEL	label192	:	
+t949	:=	t950	*	#43719	
+t953	:=	#0	-	#57511	
+t955	:=	#0	
+IF	v_id_MA	!=	#0	GOTO	label194	
+GOTO	label193	
+LABEL	label193	:	
+t955	:=	#1	
+LABEL	label194	:	
+ARG	t955	
+ARG	t953	
+ARG	t949	
+ARG	t946	
+t945	:=	CALL	id_td	
+t957	:=	t945	*	#4	
+t958	:=	v_id_t8Ex11_Hzr	+	t957	
+RETURN	*t958	
+DEC	v_id_JYDmH	4
+v_id_JYDmH	:=	#31343	
+v_id_KMBjeiiSo	:=	v_id_pDSJD	
+IF	#43418	!=	#0	GOTO	label195	
+GOTO	label196	
+LABEL	label195	:	
+GOTO	label197	
+LABEL	label196	:	
+t969	:=	#9378	*	#56723	
+t968	:=	t969	*	#1	
+t975	:=	#0	
+t979	:=	#4	*	#4	
+t980	:=	v_id_k	+	t979	
+IF	*t980	!=	#0	GOTO	label201	
+GOTO	label203	
+LABEL	label203	:	
+IF	v_id_ICgLm2	!=	#0	GOTO	label201	
+GOTO	label202	
+LABEL	label201	:	
+t975	:=	#1	
+LABEL	label202	:	
+t982	:=	#0	
+t983	:=	v_id_dDS8OfKr	/	v_id_wi9YTms	
+IF	t983	==	#21600	GOTO	label204	
+GOTO	label205	
+LABEL	label204	:	
+t982	:=	#1	
+LABEL	label205	:	
+t987	:=	#0	
+IF	v_id_UAP	!=	#0	GOTO	label206	
+GOTO	label207	
+LABEL	label206	:	
+t987	:=	#1	
+LABEL	label207	:	
+t989	:=	#0	
+t990	:=	v_id_ya	/	#56725	
+IF	t990	==	#2005	GOTO	label208	
+GOTO	label209	
+LABEL	label208	:	
+t989	:=	#1	
+LABEL	label209	:	
+ARG	t989	
+ARG	t987	
+ARG	t982	
+ARG	t975	
+t974	:=	CALL	id_td	
+t973	:=	t974	/	#46679	
+t996	:=	#0	
+IF	#11412	!=	#0	GOTO	label211	
+GOTO	label210	
+LABEL	label210	:	
+t996	:=	#1	
+LABEL	label211	:	
+t995	:=	t996	+	#6805	
+t999	:=	#56886	/	#24608	
+ARG	t999	
+ARG	t995	
+ARG	t973	
+ARG	t968	
+t967	:=	CALL	id_td	
+t1002	:=	t967	*	#4	
+t1003	:=	v_id_t8Ex11_Hzr	+	t1002	
+t964	:=	#0	-	*t1003	
+IF	t964	!=	#0	GOTO	label198	
+GOTO	label200	
+LABEL	label200	:	
+t1004	:=	#0	-	#17632	
+IF	t1004	!=	#0	GOTO	label198	
+GOTO	label199	
+LABEL	label198	:	
+LABEL	label199	:	
+LABEL	label197	:	
+DEC	t1006	24
+v_id_txf9BjQL	:=	&t1006	
+t1010	:=	#0	*	#4	
+t1011	:=	v_id_txf9BjQL	+	t1010	
+*t1011	:=	#46985	
+t1016	:=	#1	*	#4	
+t1017	:=	v_id_txf9BjQL	+	t1016	
+*t1017	:=	#47819	
+t1022	:=	#2	*	#4	
+t1023	:=	v_id_txf9BjQL	+	t1022	
+*t1023	:=	#2793	
+t1028	:=	#3	*	#4	
+t1029	:=	v_id_txf9BjQL	+	t1028	
+*t1029	:=	#45807	
+t1034	:=	#4	*	#4	
+t1035	:=	v_id_txf9BjQL	+	t1034	
+*t1035	:=	#28341	
+t1040	:=	#5	*	#4	
+t1041	:=	v_id_txf9BjQL	+	t1040	
+*t1041	:=	#55538	
+LABEL	label212	:	
+IF	v_id_dhdGj	!=	#0	GOTO	label213	
+GOTO	label214	
+LABEL	label213	:	
+LABEL	label215	:	
+IF	v_id_u2yWgeRk	!=	#0	GOTO	label216	
+GOTO	label217	
+LABEL	label216	:	
+t1048	:=	#0	
+IF	v_id_ya	!=	#0	GOTO	label221	
+GOTO	label220	
+LABEL	label220	:	
+t1048	:=	#1	
+LABEL	label221	:	
+t1047	:=	#0	-	t1048	
+t1052	:=	#0	-	#50353	
+t1051	:=	t1052	-	#19239	
+ARG	t1051	
+t1050	:=	CALL	id_rjeni	
+t1045	:=	t1047	-	t1050	
+t1046	:=	#0	
+t1058	:=	v_id_yf1yR	*	#4	
+t1059	:=	v_id_txf9BjQL	+	t1058	
+IF	*t1059	!=	#0	GOTO	label223	
+GOTO	label222	
+LABEL	label222	:	
+t1046	:=	#1	
+LABEL	label223	:	
+IF	t1045	!=	t1046	GOTO	label218	
+GOTO	label219	
+LABEL	label218	:	
+LABEL	label219	:	
+GOTO	label215	
+LABEL	label217	:	
+GOTO	label212	
+LABEL	label214	:	
+t1060	:=	#0	
+t1065	:=	#0	
+t1069	:=	v_id_ya	*	#4	
+t1070	:=	v_id_t8Ex11_Hzr	+	t1069	
+IF	*t1070	!=	#0	GOTO	label229	
+GOTO	label228	
+LABEL	label228	:	
+t1065	:=	#1	
+LABEL	label229	:	
+t1077	:=	v_id_Lio	*	#4	
+t1078	:=	v_id_k	+	t1077	
+t1073	:=	#0	-	*t1078	
+t1083	:=	#0	*	#4	
+t1084	:=	v_id_t8Ex11_Hzr	+	t1083	
+t1079	:=	#0	-	*t1084	
+t1085	:=	#0	
+t1086	:=	#39947	+	v_id_KMBjeiiSo	
+IF	t1086	!=	v_id_dhdGj	GOTO	label230	
+GOTO	label231	
+LABEL	label230	:	
+t1085	:=	#1	
+LABEL	label231	:	
+ARG	t1085	
+ARG	t1079	
+ARG	t1073	
+ARG	v_id_u2yWgeRk	
+t1071	:=	CALL	id_td	
+t1064	:=	t1065	*	t1071	
+t1062	:=	#0	-	t1064	
+t1090	:=	#0	-	v_id_yf1yR	
+t1063	:=	t1090	-	v_id_yf1yR	
+IF	t1062	==	t1063	GOTO	label226	
+GOTO	label227	
+LABEL	label226	:	
+t1060	:=	#1	
+LABEL	label227	:	
+t1061	:=	#43331	+	#62075	
+IF	t1060	>	t1061	GOTO	label224	
+GOTO	label225	
+LABEL	label224	:	
+t1095	:=	#0	
+t1100	:=	#0	-	#18130	
+t1099	:=	t1100	-	#35306	
+ARG	t1099	
+t1098	:=	CALL	id_rjeni	
+t1097	:=	t1098	*	#27882	
+IF	v_id_g0	==	t1097	GOTO	label232	
+GOTO	label233	
+LABEL	label232	:	
+t1095	:=	#1	
+LABEL	label233	:	
+RETURN	t1095	
+GOTO	label234	
+LABEL	label225	:	
+IF	#61549	!=	#0	GOTO	label235	
+GOTO	label236	
+LABEL	label235	:	
+t1106	:=	#0	-	#19069	
+GOTO	label237	
+LABEL	label236	:	
+t1108	:=	#0	
+t1112	:=	#6909	/	v_id_UAP	
+ARG	t1112	
+t1111	:=	CALL	id_rjeni	
+t1109	:=	t1111	*	#62165	
+t1117	:=	#0	-	#19498	
+t1116	:=	t1117	-	v_id_UAP	
+v_id_KMBjeiiSo	:=	v_id_ICgLm2	
+t1120	:=	v_id_ICgLm2	
+t1123	:=	#0	
+IF	v_id_UAP	!=	#0	GOTO	label242	
+GOTO	label241	
+LABEL	label242	:	
+IF	#28509	!=	#0	GOTO	label240	
+GOTO	label241	
+LABEL	label240	:	
+t1123	:=	#1	
+LABEL	label241	:	
+t1126	:=	#0	
+t1127	:=	v_id_pDSJD	-	#53355	
+IF	t1127	==	#21503	GOTO	label243	
+GOTO	label244	
+LABEL	label243	:	
+t1126	:=	#1	
+LABEL	label244	:	
+ARG	t1126	
+ARG	t1123	
+ARG	t1120	
+ARG	t1116	
+t1110	:=	CALL	id_td	
+IF	t1109	>	t1110	GOTO	label238	
+GOTO	label239	
+LABEL	label238	:	
+t1108	:=	#1	
+LABEL	label239	:	
+RETURN	t1108	
+LABEL	label237	:	
+LABEL	label234	:	
+LABEL	label245	:	
+t1132	:=	#0	
+t1133	:=	v_id_pDSJD	+	#9653	
+IF	t1133	>=	#64767	GOTO	label248	
+GOTO	label249	
+LABEL	label248	:	
+t1132	:=	#1	
+LABEL	label249	:	
+t1137	:=	#28308	/	#1003	
+v_id_UAP	:=	#23839	
+t1140	:=	#23839	
+t1143	:=	#0	
+IF	#45940	==	#47988	GOTO	label250	
+GOTO	label252	
+LABEL	label252	:	
+IF	#6123	!=	#0	GOTO	label250	
+GOTO	label251	
+LABEL	label250	:	
+t1143	:=	#1	
+LABEL	label251	:	
+ARG	t1143	
+ARG	t1140	
+ARG	t1137	
+ARG	t1132	
+t1131	:=	CALL	id_td	
+IF	t1131	!=	#0	GOTO	label246	
+GOTO	label247	
+LABEL	label246	:	
+IF	v_id_ya	!=	#0	GOTO	label253	
+GOTO	label254	
+LABEL	label253	:	
+LABEL	label255	:	
+v_id_pDSJD	:=	#48734	
+t1149	:=	#48734	
+ARG	t1149	
+t1148	:=	CALL	id_rjeni	
+IF	t1148	!=	#0	GOTO	label257	
+GOTO	label256	
+LABEL	label256	:	
+RETURN	#28259	
+GOTO	label255	
+LABEL	label257	:	
+GOTO	label258	
+LABEL	label254	:	
+LABEL	label259	:	
+t1155	:=	#0	
+t1156	:=	#0	-	v_id_j3t	
+IF	t1156	!=	#0	GOTO	label263	
+GOTO	label262	
+LABEL	label262	:	
+t1155	:=	#1	
+LABEL	label263	:	
+ARG	t1155	
+t1154	:=	CALL	id_rjeni	
+t1158	:=	#0	
+IF	v_id_Q_sXH2nMDz	==	#34464	GOTO	label264	
+GOTO	label266	
+LABEL	label266	:	
+IF	v_id_UMMo	!=	#0	GOTO	label264	
+GOTO	label265	
+LABEL	label264	:	
+t1158	:=	#1	
+LABEL	label265	:	
+t1162	:=	#0	
+t1163	:=	#38736	*	v_id_yf1yR	
+IF	t1163	>=	v_id_dhdGj	GOTO	label267	
+GOTO	label268	
+LABEL	label267	:	
+t1162	:=	#1	
+LABEL	label268	:	
+t1167	:=	#0	
+v_id_Fe	:=	v_id_UAP	
+t1170	:=	v_id_UAP	
+ARG	t1170	
+t1168	:=	CALL	id_rjeni	
+IF	t1168	==	#13077	GOTO	label269	
+GOTO	label270	
+LABEL	label269	:	
+t1167	:=	#1	
+LABEL	label270	:	
+ARG	t1167	
+ARG	t1162	
+ARG	t1158	
+ARG	t1154	
+t1153	:=	CALL	id_td	
+IF	t1153	!=	#0	GOTO	label260	
+GOTO	label261	
+LABEL	label260	:	
+t1176	:=	#0	
+IF	#53704	!=	#0	GOTO	label273	
+GOTO	label275	
+LABEL	label275	:	
+IF	#41461	!=	#0	GOTO	label273	
+GOTO	label274	
+LABEL	label273	:	
+t1176	:=	#1	
+LABEL	label274	:	
+t1179	:=	t1176	*	#4	
+t1180	:=	v_id_k	+	t1179	
+t1181	:=	#0	
+IF	#58751	!=	#0	GOTO	label276	
+GOTO	label278	
+LABEL	label278	:	
+IF	#28115	!=	#0	GOTO	label276	
+GOTO	label277	
+LABEL	label276	:	
+t1181	:=	#1	
+LABEL	label277	:	
+ARG	t1181	
+t1174	:=	CALL	id_rjeni	
+IF	*t1180	>	t1174	GOTO	label271	
+GOTO	label272	
+LABEL	label271	:	
+LABEL	label272	:	
+GOTO	label259	
+LABEL	label261	:	
+LABEL	label258	:	
+GOTO	label245	
+LABEL	label247	:	
+LABEL	label279	:	
+t1184	:=	#0	
+IF	v_id_dDS8OfKr	!=	#19256	GOTO	label282	
+GOTO	label283	
+LABEL	label282	:	
+t1184	:=	#1	
+LABEL	label283	:	
+t1185	:=	v_id_UAP	*	#55290	
+IF	t1184	>	t1185	GOTO	label280	
+GOTO	label281	
+LABEL	label280	:	
+t1194	:=	#46245	+	v_id_Fe	
+v_id_yf1yR	:=	t1194	
+t1192	:=	t1194	
+v_id_UAP	:=	t1192	
+t1190	:=	t1192	
+RETURN	t1190	
+GOTO	label279	
+LABEL	label281	:	
+LABEL	label284	:	
+t1197	:=	#54562	/	#42259	
+t1203	:=	#0	*	#4	
+t1204	:=	v_id_k	+	t1203	
+IF	t1197	==	*t1204	GOTO	label285	
+GOTO	label286	
+LABEL	label285	:	
+v_id_g0	:=	#49168	
+GOTO	label284	
+LABEL	label286	:	
+WRITE	v_id_Q_sXH2nMDz	
+WRITE	v_id_UMMo	
+WRITE	v_id_UAP	
+WRITE	v_id_pDSJD	
+WRITE	v_id_g0	
+WRITE	v_id_Fe	
+t1216	:=	#0	*	#4	
+t1217	:=	v_id_k	+	t1216	
+WRITE	*t1217	
+t1221	:=	#1	*	#4	
+t1222	:=	v_id_k	+	t1221	
+WRITE	*t1222	
+t1226	:=	#2	*	#4	
+t1227	:=	v_id_k	+	t1226	
+WRITE	*t1227	
+t1231	:=	#3	*	#4	
+t1232	:=	v_id_k	+	t1231	
+WRITE	*t1232	
+t1236	:=	#4	*	#4	
+t1237	:=	v_id_k	+	t1236	
+WRITE	*t1237	
+t1241	:=	#5	*	#4	
+t1242	:=	v_id_k	+	t1241	
+WRITE	*t1242	
+t1246	:=	#6	*	#4	
+t1247	:=	v_id_k	+	t1246	
+WRITE	*t1247	
+t1251	:=	#7	*	#4	
+t1252	:=	v_id_k	+	t1251	
+WRITE	*t1252	
+t1256	:=	#8	*	#4	
+t1257	:=	v_id_k	+	t1256	
+WRITE	*t1257	
+WRITE	v_id_ya	
+WRITE	v_id_nM	
+WRITE	v_id_yf1yR	
+t1264	:=	#0	*	#4	
+t1265	:=	v_id_t8Ex11_Hzr	+	t1264	
+WRITE	*t1265	
+WRITE	v_id_dhdGj	
+WRITE	v_id_dDS8OfKr	
+RETURN	#30341	
+FUNCTION	id_ubD	:
+PARAM	v_id_VpnY3zKa	
+PARAM	v_id_KF	
+DEC	t1269	28
+v_id_sqMMWt1iz	:=	&t1269	
+DEC	v_id_qGFka4jDr	4
+DEC	t1270	8
+v_id__DJJ1gKOwc	:=	&t1270	
+DEC	v_id_mtx	4
+DEC	v_id_wQom	4
+t1274	:=	#0	*	#4	
+t1275	:=	v_id_sqMMWt1iz	+	t1274	
+*t1275	:=	#56203	
+t1280	:=	#1	*	#4	
+t1281	:=	v_id_sqMMWt1iz	+	t1280	
+*t1281	:=	#12141	
+t1286	:=	#2	*	#4	
+t1287	:=	v_id_sqMMWt1iz	+	t1286	
+*t1287	:=	#18160	
+t1292	:=	#3	*	#4	
+t1293	:=	v_id_sqMMWt1iz	+	t1292	
+*t1293	:=	#12170	
+t1298	:=	#4	*	#4	
+t1299	:=	v_id_sqMMWt1iz	+	t1298	
+*t1299	:=	#21794	
+t1304	:=	#5	*	#4	
+t1305	:=	v_id_sqMMWt1iz	+	t1304	
+*t1305	:=	#17391	
+t1310	:=	#6	*	#4	
+t1311	:=	v_id_sqMMWt1iz	+	t1310	
+*t1311	:=	#40478	
+v_id_qGFka4jDr	:=	#22797	
+t1318	:=	#0	*	#4	
+t1319	:=	v_id__DJJ1gKOwc	+	t1318	
+*t1319	:=	#41231	
+t1324	:=	#1	*	#4	
+t1325	:=	v_id__DJJ1gKOwc	+	t1324	
+*t1325	:=	#20882	
+v_id_mtx	:=	#5250	
+v_id_wQom	:=	#47354	
+t1331	:=	#0	
+IF	v_id_mtx	!=	#0	GOTO	label287	
+GOTO	label288	
+LABEL	label287	:	
+t1331	:=	#1	
+LABEL	label288	:	
+t1335	:=	v_id_qGFka4jDr	/	#4080	
+t1338	:=	t1335	*	#4	
+t1339	:=	v_id__DJJ1gKOwc	+	t1338	
+DEC	v_id__UHI4HCb	4
+DEC	v_id_tWPksn	4
+DEC	v_id_gXNT	4
+DEC	v_id_SFeV3iyhsB	4
+DEC	v_id_m5Q4Cg	4
+DEC	v_id_YYNd55o2s9	4
+DEC	v_id_CX	4
+DEC	v_id_i0Lv69	4
+DEC	v_imtngTt8f	4
+DEC	v_id_Pi9	4
+v_id__UHI4HCb	:=	#33509	
+v_id_tWPksn	:=	#16282	
+v_id_gXNT	:=	#42816	
+v_id_SFeV3iyhsB	:=	#46586	
+v_id_m5Q4Cg	:=	#4450	
+v_id_YYNd55o2s9	:=	#18741	
+v_id_CX	:=	#39801	
+v_id_i0Lv69	:=	#32565	
+v_imtngTt8f	:=	#37997	
+v_id_Pi9	:=	#29555	
+IF	v_id_gXNT	!=	#0	GOTO	label289	
+GOTO	label290	
+LABEL	label289	:	
+t1361	:=	#0	
+t1364	:=	#13275	/	v_id_i0Lv69	
+t1370	:=	#0	*	#4	
+t1371	:=	v_id_sqMMWt1iz	+	t1370	
+t1363	:=	t1364	/	*t1371	
+t1373	:=	#0	
+IF	#55533	!=	#0	GOTO	label295	
+GOTO	label294	
+LABEL	label294	:	
+t1373	:=	#1	
+LABEL	label295	:	
+t1372	:=	#0	-	t1373	
+t1362	:=	t1363	*	t1372	
+IF	t1362	!=	#0	GOTO	label293	
+GOTO	label292	
+LABEL	label293	:	
+ARG	v_id_mtx	
+t1377	:=	CALL	id_rjeni	
+t1376	:=	t1377	*	v_id_KF	
+t1380	:=	#0	
+IF	#60735	!=	#0	GOTO	label297	
+GOTO	label296	
+LABEL	label296	:	
+t1380	:=	#1	
+LABEL	label297	:	
+t1375	:=	t1376	*	t1380	
+IF	t1375	!=	#0	GOTO	label291	
+GOTO	label292	
+LABEL	label291	:	
+t1361	:=	#1	
+LABEL	label292	:	
+RETURN	t1361	
+GOTO	label298	
+LABEL	label290	:	
+t1384	:=	#0	
+t1385	:=	#0	
+t1391	:=	v_id_Pi9	*	#4	
+t1392	:=	v_id__DJJ1gKOwc	+	t1391	
+IF	*t1392	>	v_id_tWPksn	GOTO	label301	
+GOTO	label302	
+LABEL	label301	:	
+t1385	:=	#1	
+LABEL	label302	:	
+t1396	:=	v_id_wQom	*	v_id_VpnY3zKa	
+t1395	:=	t1396	*	#18360	
+t1400	:=	#0	
+t1401	:=	v_id_SFeV3iyhsB	+	#39165	
+IF	t1401	!=	#0	GOTO	label305	
+GOTO	label304	
+LABEL	label305	:	
+IF	#25540	!=	#0	GOTO	label303	
+GOTO	label304	
+LABEL	label303	:	
+t1400	:=	#1	
+LABEL	label304	:	
+t1406	:=	#9027	*	v_id_CX	
+t1405	:=	t1406	/	#51307	
+t1413	:=	v_id_gXNT	*	#4	
+t1414	:=	v_id_sqMMWt1iz	+	t1413	
+ARG	*t1414	
+ARG	t1405	
+ARG	t1400	
+ARG	t1395	
+t1394	:=	CALL	id_td	
+t1393	:=	t1394	-	v_id_m5Q4Cg	
+t1419	:=	#1	*	#4	
+t1420	:=	v_id__DJJ1gKOwc	+	t1419	
+ARG	*t1420	
+ARG	t1393	
+t1386	:=	CALL	id_ubD	
+IF	t1385	<	t1386	GOTO	label299	
+GOTO	label300	
+LABEL	label299	:	
+t1384	:=	#1	
+LABEL	label300	:	
+v_id__UHI4HCb	:=	t1384	
+t1382	:=	t1384	
+RETURN	t1382	
+LABEL	label298	:	
+DEC	v_id_V	4
+DEC	v_id_ttvTdl	4
+v_id_V	:=	#7565	
+v_id_ttvTdl	:=	#61092	
+t1427	:=	#0	
+IF	v_id_tWPksn	!=	#0	GOTO	label306	
+GOTO	label309	
+LABEL	label309	:	
+IF	v_id_qGFka4jDr	!=	#0	GOTO	label306	
+GOTO	label308	
+LABEL	label308	:	
+IF	#30363	!=	#0	GOTO	label306	
+GOTO	label307	
+LABEL	label306	:	
+t1427	:=	#1	
+LABEL	label307	:	
+ARG	t1427	
+ARG	#61675	
+t1425	:=	CALL	id_ubD	
+t1433	:=	#0	
+IF	v_id_ttvTdl	!=	#0	GOTO	label311	
+GOTO	label310	
+LABEL	label310	:	
+t1433	:=	#1	
+LABEL	label311	:	
+t1432	:=	t1433	/	#36787	
+t1431	:=	t1432	/	#35614	
+t1438	:=	#0	
+IF	v_id_V	!=	#0	GOTO	label313	
+GOTO	label315	
+LABEL	label315	:	
+IF	v_id_qGFka4jDr	!=	#0	GOTO	label314	
+GOTO	label313	
+LABEL	label314	:	
+IF	v_imtngTt8f	<	v_id_i0Lv69	GOTO	label312	
+GOTO	label313	
+LABEL	label312	:	
+t1438	:=	#1	
+LABEL	label313	:	
+v_id_mtx	:=	t1438	
+t1444	:=	#0	
+IF	#18605	!=	#0	GOTO	label317	
+GOTO	label316	
+LABEL	label316	:	
+t1444	:=	#1	
+LABEL	label317	:	
+t1443	:=	t1444	*	v_id_qGFka4jDr	
+t1448	:=	#0	
+IF	#21102	<=	v_id_wQom	GOTO	label318	
+GOTO	label320	
+LABEL	label320	:	
+IF	#3586	!=	#0	GOTO	label318	
+GOTO	label319	
+LABEL	label318	:	
+t1448	:=	#1	
+LABEL	label319	:	
+ARG	t1448	
+t1447	:=	CALL	id_rjeni	
+ARG	t1447	
+ARG	t1443	
+t1452	:=	CALL	id_ubD	
+t1454	:=	#0	-	v_id_i0Lv69	
+t1453	:=	#0	-	t1454	
+IF	t1453	!=	#0	GOTO	label322	
+GOTO	label321	
+LABEL	label321	:	
+LABEL	label322	:	
+DEC	v_id_X	4
+DEC	v_id_FYU4afC	4
+v_id_X	:=	#34887	
+v_id_FYU4afC	:=	#63919	
+WRITE	v_id_X	
+WRITE	v_id_FYU4afC	
+v_id_X	:=	#50173	
+t1463	:=	#50173	
+t1466	:=	#39338	*	v_id_CX	
+t1470	:=	#0	
+IF	#17124	!=	#0	GOTO	label324	
+GOTO	label323	
+LABEL	label323	:	
+t1470	:=	#1	
+LABEL	label324	:	
+t1469	:=	t1470	/	v_id_FYU4afC	
+t1473	:=	#0	
+IF	#24438	!=	#0	GOTO	label328	
+GOTO	label327	
+LABEL	label328	:	
+IF	#6367	!=	#0	GOTO	label325	
+GOTO	label327	
+LABEL	label327	:	
+IF	v_id_qGFka4jDr	!=	#0	GOTO	label325	
+GOTO	label326	
+LABEL	label325	:	
+t1473	:=	#1	
+LABEL	label326	:	
+ARG	t1473	
+ARG	t1469	
+ARG	t1466	
+ARG	t1463	
+t1462	:=	CALL	id_td	
+RETURN	t1462	
+t1477	:=	#0	
+t1484	:=	v_imtngTt8f	*	#4	
+t1485	:=	v_id__DJJ1gKOwc	+	t1484	
+t1479	:=	#0	-	*t1485	
+t1488	:=	v_id_i0Lv69	*	#4	
+t1489	:=	v_id__DJJ1gKOwc	+	t1488	
+IF	t1479	==	*t1489	GOTO	label331	
+GOTO	label332	
+LABEL	label331	:	
+t1477	:=	#1	
+LABEL	label332	:	
+t1478	:=	#0	
+IF	v_id_qGFka4jDr	!=	#0	GOTO	label334	
+GOTO	label333	
+LABEL	label333	:	
+t1478	:=	#1	
+LABEL	label334	:	
+IF	t1477	!=	t1478	GOTO	label329	
+GOTO	label330	
+LABEL	label329	:	
+DEC	t1491	8
+v_id_xPre8pjcYp	:=	&t1491	
+DEC	v_id_BJ_b0iU3u	4
+t1495	:=	#0	*	#4	
+t1496	:=	v_id_xPre8pjcYp	+	t1495	
+*t1496	:=	#55122	
+t1501	:=	#1	*	#4	
+t1502	:=	v_id_xPre8pjcYp	+	t1501	
+*t1502	:=	#53994	
+v_id_BJ_b0iU3u	:=	#19642	
+t1508	:=	#0	
+t1509	:=	#16610	/	v_id_i0Lv69	
+IF	t1509	!=	#0	GOTO	label338	
+GOTO	label340	
+LABEL	label340	:	
+IF	v_id_VpnY3zKa	!=	#0	GOTO	label338	
+GOTO	label339	
+LABEL	label338	:	
+t1508	:=	#1	
+LABEL	label339	:	
+t1513	:=	#0	
+IF	v_id_BJ_b0iU3u	!=	#0	GOTO	label343	
+GOTO	label342	
+LABEL	label343	:	
+IF	v_id_Pi9	!=	#0	GOTO	label341	
+GOTO	label342	
+LABEL	label341	:	
+t1513	:=	#1	
+LABEL	label342	:	
+ARG	t1513	
+ARG	t1508	
+t1506	:=	CALL	id_ubD	
+t1517	:=	#0	
+IF	v_id_qGFka4jDr	!=	#0	GOTO	label345	
+GOTO	label344	
+LABEL	label344	:	
+t1517	:=	#1	
+LABEL	label345	:	
+t1516	:=	t1517	-	v_id_CX	
+ARG	t1516	
+t1507	:=	CALL	id_rjeni	
+IF	t1506	==	t1507	GOTO	label335	
+GOTO	label337	
+LABEL	label337	:	
+t1522	:=	v_id_tWPksn	-	#35649	
+t1525	:=	t1522	*	#4	
+t1526	:=	v_id__DJJ1gKOwc	+	t1525	
+IF	*t1526	!=	#0	GOTO	label335	
+GOTO	label336	
+LABEL	label335	:	
+LABEL	label336	:	
+t1528	:=	#0	-	#9640	
+t1533	:=	v_id_SFeV3iyhsB	*	#4	
+t1534	:=	v_id_xPre8pjcYp	+	t1533	
+t1527	:=	t1528	-	*t1534	
+IF	t1527	!=	#0	GOTO	label349	
+GOTO	label347	
+LABEL	label349	:	
+IF	#11809	>	#54010	GOTO	label348	
+GOTO	label347	
+LABEL	label348	:	
+t1539	:=	#48805	+	#37350	
+t1537	:=	t1539	-	v_id_qGFka4jDr	
+t1538	:=	v_id_BJ_b0iU3u	+	v_id_mtx	
+IF	t1537	!=	t1538	GOTO	label346	
+GOTO	label347	
+LABEL	label346	:	
+LABEL	label347	:	
+GOTO	label350	
+LABEL	label330	:	
+t1547	:=	#0	-	#63037	
+t1546	:=	#0	-	t1547	
+t1545	:=	#0	-	t1546	
+RETURN	t1545	
+LABEL	label350	:	
+t1550	:=	#0	
+t1553	:=	#0	
+t1554	:=	#0	
+IF	v_id_SFeV3iyhsB	!=	#34576	GOTO	label357	
+GOTO	label358	
+LABEL	label357	:	
+t1554	:=	#1	
+LABEL	label358	:	
+IF	t1554	==	v_id_YYNd55o2s9	GOTO	label355	
+GOTO	label356	
+LABEL	label355	:	
+t1553	:=	#1	
+LABEL	label356	:	
+ARG	t1553	
+t1551	:=	CALL	id_rjeni	
+IF	t1551	>=	v_id_wQom	GOTO	label353	
+GOTO	label354	
+LABEL	label353	:	
+t1550	:=	#1	
+LABEL	label354	:	
+v_id_qGFka4jDr	:=	#15514	
+t1558	:=	#15514	
+ARG	t1558	
+ARG	t1550	
+t1549	:=	CALL	id_ubD	
+IF	t1549	!=	#0	GOTO	label351	
+GOTO	label352	
+LABEL	label351	:	
+t1561	:=	#0	-	#18699	
+IF	t1561	!=	#0	GOTO	label359	
+GOTO	label360	
+LABEL	label359	:	
+RETURN	#42142	
+GOTO	label361	
+LABEL	label360	:	
+t1567	:=	#0	
+IF	v_id__UHI4HCb	>=	#11070	GOTO	label362	
+GOTO	label363	
+LABEL	label362	:	
+t1567	:=	#1	
+LABEL	label363	:	
+t1570	:=	t1567	*	#4	
+t1571	:=	v_id_sqMMWt1iz	+	t1570	
+t1564	:=	*t1571	*	v_id_m5Q4Cg	
+RETURN	t1564	
+LABEL	label361	:	
+GOTO	label364	
+LABEL	label352	:	
+DEC	t1573	4
+v_id_NeAJWuJ0UU	:=	&t1573	
+DEC	v_id_Va	4
+t1577	:=	#0	*	#4	
+t1578	:=	v_id_NeAJWuJ0UU	+	t1577	
+*t1578	:=	#14838	
+v_id_Va	:=	#6969	
+t1584	:=	v_id_Va	+	#47857	
+ARG	t1584	
+t1583	:=	CALL	id_rjeni	
+t1582	:=	t1583	-	#31860	
+IF	t1582	!=	#0	GOTO	label367	
+GOTO	label366	
+LABEL	label367	:	
+t1590	:=	v_id_wQom	+	v_id_qGFka4jDr	
+t1593	:=	t1590	*	#4	
+t1594	:=	v_id_NeAJWuJ0UU	+	t1593	
+IF	*t1594	!=	#0	GOTO	label365	
+GOTO	label366	
+LABEL	label365	:	
+LABEL	label366	:	
+t1596	:=	#0	
+IF	#42582	!=	#0	GOTO	label369	
+GOTO	label368	
+LABEL	label368	:	
+t1596	:=	#1	
+LABEL	label369	:	
+t1601	:=	#0	
+t1606	:=	v_id_mtx	*	#4	
+t1607	:=	v_id_sqMMWt1iz	+	t1606	
+t1608	:=	#0	
+IF	v_imtngTt8f	!=	#0	GOTO	label374	
+GOTO	label373	
+LABEL	label374	:	
+IF	#926	!=	#0	GOTO	label372	
+GOTO	label373	
+LABEL	label372	:	
+t1608	:=	#1	
+LABEL	label373	:	
+ARG	t1608	
+ARG	*t1607	
+t1602	:=	CALL	id_ubD	
+IF	t1602	!=	#0	GOTO	label371	
+GOTO	label370	
+LABEL	label370	:	
+t1601	:=	#1	
+LABEL	label371	:	
+t1611	:=	#0	
+t1615	:=	#0	*	#4	
+t1616	:=	v_id__DJJ1gKOwc	+	t1615	
+IF	*t1616	!=	#0	GOTO	label375	
+GOTO	label377	
+LABEL	label377	:	
+IF	v_id_wQom	!=	#0	GOTO	label375	
+GOTO	label376	
+LABEL	label375	:	
+t1611	:=	#1	
+LABEL	label376	:	
+ARG	t1611	
+ARG	t1601	
+t1600	:=	CALL	id_ubD	
+t1599	:=	#0	-	t1600	
+t1598	:=	#0	-	t1599	
+t1595	:=	t1596	+	t1598	
+RETURN	t1595	
+LABEL	label364	:	
+t1621	:=	#0	*	#4	
+t1622	:=	v_id_sqMMWt1iz	+	t1621	
+WRITE	*t1622	
+t1626	:=	#1	*	#4	
+t1627	:=	v_id_sqMMWt1iz	+	t1626	
+WRITE	*t1627	
+t1631	:=	#2	*	#4	
+t1632	:=	v_id_sqMMWt1iz	+	t1631	
+WRITE	*t1632	
+t1636	:=	#3	*	#4	
+t1637	:=	v_id_sqMMWt1iz	+	t1636	
+WRITE	*t1637	
+t1641	:=	#4	*	#4	
+t1642	:=	v_id_sqMMWt1iz	+	t1641	
+WRITE	*t1642	
+t1646	:=	#5	*	#4	
+t1647	:=	v_id_sqMMWt1iz	+	t1646	
+WRITE	*t1647	
+t1651	:=	#6	*	#4	
+t1652	:=	v_id_sqMMWt1iz	+	t1651	
+WRITE	*t1652	
+WRITE	v_id_qGFka4jDr	
+t1657	:=	#0	*	#4	
+t1658	:=	v_id__DJJ1gKOwc	+	t1657	
+WRITE	*t1658	
+t1662	:=	#1	*	#4	
+t1663	:=	v_id__DJJ1gKOwc	+	t1662	
+WRITE	*t1663	
+WRITE	v_id_mtx	
+WRITE	v_id_wQom	
+t1670	:=	v_id_mtx	/	#35814	
+t1673	:=	t1670	*	#4	
+t1674	:=	v_id_sqMMWt1iz	+	t1673	
+t1675	:=	#0	-	v_id_wQom	
+t1667	:=	*t1674	*	t1675	
+t1666	:=	#0	-	t1667	
+RETURN	t1666	
+FUNCTION	id_v	:
+DEC	v_id_XxaKvsglu	4
+DEC	t1677	28
+v_id_Tb	:=	&t1677	
+DEC	t1678	32
+v_id_l5MNv	:=	&t1678	
+DEC	v_id_D	4
+DEC	v_id_Bkx	4
+DEC	v_id_cUBIeO	4
+DEC	t1679	8
+v_id_pM	:=	&t1679	
+DEC	v_id_C4H3m	4
+DEC	v_id_CnpU	4
+DEC	v_id_AvC7Pd	4
+DEC	v_id_yydjiCSkdI	4
+DEC	v_id_T	4
+DEC	t1680	24
+v_id_IJDkT	:=	&t1680	
+DEC	v_id_S6	4
+DEC	v_id_kc3u	4
+DEC	v_id_z	4
+DEC	v_id_YDY	4
+DEC	v_id_h79	4
+DEC	v_id_Tj6iUMeai	4
+DEC	t1681	28
+v_id_W1	:=	&t1681	
+DEC	v_id_tWCD	4
+DEC	v_id_WVoiTTJFM	4
+DEC	v_id_UJ6cT1i	4
+v_id_XxaKvsglu	:=	#51346	
+t1687	:=	#0	*	#4	
+t1688	:=	v_id_Tb	+	t1687	
+*t1688	:=	#30805	
+t1693	:=	#1	*	#4	
+t1694	:=	v_id_Tb	+	t1693	
+*t1694	:=	#9616	
+t1699	:=	#2	*	#4	
+t1700	:=	v_id_Tb	+	t1699	
+*t1700	:=	#2934	
+t1705	:=	#3	*	#4	
+t1706	:=	v_id_Tb	+	t1705	
+*t1706	:=	#55244	
+t1711	:=	#4	*	#4	
+t1712	:=	v_id_Tb	+	t1711	
+*t1712	:=	#15983	
+t1717	:=	#5	*	#4	
+t1718	:=	v_id_Tb	+	t1717	
+*t1718	:=	#58056	
+t1723	:=	#6	*	#4	
+t1724	:=	v_id_Tb	+	t1723	
+*t1724	:=	#43702	
+t1729	:=	#0	*	#4	
+t1730	:=	v_id_l5MNv	+	t1729	
+*t1730	:=	#35626	
+t1735	:=	#1	*	#4	
+t1736	:=	v_id_l5MNv	+	t1735	
+*t1736	:=	#9130	
+t1741	:=	#2	*	#4	
+t1742	:=	v_id_l5MNv	+	t1741	
+*t1742	:=	#13815	
+t1747	:=	#3	*	#4	
+t1748	:=	v_id_l5MNv	+	t1747	
+*t1748	:=	#45266	
+t1753	:=	#4	*	#4	
+t1754	:=	v_id_l5MNv	+	t1753	
+*t1754	:=	#20940	
+t1759	:=	#5	*	#4	
+t1760	:=	v_id_l5MNv	+	t1759	
+*t1760	:=	#2289	
+t1765	:=	#6	*	#4	
+t1766	:=	v_id_l5MNv	+	t1765	
+*t1766	:=	#28535	
+t1771	:=	#7	*	#4	
+t1772	:=	v_id_l5MNv	+	t1771	
+*t1772	:=	#58290	
+v_id_D	:=	#65327	
+v_id_Bkx	:=	#63112	
+v_id_cUBIeO	:=	#8268	
+t1783	:=	#0	*	#4	
+t1784	:=	v_id_pM	+	t1783	
+*t1784	:=	#18490	
+t1789	:=	#1	*	#4	
+t1790	:=	v_id_pM	+	t1789	
+*t1790	:=	#39718	
+v_id_C4H3m	:=	#19339	
+v_id_CnpU	:=	#33328	
+v_id_AvC7Pd	:=	#46687	
+v_id_yydjiCSkdI	:=	#1660	
+v_id_T	:=	#65189	
+t1805	:=	#0	*	#4	
+t1806	:=	v_id_IJDkT	+	t1805	
+*t1806	:=	#23733	
+t1811	:=	#1	*	#4	
+t1812	:=	v_id_IJDkT	+	t1811	
+*t1812	:=	#2587	
+t1817	:=	#2	*	#4	
+t1818	:=	v_id_IJDkT	+	t1817	
+*t1818	:=	#52616	
+t1823	:=	#3	*	#4	
+t1824	:=	v_id_IJDkT	+	t1823	
+*t1824	:=	#4365	
+t1829	:=	#4	*	#4	
+t1830	:=	v_id_IJDkT	+	t1829	
+*t1830	:=	#38401	
+t1835	:=	#5	*	#4	
+t1836	:=	v_id_IJDkT	+	t1835	
+*t1836	:=	#38426	
+v_id_S6	:=	#35171	
+v_id_kc3u	:=	#48017	
+v_id_z	:=	#41360	
+v_id_YDY	:=	#24879	
+v_id_h79	:=	#64000	
+v_id_Tj6iUMeai	:=	#33881	
+t1853	:=	#0	*	#4	
+t1854	:=	v_id_W1	+	t1853	
+*t1854	:=	#3045	
+t1859	:=	#1	*	#4	
+t1860	:=	v_id_W1	+	t1859	
+*t1860	:=	#34090	
+t1865	:=	#2	*	#4	
+t1866	:=	v_id_W1	+	t1865	
+*t1866	:=	#43011	
+t1871	:=	#3	*	#4	
+t1872	:=	v_id_W1	+	t1871	
+*t1872	:=	#16860	
+t1877	:=	#4	*	#4	
+t1878	:=	v_id_W1	+	t1877	
+*t1878	:=	#13820	
+t1883	:=	#5	*	#4	
+t1884	:=	v_id_W1	+	t1883	
+*t1884	:=	#63951	
+t1889	:=	#6	*	#4	
+t1890	:=	v_id_W1	+	t1889	
+*t1890	:=	#19150	
+v_id_tWCD	:=	#42356	
+v_id_WVoiTTJFM	:=	#56705	
+v_id_UJ6cT1i	:=	#18941	
+LABEL	label378	:	
+t1898	:=	#0	
+t1905	:=	v_id_tWCD	*	#4	
+t1906	:=	v_id_IJDkT	+	t1905	
+t1900	:=	*t1906	*	v_id_h79	
+t1901	:=	#39932	/	v_id_WVoiTTJFM	
+IF	t1900	<=	t1901	GOTO	label381	
+GOTO	label382	
+LABEL	label381	:	
+t1898	:=	#1	
+LABEL	label382	:	
+t1910	:=	#64974	/	#37431	
+t1899	:=	#0	-	t1910	
+IF	t1898	!=	t1899	GOTO	label379	
+GOTO	label380	
+LABEL	label379	:	
+IF	v_id_Tj6iUMeai	!=	#0	GOTO	label383	
+GOTO	label384	
+LABEL	label383	:	
+LABEL	label384	:	
+GOTO	label378	
+LABEL	label380	:	
+LABEL	label385	:	
+IF	#14114	!=	#0	GOTO	label386	
+GOTO	label387	
+LABEL	label386	:	
+LABEL	label388	:	
+t1917	:=	v_id_YDY	+	v_id_kc3u	
+v_id_T	:=	v_id_CnpU	
+t1920	:=	v_id_CnpU	
+ARG	t1920	
+ARG	t1917	
+t1916	:=	CALL	id_ubD	
+t1915	:=	#0	-	t1916	
+IF	t1915	!=	#0	GOTO	label389	
+GOTO	label390	
+LABEL	label389	:	
+t1923	:=	#0	
+t1930	:=	v_id_UJ6cT1i	*	#4	
+t1931	:=	v_id_W1	+	t1930	
+t1926	:=	*t1931	+	v_id_tWCD	
+ARG	t1926	
+t1925	:=	CALL	id_rjeni	
+IF	t1925	!=	#0	GOTO	label394	
+GOTO	label393	
+LABEL	label393	:	
+t1923	:=	#1	
+LABEL	label394	:	
+IF	t1923	<	v_id_tWCD	GOTO	label391	
+GOTO	label392	
+LABEL	label391	:	
+LABEL	label395	:	
+t1935	:=	v_id_tWCD	/	v_id_Bkx	
+t1939	:=	#0	
+IF	v_id_yydjiCSkdI	!=	#0	GOTO	label399	
+GOTO	label398	
+LABEL	label398	:	
+t1939	:=	#1	
+LABEL	label399	:	
+t1948	:=	v_id_z	*	#4	
+t1949	:=	v_id_pM	+	t1948	
+t1944	:=	#0	-	*t1949	
+ARG	t1944	
+t1943	:=	CALL	id_rjeni	
+t1942	:=	#0	-	t1943	
+ARG	v_id_D	
+ARG	t1942	
+ARG	#18777	
+ARG	t1939	
+t1938	:=	CALL	id_td	
+t1933	:=	t1935	+	t1938	
+IF	t1933	>	v_id_AvC7Pd	GOTO	label396	
+GOTO	label397	
+LABEL	label396	:	
+t1951	:=	#0	
+t1956	:=	v_id_yydjiCSkdI	*	#4	
+t1957	:=	v_id_W1	+	t1956	
+t1959	:=	#5223	*	v_id_yydjiCSkdI	
+t1958	:=	t1959	/	#60801	
+t1952	:=	*t1957	-	t1958	
+IF	t1952	!=	#0	GOTO	label400	
+GOTO	label402	
+LABEL	label402	:	
+t1965	:=	v_id_C4H3m	-	v_id_z	
+ARG	t1965	
+t1964	:=	CALL	id_rjeni	
+t1971	:=	#4	*	#4	
+t1972	:=	v_id_l5MNv	+	t1971	
+t1963	:=	t1964	/	*t1972	
+IF	t1963	!=	#0	GOTO	label400	
+GOTO	label401	
+LABEL	label400	:	
+t1951	:=	#1	
+LABEL	label401	:	
+RETURN	t1951	
+GOTO	label395	
+LABEL	label397	:	
+GOTO	label403	
+LABEL	label392	:	
+t1975	:=	#0	
+t1981	:=	#0	*	#4	
+t1982	:=	v_id_l5MNv	+	t1981	
+t1976	:=	*t1982	/	v_id_h79	
+t1977	:=	#0	
+IF	v_id_Tj6iUMeai	!=	#0	GOTO	label407	
+GOTO	label406	
+LABEL	label406	:	
+t1977	:=	#1	
+LABEL	label407	:	
+IF	t1976	>=	t1977	GOTO	label404	
+GOTO	label405	
+LABEL	label404	:	
+t1975	:=	#1	
+LABEL	label405	:	
+t1985	:=	t1975	*	#4	
+t1986	:=	v_id_IJDkT	+	t1985	
+RETURN	*t1986	
+DEC	v_id_NnAJSIy	4
+DEC	v_id_PhEy3Y	4
+v_id_NnAJSIy	:=	#57492	
+v_id_PhEy3Y	:=	#23363	
+WRITE	v_id_NnAJSIy	
+WRITE	v_id_PhEy3Y	
+t1993	:=	#0	
+t1994	:=	#0	
+t1999	:=	v_id_PhEy3Y	/	#61425	
+t1998	:=	t1999	+	v_id_NnAJSIy	
+t2003	:=	v_id_YDY	*	#30382	
+t1996	:=	t1998	-	t2003	
+t2006	:=	#0	
+IF	v_id_yydjiCSkdI	!=	#0	GOTO	label413	
+GOTO	label412	
+LABEL	label412	:	
+t2006	:=	#1	
+LABEL	label413	:	
+t1997	:=	t2006	/	#58534	
+IF	t1996	>	t1997	GOTO	label410	
+GOTO	label411	
+LABEL	label410	:	
+t1994	:=	#1	
+LABEL	label411	:	
+t1995	:=	v_id_cUBIeO	*	#43906	
+IF	t1994	>=	t1995	GOTO	label408	
+GOTO	label409	
+LABEL	label408	:	
+t1993	:=	#1	
+LABEL	label409	:	
+RETURN	t1993	
+t2011	:=	#0	
+t2013	:=	#0	
+t2015	:=	#0	-	v_id_yydjiCSkdI	
+IF	t2015	!=	#0	GOTO	label419	
+GOTO	label418	
+LABEL	label418	:	
+t2013	:=	#1	
+LABEL	label419	:	
+t2017	:=	#0	
+IF	#6207	!=	#0	GOTO	label421	
+GOTO	label420	
+LABEL	label420	:	
+t2017	:=	#1	
+LABEL	label421	:	
+t2014	:=	t2017	+	#17877	
+IF	t2013	==	t2014	GOTO	label416	
+GOTO	label417	
+LABEL	label416	:	
+t2011	:=	#1	
+LABEL	label417	:	
+t2012	:=	#42371	/	v_id_AvC7Pd	
+IF	t2011	<=	t2012	GOTO	label414	
+GOTO	label415	
+LABEL	label414	:	
+t2022	:=	#0	-	#40088	
+t2025	:=	#0	
+IF	#20922	!=	#0	GOTO	label424	
+GOTO	label425	
+LABEL	label424	:	
+t2025	:=	#1	
+LABEL	label425	:	
+t2027	:=	#0	
+IF	v_id_tWCD	!=	#0	GOTO	label427	
+GOTO	label426	
+LABEL	label426	:	
+t2027	:=	#1	
+LABEL	label427	:	
+t2023	:=	t2025	-	t2027	
+IF	t2022	!=	t2023	GOTO	label422	
+GOTO	label423	
+LABEL	label422	:	
+LABEL	label423	:	
+GOTO	label428	
+LABEL	label415	:	
+IF	#10925	!=	#0	GOTO	label429	
+GOTO	label431	
+LABEL	label431	:	
+t2032	:=	#0	
+IF	#17563	!=	#0	GOTO	label432	
+GOTO	label434	
+LABEL	label434	:	
+IF	#37783	!=	#0	GOTO	label432	
+GOTO	label433	
+LABEL	label432	:	
+t2032	:=	#1	
+LABEL	label433	:	
+t2035	:=	t2032	*	#4	
+t2036	:=	v_id_IJDkT	+	t2035	
+IF	*t2036	!=	#0	GOTO	label429	
+GOTO	label430	
+LABEL	label429	:	
+LABEL	label430	:	
+LABEL	label428	:	
+WRITE	v_id_NnAJSIy	
+WRITE	v_id_PhEy3Y	
+t2039	:=	#0	
+IF	#24746	<=	#15979	GOTO	label440	
+GOTO	label437	
+LABEL	label440	:	
+IF	v_id_AvC7Pd	!=	#0	GOTO	label439	
+GOTO	label437	
+LABEL	label439	:	
+IF	v_id_kc3u	!=	#0	GOTO	label438	
+GOTO	label437	
+LABEL	label438	:	
+t2048	:=	#0	*	#4	
+t2049	:=	v_id_pM	+	t2048	
+t2044	:=	#0	-	*t2049	
+IF	t2044	!=	#0	GOTO	label435	
+GOTO	label437	
+LABEL	label437	:	
+t2050	:=	#0	
+t2057	:=	#0	*	#4	
+t2058	:=	v_id_pM	+	t2057	
+t2052	:=	*t2058	*	v_id_cUBIeO	
+IF	t2052	!=	v_id_yydjiCSkdI	GOTO	label441	
+GOTO	label442	
+LABEL	label441	:	
+t2050	:=	#1	
+LABEL	label442	:	
+IF	t2050	<	v_id_yydjiCSkdI	GOTO	label435	
+GOTO	label436	
+LABEL	label435	:	
+t2039	:=	#1	
+LABEL	label436	:	
+RETURN	t2039	
+LABEL	label403	:	
+GOTO	label388	
+LABEL	label390	:	
+GOTO	label385	
+LABEL	label387	:	
+LABEL	label443	:	
+t2060	:=	#0	
+t2062	:=	#0	
+IF	v_id_UJ6cT1i	!=	#0	GOTO	label449	
+GOTO	label448	
+LABEL	label448	:	
+t2062	:=	#1	
+LABEL	label449	:	
+t2065	:=	#0	
+IF	v_id_Tj6iUMeai	!=	#0	GOTO	label451	
+GOTO	label450	
+LABEL	label450	:	
+t2065	:=	#1	
+LABEL	label451	:	
+t2063	:=	#0	-	t2065	
+IF	t2062	<	t2063	GOTO	label446	
+GOTO	label447	
+LABEL	label446	:	
+t2060	:=	#1	
+LABEL	label447	:	
+t2061	:=	#0	
+IF	v_id_z	!=	#0	GOTO	label452	
+GOTO	label453	
+LABEL	label452	:	
+t2061	:=	#1	
+LABEL	label453	:	
+IF	t2060	!=	t2061	GOTO	label444	
+GOTO	label445	
+LABEL	label444	:	
+LABEL	label454	:	
+t2071	:=	#0	
+t2072	:=	v_id_D	+	#41498	
+IF	t2072	<	v_id_cUBIeO	GOTO	label457	
+GOTO	label458	
+LABEL	label457	:	
+t2071	:=	#1	
+LABEL	label458	:	
+ARG	t2071	
+t2070	:=	CALL	id_rjeni	
+t2076	:=	t2070	*	#4	
+t2077	:=	v_id_W1	+	t2076	
+IF	*t2077	!=	#0	GOTO	label455	
+GOTO	label456	
+LABEL	label455	:	
+t2080	:=	#0	
+IF	v_id_C4H3m	!=	#0	GOTO	label460	
+GOTO	label459	
+LABEL	label459	:	
+t2080	:=	#1	
+LABEL	label460	:	
+t2082	:=	t2080	*	#4	
+t2083	:=	v_id_pM	+	t2082	
+RETURN	*t2083	
+GOTO	label454	
+LABEL	label456	:	
+GOTO	label443	
+LABEL	label445	:	
+t2085	:=	#0	
+t2089	:=	#1	*	#4	
+t2090	:=	v_id_pM	+	t2089	
+IF	*t2090	!=	#0	GOTO	label462	
+GOTO	label461	
+LABEL	label461	:	
+t2085	:=	#1	
+LABEL	label462	:	
+t2091	:=	#0	
+IF	v_id_XxaKvsglu	!=	#0	GOTO	label463	
+GOTO	label464	
+LABEL	label463	:	
+t2091	:=	#1	
+LABEL	label464	:	
+t2084	:=	t2085	*	t2091	
+t2093	:=	#0	-	#55612	
+t2100	:=	v_id_YDY	*	#4	
+t2101	:=	v_id_pM	+	t2100	
+t2102	:=	#0	-	v_id_yydjiCSkdI	
+t2096	:=	*t2101	*	t2102	
+t2107	:=	v_id_tWCD	*	#4	
+t2108	:=	v_id_Tb	+	t2107	
+t2095	:=	t2096	+	*t2108	
+IF	t2095	!=	#0	GOTO	label467	
+GOTO	label466	
+LABEL	label467	:	
+t2114	:=	v_id_tWCD	*	#4	
+t2115	:=	v_id_l5MNv	+	t2114	
+t2109	:=	#0	-	*t2115	
+t2110	:=	#0	-	v_id_yydjiCSkdI	
+IF	t2109	<=	t2110	GOTO	label465	
+GOTO	label466	
+LABEL	label465	:	
+t2117	:=	#0	
+IF	v_id_Tj6iUMeai	!=	#0	GOTO	label468	
+GOTO	label470	
+LABEL	label470	:	
+IF	#25363	!=	#0	GOTO	label468	
+GOTO	label469	
+LABEL	label468	:	
+t2117	:=	#1	
+LABEL	label469	:	
+t2120	:=	#0	
+t2124	:=	v_id_S6	*	#4	
+t2125	:=	v_id_pM	+	t2124	
+IF	*t2125	!=	#0	GOTO	label472	
+GOTO	label471	
+LABEL	label471	:	
+t2120	:=	#1	
+LABEL	label472	:	
+t2126	:=	v_id_cUBIeO	/	#52992	
+t2129	:=	#0	-	v_id_yydjiCSkdI	
+ARG	t2129	
+ARG	t2126	
+ARG	t2120	
+ARG	t2117	
+t2131	:=	CALL	id_td	
+GOTO	label473	
+LABEL	label466	:	
+t2134	:=	#0	
+t2135	:=	#0	
+t2137	:=	#0	-	#50877	
+IF	t2137	!=	#0	GOTO	label477	
+GOTO	label476	
+LABEL	label476	:	
+t2135	:=	#1	
+LABEL	label477	:	
+t2136	:=	#0	-	v_id_D	
+IF	t2135	!=	t2136	GOTO	label474	
+GOTO	label475	
+LABEL	label474	:	
+t2134	:=	#1	
+LABEL	label475	:	
+v_id_tWCD	:=	t2134	
+t2132	:=	t2134	
+RETURN	t2132	
+LABEL	label473	:	
+WRITE	v_id_XxaKvsglu	
+t2144	:=	#0	*	#4	
+t2145	:=	v_id_Tb	+	t2144	
+WRITE	*t2145	
+t2149	:=	#1	*	#4	
+t2150	:=	v_id_Tb	+	t2149	
+WRITE	*t2150	
+t2154	:=	#2	*	#4	
+t2155	:=	v_id_Tb	+	t2154	
+WRITE	*t2155	
+t2159	:=	#3	*	#4	
+t2160	:=	v_id_Tb	+	t2159	
+WRITE	*t2160	
+t2164	:=	#4	*	#4	
+t2165	:=	v_id_Tb	+	t2164	
+WRITE	*t2165	
+t2169	:=	#5	*	#4	
+t2170	:=	v_id_Tb	+	t2169	
+WRITE	*t2170	
+t2174	:=	#6	*	#4	
+t2175	:=	v_id_Tb	+	t2174	
+WRITE	*t2175	
+t2179	:=	#0	*	#4	
+t2180	:=	v_id_l5MNv	+	t2179	
+WRITE	*t2180	
+t2184	:=	#1	*	#4	
+t2185	:=	v_id_l5MNv	+	t2184	
+WRITE	*t2185	
+t2189	:=	#2	*	#4	
+t2190	:=	v_id_l5MNv	+	t2189	
+WRITE	*t2190	
+t2194	:=	#3	*	#4	
+t2195	:=	v_id_l5MNv	+	t2194	
+WRITE	*t2195	
+t2199	:=	#4	*	#4	
+t2200	:=	v_id_l5MNv	+	t2199	
+WRITE	*t2200	
+t2204	:=	#5	*	#4	
+t2205	:=	v_id_l5MNv	+	t2204	
+WRITE	*t2205	
+t2209	:=	#6	*	#4	
+t2210	:=	v_id_l5MNv	+	t2209	
+WRITE	*t2210	
+t2214	:=	#7	*	#4	
+t2215	:=	v_id_l5MNv	+	t2214	
+WRITE	*t2215	
+WRITE	v_id_D	
+WRITE	v_id_Bkx	
+WRITE	v_id_cUBIeO	
+t2222	:=	#0	*	#4	
+t2223	:=	v_id_pM	+	t2222	
+WRITE	*t2223	
+t2227	:=	#1	*	#4	
+t2228	:=	v_id_pM	+	t2227	
+WRITE	*t2228	
+WRITE	v_id_C4H3m	
+WRITE	v_id_CnpU	
+WRITE	v_id_AvC7Pd	
+WRITE	v_id_yydjiCSkdI	
+WRITE	v_id_T	
+t2237	:=	#0	*	#4	
+t2238	:=	v_id_IJDkT	+	t2237	
+WRITE	*t2238	
+t2242	:=	#1	*	#4	
+t2243	:=	v_id_IJDkT	+	t2242	
+WRITE	*t2243	
+t2247	:=	#2	*	#4	
+t2248	:=	v_id_IJDkT	+	t2247	
+WRITE	*t2248	
+t2252	:=	#3	*	#4	
+t2253	:=	v_id_IJDkT	+	t2252	
+WRITE	*t2253	
+t2257	:=	#4	*	#4	
+t2258	:=	v_id_IJDkT	+	t2257	
+WRITE	*t2258	
+t2262	:=	#5	*	#4	
+t2263	:=	v_id_IJDkT	+	t2262	
+WRITE	*t2263	
+WRITE	v_id_S6	
+WRITE	v_id_kc3u	
+WRITE	v_id_z	
+WRITE	v_id_YDY	
+WRITE	v_id_h79	
+WRITE	v_id_Tj6iUMeai	
+t2273	:=	#0	*	#4	
+t2274	:=	v_id_W1	+	t2273	
+WRITE	*t2274	
+t2278	:=	#1	*	#4	
+t2279	:=	v_id_W1	+	t2278	
+WRITE	*t2279	
+t2283	:=	#2	*	#4	
+t2284	:=	v_id_W1	+	t2283	
+WRITE	*t2284	
+t2288	:=	#3	*	#4	
+t2289	:=	v_id_W1	+	t2288	
+WRITE	*t2289	
+t2293	:=	#4	*	#4	
+t2294	:=	v_id_W1	+	t2293	
+WRITE	*t2294	
+t2298	:=	#5	*	#4	
+t2299	:=	v_id_W1	+	t2298	
+WRITE	*t2299	
+t2303	:=	#6	*	#4	
+t2304	:=	v_id_W1	+	t2303	
+WRITE	*t2304	
+WRITE	v_id_tWCD	
+WRITE	v_id_WVoiTTJFM	
+WRITE	v_id_UJ6cT1i	
+t2309	:=	#0	
+IF	v_id_D	!=	#45801	GOTO	label478	
+GOTO	label480	
+LABEL	label480	:	
+IF	#57869	!=	#0	GOTO	label478	
+GOTO	label479	
+LABEL	label478	:	
+t2309	:=	#1	
+LABEL	label479	:	
+t2313	:=	#0	
+t2315	:=	#0	
+t2316	:=	CALL	id_v	
+IF	t2316	!=	#0	GOTO	label485	
+GOTO	label484	
+LABEL	label485	:	
+IF	#4339	!=	#0	GOTO	label483	
+GOTO	label484	
+LABEL	label483	:	
+t2315	:=	#1	
+LABEL	label484	:	
+ARG	t2315	
+t2314	:=	CALL	id_rjeni	
+IF	t2314	!=	#0	GOTO	label482	
+GOTO	label481	
+LABEL	label481	:	
+t2313	:=	#1	
+LABEL	label482	:	
+ARG	t2313	
+ARG	t2309	
+t2308	:=	CALL	id_ubD	
+RETURN	t2308	
+FUNCTION	id_Q51_EuA	:
+PARAM	v_id_b8AU	
+PARAM	v_id_l1eSeCqV	
+PARAM	v_id_GX5Up	
+PARAM	v_id_iaAU	
+DEC	t2318	8
+v_id_WIxJ5	:=	&t2318	
+t2322	:=	#0	*	#4	
+t2323	:=	v_id_WIxJ5	+	t2322	
+*t2323	:=	#3289	
+t2328	:=	#1	*	#4	
+t2329	:=	v_id_WIxJ5	+	t2328	
+*t2329	:=	#49825	
+t2334	:=	#0	
+t2335	:=	v_id_GX5Up	/	v_id_GX5Up	
+IF	t2335	!=	#0	GOTO	label488	
+GOTO	label490	
+LABEL	label490	:	
+IF	v_id_l1eSeCqV	!=	#0	GOTO	label488	
+GOTO	label489	
+LABEL	label488	:	
+t2334	:=	#1	
+LABEL	label489	:	
+ARG	t2334	
+t2333	:=	CALL	id_rjeni	
+v_id_b8AU	:=	t2333	
+t2331	:=	t2333	
+IF	t2331	!=	#0	GOTO	label486	
+GOTO	label487	
+LABEL	label486	:	
+t2340	:=	#0	-	v_id_GX5Up	
+IF	v_id_b8AU	==	t2340	GOTO	label491	
+GOTO	label492	
+LABEL	label491	:	
+LABEL	label492	:	
+LABEL	label487	:	
+t2345	:=	#0	*	#4	
+t2346	:=	v_id_WIxJ5	+	t2345	
+WRITE	*t2346	
+t2350	:=	#1	*	#4	
+t2351	:=	v_id_WIxJ5	+	t2350	
+WRITE	*t2351	
+t2352	:=	#0	
+t2358	:=	#0	
+t2359	:=	#0	
+IF	#64715	!=	v_id_iaAU	GOTO	label497	
+GOTO	label498	
+LABEL	label497	:	
+t2359	:=	#1	
+LABEL	label498	:	
+IF	t2359	!=	v_id_GX5Up	GOTO	label495	
+GOTO	label496	
+LABEL	label495	:	
+t2358	:=	#1	
+LABEL	label496	:	
+t2363	:=	#14672	+	#20701	
+t2366	:=	#0	
+t2367	:=	v_id_GX5Up	/	#43085	
+IF	t2367	!=	#0	GOTO	label501	
+GOTO	label500	
+LABEL	label501	:	
+IF	v_id_GX5Up	!=	#0	GOTO	label499	
+GOTO	label500	
+LABEL	label499	:	
+t2366	:=	#1	
+LABEL	label500	:	
+ARG	t2366	
+ARG	t2363	
+ARG	t2358	
+ARG	#27702	
+t2356	:=	CALL	id_Q51_EuA	
+t2355	:=	t2356	/	#38579	
+t2376	:=	#1	*	#4	
+t2377	:=	v_id_WIxJ5	+	t2376	
+ARG	*t2377	
+t2372	:=	CALL	id_rjeni	
+t2353	:=	t2355	-	t2372	
+t2382	:=	#0	*	#4	
+t2383	:=	v_id_WIxJ5	+	t2382	
+t2354	:=	#59501	/	*t2383	
+IF	t2353	==	t2354	GOTO	label493	
+GOTO	label494	
+LABEL	label493	:	
+t2352	:=	#1	
+LABEL	label494	:	
+RETURN	t2352	
+FUNCTION	id_e1qbHF3J	:
+PARAM	v_id_W9AO7cB0	
+PARAM	v_id_u	
+DEC	v_id_VQJfJY	4
+DEC	v_id_WvGSNv7N	4
+DEC	v_id_n	4
+DEC	t2384	32
+v_id_CMzycd	:=	&t2384	
+v_id_VQJfJY	:=	#31748	
+v_id_WvGSNv7N	:=	#55592	
+v_id_n	:=	#28973	
+t2394	:=	#0	*	#4	
+t2395	:=	v_id_CMzycd	+	t2394	
+*t2395	:=	#23145	
+t2400	:=	#1	*	#4	
+t2401	:=	v_id_CMzycd	+	t2400	
+*t2401	:=	#57158	
+t2406	:=	#2	*	#4	
+t2407	:=	v_id_CMzycd	+	t2406	
+*t2407	:=	#36122	
+t2412	:=	#3	*	#4	
+t2413	:=	v_id_CMzycd	+	t2412	
+*t2413	:=	#33483	
+t2418	:=	#4	*	#4	
+t2419	:=	v_id_CMzycd	+	t2418	
+*t2419	:=	#33120	
+t2424	:=	#5	*	#4	
+t2425	:=	v_id_CMzycd	+	t2424	
+*t2425	:=	#42708	
+t2430	:=	#6	*	#4	
+t2431	:=	v_id_CMzycd	+	t2430	
+*t2431	:=	#15716	
+t2436	:=	#7	*	#4	
+t2437	:=	v_id_CMzycd	+	t2436	
+*t2437	:=	#23196	
+LABEL	label502	:	
+t2441	:=	v_id_WvGSNv7N	+	#2536	
+t2440	:=	t2441	-	v_id_WvGSNv7N	
+t2446	:=	#0	-	#3172	
+t2445	:=	#0	-	t2446	
+ARG	t2445	
+ARG	t2440	
+t2439	:=	CALL	id_e1qbHF3J	
+IF	t2439	!=	#0	GOTO	label504	
+GOTO	label503	
+LABEL	label503	:	
+t2452	:=	#8537	-	v_id_VQJfJY	
+t2455	:=	t2452	*	#4	
+t2456	:=	v_id_CMzycd	+	t2455	
+t2448	:=	v_id_WvGSNv7N	+	*t2456	
+RETURN	t2448	
+GOTO	label502	
+LABEL	label504	:	
+t2459	:=	#0	
+IF	v_id_WvGSNv7N	!=	#0	GOTO	label508	
+GOTO	label507	
+LABEL	label507	:	
+t2459	:=	#1	
+LABEL	label508	:	
+v_id_u	:=	t2459	
+t2457	:=	t2459	
+IF	t2457	!=	#0	GOTO	label505	
+GOTO	label506	
+LABEL	label505	:	
+t2461	:=	#0	
+t2465	:=	#0	
+IF	v_id_WvGSNv7N	!=	#0	GOTO	label516	
+GOTO	label515	
+LABEL	label516	:	
+IF	#48337	!=	#0	GOTO	label513	
+GOTO	label515	
+LABEL	label515	:	
+IF	#61041	!=	#0	GOTO	label513	
+GOTO	label514	
+LABEL	label513	:	
+t2465	:=	#1	
+LABEL	label514	:	
+ARG	t2465	
+t2463	:=	CALL	id_rjeni	
+t2464	:=	#0	
+t2470	:=	#0	
+t2475	:=	v_id_WvGSNv7N	*	#4	
+t2476	:=	v_id_CMzycd	+	t2475	
+IF	*t2476	!=	#12876	GOTO	label519	
+GOTO	label520	
+LABEL	label519	:	
+t2470	:=	#1	
+LABEL	label520	:	
+t2478	:=	#51626	*	v_id_u	
+t2477	:=	t2478	/	v_id_n	
+t2482	:=	#0	
+t2483	:=	v_id_WvGSNv7N	*	v_id_n	
+IF	t2483	==	#45331	GOTO	label521	
+GOTO	label522	
+LABEL	label521	:	
+t2482	:=	#1	
+LABEL	label522	:	
+ARG	v_id_W9AO7cB0	
+ARG	t2482	
+ARG	t2477	
+ARG	t2470	
+t2469	:=	CALL	id_td	
+IF	t2469	!=	#0	GOTO	label518	
+GOTO	label517	
+LABEL	label517	:	
+t2464	:=	#1	
+LABEL	label518	:	
+IF	t2463	>	t2464	GOTO	label511	
+GOTO	label512	
+LABEL	label511	:	
+t2461	:=	#1	
+LABEL	label512	:	
+t2490	:=	#0	
+t2491	:=	#0	-	#40578	
+IF	t2491	!=	v_id_VQJfJY	GOTO	label523	
+GOTO	label524	
+LABEL	label523	:	
+t2490	:=	#1	
+LABEL	label524	:	
+ARG	t2490	
+t2489	:=	CALL	id_rjeni	
+t2488	:=	#0	-	t2489	
+t2462	:=	#0	-	t2488	
+IF	t2461	>=	t2462	GOTO	label509	
+GOTO	label510	
+LABEL	label509	:	
+LABEL	label510	:	
+LABEL	label506	:	
+WRITE	v_id_VQJfJY	
+WRITE	v_id_WvGSNv7N	
+WRITE	v_id_n	
+t2500	:=	#0	*	#4	
+t2501	:=	v_id_CMzycd	+	t2500	
+WRITE	*t2501	
+t2505	:=	#1	*	#4	
+t2506	:=	v_id_CMzycd	+	t2505	
+WRITE	*t2506	
+t2510	:=	#2	*	#4	
+t2511	:=	v_id_CMzycd	+	t2510	
+WRITE	*t2511	
+t2515	:=	#3	*	#4	
+t2516	:=	v_id_CMzycd	+	t2515	
+WRITE	*t2516	
+t2520	:=	#4	*	#4	
+t2521	:=	v_id_CMzycd	+	t2520	
+WRITE	*t2521	
+t2525	:=	#5	*	#4	
+t2526	:=	v_id_CMzycd	+	t2525	
+WRITE	*t2526	
+t2530	:=	#6	*	#4	
+t2531	:=	v_id_CMzycd	+	t2530	
+WRITE	*t2531	
+t2535	:=	#7	*	#4	
+t2536	:=	v_id_CMzycd	+	t2535	
+WRITE	*t2536	
+RETURN	#50805	
+FUNCTION	id_sCjXf	:
+PARAM	v_id_FTZ	
+DEC	t2538	16
+v_id_dM	:=	&t2538	
+DEC	t2539	24
+v_id_Z4pZIKWiA	:=	&t2539	
+DEC	v_id_wZW8mYbFZ	4
+DEC	v_id_nLG5RoU	4
+DEC	v_id_XuN	4
+DEC	v_id_K_w	4
+DEC	v_id_kh1_rBMd	4
+DEC	v_id_a	4
+DEC	v_id_cqL03kw	4
+DEC	v_id_VJF	4
+DEC	v_id_qXtH9j2TH	4
+DEC	v_id_Fu	4
+DEC	v_id_q5ozRb	4
+DEC	t2540	16
+v_id_bM	:=	&t2540	
+DEC	v_id__W6L	4
+t2544	:=	#0	*	#4	
+t2545	:=	v_id_dM	+	t2544	
+*t2545	:=	#60003	
+t2550	:=	#1	*	#4	
+t2551	:=	v_id_dM	+	t2550	
+*t2551	:=	#61279	
+t2556	:=	#2	*	#4	
+t2557	:=	v_id_dM	+	t2556	
+*t2557	:=	#28355	
+t2562	:=	#3	*	#4	
+t2563	:=	v_id_dM	+	t2562	
+*t2563	:=	#15346	
+t2568	:=	#0	*	#4	
+t2569	:=	v_id_Z4pZIKWiA	+	t2568	
+*t2569	:=	#34322	
+t2574	:=	#1	*	#4	
+t2575	:=	v_id_Z4pZIKWiA	+	t2574	
+*t2575	:=	#48275	
+t2580	:=	#2	*	#4	
+t2581	:=	v_id_Z4pZIKWiA	+	t2580	
+*t2581	:=	#10777	
+t2586	:=	#3	*	#4	
+t2587	:=	v_id_Z4pZIKWiA	+	t2586	
+*t2587	:=	#28287	
+t2592	:=	#4	*	#4	
+t2593	:=	v_id_Z4pZIKWiA	+	t2592	
+*t2593	:=	#13585	
+t2598	:=	#5	*	#4	
+t2599	:=	v_id_Z4pZIKWiA	+	t2598	
+*t2599	:=	#23771	
+v_id_wZW8mYbFZ	:=	#60035	
+v_id_nLG5RoU	:=	#3641	
+v_id_XuN	:=	#52745	
+v_id_K_w	:=	#17644	
+v_id_kh1_rBMd	:=	#60799	
+v_id_a	:=	#23331	
+v_id_cqL03kw	:=	#51127	
+v_id_VJF	:=	#28383	
+v_id_qXtH9j2TH	:=	#503	
+v_id_Fu	:=	#1307	
+v_id_q5ozRb	:=	#51579	
+t2626	:=	#0	*	#4	
+t2627	:=	v_id_bM	+	t2626	
+*t2627	:=	#3039	
+t2632	:=	#1	*	#4	
+t2633	:=	v_id_bM	+	t2632	
+*t2633	:=	#4479	
+t2638	:=	#2	*	#4	
+t2639	:=	v_id_bM	+	t2638	
+*t2639	:=	#60116	
+t2644	:=	#3	*	#4	
+t2645	:=	v_id_bM	+	t2644	
+*t2645	:=	#51376	
+v_id__W6L	:=	#65521	
+LABEL	label525	:	
+t2651	:=	#0	
+t2652	:=	#7456	-	#37467	
+IF	t2652	==	v_id_kh1_rBMd	GOTO	label528	
+GOTO	label529	
+LABEL	label528	:	
+t2651	:=	#1	
+LABEL	label529	:	
+ARG	t2651	
+t2650	:=	CALL	id_sCjXf	
+t2649	:=	#0	-	t2650	
+IF	t2649	!=	#0	GOTO	label526	
+GOTO	label527	
+LABEL	label526	:	
+LABEL	label530	:	
+t2659	:=	#0	
+IF	#45316	>	v_id_q5ozRb	GOTO	label533	
+GOTO	label534	
+LABEL	label533	:	
+t2659	:=	#1	
+LABEL	label534	:	
+t2662	:=	t2659	*	#4	
+t2663	:=	v_id_dM	+	t2662	
+t2656	:=	*t2663	*	#48035	
+IF	t2656	!=	#0	GOTO	label531	
+GOTO	label532	
+LABEL	label531	:	
+t2667	:=	#3	*	#4	
+t2668	:=	v_id_Z4pZIKWiA	+	t2667	
+t2670	:=	CALL	id_v	
+t2674	:=	v_id_wZW8mYbFZ	*	#4	
+t2675	:=	v_id_dM	+	t2674	
+t2669	:=	t2670	+	*t2675	
+IF	t2669	!=	#0	GOTO	label535	
+GOTO	label537	
+LABEL	label537	:	
+t2678	:=	#0	
+IF	#43778	!=	#0	GOTO	label541	
+GOTO	label540	
+LABEL	label541	:	
+IF	#51091	!=	#0	GOTO	label538	
+GOTO	label540	
+LABEL	label540	:	
+IF	v_id_nLG5RoU	!=	#0	GOTO	label538	
+GOTO	label539	
+LABEL	label538	:	
+t2678	:=	#1	
+LABEL	label539	:	
+ARG	t2678	
+t2676	:=	CALL	id_sCjXf	
+t2677	:=	#0	
+IF	#55129	!=	#0	GOTO	label543	
+GOTO	label542	
+LABEL	label542	:	
+t2677	:=	#1	
+LABEL	label543	:	
+IF	t2676	<=	t2677	GOTO	label535	
+GOTO	label536	
+LABEL	label535	:	
+LABEL	label536	:	
+IF	#12564	!=	#0	GOTO	label545	
+GOTO	label544	
+LABEL	label544	:	
+LABEL	label545	:	
+t2686	:=	#2	*	#4	
+t2687	:=	v_id_bM	+	t2686	
+GOTO	label530	
+LABEL	label532	:	
+GOTO	label525	
+LABEL	label527	:	
+LABEL	label546	:	
+t2690	:=	CALL	id_v	
+t2688	:=	v_id_a	/	t2690	
+IF	t2688	!=	#0	GOTO	label547	
+GOTO	label548	
+LABEL	label547	:	
+DEC	v_id_Mgt	4
+DEC	v_id_rK9_	4
+DEC	v_id_MHnXfH9cCo	4
+v_id_Mgt	:=	#40851	
+v_id_rK9_	:=	#47416	
+v_id_MHnXfH9cCo	:=	#24141	
+LABEL	label549	:	
+t2702	:=	#0	
+IF	v_id_VJF	!=	#0	GOTO	label553	
+GOTO	label552	
+LABEL	label552	:	
+t2702	:=	#1	
+LABEL	label553	:	
+t2701	:=	t2702	/	v_id_nLG5RoU	
+v_id_XuN	:=	#51058	
+t2705	:=	#51058	
+t2709	:=	#0	-	v_id_nLG5RoU	
+t2708	:=	#0	-	t2709	
+ARG	t2708	
+ARG	t2705	
+ARG	t2701	
+ARG	#35350	
+t2699	:=	CALL	id_td	
+t2712	:=	#0	-	#11350	
+t2711	:=	#0	-	t2712	
+t2697	:=	t2699	+	t2711	
+v_id__W6L	:=	#52994	
+t2716	:=	#52994	
+t2719	:=	#0	
+t2720	:=	#46321	*	#34681	
+IF	t2720	>=	#38585	GOTO	label554	
+GOTO	label555	
+LABEL	label554	:	
+t2719	:=	#1	
+LABEL	label555	:	
+t2724	:=	#0	
+t2725	:=	v_id_wZW8mYbFZ	/	v_id_cqL03kw	
+IF	t2725	!=	v_id_wZW8mYbFZ	GOTO	label556	
+GOTO	label557	
+LABEL	label556	:	
+t2724	:=	#1	
+LABEL	label557	:	
+t2729	:=	#0	
+t2733	:=	#3	*	#4	
+t2734	:=	v_id_Z4pZIKWiA	+	t2733	
+IF	*t2734	!=	#0	GOTO	label560	
+GOTO	label559	
+LABEL	label560	:	
+IF	v_id_VJF	!=	#0	GOTO	label558	
+GOTO	label559	
+LABEL	label558	:	
+t2729	:=	#1	
+LABEL	label559	:	
+ARG	t2729	
+ARG	t2724	
+ARG	t2719	
+ARG	t2716	
+t2715	:=	CALL	id_Q51_EuA	
+t2714	:=	t2715	/	#39892	
+t2698	:=	#0	-	t2714	
+IF	t2697	!=	t2698	GOTO	label550	
+GOTO	label551	
+LABEL	label550	:	
+LABEL	label561	:	
+t2743	:=	#0	*	#4	
+t2744	:=	v_id_bM	+	t2743	
+t2739	:=	*t2744	/	#44372	
+t2746	:=	#0	-	#55329	
+t2738	:=	t2739	*	t2746	
+t2750	:=	v_id_cqL03kw	/	#24065	
+t2753	:=	#0	-	#44357	
+t2749	:=	t2750	/	t2753	
+t2748	:=	#0	-	t2749	
+t2737	:=	t2738	-	t2748	
+IF	t2737	!=	#0	GOTO	label562	
+GOTO	label563	
+LABEL	label562	:	
+t2755	:=	#0	-	v_id_nLG5RoU	
+IF	t2755	!=	#0	GOTO	label565	
+GOTO	label564	
+LABEL	label564	:	
+t2759	:=	#0	-	v_id__W6L	
+t2764	:=	v_id_qXtH9j2TH	*	#4	
+t2765	:=	v_id_dM	+	t2764	
+t2758	:=	t2759	-	*t2765	
+IF	#62785	>=	t2758	GOTO	label566	
+GOTO	label567	
+LABEL	label566	:	
+LABEL	label567	:	
+GOTO	label568	
+LABEL	label565	:	
+t2766	:=	#0	
+t2768	:=	#0	
+IF	v_id_rK9_	>=	#61532	GOTO	label573	
+GOTO	label574	
+LABEL	label573	:	
+t2768	:=	#1	
+LABEL	label574	:	
+t2769	:=	v_id_Fu	*	#24137	
+IF	t2768	==	t2769	GOTO	label571	
+GOTO	label572	
+LABEL	label571	:	
+t2766	:=	#1	
+LABEL	label572	:	
+t2767	:=	v_id_wZW8mYbFZ	/	v_id_nLG5RoU	
+IF	t2766	<=	t2767	GOTO	label569	
+GOTO	label570	
+LABEL	label569	:	
+LABEL	label570	:	
+LABEL	label568	:	
+GOTO	label561	
+LABEL	label563	:	
+GOTO	label549	
+LABEL	label551	:	
+t2779	:=	#0	-	v_id_cqL03kw	
+t2778	:=	#0	-	t2779	
+t2781	:=	t2778	*	#4	
+t2782	:=	v_id_dM	+	t2781	
+IF	*t2782	!=	#0	GOTO	label575	
+GOTO	label576	
+LABEL	label575	:	
+t2787	:=	#0	
+IF	v_id_Mgt	!=	#0	GOTO	label580	
+GOTO	label579	
+LABEL	label579	:	
+t2787	:=	#1	
+LABEL	label580	:	
+t2785	:=	#45284	-	t2787	
+t2783	:=	t2785	-	v_id_MHnXfH9cCo	
+IF	t2783	>	#18732	GOTO	label577	
+GOTO	label578	
+LABEL	label577	:	
+LABEL	label578	:	
+GOTO	label581	
+LABEL	label576	:	
+DEC	v_id_onmcZZ2	4
+v_id_onmcZZ2	:=	#63920	
+t2794	:=	#0	
+t2795	:=	#23527	*	#4288	
+IF	t2795	!=	#0	GOTO	label587	
+GOTO	label586	
+LABEL	label587	:	
+IF	v_id_rK9_	!=	#0	GOTO	label585	
+GOTO	label586	
+LABEL	label585	:	
+t2794	:=	#1	
+LABEL	label586	:	
+t2799	:=	#0	
+t2800	:=	v_id_FTZ	+	v_id_qXtH9j2TH	
+IF	t2800	!=	#0	GOTO	label588	
+GOTO	label590	
+LABEL	label590	:	
+IF	v_id_rK9_	!=	#0	GOTO	label588	
+GOTO	label589	
+LABEL	label588	:	
+t2799	:=	#1	
+LABEL	label589	:	
+t2804	:=	#0	
+t2805	:=	#0	
+IF	v_id_MHnXfH9cCo	<	v_id_MHnXfH9cCo	GOTO	label593	
+GOTO	label594	
+LABEL	label593	:	
+t2805	:=	#1	
+LABEL	label594	:	
+IF	t2805	>=	#53513	GOTO	label591	
+GOTO	label592	
+LABEL	label591	:	
+t2804	:=	#1	
+LABEL	label592	:	
+t2809	:=	#0	
+t2810	:=	v_id_wZW8mYbFZ	/	#36091	
+IF	t2810	!=	#0	GOTO	label597	
+GOTO	label596	
+LABEL	label597	:	
+IF	v_id_Mgt	!=	#0	GOTO	label595	
+GOTO	label596	
+LABEL	label595	:	
+t2809	:=	#1	
+LABEL	label596	:	
+ARG	t2809	
+ARG	t2804	
+ARG	t2799	
+ARG	t2794	
+t2793	:=	CALL	id_Q51_EuA	
+t2792	:=	t2793	/	#38119	
+IF	t2792	!=	#0	GOTO	label584	
+GOTO	label583	
+LABEL	label584	:	
+t2816	:=	v_id_VJF	/	#53883	
+t2815	:=	t2816	/	v_id_onmcZZ2	
+IF	t2815	!=	#0	GOTO	label582	
+GOTO	label583	
+LABEL	label582	:	
+LABEL	label583	:	
+LABEL	label581	:	
+t2820	:=	CALL	id_v	
+GOTO	label546	
+LABEL	label548	:	
+v_id__W6L	:=	v_id_qXtH9j2TH	
+t2825	:=	v_id_qXtH9j2TH	
+t2829	:=	v_id_VJF	/	#11407	
+t2828	:=	t2829	+	v_id_cqL03kw	
+ARG	t2828	
+ARG	t2825	
+t2824	:=	CALL	id_ubD	
+t2833	:=	#19999	/	v_id_wZW8mYbFZ	
+t2823	:=	t2824	+	t2833	
+v_id_XuN	:=	t2823	
+t2821	:=	t2823	
+IF	t2821	!=	#0	GOTO	label598	
+GOTO	label599	
+LABEL	label598	:	
+t2836	:=	#0	
+t2841	:=	#0	
+IF	v_id_FTZ	!=	#0	GOTO	label605	
+GOTO	label604	
+LABEL	label604	:	
+t2841	:=	#1	
+LABEL	label605	:	
+t2840	:=	t2841	/	#12488	
+t2838	:=	t2840	*	v_id_K_w	
+t2839	:=	#0	
+t2845	:=	#0	-	v_id_nLG5RoU	
+IF	t2845	!=	#0	GOTO	label607	
+GOTO	label606	
+LABEL	label606	:	
+t2839	:=	#1	
+LABEL	label607	:	
+IF	t2838	==	t2839	GOTO	label602	
+GOTO	label603	
+LABEL	label602	:	
+t2836	:=	#1	
+LABEL	label603	:	
+t2848	:=	#46757	*	#5521	
+t2851	:=	CALL	id_v	
+t2847	:=	t2848	/	t2851	
+t2837	:=	#0	-	t2847	
+IF	t2836	==	t2837	GOTO	label600	
+GOTO	label601	
+LABEL	label600	:	
+LABEL	label601	:	
+GOTO	label608	
+LABEL	label599	:	
+LABEL	label609	:	
+t2852	:=	#0	
+t2856	:=	#23839	*	v_id_cqL03kw	
+t2859	:=	#0	-	v_id_Fu	
+t2854	:=	t2856	/	t2859	
+t2855	:=	CALL	id_v	
+IF	t2854	!=	t2855	GOTO	label612	
+GOTO	label613	
+LABEL	label612	:	
+t2852	:=	#1	
+LABEL	label613	:	
+IF	t2852	!=	#34216	GOTO	label610	
+GOTO	label611	
+LABEL	label610	:	
+t2863	:=	#0	
+t2865	:=	#0	
+IF	#51843	!=	#0	GOTO	label616	
+GOTO	label617	
+LABEL	label616	:	
+t2865	:=	#1	
+LABEL	label617	:	
+t2867	:=	#58520	*	#7265	
+t2870	:=	#61012	*	#28169	
+v_id__W6L	:=	#47158	
+t2873	:=	#47158	
+ARG	t2873	
+ARG	t2870	
+ARG	t2867	
+ARG	t2865	
+t2864	:=	CALL	id_td	
+IF	t2864	!=	#0	GOTO	label615	
+GOTO	label614	
+LABEL	label614	:	
+t2863	:=	#1	
+LABEL	label615	:	
+t2862	:=	t2863	/	#859	
+t2877	:=	#0	
+IF	v_id_q5ozRb	!=	#0	GOTO	label619	
+GOTO	label618	
+LABEL	label618	:	
+t2877	:=	#1	
+LABEL	label619	:	
+t2861	:=	t2862	+	t2877	
+RETURN	t2861	
+GOTO	label609	
+LABEL	label611	:	
+LABEL	label608	:	
+t2882	:=	#0	*	#4	
+t2883	:=	v_id_dM	+	t2882	
+WRITE	*t2883	
+t2887	:=	#1	*	#4	
+t2888	:=	v_id_dM	+	t2887	
+WRITE	*t2888	
+t2892	:=	#2	*	#4	
+t2893	:=	v_id_dM	+	t2892	
+WRITE	*t2893	
+t2897	:=	#3	*	#4	
+t2898	:=	v_id_dM	+	t2897	
+WRITE	*t2898	
+t2902	:=	#0	*	#4	
+t2903	:=	v_id_Z4pZIKWiA	+	t2902	
+WRITE	*t2903	
+t2907	:=	#1	*	#4	
+t2908	:=	v_id_Z4pZIKWiA	+	t2907	
+WRITE	*t2908	
+t2912	:=	#2	*	#4	
+t2913	:=	v_id_Z4pZIKWiA	+	t2912	
+WRITE	*t2913	
+t2917	:=	#3	*	#4	
+t2918	:=	v_id_Z4pZIKWiA	+	t2917	
+WRITE	*t2918	
+t2922	:=	#4	*	#4	
+t2923	:=	v_id_Z4pZIKWiA	+	t2922	
+WRITE	*t2923	
+t2927	:=	#5	*	#4	
+t2928	:=	v_id_Z4pZIKWiA	+	t2927	
+WRITE	*t2928	
+WRITE	v_id_wZW8mYbFZ	
+WRITE	v_id_nLG5RoU	
+WRITE	v_id_XuN	
+WRITE	v_id_K_w	
+WRITE	v_id_kh1_rBMd	
+WRITE	v_id_a	
+WRITE	v_id_cqL03kw	
+WRITE	v_id_VJF	
+WRITE	v_id_qXtH9j2TH	
+WRITE	v_id_Fu	
+WRITE	v_id_q5ozRb	
+t2943	:=	#0	*	#4	
+t2944	:=	v_id_bM	+	t2943	
+WRITE	*t2944	
+t2948	:=	#1	*	#4	
+t2949	:=	v_id_bM	+	t2948	
+WRITE	*t2949	
+t2953	:=	#2	*	#4	
+t2954	:=	v_id_bM	+	t2953	
+WRITE	*t2954	
+t2958	:=	#3	*	#4	
+t2959	:=	v_id_bM	+	t2958	
+WRITE	*t2959	
+WRITE	v_id__W6L	
+t2961	:=	#0	
+t2962	:=	#0	-	v_id_wZW8mYbFZ	
+IF	t2962	!=	#0	GOTO	label621	
+GOTO	label620	
+LABEL	label620	:	
+t2961	:=	#1	
+LABEL	label621	:	
+RETURN	t2961	
+FUNCTION	id_cBloHCRyb	:
+DEC	v_id_dTES	4
+v_id_dTES	:=	#25994	
+t2966	:=	#0	
+IF	v_id_dTES	!=	#0	GOTO	label622	
+GOTO	label625	
+LABEL	label625	:	
+IF	#46017	!=	#0	GOTO	label622	
+GOTO	label624	
+LABEL	label624	:	
+IF	v_id_dTES	!=	#0	GOTO	label622	
+GOTO	label623	
+LABEL	label622	:	
+t2966	:=	#1	
+LABEL	label623	:	
+ARG	t2966	
+t2970	:=	CALL	id_rjeni	
+WRITE	v_id_dTES	
+RETURN	#24923	
+FUNCTION	main	:
+t2973	:=	CALL	id_cBloHCRyb	
+WRITE	t2973	
+RETURN	#0	

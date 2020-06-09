@@ -1,0 +1,68 @@
+FUNCTION	main	:
+DEC	t0	40
+v_primes	:=	&t0	
+DEC	v_N	4
+v_N	:=	#10	
+DEC	v_pc	4
+DEC	v_m	4
+DEC	v_k	4
+t4	:=	#0	*	#4	
+t5	:=	v_primes	+	t4	
+*t5	:=	#2	
+v_pc	:=	#1	
+v_m	:=	#3	
+LABEL	label0	:	
+IF	v_pc	<	v_N	GOTO	label1	
+GOTO	label2	
+LABEL	label1	:	
+v_k	:=	#0	
+LABEL	label3	:	
+t20	:=	v_k	*	#4	
+t21	:=	v_primes	+	t20	
+t25	:=	v_k	*	#4	
+t26	:=	v_primes	+	t25	
+t15	:=	*t21	*	*t26	
+IF	t15	<=	v_m	GOTO	label4	
+GOTO	label5	
+LABEL	label4	:	
+t32	:=	v_k	*	#4	
+t33	:=	v_primes	+	t32	
+t39	:=	v_k	*	#4	
+t40	:=	v_primes	+	t39	
+t34	:=	v_m	/	*t40	
+t28	:=	*t33	*	t34	
+IF	v_m	==	t28	GOTO	label6	
+GOTO	label7	
+LABEL	label6	:	
+t42	:=	v_m	+	#2	
+v_m	:=	t42	
+v_k	:=	#1	
+GOTO	label8	
+LABEL	label7	:	
+t48	:=	v_k	+	#1	
+v_k	:=	t48	
+LABEL	label8	:	
+GOTO	label3	
+LABEL	label5	:	
+t54	:=	v_pc	*	#4	
+t55	:=	v_primes	+	t54	
+*t55	:=	v_m	
+t58	:=	v_pc	+	#1	
+v_pc	:=	t58	
+t62	:=	v_m	+	#2	
+v_m	:=	t62	
+GOTO	label0	
+LABEL	label2	:	
+v_k	:=	#0	
+LABEL	label9	:	
+IF	v_k	<	v_pc	GOTO	label10	
+GOTO	label11	
+LABEL	label10	:	
+t72	:=	v_k	*	#4	
+t73	:=	v_primes	+	t72	
+WRITE	*t73	
+t75	:=	v_k	+	#1	
+v_k	:=	t75	
+GOTO	label9	
+LABEL	label11	:	
+RETURN	#0	

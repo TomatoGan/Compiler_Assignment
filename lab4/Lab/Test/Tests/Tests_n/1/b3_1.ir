@@ -1,0 +1,96 @@
+FUNCTION	Joseph	:
+PARAM	v_LEN	
+DEC	t0	400
+v_a	:=	&t0	
+DEC	v_i	4
+v_i	:=	#0	
+DEC	v_leftCount	4
+v_leftCount	:=	v_LEN	
+DEC	v_index	4
+v_index	:=	#0	
+DEC	v_count	4
+v_count	:=	#0	
+LABEL	label0	:	
+IF	v_i	<	v_LEN	GOTO	label1	
+GOTO	label2	
+LABEL	label1	:	
+t6	:=	v_i	*	#4	
+t7	:=	v_a	+	t6	
+*t7	:=	#1	
+t10	:=	v_i	+	#1	
+v_i	:=	t10	
+GOTO	label0	
+LABEL	label2	:	
+LABEL	label3	:	
+IF	v_leftCount	>	#2	GOTO	label4	
+GOTO	label5	
+LABEL	label4	:	
+t19	:=	v_index	*	#4	
+t20	:=	v_a	+	t19	
+IF	*t20	==	#1	GOTO	label6	
+GOTO	label7	
+LABEL	label6	:	
+t22	:=	v_count	+	#1	
+v_count	:=	t22	
+IF	#3	==	v_count	GOTO	label8	
+GOTO	label9	
+LABEL	label8	:	
+t30	:=	v_index	*	#4	
+t31	:=	v_a	+	t30	
+*t31	:=	#0	
+v_count	:=	#0	
+t36	:=	v_leftCount	-	#1	
+v_leftCount	:=	t36	
+LABEL	label9	:	
+LABEL	label7	:	
+t40	:=	v_index	+	#1	
+v_index	:=	t40	
+IF	v_index	==	v_LEN	GOTO	label10	
+GOTO	label11	
+LABEL	label10	:	
+v_index	:=	#0	
+LABEL	label11	:	
+GOTO	label3	
+LABEL	label5	:	
+v_i	:=	#0	
+LABEL	label12	:	
+IF	v_i	<	v_LEN	GOTO	label13	
+GOTO	label14	
+LABEL	label13	:	
+t55	:=	v_i	*	#4	
+t56	:=	v_a	+	t55	
+IF	#1	==	*t56	GOTO	label15	
+GOTO	label16	
+LABEL	label15	:	
+t57	:=	v_i	+	#1	
+WRITE	t57	
+LABEL	label16	:	
+t61	:=	v_i	+	#1	
+v_i	:=	t61	
+GOTO	label12	
+LABEL	label14	:	
+RETURN	#0	
+FUNCTION	main	:
+DEC	v_N	4
+READ	t66	
+v_N	:=	t66	
+t67	:=	#0	
+IF	v_N	>	#3	GOTO	label21	
+GOTO	label20	
+LABEL	label21	:	
+IF	v_N	<=	#100	GOTO	label19	
+GOTO	label20	
+LABEL	label19	:	
+t67	:=	#1	
+LABEL	label20	:	
+IF	t67	!=	#0	GOTO	label18	
+GOTO	label17	
+LABEL	label17	:	
+t72	:=	#0	-	#1	
+WRITE	t72	
+GOTO	label22	
+LABEL	label18	:	
+ARG	v_N	
+t75	:=	CALL	Joseph	
+LABEL	label22	:	
+RETURN	#0	

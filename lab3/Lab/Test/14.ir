@@ -1,0 +1,79 @@
+FUNCTION	print	:
+PARAM	v_array	
+PARAM	v_len	
+DEC	v_i1	4
+v_i1	:=	#0	
+LABEL	label0	:	
+IF	v_i1	<	v_len	GOTO	label1	
+GOTO	label2	
+LABEL	label1	:	
+t5	:=	v_i1	*	#4	
+t6	:=	v_array	+	t5	
+WRITE	*t6	
+t8	:=	v_i1	+	#1	
+v_i1	:=	t8	
+GOTO	label0	
+LABEL	label2	:	
+RETURN	#0	
+FUNCTION	InnerP	:
+PARAM	v_array1	
+PARAM	v_array2	
+DEC	v_result	4
+v_result	:=	#0	
+DEC	v_i	4
+v_i	:=	#0	
+DEC	v_N	4
+v_N	:=	#3	
+LABEL	label3	:	
+IF	v_i	<	v_N	GOTO	label4	
+GOTO	label5	
+LABEL	label4	:	
+t21	:=	v_i	*	#4	
+t22	:=	v_array1	+	t21	
+t26	:=	v_i	*	#4	
+t27	:=	v_array2	+	t26	
+t17	:=	*t22	*	*t27	
+t15	:=	v_result	+	t17	
+v_result	:=	t15	
+t29	:=	v_i	+	#1	
+v_i	:=	t29	
+GOTO	label3	
+LABEL	label5	:	
+RETURN	v_result	
+FUNCTION	main	:
+DEC	t33	12
+v_p	:=	&t33	
+DEC	t34	12
+v_q	:=	&t34	
+DEC	v_k	4
+v_k	:=	#0	
+DEC	v_M	4
+v_M	:=	#3	
+LABEL	label6	:	
+IF	v_k	<	v_M	GOTO	label7	
+GOTO	label8	
+LABEL	label7	:	
+t40	:=	v_k	*	#4	
+t41	:=	v_p	+	t40	
+t42	:=	v_k	*	v_k	
+*t41	:=	t42	
+t48	:=	v_k	*	#4	
+t49	:=	v_q	+	t48	
+t51	:=	#2	*	v_k	
+t50	:=	t51	+	#1	
+*t49	:=	t50	
+t56	:=	v_k	+	#1	
+v_k	:=	t56	
+GOTO	label6	
+LABEL	label8	:	
+ARG	#3	
+ARG	v_p	
+t61	:=	CALL	print	
+ARG	#3	
+ARG	v_q	
+t64	:=	CALL	print	
+ARG	v_q	
+ARG	v_p	
+t65	:=	CALL	InnerP	
+WRITE	t65	
+RETURN	#0	

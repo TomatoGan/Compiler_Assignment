@@ -1,0 +1,128 @@
+FUNCTION	Swap	:
+PARAM	v_a	
+PARAM	v_l	
+PARAM	v_h	
+DEC	v_temp	4
+t4	:=	v_l	*	#4	
+t5	:=	v_a	+	t4	
+v_temp	:=	*t5	
+t9	:=	v_l	*	#4	
+t10	:=	v_a	+	t9	
+t14	:=	v_h	*	#4	
+t15	:=	v_a	+	t14	
+*t10	:=	*t15	
+t19	:=	v_h	*	#4	
+t20	:=	v_a	+	t19	
+*t20	:=	v_temp	
+RETURN	#0	
+FUNCTION	Partition	:
+PARAM	v_b	
+PARAM	v_low	
+PARAM	v_high	
+DEC	v_base	4
+t25	:=	v_low	*	#4	
+t26	:=	v_b	+	t25	
+v_base	:=	*t26	
+LABEL	label0	:	
+IF	v_low	<	v_high	GOTO	label1	
+GOTO	label2	
+LABEL	label1	:	
+LABEL	label3	:	
+IF	v_low	<	v_high	GOTO	label6	
+GOTO	label5	
+LABEL	label6	:	
+t35	:=	v_high	*	#4	
+t36	:=	v_b	+	t35	
+IF	*t36	>=	v_base	GOTO	label4	
+GOTO	label5	
+LABEL	label4	:	
+t38	:=	v_high	-	#1	
+v_high	:=	t38	
+GOTO	label3	
+LABEL	label5	:	
+ARG	v_high	
+ARG	v_low	
+ARG	v_b	
+t44	:=	CALL	Swap	
+LABEL	label7	:	
+IF	v_low	<	v_high	GOTO	label10	
+GOTO	label9	
+LABEL	label10	:	
+t51	:=	v_low	*	#4	
+t52	:=	v_b	+	t51	
+IF	*t52	<=	v_base	GOTO	label8	
+GOTO	label9	
+LABEL	label8	:	
+t54	:=	v_low	+	#1	
+v_low	:=	t54	
+GOTO	label7	
+LABEL	label9	:	
+ARG	v_high	
+ARG	v_low	
+ARG	v_b	
+t60	:=	CALL	Swap	
+GOTO	label0	
+LABEL	label2	:	
+RETURN	v_low	
+FUNCTION	QuickSort	:
+PARAM	v_c	
+PARAM	v_low1	
+PARAM	v_high1	
+IF	v_low1	<	v_high1	GOTO	label11	
+GOTO	label12	
+LABEL	label11	:	
+DEC	v_base1	4
+ARG	v_high1	
+ARG	v_low1	
+ARG	v_c	
+v_base1	:=	CALL	Partition	
+v_base1	:=	v_base1	
+t69	:=	v_base1	-	#1	
+ARG	t69	
+ARG	v_low1	
+ARG	v_c	
+t72	:=	CALL	QuickSort	
+t74	:=	v_base1	+	#1	
+ARG	v_high1	
+ARG	t74	
+ARG	v_c	
+t78	:=	CALL	QuickSort	
+LABEL	label12	:	
+RETURN	#0	
+FUNCTION	main	:
+DEC	v_n	4
+v_n	:=	#8	
+DEC	t80	32
+v_arr	:=	&t80	
+DEC	v_i	4
+v_i	:=	#0	
+LABEL	label13	:	
+IF	v_i	<	v_n	GOTO	label14	
+GOTO	label15	
+LABEL	label14	:	
+t86	:=	v_i	*	#4	
+t87	:=	v_arr	+	t86	
+READ	t88	
+*t87	:=	t88	
+t90	:=	v_i	+	#1	
+v_i	:=	t90	
+GOTO	label13	
+LABEL	label15	:	
+t95	:=	v_n	-	#1	
+ARG	t95	
+ARG	#0	
+ARG	v_arr	
+t98	:=	CALL	QuickSort	
+v_i	:=	#0	
+LABEL	label16	:	
+IF	v_i	<	v_n	GOTO	label17	
+GOTO	label18	
+LABEL	label17	:	
+t106	:=	v_i	*	#4	
+t107	:=	v_arr	+	t106	
+WRITE	*t107	
+t109	:=	v_i	+	#1	
+v_i	:=	t109	
+GOTO	label16	
+LABEL	label18	:	
+RETURN	#0	

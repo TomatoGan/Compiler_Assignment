@@ -1,0 +1,102 @@
+FUNCTION	main	:
+DEC	v_a	4
+DEC	v_b	4
+DEC	v_c	4
+DEC	v_cirf	4
+DEC	v_type	4
+READ	t1	
+v_a	:=	t1	
+READ	t3	
+v_b	:=	t3	
+READ	t5	
+v_c	:=	t5	
+t6	:=	v_a	+	v_b	
+IF	t6	>	v_c	GOTO	label3	
+GOTO	label1	
+LABEL	label3	:	
+t10	:=	v_b	+	v_c	
+IF	t10	>	v_a	GOTO	label2	
+GOTO	label1	
+LABEL	label2	:	
+t14	:=	v_a	+	v_c	
+IF	t14	>	v_b	GOTO	label0	
+GOTO	label1	
+LABEL	label0	:	
+t20	:=	v_a	+	v_b	
+t19	:=	t20	+	v_c	
+v_cirf	:=	t19	
+IF	v_a	==	v_b	GOTO	label6	
+GOTO	label5	
+LABEL	label6	:	
+IF	v_a	==	v_c	GOTO	label4	
+GOTO	label5	
+LABEL	label4	:	
+v_type	:=	#1	
+GOTO	label7	
+LABEL	label5	:	
+IF	v_a	==	v_b	GOTO	label8	
+GOTO	label11	
+LABEL	label11	:	
+IF	v_a	==	v_c	GOTO	label8	
+GOTO	label10	
+LABEL	label10	:	
+IF	v_b	==	v_c	GOTO	label8	
+GOTO	label9	
+LABEL	label8	:	
+v_type	:=	#2	
+GOTO	label12	
+LABEL	label9	:	
+t38	:=	
+t41	:=	v_a	*	v_a	
+t44	:=	v_b	*	v_b	
+t39	:=	t41	+	t44	
+t40	:=	v_c	*	v_c	
+IF	t39	==	t40	GOTO	label17	
+GOTO	label18	
+LABEL	label17	:	
+t38	:=	#1	
+LABEL	label18	:	
+IF	t38	!=	#0	GOTO	label13	
+GOTO	label16	
+LABEL	label16	:	
+t49	:=	
+t52	:=	v_a	*	v_a	
+t55	:=	v_c	*	v_c	
+t50	:=	t52	+	t55	
+t51	:=	v_b	*	v_b	
+IF	t50	==	t51	GOTO	label19	
+GOTO	label20	
+LABEL	label19	:	
+t49	:=	#1	
+LABEL	label20	:	
+IF	t49	!=	#0	GOTO	label13	
+GOTO	label15	
+LABEL	label15	:	
+t60	:=	
+t63	:=	v_b	*	v_b	
+t66	:=	v_c	*	v_c	
+t61	:=	t63	+	t66	
+t62	:=	v_a	*	v_a	
+IF	t61	==	t62	GOTO	label21	
+GOTO	label22	
+LABEL	label21	:	
+t60	:=	#1	
+LABEL	label22	:	
+IF	t60	!=	#0	GOTO	label13	
+GOTO	label14	
+LABEL	label13	:	
+v_type	:=	#3	
+GOTO	label23	
+LABEL	label14	:	
+v_type	:=	#0	
+LABEL	label23	:	
+LABEL	label12	:	
+LABEL	label7	:	
+WRITE	v_type	
+WRITE	v_cirf	
+GOTO	label24	
+LABEL	label1	:	
+t77	:=	#0	-	#1	
+WRITE	t77	
+LABEL	label24	:	
+RETURN	#0	

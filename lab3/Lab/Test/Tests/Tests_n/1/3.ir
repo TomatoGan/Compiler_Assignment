@@ -1,0 +1,46 @@
+FUNCTION	main	:
+DEC	v_i	4
+DEC	v_tu1	4
+DEC	v_tu2	4
+DEC	v_tu3	4
+DEC	v_m	4
+v_tu1	:=	#1	
+v_tu2	:=	#1	
+READ	t5	
+v_m	:=	t5	
+IF	v_m	<	#1	GOTO	label0	
+GOTO	label1	
+LABEL	label0	:	
+WRITE	#0	
+GOTO	label2	
+LABEL	label1	:	
+IF	v_m	==	#1	GOTO	label3	
+GOTO	label5	
+LABEL	label5	:	
+IF	v_m	==	#2	GOTO	label3	
+GOTO	label4	
+LABEL	label3	:	
+WRITE	#1	
+GOTO	label6	
+LABEL	label4	:	
+IF	v_m	>	#2	GOTO	label7	
+GOTO	label8	
+LABEL	label7	:	
+v_i	:=	#3	
+LABEL	label9	:	
+IF	v_i	<=	v_m	GOTO	label10	
+GOTO	label11	
+LABEL	label10	:	
+t21	:=	v_tu1	+	v_tu2	
+v_tu3	:=	t21	
+v_tu1	:=	v_tu2	
+v_tu2	:=	v_tu3	
+t29	:=	v_i	+	#1	
+v_i	:=	t29	
+GOTO	label9	
+LABEL	label11	:	
+WRITE	v_tu3	
+LABEL	label8	:	
+LABEL	label6	:	
+LABEL	label2	:	
+RETURN	#0	

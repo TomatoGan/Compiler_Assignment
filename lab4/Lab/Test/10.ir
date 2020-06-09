@@ -1,0 +1,77 @@
+FUNCTION	Josepy	:
+PARAM	v_n	
+PARAM	v_m	
+DEC	t0	400
+v_people	:=	&t0	
+DEC	v_i	4
+v_i	:=	#1	
+DEC	v_j	4
+v_j	:=	#0	
+DEC	v_k	4
+v_k	:=	#0	
+DEC	v_num	4
+v_num	:=	#0	
+LABEL	label0	:	
+IF	v_i	<=	v_n	GOTO	label1	
+GOTO	label2	
+LABEL	label1	:	
+t6	:=	v_i	*	#4	
+t7	:=	v_people	+	t6	
+*t7	:=	#1	
+t10	:=	v_i	+	#1	
+v_i	:=	t10	
+GOTO	label0	
+LABEL	label2	:	
+v_i	:=	#1	
+LABEL	label3	:	
+IF	v_i	<=	v_n	GOTO	label4	
+GOTO	label5	
+LABEL	label4	:	
+t21	:=	v_i	*	#4	
+t22	:=	v_people	+	t21	
+IF	*t22	==	#1	GOTO	label6	
+GOTO	label7	
+LABEL	label6	:	
+t29	:=	v_i	*	#4	
+t30	:=	v_people	+	t29	
+t24	:=	v_j	+	*t30	
+v_j	:=	t24	
+IF	v_j	==	v_m	GOTO	label8	
+GOTO	label9	
+LABEL	label8	:	
+WRITE	v_i	
+v_j	:=	#0	
+t39	:=	v_i	*	#4	
+t40	:=	v_people	+	t39	
+*t40	:=	#0	
+t43	:=	v_k	+	#1	
+v_k	:=	t43	
+LABEL	label9	:	
+IF	v_k	==	v_n	GOTO	label10	
+GOTO	label11	
+LABEL	label10	:	
+v_num	:=	v_i	
+RETURN	#0	
+LABEL	label11	:	
+LABEL	label7	:	
+IF	v_i	==	v_n	GOTO	label12	
+GOTO	label13	
+LABEL	label12	:	
+v_i	:=	#0	
+LABEL	label13	:	
+t56	:=	v_i	+	#1	
+v_i	:=	t56	
+GOTO	label3	
+LABEL	label5	:	
+RETURN	#0	
+FUNCTION	main	:
+DEC	v_a	4
+DEC	v_b	4
+READ	t61	
+v_a	:=	t61	
+READ	t63	
+v_b	:=	t63	
+ARG	v_b	
+ARG	v_a	
+t66	:=	CALL	Josepy	
+RETURN	#0	

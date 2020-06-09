@@ -1,0 +1,41 @@
+FUNCTION	mod	:
+PARAM	v_x	
+PARAM	v_n	
+t3	:=	v_x	/	v_n	
+t2	:=	t3	*	v_n	
+t0	:=	v_x	-	t2	
+RETURN	t0	
+FUNCTION	main	:
+DEC	v_year	4
+DEC	v_a	4
+READ	t8	
+v_year	:=	t8	
+ARG	#400	
+ARG	v_year	
+t9	:=	CALL	mod	
+IF	t9	==	#0	GOTO	label0	
+GOTO	label1	
+LABEL	label0	:	
+v_a	:=	#1	
+GOTO	label2	
+LABEL	label1	:	
+ARG	#4	
+ARG	v_year	
+t15	:=	CALL	mod	
+IF	t15	==	#0	GOTO	label5	
+GOTO	label4	
+LABEL	label5	:	
+ARG	#100	
+ARG	v_year	
+t19	:=	CALL	mod	
+IF	t19	!=	#0	GOTO	label3	
+GOTO	label4	
+LABEL	label3	:	
+v_a	:=	#1	
+GOTO	label6	
+LABEL	label4	:	
+v_a	:=	#0	
+LABEL	label6	:	
+LABEL	label2	:	
+WRITE	v_a	
+RETURN	#0	

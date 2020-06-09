@@ -1,0 +1,216 @@
+FUNCTION	display	:
+PARAM	v_chess2	
+DEC	t0	64
+v_chessplate	:=	&t0	
+DEC	v_i2	4
+v_i2	:=	#0	
+DEC	v_j2	4
+v_j2	:=	#0	
+LABEL	label0	:	
+IF	v_i2	<	#4	GOTO	label1	
+GOTO	label2	
+LABEL	label1	:	
+v_j2	:=	#0	
+LABEL	label3	:	
+IF	v_j2	<	#4	GOTO	label4	
+GOTO	label5	
+LABEL	label4	:	
+t11	:=	v_i2	*	#16	
+t8	:=	v_chessplate	+	t11	
+t13	:=	v_j2	*	#4	
+t14	:=	t8	+	t13	
+t18	:=	v_i2	*	#4	
+t17	:=	t18	+	v_j2	
+t22	:=	t17	*	#4	
+t23	:=	v_chess2	+	t22	
+*t14	:=	*t23	
+t25	:=	v_j2	+	#1	
+v_j2	:=	t25	
+GOTO	label3	
+LABEL	label5	:	
+t29	:=	v_i2	+	#1	
+v_i2	:=	t29	
+GOTO	label0	
+LABEL	label2	:	
+v_i2	:=	#0	
+v_j2	:=	#0	
+LABEL	label6	:	
+IF	v_i2	<	#4	GOTO	label7	
+GOTO	label8	
+LABEL	label7	:	
+v_j2	:=	#0	
+LABEL	label9	:	
+IF	v_j2	<	#4	GOTO	label10	
+GOTO	label11	
+LABEL	label10	:	
+t47	:=	v_i2	*	#16	
+t44	:=	v_chessplate	+	t47	
+t49	:=	v_j2	*	#4	
+t50	:=	t44	+	t49	
+IF	*t50	==	#1	GOTO	label12	
+GOTO	label13	
+LABEL	label12	:	
+WRITE	v_j2	
+LABEL	label13	:	
+t53	:=	v_j2	+	#1	
+v_j2	:=	t53	
+GOTO	label9	
+LABEL	label11	:	
+t57	:=	v_i2	+	#1	
+v_i2	:=	t57	
+GOTO	label6	
+LABEL	label8	:	
+RETURN	#0	
+FUNCTION	PutQueen	:
+PARAM	v_chess	
+PARAM	v_a	
+PARAM	v_b	
+PARAM	v_c	
+PARAM	v_n	
+PARAM	v_sum	
+DEC	v_col	4
+DEC	v_i	4
+DEC	v_j	4
+v_col	:=	#0	
+LABEL	label14	:	
+IF	v_col	<	#4	GOTO	label15	
+GOTO	label16	
+LABEL	label15	:	
+t68	:=	v_col	*	#4	
+t69	:=	v_a	+	t68	
+IF	*t69	!=	#0	GOTO	label20	
+GOTO	label18	
+LABEL	label20	:	
+t72	:=	v_n	+	v_col	
+t75	:=	t72	*	#4	
+t76	:=	v_b	+	t75	
+IF	*t76	!=	#0	GOTO	label19	
+GOTO	label18	
+LABEL	label19	:	
+t80	:=	v_n	-	v_col	
+t79	:=	t80	+	#3	
+t84	:=	t79	*	#4	
+t85	:=	v_c	+	t84	
+IF	*t85	!=	#0	GOTO	label17	
+GOTO	label18	
+LABEL	label17	:	
+t89	:=	v_n	*	#4	
+t88	:=	t89	+	v_col	
+t93	:=	t88	*	#4	
+t94	:=	v_chess	+	t93	
+*t94	:=	#1	
+t99	:=	v_col	*	#4	
+t100	:=	v_a	+	t99	
+*t100	:=	#0	
+t104	:=	v_n	+	v_col	
+t107	:=	t104	*	#4	
+t108	:=	v_b	+	t107	
+*t108	:=	#0	
+t113	:=	v_n	-	v_col	
+t112	:=	t113	+	#3	
+t117	:=	t112	*	#4	
+t118	:=	v_c	+	t117	
+*t118	:=	#0	
+IF	v_n	==	#3	GOTO	label21	
+GOTO	label22	
+LABEL	label21	:	
+t123	:=	v_sum	+	#1	
+v_sum	:=	t123	
+ARG	v_chess	
+t127	:=	CALL	display	
+GOTO	label23	
+LABEL	label22	:	
+t134	:=	v_n	+	#1	
+ARG	v_sum	
+ARG	t134	
+ARG	v_c	
+ARG	v_b	
+ARG	v_a	
+ARG	v_chess	
+t129	:=	CALL	PutQueen	
+v_sum	:=	t129	
+LABEL	label23	:	
+t141	:=	v_n	*	#4	
+t140	:=	t141	+	v_col	
+t145	:=	t140	*	#4	
+t146	:=	v_chess	+	t145	
+*t146	:=	#0	
+t150	:=	v_n	+	v_col	
+t153	:=	t150	*	#4	
+t154	:=	v_b	+	t153	
+*t154	:=	#1	
+t159	:=	v_n	-	v_col	
+t158	:=	t159	+	#3	
+t163	:=	t158	*	#4	
+t164	:=	v_c	+	t163	
+*t164	:=	#1	
+t169	:=	v_col	*	#4	
+t170	:=	v_a	+	t169	
+*t170	:=	#1	
+LABEL	label18	:	
+t173	:=	v_col	+	#1	
+v_col	:=	t173	
+GOTO	label14	
+LABEL	label16	:	
+RETURN	v_sum	
+FUNCTION	main	:
+DEC	t177	64
+v_chess1	:=	&t177	
+DEC	t178	16
+v_a1	:=	&t178	
+DEC	t179	28
+v_b1	:=	&t179	
+DEC	t180	28
+v_c1	:=	&t180	
+DEC	v_sum1	4
+v_sum1	:=	#0	
+DEC	v_i1	4
+v_i1	:=	#0	
+LABEL	label24	:	
+IF	v_i1	<	#16	GOTO	label25	
+GOTO	label26	
+LABEL	label25	:	
+t188	:=	v_i1	*	#4	
+t189	:=	v_chess1	+	t188	
+*t189	:=	#0	
+t192	:=	v_i1	+	#1	
+v_i1	:=	t192	
+GOTO	label24	
+LABEL	label26	:	
+v_i1	:=	#0	
+LABEL	label27	:	
+IF	v_i1	<	#4	GOTO	label28	
+GOTO	label29	
+LABEL	label28	:	
+t202	:=	v_i1	*	#4	
+t203	:=	v_a1	+	t202	
+*t203	:=	#1	
+t206	:=	v_i1	+	#1	
+v_i1	:=	t206	
+GOTO	label27	
+LABEL	label29	:	
+v_i1	:=	#0	
+LABEL	label30	:	
+IF	v_i1	<	#7	GOTO	label31	
+GOTO	label32	
+LABEL	label31	:	
+t216	:=	v_i1	*	#4	
+t217	:=	v_b1	+	t216	
+*t217	:=	#1	
+t222	:=	v_i1	*	#4	
+t223	:=	v_c1	+	t222	
+*t223	:=	#1	
+t226	:=	v_i1	+	#1	
+v_i1	:=	t226	
+GOTO	label30	
+LABEL	label32	:	
+ARG	v_sum1	
+ARG	#0	
+ARG	v_c1	
+ARG	v_b1	
+ARG	v_a1	
+ARG	v_chess1	
+t230	:=	CALL	PutQueen	
+v_sum1	:=	t230	
+WRITE	v_sum1	
+RETURN	#0	

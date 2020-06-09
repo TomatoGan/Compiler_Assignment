@@ -1,0 +1,39 @@
+FUNCTION	hanoi	:
+PARAM	v_n	
+PARAM	v_p1	
+PARAM	v_p2	
+PARAM	v_p3	
+IF	v_n	==	#1	GOTO	label0	
+GOTO	label1	
+LABEL	label0	:	
+t3	:=	v_p1	*	#1000000	
+t2	:=	t3	+	v_p3	
+WRITE	t2	
+GOTO	label2	
+LABEL	label1	:	
+t7	:=	v_n	-	#1	
+ARG	v_p2	
+ARG	v_p3	
+ARG	v_p1	
+ARG	t7	
+t13	:=	CALL	hanoi	
+t15	:=	v_p1	*	#1000000	
+t14	:=	t15	+	v_p3	
+WRITE	t14	
+t19	:=	v_n	-	#1	
+ARG	v_p3	
+ARG	v_p1	
+ARG	v_p2	
+ARG	t19	
+t25	:=	CALL	hanoi	
+LABEL	label2	:	
+RETURN	#0	
+FUNCTION	main	:
+DEC	v_sum	4
+v_sum	:=	#3	
+ARG	#3	
+ARG	#2	
+ARG	#1	
+ARG	v_sum	
+t31	:=	CALL	hanoi	
+RETURN	#0	

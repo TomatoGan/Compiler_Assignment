@@ -1,0 +1,80 @@
+FUNCTION	gcd1	:
+PARAM	v_a	
+PARAM	v_b	
+DEC	v_result	4
+DEC	v_temp	4
+t4	:=	v_a	/	v_b	
+t3	:=	t4	*	v_b	
+t1	:=	v_a	-	t3	
+v_temp	:=	t1	
+LABEL	label0	:	
+IF	v_temp	!=	#0	GOTO	label1	
+GOTO	label2	
+LABEL	label1	:	
+v_a	:=	v_b	
+v_b	:=	v_temp	
+t18	:=	v_a	/	v_b	
+t17	:=	t18	*	v_b	
+t15	:=	v_a	-	t17	
+v_temp	:=	t15	
+GOTO	label0	
+LABEL	label2	:	
+v_result	:=	v_b	
+RETURN	v_result	
+FUNCTION	gcd2	:
+PARAM	v_x	
+PARAM	v_y	
+DEC	v_remainder	4
+v_remainder	:=	#0	
+IF	v_x	>	v_y	GOTO	label3	
+GOTO	label4	
+LABEL	label3	:	
+t31	:=	v_x	/	v_y	
+t30	:=	t31	*	v_y	
+t28	:=	v_x	-	t30	
+v_remainder	:=	t28	
+IF	v_remainder	==	#0	GOTO	label5	
+GOTO	label6	
+LABEL	label5	:	
+RETURN	v_y	
+GOTO	label7	
+LABEL	label6	:	
+ARG	v_remainder	
+ARG	v_y	
+t38	:=	CALL	gcd2	
+RETURN	t38	
+LABEL	label7	:	
+GOTO	label8	
+LABEL	label4	:	
+t45	:=	v_y	/	v_x	
+t44	:=	t45	*	v_x	
+t42	:=	v_y	-	t44	
+v_remainder	:=	t42	
+IF	v_remainder	==	#0	GOTO	label9	
+GOTO	label10	
+LABEL	label9	:	
+RETURN	v_x	
+GOTO	label11	
+LABEL	label10	:	
+ARG	v_remainder	
+ARG	v_x	
+t52	:=	CALL	gcd2	
+RETURN	t52	
+LABEL	label11	:	
+LABEL	label8	:	
+FUNCTION	main	:
+DEC	v_m	4
+READ	v_m	
+v_m	:=	v_m	
+DEC	v_n	4
+READ	v_n	
+v_n	:=	v_n	
+ARG	v_n	
+ARG	v_m	
+t55	:=	CALL	gcd1	
+WRITE	t55	
+ARG	v_n	
+ARG	v_m	
+t58	:=	CALL	gcd2	
+WRITE	t58	
+RETURN	#0	

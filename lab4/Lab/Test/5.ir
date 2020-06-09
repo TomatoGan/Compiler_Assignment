@@ -1,0 +1,42 @@
+FUNCTION	fact	:
+PARAM	v_m	
+DEC	v_result	4
+v_result	:=	#1	
+DEC	v_j	4
+v_j	:=	#1	
+LABEL	label0	:	
+IF	v_j	<=	v_m	GOTO	label1	
+GOTO	label2	
+LABEL	label1	:	
+t3	:=	v_result	*	v_j	
+v_result	:=	t3	
+t7	:=	v_j	+	#1	
+v_j	:=	t7	
+GOTO	label0	
+LABEL	label2	:	
+RETURN	v_result	
+FUNCTION	main	:
+DEC	t11	20
+v_x	:=	&t11	
+DEC	v_i	4
+v_i	:=	#0	
+DEC	v_N	4
+v_N	:=	#5	
+LABEL	label3	:	
+IF	v_i	<	v_N	GOTO	label4	
+GOTO	label5	
+LABEL	label4	:	
+t17	:=	v_i	*	#4	
+t18	:=	v_x	+	t17	
+t19	:=	v_i	+	#2	
+*t18	:=	t19	
+t26	:=	v_i	*	#4	
+t27	:=	v_x	+	t26	
+ARG	*t27	
+t22	:=	CALL	fact	
+WRITE	t22	
+t29	:=	v_i	+	#1	
+v_i	:=	t29	
+GOTO	label3	
+LABEL	label5	:	
+RETURN	#0	

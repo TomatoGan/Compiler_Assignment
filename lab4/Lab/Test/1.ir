@@ -1,0 +1,21 @@
+FUNCTION	main	:
+v_final	:=	#0	
+v_a	:=	#5	
+t4	:=	v_a	*	v_a	
+t7	:=	v_a	+	#2	
+t3	:=	t4	*	t7	
+v_b	:=	t3	
+WRITE	v_b	
+t13	:=	v_b	/	v_a	
+t12	:=	t13	+	#1	
+v_c	:=	t12	
+WRITE	v_c	
+t21	:=	v_a	+	v_b	
+t24	:=	v_c	*	#3	
+t20	:=	t21	-	t24	
+t28	:=	v_b	/	v_a	
+t27	:=	t28	-	#4	
+t19	:=	t20	+	t27	
+v_final	:=	t19	
+WRITE	v_final	
+RETURN	#0	

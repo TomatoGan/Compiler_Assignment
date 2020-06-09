@@ -1,0 +1,77 @@
+FUNCTION	main	:
+DEC	t0	20
+v_x	:=	&t0	
+DEC	v_max	4
+DEC	v_temp	4
+DEC	v_i	4
+v_i	:=	#0	
+DEC	v_N	4
+v_N	:=	#5	
+DEC	v_j	4
+v_j	:=	#0	
+LABEL	label0	:	
+IF	v_i	<	#5	GOTO	label1	
+GOTO	label2	
+LABEL	label1	:	
+t6	:=	v_i	*	#4	
+t7	:=	v_x	+	t6	
+READ	t8	
+*t7	:=	t8	
+t10	:=	v_i	+	#1	
+v_i	:=	t10	
+GOTO	label0	
+LABEL	label2	:	
+v_i	:=	v_N	
+LABEL	label3	:	
+IF	v_i	>	#0	GOTO	label4	
+GOTO	label5	
+LABEL	label4	:	
+LABEL	label6	:	
+t18	:=	v_i	-	#1	
+IF	v_j	<	t18	GOTO	label7	
+GOTO	label8	
+LABEL	label7	:	
+t25	:=	v_j	*	#4	
+t26	:=	v_x	+	t25	
+t28	:=	v_j	+	#1	
+t31	:=	t28	*	#4	
+t32	:=	v_x	+	t31	
+IF	*t26	>	*t32	GOTO	label9	
+GOTO	label10	
+LABEL	label9	:	
+t37	:=	v_j	*	#4	
+t38	:=	v_x	+	t37	
+v_temp	:=	*t38	
+t42	:=	v_j	*	#4	
+t43	:=	v_x	+	t42	
+t46	:=	v_j	+	#1	
+t49	:=	t46	*	#4	
+t50	:=	v_x	+	t49	
+*t43	:=	*t50	
+t53	:=	v_j	+	#1	
+t56	:=	t53	*	#4	
+t57	:=	v_x	+	t56	
+*t57	:=	v_temp	
+LABEL	label10	:	
+t60	:=	v_j	+	#1	
+v_j	:=	t60	
+GOTO	label6	
+LABEL	label8	:	
+v_j	:=	#0	
+t66	:=	v_i	-	#1	
+v_i	:=	t66	
+GOTO	label3	
+LABEL	label5	:	
+v_i	:=	#0	
+LABEL	label11	:	
+IF	v_i	<	#5	GOTO	label12	
+GOTO	label13	
+LABEL	label12	:	
+t76	:=	v_i	*	#4	
+t77	:=	v_x	+	t76	
+WRITE	*t77	
+t79	:=	v_i	+	#1	
+v_i	:=	t79	
+GOTO	label11	
+LABEL	label13	:	
+RETURN	#0	

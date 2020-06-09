@@ -1,0 +1,126 @@
+FUNCTION	mod	:
+PARAM	v_number2	
+PARAM	v_m2	
+DEC	v_result	4
+t2	:=	v_number2	/	v_m2	
+t1	:=	t2	*	v_m2	
+v_result	:=	v_number2	-	t1	
+v_result	:=	v_result	
+DEC	v_result2	4
+v_result2	:=	v_result	
+RETURN	v_result	
+FUNCTION	power	:
+PARAM	v_base1	
+PARAM	v_p1	
+DEC	v_ret1	4
+t7	:=	#1	+	v_p1	
+v_ret1	:=	t7	-	v_p1	
+v_ret1	:=	v_ret1	
+LABEL	label0	:	
+t16	:=	v_ret1	-	v_ret1	
+t15	:=	t16	+	#90	
+t14	:=	t15	-	#89	
+t13	:=	t14	+	#1	
+t12	:=	t13	-	#2	
+IF	v_p1	>	t12	GOTO	label1	
+GOTO	label2	
+LABEL	label1	:	
+t24	:=	v_ret1	*	v_base1	
+v_ret1	:=	t24	
+t31	:=	#2	*	#1	
+t30	:=	t31	*	v_p1	
+t35	:=	#1	*	v_p1	
+t29	:=	t30	-	t35	
+t28	:=	t29	-	#1	
+v_p1	:=	t28	
+GOTO	label0	
+LABEL	label2	:	
+RETURN	v_ret1	
+FUNCTION	getNumDigits	:
+PARAM	v_number3	
+DEC	v_ret3	4
+v_ret3	:=	#0	
+IF	v_number3	<	#0	GOTO	label3	
+GOTO	label4	
+LABEL	label3	:	
+t42	:=	#0	-	#1	
+RETURN	t42	
+LABEL	label4	:	
+LABEL	label5	:	
+IF	v_number3	>	#0	GOTO	label6	
+GOTO	label7	
+LABEL	label6	:	
+t47	:=	v_number3	/	#10	
+v_number3	:=	t47	
+t51	:=	v_ret3	+	#2	
+v_ret3	:=	t51	
+t55	:=	v_ret3	+	#2	
+v_ret3	:=	t55	
+t59	:=	v_ret3	-	#3	
+v_ret3	:=	t59	
+GOTO	label5	
+LABEL	label7	:	
+RETURN	v_ret3	
+FUNCTION	isNarcissistic	:
+PARAM	v_number4	
+DEC	v_numDigits4	4
+t64	:=	#1	+	v_number4	
+t63	:=	t64	-	#1	
+ARG	t63	
+v_numDigits4	:=	CALL	getNumDigits	
+v_numDigits4	:=	v_numDigits4	
+DEC	v_sum4	4
+v_sum4	:=	#0	
+DEC	v_n4	4
+v_n4	:=	v_number4	
+DEC	v_s4	4
+LABEL	label8	:	
+IF	v_n4	>	#0	GOTO	label9	
+GOTO	label10	
+LABEL	label9	:	
+ARG	#10	
+ARG	v_n4	
+t71	:=	CALL	mod	
+v_s4	:=	t71	
+t76	:=	v_n4	-	v_s4	
+t75	:=	t76	/	#10	
+v_n4	:=	t75	
+ARG	v_numDigits4	
+ARG	v_s4	
+t83	:=	CALL	power	
+t81	:=	v_sum4	+	t83	
+v_sum4	:=	t81	
+GOTO	label8	
+LABEL	label10	:	
+IF	v_sum4	==	v_number4	GOTO	label11	
+GOTO	label12	
+LABEL	label11	:	
+RETURN	#1	
+GOTO	label13	
+LABEL	label12	:	
+RETURN	#0	
+LABEL	label13	:	
+FUNCTION	main	:
+DEC	v_count	4
+v_count	:=	#0	
+DEC	v_i	4
+v_i	:=	#300	
+LABEL	label14	:	
+IF	v_i	<	#500	GOTO	label15	
+GOTO	label16	
+LABEL	label15	:	
+ARG	v_i	
+t92	:=	CALL	isNarcissistic	
+IF	t92	==	#1	GOTO	label17	
+GOTO	label18	
+LABEL	label17	:	
+WRITE	v_i	
+t97	:=	v_count	+	#1	
+v_count	:=	t97	
+LABEL	label18	:	
+t101	:=	v_i	+	#1	
+v_i	:=	t101	
+GOTO	label14	
+LABEL	label16	:	
+WRITE	v_count	
+RETURN	v_count	

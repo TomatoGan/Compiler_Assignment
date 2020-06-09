@@ -1,0 +1,84 @@
+FUNCTION	squaRever	:
+PARAM	v_num	
+DEC	v_flag	4
+v_flag	:=	#0	
+DEC	t0	12
+v_array	:=	&t0	
+DEC	v_j	4
+v_j	:=	#0	
+t4	:=	#0	*	#4	
+t5	:=	v_array	+	t4	
+t6	:=	v_num	/	#100	
+*t5	:=	t6	
+t12	:=	#1	*	#4	
+t13	:=	v_array	+	t12	
+t15	:=	v_num	/	#10	
+t23	:=	#0	*	#4	
+t24	:=	v_array	+	t23	
+t18	:=	#10	*	*t24	
+t14	:=	t15	-	t18	
+*t13	:=	t14	
+t28	:=	#2	*	#4	
+t29	:=	v_array	+	t28	
+t38	:=	#0	*	#4	
+t39	:=	v_array	+	t38	
+t33	:=	#100	*	*t39	
+t31	:=	v_num	-	t33	
+t45	:=	#1	*	#4	
+t46	:=	v_array	+	t45	
+t40	:=	#10	*	*t46	
+t30	:=	t31	-	t40	
+*t29	:=	t30	
+t51	:=	#0	*	#4	
+t52	:=	v_array	+	t51	
+t55	:=	#2	*	#4	
+t56	:=	v_array	+	t55	
+IF	*t52	!=	*t56	GOTO	label0	
+GOTO	label1	
+LABEL	label0	:	
+v_flag	:=	#0	
+GOTO	label2	
+LABEL	label1	:	
+LABEL	label3	:	
+IF	v_j	<	#12	GOTO	label4	
+GOTO	label5	
+LABEL	label4	:	
+t63	:=	v_j	*	v_j	
+t61	:=	t63	-	v_num	
+IF	t61	==	#0	GOTO	label6	
+GOTO	label7	
+LABEL	label6	:	
+v_flag	:=	#1	
+LABEL	label7	:	
+t70	:=	v_j	+	#1	
+v_j	:=	t70	
+GOTO	label3	
+LABEL	label5	:	
+LABEL	label2	:	
+IF	v_flag	==	#1	GOTO	label8	
+GOTO	label9	
+LABEL	label8	:	
+RETURN	#1	
+GOTO	label10	
+LABEL	label9	:	
+RETURN	#0	
+LABEL	label10	:	
+FUNCTION	main	:
+DEC	v_i	4
+v_i	:=	#100	
+LABEL	label11	:	
+IF	v_i	<	#150	GOTO	label12	
+GOTO	label13	
+LABEL	label12	:	
+ARG	v_i	
+t79	:=	CALL	squaRever	
+IF	t79	==	#1	GOTO	label14	
+GOTO	label15	
+LABEL	label14	:	
+WRITE	v_i	
+LABEL	label15	:	
+t84	:=	v_i	+	#1	
+v_i	:=	t84	
+GOTO	label11	
+LABEL	label13	:	
+RETURN	#0	

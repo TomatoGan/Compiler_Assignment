@@ -1,0 +1,220 @@
+FUNCTION	process	:
+PARAM	v_x	
+DEC	v_y	4
+v_y	:=	#4	
+DEC	v_z	4
+t1	:=	v_x	+	#12	
+v_z	:=	t1	
+t5	:=	v_x	+	#12	
+v_z	:=	t5	
+v_y	:=	v_y	
+t12	:=	v_y	+	#0	
+t11	:=	t12	-	#0	
+v_y	:=	t11	
+t18	:=	v_y	*	#1	
+t17	:=	t18	/	#1	
+v_y	:=	t17	
+t24	:=	v_y	+	#32	
+t28	:=	#4	*	#7	
+t27	:=	t28	/	#10	
+t23	:=	t24	-	t27	
+v_y	:=	t23	
+t41	:=	v_x	*	v_y	
+t44	:=	v_x	*	v_y	
+t40	:=	t41	+	t44	
+t47	:=	v_y	*	v_x	
+t39	:=	t40	-	t47	
+t38	:=	t39	-	v_x	
+t51	:=	v_y	*	v_x	
+t37	:=	t38	+	t51	
+t54	:=	v_y	*	v_y	
+t36	:=	t37	+	t54	
+t57	:=	v_x	/	v_x	
+t35	:=	t36	+	t57	
+t34	:=	t35	-	#12	
+t61	:=	#59	/	#2	
+t33	:=	t34	+	t61	
+v_y	:=	t33	
+t70	:=	v_y	*	#3	
+t73	:=	#14	*	#24	
+t69	:=	t70	+	t73	
+t77	:=	v_x	*	#12	
+t76	:=	t77	/	#4	
+t68	:=	t69	-	t76	
+t81	:=	#4	*	#5	
+t67	:=	t68	+	t81	
+t84	:=	#10	*	#2	
+t66	:=	t67	-	t84	
+t87	:=	#5	/	#6	
+t65	:=	t66	-	t87	
+v_y	:=	t65	
+RETURN	v_y	
+FUNCTION	mod	:
+PARAM	v_a1	
+PARAM	v_b1	
+t94	:=	v_a1	/	v_b1	
+t93	:=	t94	*	v_b1	
+t91	:=	v_a1	-	t93	
+RETURN	t91	
+FUNCTION	main	:
+DEC	v_a	4
+t100	:=	#4	*	#2	
+t99	:=	#0	-	t100	
+t98	:=	t99	+	#108	
+v_a	:=	t98	/	#17	
+v_a	:=	v_a	
+DEC	v_b	4
+t106	:=	#32	/	#8	
+t105	:=	t106	*	#2	
+v_b	:=	t105	-	#1	
+v_b	:=	v_b	
+DEC	v_c	4
+t113	:=	#1	*	#4	
+t112	:=	t113	/	#2	
+v_c	:=	#13	-	t112	
+v_c	:=	v_c	
+DEC	v_d	4
+v_d	:=	v_a	+	v_b	
+v_d	:=	v_d	
+DEC	v_e	4
+t119	:=	v_a	+	v_b	
+t122	:=	v_c	/	#1	
+v_e	:=	t119	+	t122	
+v_e	:=	v_e	
+DEC	v_f	4
+t125	:=	v_a	*	v_b	
+v_f	:=	t125	-	v_c	
+v_f	:=	v_f	
+DEC	v_g1	4
+v_g1	:=	#42	
+DEC	v_g2	4
+v_g2	:=	#4	
+DEC	v_i	4
+v_i	:=	#0	
+DEC	v_j	4
+v_j	:=	#0	
+DEC	t129	16
+v_array	:=	&t129	
+DEC	v_g	4
+DEC	v_h	4
+DEC	v_k	4
+t134	:=	v_a	+	v_b	
+t133	:=	t134	+	v_c	
+t132	:=	t133	+	#1500	
+t131	:=	t132	-	v_f	
+v_f	:=	t131	
+LABEL	label0	:	
+IF	v_i	<	#4	GOTO	label1	
+GOTO	label2	
+LABEL	label1	:	
+t143	:=	#15	*	v_i	
+v_j	:=	t143	
+t149	:=	v_i	*	#4	
+t150	:=	v_array	+	t149	
+*t150	:=	v_j	
+t153	:=	v_i	+	#1	
+v_i	:=	t153	
+GOTO	label0	
+LABEL	label2	:	
+LABEL	label3	:	
+IF	v_i	<	v_f	GOTO	label4	
+GOTO	label5	
+LABEL	label4	:	
+t159	:=	v_g2	*	v_g2	
+v_k	:=	t159	
+t167	:=	v_g1	+	v_k	
+t170	:=	v_i	*	#12	
+t166	:=	t167	+	t170	
+t173	:=	#4	*	v_g2	
+t165	:=	t166	-	t173	
+t164	:=	t165	+	#5	
+t177	:=	#7	/	#3	
+t163	:=	t164	+	t177	
+v_g1	:=	t163	
+ARG	v_f	
+t184	:=	CALL	process	
+t186	:=	#2	*	v_a	
+t183	:=	t184	+	t186	
+t182	:=	t183	-	v_f	
+t190	:=	v_c	*	v_d	
+t181	:=	t182	+	t190	
+v_g	:=	t181	
+ARG	#2	
+ARG	v_f	
+t193	:=	CALL	mod	
+IF	t193	>	#0	GOTO	label6	
+GOTO	label7	
+LABEL	label6	:	
+t198	:=	v_i	+	#3	
+v_h	:=	t198	
+t202	:=	v_h	-	#1	
+v_h	:=	t202	
+t206	:=	v_h	+	#3	
+v_h	:=	t206	
+t212	:=	#3	*	#2	
+t210	:=	v_h	-	t212	
+v_h	:=	t210	
+LABEL	label7	:	
+ARG	v_a	
+t215	:=	CALL	process	
+t220	:=	v_a	+	#3	
+t219	:=	t220	-	#2	
+t218	:=	t219	-	#1	
+ARG	t218	
+t216	:=	CALL	process	
+IF	t215	==	t216	GOTO	label8	
+GOTO	label9	
+LABEL	label8	:	
+t227	:=	v_f	-	#2	
+t226	:=	t227	+	#1	
+v_f	:=	t226	
+ARG	#4	
+ARG	v_f	
+t233	:=	CALL	mod	
+t236	:=	t233	*	#4	
+t237	:=	v_array	+	t236	
+ARG	#4	
+ARG	v_f	
+t243	:=	CALL	mod	
+t246	:=	t243	*	#4	
+t247	:=	v_array	+	t246	
+t240	:=	*t247	+	v_h	
+t239	:=	t240	+	v_g	
+t238	:=	t239	-	v_e	
+*t237	:=	t238	
+LABEL	label9	:	
+t253	:=	v_a	+	#2	
+t252	:=	t253	+	#1	
+v_a	:=	t252	
+t258	:=	v_i	+	#1	
+v_i	:=	t258	
+t262	:=	v_i	+	#1	
+v_i	:=	t262	
+GOTO	label3	
+LABEL	label5	:	
+t266	:=	v_a	+	v_b	
+v_a	:=	t266	
+t270	:=	v_a	+	v_b	
+v_b	:=	t270	
+t274	:=	v_a	+	v_b	
+v_c	:=	t274	
+t278	:=	v_a	+	v_b	
+v_f	:=	t278	
+t282	:=	v_a	+	v_b	
+v_g	:=	t282	
+t286	:=	v_c	+	v_f	
+t285	:=	t286	+	v_g	
+WRITE	t285	
+t293	:=	#0	*	#4	
+t294	:=	v_array	+	t293	
+WRITE	*t294	
+t298	:=	#1	*	#4	
+t299	:=	v_array	+	t298	
+WRITE	*t299	
+t303	:=	#2	*	#4	
+t304	:=	v_array	+	t303	
+WRITE	*t304	
+t308	:=	#3	*	#4	
+t309	:=	v_array	+	t308	
+WRITE	*t309	
+RETURN	#0	

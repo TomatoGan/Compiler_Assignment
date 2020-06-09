@@ -1,0 +1,92 @@
+FUNCTION	binary_search	:
+PARAM	v_key	
+PARAM	v_a	
+PARAM	v_n	
+DEC	v_low	4
+v_low	:=	#0	
+DEC	v_high	4
+v_high	:=	v_n	-	#1	
+v_high	:=	v_high	
+DEC	v_mid	4
+DEC	v_count	4
+v_count	:=	#0	
+DEC	v_flag	4
+v_flag	:=	#0	
+LABEL	label0	:	
+IF	v_low	<=	v_high	GOTO	label3	
+GOTO	label2	
+LABEL	label3	:	
+IF	v_flag	==	#0	GOTO	label1	
+GOTO	label2	
+LABEL	label1	:	
+t7	:=	v_count	+	#1	
+v_count	:=	t7	
+t12	:=	v_low	+	v_high	
+t11	:=	t12	/	#2	
+v_mid	:=	t11	
+t20	:=	v_mid	*	#4	
+t21	:=	v_a	+	t20	
+IF	v_key	<	*t21	GOTO	label4	
+GOTO	label5	
+LABEL	label4	:	
+t23	:=	v_mid	-	#1	
+v_high	:=	t23	
+GOTO	label6	
+LABEL	label5	:	
+t30	:=	v_mid	*	#4	
+t31	:=	v_a	+	t30	
+IF	v_key	>	*t31	GOTO	label7	
+GOTO	label8	
+LABEL	label7	:	
+t33	:=	v_mid	+	#1	
+v_low	:=	t33	
+GOTO	label9	
+LABEL	label8	:	
+t40	:=	v_mid	*	#4	
+t41	:=	v_a	+	t40	
+IF	v_key	==	*t41	GOTO	label10	
+GOTO	label11	
+LABEL	label10	:	
+t42	:=	v_mid	+	#1	
+WRITE	t42	
+WRITE	v_count	
+v_flag	:=	#1	
+LABEL	label11	:	
+LABEL	label9	:	
+LABEL	label6	:	
+GOTO	label0	
+LABEL	label2	:	
+IF	v_flag	==	#0	GOTO	label12	
+GOTO	label13	
+LABEL	label12	:	
+t50	:=	#0	-	#1	
+WRITE	t50	
+LABEL	label13	:	
+RETURN	#0	
+FUNCTION	main	:
+DEC	v_i	4
+v_i	:=	#0	
+DEC	v_k	4
+DEC	t53	28
+v_b	:=	&t53	
+DEC	v_N	4
+v_N	:=	#7	
+LABEL	label14	:	
+IF	v_i	<	v_N	GOTO	label15	
+GOTO	label16	
+LABEL	label15	:	
+t59	:=	v_i	*	#4	
+t60	:=	v_b	+	t59	
+READ	t61	
+*t60	:=	t61	
+t63	:=	v_i	+	#1	
+v_i	:=	t63	
+GOTO	label14	
+LABEL	label16	:	
+READ	t67	
+v_k	:=	t67	
+ARG	v_N	
+ARG	v_b	
+ARG	v_k	
+t71	:=	CALL	binary_search	
+RETURN	#0	

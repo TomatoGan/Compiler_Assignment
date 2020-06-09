@@ -1,0 +1,112 @@
+FUNCTION	mod	:
+PARAM	v_a	
+PARAM	v_b	
+t3	:=	v_a	/	v_b	
+t2	:=	t3	*	v_b	
+t0	:=	v_a	-	t2	
+RETURN	t0	
+FUNCTION	IsLeap	:
+PARAM	v_y	
+ARG	#400	
+ARG	v_y	
+t7	:=	CALL	mod	
+IF	t7	==	#0	GOTO	label2	
+GOTO	label3	
+LABEL	label3	:	
+ARG	#4	
+ARG	v_y	
+t11	:=	CALL	mod	
+IF	t11	==	#0	GOTO	label2	
+GOTO	label1	
+LABEL	label2	:	
+ARG	#100	
+ARG	v_y	
+t15	:=	CALL	mod	
+IF	t15	!=	#0	GOTO	label0	
+GOTO	label1	
+LABEL	label0	:	
+RETURN	#1	
+GOTO	label4	
+LABEL	label1	:	
+RETURN	#0	
+LABEL	label4	:	
+FUNCTION	main	:
+DEC	v_year	4
+DEC	v_i	4
+DEC	v_dayofweek	4
+DEC	v_motherday	4
+DEC	v_days	4
+v_days	:=	#0	
+DEC	v_leap	4
+v_leap	:=	#0	
+DEC	t21	20
+v_monthdays	:=	&t21	
+t25	:=	#0	*	#4	
+t26	:=	v_monthdays	+	t25	
+*t26	:=	#0	
+t31	:=	#1	*	#4	
+t32	:=	v_monthdays	+	t31	
+*t32	:=	#31	
+t37	:=	#2	*	#4	
+t38	:=	v_monthdays	+	t37	
+*t38	:=	#28	
+t43	:=	#3	*	#4	
+t44	:=	v_monthdays	+	t43	
+*t44	:=	#31	
+t49	:=	#4	*	#4	
+t50	:=	v_monthdays	+	t49	
+*t50	:=	#30	
+READ	t53	
+v_year	:=	t53	
+v_i	:=	#1900	
+LABEL	label5	:	
+IF	v_i	<	v_year	GOTO	label6	
+GOTO	label7	
+LABEL	label6	:	
+ARG	v_i	
+t58	:=	CALL	IsLeap	
+IF	t58	!=	#0	GOTO	label8	
+GOTO	label9	
+LABEL	label8	:	
+t61	:=	v_days	+	#366	
+v_days	:=	t61	
+GOTO	label10	
+LABEL	label9	:	
+t65	:=	v_days	+	#365	
+v_days	:=	t65	
+LABEL	label10	:	
+t69	:=	v_i	+	#1	
+v_i	:=	t69	
+GOTO	label5	
+LABEL	label7	:	
+ARG	v_year	
+t72	:=	CALL	IsLeap	
+IF	t72	!=	#0	GOTO	label11	
+GOTO	label12	
+LABEL	label11	:	
+t77	:=	#2	*	#4	
+t78	:=	v_monthdays	+	t77	
+*t78	:=	#29	
+LABEL	label12	:	
+v_i	:=	#1	
+LABEL	label13	:	
+IF	v_i	<	#5	GOTO	label14	
+GOTO	label15	
+LABEL	label14	:	
+t90	:=	v_i	*	#4	
+t91	:=	v_monthdays	+	t90	
+t85	:=	v_days	+	*t91	
+v_days	:=	t85	
+t93	:=	v_i	+	#1	
+v_i	:=	t93	
+GOTO	label13	
+LABEL	label15	:	
+ARG	#7	
+ARG	v_days	
+t97	:=	CALL	mod	
+v_dayofweek	:=	t97	
+t101	:=	#14	-	v_dayofweek	
+v_motherday	:=	t101	
+WRITE	#5	
+WRITE	v_motherday	
+RETURN	#0	
