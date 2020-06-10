@@ -1400,7 +1400,7 @@ vtype ppr_Exp(node* ert, Operand place, vtype cur_dim) {  //layer is set for the
     oah->kind = TMPVARI;
     oah->u.vNum = v_cnt++;
     vtype arrh = ppr_Exp(ert->fst_child,oah, NULL); //arr_head
-    printf("tttttttttttttttttttttttttttttttttttttttttttttttttttttttt");
+    //printf("tttttttttttttttttttttttttttttttttttttttttttttttttttttttt");
 
     //printf("urbbrgroug\n");
     if(arrh == NULL) return NULL;
@@ -1427,7 +1427,6 @@ vtype ppr_Exp(node* ert, Operand place, vtype cur_dim) {  //layer is set for the
       owide->kind = CONSTI;
       char* s= malloc(16); 
       //sprintf(s, "%d",arrh->u.array.size);
-      //printf("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111111cur_size is %d\n", arrh->u.array.esize);
       sprintf(s, "%d",arrh->u.array.esize);
       owide->u.value = s;
 
@@ -1443,7 +1442,7 @@ vtype ppr_Exp(node* ert, Operand place, vtype cur_dim) {  //layer is set for the
       add_code->u.binop.op1 = oah;
       add_code->u.binop.op2 = ooffset;
       
-      if(arrh->u.array.elem->kind == BSC) { 
+      if(arrh->u.array.elem->kind == BSC) { //one-dim array
         Operand tmp_plus_res = malloc(sizeof(struct Operand_));
         tmp_plus_res->kind = TMPVARI;
         tmp_plus_res->u.vNum = v_cnt++;
@@ -1455,7 +1454,7 @@ vtype ppr_Exp(node* ert, Operand place, vtype cur_dim) {  //layer is set for the
         }
 
       }
-      else 
+      else //multi-dim array
         { add_code->u.binop.res = place;}
       insert_code(add_code);  
       return arrh->u.array.elem;
@@ -1469,6 +1468,7 @@ vtype ppr_Exp(node* ert, Operand place, vtype cur_dim) {  //layer is set for the
     if(!have_struct) {
       printf("Cannot translate: Code contains variables or parameters of structure types.\n");
       have_struct = true;
+      assert(0);
     }
 
     

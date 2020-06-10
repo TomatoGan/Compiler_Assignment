@@ -13,9 +13,7 @@
 #include <string.h>
 #include "node.h"
 #include "intercode.h"
-#ifdef DEBUGLAB2
 #include <assert.h>
-#endif
 
 #define false 0
 #define true 1
@@ -91,6 +89,9 @@ struct st_node_ { //这个是真正的符号表节点，里面既包含了 该�
   int funcDecLineNum;
   st_node next;
 };
+
+
+
 
 
 int pjw_hash(char* name);
