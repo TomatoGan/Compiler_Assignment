@@ -75,9 +75,9 @@ void prt_intercode(char* fname)
     if(fp == NULL) { printf("Open file error!\n"); return;}
 
 	InterCode iclist = iclist_head;
-	 printf("%p<==== in intercode\n",iclist_head);
+	 //printf("%p<==== in intercode\n",iclist_head);
 	while(iclist!=NULL)
-	{	printf("%p <===cur _poiinter in intercode.c\n", iclist);
+	{	//printf("%p <===cur _poiinter in intercode.c\n", iclist);
 		switch(iclist->kind)
 		{
 			case OP_ASSIGN:

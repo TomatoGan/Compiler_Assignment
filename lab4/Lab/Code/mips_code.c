@@ -22,7 +22,10 @@ void prt_mips_code(char *fileName){
 	init_reg();
 	prt_mcode_head(fp);
 	InterCode itor = iclist_head; int i = 1;
-	while(itor != NULL){  printf("%d<======cur instr index \n", i); i++;
+	while(itor != NULL){  //printf("%d<======cur instr index \n", i); i++;
+		//char shit[30];
+		//memset(shit, 0, 30);
+		//sprintf(shit,"%d<_____________===\n", i); fputs(shit, fp); i++;
 		//printf("%p <===cur _poiinter in mipscode.c\n", itor);
 		prt_cur_instr(itor, fp);
 		itor = itor->next;
@@ -47,50 +50,51 @@ void prt_mcode_head(FILE* fp) {
 void prt_cur_instr(InterCode cur_instr, FILE* fp) {
 	//printf("%d<---==-=-=-=-=-=-=-=-=-\n", cur_instr->kind);
 	switch (cur_instr->kind) {
-		case OP_LABEL:
-			mipsLabel(cur_instr, fp);
-			break;
+		
 		case OP_ASSIGN:
-			mipsAssign(cur_instr, fp);
+			trans_ASSIGN(cur_instr, fp);
 			break;
 		case OP_PLUS: 
 		case OP_MINUS: 
 		case OP_STAR: 
 		case OP_DIV: //printf("holy shit!\n");
-			mipsOperation(cur_instr, fp);
-			break;
-		case OP_READ:
-			mipsRead(cur_instr, fp);
-			break;
-		case OP_WRITE: //printf("hahahahhhahahahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\n");
-			mipsWrite(cur_instr, fp);
-			break;
-		case OP_CALL: 
-			mipsCall(cur_instr, fp);
+			trans_ARITH(cur_instr, fp);
 			break;
 		case OP_RETURN:
-			mipsReturn(cur_instr, fp);
+			trans_RETURN(cur_instr, fp);
+			break;
+		case OP_LABEL:
+			trans_LABEL(cur_instr, fp);
 			break;
 		case OP_GOTO:
-			mipsGOTO(cur_instr, fp);
+			trans_GOTO(cur_instr, fp);
 			break;
 		case OP_IFGOTO:
-			mipsIFGOTO(cur_instr, fp);
+			trans_IFGOTO(cur_instr, fp);
 			break;
-		case OP_FUNCTION:
-			mipsFunction(cur_instr, fp);
+		case OP_READ:
+			trans_READ(cur_instr, fp);
+			break;
+		case OP_WRITE: //printf("hahahahhhahahahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\n");
+			trans_WRITE(cur_instr, fp);
+			break;
+		case OP_CALL: 
+			trans_CALL(cur_instr, fp);
 			break;
 		case OP_ARG:
-			mipsArg(cur_instr, fp);
+			trans_ARG(cur_instr, fp);
+			break;
+		case OP_FUNCTION:
+			trans_FUNCTION(cur_instr, fp);
 			break;
 		case OP_PARAM:
-			mipsParam(cur_instr, fp);
+			trans_PARAM(cur_instr, fp);
 			break;
 		case OP_DEC:
-			mipsDec(cur_instr, fp);
+			trans_DEC(cur_instr, fp);
 			break;
 		case OP_GETADDR:
-			mipsAddress(cur_instr, fp);
+			trans_GETADDR(cur_instr, fp);
 			break;
 		default:
 			printf("Error: Unknown Kind to MIPS\n");
@@ -136,7 +140,7 @@ void init_reg() {
 
 }
 
-void mipsLabel(InterCode cur_instr, FILE* fp) {
+void trans_LABEL(InterCode cur_instr, FILE* fp) {
 	char str[INSTR_LEN];
 	memset(str, 0, INSTR_LEN);
 	// x:
@@ -144,7 +148,7 @@ void mipsLabel(InterCode cur_instr, FILE* fp) {
 	fputs(str, fp);
 }
 
-void mipsAssign(InterCode cur_instr, FILE* fp){
+void trans_ASSIGN(InterCode cur_instr, FILE* fp){
 	char str[INSTR_LEN];
 	memset(str, 0, sizeof(str));
 	Operand leftOp = cur_instr->u.assop.left;
@@ -189,7 +193,7 @@ void mipsAssign(InterCode cur_instr, FILE* fp){
 	store_word(x, fp);
 }
 
-void mipsOperation(InterCode cur_instr, FILE* fp) {
+void trans_ARITH(InterCode cur_instr, FILE* fp) {
 	char str[INSTR_LEN];
 	memset(str, 0, sizeof(str));
 	// + - * /
@@ -282,7 +286,7 @@ void mipsOperation(InterCode cur_instr, FILE* fp) {
 	store_word(x, fp); //printf("II am back!\n");
 }
 
-void mipsRead(InterCode cur_instr, FILE* fp) {
+void trans_READ(InterCode cur_instr, FILE* fp) {
 	fputs("\taddi $sp, $sp, -4\n", fp);
 	fputs("\tsw $ra, 0($sp)\n", fp);
 	fputs("\tjal read\n",fp);
@@ -299,8 +303,8 @@ void mipsRead(InterCode cur_instr, FILE* fp) {
 	fputs("\taddi $sp, $sp, 4\n", fp);
 }
 
-void mipsWrite(InterCode cur_instr, FILE* fp) {
-	fputs("\tsubu $sp, $sp, 4\n", fp);
+void trans_WRITE(InterCode cur_instr, FILE* fp) {
+	fputs("\taddi $sp, $sp, -4\n", fp);
 	fputs("\tsw $ra, 0($sp)\n", fp);
 
 	char str[INSTR_LEN];
@@ -322,8 +326,8 @@ void mipsWrite(InterCode cur_instr, FILE* fp) {
 	fputs("\taddi $sp, $sp, 4\n", fp);
 }
 
-void mipsCall(InterCode cur_instr, FILE* fp) {
-	fputs("\tsubu $sp, $sp, 4\n", fp);
+void trans_CALL(InterCode cur_instr, FILE* fp) {
+	fputs("\taddi $sp, $sp, -4\n", fp);
 	fputs("\tsw $ra, 0($sp)\n", fp);
 
 	Operand op = cur_instr->u.assop.left;
@@ -341,8 +345,8 @@ void mipsCall(InterCode cur_instr, FILE* fp) {
 	ginfo.cur_arg = 0;
 }
 
-void mipsReturn(InterCode cur_instr, FILE* fp) {  
-	int stackSize  = 100;
+void trans_RETURN(InterCode cur_instr, FILE* fp) {  
+	int stackSize  = 800;
 	char str[INSTR_LEN];
 	memset(str, 0, sizeof(str));
 	Operand op = cur_instr->u.sigop.op;
@@ -366,7 +370,7 @@ void mipsReturn(InterCode cur_instr, FILE* fp) {
 	
 }
 
-void mipsGOTO(InterCode cur_instr, FILE* fp){
+void trans_GOTO(InterCode cur_instr, FILE* fp){
 	char str[INSTR_LEN];
 	memset(str, 0, sizeof(str));
 	// j x
@@ -374,7 +378,7 @@ void mipsGOTO(InterCode cur_instr, FILE* fp){
 	fputs(str, fp);
 }
 
-void mipsIFGOTO(InterCode cur_instr, FILE* fp){
+void trans_IFGOTO(InterCode cur_instr, FILE* fp){
 	char str[INSTR_LEN];
 	memset(str, 0, sizeof(str));
 	Operand leftOp = cur_instr->u.ifgop.t1;
@@ -435,13 +439,13 @@ void mipsIFGOTO(InterCode cur_instr, FILE* fp){
 	fputs(str, fp);
 }
 
-void mipsFunction(InterCode cur_instr, FILE* fp){ int stackSize = 100;
+void trans_FUNCTION(InterCode cur_instr, FILE* fp){ int stackSize = 800;
 
 	char str[INSTR_LEN];
 	memset(str, 0, sizeof(str));
 	// function:
 	sprintf(str, "%s:\n",cur_instr->u.sigop.op->u.value);	fputs(str, fp); memset(str, 0, sizeof(str));
-	fputs("\tsubu $sp, $sp, 4\n", fp);
+	fputs("\taddi $sp, $sp, -4\n", fp);
 	fputs("\tsw $fp, 0($sp)\n", fp);
 	fputs("\tmove $fp, $sp\n", fp); 
 	sprintf(str, "\tsubu $sp, $sp, %d\n", stackSize);			fputs(str, fp);
@@ -450,7 +454,7 @@ void mipsFunction(InterCode cur_instr, FILE* fp){ int stackSize = 100;
 	ginfo.cur_param = 0;
 }
 
-void mipsArg(InterCode cur_instr, FILE* fp){
+void trans_ARG(InterCode cur_instr, FILE* fp){
 	char str[INSTR_LEN];
 	memset(str, 0, sizeof(str));
 	Operand op = cur_instr->u.sigop.op;
@@ -466,11 +470,11 @@ void mipsArg(InterCode cur_instr, FILE* fp){
 	}
 	else if(op->kind == CONSTI) {
 		if(ginfo.cur_arg < 4) {
-			sprintf(str, "\tli $a%d, %s", ginfo.cur_arg, op->u.value);		fputs(str, fp); memset(str, 0, INSTR_LEN);
+			sprintf(str, "\tli $a%d, %s\n", ginfo.cur_arg, op->u.value);		fputs(str, fp); memset(str, 0, INSTR_LEN);
 		}
 		else {
 			sprintf(str, "\tli $s0, %s\n", op->u.value);					fputs(str, fp); memset(str, 0, INSTR_LEN);
-			fputs("\tsubu $sp, $sp, 4\n", fp);
+			fputs("\taddi $sp, $sp, -4\n", fp);
 			fputs("\tlw $sp, 0($s0)\n", fp);		
 		}
 		goto TAG_CONST_FINISHED;
@@ -485,7 +489,7 @@ void mipsArg(InterCode cur_instr, FILE* fp){
 			sprintf(str, "\tlw $a%d, 0($s1)\n", ginfo.cur_arg);	fputs(str, fp); memset(str, 0, INSTR_LEN);
 		} else{
 			sprintf(str, "\tlw $s0, 0($s1)\n");	fputs(str, fp); memset(str, 0, INSTR_LEN);
-			fputs("\tsubu $sp, $sp, 4\n", fp);
+			fputs("\taddi $sp, $sp, -4\n", fp);
 			fputs("\tlw $sp, 0($s0)\n", fp);
 		}
 		goto TAG_CONST_FINISHED;
@@ -496,7 +500,7 @@ void mipsArg(InterCode cur_instr, FILE* fp){
 		sprintf(str, "\tlw $a%d, %d($fp)\n", ginfo.cur_arg, arg->offset);	fputs(str, fp); memset(str, 0, INSTR_LEN);
 	} else{
 		sprintf(str, "\tlw $s0, %d($fp)\n", arg->offset);					fputs(str, fp); memset(str, 0, INSTR_LEN);
-		fputs("\tsubu $sp, $sp, 4\n", fp);
+		fputs("\taddi $sp, $sp, -4\n", fp);
 		fputs("\tlw $sp, 0($s0)\n", fp);
 	}
 	TAG_CONST_FINISHED:
@@ -506,7 +510,7 @@ void mipsArg(InterCode cur_instr, FILE* fp){
 	}
 }
 
-void mipsParam(InterCode cur_instr, FILE* fp){
+void trans_PARAM(InterCode cur_instr, FILE* fp){
 	char str[INSTR_LEN];
 	memset(str, 0, sizeof(str));
 
@@ -524,7 +528,7 @@ void mipsParam(InterCode cur_instr, FILE* fp){
 	++ginfo.cur_param;
 }
 
-void mipsDec(InterCode cur_instr, FILE* fp){
+void trans_DEC(InterCode cur_instr, FILE* fp){
 	vinfo arrayHead = malloc(sizeof(struct vinfo_));
   	ginfo.sp_offset -= 4;
   	arrayHead->offset = ginfo.sp_offset;
@@ -547,7 +551,7 @@ void mipsDec(InterCode cur_instr, FILE* fp){
 	
 }
 
-void mipsAddress(InterCode cur_instr, FILE* fp){
+void trans_GETADDR(InterCode cur_instr, FILE* fp){
 	Operand leftOp = cur_instr->u.assop.left;
 	Operand rightOp = cur_instr->u.assop.right;
 	vinfo arrayHead = NULL;

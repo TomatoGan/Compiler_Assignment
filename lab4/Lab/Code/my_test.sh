@@ -20,6 +20,29 @@ for fileName in $targetDir
       #./parser ../Test/Tests/Tests_n/1/${fileName} ../Test/Tests/Tests_n/output1/${fileName}.s
       #spim -file ../Test/Tests/Tests_n/output1/${fileName}.s > ../Test/Tests/Tests_n/output2/${fileName}.txt
       ./parser ../Test/Tests/Tests_a/Tests/${fileName} ../Test/Tests/Tests_a/output_4_1/${fileName}.s
+      #spim -file ../Test/Tests/Tests_a/output_4_1/${fileName}.s > ../Test/Tests/Tests_a/output_4_2/${fileName}.txt
+	#./parser ../Test/Tests/Tests_a/Tests/${fileName} ../Test/Tests/Tests_a/output/${fileName}.ir
+	    #./parser $1"/"${fileName}   $2/${fileName}.ir
+      #echo $1"/"$fileName >> $2/${fileName}.output
+    fi
+  fi
+  done
+for fileName in $targetDir
+  do
+  if [ -d  $1"/"$fileName ]    # 两端要有空格，不然报错
+  then
+    #echo $1"/"$fileName
+    #echo "asdfsdfhaheoiehfaweohfohaehfuh"
+    readDir $1"/"$fileName $2
+  else
+    #echo "111111111111111111111111111111111111111111111111111111111111"
+    #echo ${fileName:0-3}
+    if [[ ${fileName:0-3} == 'cmm' ]];  # 查找扩展名为 .cmm的文件
+    then
+       echo "shitajsdlkfjslfjjsdlfjasjflsjfjilsdh ->" ${fileName}
+      #./parser ../Test/Tests/Tests_n/1/${fileName} ../Test/Tests/Tests_n/output1/${fileName}.s
+      #spim -file ../Test/Tests/Tests_n/output1/${fileName}.s > ../Test/Tests/Tests_n/output2/${fileName}.txt
+      #./parser ../Test/Tests/Tests_a/Tests/${fileName} ../Test/Tests/Tests_a/output_4_1/${fileName}.s
       spim -file ../Test/Tests/Tests_a/output_4_1/${fileName}.s > ../Test/Tests/Tests_a/output_4_2/${fileName}.txt
 	#./parser ../Test/Tests/Tests_a/Tests/${fileName} ../Test/Tests/Tests_a/output/${fileName}.ir
 	    #./parser $1"/"${fileName}   $2/${fileName}.ir
@@ -28,6 +51,7 @@ for fileName in $targetDir
   fi
   done
 }
+
  
 #readDir  ../Test/Tests_n/1 ../Test/Tests/output
 #readDir ../Test/Tests ./output  
