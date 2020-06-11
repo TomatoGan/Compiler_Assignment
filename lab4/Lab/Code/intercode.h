@@ -106,7 +106,7 @@ int have_struct;
 
 void insert_code(InterCode code);
 void prt_op(Operand op, FILE* fp);
-void prt_code(char* fname);
+void prt_intercode(char* fname);
 
 
 

@@ -3,6 +3,7 @@
 
 #include "symbol_table.h"
 
+
 #define INSTR_LEN 64
 #define REG_NUM 32
 #define USE_REG_OFFSET 8
@@ -32,12 +33,14 @@ struct vinfo_ {
 };
 
 struct reg_ {
-    char name[5];
+    char* name;
     vinfo cur_var;
 };
 
+void prt_mips_code(char *fileName);
 void prt_mcode_head(FILE* fp);
 void prt_cur_instr(InterCode cur_instr, FILE* fp);
+
 void mipsLabel(InterCode cur_instr, FILE* fp);
 void mipsAssign(InterCode cur_instr, FILE* fp);
 void mipsOperation(InterCode cur_instr, FILE* fp);
@@ -53,10 +56,11 @@ void mipsParam(InterCode cur_instr, FILE* fp);
 void mipsDec(InterCode cur_instr, FILE* fp);
 void mipsAddress(InterCode cur_instr, FILE* fp);
 
-int getReg(Operand op, FILE* fp);
+void init_reg();
+int allocate_reg(Operand op, FILE* fp);
 char* regName(int index);
-void swReg(int index, FILE* fp);
-void lwReg(int index, vinfo cur_var, FILE* fp);
+void store_word(int index, FILE* fp);
+void load_word(int index, vinfo cur_var, FILE* fp);
 void addVar(vinfo var);
 vinfo findVar(char *name);
 #endif

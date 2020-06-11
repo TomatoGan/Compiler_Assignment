@@ -68,15 +68,16 @@ void prt_op(Operand op, FILE* fp) {
 }
 
 
-void prt_code(char* fname)
+void prt_intercode(char* fname)
 {
     if(fname == NULL) {printf("File name empty!\n");return;}
     FILE* fp = fopen(fname,"w");
     if(fp == NULL) { printf("Open file error!\n"); return;}
 
 	InterCode iclist = iclist_head;
+	 printf("%p<==== in intercode\n",iclist_head);
 	while(iclist!=NULL)
-	{
+	{	printf("%p <===cur _poiinter in intercode.c\n", iclist);
 		switch(iclist->kind)
 		{
 			case OP_ASSIGN:

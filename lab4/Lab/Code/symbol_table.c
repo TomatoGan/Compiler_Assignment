@@ -1,4 +1,5 @@
-#include "symbol_table.h"
+//#include "symbol_table.h"
+#include "mips_code.h"
 #include "intercode.h"
 
 /***Symbol Table***/
@@ -73,8 +74,15 @@ void parse_sybol(node* root,char* fname) {
   init_st();
 
   ppr_Program(root);
-  //process_func_dec();
-  if(have_struct == 0) {prt_code(fname);}
+  #ifdef LAB2
+    process_func_dec();
+  #endif
+  #ifndef LAB3
+    if(have_struct == 0) {prt_intercode(fname);}
+  #endif
+  #ifndef LAB4
+    prt_mips_code(fname);
+  #endif
 }
 
 void add_st_node(st_node cur_node) {
@@ -168,7 +176,7 @@ vtype get_STI_vtype(char* qname) {  //query_name
     { return t->i.vi;} 
     t = t->next;
   } 
-  printf("hahahah, is empty\n");
+  //printf("hahahah, is empty\n");
   return NULL;
 }
 
@@ -722,7 +730,7 @@ void ppr_Stmt(node* srt, vtype rttype){
   #endif
 
   if(strcmp(srt->fst_child->name,"Exp") == 0) {
-    printf("mother fucker 11111111!\n"); ppr_Exp(srt->fst_child,NULL,0);printf("mother fucker! 22222222222\n");
+    ppr_Exp(srt->fst_child,NULL,0);
     return;
   }
   if(strcmp(srt->fst_child->name,"CompSt") == 0) {
@@ -952,7 +960,7 @@ vtype ppr_Exp(node* ert, Operand place, vtype cur_dim) {  //layer is set for the
       vtype t = get_STI_vtype(ert->fst_child->val);
       if(t == NULL) 
       { printf("Error type 1 at Line %d: Undefined variable \"%s\"\n",ert->fst_child->lineNum, ert->fst_child->val); }
-      printf("ai .........................,%s,...............................\n",ert->fst_child->val);
+      //printf("ai .........................,%s,...............................\n",ert->fst_child->val);
       if(place != NULL) {
         place->kind = VARI;
         //place->u.value = ert->fst_child->val;
@@ -962,7 +970,6 @@ vtype ppr_Exp(node* ert, Operand place, vtype cur_dim) {  //layer is set for the
       }
 
       //place->u.var.varNum = vt_cnt++;
-      printf("in IDDDDDDDDDD\n");
       return t;
   }
   if( strcmp(ert->fst_child->name,"INT") == 0 ) {
@@ -974,7 +981,6 @@ vtype ppr_Exp(node* ert, Operand place, vtype cur_dim) {  //layer is set for the
       place->kind = CONSTI;
       place->u.value = ert->fst_child->val;
     }
-    printf("shaole xie anquangan aaaaa\n");
     return t;
   }
   if( strcmp(ert->fst_child->name,"FLOAT") == 0 ) {
