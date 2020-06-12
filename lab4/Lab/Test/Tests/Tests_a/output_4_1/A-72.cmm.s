@@ -21,142 +21,221 @@ write:
 	syscall
 	move $v0, $0
 	jr $ra
+#1<_____________===
 id_kr9d6Ly5KL:
 	addi $sp, $sp, -4
 	sw $fp, 0($sp)
 	move $fp, $sp
 	addi $sp, $sp, -4
 	subu $sp, $sp, 800
+#2<_____________===
 	sw $a1, -4($fp)
+#3<_____________===
 	sw $a0, -8($fp)
+#4<_____________===
 	li $t0, 0
 	sw $t0, -12($fp)
+#5<_____________===
 	li $t1, 0
 	sw $t1, -16($fp)
+#6<_____________===
 	li $t2, 0
 	sw $t2, -20($fp)
+#7<_____________===
 	lw $t3, -4($fp)
 	bgt $t3, 0, label9
+#8<_____________===
 	j label10
+#9<_____________===
 label9:
+#10<_____________===
 	lw $t4, -20($fp)
 	li $t4, 1
 	sw $t4, -20($fp)
+#11<_____________===
 label10:
+#12<_____________===
 	lw $t5, -20($fp)
 	bne $t5, 0, label8
+#13<_____________===
 	j label6
+#14<_____________===
 label8:
+#15<_____________===
 	li $t6, 0
 	sw $t6, -24($fp)
+#16<_____________===
 	lw $t0, -8($fp)
 	bgt $t0, 0, label11
+#17<_____________===
 	j label12
+#18<_____________===
 label11:
+#19<_____________===
 	lw $t1, -24($fp)
 	li $t1, 1
 	sw $t1, -24($fp)
+#20<_____________===
 label12:
+#21<_____________===
 	lw $t2, -24($fp)
 	bne $t2, 0, label7
+#22<_____________===
 	j label6
+#23<_____________===
 label7:
+#24<_____________===
 	li $t3, 0
 	sw $t3, -28($fp)
+#25<_____________===
 	li $t5, 2147483647
 	lw $t6, -8($fp)
 	sub $t4, $t5, $t6
 	sw $t4, -32($fp)
+#26<_____________===
 	lw $t0, -4($fp)
 	lw $t1, -32($fp)
 	bgt $t0, $t1, label13
+#27<_____________===
 	j label14
+#28<_____________===
 label13:
+#29<_____________===
 	lw $t2, -28($fp)
 	li $t2, 1
 	sw $t2, -28($fp)
+#30<_____________===
 label14:
+#31<_____________===
 	lw $t3, -28($fp)
 	bne $t3, 0, label5
+#32<_____________===
 	j label6
+#33<_____________===
 label5:
+#34<_____________===
 	lw $t4, -16($fp)
 	li $t4, 1
 	sw $t4, -16($fp)
+#35<_____________===
 label6:
+#36<_____________===
 	lw $t5, -16($fp)
 	bne $t5, 0, label2
+#37<_____________===
 	j label4
+#38<_____________===
 label4:
+#39<_____________===
 	li $t6, 0
 	sw $t6, -36($fp)
+#40<_____________===
 	li $t0, 0
 	sw $t0, -40($fp)
+#41<_____________===
 	lw $t1, -4($fp)
 	blt $t1, 0, label19
+#42<_____________===
 	j label20
+#43<_____________===
 label19:
+#44<_____________===
 	lw $t2, -40($fp)
 	li $t2, 1
 	sw $t2, -40($fp)
+#45<_____________===
 label20:
+#46<_____________===
 	lw $t3, -40($fp)
 	bne $t3, 0, label18
+#47<_____________===
 	j label16
+#48<_____________===
 label18:
+#49<_____________===
 	li $t4, 0
 	sw $t4, -44($fp)
+#50<_____________===
 	lw $t5, -8($fp)
 	blt $t5, 0, label21
+#51<_____________===
 	j label22
+#52<_____________===
 label21:
+#53<_____________===
 	lw $t6, -44($fp)
 	li $t6, 1
 	sw $t6, -44($fp)
+#54<_____________===
 label22:
+#55<_____________===
 	lw $t0, -44($fp)
 	bne $t0, 0, label17
+#56<_____________===
 	j label16
+#57<_____________===
 label17:
+#58<_____________===
 	li $t1, 0
 	sw $t1, -48($fp)
+#59<_____________===
 	li $t3, 0
 	li $t4, 2147483648
 	sub $t2, $t3, $t4
 	sw $t2, -52($fp)
+#60<_____________===
 	lw $t6, -52($fp)
 	lw $t0, -8($fp)
 	sub $t5, $t6, $t0
 	sw $t5, -56($fp)
+#61<_____________===
 	lw $t1, -4($fp)
 	lw $t2, -56($fp)
 	blt $t1, $t2, label23
+#62<_____________===
 	j label24
+#63<_____________===
 label23:
+#64<_____________===
 	lw $t3, -48($fp)
 	li $t3, 1
 	sw $t3, -48($fp)
+#65<_____________===
 label24:
+#66<_____________===
 	lw $t4, -48($fp)
 	bne $t4, 0, label15
+#67<_____________===
 	j label16
+#68<_____________===
 label15:
+#69<_____________===
 	lw $t5, -36($fp)
 	li $t5, 1
 	sw $t5, -36($fp)
+#70<_____________===
 label16:
+#71<_____________===
 	lw $t6, -36($fp)
 	bne $t6, 0, label2
+#72<_____________===
 	j label3
+#73<_____________===
 label2:
+#74<_____________===
 	lw $t0, -12($fp)
 	li $t0, 1
 	sw $t0, -12($fp)
+#75<_____________===
 label3:
+#76<_____________===
 	lw $t1, -12($fp)
 	bne $t1, 0, label0
+#77<_____________===
 	j label1
+#78<_____________===
 label0:
+#79<_____________===
 	lw $t2, -4($fp)
 	move $v0, $t2
 	addi $sp, $sp, 800
@@ -164,11 +243,14 @@ label0:
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#80<_____________===
 label1:
+#81<_____________===
 	lw $t4, -4($fp)
 	lw $t5, -8($fp)
 	add $t3, $t4, $t5
 	sw $t3, -60($fp)
+#82<_____________===
 	lw $t6, -60($fp)
 	move $v0, $t6
 	addi $sp, $sp, 800
@@ -176,132 +258,205 @@ label1:
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#83<_____________===
 id_ki:
 	addi $sp, $sp, -4
 	sw $fp, 0($sp)
 	move $fp, $sp
 	addi $sp, $sp, -4
 	subu $sp, $sp, 800
+#84<_____________===
 	sw $a1, -4($fp)
+#85<_____________===
 	sw $a0, -8($fp)
+#86<_____________===
 	li $t0, 0
 	sw $t0, -12($fp)
+#87<_____________===
 	li $t1, 0
 	sw $t1, -16($fp)
+#88<_____________===
 	lw $t2, -4($fp)
 	bgt $t2, 0, label32
+#89<_____________===
 	j label33
+#90<_____________===
 label32:
+#91<_____________===
 	lw $t3, -16($fp)
 	li $t3, 1
 	sw $t3, -16($fp)
+#92<_____________===
 label33:
+#93<_____________===
 	lw $t4, -16($fp)
 	bne $t4, 0, label31
+#94<_____________===
 	j label29
+#95<_____________===
 label31:
+#96<_____________===
 	li $t5, 0
 	sw $t5, -20($fp)
+#97<_____________===
 	lw $t6, -8($fp)
 	blt $t6, 0, label34
+#98<_____________===
 	j label35
+#99<_____________===
 label34:
+#100<_____________===
 	lw $t0, -20($fp)
 	li $t0, 1
 	sw $t0, -20($fp)
+#101<_____________===
 label35:
+#102<_____________===
 	lw $t1, -20($fp)
 	bne $t1, 0, label30
+#103<_____________===
 	j label29
+#104<_____________===
 label30:
+#105<_____________===
 	li $t2, 0
 	sw $t2, -24($fp)
+#106<_____________===
 	li $t4, 2147483647
 	lw $t5, -8($fp)
 	add $t3, $t4, $t5
 	sw $t3, -28($fp)
+#107<_____________===
 	lw $t6, -4($fp)
 	lw $t0, -28($fp)
 	bgt $t6, $t0, label36
+#108<_____________===
 	j label37
+#109<_____________===
 label36:
+#110<_____________===
 	lw $t1, -24($fp)
 	li $t1, 1
 	sw $t1, -24($fp)
+#111<_____________===
 label37:
+#112<_____________===
 	lw $t2, -24($fp)
 	bne $t2, 0, label28
+#113<_____________===
 	j label29
+#114<_____________===
 label28:
+#115<_____________===
 	lw $t3, -12($fp)
 	li $t3, 1
 	sw $t3, -12($fp)
+#116<_____________===
 label29:
+#117<_____________===
 	lw $t4, -12($fp)
 	bne $t4, 0, label25
+#118<_____________===
 	j label27
+#119<_____________===
 label27:
+#120<_____________===
 	li $t5, 0
 	sw $t5, -32($fp)
+#121<_____________===
 	li $t6, 0
 	sw $t6, -36($fp)
+#122<_____________===
 	lw $t0, -4($fp)
 	blt $t0, 0, label42
+#123<_____________===
 	j label43
+#124<_____________===
 label42:
+#125<_____________===
 	lw $t1, -36($fp)
 	li $t1, 1
 	sw $t1, -36($fp)
+#126<_____________===
 label43:
+#127<_____________===
 	lw $t2, -36($fp)
 	bne $t2, 0, label41
+#128<_____________===
 	j label39
+#129<_____________===
 label41:
+#130<_____________===
 	li $t3, 0
 	sw $t3, -40($fp)
+#131<_____________===
 	lw $t4, -8($fp)
 	bgt $t4, 0, label44
+#132<_____________===
 	j label45
+#133<_____________===
 label44:
+#134<_____________===
 	lw $t5, -40($fp)
 	li $t5, 1
 	sw $t5, -40($fp)
+#135<_____________===
 label45:
+#136<_____________===
 	lw $t6, -40($fp)
 	bne $t6, 0, label40
+#137<_____________===
 	j label39
+#138<_____________===
 label40:
+#139<_____________===
 	li $t0, 0
 	sw $t0, -44($fp)
+#140<_____________===
 	li $t2, 0
 	li $t3, 2147483648
 	sub $t1, $t2, $t3
 	sw $t1, -48($fp)
+#141<_____________===
 	lw $t5, -48($fp)
 	lw $t6, -8($fp)
 	add $t4, $t5, $t6
 	sw $t4, -52($fp)
+#142<_____________===
 	lw $t0, -4($fp)
 	lw $t1, -52($fp)
 	blt $t0, $t1, label46
+#143<_____________===
 	j label47
+#144<_____________===
 label46:
+#145<_____________===
 	lw $t2, -44($fp)
 	li $t2, 1
 	sw $t2, -44($fp)
+#146<_____________===
 label47:
+#147<_____________===
 	lw $t3, -44($fp)
 	bne $t3, 0, label38
+#148<_____________===
 	j label39
+#149<_____________===
 label38:
+#150<_____________===
 	lw $t4, -32($fp)
 	li $t4, 1
 	sw $t4, -32($fp)
+#151<_____________===
 label39:
+#152<_____________===
 	lw $t5, -32($fp)
 	bne $t5, 0, label25
+#153<_____________===
 	j label26
+#154<_____________===
 label25:
+#155<_____________===
 	lw $t6, -4($fp)
 	move $v0, $t6
 	addi $sp, $sp, 800
@@ -309,11 +464,14 @@ label25:
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#156<_____________===
 label26:
+#157<_____________===
 	lw $t1, -4($fp)
 	lw $t2, -8($fp)
 	sub $t0, $t1, $t2
 	sw $t0, -56($fp)
+#158<_____________===
 	lw $t3, -56($fp)
 	move $v0, $t3
 	addi $sp, $sp, 800
@@ -321,278 +479,435 @@ label26:
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#159<_____________===
 id_bAvvm:
 	addi $sp, $sp, -4
 	sw $fp, 0($sp)
 	move $fp, $sp
 	addi $sp, $sp, -4
 	subu $sp, $sp, 800
+#160<_____________===
 	sw $a1, -4($fp)
+#161<_____________===
 	sw $a0, -8($fp)
+#162<_____________===
 	li $t4, 0
 	sw $t4, -12($fp)
+#163<_____________===
 	li $t5, 0
 	sw $t5, -16($fp)
+#164<_____________===
 	li $t6, 0
 	sw $t6, -20($fp)
+#165<_____________===
 	lw $t0, -4($fp)
 	bgt $t0, 0, label59
+#166<_____________===
 	j label60
+#167<_____________===
 label59:
+#168<_____________===
 	lw $t1, -20($fp)
 	li $t1, 1
 	sw $t1, -20($fp)
+#169<_____________===
 label60:
+#170<_____________===
 	lw $t2, -20($fp)
 	bne $t2, 0, label58
+#171<_____________===
 	j label56
+#172<_____________===
 label58:
+#173<_____________===
 	li $t3, 0
 	sw $t3, -24($fp)
+#174<_____________===
 	lw $t4, -8($fp)
 	bgt $t4, 0, label61
+#175<_____________===
 	j label62
+#176<_____________===
 label61:
+#177<_____________===
 	lw $t5, -24($fp)
 	li $t5, 1
 	sw $t5, -24($fp)
+#178<_____________===
 label62:
+#179<_____________===
 	lw $t6, -24($fp)
 	bne $t6, 0, label57
+#180<_____________===
 	j label56
+#181<_____________===
 label57:
+#182<_____________===
 	li $t0, 0
 	sw $t0, -28($fp)
+#183<_____________===
 	li $t2, 2147483647
 	lw $t3, -8($fp)
 	div $t2, $t3
 	mflo $t1
 	sw $t1, -32($fp)
+#184<_____________===
 	lw $t4, -4($fp)
 	lw $t5, -32($fp)
 	bgt $t4, $t5, label63
+#185<_____________===
 	j label64
+#186<_____________===
 label63:
+#187<_____________===
 	lw $t6, -28($fp)
 	li $t6, 1
 	sw $t6, -28($fp)
+#188<_____________===
 label64:
+#189<_____________===
 	lw $t0, -28($fp)
 	bne $t0, 0, label55
+#190<_____________===
 	j label56
+#191<_____________===
 label55:
+#192<_____________===
 	lw $t1, -16($fp)
 	li $t1, 1
 	sw $t1, -16($fp)
+#193<_____________===
 label56:
+#194<_____________===
 	lw $t2, -16($fp)
 	bne $t2, 0, label50
+#195<_____________===
 	j label54
+#196<_____________===
 label54:
+#197<_____________===
 	li $t3, 0
 	sw $t3, -36($fp)
+#198<_____________===
 	li $t4, 0
 	sw $t4, -40($fp)
+#199<_____________===
 	lw $t5, -4($fp)
 	bgt $t5, 0, label69
+#200<_____________===
 	j label70
+#201<_____________===
 label69:
+#202<_____________===
 	lw $t6, -40($fp)
 	li $t6, 1
 	sw $t6, -40($fp)
+#203<_____________===
 label70:
+#204<_____________===
 	lw $t0, -40($fp)
 	bne $t0, 0, label68
+#205<_____________===
 	j label66
+#206<_____________===
 label68:
+#207<_____________===
 	li $t1, 0
 	sw $t1, -44($fp)
+#208<_____________===
 	lw $t2, -8($fp)
 	ble $t2, 0, label71
+#209<_____________===
 	j label72
+#210<_____________===
 label71:
+#211<_____________===
 	lw $t3, -44($fp)
 	li $t3, 1
 	sw $t3, -44($fp)
+#212<_____________===
 label72:
+#213<_____________===
 	lw $t4, -44($fp)
 	bne $t4, 0, label67
+#214<_____________===
 	j label66
+#215<_____________===
 label67:
+#216<_____________===
 	li $t5, 0
 	sw $t5, -48($fp)
+#217<_____________===
 	li $t0, 2147483648
 	lw $t1, -4($fp)
 	div $t0, $t1
 	mflo $t6
 	sw $t6, -52($fp)
+#218<_____________===
 	li $t3, 0
 	lw $t4, -52($fp)
 	sub $t2, $t3, $t4
 	sw $t2, -56($fp)
+#219<_____________===
 	lw $t5, -8($fp)
 	lw $t6, -56($fp)
 	blt $t5, $t6, label73
+#220<_____________===
 	j label74
+#221<_____________===
 label73:
+#222<_____________===
 	lw $t0, -48($fp)
 	li $t0, 1
 	sw $t0, -48($fp)
+#223<_____________===
 label74:
+#224<_____________===
 	lw $t1, -48($fp)
 	bne $t1, 0, label65
+#225<_____________===
 	j label66
+#226<_____________===
 label65:
+#227<_____________===
 	lw $t2, -36($fp)
 	li $t2, 1
 	sw $t2, -36($fp)
+#228<_____________===
 label66:
+#229<_____________===
 	lw $t3, -36($fp)
 	bne $t3, 0, label50
+#230<_____________===
 	j label53
+#231<_____________===
 label53:
+#232<_____________===
 	li $t4, 0
 	sw $t4, -60($fp)
+#233<_____________===
 	li $t5, 0
 	sw $t5, -64($fp)
+#234<_____________===
 	lw $t6, -4($fp)
 	ble $t6, 0, label79
+#235<_____________===
 	j label80
+#236<_____________===
 label79:
+#237<_____________===
 	lw $t0, -64($fp)
 	li $t0, 1
 	sw $t0, -64($fp)
+#238<_____________===
 label80:
+#239<_____________===
 	lw $t1, -64($fp)
 	bne $t1, 0, label78
+#240<_____________===
 	j label76
+#241<_____________===
 label78:
+#242<_____________===
 	li $t2, 0
 	sw $t2, -68($fp)
+#243<_____________===
 	lw $t3, -8($fp)
 	bgt $t3, 0, label81
+#244<_____________===
 	j label82
+#245<_____________===
 label81:
+#246<_____________===
 	lw $t4, -68($fp)
 	li $t4, 1
 	sw $t4, -68($fp)
+#247<_____________===
 label82:
+#248<_____________===
 	lw $t5, -68($fp)
 	bne $t5, 0, label77
+#249<_____________===
 	j label76
+#250<_____________===
 label77:
+#251<_____________===
 	li $t6, 0
 	sw $t6, -72($fp)
+#252<_____________===
 	li $t1, 2147483648
 	lw $t2, -8($fp)
 	div $t1, $t2
 	mflo $t0
 	sw $t0, -76($fp)
+#253<_____________===
 	li $t4, 0
 	lw $t5, -76($fp)
 	sub $t3, $t4, $t5
 	sw $t3, -80($fp)
+#254<_____________===
 	lw $t6, -4($fp)
 	lw $t0, -80($fp)
 	blt $t6, $t0, label83
+#255<_____________===
 	j label84
+#256<_____________===
 label83:
+#257<_____________===
 	lw $t1, -72($fp)
 	li $t1, 1
 	sw $t1, -72($fp)
+#258<_____________===
 label84:
+#259<_____________===
 	lw $t2, -72($fp)
 	bne $t2, 0, label75
+#260<_____________===
 	j label76
+#261<_____________===
 label75:
+#262<_____________===
 	lw $t3, -60($fp)
 	li $t3, 1
 	sw $t3, -60($fp)
+#263<_____________===
 label76:
+#264<_____________===
 	lw $t4, -60($fp)
 	bne $t4, 0, label50
+#265<_____________===
 	j label52
+#266<_____________===
 label52:
+#267<_____________===
 	li $t5, 0
 	sw $t5, -84($fp)
+#268<_____________===
 	li $t6, 0
 	sw $t6, -88($fp)
+#269<_____________===
 	lw $t0, -4($fp)
 	ble $t0, 0, label90
+#270<_____________===
 	j label91
+#271<_____________===
 label90:
+#272<_____________===
 	lw $t1, -88($fp)
 	li $t1, 1
 	sw $t1, -88($fp)
+#273<_____________===
 label91:
+#274<_____________===
 	lw $t2, -88($fp)
 	bne $t2, 0, label89
+#275<_____________===
 	j label86
+#276<_____________===
 label89:
+#277<_____________===
 	li $t3, 0
 	sw $t3, -92($fp)
+#278<_____________===
 	lw $t4, -8($fp)
 	ble $t4, 0, label92
+#279<_____________===
 	j label93
+#280<_____________===
 label92:
+#281<_____________===
 	lw $t5, -92($fp)
 	li $t5, 1
 	sw $t5, -92($fp)
+#282<_____________===
 label93:
+#283<_____________===
 	lw $t6, -92($fp)
 	bne $t6, 0, label88
+#284<_____________===
 	j label86
+#285<_____________===
 label88:
+#286<_____________===
 	li $t0, 0
 	sw $t0, -96($fp)
+#287<_____________===
 	lw $t1, -4($fp)
 	bne $t1, 0, label94
+#288<_____________===
 	j label95
+#289<_____________===
 label94:
+#290<_____________===
 	lw $t2, -96($fp)
 	li $t2, 1
 	sw $t2, -96($fp)
+#291<_____________===
 label95:
+#292<_____________===
 	lw $t3, -96($fp)
 	bne $t3, 0, label87
+#293<_____________===
 	j label86
+#294<_____________===
 label87:
+#295<_____________===
 	li $t4, 0
 	sw $t4, -100($fp)
+#296<_____________===
 	li $t6, 2147483647
 	lw $t0, -4($fp)
 	div $t6, $t0
 	mflo $t5
 	sw $t5, -104($fp)
+#297<_____________===
 	lw $t1, -8($fp)
 	lw $t2, -104($fp)
 	blt $t1, $t2, label96
+#298<_____________===
 	j label97
+#299<_____________===
 label96:
+#300<_____________===
 	lw $t3, -100($fp)
 	li $t3, 1
 	sw $t3, -100($fp)
+#301<_____________===
 label97:
+#302<_____________===
 	lw $t4, -100($fp)
 	bne $t4, 0, label85
+#303<_____________===
 	j label86
+#304<_____________===
 label85:
+#305<_____________===
 	lw $t5, -84($fp)
 	li $t5, 1
 	sw $t5, -84($fp)
+#306<_____________===
 label86:
+#307<_____________===
 	lw $t6, -84($fp)
 	bne $t6, 0, label50
+#308<_____________===
 	j label51
+#309<_____________===
 label50:
+#310<_____________===
 	lw $t0, -12($fp)
 	li $t0, 1
 	sw $t0, -12($fp)
+#311<_____________===
 label51:
+#312<_____________===
 	lw $t1, -12($fp)
 	bne $t1, 0, label48
+#313<_____________===
 	j label49
+#314<_____________===
 label48:
+#315<_____________===
 	lw $t2, -4($fp)
 	move $v0, $t2
 	addi $sp, $sp, 800
@@ -600,11 +915,14 @@ label48:
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#316<_____________===
 label49:
+#317<_____________===
 	lw $t4, -4($fp)
 	lw $t5, -8($fp)
 	mul $t3, $t4, $t5
 	sw $t3, -108($fp)
+#318<_____________===
 	lw $t6, -108($fp)
 	move $v0, $t6
 	addi $sp, $sp, 800
@@ -612,86 +930,131 @@ label49:
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#319<_____________===
 id_WC2:
 	addi $sp, $sp, -4
 	sw $fp, 0($sp)
 	move $fp, $sp
 	addi $sp, $sp, -4
 	subu $sp, $sp, 800
+#320<_____________===
 	sw $a1, -4($fp)
+#321<_____________===
 	sw $a0, -8($fp)
+#322<_____________===
 	li $t0, 0
 	sw $t0, -12($fp)
+#323<_____________===
 	li $t1, 0
 	sw $t1, -16($fp)
+#324<_____________===
 	lw $t2, -8($fp)
 	beq $t2, 0, label103
+#325<_____________===
 	j label104
+#326<_____________===
 label103:
+#327<_____________===
 	lw $t3, -16($fp)
 	li $t3, 1
 	sw $t3, -16($fp)
+#328<_____________===
 label104:
+#329<_____________===
 	lw $t4, -16($fp)
 	bne $t4, 0, label100
+#330<_____________===
 	j label102
+#331<_____________===
 label102:
+#332<_____________===
 	li $t5, 0
 	sw $t5, -20($fp)
+#333<_____________===
 	li $t6, 0
 	sw $t6, -24($fp)
+#334<_____________===
 	li $t1, 0
 	li $t2, 2147483648
 	sub $t0, $t1, $t2
 	sw $t0, -28($fp)
+#335<_____________===
 	lw $t3, -4($fp)
 	lw $t4, -28($fp)
 	beq $t3, $t4, label108
+#336<_____________===
 	j label109
+#337<_____________===
 label108:
+#338<_____________===
 	lw $t5, -24($fp)
 	li $t5, 1
 	sw $t5, -24($fp)
+#339<_____________===
 label109:
+#340<_____________===
 	lw $t6, -24($fp)
 	bne $t6, 0, label107
+#341<_____________===
 	j label106
+#342<_____________===
 label107:
+#343<_____________===
 	li $t0, 0
 	sw $t0, -32($fp)
+#344<_____________===
 	li $t2, 0
 	li $t3, 1
 	sub $t1, $t2, $t3
 	sw $t1, -36($fp)
+#345<_____________===
 	lw $t4, -8($fp)
 	lw $t5, -36($fp)
 	beq $t4, $t5, label110
+#346<_____________===
 	j label111
+#347<_____________===
 label110:
+#348<_____________===
 	lw $t6, -32($fp)
 	li $t6, 1
 	sw $t6, -32($fp)
+#349<_____________===
 label111:
+#350<_____________===
 	lw $t0, -32($fp)
 	bne $t0, 0, label105
+#351<_____________===
 	j label106
+#352<_____________===
 label105:
+#353<_____________===
 	lw $t1, -20($fp)
 	li $t1, 1
 	sw $t1, -20($fp)
+#354<_____________===
 label106:
+#355<_____________===
 	lw $t2, -20($fp)
 	bne $t2, 0, label100
+#356<_____________===
 	j label101
+#357<_____________===
 label100:
+#358<_____________===
 	lw $t3, -12($fp)
 	li $t3, 1
 	sw $t3, -12($fp)
+#359<_____________===
 label101:
+#360<_____________===
 	lw $t4, -12($fp)
 	bne $t4, 0, label98
+#361<_____________===
 	j label99
+#362<_____________===
 label98:
+#363<_____________===
 	lw $t5, -4($fp)
 	move $v0, $t5
 	addi $sp, $sp, 800
@@ -699,12 +1062,15 @@ label98:
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#364<_____________===
 label99:
+#365<_____________===
 	lw $t0, -4($fp)
 	lw $t1, -8($fp)
 	div $t0, $t1
 	mflo $t6
 	sw $t6, -40($fp)
+#366<_____________===
 	lw $t2, -40($fp)
 	move $v0, $t2
 	addi $sp, $sp, 800
@@ -712,30 +1078,42 @@ label99:
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#367<_____________===
 id_a_PBd0:
 	addi $sp, $sp, -4
 	sw $fp, 0($sp)
 	move $fp, $sp
 	addi $sp, $sp, -4
 	subu $sp, $sp, 800
+#368<_____________===
 	sw $a1, -4($fp)
+#369<_____________===
 	sw $a0, -8($fp)
+#370<_____________===
 	lw $t3, -4($fp)
 	blt $t3, 0, label112
+#371<_____________===
 	j label114
+#372<_____________===
 label114:
+#373<_____________===
 	lw $t4, -4($fp)
 	lw $t5, -8($fp)
 	bge $t4, $t5, label112
+#374<_____________===
 	j label113
+#375<_____________===
 label112:
+#376<_____________===
 	li $v0, 0
 	addi $sp, $sp, 800
 	addi $sp, $sp, 4
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#377<_____________===
 label113:
+#378<_____________===
 	lw $t6, -4($fp)
 	move $v0, $t6
 	addi $sp, $sp, 800
@@ -743,8109 +1121,2706 @@ label113:
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#379<_____________===
 id_xj7kF:
 	addi $sp, $sp, -4
 	sw $fp, 0($sp)
 	move $fp, $sp
 	addi $sp, $sp, -4
 	subu $sp, $sp, 800
+#380<_____________===
 	sw $a0, -4($fp)
+#381<_____________===
+#382<_____________===
+#383<_____________===
+#384<_____________===
+#385<_____________===
+#386<_____________===
+#387<_____________===
+#388<_____________===
 	la $t0, -40($fp)
 	sw $t0, -44($fp)
+#389<_____________===
 	lw $t1, -8($fp)
 	li $t1, 10621
 	sw $t1, -8($fp)
+#390<_____________===
 	lw $t2, -12($fp)
 	li $t2, 32987
 	sw $t2, -12($fp)
+#391<_____________===
 	lw $t3, -16($fp)
 	li $t3, 64792
 	sw $t3, -16($fp)
+#392<_____________===
 	lw $t4, -20($fp)
 	li $t4, 34718
 	sw $t4, -20($fp)
+#393<_____________===
 	lw $t5, -24($fp)
 	li $t5, 36860
 	sw $t5, -24($fp)
+#394<_____________===
 	lw $t6, -28($fp)
 	li $t6, 47903
 	sw $t6, -28($fp)
+#395<_____________===
 	li $t1, 0
 	li $t2, 4
 	mul $t0, $t1, $t2
 	sw $t0, -48($fp)
+#396<_____________===
 	lw $t4, -44($fp)
 	lw $t5, -48($fp)
 	add $t3, $t4, $t5
 	sw $t3, -52($fp)
+#397<_____________===
 	lw $t6, -52($fp)
 	li $s2, 44590
 	sw $t6, -52($fp)
 	sw $s2, 0($t6)
+#398<_____________===
 	li $t1, 1
 	li $t2, 4
 	mul $t0, $t1, $t2
 	sw $t0, -56($fp)
+#399<_____________===
 	lw $t4, -44($fp)
 	lw $t5, -56($fp)
 	add $t3, $t4, $t5
 	sw $t3, -60($fp)
+#400<_____________===
 	lw $t6, -60($fp)
 	li $s2, 54122
 	sw $t6, -60($fp)
 	sw $s2, 0($t6)
+#401<_____________===
 	li $t1, 2
 	li $t2, 4
 	mul $t0, $t1, $t2
 	sw $t0, -64($fp)
+#402<_____________===
 	lw $t4, -44($fp)
 	lw $t5, -64($fp)
 	add $t3, $t4, $t5
 	sw $t3, -68($fp)
+#403<_____________===
 	lw $t6, -68($fp)
 	li $s2, 1732
 	sw $t6, -68($fp)
 	sw $s2, 0($t6)
+#404<_____________===
 	li $t0, 0
 	sw $t0, -72($fp)
+#405<_____________===
 	lw $t2, -4($fp)
 	li $t3, 36627
 	div $t2, $t3
 	mflo $t1
 	sw $t1, -76($fp)
+#406<_____________===
 	lw $t4, -76($fp)
 	bne $t4, 0, label118
+#407<_____________===
 	j label120
+#408<_____________===
 label120:
+#409<_____________===
+	li $t5, 47883
+	li $t6, 0
+	bne $t5, $t6, label118
+#410<_____________===
 	j label119
+#411<_____________===
 label118:
-	lw $t5, -72($fp)
-	li $t5, 1
-	sw $t5, -72($fp)
-label119:
-	lw $a0, -72($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t6, $v0
-	sw $t6, -80($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 57809
-	lw $t2, -80($fp)
-	mul $t0, $t1, $t2
-	sw $t0, -84($fp)
-	lw $t3, -84($fp)
-	bne $t3, 0, label115
-	j label117
-label117:
-	li $t4, 0
-	sw $t4, -88($fp)
-	li $t5, 0
-	sw $t5, -92($fp)
-	li $t0, 0
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -96($fp)
-	lw $t3, -44($fp)
-	lw $t4, -96($fp)
-	add $t2, $t3, $t4
-	sw $t2, -100($fp)
-	lw $t5, -100($fp)
-	lw $s3, 0($t5)
-	bne $s3, 0, label124
-	j label123
-label123:
-	lw $t6, -92($fp)
-	li $t6, 1
-	sw $t6, -92($fp)
-label124:
-	lw $t0, -92($fp)
-	bne $t0, 28245, label121
-	j label122
-label121:
-	lw $t1, -88($fp)
-	li $t1, 1
-	sw $t1, -88($fp)
-label122:
-	lw $t2, -88($fp)
-	lw $t3, -8($fp)
-	bge $t2, $t3, label115
-	j label116
-label115:
-label125:
-	li $t5, 12119
-	li $t6, 61185
-	div $t5, $t6
-	mflo $t4
-	sw $t4, -104($fp)
-	li $t1, 61428
-	lw $t2, -104($fp)
-	sub $t0, $t1, $t2
-	sw $t0, -108($fp)
-	lw $t3, -108($fp)
-	bne $t3, 0, label126
-	j label127
-label126:
-	j label129
-label128:
-	lw $t4, -4($fp)
-	bne $t4, 0, label131
-	j label130
-label130:
-label131:
-	j label132
-label129:
-	li $t6, 0
-	lw $t0, -24($fp)
-	sub $t5, $t6, $t0
-	sw $t5, -112($fp)
-	lw $t2, -8($fp)
-	lw $t3, -112($fp)
-	mul $t1, $t2, $t3
-	sw $t1, -116($fp)
-	lw $t4, -116($fp)
-	bne $t4, 0, label135
-	j label134
-label135:
-	li $t5, 0
-	sw $t5, -120($fp)
-	li $t6, 0
-	sw $t6, -124($fp)
-	j label138
-label138:
-	lw $t0, -124($fp)
-	li $t0, 1
-	sw $t0, -124($fp)
-label139:
-	lw $t1, -124($fp)
-	bgt $t1, 35430, label136
-	j label137
-label136:
-	lw $t2, -120($fp)
-	li $t2, 1
-	sw $t2, -120($fp)
-label137:
-	lw $t3, -28($fp)
-	lw $t4, -20($fp)
-	move $t3, $t4
-	sw $t3, -28($fp)
-	lw $t6, -20($fp)
-	move $t5, $t6
-	sw $t5, -128($fp)
-	lw $a0, -128($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t0, $v0
-	sw $t0, -132($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t1, -120($fp)
-	lw $t2, -132($fp)
-	bgt $t1, $t2, label133
-	j label134
-label133:
-label134:
-label132:
-	j label125
-label127:
-label116:
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -8($fp)
-	move $a0, $t3
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -12($fp)
-	move $a0, $t4
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -16($fp)
-	move $a0, $t5
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -20($fp)
-	move $a0, $t6
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -24($fp)
-	move $a0, $t0
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -28($fp)
-	move $a0, $t1
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 0
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -136($fp)
-	lw $t6, -44($fp)
-	lw $t0, -136($fp)
-	add $t5, $t6, $t0
-	sw $t5, -140($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -140($fp)
-	lw $a0, 0($t1)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 1
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -144($fp)
-	lw $t6, -44($fp)
-	lw $t0, -144($fp)
-	add $t5, $t6, $t0
-	sw $t5, -148($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -148($fp)
-	lw $a0, 0($t1)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 2
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -152($fp)
-	lw $t6, -44($fp)
-	lw $t0, -152($fp)
-	add $t5, $t6, $t0
-	sw $t5, -156($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -156($fp)
-	lw $a0, 0($t1)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 0
-	sw $t2, -160($fp)
-	li $t3, 0
-	sw $t3, -164($fp)
-	li $t5, 2
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -168($fp)
-	lw $t1, -44($fp)
-	lw $t2, -168($fp)
-	add $t0, $t1, $t2
-	sw $t0, -172($fp)
-	lw $t3, -172($fp)
-	lw $s4, 0($t3)
-	ble $s4, 11245, label142
-	j label143
-label142:
-	lw $t4, -164($fp)
-	li $t4, 1
-	sw $t4, -164($fp)
-label143:
-	li $t6, 0
-	lw $t0, -12($fp)
-	sub $t5, $t6, $t0
-	sw $t5, -176($fp)
-	lw $t1, -164($fp)
-	lw $t2, -176($fp)
-	blt $t1, $t2, label140
-	j label141
-label140:
-	lw $t3, -160($fp)
-	li $t3, 1
-	sw $t3, -160($fp)
-label141:
-	lw $t4, -160($fp)
-	move $v0, $t4
-	addi $sp, $sp, 800
-	addi $sp, $sp, 4
-	lw $fp, 0($sp)
-	addi $sp, $sp, 4
-	jr $ra
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -8($fp)
-	move $a0, $t5
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -12($fp)
-	move $a0, $t6
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -16($fp)
-	move $a0, $t0
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -20($fp)
-	move $a0, $t1
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -24($fp)
-	move $a0, $t2
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -28($fp)
-	move $a0, $t3
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 0
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -180($fp)
-	lw $t1, -44($fp)
-	lw $t2, -180($fp)
-	add $t0, $t1, $t2
-	sw $t0, -184($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -184($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 1
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -188($fp)
-	lw $t1, -44($fp)
-	lw $t2, -188($fp)
-	add $t0, $t1, $t2
-	sw $t0, -192($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -192($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 2
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -196($fp)
-	lw $t1, -44($fp)
-	lw $t2, -196($fp)
-	add $t0, $t1, $t2
-	sw $t0, -200($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -200($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 0
-	sw $t4, -204($fp)
-	lw $t6, -20($fp)
-	lw $t0, -12($fp)
-	mul $t5, $t6, $t0
-	sw $t5, -208($fp)
-	lw $t1, -208($fp)
-	ble $t1, 283, label144
-	j label145
-label144:
-	lw $t2, -204($fp)
-	li $t2, 1
-	sw $t2, -204($fp)
-label145:
-	lw $t3, -24($fp)
-	lw $t4, -204($fp)
-	move $t3, $t4
-	sw $t3, -24($fp)
-	lw $t6, -204($fp)
-	move $t5, $t6
-	sw $t5, -212($fp)
-	lw $t0, -212($fp)
-	move $v0, $t0
-	addi $sp, $sp, 800
-	addi $sp, $sp, 4
-	lw $fp, 0($sp)
-	addi $sp, $sp, 4
-	jr $ra
-label146:
-	li $t1, 0
-	sw $t1, -216($fp)
-	li $t2, 0
-	sw $t2, -220($fp)
-	lw $t3, -16($fp)
-	bge $t3, 55173, label151
-	j label152
-label151:
-	lw $t4, -220($fp)
-	li $t4, 1
-	sw $t4, -220($fp)
-label152:
-	lw $t5, -220($fp)
-	bge $t5, 31292, label149
-	j label150
-label149:
-	lw $t6, -216($fp)
-	li $t6, 1
-	sw $t6, -216($fp)
-label150:
-	lw $a0, -216($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t0, $v0
-	sw $t0, -224($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t2, -224($fp)
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -228($fp)
-	lw $t5, -44($fp)
-	lw $t6, -228($fp)
-	add $t4, $t5, $t6
-	sw $t4, -232($fp)
-	li $t0, 0
-	sw $t0, -236($fp)
-	li $t2, 0
-	lw $t3, -20($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -240($fp)
-	lw $t5, -240($fp)
-	li $t6, 28201
-	add $t4, $t5, $t6
-	sw $t4, -244($fp)
-	lw $a0, -244($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t0, $v0
-	sw $t0, -248($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t1, -248($fp)
-	bne $t1, 0, label154
-	j label153
-label153:
-	lw $t2, -236($fp)
-	li $t2, 1
-	sw $t2, -236($fp)
-label154:
-	lw $t4, -232($fp)
-	lw $t5, -236($fp)
-	lw $s3, 0($t4)
-	sub $t3, $s3, $t5
-	sw $t3, -252($fp)
-	lw $t6, -252($fp)
-	bne $t6, 0, label147
-	j label148
-label147:
-	li $a0, 5801
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t0, $v0
-	sw $t0, -256($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	j label146
-label148:
-	li $t1, 0
-	sw $t1, -260($fp)
-	li $t2, 0
-	sw $t2, -264($fp)
-	lw $t3, -4($fp)
-	bne $t3, 23323, label160
-	j label161
-label160:
-	lw $t4, -264($fp)
-	li $t4, 1
-	sw $t4, -264($fp)
-label161:
-	lw $t5, -264($fp)
-	beq $t5, 38823, label158
-	j label159
-label158:
-	lw $t6, -260($fp)
-	li $t6, 1
-	sw $t6, -260($fp)
-label159:
-	lw $a0, -260($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t0, $v0
-	sw $t0, -268($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t2, -268($fp)
-	li $t3, 38788
-	sub $t1, $t2, $t3
-	sw $t1, -272($fp)
-	lw $t5, -8($fp)
-	li $t6, 22579
-	div $t5, $t6
-	mflo $t4
-	sw $t4, -276($fp)
-	lw $t1, -272($fp)
-	lw $t2, -276($fp)
-	add $t0, $t1, $t2
-	sw $t0, -280($fp)
-	li $t4, 8005
-	lw $t5, -20($fp)
-	mul $t3, $t4, $t5
-	sw $t3, -284($fp)
-	lw $t0, -284($fp)
-	li $t1, 10112
-	sub $t6, $t0, $t1
-	sw $t6, -288($fp)
-	lw $t2, -280($fp)
-	lw $t3, -288($fp)
-	beq $t2, $t3, label155
-	j label157
-label157:
-	li $t5, 0
-	lw $t6, -12($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -292($fp)
-	lw $t0, -292($fp)
-	bne $t0, 0, label155
-	j label156
-label155:
-label156:
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -8($fp)
-	move $a0, $t1
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -12($fp)
-	move $a0, $t2
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -16($fp)
-	move $a0, $t3
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -20($fp)
-	move $a0, $t4
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -24($fp)
-	move $a0, $t5
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -28($fp)
-	move $a0, $t6
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 0
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -296($fp)
-	lw $t4, -44($fp)
-	lw $t5, -296($fp)
-	add $t3, $t4, $t5
-	sw $t3, -300($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -300($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 1
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -304($fp)
-	lw $t4, -44($fp)
-	lw $t5, -304($fp)
-	add $t3, $t4, $t5
-	sw $t3, -308($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -308($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 2
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -312($fp)
-	lw $t4, -44($fp)
-	lw $t5, -312($fp)
-	add $t3, $t4, $t5
-	sw $t3, -316($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -316($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 0
-	lw $t2, -8($fp)
-	sub $t0, $t1, $t2
-	sw $t0, -320($fp)
-	lw $a0, -320($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t3, $v0
-	sw $t3, -324($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t5, -324($fp)
-	lw $t6, -8($fp)
-	add $t4, $t5, $t6
-	sw $t4, -328($fp)
-	lw $t0, -328($fp)
-	move $v0, $t0
-	addi $sp, $sp, 800
-	addi $sp, $sp, 4
-	lw $fp, 0($sp)
-	addi $sp, $sp, 4
-	jr $ra
-id_FxEuB:
-	addi $sp, $sp, -4
-	sw $fp, 0($sp)
-	move $fp, $sp
-	addi $sp, $sp, -4
-	subu $sp, $sp, 800
-	sw $a3, -4($fp)
-	sw $a2, -8($fp)
-	sw $a1, -12($fp)
-	sw $a0, -16($fp)
-	la $t1, -48($fp)
-	sw $t1, -52($fp)
-	la $t2, -60($fp)
-	sw $t2, -64($fp)
-	li $t4, 0
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -72($fp)
-	lw $t0, -52($fp)
-	lw $t1, -72($fp)
-	add $t6, $t0, $t1
-	sw $t6, -76($fp)
-	lw $t2, -76($fp)
-	li $s2, 4947
-	sw $t2, -76($fp)
-	sw $s2, 0($t2)
-	li $t4, 1
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -80($fp)
-	lw $t0, -52($fp)
-	lw $t1, -80($fp)
-	add $t6, $t0, $t1
-	sw $t6, -84($fp)
-	lw $t2, -84($fp)
-	li $s2, 52595
-	sw $t2, -84($fp)
-	sw $s2, 0($t2)
-	li $t4, 2
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -88($fp)
-	lw $t0, -52($fp)
-	lw $t1, -88($fp)
-	add $t6, $t0, $t1
-	sw $t6, -92($fp)
-	lw $t2, -92($fp)
-	li $s2, 64234
-	sw $t2, -92($fp)
-	sw $s2, 0($t2)
-	li $t4, 3
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -96($fp)
-	lw $t0, -52($fp)
-	lw $t1, -96($fp)
-	add $t6, $t0, $t1
-	sw $t6, -100($fp)
-	lw $t2, -100($fp)
-	li $s2, 6679
-	sw $t2, -100($fp)
-	sw $s2, 0($t2)
-	li $t4, 4
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -104($fp)
-	lw $t0, -52($fp)
-	lw $t1, -104($fp)
-	add $t6, $t0, $t1
-	sw $t6, -108($fp)
-	lw $t2, -108($fp)
-	li $s2, 44868
-	sw $t2, -108($fp)
-	sw $s2, 0($t2)
-	li $t4, 5
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -112($fp)
-	lw $t0, -52($fp)
-	lw $t1, -112($fp)
-	add $t6, $t0, $t1
-	sw $t6, -116($fp)
-	lw $t2, -116($fp)
-	li $s2, 35326
-	sw $t2, -116($fp)
-	sw $s2, 0($t2)
-	li $t4, 6
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -120($fp)
-	lw $t0, -52($fp)
-	lw $t1, -120($fp)
-	add $t6, $t0, $t1
-	sw $t6, -124($fp)
-	lw $t2, -124($fp)
-	li $s2, 54563
-	sw $t2, -124($fp)
-	sw $s2, 0($t2)
-	li $t4, 7
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -128($fp)
-	lw $t0, -52($fp)
-	lw $t1, -128($fp)
-	add $t6, $t0, $t1
-	sw $t6, -132($fp)
-	lw $t2, -132($fp)
-	li $s2, 61384
-	sw $t2, -132($fp)
-	sw $s2, 0($t2)
-	lw $t3, -56($fp)
-	li $t3, 23447
-	sw $t3, -56($fp)
-	li $t5, 0
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -136($fp)
-	lw $t1, -64($fp)
-	lw $t2, -136($fp)
-	add $t0, $t1, $t2
-	sw $t0, -140($fp)
-	lw $t3, -140($fp)
-	li $s2, 17272
-	sw $t3, -140($fp)
-	sw $s2, 0($t3)
-	lw $t4, -68($fp)
-	li $t4, 57277
-	sw $t4, -68($fp)
-label162:
-	li $t5, 0
-	sw $t5, -144($fp)
-	lw $t0, -56($fp)
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -148($fp)
-	lw $t3, -64($fp)
-	lw $t4, -148($fp)
-	add $t2, $t3, $t4
-	sw $t2, -152($fp)
-	lw $t5, -152($fp)
-	lw $s3, 0($t5)
-	bne $s3, 0, label167
-	j label166
-label166:
-	lw $t6, -144($fp)
-	li $t6, 1
-	sw $t6, -144($fp)
-label167:
-	li $t1, 35567
-	lw $t2, -144($fp)
-	add $t0, $t1, $t2
-	sw $t0, -156($fp)
-	lw $t3, -156($fp)
-	bne $t3, 0, label163
-	j label165
-label165:
-	lw $t5, -8($fp)
-	li $t6, 19790
-	div $t5, $t6
-	mflo $t4
-	sw $t4, -160($fp)
-	lw $t0, -160($fp)
-	lw $t1, -56($fp)
-	bgt $t0, $t1, label168
-	j label164
-label168:
-	lw $t2, -4($fp)
-	bne $t2, 0, label163
-	j label164
-label163:
-	li $t3, 0
-	sw $t3, -164($fp)
-	lw $t5, -12($fp)
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -168($fp)
-	lw $t1, -52($fp)
-	lw $t2, -168($fp)
-	add $t0, $t1, $t2
-	sw $t0, -172($fp)
-	li $t4, 0
-	li $t5, 52925
-	sub $t3, $t4, $t5
-	sw $t3, -176($fp)
-	lw $t0, -176($fp)
-	lw $t1, -56($fp)
-	add $t6, $t0, $t1
-	sw $t6, -180($fp)
-	lw $t2, -172($fp)
-	lw $t3, -180($fp)
-	lw $s3, 0($t2)
-	bge $s3, $t3, label171
-	j label172
-label171:
-	lw $t4, -164($fp)
-	li $t4, 1
-	sw $t4, -164($fp)
-label172:
-	li $t5, 0
-	sw $t5, -184($fp)
-	j label175
-label176:
-	lw $t6, -56($fp)
-	bne $t6, 0, label173
-	j label175
-label175:
-	j label174
-label173:
-	lw $t0, -184($fp)
-	li $t0, 1
-	sw $t0, -184($fp)
-label174:
-	lw $a0, -184($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t1, $v0
-	sw $t1, -188($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t2, -164($fp)
-	lw $t3, -188($fp)
-	ble $t2, $t3, label169
-	j label170
-label169:
-label170:
-	j label162
-label164:
-	li $t5, 3
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -192($fp)
-	lw $t1, -52($fp)
-	lw $t2, -192($fp)
-	add $t0, $t1, $t2
-	sw $t0, -196($fp)
-	li $t4, 0
-	lw $t5, -196($fp)
-	lw $s4, 0($t5)
-	sub $t3, $t4, $s4
-	sw $t3, -200($fp)
-	lw $t6, -200($fp)
-	bne $t6, 0, label177
-	j label178
-label177:
-	j label179
-label178:
-	li $t0, 0
-	sw $t0, -204($fp)
-	li $t1, 0
-	sw $t1, -208($fp)
-	li $t2, 0
-	sw $t2, -212($fp)
-	lw $t3, -4($fp)
-	beq $t3, 17477, label186
-	j label188
-label188:
-	lw $t4, -56($fp)
-	bne $t4, 0, label186
-	j label187
-label186:
-	lw $t5, -212($fp)
-	li $t5, 1
-	sw $t5, -212($fp)
-label187:
-	lw $t6, -8($fp)
-	lw $t0, -12($fp)
-	move $t6, $t0
-	sw $t6, -8($fp)
-	lw $t2, -12($fp)
-	move $t1, $t2
-	sw $t1, -216($fp)
-	lw $t3, -68($fp)
-	li $t3, 24295
-	sw $t3, -68($fp)
-	li $t4, 24295
-	sw $t4, -220($fp)
-	li $t6, 63339
-	li $t0, 48769
-	add $t5, $t6, $t0
-	sw $t5, -224($fp)
-	lw $a0, -224($fp)
-	lw $a1, -220($fp)
-	lw $a2, -216($fp)
-	lw $a3, -212($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_FxEuB
-	move $t1, $v0
-	sw $t1, -228($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t2, -228($fp)
-	bne $t2, 0, label185
-	j label184
-label184:
-	lw $t3, -208($fp)
-	li $t3, 1
-	sw $t3, -208($fp)
-label185:
-	li $t5, 0
-	li $t6, 52496
-	sub $t4, $t5, $t6
-	sw $t4, -232($fp)
-	lw $t1, -208($fp)
-	lw $t2, -232($fp)
-	sub $t0, $t1, $t2
-	sw $t0, -236($fp)
-	lw $t3, -236($fp)
-	beq $t3, 3604, label182
-	j label183
-label182:
-	lw $t4, -204($fp)
-	li $t4, 1
-	sw $t4, -204($fp)
-label183:
-	li $t6, 0
-	lw $t0, -16($fp)
-	sub $t5, $t6, $t0
-	sw $t5, -240($fp)
-	lw $t1, -204($fp)
-	lw $t2, -240($fp)
-	bge $t1, $t2, label180
-	j label181
-label180:
-label181:
-label179:
-	li $t4, 0
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -244($fp)
-	lw $t0, -52($fp)
-	lw $t1, -244($fp)
-	add $t6, $t0, $t1
-	sw $t6, -248($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -248($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 1
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -252($fp)
-	lw $t0, -52($fp)
-	lw $t1, -252($fp)
-	add $t6, $t0, $t1
-	sw $t6, -256($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -256($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 2
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -260($fp)
-	lw $t0, -52($fp)
-	lw $t1, -260($fp)
-	add $t6, $t0, $t1
-	sw $t6, -264($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -264($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 3
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -268($fp)
-	lw $t0, -52($fp)
-	lw $t1, -268($fp)
-	add $t6, $t0, $t1
-	sw $t6, -272($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -272($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 4
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -276($fp)
-	lw $t0, -52($fp)
-	lw $t1, -276($fp)
-	add $t6, $t0, $t1
-	sw $t6, -280($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -280($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 5
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -284($fp)
-	lw $t0, -52($fp)
-	lw $t1, -284($fp)
-	add $t6, $t0, $t1
-	sw $t6, -288($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -288($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 6
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -292($fp)
-	lw $t0, -52($fp)
-	lw $t1, -292($fp)
-	add $t6, $t0, $t1
-	sw $t6, -296($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -296($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 7
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -300($fp)
-	lw $t0, -52($fp)
-	lw $t1, -300($fp)
-	add $t6, $t0, $t1
-	sw $t6, -304($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -304($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -56($fp)
-	move $a0, $t3
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 0
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -308($fp)
-	lw $t1, -64($fp)
-	lw $t2, -308($fp)
-	add $t0, $t1, $t2
-	sw $t0, -312($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -312($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -68($fp)
-	move $a0, $t4
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 0
-	sw $t5, -316($fp)
-	lw $t0, -8($fp)
-	li $t1, 6556
-	sub $t6, $t0, $t1
-	sw $t6, -320($fp)
-	lw $t3, -320($fp)
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -324($fp)
-	lw $t6, -64($fp)
-	lw $t0, -324($fp)
-	add $t5, $t6, $t0
-	sw $t5, -328($fp)
-	lw $t2, -56($fp)
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -332($fp)
-	lw $t5, -64($fp)
-	lw $t6, -332($fp)
-	add $t4, $t5, $t6
-	sw $t4, -336($fp)
-	lw $t1, -336($fp)
-	li $t2, 25783
-	lw $s3, 0($t1)
-	div $s3, $t2
-	mflo $t0
-	sw $t0, -340($fp)
-	lw $t3, -328($fp)
-	lw $t4, -340($fp)
-	lw $s3, 0($t3)
-	bge $s3, $t4, label191
-	j label190
-label191:
-	li $t6, 0
-	li $t0, 42392
-	sub $t5, $t6, $t0
-	sw $t5, -344($fp)
-	lw $t2, -344($fp)
-	li $t3, 29136
-	add $t1, $t2, $t3
-	sw $t1, -348($fp)
-	lw $t4, -348($fp)
-	bne $t4, 0, label189
-	j label190
-label189:
-	lw $t5, -316($fp)
-	li $t5, 1
-	sw $t5, -316($fp)
-label190:
-	lw $t6, -316($fp)
-	move $v0, $t6
-	addi $sp, $sp, 800
-	addi $sp, $sp, 4
-	lw $fp, 0($sp)
-	addi $sp, $sp, 4
-	jr $ra
-id_mvJF5:
-	addi $sp, $sp, -4
-	sw $fp, 0($sp)
-	move $fp, $sp
-	addi $sp, $sp, -4
-	subu $sp, $sp, 800
-	sw $a3, -4($fp)
-	sw $a2, -8($fp)
-	sw $a1, -12($fp)
-	sw $a0, -16($fp)
-	la $t0, -36($fp)
-	sw $t0, -40($fp)
-	li $t2, 0
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -44($fp)
-	lw $t5, -40($fp)
-	lw $t6, -44($fp)
-	add $t4, $t5, $t6
-	sw $t4, -48($fp)
-	lw $t0, -48($fp)
-	li $s2, 33788
-	sw $t0, -48($fp)
-	sw $s2, 0($t0)
-	li $t2, 1
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -52($fp)
-	lw $t5, -40($fp)
-	lw $t6, -52($fp)
-	add $t4, $t5, $t6
-	sw $t4, -56($fp)
-	lw $t0, -56($fp)
-	li $s2, 52505
-	sw $t0, -56($fp)
-	sw $s2, 0($t0)
-	li $t2, 2
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -60($fp)
-	lw $t5, -40($fp)
-	lw $t6, -60($fp)
-	add $t4, $t5, $t6
-	sw $t4, -64($fp)
-	lw $t0, -64($fp)
-	li $s2, 34083
-	sw $t0, -64($fp)
-	sw $s2, 0($t0)
-	li $t2, 3
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -68($fp)
-	lw $t5, -40($fp)
-	lw $t6, -68($fp)
-	add $t4, $t5, $t6
-	sw $t4, -72($fp)
+#412<_____________===
 	lw $t0, -72($fp)
-	li $s2, 20847
+	li $t0, 1
 	sw $t0, -72($fp)
-	sw $s2, 0($t0)
-	li $t2, 4
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -76($fp)
-	lw $t5, -40($fp)
-	lw $t6, -76($fp)
-	add $t4, $t5, $t6
-	sw $t4, -80($fp)
-	lw $t0, -80($fp)
-	li $s2, 51203
-	sw $t0, -80($fp)
-	sw $s2, 0($t0)
-	li $t2, 0
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -84($fp)
-	lw $t5, -40($fp)
-	lw $t6, -84($fp)
-	add $t4, $t5, $t6
-	sw $t4, -88($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -88($fp)
-	lw $a0, 0($t0)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 1
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -92($fp)
-	lw $t5, -40($fp)
-	lw $t6, -92($fp)
-	add $t4, $t5, $t6
-	sw $t4, -96($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -96($fp)
-	lw $a0, 0($t0)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 2
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -100($fp)
-	lw $t5, -40($fp)
-	lw $t6, -100($fp)
-	add $t4, $t5, $t6
-	sw $t4, -104($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -104($fp)
-	lw $a0, 0($t0)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 3
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -108($fp)
-	lw $t5, -40($fp)
-	lw $t6, -108($fp)
-	add $t4, $t5, $t6
-	sw $t4, -112($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -112($fp)
-	lw $a0, 0($t0)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 4
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -116($fp)
-	lw $t5, -40($fp)
-	lw $t6, -116($fp)
-	add $t4, $t5, $t6
-	sw $t4, -120($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -120($fp)
-	lw $a0, 0($t0)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t2, -4($fp)
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -124($fp)
-	lw $t5, -40($fp)
-	lw $t6, -124($fp)
-	add $t4, $t5, $t6
-	sw $t4, -128($fp)
-	li $t1, 0
-	lw $t2, -4($fp)
-	sub $t0, $t1, $t2
-	sw $t0, -132($fp)
-	lw $t4, -128($fp)
-	lw $t5, -132($fp)
-	lw $s3, 0($t4)
-	mul $t3, $s3, $t5
-	sw $t3, -136($fp)
-	lw $t0, -136($fp)
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -140($fp)
-	lw $t3, -40($fp)
-	lw $t4, -140($fp)
-	add $t2, $t3, $t4
-	sw $t2, -144($fp)
-	lw $t5, -144($fp)
-	move $v0, $t5
-	addi $sp, $sp, 800
-	addi $sp, $sp, 4
-	lw $fp, 0($sp)
-	addi $sp, $sp, 4
-	jr $ra
-id_CYq6iXzc:
-	addi $sp, $sp, -4
-	sw $fp, 0($sp)
-	move $fp, $sp
-	addi $sp, $sp, -4
-	subu $sp, $sp, 800
-	sw $a0, -4($fp)
-	la $t6, -32($fp)
-	sw $t6, -36($fp)
-	la $t0, -64($fp)
-	sw $t0, -68($fp)
-	la $t1, -136($fp)
-	sw $t1, -140($fp)
-	la $t2, -172($fp)
-	sw $t2, -176($fp)
-	la $t3, -240($fp)
-	sw $t3, -244($fp)
-	la $t4, -284($fp)
-	sw $t4, -288($fp)
-	lw $t5, -8($fp)
-	li $t5, 40762
-	sw $t5, -8($fp)
-	lw $t6, -12($fp)
-	li $t6, 179
-	sw $t6, -12($fp)
-	li $t1, 0
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -324($fp)
-	lw $t4, -36($fp)
-	lw $t5, -324($fp)
-	add $t3, $t4, $t5
-	sw $t3, -328($fp)
-	lw $t6, -328($fp)
-	li $s2, 20993
-	sw $t6, -328($fp)
-	sw $s2, 0($t6)
-	li $t1, 1
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -332($fp)
-	lw $t4, -36($fp)
-	lw $t5, -332($fp)
-	add $t3, $t4, $t5
-	sw $t3, -336($fp)
-	lw $t6, -336($fp)
-	li $s2, 29789
-	sw $t6, -336($fp)
-	sw $s2, 0($t6)
-	li $t1, 2
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -340($fp)
-	lw $t4, -36($fp)
-	lw $t5, -340($fp)
-	add $t3, $t4, $t5
-	sw $t3, -344($fp)
-	lw $t6, -344($fp)
-	li $s2, 61564
-	sw $t6, -344($fp)
-	sw $s2, 0($t6)
-	li $t1, 3
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -348($fp)
-	lw $t4, -36($fp)
-	lw $t5, -348($fp)
-	add $t3, $t4, $t5
-	sw $t3, -352($fp)
-	lw $t6, -352($fp)
-	li $s2, 44441
-	sw $t6, -352($fp)
-	sw $s2, 0($t6)
-	li $t1, 4
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -356($fp)
-	lw $t4, -36($fp)
-	lw $t5, -356($fp)
-	add $t3, $t4, $t5
-	sw $t3, -360($fp)
-	lw $t6, -360($fp)
-	li $s2, 47061
-	sw $t6, -360($fp)
-	sw $s2, 0($t6)
-	lw $t0, -40($fp)
-	li $t0, 53305
-	sw $t0, -40($fp)
-	li $t2, 0
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -364($fp)
-	lw $t5, -68($fp)
-	lw $t6, -364($fp)
-	add $t4, $t5, $t6
-	sw $t4, -368($fp)
-	lw $t0, -368($fp)
-	li $s2, 14472
-	sw $t0, -368($fp)
-	sw $s2, 0($t0)
-	li $t2, 1
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -372($fp)
-	lw $t5, -68($fp)
-	lw $t6, -372($fp)
-	add $t4, $t5, $t6
-	sw $t4, -376($fp)
-	lw $t0, -376($fp)
-	li $s2, 1316
-	sw $t0, -376($fp)
-	sw $s2, 0($t0)
-	li $t2, 2
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -380($fp)
-	lw $t5, -68($fp)
-	lw $t6, -380($fp)
-	add $t4, $t5, $t6
-	sw $t4, -384($fp)
-	lw $t0, -384($fp)
-	li $s2, 40694
-	sw $t0, -384($fp)
-	sw $s2, 0($t0)
-	li $t2, 3
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -388($fp)
-	lw $t5, -68($fp)
-	lw $t6, -388($fp)
-	add $t4, $t5, $t6
-	sw $t4, -392($fp)
-	lw $t0, -392($fp)
-	li $s2, 27238
-	sw $t0, -392($fp)
-	sw $s2, 0($t0)
-	li $t2, 4
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -396($fp)
-	lw $t5, -68($fp)
-	lw $t6, -396($fp)
-	add $t4, $t5, $t6
-	sw $t4, -400($fp)
-	lw $t0, -400($fp)
-	li $s2, 34510
-	sw $t0, -400($fp)
-	sw $s2, 0($t0)
-	li $t2, 5
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -404($fp)
-	lw $t5, -68($fp)
-	lw $t6, -404($fp)
-	add $t4, $t5, $t6
-	sw $t4, -408($fp)
-	lw $t0, -408($fp)
-	li $s2, 63513
-	sw $t0, -408($fp)
-	sw $s2, 0($t0)
-	lw $t1, -72($fp)
-	li $t1, 51250
-	sw $t1, -72($fp)
-	lw $t2, -76($fp)
-	li $t2, 42676
-	sw $t2, -76($fp)
-	lw $t3, -80($fp)
-	li $t3, 15454
-	sw $t3, -80($fp)
-	lw $t4, -84($fp)
-	li $t4, 10009
-	sw $t4, -84($fp)
-	lw $t5, -88($fp)
-	li $t5, 40479
-	sw $t5, -88($fp)
-	lw $t6, -92($fp)
-	li $t6, 64223
-	sw $t6, -92($fp)
-	lw $t0, -96($fp)
-	li $t0, 62505
-	sw $t0, -96($fp)
-	lw $t1, -100($fp)
-	li $t1, 44083
-	sw $t1, -100($fp)
-	lw $t2, -104($fp)
-	li $t2, 5244
-	sw $t2, -104($fp)
-	li $t4, 0
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -412($fp)
-	lw $t0, -140($fp)
-	lw $t1, -412($fp)
-	add $t6, $t0, $t1
-	sw $t6, -416($fp)
-	lw $t2, -416($fp)
-	li $s2, 22753
-	sw $t2, -416($fp)
-	sw $s2, 0($t2)
-	li $t4, 1
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -420($fp)
-	lw $t0, -140($fp)
-	lw $t1, -420($fp)
-	add $t6, $t0, $t1
-	sw $t6, -424($fp)
-	lw $t2, -424($fp)
-	li $s2, 20940
-	sw $t2, -424($fp)
-	sw $s2, 0($t2)
-	li $t4, 2
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -428($fp)
-	lw $t0, -140($fp)
-	lw $t1, -428($fp)
-	add $t6, $t0, $t1
-	sw $t6, -432($fp)
-	lw $t2, -432($fp)
-	li $s2, 34380
-	sw $t2, -432($fp)
-	sw $s2, 0($t2)
-	li $t4, 3
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -436($fp)
-	lw $t0, -140($fp)
-	lw $t1, -436($fp)
-	add $t6, $t0, $t1
-	sw $t6, -440($fp)
-	lw $t2, -440($fp)
-	li $s2, 56541
-	sw $t2, -440($fp)
-	sw $s2, 0($t2)
-	li $t4, 4
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -444($fp)
-	lw $t0, -140($fp)
-	lw $t1, -444($fp)
-	add $t6, $t0, $t1
-	sw $t6, -448($fp)
-	lw $t2, -448($fp)
-	li $s2, 7909
-	sw $t2, -448($fp)
-	sw $s2, 0($t2)
-	li $t4, 5
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -452($fp)
-	lw $t0, -140($fp)
-	lw $t1, -452($fp)
-	add $t6, $t0, $t1
-	sw $t6, -456($fp)
-	lw $t2, -456($fp)
-	li $s2, 2927
-	sw $t2, -456($fp)
-	sw $s2, 0($t2)
-	li $t4, 6
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -460($fp)
-	lw $t0, -140($fp)
-	lw $t1, -460($fp)
-	add $t6, $t0, $t1
-	sw $t6, -464($fp)
-	lw $t2, -464($fp)
-	li $s2, 11853
-	sw $t2, -464($fp)
-	sw $s2, 0($t2)
-	li $t4, 7
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -468($fp)
-	lw $t0, -140($fp)
-	lw $t1, -468($fp)
-	add $t6, $t0, $t1
-	sw $t6, -472($fp)
-	lw $t2, -472($fp)
-	li $s2, 59112
-	sw $t2, -472($fp)
-	sw $s2, 0($t2)
-	lw $t3, -144($fp)
-	li $t3, 43689
-	sw $t3, -144($fp)
-	lw $t4, -148($fp)
-	li $t4, 12032
-	sw $t4, -148($fp)
-	lw $t5, -152($fp)
-	li $t5, 14570
-	sw $t5, -152($fp)
-	lw $t6, -156($fp)
-	li $t6, 7943
-	sw $t6, -156($fp)
-	lw $t0, -160($fp)
-	li $t0, 8060
-	sw $t0, -160($fp)
-	li $t2, 0
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -476($fp)
-	lw $t5, -176($fp)
-	lw $t6, -476($fp)
-	add $t4, $t5, $t6
-	sw $t4, -480($fp)
-	lw $t0, -480($fp)
-	li $s2, 59011
-	sw $t0, -480($fp)
-	sw $s2, 0($t0)
-	li $t2, 1
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -484($fp)
-	lw $t5, -176($fp)
-	lw $t6, -484($fp)
-	add $t4, $t5, $t6
-	sw $t4, -488($fp)
-	lw $t0, -488($fp)
-	li $s2, 55004
-	sw $t0, -488($fp)
-	sw $s2, 0($t0)
-	li $t2, 2
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -492($fp)
-	lw $t5, -176($fp)
-	lw $t6, -492($fp)
-	add $t4, $t5, $t6
-	sw $t4, -496($fp)
-	lw $t0, -496($fp)
-	li $s2, 61365
-	sw $t0, -496($fp)
-	sw $s2, 0($t0)
-	lw $t1, -180($fp)
-	li $t1, 7947
-	sw $t1, -180($fp)
-	lw $t2, -184($fp)
-	li $t2, 56320
-	sw $t2, -184($fp)
-	lw $t3, -188($fp)
-	li $t3, 36523
-	sw $t3, -188($fp)
-	lw $t4, -192($fp)
-	li $t4, 35185
-	sw $t4, -192($fp)
-	lw $t5, -196($fp)
-	li $t5, 25295
-	sw $t5, -196($fp)
-	lw $t6, -200($fp)
-	li $t6, 34500
-	sw $t6, -200($fp)
-	lw $t0, -204($fp)
-	li $t0, 20899
-	sw $t0, -204($fp)
-	lw $t1, -208($fp)
-	li $t1, 2435
-	sw $t1, -208($fp)
-	li $t3, 0
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -500($fp)
-	lw $t6, -244($fp)
-	lw $t0, -500($fp)
-	add $t5, $t6, $t0
-	sw $t5, -504($fp)
-	lw $t1, -504($fp)
-	li $s2, 49954
-	sw $t1, -504($fp)
-	sw $s2, 0($t1)
-	li $t3, 1
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -508($fp)
-	lw $t6, -244($fp)
-	lw $t0, -508($fp)
-	add $t5, $t6, $t0
-	sw $t5, -512($fp)
-	lw $t1, -512($fp)
-	li $s2, 30908
-	sw $t1, -512($fp)
-	sw $s2, 0($t1)
-	li $t3, 2
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -516($fp)
-	lw $t6, -244($fp)
-	lw $t0, -516($fp)
-	add $t5, $t6, $t0
-	sw $t5, -520($fp)
-	lw $t1, -520($fp)
-	li $s2, 42915
-	sw $t1, -520($fp)
-	sw $s2, 0($t1)
-	li $t3, 3
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -524($fp)
-	lw $t6, -244($fp)
-	lw $t0, -524($fp)
-	add $t5, $t6, $t0
-	sw $t5, -528($fp)
-	lw $t1, -528($fp)
-	li $s2, 48642
-	sw $t1, -528($fp)
-	sw $s2, 0($t1)
-	li $t3, 4
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -532($fp)
-	lw $t6, -244($fp)
-	lw $t0, -532($fp)
-	add $t5, $t6, $t0
-	sw $t5, -536($fp)
-	lw $t1, -536($fp)
-	li $s2, 27878
-	sw $t1, -536($fp)
-	sw $s2, 0($t1)
-	li $t3, 5
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -540($fp)
-	lw $t6, -244($fp)
-	lw $t0, -540($fp)
-	add $t5, $t6, $t0
-	sw $t5, -544($fp)
-	lw $t1, -544($fp)
-	li $s2, 21462
-	sw $t1, -544($fp)
-	sw $s2, 0($t1)
-	li $t3, 6
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -548($fp)
-	lw $t6, -244($fp)
-	lw $t0, -548($fp)
-	add $t5, $t6, $t0
-	sw $t5, -552($fp)
-	lw $t1, -552($fp)
-	li $s2, 53886
-	sw $t1, -552($fp)
-	sw $s2, 0($t1)
-	li $t3, 7
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -556($fp)
-	lw $t6, -244($fp)
-	lw $t0, -556($fp)
-	add $t5, $t6, $t0
-	sw $t5, -560($fp)
-	lw $t1, -560($fp)
-	li $s2, 50631
-	sw $t1, -560($fp)
-	sw $s2, 0($t1)
-	li $t3, 0
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -564($fp)
-	lw $t6, -288($fp)
-	lw $t0, -564($fp)
-	add $t5, $t6, $t0
-	sw $t5, -568($fp)
-	lw $t1, -568($fp)
-	li $s2, 42402
-	sw $t1, -568($fp)
-	sw $s2, 0($t1)
-	li $t3, 1
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -572($fp)
-	lw $t6, -288($fp)
-	lw $t0, -572($fp)
-	add $t5, $t6, $t0
-	sw $t5, -576($fp)
-	lw $t1, -576($fp)
-	li $s2, 22730
-	sw $t1, -576($fp)
-	sw $s2, 0($t1)
-	li $t3, 2
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -580($fp)
-	lw $t6, -288($fp)
-	lw $t0, -580($fp)
-	add $t5, $t6, $t0
-	sw $t5, -584($fp)
-	lw $t1, -584($fp)
-	li $s2, 41636
-	sw $t1, -584($fp)
-	sw $s2, 0($t1)
-	li $t3, 3
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -588($fp)
-	lw $t6, -288($fp)
-	lw $t0, -588($fp)
-	add $t5, $t6, $t0
-	sw $t5, -592($fp)
-	lw $t1, -592($fp)
-	li $s2, 50311
-	sw $t1, -592($fp)
-	sw $s2, 0($t1)
-	li $t3, 4
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -596($fp)
-	lw $t6, -288($fp)
-	lw $t0, -596($fp)
-	add $t5, $t6, $t0
-	sw $t5, -600($fp)
-	lw $t1, -600($fp)
-	li $s2, 25657
-	sw $t1, -600($fp)
-	sw $s2, 0($t1)
-	li $t3, 5
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -604($fp)
-	lw $t6, -288($fp)
-	lw $t0, -604($fp)
-	add $t5, $t6, $t0
-	sw $t5, -608($fp)
-	lw $t1, -608($fp)
-	li $s2, 53489
-	sw $t1, -608($fp)
-	sw $s2, 0($t1)
-	li $t3, 6
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -612($fp)
-	lw $t6, -288($fp)
-	lw $t0, -612($fp)
-	add $t5, $t6, $t0
-	sw $t5, -616($fp)
-	lw $t1, -616($fp)
-	li $s2, 43888
-	sw $t1, -616($fp)
-	sw $s2, 0($t1)
-	li $t3, 7
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -620($fp)
-	lw $t6, -288($fp)
-	lw $t0, -620($fp)
-	add $t5, $t6, $t0
-	sw $t5, -624($fp)
-	lw $t1, -624($fp)
-	li $s2, 3810
-	sw $t1, -624($fp)
-	sw $s2, 0($t1)
-	li $t3, 8
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -628($fp)
-	lw $t6, -288($fp)
-	lw $t0, -628($fp)
-	add $t5, $t6, $t0
-	sw $t5, -632($fp)
-	lw $t1, -632($fp)
-	li $s2, 65522
-	sw $t1, -632($fp)
-	sw $s2, 0($t1)
-	li $t3, 9
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -636($fp)
-	lw $t6, -288($fp)
-	lw $t0, -636($fp)
-	add $t5, $t6, $t0
-	sw $t5, -640($fp)
-	lw $t1, -640($fp)
-	li $s2, 58458
-	sw $t1, -640($fp)
-	sw $s2, 0($t1)
-	lw $t2, -292($fp)
-	li $t2, 11753
-	sw $t2, -292($fp)
-	lw $t3, -296($fp)
-	li $t3, 8046
-	sw $t3, -296($fp)
-	lw $t4, -300($fp)
-	li $t4, 51933
-	sw $t4, -300($fp)
-	lw $t5, -304($fp)
-	li $t5, 1222
-	sw $t5, -304($fp)
-	lw $t6, -308($fp)
-	li $t6, 3876
-	sw $t6, -308($fp)
-	lw $t0, -312($fp)
-	li $t0, 59880
-	sw $t0, -312($fp)
-	lw $t1, -316($fp)
-	li $t1, 57542
-	sw $t1, -316($fp)
-	lw $t2, -320($fp)
-	li $t2, 40399
-	sw $t2, -320($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -8($fp)
-	move $a0, $t3
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -12($fp)
-	move $a0, $t4
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 0
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -644($fp)
-	lw $t2, -36($fp)
-	lw $t3, -644($fp)
-	add $t1, $t2, $t3
-	sw $t1, -648($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -648($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 1
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -652($fp)
-	lw $t2, -36($fp)
-	lw $t3, -652($fp)
-	add $t1, $t2, $t3
-	sw $t1, -656($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -656($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 2
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -660($fp)
-	lw $t2, -36($fp)
-	lw $t3, -660($fp)
-	add $t1, $t2, $t3
-	sw $t1, -664($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -664($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 3
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -668($fp)
-	lw $t2, -36($fp)
-	lw $t3, -668($fp)
-	add $t1, $t2, $t3
-	sw $t1, -672($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -672($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 4
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -676($fp)
-	lw $t2, -36($fp)
-	lw $t3, -676($fp)
-	add $t1, $t2, $t3
-	sw $t1, -680($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -680($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -40($fp)
-	move $a0, $t5
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 0
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -684($fp)
-	lw $t3, -68($fp)
-	lw $t4, -684($fp)
-	add $t2, $t3, $t4
-	sw $t2, -688($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -688($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 1
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -692($fp)
-	lw $t3, -68($fp)
-	lw $t4, -692($fp)
-	add $t2, $t3, $t4
-	sw $t2, -696($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -696($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 2
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -700($fp)
-	lw $t3, -68($fp)
-	lw $t4, -700($fp)
-	add $t2, $t3, $t4
-	sw $t2, -704($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -704($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 3
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -708($fp)
-	lw $t3, -68($fp)
-	lw $t4, -708($fp)
-	add $t2, $t3, $t4
-	sw $t2, -712($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -712($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 4
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -716($fp)
-	lw $t3, -68($fp)
-	lw $t4, -716($fp)
-	add $t2, $t3, $t4
-	sw $t2, -720($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -720($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 5
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -724($fp)
-	lw $t3, -68($fp)
-	lw $t4, -724($fp)
-	add $t2, $t3, $t4
-	sw $t2, -728($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -728($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -72($fp)
-	move $a0, $t6
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -76($fp)
-	move $a0, $t0
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -80($fp)
-	move $a0, $t1
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -84($fp)
-	move $a0, $t2
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -88($fp)
-	move $a0, $t3
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -92($fp)
-	move $a0, $t4
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -96($fp)
-	move $a0, $t5
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -100($fp)
-	move $a0, $t6
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -104($fp)
-	move $a0, $t0
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 0
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -732($fp)
-	lw $t5, -140($fp)
-	lw $t6, -732($fp)
-	add $t4, $t5, $t6
-	sw $t4, -736($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -736($fp)
-	lw $a0, 0($t0)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 1
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -740($fp)
-	lw $t5, -140($fp)
-	lw $t6, -740($fp)
-	add $t4, $t5, $t6
-	sw $t4, -744($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -744($fp)
-	lw $a0, 0($t0)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 2
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -748($fp)
-	lw $t5, -140($fp)
-	lw $t6, -748($fp)
-	add $t4, $t5, $t6
-	sw $t4, -752($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -752($fp)
-	lw $a0, 0($t0)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 3
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -756($fp)
-	lw $t5, -140($fp)
-	lw $t6, -756($fp)
-	add $t4, $t5, $t6
-	sw $t4, -760($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -760($fp)
-	lw $a0, 0($t0)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 4
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -764($fp)
-	lw $t5, -140($fp)
-	lw $t6, -764($fp)
-	add $t4, $t5, $t6
-	sw $t4, -768($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -768($fp)
-	lw $a0, 0($t0)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 5
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -772($fp)
-	lw $t5, -140($fp)
-	lw $t6, -772($fp)
-	add $t4, $t5, $t6
-	sw $t4, -776($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -776($fp)
-	lw $a0, 0($t0)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 6
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -780($fp)
-	lw $t5, -140($fp)
-	lw $t6, -780($fp)
-	add $t4, $t5, $t6
-	sw $t4, -784($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -784($fp)
-	lw $a0, 0($t0)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 7
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -788($fp)
-	lw $t5, -140($fp)
-	lw $t6, -788($fp)
-	add $t4, $t5, $t6
-	sw $t4, -792($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -792($fp)
-	lw $a0, 0($t0)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -144($fp)
-	move $a0, $t1
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -148($fp)
-	move $a0, $t2
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -152($fp)
-	move $a0, $t3
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -156($fp)
-	move $a0, $t4
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -160($fp)
-	move $a0, $t5
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 0
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -796($fp)
-	lw $t3, -176($fp)
-	lw $t4, -796($fp)
-	add $t2, $t3, $t4
-	sw $t2, -800($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -800($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 1
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -804($fp)
-	lw $t3, -176($fp)
-	lw $t4, -804($fp)
-	add $t2, $t3, $t4
-	sw $t2, -808($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -808($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 2
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -812($fp)
-	lw $t3, -176($fp)
-	lw $t4, -812($fp)
-	add $t2, $t3, $t4
-	sw $t2, -816($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -816($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -180($fp)
-	move $a0, $t6
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -184($fp)
-	move $a0, $t0
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -188($fp)
-	move $a0, $t1
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -192($fp)
-	move $a0, $t2
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -196($fp)
-	move $a0, $t3
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -200($fp)
-	move $a0, $t4
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -204($fp)
-	move $a0, $t5
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -208($fp)
-	move $a0, $t6
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 0
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -820($fp)
-	lw $t4, -244($fp)
-	lw $t5, -820($fp)
-	add $t3, $t4, $t5
-	sw $t3, -824($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -824($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 1
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -828($fp)
-	lw $t4, -244($fp)
-	lw $t5, -828($fp)
-	add $t3, $t4, $t5
-	sw $t3, -832($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -832($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 2
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -836($fp)
-	lw $t4, -244($fp)
-	lw $t5, -836($fp)
-	add $t3, $t4, $t5
-	sw $t3, -840($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -840($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 3
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -844($fp)
-	lw $t4, -244($fp)
-	lw $t5, -844($fp)
-	add $t3, $t4, $t5
-	sw $t3, -848($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -848($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 4
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -852($fp)
-	lw $t4, -244($fp)
-	lw $t5, -852($fp)
-	add $t3, $t4, $t5
-	sw $t3, -856($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -856($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 5
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -860($fp)
-	lw $t4, -244($fp)
-	lw $t5, -860($fp)
-	add $t3, $t4, $t5
-	sw $t3, -864($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -864($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 6
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -868($fp)
-	lw $t4, -244($fp)
-	lw $t5, -868($fp)
-	add $t3, $t4, $t5
-	sw $t3, -872($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -872($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 7
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -876($fp)
-	lw $t4, -244($fp)
-	lw $t5, -876($fp)
-	add $t3, $t4, $t5
-	sw $t3, -880($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -880($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 0
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -884($fp)
-	lw $t4, -288($fp)
-	lw $t5, -884($fp)
-	add $t3, $t4, $t5
-	sw $t3, -888($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -888($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 1
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -892($fp)
-	lw $t4, -288($fp)
-	lw $t5, -892($fp)
-	add $t3, $t4, $t5
-	sw $t3, -896($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -896($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 2
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -900($fp)
-	lw $t4, -288($fp)
-	lw $t5, -900($fp)
-	add $t3, $t4, $t5
-	sw $t3, -904($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -904($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 3
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -908($fp)
-	lw $t4, -288($fp)
-	lw $t5, -908($fp)
-	add $t3, $t4, $t5
-	sw $t3, -912($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -912($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 4
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -916($fp)
-	lw $t4, -288($fp)
-	lw $t5, -916($fp)
-	add $t3, $t4, $t5
-	sw $t3, -920($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -920($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 5
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -924($fp)
-	lw $t4, -288($fp)
-	lw $t5, -924($fp)
-	add $t3, $t4, $t5
-	sw $t3, -928($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -928($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 6
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -932($fp)
-	lw $t4, -288($fp)
-	lw $t5, -932($fp)
-	add $t3, $t4, $t5
-	sw $t3, -936($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -936($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 7
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -940($fp)
-	lw $t4, -288($fp)
-	lw $t5, -940($fp)
-	add $t3, $t4, $t5
-	sw $t3, -944($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -944($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 8
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -948($fp)
-	lw $t4, -288($fp)
-	lw $t5, -948($fp)
-	add $t3, $t4, $t5
-	sw $t3, -952($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -952($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 9
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -956($fp)
-	lw $t4, -288($fp)
-	lw $t5, -956($fp)
-	add $t3, $t4, $t5
-	sw $t3, -960($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -960($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -292($fp)
-	move $a0, $t0
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -296($fp)
-	move $a0, $t1
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -300($fp)
-	move $a0, $t2
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -304($fp)
-	move $a0, $t3
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -308($fp)
-	move $a0, $t4
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -312($fp)
-	move $a0, $t5
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -316($fp)
-	move $a0, $t6
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -320($fp)
-	move $a0, $t0
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 0
-	sw $t1, -964($fp)
-	li $t3, 29529
-	lw $t4, -196($fp)
-	div $t3, $t4
-	mflo $t2
-	sw $t2, -968($fp)
-	lw $t6, -968($fp)
-	li $t0, 17301
-	sub $t5, $t6, $t0
-	sw $t5, -972($fp)
-	lw $t1, -972($fp)
-	bne $t1, 0, label192
-	j label194
-label194:
-	li $t3, 9364
-	lw $t4, -208($fp)
-	sub $t2, $t3, $t4
-	sw $t2, -976($fp)
-	lw $a0, -976($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_CYq6iXzc
-	move $t5, $v0
-	sw $t5, -980($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t6, -980($fp)
-	bne $t6, 0, label192
-	j label193
-label192:
-	lw $t0, -964($fp)
-	li $t0, 1
-	sw $t0, -964($fp)
-label193:
-	lw $t1, -192($fp)
-	lw $t2, -964($fp)
-	move $t1, $t2
-	sw $t1, -192($fp)
-	lw $t4, -964($fp)
-	move $t3, $t4
-	sw $t3, -984($fp)
-	lw $t5, -984($fp)
-	move $v0, $t5
-	addi $sp, $sp, 800
-	addi $sp, $sp, 4
-	lw $fp, 0($sp)
-	addi $sp, $sp, 4
-	jr $ra
-	la $t6, -996($fp)
-	sw $t6, -1000($fp)
-	la $t0, -1048($fp)
-	sw $t0, -1052($fp)
-	la $t1, -1088($fp)
-	sw $t1, -1092($fp)
-	la $t2, -1140($fp)
-	sw $t2, -1144($fp)
-	la $t3, -1176($fp)
-	sw $t3, -1180($fp)
-	la $t4, -1220($fp)
-	sw $t4, -1224($fp)
-	lw $t5, -988($fp)
-	li $t5, 50429
-	sw $t5, -988($fp)
-	lw $t6, -992($fp)
-	li $t6, 19737
-	sw $t6, -992($fp)
-	li $t1, 0
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -1232($fp)
-	lw $t4, -1000($fp)
-	lw $t5, -1232($fp)
-	add $t3, $t4, $t5
-	sw $t3, -1236($fp)
-	lw $t6, -1236($fp)
-	li $s2, 59318
-	sw $t6, -1236($fp)
-	sw $s2, 0($t6)
-	lw $t0, -1004($fp)
-	li $t0, 15801
-	sw $t0, -1004($fp)
-	lw $t1, -1008($fp)
-	li $t1, 62652
-	sw $t1, -1008($fp)
-	lw $t2, -1012($fp)
-	li $t2, 42424
-	sw $t2, -1012($fp)
-	lw $t3, -1016($fp)
-	li $t3, 43679
-	sw $t3, -1016($fp)
-	lw $t4, -1020($fp)
-	li $t4, 18578
-	sw $t4, -1020($fp)
-	lw $t5, -1024($fp)
-	li $t5, 30774
-	sw $t5, -1024($fp)
-	li $t0, 0
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1240($fp)
-	lw $t3, -1052($fp)
-	lw $t4, -1240($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1244($fp)
-	lw $t5, -1244($fp)
-	li $s2, 28774
-	sw $t5, -1244($fp)
-	sw $s2, 0($t5)
-	li $t0, 1
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1248($fp)
-	lw $t3, -1052($fp)
-	lw $t4, -1248($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1252($fp)
-	lw $t5, -1252($fp)
-	li $s2, 60981
-	sw $t5, -1252($fp)
-	sw $s2, 0($t5)
-	li $t0, 2
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1256($fp)
-	lw $t3, -1052($fp)
-	lw $t4, -1256($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1260($fp)
-	lw $t5, -1260($fp)
-	li $s2, 53504
-	sw $t5, -1260($fp)
-	sw $s2, 0($t5)
-	li $t0, 3
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1264($fp)
-	lw $t3, -1052($fp)
-	lw $t4, -1264($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1268($fp)
-	lw $t5, -1268($fp)
-	li $s2, 4875
-	sw $t5, -1268($fp)
-	sw $s2, 0($t5)
-	li $t0, 4
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1272($fp)
-	lw $t3, -1052($fp)
-	lw $t4, -1272($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1276($fp)
-	lw $t5, -1276($fp)
-	li $s2, 45756
-	sw $t5, -1276($fp)
-	sw $s2, 0($t5)
-	li $t0, 5
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1280($fp)
-	lw $t3, -1052($fp)
-	lw $t4, -1280($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1284($fp)
-	lw $t5, -1284($fp)
-	li $s2, 13625
-	sw $t5, -1284($fp)
-	sw $s2, 0($t5)
-	li $t0, 0
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1288($fp)
-	lw $t3, -1092($fp)
-	lw $t4, -1288($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1292($fp)
-	lw $t5, -1292($fp)
-	li $s2, 58364
-	sw $t5, -1292($fp)
-	sw $s2, 0($t5)
-	li $t0, 1
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1296($fp)
-	lw $t3, -1092($fp)
-	lw $t4, -1296($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1300($fp)
-	lw $t5, -1300($fp)
-	li $s2, 24108
-	sw $t5, -1300($fp)
-	sw $s2, 0($t5)
-	li $t0, 2
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1304($fp)
-	lw $t3, -1092($fp)
-	lw $t4, -1304($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1308($fp)
-	lw $t5, -1308($fp)
-	li $s2, 17436
-	sw $t5, -1308($fp)
-	sw $s2, 0($t5)
-	li $t0, 3
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1312($fp)
-	lw $t3, -1092($fp)
-	lw $t4, -1312($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1316($fp)
-	lw $t5, -1316($fp)
-	li $s2, 58350
-	sw $t5, -1316($fp)
-	sw $s2, 0($t5)
-	li $t0, 4
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1320($fp)
-	lw $t3, -1092($fp)
-	lw $t4, -1320($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1324($fp)
-	lw $t5, -1324($fp)
-	li $s2, 17030
-	sw $t5, -1324($fp)
-	sw $s2, 0($t5)
-	li $t0, 5
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1328($fp)
-	lw $t3, -1092($fp)
-	lw $t4, -1328($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1332($fp)
-	lw $t5, -1332($fp)
-	li $s2, 29189
-	sw $t5, -1332($fp)
-	sw $s2, 0($t5)
-	li $t0, 6
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1336($fp)
-	lw $t3, -1092($fp)
-	lw $t4, -1336($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1340($fp)
-	lw $t5, -1340($fp)
-	li $s2, 861
-	sw $t5, -1340($fp)
-	sw $s2, 0($t5)
-	li $t0, 7
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1344($fp)
-	lw $t3, -1092($fp)
-	lw $t4, -1344($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1348($fp)
-	lw $t5, -1348($fp)
-	li $s2, 3427
-	sw $t5, -1348($fp)
-	sw $s2, 0($t5)
-	li $t0, 8
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1352($fp)
-	lw $t3, -1092($fp)
-	lw $t4, -1352($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1356($fp)
-	lw $t5, -1356($fp)
-	li $s2, 30411
-	sw $t5, -1356($fp)
-	sw $s2, 0($t5)
-	lw $t6, -1096($fp)
-	li $t6, 4737
-	sw $t6, -1096($fp)
-	lw $t0, -1100($fp)
-	li $t0, 63307
-	sw $t0, -1100($fp)
-	lw $t1, -1104($fp)
-	li $t1, 22418
-	sw $t1, -1104($fp)
-	lw $t2, -1108($fp)
-	li $t2, 45136
-	sw $t2, -1108($fp)
-	lw $t3, -1112($fp)
-	li $t3, 27301
-	sw $t3, -1112($fp)
-	lw $t4, -1116($fp)
-	li $t4, 39719
-	sw $t4, -1116($fp)
-	lw $t5, -1120($fp)
-	li $t5, 54500
-	sw $t5, -1120($fp)
-	lw $t6, -1124($fp)
-	li $t6, 12194
-	sw $t6, -1124($fp)
-	lw $t0, -1128($fp)
-	li $t0, 59456
-	sw $t0, -1128($fp)
-	li $t2, 0
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1360($fp)
-	lw $t5, -1144($fp)
-	lw $t6, -1360($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1364($fp)
-	lw $t0, -1364($fp)
-	li $s2, 48283
-	sw $t0, -1364($fp)
-	sw $s2, 0($t0)
-	li $t2, 1
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1368($fp)
-	lw $t5, -1144($fp)
-	lw $t6, -1368($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1372($fp)
-	lw $t0, -1372($fp)
-	li $s2, 27995
-	sw $t0, -1372($fp)
-	sw $s2, 0($t0)
-	li $t2, 2
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1376($fp)
-	lw $t5, -1144($fp)
-	lw $t6, -1376($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1380($fp)
-	lw $t0, -1380($fp)
-	li $s2, 56572
-	sw $t0, -1380($fp)
-	sw $s2, 0($t0)
-	li $t2, 0
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1384($fp)
-	lw $t5, -1180($fp)
-	lw $t6, -1384($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1388($fp)
-	lw $t0, -1388($fp)
-	li $s2, 25171
-	sw $t0, -1388($fp)
-	sw $s2, 0($t0)
-	li $t2, 1
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1392($fp)
-	lw $t5, -1180($fp)
-	lw $t6, -1392($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1396($fp)
-	lw $t0, -1396($fp)
-	li $s2, 6139
-	sw $t0, -1396($fp)
-	sw $s2, 0($t0)
-	li $t2, 2
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1400($fp)
-	lw $t5, -1180($fp)
-	lw $t6, -1400($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1404($fp)
-	lw $t0, -1404($fp)
-	li $s2, 9615
-	sw $t0, -1404($fp)
-	sw $s2, 0($t0)
-	li $t2, 3
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1408($fp)
-	lw $t5, -1180($fp)
-	lw $t6, -1408($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1412($fp)
-	lw $t0, -1412($fp)
-	li $s2, 55946
-	sw $t0, -1412($fp)
-	sw $s2, 0($t0)
-	li $t2, 4
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1416($fp)
-	lw $t5, -1180($fp)
-	lw $t6, -1416($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1420($fp)
-	lw $t0, -1420($fp)
-	li $s2, 34913
-	sw $t0, -1420($fp)
-	sw $s2, 0($t0)
-	li $t2, 5
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1424($fp)
-	lw $t5, -1180($fp)
-	lw $t6, -1424($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1428($fp)
-	lw $t0, -1428($fp)
-	li $s2, 5060
-	sw $t0, -1428($fp)
-	sw $s2, 0($t0)
-	li $t2, 6
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1432($fp)
-	lw $t5, -1180($fp)
-	lw $t6, -1432($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1436($fp)
-	lw $t0, -1436($fp)
-	li $s2, 43914
-	sw $t0, -1436($fp)
-	sw $s2, 0($t0)
-	li $t2, 7
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1440($fp)
-	lw $t5, -1180($fp)
-	lw $t6, -1440($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1444($fp)
-	lw $t0, -1444($fp)
-	li $s2, 39788
-	sw $t0, -1444($fp)
-	sw $s2, 0($t0)
-	li $t2, 0
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1448($fp)
-	lw $t5, -1224($fp)
-	lw $t6, -1448($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1452($fp)
-	lw $t0, -1452($fp)
-	li $s2, 50816
-	sw $t0, -1452($fp)
-	sw $s2, 0($t0)
-	li $t2, 1
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1456($fp)
-	lw $t5, -1224($fp)
-	lw $t6, -1456($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1460($fp)
-	lw $t0, -1460($fp)
-	li $s2, 57540
-	sw $t0, -1460($fp)
-	sw $s2, 0($t0)
-	li $t2, 2
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1464($fp)
-	lw $t5, -1224($fp)
-	lw $t6, -1464($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1468($fp)
-	lw $t0, -1468($fp)
-	li $s2, 32617
-	sw $t0, -1468($fp)
-	sw $s2, 0($t0)
-	li $t2, 3
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1472($fp)
-	lw $t5, -1224($fp)
-	lw $t6, -1472($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1476($fp)
-	lw $t0, -1476($fp)
-	li $s2, 9389
-	sw $t0, -1476($fp)
-	sw $s2, 0($t0)
-	li $t2, 4
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1480($fp)
-	lw $t5, -1224($fp)
-	lw $t6, -1480($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1484($fp)
-	lw $t0, -1484($fp)
-	li $s2, 9440
-	sw $t0, -1484($fp)
-	sw $s2, 0($t0)
-	li $t2, 5
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1488($fp)
-	lw $t5, -1224($fp)
-	lw $t6, -1488($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1492($fp)
-	lw $t0, -1492($fp)
-	li $s2, 25431
-	sw $t0, -1492($fp)
-	sw $s2, 0($t0)
-	li $t2, 6
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1496($fp)
-	lw $t5, -1224($fp)
-	lw $t6, -1496($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1500($fp)
-	lw $t0, -1500($fp)
-	li $s2, 26419
-	sw $t0, -1500($fp)
-	sw $s2, 0($t0)
-	li $t2, 7
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1504($fp)
-	lw $t5, -1224($fp)
-	lw $t6, -1504($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1508($fp)
-	lw $t0, -1508($fp)
-	li $s2, 38629
-	sw $t0, -1508($fp)
-	sw $s2, 0($t0)
-	li $t2, 8
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1512($fp)
-	lw $t5, -1224($fp)
-	lw $t6, -1512($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1516($fp)
-	lw $t0, -1516($fp)
-	li $s2, 26292
-	sw $t0, -1516($fp)
-	sw $s2, 0($t0)
-	li $t2, 9
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1520($fp)
-	lw $t5, -1224($fp)
-	lw $t6, -1520($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1524($fp)
-	lw $t0, -1524($fp)
-	li $s2, 29847
-	sw $t0, -1524($fp)
-	sw $s2, 0($t0)
-	lw $t1, -1228($fp)
-	li $t1, 3505
-	sw $t1, -1228($fp)
-	li $t3, 31029
-	li $t4, 25924
-	div $t3, $t4
-	mflo $t2
-	sw $t2, -1528($fp)
-	li $t5, 0
-	sw $t5, -1532($fp)
-	li $t0, 0
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1536($fp)
-	lw $t3, -36($fp)
-	lw $t4, -1536($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1540($fp)
-	lw $t5, -1540($fp)
-	lw $s3, 0($t5)
-	bne $s3, 0, label199
-	j label198
-label198:
-	lw $t6, -1532($fp)
-	li $t6, 1
-	sw $t6, -1532($fp)
-label199:
-	lw $t1, -1528($fp)
-	lw $t2, -1532($fp)
-	mul $t0, $t1, $t2
-	sw $t0, -1544($fp)
-	lw $t3, -1544($fp)
-	bne $t3, 0, label195
-	j label197
-label197:
-	li $t5, 65130
-	li $t6, 1577
-	div $t5, $t6
-	mflo $t4
-	sw $t4, -1548($fp)
-	lw $t0, -1548($fp)
-	bne $t0, 106, label195
-	j label196
-label195:
-	la $t1, -1568($fp)
-	sw $t1, -1572($fp)
-	lw $t2, -1552($fp)
-	li $t2, 59563
-	sw $t2, -1552($fp)
-	li $t4, 0
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -1576($fp)
-	lw $t0, -1572($fp)
-	lw $t1, -1576($fp)
-	add $t6, $t0, $t1
-	sw $t6, -1580($fp)
-	lw $t2, -1580($fp)
-	li $s2, 47877
-	sw $t2, -1580($fp)
-	sw $s2, 0($t2)
-	li $t4, 1
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -1584($fp)
-	lw $t0, -1572($fp)
-	lw $t1, -1584($fp)
-	add $t6, $t0, $t1
-	sw $t6, -1588($fp)
-	lw $t2, -1588($fp)
-	li $s2, 29573
-	sw $t2, -1588($fp)
-	sw $s2, 0($t2)
-	li $t4, 2
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -1592($fp)
-	lw $t0, -1572($fp)
-	lw $t1, -1592($fp)
-	add $t6, $t0, $t1
-	sw $t6, -1596($fp)
-	lw $t2, -1596($fp)
-	li $s2, 50599
-	sw $t2, -1596($fp)
-	sw $s2, 0($t2)
-	li $t4, 3
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -1600($fp)
-	lw $t0, -1572($fp)
-	lw $t1, -1600($fp)
-	add $t6, $t0, $t1
-	sw $t6, -1604($fp)
-	lw $t2, -1604($fp)
-	li $s2, 7513
-	sw $t2, -1604($fp)
-	sw $s2, 0($t2)
-	la $t3, -1636($fp)
-	sw $t3, -1640($fp)
-	li $t5, 0
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -1644($fp)
-	lw $t1, -1640($fp)
-	lw $t2, -1644($fp)
-	add $t0, $t1, $t2
-	sw $t0, -1648($fp)
-	lw $t3, -1648($fp)
-	li $s2, 35712
-	sw $t3, -1648($fp)
-	sw $s2, 0($t3)
-	li $t5, 1
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -1652($fp)
-	lw $t1, -1640($fp)
-	lw $t2, -1652($fp)
-	add $t0, $t1, $t2
-	sw $t0, -1656($fp)
-	lw $t3, -1656($fp)
-	li $s2, 60214
-	sw $t3, -1656($fp)
-	sw $s2, 0($t3)
-	li $t5, 2
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -1660($fp)
-	lw $t1, -1640($fp)
-	lw $t2, -1660($fp)
-	add $t0, $t1, $t2
-	sw $t0, -1664($fp)
-	lw $t3, -1664($fp)
-	li $s2, 63459
-	sw $t3, -1664($fp)
-	sw $s2, 0($t3)
-	li $t5, 3
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -1668($fp)
-	lw $t1, -1640($fp)
-	lw $t2, -1668($fp)
-	add $t0, $t1, $t2
-	sw $t0, -1672($fp)
-	lw $t3, -1672($fp)
-	li $s2, 5089
-	sw $t3, -1672($fp)
-	sw $s2, 0($t3)
-	li $t5, 4
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -1676($fp)
-	lw $t1, -1640($fp)
-	lw $t2, -1676($fp)
-	add $t0, $t1, $t2
-	sw $t0, -1680($fp)
-	lw $t3, -1680($fp)
-	li $s2, 65274
-	sw $t3, -1680($fp)
-	sw $s2, 0($t3)
-	li $t5, 5
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -1684($fp)
-	lw $t1, -1640($fp)
-	lw $t2, -1684($fp)
-	add $t0, $t1, $t2
-	sw $t0, -1688($fp)
-	lw $t3, -1688($fp)
-	li $s2, 41837
-	sw $t3, -1688($fp)
-	sw $s2, 0($t3)
-	li $t5, 6
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -1692($fp)
-	lw $t1, -1640($fp)
-	lw $t2, -1692($fp)
-	add $t0, $t1, $t2
-	sw $t0, -1696($fp)
-	lw $t3, -1696($fp)
-	li $s2, 44878
-	sw $t3, -1696($fp)
-	sw $s2, 0($t3)
-	li $t5, 7
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -1700($fp)
-	lw $t1, -1640($fp)
-	lw $t2, -1700($fp)
-	add $t0, $t1, $t2
-	sw $t0, -1704($fp)
-	lw $t3, -1704($fp)
-	li $s2, 50555
-	sw $t3, -1704($fp)
-	sw $s2, 0($t3)
-	lw $a0, -156($fp)
+#413<_____________===
+label119:
+#414<_____________===
+	lw $a0, -72($fp)
+#415<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	jal id_xj7kF
-	move $t4, $v0
-	sw $t4, -1708($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 0
-	sw $t5, -1712($fp)
-	lw $t6, -308($fp)
-	bne $t6, 0, label204
-	j label203
-label203:
-	lw $t0, -1712($fp)
-	li $t0, 1
-	sw $t0, -1712($fp)
-label204:
-	lw $t2, -1712($fp)
-	li $t3, 33841
-	mul $t1, $t2, $t3
-	sw $t1, -1716($fp)
-	lw $t4, -1708($fp)
-	lw $t5, -1716($fp)
-	ble $t4, $t5, label202
-	j label201
-label202:
-	j label201
-label200:
-label201:
-	li $t6, 0
-	sw $t6, -1720($fp)
-	li $t0, 0
-	sw $t0, -1724($fp)
-	j label207
-label207:
-	lw $t1, -1724($fp)
-	li $t1, 1
-	sw $t1, -1724($fp)
-label208:
-	lw $t2, -1724($fp)
-	lw $t3, -1108($fp)
-	bgt $t2, $t3, label205
-	j label206
-label205:
-	lw $t4, -1720($fp)
-	li $t4, 1
-	sw $t4, -1720($fp)
-label206:
-	lw $a0, -1720($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_CYq6iXzc
-	move $t5, $v0
-	sw $t5, -1728($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t6, -200($fp)
-	li $t6, 43281
-	sw $t6, -200($fp)
-	li $t0, 43281
-	sw $t0, -1732($fp)
-	lw $t1, -1228($fp)
-	li $t1, 37390
-	sw $t1, -1228($fp)
-	li $t2, 37390
-	sw $t2, -1736($fp)
-	li $t3, 0
-	sw $t3, -1740($fp)
-	li $t5, 20827
-	lw $t6, -208($fp)
-	mul $t4, $t5, $t6
-	sw $t4, -1744($fp)
-	lw $t0, -1744($fp)
-	bne $t0, 0, label211
-	j label210
-label211:
-	lw $t1, -8($fp)
-	bne $t1, 0, label209
-	j label210
-label209:
-	lw $t2, -1740($fp)
-	li $t2, 1
-	sw $t2, -1740($fp)
-label210:
-	lw $t4, -992($fp)
-	li $t5, 16375
-	sub $t3, $t4, $t5
-	sw $t3, -1748($fp)
-	lw $a0, -1748($fp)
-	lw $a1, -1740($fp)
-	lw $a2, -1736($fp)
-	lw $a3, -1732($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_FxEuB
-	move $t6, $v0
-	sw $t6, -1752($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 0
-	sw $t0, -1756($fp)
-	lw $t1, -88($fp)
-	beq $t1, 63683, label212
-	j label213
-label212:
-	lw $t2, -1756($fp)
-	li $t2, 1
-	sw $t2, -1756($fp)
-label213:
-	lw $t4, -1756($fp)
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -1760($fp)
-	lw $t0, -1640($fp)
-	lw $t1, -1760($fp)
-	add $t6, $t0, $t1
-	sw $t6, -1764($fp)
-	lw $t3, -1752($fp)
-	lw $t4, -1764($fp)
-	lw $s4, 0($t4)
-	mul $t2, $t3, $s4
-	sw $t2, -1768($fp)
-	li $t6, 0
-	lw $t0, -1768($fp)
-	sub $t5, $t6, $t0
-	sw $t5, -1772($fp)
-	lw $t1, -1776($fp)
-	li $t1, 50674
-	sw $t1, -1776($fp)
-	lw $t2, -1780($fp)
-	li $t2, 19880
-	sw $t2, -1780($fp)
-	li $t3, 0
-	sw $t3, -1784($fp)
-	li $t4, 0
-	sw $t4, -1788($fp)
-	li $t5, 0
-	sw $t5, -1792($fp)
-	li $t6, 0
-	sw $t6, -1796($fp)
-	j label224
-label223:
-	lw $t0, -1796($fp)
-	li $t0, 1
-	sw $t0, -1796($fp)
-label224:
-	lw $t1, -1796($fp)
-	bge $t1, 45803, label221
-	j label222
-label221:
-	lw $t2, -1792($fp)
-	li $t2, 1
-	sw $t2, -1792($fp)
-label222:
-	li $t4, 39806
-	lw $t5, -192($fp)
-	add $t3, $t4, $t5
-	sw $t3, -1800($fp)
-	lw $t6, -1792($fp)
-	lw $t0, -1800($fp)
-	bne $t6, $t0, label219
-	j label220
-label219:
-	lw $t1, -1788($fp)
-	li $t1, 1
-	sw $t1, -1788($fp)
-label220:
-	li $t2, 0
-	sw $t2, -1804($fp)
-	lw $t3, -1776($fp)
-	bne $t3, 0, label226
-	j label225
-label225:
-	lw $t4, -1804($fp)
-	li $t4, 1
-	sw $t4, -1804($fp)
-label226:
-	lw $t5, -1788($fp)
-	lw $t6, -1804($fp)
-	bne $t5, $t6, label217
-	j label218
-label217:
-	lw $t0, -1784($fp)
-	li $t0, 1
-	sw $t0, -1784($fp)
-label218:
-	lw $t1, -1784($fp)
-	lw $t2, -100($fp)
-	bgt $t1, $t2, label216
-	j label215
-label216:
-	li $t4, 2140
-	li $t5, 45909
-	sub $t3, $t4, $t5
-	sw $t3, -1808($fp)
-	li $t0, 0
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -1812($fp)
-	lw $t3, -288($fp)
-	lw $t4, -1812($fp)
-	add $t2, $t3, $t4
-	sw $t2, -1816($fp)
-	lw $t6, -1816($fp)
-	lw $t0, -96($fp)
-	lw $s3, 0($t6)
-	sub $t5, $s3, $t0
-	sw $t5, -1820($fp)
-	lw $t2, -1780($fp)
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1824($fp)
-	lw $t5, -288($fp)
-	lw $t6, -1824($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1828($fp)
-	lw $t1, -1828($fp)
-	li $t2, 39936
-	lw $s3, 0($t1)
-	add $t0, $s3, $t2
-	sw $t0, -1832($fp)
-	li $t3, 0
-	sw $t3, -1836($fp)
-	lw $t4, -1228($fp)
-	bne $t4, 0, label228
-	j label227
-label227:
-	lw $t5, -1836($fp)
-	li $t5, 1
-	sw $t5, -1836($fp)
-label228:
-	li $t0, 0
-	lw $t1, -1836($fp)
-	sub $t6, $t0, $t1
-	sw $t6, -1840($fp)
-	lw $a0, -1840($fp)
-	lw $a1, -1832($fp)
-	lw $a2, -1820($fp)
-	lw $a3, -1808($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t2, $v0
-	sw $t2, -1844($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 0
-	lw $t5, -1844($fp)
-	sub $t3, $t4, $t5
-	sw $t3, -1848($fp)
-	lw $t6, -1848($fp)
-	bne $t6, 0, label214
-	j label215
-label214:
-label215:
-	li $t0, 0
-	sw $t0, -1852($fp)
-	li $t2, 0
-	li $t3, 21742
-	sub $t1, $t2, $t3
-	sw $t1, -1856($fp)
-	lw $t4, -84($fp)
-	lw $t5, -1856($fp)
-	bgt $t4, $t5, label231
-	j label232
-label231:
-	lw $t6, -1852($fp)
-	li $t6, 1
-	sw $t6, -1852($fp)
-label232:
-	lw $t0, -1852($fp)
-	lw $t1, -100($fp)
-	bne $t0, $t1, label229
-	j label230
-label229:
-label230:
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -1552($fp)
-	move $a0, $t2
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 0
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -1860($fp)
-	lw $t0, -1572($fp)
-	lw $t1, -1860($fp)
-	add $t6, $t0, $t1
-	sw $t6, -1864($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -1864($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 1
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -1868($fp)
-	lw $t0, -1572($fp)
-	lw $t1, -1868($fp)
-	add $t6, $t0, $t1
-	sw $t6, -1872($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -1872($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 2
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -1876($fp)
-	lw $t0, -1572($fp)
-	lw $t1, -1876($fp)
-	add $t6, $t0, $t1
-	sw $t6, -1880($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -1880($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 3
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -1884($fp)
-	lw $t0, -1572($fp)
-	lw $t1, -1884($fp)
-	add $t6, $t0, $t1
-	sw $t6, -1888($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -1888($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 0
-	sw $t3, -1892($fp)
-	li $t4, 0
-	sw $t4, -1896($fp)
-	li $t5, 0
-	sw $t5, -1900($fp)
-	lw $t6, -1004($fp)
-	beq $t6, 33291, label237
-	j label238
-label237:
-	lw $t0, -1900($fp)
-	li $t0, 1
-	sw $t0, -1900($fp)
-label238:
-	lw $t2, -1900($fp)
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -1904($fp)
-	lw $t5, -36($fp)
-	lw $t6, -1904($fp)
-	add $t4, $t5, $t6
-	sw $t4, -1908($fp)
-	lw $t1, -1908($fp)
-	li $t2, 25000
-	lw $s3, 0($t1)
-	div $s3, $t2
-	mflo $t0
-	sw $t0, -1912($fp)
-	li $t4, 3
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -1916($fp)
-	lw $t0, -140($fp)
-	lw $t1, -1916($fp)
-	add $t6, $t0, $t1
-	sw $t6, -1920($fp)
-	lw $t2, -1912($fp)
-	lw $t3, -1920($fp)
-	lw $s4, 0($t3)
-	beq $t2, $s4, label235
-	j label236
-label235:
-	lw $t4, -1896($fp)
-	li $t4, 1
-	sw $t4, -1896($fp)
-label236:
-	lw $t6, -204($fp)
-	lw $t0, -1228($fp)
-	add $t5, $t6, $t0
-	sw $t5, -1924($fp)
-	lw $t1, -1896($fp)
-	lw $t2, -1924($fp)
-	ble $t1, $t2, label233
-	j label234
-label233:
-	lw $t3, -1892($fp)
-	li $t3, 1
-	sw $t3, -1892($fp)
-label234:
-	lw $t4, -1892($fp)
-	move $v0, $t4
-	addi $sp, $sp, 800
-	addi $sp, $sp, 4
-	lw $fp, 0($sp)
-	addi $sp, $sp, 4
-	jr $ra
-	j label240
-label239:
-label241:
-	li $t6, 0
-	lw $t0, -1020($fp)
-	sub $t5, $t6, $t0
-	sw $t5, -1928($fp)
-	li $t2, 0
-	lw $t3, -1928($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -1932($fp)
-	lw $t5, -192($fp)
-	li $t6, 27178
-	div $t5, $t6
-	mflo $t4
-	sw $t4, -1936($fp)
-	lw $t1, -1932($fp)
-	lw $t2, -1936($fp)
-	add $t0, $t1, $t2
-	sw $t0, -1940($fp)
-	lw $t3, -1940($fp)
-	bne $t3, 0, label242
-	j label243
-label242:
-	li $t4, 0
-	sw $t4, -1944($fp)
-	lw $t6, -1552($fp)
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -1948($fp)
-	lw $t2, -288($fp)
-	lw $t3, -1948($fp)
-	add $t1, $t2, $t3
-	sw $t1, -1952($fp)
-	lw $t4, -1952($fp)
-	lw $s3, 0($t4)
-	bne $s3, 0, label247
-	j label246
-label246:
-	lw $t5, -1944($fp)
-	li $t5, 1
-	sw $t5, -1944($fp)
-label247:
-	li $t0, 0
-	lw $t1, -1944($fp)
-	sub $t6, $t0, $t1
-	sw $t6, -1956($fp)
-	li $t2, 0
-	sw $t2, -1960($fp)
-	li $t4, 1
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -1964($fp)
-	lw $t0, -1572($fp)
-	lw $t1, -1964($fp)
-	add $t6, $t0, $t1
-	sw $t6, -1968($fp)
-	lw $t2, -1968($fp)
-	lw $s3, 0($t2)
-	bne $s3, 0, label249
-	j label248
-label248:
-	lw $t3, -1960($fp)
-	li $t3, 1
-	sw $t3, -1960($fp)
-label249:
-	lw $t5, -1956($fp)
-	lw $t6, -1960($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -1972($fp)
-	li $t0, 0
-	sw $t0, -1976($fp)
-	j label251
-label252:
-	lw $t1, -204($fp)
-	bne $t1, 0, label250
-	j label251
-label250:
-	lw $t2, -1976($fp)
-	li $t2, 1
-	sw $t2, -1976($fp)
-label251:
-	lw $a0, -1976($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t3, $v0
-	sw $t3, -1980($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t4, -1972($fp)
-	lw $t5, -1980($fp)
-	ble $t4, $t5, label244
-	j label245
-label244:
-label245:
-	j label241
-label243:
-	j label253
-label240:
-label253:
-	j label254
-label196:
-	li $t6, 0
-	sw $t6, -1984($fp)
-	j label258
-label257:
-	lw $t0, -1984($fp)
-	li $t0, 1
-	sw $t0, -1984($fp)
-label258:
-	lw $t1, -308($fp)
-	lw $t2, -1984($fp)
-	move $t1, $t2
-	sw $t1, -308($fp)
-	lw $t4, -1984($fp)
-	move $t3, $t4
-	sw $t3, -1988($fp)
-	lw $t6, -1988($fp)
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -1992($fp)
-	lw $t2, -1180($fp)
-	lw $t3, -1992($fp)
-	add $t1, $t2, $t3
-	sw $t1, -1996($fp)
-	lw $t4, -1996($fp)
-	lw $s3, 0($t4)
-	bne $s3, 0, label255
-	j label256
-label255:
-label259:
-	li $t5, 0
-	sw $t5, -2000($fp)
-	lw $t6, -300($fp)
-	ble $t6, 65393, label262
-	j label263
-label262:
-	lw $t0, -2000($fp)
-	li $t0, 1
-	sw $t0, -2000($fp)
-label263:
-	lw $a0, -2000($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_CYq6iXzc
 	move $t1, $v0
-	sw $t1, -2004($fp)
+	sw $t1, -80($fp)
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#416<_____________===
+	li $t3, 57809
+	lw $t4, -80($fp)
+	mul $t2, $t3, $t4
+	sw $t2, -84($fp)
+#417<_____________===
+	lw $t5, -84($fp)
+	bne $t5, 0, label115
+#418<_____________===
+	j label117
+#419<_____________===
+label117:
+#420<_____________===
+	li $t6, 0
+	sw $t6, -88($fp)
+#421<_____________===
+	li $t0, 0
+	sw $t0, -92($fp)
+#422<_____________===
 	li $t2, 0
-	sw $t2, -2008($fp)
-	lw $t3, -1004($fp)
-	bne $t3, 0, label265
-	j label264
-label264:
-	lw $t4, -2008($fp)
-	li $t4, 1
-	sw $t4, -2008($fp)
-label265:
-	lw $t6, -2008($fp)
-	lw $t0, -1100($fp)
-	mul $t5, $t6, $t0
-	sw $t5, -2012($fp)
-	lw $t1, -208($fp)
-	lw $t2, -1012($fp)
-	move $t1, $t2
-	sw $t1, -208($fp)
-	lw $t4, -1012($fp)
-	move $t3, $t4
-	sw $t3, -2016($fp)
-	lw $t5, -1104($fp)
-	lw $t6, -204($fp)
-	move $t5, $t6
-	sw $t5, -1104($fp)
-	lw $t1, -204($fp)
-	move $t0, $t1
-	sw $t0, -2020($fp)
-	li $t2, 0
-	sw $t2, -2024($fp)
-	j label266
-label266:
-	lw $t3, -2024($fp)
-	li $t3, 1
-	sw $t3, -2024($fp)
-label267:
-	lw $a0, -2024($fp)
-	lw $a1, -2020($fp)
-	li $a2, 64380
-	lw $a3, -2016($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t4, $v0
-	sw $t4, -2028($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t6, -2028($fp)
-	lw $t0, -988($fp)
-	sub $t5, $t6, $t0
-	sw $t5, -2032($fp)
-	lw $t2, -148($fp)
-	lw $t3, -992($fp)
-	div $t2, $t3
-	mflo $t1
-	sw $t1, -2036($fp)
-	lw $t5, -2036($fp)
-	lw $t6, -88($fp)
-	div $t5, $t6
-	mflo $t4
-	sw $t4, -2040($fp)
-	lw $a0, -2040($fp)
-	lw $a1, -2032($fp)
-	lw $a2, -2012($fp)
-	lw $a3, -2004($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_FxEuB
-	move $t0, $v0
-	sw $t0, -2044($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 0
-	li $t3, 37248
-	sub $t1, $t2, $t3
-	sw $t1, -2048($fp)
-	lw $t5, -2044($fp)
-	lw $t6, -2048($fp)
-	mul $t4, $t5, $t6
-	sw $t4, -2052($fp)
-	lw $t0, -2052($fp)
-	bne $t0, 0, label260
-	j label261
-label260:
-	li $t2, 0
-	lw $t3, -1024($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -2056($fp)
-	li $t5, 19671
-	lw $t6, -2056($fp)
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -96($fp)
+#423<_____________===
+	lw $t5, -44($fp)
+	lw $t6, -96($fp)
 	add $t4, $t5, $t6
-	sw $t4, -2060($fp)
-	lw $t0, -2060($fp)
-	bne $t0, 0, label268
-	j label269
-label268:
-	li $t2, 0
-	lw $t3, -80($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -2064($fp)
-	li $t5, 0
-	lw $t6, -2064($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -2068($fp)
-	lw $t0, -2068($fp)
-	bne $t0, 0, label270
-	j label271
-label270:
-	lw $t1, -2072($fp)
-	li $t1, 31442
-	sw $t1, -2072($fp)
-	lw $t2, -2076($fp)
-	li $t2, 35395
-	sw $t2, -2076($fp)
-	li $t3, 0
-	sw $t3, -2080($fp)
-	lw $t5, -156($fp)
-	li $t6, 4810
-	mul $t4, $t5, $t6
-	sw $t4, -2084($fp)
-	lw $t0, -2084($fp)
-	bne $t0, 0, label274
-	j label273
-label274:
-	lw $t1, -104($fp)
-	bne $t1, 0, label272
-	j label273
-label272:
-	lw $t2, -2080($fp)
-	li $t2, 1
-	sw $t2, -2080($fp)
-label273:
-	li $t3, 0
-	sw $t3, -2088($fp)
-	li $t5, 0
-	lw $t6, -152($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -2092($fp)
-	lw $t0, -2092($fp)
-	bne $t0, 0, label276
-	j label275
-label275:
-	lw $t1, -2088($fp)
+	sw $t4, -100($fp)
+#424<_____________===
+	lw $t0, -100($fp)
+	lw $s3, 0($t0)
+	bne $s3, 0, label124
+#425<_____________===
+	j label123
+#426<_____________===
+label123:
+#427<_____________===
+	lw $t1, -92($fp)
 	li $t1, 1
-	sw $t1, -2088($fp)
-label276:
-	li $t2, 0
-	sw $t2, -2096($fp)
-	lw $t3, -316($fp)
-	bne $t3, 0, label277
-	j label280
-label280:
-	lw $t4, -2072($fp)
-	bne $t4, 0, label277
-	j label279
-label279:
-	j label278
-label277:
-	lw $t5, -2096($fp)
-	li $t5, 1
-	sw $t5, -2096($fp)
-label278:
-	li $t6, 0
-	sw $t6, -2100($fp)
-	j label282
-label284:
-	lw $t0, -204($fp)
-	bne $t0, 0, label283
-	j label282
-label283:
-	j label282
-label281:
-	lw $t1, -2100($fp)
-	li $t1, 1
-	sw $t1, -2100($fp)
-label282:
-	lw $t3, -2076($fp)
-	lw $t4, -1108($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2104($fp)
-	lw $t6, -2104($fp)
-	li $t0, 31589
-	sub $t5, $t6, $t0
-	sw $t5, -2108($fp)
-	li $t2, 38842
-	lw $t3, -1108($fp)
-	add $t1, $t2, $t3
-	sw $t1, -2112($fp)
-	lw $t5, -2112($fp)
-	lw $t6, -312($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -2116($fp)
-	li $t1, 19707
-	li $t2, 11962
-	div $t1, $t2
-	mflo $t0
-	sw $t0, -2120($fp)
-	lw $t4, -2120($fp)
-	lw $t5, -1012($fp)
-	sub $t3, $t4, $t5
-	sw $t3, -2124($fp)
-	lw $a0, -2124($fp)
-	lw $a1, -2116($fp)
-	lw $a2, -2108($fp)
-	lw $a3, -2100($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t6, $v0
-	sw $t6, -2128($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t1, -2128($fp)
-	li $t2, 12707
-	div $t1, $t2
-	mflo $t0
-	sw $t0, -2132($fp)
-	lw $a0, -2132($fp)
-	lw $a1, -2096($fp)
-	lw $a2, -2088($fp)
-	lw $a3, -2080($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_FxEuB
-	move $t3, $v0
-	sw $t3, -2136($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 23425
-	li $t6, 51899
-	div $t5, $t6
-	mflo $t4
-	sw $t4, -2140($fp)
-	lw $t1, -2140($fp)
-	lw $t2, -184($fp)
-	div $t1, $t2
-	mflo $t0
-	sw $t0, -2144($fp)
-	j label285
-label271:
-	li $t3, 0
-	sw $t3, -2148($fp)
-	li $t5, 34449
-	lw $t6, -1124($fp)
-	div $t5, $t6
-	mflo $t4
-	sw $t4, -2152($fp)
-	li $t1, 56716
-	li $t2, 11363
-	mul $t0, $t1, $t2
-	sw $t0, -2156($fp)
-	lw $t3, -2152($fp)
-	lw $t4, -2156($fp)
-	bge $t3, $t4, label286
-	j label287
-label286:
-	lw $t5, -2148($fp)
-	li $t5, 1
-	sw $t5, -2148($fp)
-label287:
-	lw $t6, -1120($fp)
-	lw $t0, -2148($fp)
-	move $t6, $t0
-	sw $t6, -1120($fp)
-label285:
-	j label288
-label269:
-label289:
-	li $t1, 0
-	sw $t1, -2160($fp)
-	li $t2, 0
-	sw $t2, -2164($fp)
-	lw $t4, -988($fp)
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -2168($fp)
-	lw $t0, -1092($fp)
-	lw $t1, -2168($fp)
-	add $t6, $t0, $t1
-	sw $t6, -2172($fp)
-	lw $t2, -2172($fp)
-	lw $s3, 0($t2)
-	bne $s3, 0, label295
-	j label294
-label294:
-	lw $t3, -2164($fp)
+	sw $t1, -92($fp)
+#428<_____________===
+label124:
+#429<_____________===
+	lw $t2, -92($fp)
+	bne $t2, 28245, label121
+#430<_____________===
+	j label122
+#431<_____________===
+label121:
+#432<_____________===
+	lw $t3, -88($fp)
 	li $t3, 1
-	sw $t3, -2164($fp)
-label295:
-	li $t5, 63705
-	li $t6, 60183
-	sub $t4, $t5, $t6
-	sw $t4, -2176($fp)
-	lw $t0, -2164($fp)
-	lw $t1, -2176($fp)
-	bne $t0, $t1, label292
-	j label293
-label292:
-	lw $t2, -2160($fp)
-	li $t2, 1
-	sw $t2, -2160($fp)
-label293:
-	li $t3, 0
-	sw $t3, -2180($fp)
-	j label297
-label298:
-	lw $t4, -1008($fp)
-	bne $t4, 0, label296
-	j label297
-label296:
-	lw $t5, -2180($fp)
-	li $t5, 1
-	sw $t5, -2180($fp)
-label297:
-	lw $a0, -2180($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_CYq6iXzc
-	move $t6, $v0
-	sw $t6, -2184($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t1, -2184($fp)
-	lw $t2, -84($fp)
-	div $t1, $t2
-	mflo $t0
-	sw $t0, -2188($fp)
-	lw $t3, -2160($fp)
-	lw $t4, -2188($fp)
-	beq $t3, $t4, label290
-	j label291
-label290:
-	li $t6, 3204
-	li $t0, 50458
-	mul $t5, $t6, $t0
-	sw $t5, -2192($fp)
-	li $t2, 0
-	lw $t3, -2192($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -2196($fp)
-	lw $t5, -2196($fp)
-	lw $t6, -92($fp)
-	add $t4, $t5, $t6
-	sw $t4, -2200($fp)
-	li $t0, 0
-	sw $t0, -2204($fp)
-	j label301
-label301:
-	j label300
-label299:
-	lw $t1, -2204($fp)
-	li $t1, 1
-	sw $t1, -2204($fp)
-label300:
-	li $t2, 0
-	sw $t2, -2208($fp)
-	lw $t4, -1128($fp)
-	li $t5, 613
-	sub $t3, $t4, $t5
-	sw $t3, -2212($fp)
-	lw $t6, -2212($fp)
-	bne $t6, 0, label304
-	j label303
-label304:
-	j label303
-label302:
-	lw $t0, -2208($fp)
-	li $t0, 1
-	sw $t0, -2208($fp)
-label303:
-	li $t1, 0
-	sw $t1, -2216($fp)
-	j label307
-label308:
-	j label307
-label307:
-	j label306
-label305:
-	lw $t2, -2216($fp)
-	li $t2, 1
-	sw $t2, -2216($fp)
-label306:
-	li $t3, 0
-	sw $t3, -2220($fp)
-	lw $t5, -80($fp)
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2224($fp)
-	lw $t1, -1052($fp)
-	lw $t2, -2224($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2228($fp)
-	li $t3, 0
-	sw $t3, -2232($fp)
-	lw $t4, -72($fp)
-	bne $t4, 0, label311
-	j label313
-label313:
-	lw $t5, -1004($fp)
-	bne $t5, 0, label311
-	j label312
-label311:
-	lw $t6, -2232($fp)
-	li $t6, 1
-	sw $t6, -2232($fp)
-label312:
-	li $t0, 0
-	sw $t0, -2236($fp)
-	j label316
-label316:
-	j label315
-label314:
-	lw $t1, -2236($fp)
-	li $t1, 1
-	sw $t1, -2236($fp)
-label315:
-	li $t2, 0
-	sw $t2, -2240($fp)
-	li $t3, 0
-	sw $t3, -2244($fp)
-	li $t4, 0
-	sw $t4, -2248($fp)
-	li $t5, 0
-	sw $t5, -2252($fp)
-	lw $t6, -144($fp)
-	bne $t6, 0, label325
-	j label324
-label324:
-	lw $t0, -2252($fp)
-	li $t0, 1
-	sw $t0, -2252($fp)
-label325:
-	lw $t1, -2252($fp)
-	bgt $t1, 12684, label322
-	j label323
-label322:
-	lw $t2, -2248($fp)
-	li $t2, 1
-	sw $t2, -2248($fp)
-label323:
-	lw $a0, -2248($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t3, $v0
-	sw $t3, -2256($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t4, -2256($fp)
-	lw $t5, -76($fp)
-	beq $t4, $t5, label320
-	j label321
-label320:
-	lw $t6, -2244($fp)
-	li $t6, 1
-	sw $t6, -2244($fp)
-label321:
-	lw $a0, -2244($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t0, $v0
-	sw $t0, -2260($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t1, -2260($fp)
-	bne $t1, 0, label319
-	j label318
-label319:
-	lw $t2, -1024($fp)
-	bne $t2, 0, label317
-	j label318
-label317:
-	lw $t3, -2240($fp)
-	li $t3, 1
-	sw $t3, -2240($fp)
-label318:
-	lw $a0, -2240($fp)
-	lw $a1, -2236($fp)
-	lw $a2, -2232($fp)
-	lw $s1, -2228($fp)
-	lw $a3, 0($s1)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t4, $v0
-	sw $t4, -2264($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t5, -2264($fp)
-	beq $t5, 32908, label309
-	j label310
-label309:
-	lw $t6, -2220($fp)
-	li $t6, 1
-	sw $t6, -2220($fp)
-label310:
-	lw $a0, -2220($fp)
-	lw $a1, -2216($fp)
-	lw $a2, -2208($fp)
-	lw $a3, -2204($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t0, $v0
-	sw $t0, -2268($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 0
-	lw $t3, -2268($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -2272($fp)
-	lw $t5, -2200($fp)
-	lw $t6, -2272($fp)
-	add $t4, $t5, $t6
-	sw $t4, -2276($fp)
-	li $t0, 0
-	sw $t0, -2280($fp)
-	lw $t1, -84($fp)
-	lw $t2, -148($fp)
-	move $t1, $t2
-	sw $t1, -84($fp)
-	lw $t4, -148($fp)
-	move $t3, $t4
-	sw $t3, -2284($fp)
-	li $t5, 0
-	sw $t5, -2288($fp)
-	li $t6, 0
-	sw $t6, -2292($fp)
-	lw $t0, -1016($fp)
-	bne $t0, 0, label331
-	j label330
-label330:
-	lw $t1, -2292($fp)
-	li $t1, 1
-	sw $t1, -2292($fp)
-label331:
-	lw $t2, -2292($fp)
-	beq $t2, 62638, label328
-	j label329
-label328:
-	lw $t3, -2288($fp)
-	li $t3, 1
-	sw $t3, -2288($fp)
-label329:
-	li $a0, 30251
-	lw $a1, -2288($fp)
-	lw $a2, -2284($fp)
-	lw $a3, -100($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_FxEuB
-	move $t4, $v0
-	sw $t4, -2296($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t5, -2296($fp)
-	bne $t5, 0, label327
-	j label326
-label326:
-	lw $t6, -2280($fp)
-	li $t6, 1
-	sw $t6, -2280($fp)
-label327:
-	li $t1, 0
-	lw $t2, -2280($fp)
-	sub $t0, $t1, $t2
-	sw $t0, -2300($fp)
-	j label289
-label291:
-label288:
-	j label259
-label261:
-	j label332
-label256:
-	li $t3, 0
-	sw $t3, -2304($fp)
-	li $t5, 0
-	li $t6, 64497
-	sub $t4, $t5, $t6
-	sw $t4, -2308($fp)
-	li $t1, 0
-	lw $t2, -2308($fp)
-	sub $t0, $t1, $t2
-	sw $t0, -2312($fp)
-	li $t4, 0
-	lw $t5, -2312($fp)
-	sub $t3, $t4, $t5
-	sw $t3, -2316($fp)
-	lw $t6, -2316($fp)
-	bne $t6, 0, label334
-	j label333
-label333:
-	lw $t0, -2304($fp)
-	li $t0, 1
-	sw $t0, -2304($fp)
-label334:
-	li $t1, 0
-	sw $t1, -2320($fp)
-	lw $t2, -304($fp)
-	bne $t2, 0, label336
-	j label335
-label335:
-	lw $t3, -2320($fp)
-	li $t3, 1
-	sw $t3, -2320($fp)
-label336:
-	li $t5, 0
-	lw $t6, -2320($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -2324($fp)
-	li $t1, 0
-	lw $t2, -2324($fp)
-	sub $t0, $t1, $t2
-	sw $t0, -2328($fp)
-label332:
-label254:
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -988($fp)
-	move $a0, $t3
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -992($fp)
-	move $a0, $t4
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 0
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -2332($fp)
-	lw $t2, -1000($fp)
-	lw $t3, -2332($fp)
-	add $t1, $t2, $t3
-	sw $t1, -2336($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -2336($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -1004($fp)
-	move $a0, $t5
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -1008($fp)
-	move $a0, $t6
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -1012($fp)
-	move $a0, $t0
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -1016($fp)
-	move $a0, $t1
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -1020($fp)
-	move $a0, $t2
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -1024($fp)
-	move $a0, $t3
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 0
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2340($fp)
-	lw $t1, -1052($fp)
-	lw $t2, -2340($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2344($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2344($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 1
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2348($fp)
-	lw $t1, -1052($fp)
-	lw $t2, -2348($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2352($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2352($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 2
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2356($fp)
-	lw $t1, -1052($fp)
-	lw $t2, -2356($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2360($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2360($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 3
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2364($fp)
-	lw $t1, -1052($fp)
-	lw $t2, -2364($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2368($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2368($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 4
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2372($fp)
-	lw $t1, -1052($fp)
-	lw $t2, -2372($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2376($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2376($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 5
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2380($fp)
-	lw $t1, -1052($fp)
-	lw $t2, -2380($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2384($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2384($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 0
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2388($fp)
-	lw $t1, -1092($fp)
-	lw $t2, -2388($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2392($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2392($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 1
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2396($fp)
-	lw $t1, -1092($fp)
-	lw $t2, -2396($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2400($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2400($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 2
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2404($fp)
-	lw $t1, -1092($fp)
-	lw $t2, -2404($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2408($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2408($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 3
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2412($fp)
-	lw $t1, -1092($fp)
-	lw $t2, -2412($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2416($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2416($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 4
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2420($fp)
-	lw $t1, -1092($fp)
-	lw $t2, -2420($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2424($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2424($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 5
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2428($fp)
-	lw $t1, -1092($fp)
-	lw $t2, -2428($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2432($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2432($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 6
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2436($fp)
-	lw $t1, -1092($fp)
-	lw $t2, -2436($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2440($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2440($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 7
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2444($fp)
-	lw $t1, -1092($fp)
-	lw $t2, -2444($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2448($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2448($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t5, 8
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2452($fp)
-	lw $t1, -1092($fp)
-	lw $t2, -2452($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2456($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -2456($fp)
-	lw $a0, 0($t3)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -1096($fp)
-	move $a0, $t4
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -1100($fp)
-	move $a0, $t5
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -1104($fp)
-	move $a0, $t6
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -1108($fp)
-	move $a0, $t0
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -1112($fp)
-	move $a0, $t1
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -1116($fp)
-	move $a0, $t2
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -1120($fp)
-	move $a0, $t3
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -1124($fp)
-	move $a0, $t4
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -1128($fp)
-	move $a0, $t5
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 0
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2460($fp)
-	lw $t3, -1144($fp)
-	lw $t4, -2460($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2464($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2464($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 1
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2468($fp)
-	lw $t3, -1144($fp)
-	lw $t4, -2468($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2472($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2472($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 2
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2476($fp)
-	lw $t3, -1144($fp)
-	lw $t4, -2476($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2480($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2480($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 0
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2484($fp)
-	lw $t3, -1180($fp)
-	lw $t4, -2484($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2488($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2488($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 1
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2492($fp)
-	lw $t3, -1180($fp)
-	lw $t4, -2492($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2496($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2496($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 2
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2500($fp)
-	lw $t3, -1180($fp)
-	lw $t4, -2500($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2504($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2504($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 3
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2508($fp)
-	lw $t3, -1180($fp)
-	lw $t4, -2508($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2512($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2512($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 4
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2516($fp)
-	lw $t3, -1180($fp)
-	lw $t4, -2516($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2520($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2520($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 5
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2524($fp)
-	lw $t3, -1180($fp)
-	lw $t4, -2524($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2528($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2528($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 6
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2532($fp)
-	lw $t3, -1180($fp)
-	lw $t4, -2532($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2536($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2536($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 7
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2540($fp)
-	lw $t3, -1180($fp)
-	lw $t4, -2540($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2544($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2544($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 0
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2548($fp)
-	lw $t3, -1224($fp)
-	lw $t4, -2548($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2552($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2552($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 1
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2556($fp)
-	lw $t3, -1224($fp)
-	lw $t4, -2556($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2560($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2560($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 2
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2564($fp)
-	lw $t3, -1224($fp)
-	lw $t4, -2564($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2568($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2568($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 3
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2572($fp)
-	lw $t3, -1224($fp)
-	lw $t4, -2572($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2576($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2576($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 4
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2580($fp)
-	lw $t3, -1224($fp)
-	lw $t4, -2580($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2584($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2584($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 5
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2588($fp)
-	lw $t3, -1224($fp)
-	lw $t4, -2588($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2592($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2592($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 6
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2596($fp)
-	lw $t3, -1224($fp)
-	lw $t4, -2596($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2600($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2600($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 7
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2604($fp)
-	lw $t3, -1224($fp)
-	lw $t4, -2604($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2608($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2608($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 8
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2612($fp)
-	lw $t3, -1224($fp)
-	lw $t4, -2612($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2616($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2616($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 9
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2620($fp)
-	lw $t3, -1224($fp)
-	lw $t4, -2620($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2624($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -2624($fp)
-	lw $a0, 0($t5)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -1228($fp)
-	move $a0, $t6
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t0, -76($fp)
-	move $v0, $t0
-	addi $sp, $sp, 800
-	addi $sp, $sp, 4
-	lw $fp, 0($sp)
-	addi $sp, $sp, 4
-	jr $ra
-	li $t1, 0
-	sw $t1, -2628($fp)
-	lw $t2, -308($fp)
-	bne $t2, 35944, label340
-	j label341
-label340:
-	lw $t3, -2628($fp)
-	li $t3, 1
-	sw $t3, -2628($fp)
-label341:
-	lw $t5, -2628($fp)
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2632($fp)
-	lw $t1, -1000($fp)
-	lw $t2, -2632($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2636($fp)
-	lw $t3, -2636($fp)
-	lw $s3, 0($t3)
-	bne $s3, 49958, label339
-	j label338
-label339:
-	lw $t5, -308($fp)
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2640($fp)
-	lw $t1, -1144($fp)
-	lw $t2, -2640($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2644($fp)
-	lw $t3, -2644($fp)
-	lw $s3, 0($t3)
-	bne $s3, 0, label338
-	j label337
-label337:
-	lw $t4, -2648($fp)
-	li $t4, 10923
-	sw $t4, -2648($fp)
-label342:
-	li $t5, 0
-	sw $t5, -2652($fp)
-	li $t6, 0
-	sw $t6, -2656($fp)
-	li $t1, 0
-	lw $t2, -1016($fp)
-	sub $t0, $t1, $t2
-	sw $t0, -2660($fp)
-	lw $t3, -2660($fp)
-	bge $t3, 48651, label347
-	j label348
-label347:
-	lw $t4, -2656($fp)
-	li $t4, 1
-	sw $t4, -2656($fp)
-label348:
-	li $t5, 0
-	sw $t5, -2664($fp)
-	j label349
-label349:
-	lw $t6, -2664($fp)
-	li $t6, 1
-	sw $t6, -2664($fp)
-label350:
-	lw $t1, -2664($fp)
-	li $t2, 62822
-	sub $t0, $t1, $t2
-	sw $t0, -2668($fp)
-	lw $t3, -2656($fp)
-	lw $t4, -2668($fp)
-	bne $t3, $t4, label345
-	j label346
-label345:
-	lw $t5, -2652($fp)
-	li $t5, 1
-	sw $t5, -2652($fp)
-label346:
-	lw $t0, -76($fp)
-	li $t1, 17565
-	add $t6, $t0, $t1
-	sw $t6, -2672($fp)
-	lw $t2, -2652($fp)
-	lw $t3, -2672($fp)
-	blt $t2, $t3, label343
-	j label344
-label343:
-	li $t4, 0
-	sw $t4, -2676($fp)
-	lw $t5, -92($fp)
-	beq $t5, 64564, label351
-	j label352
-label351:
-	lw $t6, -2676($fp)
-	li $t6, 1
-	sw $t6, -2676($fp)
-label352:
-	lw $t0, -80($fp)
-	lw $t1, -2676($fp)
-	move $t0, $t1
-	sw $t0, -80($fp)
-	lw $t3, -2676($fp)
-	move $t2, $t3
-	sw $t2, -2680($fp)
-	lw $t4, -296($fp)
-	lw $t5, -2680($fp)
-	move $t4, $t5
-	sw $t4, -296($fp)
-	j label342
-label344:
-label353:
-	li $t6, 0
-	sw $t6, -2684($fp)
-	li $t1, 8649
-	li $t2, 15734
-	add $t0, $t1, $t2
-	sw $t0, -2688($fp)
-	lw $t4, -2688($fp)
-	li $t5, 59212
-	add $t3, $t4, $t5
-	sw $t3, -2692($fp)
-	lw $t0, -2648($fp)
-	li $t1, 39691
-	sub $t6, $t0, $t1
-	sw $t6, -2696($fp)
-	lw $t2, -2692($fp)
-	lw $t3, -2696($fp)
-	bgt $t2, $t3, label356
-	j label357
-label356:
-	lw $t4, -2684($fp)
-	li $t4, 1
-	sw $t4, -2684($fp)
-label357:
-	lw $t5, -1116($fp)
-	lw $t6, -2684($fp)
-	move $t5, $t6
-	sw $t5, -1116($fp)
-	lw $t1, -2684($fp)
-	move $t0, $t1
-	sw $t0, -2700($fp)
-	lw $t2, -2700($fp)
-	bne $t2, 0, label354
-	j label355
-label354:
-	li $t4, 0
-	lw $t5, -156($fp)
-	sub $t3, $t4, $t5
-	sw $t3, -2704($fp)
-	lw $a0, -2704($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t6, $v0
-	sw $t6, -2708($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 0
-	li $t2, 41081
-	sub $t0, $t1, $t2
-	sw $t0, -2712($fp)
-	j label353
-label355:
-	li $t3, 0
-	sw $t3, -2716($fp)
-	lw $t4, -4($fp)
-	lw $t5, -152($fp)
-	bne $t4, $t5, label358
-	j label359
-label358:
-	lw $t6, -2716($fp)
-	li $t6, 1
-	sw $t6, -2716($fp)
-label359:
-	lw $t1, -2716($fp)
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -2720($fp)
-	lw $t4, -288($fp)
-	lw $t5, -2720($fp)
-	add $t3, $t4, $t5
-	sw $t3, -2724($fp)
-	lw $t0, -308($fp)
-	lw $t1, -2724($fp)
-	lw $s4, 0($t1)
-	add $t6, $t0, $s4
-	sw $t6, -2728($fp)
-	lw $t2, -2728($fp)
-	move $v0, $t2
-	addi $sp, $sp, 800
-	addi $sp, $sp, 4
-	lw $fp, 0($sp)
-	addi $sp, $sp, 4
-	jr $ra
-	j label360
-label338:
-	li $t3, 0
-	sw $t3, -2732($fp)
-	lw $t4, -92($fp)
-	bne $t4, 0, label364
-	j label365
-label365:
-	j label364
-label363:
-	lw $t5, -2732($fp)
-	li $t5, 1
-	sw $t5, -2732($fp)
-label364:
-	lw $a0, -2732($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t6, $v0
-	sw $t6, -2736($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t0, 0
-	sw $t0, -2740($fp)
-	j label368
-label368:
-	j label367
-label366:
-	lw $t1, -2740($fp)
-	li $t1, 1
-	sw $t1, -2740($fp)
-label367:
-	lw $t2, -304($fp)
-	lw $t3, -1016($fp)
-	move $t2, $t3
-	sw $t2, -304($fp)
-	lw $t5, -1016($fp)
-	move $t4, $t5
-	sw $t4, -2744($fp)
-	li $t6, 0
-	sw $t6, -2748($fp)
-	li $t0, 0
-	sw $t0, -2752($fp)
-	lw $t1, -1096($fp)
-	lw $t2, -84($fp)
-	beq $t1, $t2, label371
-	j label372
-label371:
-	lw $t3, -2752($fp)
-	li $t3, 1
-	sw $t3, -2752($fp)
-label372:
-	lw $t4, -2752($fp)
-	lw $t5, -1012($fp)
-	bne $t4, $t5, label369
-	j label370
-label369:
-	lw $t6, -2748($fp)
-	li $t6, 1
-	sw $t6, -2748($fp)
-label370:
-	lw $a0, -2748($fp)
-	lw $a1, -2744($fp)
-	lw $a2, -2740($fp)
-	lw $a3, -2736($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t0, $v0
-	sw $t0, -2756($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 0
-	sw $t1, -2760($fp)
-	li $t2, 0
-	sw $t2, -2764($fp)
-	lw $t3, -92($fp)
-	bge $t3, 53518, label375
-	j label376
-label375:
-	lw $t4, -2764($fp)
-	li $t4, 1
-	sw $t4, -2764($fp)
-label376:
-	lw $t5, -2764($fp)
-	beq $t5, 13972, label373
-	j label374
-label373:
-	lw $t6, -2760($fp)
-	li $t6, 1
-	sw $t6, -2760($fp)
-label374:
-	lw $a0, -2760($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_CYq6iXzc
-	move $t0, $v0
-	sw $t0, -2768($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t2, -2756($fp)
-	lw $t3, -2768($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -2772($fp)
-	lw $t4, -2772($fp)
-	bne $t4, 0, label361
-	j label362
-label361:
-	lw $t5, -2776($fp)
-	li $t5, 4986
-	sw $t5, -2776($fp)
-	li $t0, 2
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2780($fp)
-	lw $t3, -1092($fp)
-	lw $t4, -2780($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2784($fp)
-	li $t5, 0
-	sw $t5, -2788($fp)
-	j label379
-label379:
-	lw $t6, -2788($fp)
-	li $t6, 1
-	sw $t6, -2788($fp)
-label380:
-	lw $t1, -2788($fp)
-	li $t2, 2252
-	mul $t0, $t1, $t2
-	sw $t0, -2792($fp)
-	li $t4, 0
-	li $t5, 5217
-	sub $t3, $t4, $t5
-	sw $t3, -2796($fp)
-	lw $t0, -2792($fp)
-	lw $t1, -2796($fp)
+	sw $t3, -88($fp)
+#433<_____________===
+label122:
+#434<_____________===
+	lw $t4, -88($fp)
+	lw $t5, -8($fp)
+	bge $t4, $t5, label115
+#435<_____________===
+	j label116
+#436<_____________===
+label115:
+#437<_____________===
+label125:
+#438<_____________===
+	li $t0, 12119
+	li $t1, 61185
 	div $t0, $t1
 	mflo $t6
-	sw $t6, -2800($fp)
-	lw $t2, -2784($fp)
-	lw $t3, -2800($fp)
-	lw $s3, 0($t2)
-	ble $s3, $t3, label377
-	j label378
-label377:
-label378:
-	li $t5, 0
-	lw $t6, -308($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -2804($fp)
-	lw $t1, -2804($fp)
-	li $t2, 35160
-	add $t0, $t1, $t2
-	sw $t0, -2808($fp)
-	lw $t4, -72($fp)
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -2812($fp)
-	lw $t0, -288($fp)
-	lw $t1, -2812($fp)
-	add $t6, $t0, $t1
-	sw $t6, -2816($fp)
-	li $t2, 0
-	sw $t2, -2820($fp)
-	j label382
-label381:
-	lw $t3, -2820($fp)
-	li $t3, 1
-	sw $t3, -2820($fp)
-label382:
-	li $t4, 0
-	sw $t4, -2824($fp)
-	lw $t5, -2776($fp)
-	bne $t5, 0, label384
-	j label383
-label383:
-	lw $t6, -2824($fp)
-	li $t6, 1
-	sw $t6, -2824($fp)
-label384:
-	lw $a0, -2824($fp)
-	lw $a1, -2820($fp)
-	lw $s1, -2816($fp)
-	lw $a2, 0($s1)
-	lw $a3, -2808($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t0, $v0
-	sw $t0, -2828($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	j label385
-label362:
-	li $t2, 8
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -2832($fp)
-	lw $t5, -288($fp)
-	lw $t6, -2832($fp)
-	add $t4, $t5, $t6
-	sw $t4, -2836($fp)
-	li $t0, 0
-	sw $t0, -2840($fp)
-	j label387
-label386:
-	lw $t1, -2840($fp)
-	li $t1, 1
-	sw $t1, -2840($fp)
-label387:
-	lw $t3, -2836($fp)
-	lw $t4, -2840($fp)
-	lw $s3, 0($t3)
-	div $s3, $t4
-	mflo $t2
-	sw $t2, -2844($fp)
-	li $t6, 0
-	lw $t0, -2844($fp)
-	sub $t5, $t6, $t0
-	sw $t5, -2848($fp)
-	li $t2, 0
-	lw $t3, -2848($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -2852($fp)
-	lw $t5, -160($fp)
-	li $t6, 45044
-	mul $t4, $t5, $t6
-	sw $t4, -2856($fp)
-	li $t1, 0
-	lw $t2, -2856($fp)
-	sub $t0, $t1, $t2
-	sw $t0, -2860($fp)
-label385:
-label360:
-	lw $t3, -2864($fp)
-	li $t3, 21380
-	sw $t3, -2864($fp)
-	li $t4, 0
-	sw $t4, -2868($fp)
-	li $t6, 0
-	lw $t0, -1004($fp)
-	sub $t5, $t6, $t0
-	sw $t5, -2872($fp)
-	li $t2, 0
-	lw $t3, -2864($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -2876($fp)
-	lw $t4, -2872($fp)
-	lw $t5, -2876($fp)
-	bgt $t4, $t5, label390
-	j label391
-label390:
-	lw $t6, -2868($fp)
-	li $t6, 1
-	sw $t6, -2868($fp)
-label391:
-	lw $t1, -2868($fp)
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -2880($fp)
-	lw $t4, -1052($fp)
-	lw $t5, -2880($fp)
-	add $t3, $t4, $t5
-	sw $t3, -2884($fp)
-	lw $t6, -2884($fp)
-	lw $s3, 0($t6)
-	bne $s3, 0, label388
-	j label389
-label388:
-	li $t0, 0
-	sw $t0, -2888($fp)
-	li $t1, 0
-	sw $t1, -2892($fp)
-	li $t3, 45254
-	li $t4, 42331
-	div $t3, $t4
-	mflo $t2
-	sw $t2, -2896($fp)
-	lw $t5, -2896($fp)
-	lw $t6, -100($fp)
-	blt $t5, $t6, label395
-	j label396
-label395:
-	lw $t0, -2892($fp)
-	li $t0, 1
-	sw $t0, -2892($fp)
-label396:
-	lw $a0, -2892($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t1, $v0
-	sw $t1, -2900($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 0
-	lw $t4, -2900($fp)
-	sub $t2, $t3, $t4
-	sw $t2, -2904($fp)
-	lw $t5, -2904($fp)
-	bne $t5, 0, label392
-	j label394
-label394:
-	li $t0, 0
-	li $t1, 38945
-	sub $t6, $t0, $t1
-	sw $t6, -2908($fp)
-	lw $t2, -2908($fp)
-	bne $t2, 0, label392
-	j label393
-label392:
-	lw $t3, -2888($fp)
-	li $t3, 1
-	sw $t3, -2888($fp)
-label393:
-	lw $t5, -2888($fp)
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2912($fp)
-	lw $t1, -1092($fp)
-	lw $t2, -2912($fp)
-	add $t0, $t1, $t2
-	sw $t0, -2916($fp)
-	li $t3, 0
-	sw $t3, -2920($fp)
-	j label398
-label397:
-	lw $t4, -2920($fp)
-	li $t4, 1
-	sw $t4, -2920($fp)
-label398:
-	lw $t6, -2920($fp)
-	lw $t0, -304($fp)
-	mul $t5, $t6, $t0
-	sw $t5, -2924($fp)
-	li $t2, 54679
-	li $t3, 37958
-	add $t1, $t2, $t3
-	sw $t1, -2928($fp)
-	li $t4, 0
-	sw $t4, -2932($fp)
-	lw $t5, -1096($fp)
-	bne $t5, 25135, label401
-	j label403
-label403:
-	j label402
-label401:
-	lw $t6, -2932($fp)
-	li $t6, 1
-	sw $t6, -2932($fp)
-label402:
-	li $t0, 0
-	sw $t0, -2936($fp)
-	lw $t1, -104($fp)
-	bne $t1, 0, label405
-	j label404
-label404:
-	lw $t2, -2936($fp)
-	li $t2, 1
-	sw $t2, -2936($fp)
-label405:
-	lw $t4, -2936($fp)
-	li $t5, 34838
-	sub $t3, $t4, $t5
-	sw $t3, -2940($fp)
-	li $t0, 3
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -2944($fp)
-	lw $t3, -1224($fp)
-	lw $t4, -2944($fp)
-	add $t2, $t3, $t4
-	sw $t2, -2948($fp)
-	lw $t6, -2948($fp)
-	li $t0, 22821
-	lw $s3, 0($t6)
-	add $t5, $s3, $t0
-	sw $t5, -2952($fp)
-	lw $a0, -2952($fp)
-	lw $a1, -2940($fp)
-	lw $a2, -2932($fp)
-	lw $a3, -2928($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_FxEuB
-	move $t1, $v0
-	sw $t1, -2956($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t2, -2956($fp)
-	bgt $t2, 50980, label399
-	j label400
-label399:
-label400:
-label389:
-	lw $t3, -2960($fp)
-	li $t3, 63721
-	sw $t3, -2960($fp)
-	li $t4, 0
-	sw $t4, -2964($fp)
-	lw $t6, -192($fp)
-	li $t0, 39583
-	div $t6, $t0
-	mflo $t5
-	sw $t5, -2968($fp)
-	lw $t1, -2968($fp)
-	bne $t1, 0, label406
-	j label409
-label409:
-	j label408
-label408:
-	j label407
-label406:
-	lw $t2, -2964($fp)
-	li $t2, 1
-	sw $t2, -2964($fp)
-label407:
-	lw $t3, -1104($fp)
-	lw $t4, -2964($fp)
-	move $t3, $t4
-	sw $t3, -1104($fp)
-	li $t6, 1
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -2972($fp)
-	lw $t2, -68($fp)
-	lw $t3, -2972($fp)
-	add $t1, $t2, $t3
-	sw $t1, -2976($fp)
-	li $t5, 8914
-	lw $t6, -2976($fp)
-	lw $s4, 0($t6)
-	mul $t4, $t5, $s4
-	sw $t4, -2980($fp)
-	li $t0, 0
-	sw $t0, -2984($fp)
-	lw $t1, -12($fp)
-	bne $t1, 0, label413
-	j label412
-label412:
-	lw $t2, -2984($fp)
-	li $t2, 1
-	sw $t2, -2984($fp)
-label413:
-	lw $t4, -2984($fp)
-	lw $t5, -208($fp)
-	sub $t3, $t4, $t5
-	sw $t3, -2988($fp)
-	lw $t6, -2980($fp)
-	lw $t0, -2988($fp)
-	blt $t6, $t0, label410
-	j label411
-label410:
-label411:
-	li $t1, 0
-	sw $t1, -2992($fp)
-	lw $t2, -2960($fp)
-	bne $t2, 0, label417
-	j label419
-label419:
-	j label418
-label417:
-	lw $t3, -2992($fp)
-	li $t3, 1
-	sw $t3, -2992($fp)
-label418:
-	lw $t5, -2992($fp)
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -2996($fp)
-	lw $t1, -1224($fp)
-	lw $t2, -2996($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3000($fp)
-	lw $t3, -3000($fp)
-	lw $t4, -1228($fp)
-	lw $s3, 0($t3)
-	beq $s3, $t4, label414
-	j label416
-label416:
-	lw $t5, -308($fp)
-	bne $t5, 0, label420
-	j label415
-label420:
-	lw $t6, -196($fp)
-	bge $t6, 33140, label414
-	j label415
-label414:
-label415:
-	li $t1, 2
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -3004($fp)
-	lw $t4, -176($fp)
-	lw $t5, -3004($fp)
-	add $t3, $t4, $t5
-	sw $t3, -3008($fp)
-	li $t0, 0
-	li $t1, 20588
-	sub $t6, $t0, $t1
-	sw $t6, -3012($fp)
-	li $t3, 0
-	lw $t4, -3012($fp)
-	sub $t2, $t3, $t4
-	sw $t2, -3016($fp)
-	li $t5, 0
-	sw $t5, -3020($fp)
-	lw $t6, -188($fp)
-	bne $t6, 0, label424
-	j label423
-label423:
-	lw $t0, -3020($fp)
-	li $t0, 1
-	sw $t0, -3020($fp)
-label424:
-	lw $t1, -1100($fp)
-	lw $t2, -160($fp)
-	move $t1, $t2
-	sw $t1, -1100($fp)
-	lw $t4, -160($fp)
-	move $t3, $t4
-	sw $t3, -3024($fp)
-	lw $a0, -3024($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_CYq6iXzc
-	move $t5, $v0
-	sw $t5, -3028($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t0, -3020($fp)
-	lw $t1, -3028($fp)
-	sub $t6, $t0, $t1
-	sw $t6, -3032($fp)
-	li $t2, 0
-	sw $t2, -3036($fp)
-	lw $t3, -208($fp)
-	bne $t3, 0, label426
-	j label425
-label425:
-	lw $t4, -3036($fp)
-	li $t4, 1
-	sw $t4, -3036($fp)
-label426:
-	lw $t5, -3032($fp)
-	lw $t6, -3036($fp)
-	ble $t5, $t6, label421
-	j label422
-label421:
-label427:
-	li $t0, 0
-	sw $t0, -3040($fp)
-	li $t2, 4
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -3044($fp)
-	lw $t5, -244($fp)
-	lw $t6, -3044($fp)
-	add $t4, $t5, $t6
-	sw $t4, -3048($fp)
-	lw $t0, -3048($fp)
-	lw $s3, 0($t0)
-	bne $s3, 0, label430
-	j label433
-label433:
-	j label432
-label432:
-	lw $t1, -160($fp)
-	bne $t1, 45755, label430
-	j label431
-label430:
-	lw $t2, -3040($fp)
-	li $t2, 1
-	sw $t2, -3040($fp)
-label431:
-	lw $t4, -3040($fp)
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -3052($fp)
-	lw $t0, -68($fp)
-	lw $t1, -3052($fp)
-	add $t6, $t0, $t1
-	sw $t6, -3056($fp)
-	lw $t2, -3056($fp)
-	lw $s3, 0($t2)
-	bne $s3, 0, label428
-	j label429
-label428:
-	la $t3, -3076($fp)
-	sw $t3, -3080($fp)
-	li $t5, 0
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3092($fp)
-	lw $t1, -3080($fp)
-	lw $t2, -3092($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3096($fp)
-	lw $t3, -3096($fp)
-	li $s2, 10560
-	sw $t3, -3096($fp)
-	sw $s2, 0($t3)
-	li $t5, 1
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3100($fp)
-	lw $t1, -3080($fp)
-	lw $t2, -3100($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3104($fp)
-	lw $t3, -3104($fp)
-	li $s2, 37712
-	sw $t3, -3104($fp)
-	sw $s2, 0($t3)
-	li $t5, 2
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3108($fp)
-	lw $t1, -3080($fp)
-	lw $t2, -3108($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3112($fp)
-	lw $t3, -3112($fp)
-	li $s2, 22550
-	sw $t3, -3112($fp)
-	sw $s2, 0($t3)
-	li $t5, 3
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3116($fp)
-	lw $t1, -3080($fp)
-	lw $t2, -3116($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3120($fp)
-	lw $t3, -3120($fp)
-	li $s2, 49505
-	sw $t3, -3120($fp)
-	sw $s2, 0($t3)
-	li $t5, 4
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3124($fp)
-	lw $t1, -3080($fp)
-	lw $t2, -3124($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3128($fp)
-	lw $t3, -3128($fp)
-	li $s2, 16458
-	sw $t3, -3128($fp)
-	sw $s2, 0($t3)
-	lw $t4, -3084($fp)
-	li $t4, 7994
-	sw $t4, -3084($fp)
-	lw $t5, -3088($fp)
-	li $t5, 38648
-	sw $t5, -3088($fp)
-	li $t6, 0
-	sw $t6, -3132($fp)
-	li $t1, 54417
-	lw $t2, -3084($fp)
-	div $t1, $t2
-	mflo $t0
-	sw $t0, -3136($fp)
-	lw $t3, -3136($fp)
-	bne $t3, 0, label434
-	j label436
-label436:
-	j label435
-label434:
-	lw $t4, -3132($fp)
-	li $t4, 1
-	sw $t4, -3132($fp)
-label435:
-	lw $t6, -3132($fp)
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -3140($fp)
-	lw $t2, -3080($fp)
-	lw $t3, -3140($fp)
-	add $t1, $t2, $t3
-	sw $t1, -3144($fp)
-	li $t4, 0
-	sw $t4, -3148($fp)
-	li $t5, 0
-	sw $t5, -3152($fp)
-	lw $t6, -308($fp)
-	bge $t6, 3336, label439
-	j label440
-label439:
-	lw $t0, -3152($fp)
-	li $t0, 1
-	sw $t0, -3152($fp)
-label440:
-	lw $t1, -3152($fp)
-	bgt $t1, 23719, label437
-	j label438
-label437:
-	lw $t2, -3148($fp)
-	li $t2, 1
-	sw $t2, -3148($fp)
-label438:
-	lw $t4, -3148($fp)
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -3156($fp)
-	lw $t0, -36($fp)
-	lw $t1, -3156($fp)
-	add $t6, $t0, $t1
-	sw $t6, -3160($fp)
-	li $t2, 0
-	sw $t2, -3164($fp)
-	li $t4, 17343
-	li $t5, 37934
-	mul $t3, $t4, $t5
-	sw $t3, -3168($fp)
-	lw $t6, -3168($fp)
-	bne $t6, 0, label443
-	j label442
-label443:
-	lw $t0, -992($fp)
-	bne $t0, 0, label441
-	j label442
-label441:
-	lw $t1, -3164($fp)
-	li $t1, 1
-	sw $t1, -3164($fp)
-label442:
-	lw $a0, -3164($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_xj7kF
-	move $t2, $v0
-	sw $t2, -3172($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 0
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -3176($fp)
-	lw $t0, -1000($fp)
-	lw $t1, -3176($fp)
-	add $t6, $t0, $t1
-	sw $t6, -3180($fp)
-	li $t3, 0
-	li $t4, 11981
-	sub $t2, $t3, $t4
-	sw $t2, -3184($fp)
-	lw $t6, -3180($fp)
-	lw $t0, -3184($fp)
-	lw $s3, 0($t6)
-	div $s3, $t0
-	mflo $t5
-	sw $t5, -3188($fp)
-	li $t2, 48304
-	li $t3, 15887
-	div $t2, $t3
-	mflo $t1
-	sw $t1, -3192($fp)
-	lw $t5, -3188($fp)
-	lw $t6, -3192($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -3196($fp)
-	lw $t0, -3196($fp)
-	bne $t0, 0, label444
-	j label446
-label446:
-	j label445
-label444:
-label445:
-	j label427
-label429:
-	j label447
-label422:
-label448:
-	li $t1, 0
-	sw $t1, -3200($fp)
-	lw $t2, -200($fp)
-	bge $t2, 57218, label451
-	j label453
-label453:
-	lw $t3, -196($fp)
-	bne $t3, 0, label451
-	j label452
-label451:
-	lw $t4, -3200($fp)
-	li $t4, 1
-	sw $t4, -3200($fp)
-label452:
-	lw $t6, -3200($fp)
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -3204($fp)
-	lw $t2, -288($fp)
-	lw $t3, -3204($fp)
-	add $t1, $t2, $t3
-	sw $t1, -3208($fp)
-	lw $t5, -1112($fp)
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3212($fp)
-	lw $t1, -1052($fp)
-	lw $t2, -3212($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3216($fp)
-	lw $t4, -3216($fp)
-	li $t5, 26295
-	lw $s3, 0($t4)
-	div $s3, $t5
-	mflo $t3
-	sw $t3, -3220($fp)
-	lw $t6, -3208($fp)
-	lw $t0, -3220($fp)
-	lw $s3, 0($t6)
-	beq $s3, $t0, label449
-	j label450
-label449:
-	lw $t1, -1116($fp)
-	bne $t1, 0, label456
-	j label455
-label456:
-	lw $t2, -208($fp)
-	bne $t2, 0, label454
-	j label455
-label454:
-label455:
-	j label448
-label450:
-label447:
-	la $t3, -3240($fp)
-	sw $t3, -3244($fp)
-	lw $t4, -3224($fp)
-	li $t4, 3660
-	sw $t4, -3224($fp)
-	li $t6, 0
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -3260($fp)
-	lw $t2, -3244($fp)
-	lw $t3, -3260($fp)
-	add $t1, $t2, $t3
-	sw $t1, -3264($fp)
-	lw $t4, -3264($fp)
-	li $s2, 5813
-	sw $t4, -3264($fp)
-	sw $s2, 0($t4)
-	li $t6, 1
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -3268($fp)
-	lw $t2, -3244($fp)
-	lw $t3, -3268($fp)
-	add $t1, $t2, $t3
-	sw $t1, -3272($fp)
-	lw $t4, -3272($fp)
-	li $s2, 59436
-	sw $t4, -3272($fp)
-	sw $s2, 0($t4)
-	li $t6, 2
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -3276($fp)
-	lw $t2, -3244($fp)
-	lw $t3, -3276($fp)
-	add $t1, $t2, $t3
-	sw $t1, -3280($fp)
-	lw $t4, -3280($fp)
-	li $s2, 35786
-	sw $t4, -3280($fp)
-	sw $s2, 0($t4)
-	li $t6, 3
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -3284($fp)
-	lw $t2, -3244($fp)
-	lw $t3, -3284($fp)
-	add $t1, $t2, $t3
-	sw $t1, -3288($fp)
-	lw $t4, -3288($fp)
-	li $s2, 22265
-	sw $t4, -3288($fp)
-	sw $s2, 0($t4)
-	lw $t5, -3248($fp)
-	li $t5, 14488
-	sw $t5, -3248($fp)
-	lw $t6, -3252($fp)
-	li $t6, 36496
-	sw $t6, -3252($fp)
-	lw $t0, -3256($fp)
-	li $t0, 11445
-	sw $t0, -3256($fp)
-label457:
-	li $t2, 6946
-	li $t3, 16715
-	div $t2, $t3
-	mflo $t1
-	sw $t1, -3292($fp)
-	lw $t4, -3292($fp)
-	bne $t4, 0, label458
-	j label459
-label458:
-	li $t5, 0
-	sw $t5, -3296($fp)
-	li $t0, 0
-	li $t1, 22005
-	sub $t6, $t0, $t1
-	sw $t6, -3300($fp)
-	li $t3, 0
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -3304($fp)
-	lw $t6, -1000($fp)
-	lw $t0, -3304($fp)
-	add $t5, $t6, $t0
-	sw $t5, -3308($fp)
-	li $t1, 0
-	sw $t1, -3312($fp)
-	j label464
-label466:
-	lw $t2, -208($fp)
-	bne $t2, 0, label464
-	j label465
-label464:
-	lw $t3, -3312($fp)
-	li $t3, 1
-	sw $t3, -3312($fp)
-label465:
-	li $t4, 0
-	sw $t4, -3316($fp)
-	lw $t5, -8($fp)
-	blt $t5, 61116, label467
-	j label468
-label467:
-	lw $t6, -3316($fp)
-	li $t6, 1
-	sw $t6, -3316($fp)
-label468:
-	lw $a0, -3316($fp)
-	lw $a1, -3312($fp)
-	lw $s1, -3308($fp)
-	lw $a2, 0($s1)
-	lw $a3, -3300($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t0, $v0
-	sw $t0, -3320($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t2, -152($fp)
-	lw $t3, -8($fp)
-	mul $t1, $t2, $t3
-	sw $t1, -3324($fp)
-	lw $t5, -3324($fp)
-	lw $t6, -40($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -3328($fp)
-	lw $t0, -3320($fp)
-	lw $t1, -3328($fp)
-	ble $t0, $t1, label462
-	j label463
-label462:
-	lw $t2, -3296($fp)
-	li $t2, 1
-	sw $t2, -3296($fp)
-label463:
-	lw $t3, -3296($fp)
-	beq $t3, 47260, label460
-	j label461
-label460:
-label461:
-	li $t4, 0
-	sw $t4, -3332($fp)
-	li $t5, 0
-	sw $t5, -3336($fp)
-	lw $t6, -184($fp)
-	bne $t6, 0, label474
-	j label473
-label473:
-	lw $t0, -3336($fp)
-	li $t0, 1
-	sw $t0, -3336($fp)
-label474:
-	li $t2, 0
-	lw $t3, -3336($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -3340($fp)
-	li $t5, 44622
-	lw $t6, -1004($fp)
-	mul $t4, $t5, $t6
-	sw $t4, -3344($fp)
-	lw $t0, -3340($fp)
-	lw $t1, -3344($fp)
-	bne $t0, $t1, label471
-	j label472
-label471:
-	lw $t2, -3332($fp)
-	li $t2, 1
-	sw $t2, -3332($fp)
-label472:
-	li $t4, 49997
-	li $t5, 14854
-	add $t3, $t4, $t5
-	sw $t3, -3348($fp)
-	lw $t6, -3332($fp)
-	lw $t0, -3348($fp)
-	ble $t6, $t0, label469
-	j label470
-label469:
-label470:
-	lw $t1, -204($fp)
-	lw $t2, -104($fp)
-	move $t1, $t2
-	sw $t1, -204($fp)
+	sw $t6, -104($fp)
+#439<_____________===
+	li $t3, 61428
 	lw $t4, -104($fp)
-	move $t3, $t4
-	sw $t3, -3352($fp)
-	lw $t6, -3352($fp)
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -3356($fp)
-	lw $t2, -1224($fp)
-	lw $t3, -3356($fp)
-	add $t1, $t2, $t3
-	sw $t1, -3360($fp)
-	lw $t5, -3360($fp)
-	li $t6, 47958
-	lw $s3, 0($t5)
-	mul $t4, $s3, $t6
-	sw $t4, -3364($fp)
+	sub $t2, $t3, $t4
+	sw $t2, -108($fp)
+#440<_____________===
+	lw $t5, -108($fp)
+	bne $t5, 0, label126
+#441<_____________===
+	j label127
+#442<_____________===
+label126:
+#443<_____________===
+	li $t6, 42735
 	li $t0, 0
-	sw $t0, -3368($fp)
-	j label475
-label475:
-	lw $t1, -3368($fp)
+	bne $t6, $t0, label128
+#444<_____________===
+	j label129
+#445<_____________===
+label128:
+#446<_____________===
+	lw $t1, -4($fp)
+	bne $t1, 0, label131
+#447<_____________===
+	j label130
+#448<_____________===
+label130:
+#449<_____________===
+label131:
+#450<_____________===
+	j label132
+#451<_____________===
+label129:
+#452<_____________===
+	li $t3, 0
+	lw $t4, -24($fp)
+	sub $t2, $t3, $t4
+	sw $t2, -112($fp)
+#453<_____________===
+	lw $t6, -8($fp)
+	lw $t0, -112($fp)
+	mul $t5, $t6, $t0
+	sw $t5, -116($fp)
+#454<_____________===
+	lw $t1, -116($fp)
+	bne $t1, 0, label135
+#455<_____________===
+	j label134
+#456<_____________===
+label135:
+#457<_____________===
+	li $t2, 0
+	sw $t2, -120($fp)
+#458<_____________===
+	li $t3, 0
+	sw $t3, -124($fp)
+#459<_____________===
+	li $t4, 13404
+	li $t5, 0
+	bne $t4, $t5, label139
+#460<_____________===
+	j label138
+#461<_____________===
+label138:
+#462<_____________===
+	lw $t6, -124($fp)
+	li $t6, 1
+	sw $t6, -124($fp)
+#463<_____________===
+label139:
+#464<_____________===
+	lw $t0, -124($fp)
+	bgt $t0, 35430, label136
+#465<_____________===
+	j label137
+#466<_____________===
+label136:
+#467<_____________===
+	lw $t1, -120($fp)
 	li $t1, 1
-	sw $t1, -3368($fp)
-label476:
-	lw $t2, -320($fp)
-	lw $t3, -3368($fp)
+	sw $t1, -120($fp)
+#468<_____________===
+label137:
+#469<_____________===
+	lw $t2, -28($fp)
+	lw $t3, -20($fp)
 	move $t2, $t3
-	sw $t2, -320($fp)
-	j label457
-label459:
-label477:
-	lw $t4, -1012($fp)
-	lw $t5, -308($fp)
+	sw $t2, -28($fp)
+#470<_____________===
+	lw $t5, -20($fp)
 	move $t4, $t5
-	sw $t4, -1012($fp)
-	lw $t0, -308($fp)
-	move $t6, $t0
-	sw $t6, -3372($fp)
-	li $t1, 0
-	sw $t1, -3376($fp)
-	lw $t3, -1108($fp)
-	li $t4, 54721
-	sub $t2, $t3, $t4
-	sw $t2, -3380($fp)
-	lw $t5, -3380($fp)
-	lw $t6, -92($fp)
-	bgt $t5, $t6, label480
-	j label481
-label480:
-	lw $t0, -3376($fp)
-	li $t0, 1
-	sw $t0, -3376($fp)
-label481:
-	li $t1, 0
-	sw $t1, -3384($fp)
-	li $t3, 47725
-	lw $t4, -208($fp)
-	sub $t2, $t3, $t4
-	sw $t2, -3388($fp)
-	lw $t5, -3388($fp)
-	bne $t5, 0, label482
-	j label484
-label484:
-	lw $t6, -3252($fp)
-	bne $t6, 0, label482
-	j label483
-label482:
-	lw $t0, -3384($fp)
-	li $t0, 1
-	sw $t0, -3384($fp)
-label483:
-	lw $a0, -3384($fp)
-	lw $a1, -3376($fp)
-	lw $a2, -3372($fp)
-	li $a3, 20356
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_FxEuB
-	move $t1, $v0
-	sw $t1, -3392($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 0
-	sw $t2, -3396($fp)
-	lw $t3, -84($fp)
-	bne $t3, 0, label486
-	j label485
-label485:
-	lw $t4, -3396($fp)
-	li $t4, 1
-	sw $t4, -3396($fp)
-label486:
-	lw $t6, -3396($fp)
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -3400($fp)
-	lw $t2, -176($fp)
-	lw $t3, -3400($fp)
-	add $t1, $t2, $t3
-	sw $t1, -3404($fp)
-	lw $t5, -3392($fp)
-	lw $t6, -3404($fp)
-	lw $s4, 0($t6)
-	add $t4, $t5, $s4
-	sw $t4, -3408($fp)
-	lw $t0, -3408($fp)
-	bne $t0, 0, label478
-	j label479
-label478:
-	li $t1, 0
-	sw $t1, -3412($fp)
-	li $t2, 0
-	sw $t2, -3416($fp)
-	li $t3, 0
-	sw $t3, -3420($fp)
-	lw $t4, -152($fp)
-	bge $t4, 32338, label493
-	j label494
-label493:
-	lw $t5, -3420($fp)
-	li $t5, 1
-	sw $t5, -3420($fp)
-label494:
-	lw $t6, -3420($fp)
-	lw $t0, -1012($fp)
-	bne $t6, $t0, label491
-	j label492
-label491:
-	lw $t1, -3416($fp)
-	li $t1, 1
-	sw $t1, -3416($fp)
-label492:
-	li $t2, 0
-	sw $t2, -3424($fp)
-	j label496
-label495:
-	lw $t3, -3424($fp)
-	li $t3, 1
-	sw $t3, -3424($fp)
-label496:
-	li $t4, 0
-	sw $t4, -3428($fp)
-	li $t6, 63612
-	lw $t0, -1100($fp)
-	mul $t5, $t6, $t0
-	sw $t5, -3432($fp)
-	lw $t1, -3432($fp)
-	lw $t2, -104($fp)
-	beq $t1, $t2, label497
-	j label498
-label497:
-	lw $t3, -3428($fp)
-	li $t3, 1
-	sw $t3, -3428($fp)
-label498:
-	li $t5, 0
-	lw $t6, -3248($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -3436($fp)
-	lw $a0, -3436($fp)
-	lw $a1, -3428($fp)
-	lw $a2, -3424($fp)
-	lw $a3, -3416($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t0, $v0
-	sw $t0, -3440($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t1, -3440($fp)
-	bne $t1, 0, label490
-	j label489
-label489:
-	lw $t2, -3412($fp)
-	li $t2, 1
-	sw $t2, -3412($fp)
-label490:
-	lw $t4, -3256($fp)
-	lw $t5, -3412($fp)
-	div $t4, $t5
-	mflo $t3
-	sw $t3, -3444($fp)
-	lw $t6, -3444($fp)
-	bne $t6, 0, label487
-	j label488
-label487:
-	li $t0, 0
-	sw $t0, -3448($fp)
-	li $t2, 5
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -3452($fp)
-	lw $t5, -1052($fp)
-	lw $t6, -3452($fp)
-	add $t4, $t5, $t6
-	sw $t4, -3456($fp)
-	lw $t0, -3456($fp)
-	lw $s3, 0($t0)
-	bne $s3, 0, label504
-	j label503
-label504:
-	lw $t1, -156($fp)
-	bne $t1, 0, label502
-	j label503
-label502:
-	lw $t2, -3448($fp)
-	li $t2, 1
-	sw $t2, -3448($fp)
-label503:
-	lw $t4, -188($fp)
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -3460($fp)
-	lw $t0, -1144($fp)
-	lw $t1, -3460($fp)
-	add $t6, $t0, $t1
-	sw $t6, -3464($fp)
-	lw $t3, -3464($fp)
-	lw $t4, -1004($fp)
-	lw $s3, 0($t3)
-	sub $t2, $s3, $t4
-	sw $t2, -3468($fp)
-	li $t5, 0
-	sw $t5, -3472($fp)
-	lw $t6, -308($fp)
-	lw $t0, -204($fp)
-	bne $t6, $t0, label505
-	j label506
-label505:
-	lw $t1, -3472($fp)
-	li $t1, 1
-	sw $t1, -3472($fp)
-label506:
-	li $t2, 0
-	sw $t2, -3476($fp)
-	li $t3, 0
-	sw $t3, -3480($fp)
-	j label509
-label509:
-	lw $t4, -3480($fp)
-	li $t4, 1
-	sw $t4, -3480($fp)
-label510:
-	lw $t5, -3480($fp)
-	lw $t6, -308($fp)
-	blt $t5, $t6, label507
-	j label508
-label507:
-	lw $t0, -3476($fp)
-	li $t0, 1
-	sw $t0, -3476($fp)
-label508:
-	lw $a0, -3476($fp)
-	lw $a1, -3472($fp)
-	lw $a2, -3468($fp)
-	lw $a3, -3448($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_FxEuB
-	move $t1, $v0
-	sw $t1, -3484($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $a0, -3484($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_CYq6iXzc
-	move $t2, $v0
-	sw $t2, -3488($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $a0, 42693
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_CYq6iXzc
-	move $t3, $v0
-	sw $t3, -3492($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t5, -3488($fp)
-	lw $t6, -3492($fp)
-	mul $t4, $t5, $t6
-	sw $t4, -3496($fp)
-	li $t1, 0
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -3500($fp)
-	lw $t4, -140($fp)
-	lw $t5, -3500($fp)
-	add $t3, $t4, $t5
-	sw $t3, -3504($fp)
-	lw $t6, -3496($fp)
-	lw $t0, -3504($fp)
-	lw $s4, 0($t0)
-	bge $t6, $s4, label501
-	j label500
-label501:
-	lw $a0, -1112($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_CYq6iXzc
-	move $t1, $v0
-	sw $t1, -3508($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t2, -3508($fp)
-	bne $t2, 0, label499
-	j label500
-label499:
-label500:
-	j label511
-label488:
-	li $t3, 0
-	sw $t3, -3512($fp)
-	li $t4, 0
-	sw $t4, -3516($fp)
-	j label517
-label516:
-	lw $t5, -3516($fp)
-	li $t5, 1
-	sw $t5, -3516($fp)
-label517:
-	lw $t6, -3516($fp)
-	beq $t6, 32760, label514
-	j label515
-label514:
-	lw $t0, -3512($fp)
-	li $t0, 1
-	sw $t0, -3512($fp)
-label515:
-	lw $a0, -3512($fp)
+	sw $t4, -128($fp)
+#471<_____________===
+	lw $a0, -128($fp)
+#472<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	jal id_xj7kF
-	move $t1, $v0
-	sw $t1, -3520($fp)
+	move $t6, $v0
+	sw $t6, -132($fp)
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
-	lw $t2, -3520($fp)
-	bne $t2, 0, label512
-	j label513
-label512:
-	lw $t4, -180($fp)
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -3524($fp)
-	lw $t0, -288($fp)
-	lw $t1, -3524($fp)
-	add $t6, $t0, $t1
-	sw $t6, -3528($fp)
-	lw $t3, -3528($fp)
-	li $t4, 4
-	lw $s3, 0($t3)
-	mul $t2, $s3, $t4
-	sw $t2, -3532($fp)
-	lw $t6, -176($fp)
-	lw $t0, -3532($fp)
-	add $t5, $t6, $t0
-	sw $t5, -3536($fp)
-	lw $t2, -1012($fp)
-	lw $t3, -3536($fp)
-	lw $s4, 0($t3)
-	div $t2, $s4
-	mflo $t1
-	sw $t1, -3540($fp)
-	lw $t4, -3540($fp)
-	move $v0, $t4
-	addi $sp, $sp, 800
-	addi $sp, $sp, 4
-	lw $fp, 0($sp)
-	addi $sp, $sp, 4
-	jr $ra
-	j label518
-label513:
-	li $t5, 0
-	sw $t5, -3544($fp)
-	lw $t6, -1096($fp)
-	bne $t6, 0, label522
-	j label520
-label522:
-	j label520
-label521:
-	j label520
-label519:
-	lw $t0, -3544($fp)
-	li $t0, 1
-	sw $t0, -3544($fp)
-label520:
-	li $t1, 0
-	sw $t1, -3548($fp)
-	j label524
-label523:
-	lw $t2, -3548($fp)
-	li $t2, 1
-	sw $t2, -3548($fp)
-label524:
-	li $t4, 0
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -3552($fp)
-	lw $t0, -288($fp)
-	lw $t1, -3552($fp)
-	add $t6, $t0, $t1
-	sw $t6, -3556($fp)
-	li $t2, 0
-	sw $t2, -3560($fp)
-	lw $t4, -3224($fp)
-	li $t5, 18828
-	sub $t3, $t4, $t5
-	sw $t3, -3564($fp)
-	lw $t6, -3564($fp)
-	bne $t6, 0, label527
-	j label526
-label527:
-	j label526
-label525:
-	lw $t0, -3560($fp)
-	li $t0, 1
-	sw $t0, -3560($fp)
-label526:
-	lw $a0, -3560($fp)
-	lw $s1, -3556($fp)
-	lw $a1, 0($s1)
-	lw $a2, -3548($fp)
-	lw $a3, -3544($fp)
+#473<_____________===
+	lw $t0, -120($fp)
+	lw $t1, -132($fp)
+	bgt $t0, $t1, label133
+#474<_____________===
+	j label134
+#475<_____________===
+label133:
+#476<_____________===
+label134:
+#477<_____________===
+label132:
+#478<_____________===
+	j label125
+#479<_____________===
+label127:
+#480<_____________===
+label116:
+#481<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	jal id_FxEuB
-	move $t1, $v0
-	sw $t1, -3568($fp)
+	lw $t2, -8($fp)
+	move $a0, $t2
+	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#482<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -12($fp)
+	move $a0, $t3
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#483<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -16($fp)
+	move $a0, $t4
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#484<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -20($fp)
+	move $a0, $t5
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#485<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -24($fp)
+	move $a0, $t6
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#486<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -28($fp)
+	move $a0, $t0
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#487<_____________===
 	li $t2, 0
-	sw $t2, -3572($fp)
-	li $t4, 0
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -3576($fp)
-	lw $t0, -3244($fp)
-	lw $t1, -3576($fp)
-	add $t6, $t0, $t1
-	sw $t6, -3580($fp)
-	lw $t2, -3580($fp)
-	lw $s3, 0($t2)
-	bne $s3, 0, label529
-	j label528
-label528:
-	lw $t3, -3572($fp)
-	li $t3, 1
-	sw $t3, -3572($fp)
-label529:
-	li $t5, 0
-	lw $t6, -3572($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -3584($fp)
-label518:
-label511:
-	j label477
-label479:
-	j label530
-label530:
-label531:
-	la $t0, -3616($fp)
-	sw $t0, -3620($fp)
-	lw $t1, -3588($fp)
-	li $t1, 10224
-	sw $t1, -3588($fp)
-	lw $t2, -3592($fp)
-	li $t2, 64406
-	sw $t2, -3592($fp)
-	li $t4, 0
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -3628($fp)
-	lw $t0, -3620($fp)
-	lw $t1, -3628($fp)
-	add $t6, $t0, $t1
-	sw $t6, -3632($fp)
-	lw $t2, -3632($fp)
-	li $s2, 36463
-	sw $t2, -3632($fp)
-	sw $s2, 0($t2)
-	li $t4, 1
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -3636($fp)
-	lw $t0, -3620($fp)
-	lw $t1, -3636($fp)
-	add $t6, $t0, $t1
-	sw $t6, -3640($fp)
-	lw $t2, -3640($fp)
-	li $s2, 58182
-	sw $t2, -3640($fp)
-	sw $s2, 0($t2)
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -136($fp)
+#488<_____________===
+	lw $t5, -44($fp)
+	lw $t6, -136($fp)
+	add $t4, $t5, $t6
+	sw $t4, -140($fp)
+#489<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -140($fp)
+	lw $a0, 0($t0)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#490<_____________===
+	li $t2, 1
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -144($fp)
+#491<_____________===
+	lw $t5, -44($fp)
+	lw $t6, -144($fp)
+	add $t4, $t5, $t6
+	sw $t4, -148($fp)
+#492<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -148($fp)
+	lw $a0, 0($t0)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#493<_____________===
+	li $t2, 2
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -152($fp)
+#494<_____________===
+	lw $t5, -44($fp)
+	lw $t6, -152($fp)
+	add $t4, $t5, $t6
+	sw $t4, -156($fp)
+#495<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -156($fp)
+	lw $a0, 0($t0)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#496<_____________===
+	li $t1, 0
+	sw $t1, -160($fp)
+#497<_____________===
+	li $t2, 0
+	sw $t2, -164($fp)
+#498<_____________===
 	li $t4, 2
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -3644($fp)
-	lw $t0, -3620($fp)
-	lw $t1, -3644($fp)
+	sw $t3, -168($fp)
+#499<_____________===
+	lw $t0, -44($fp)
+	lw $t1, -168($fp)
 	add $t6, $t0, $t1
-	sw $t6, -3648($fp)
-	lw $t2, -3648($fp)
-	li $s2, 7051
-	sw $t2, -3648($fp)
-	sw $s2, 0($t2)
-	li $t4, 3
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -3652($fp)
-	lw $t0, -3620($fp)
-	lw $t1, -3652($fp)
-	add $t6, $t0, $t1
-	sw $t6, -3656($fp)
-	lw $t2, -3656($fp)
-	li $s2, 3124
-	sw $t2, -3656($fp)
-	sw $s2, 0($t2)
-	li $t4, 4
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -3660($fp)
-	lw $t0, -3620($fp)
-	lw $t1, -3660($fp)
-	add $t6, $t0, $t1
-	sw $t6, -3664($fp)
-	lw $t2, -3664($fp)
-	li $s2, 13003
-	sw $t2, -3664($fp)
-	sw $s2, 0($t2)
-	li $t4, 5
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -3668($fp)
-	lw $t0, -3620($fp)
-	lw $t1, -3668($fp)
-	add $t6, $t0, $t1
-	sw $t6, -3672($fp)
-	lw $t2, -3672($fp)
-	li $s2, 61772
-	sw $t2, -3672($fp)
-	sw $s2, 0($t2)
-	lw $t3, -3624($fp)
-	li $t3, 50849
-	sw $t3, -3624($fp)
-	li $t4, 0
-	sw $t4, -3676($fp)
-	li $t5, 0
-	sw $t5, -3680($fp)
-	lw $t6, -72($fp)
-	lw $t0, -3592($fp)
-	beq $t6, $t0, label537
-	j label536
-label537:
-	j label536
-label535:
-	lw $t1, -3680($fp)
-	li $t1, 1
-	sw $t1, -3680($fp)
-label536:
-	li $t3, 0
-	lw $t4, -8($fp)
-	sub $t2, $t3, $t4
-	sw $t2, -3684($fp)
-	lw $t6, -3684($fp)
-	lw $t0, -152($fp)
-	sub $t5, $t6, $t0
-	sw $t5, -3688($fp)
-	lw $t1, -184($fp)
-	lw $t2, -80($fp)
-	move $t1, $t2
-	sw $t1, -184($fp)
-	lw $t4, -80($fp)
-	move $t3, $t4
-	sw $t3, -3692($fp)
-	li $t5, 0
-	sw $t5, -3696($fp)
-	lw $t0, -84($fp)
-	li $t1, 33726
-	mul $t6, $t0, $t1
-	sw $t6, -3700($fp)
-	lw $t2, -3700($fp)
-	lw $t3, -76($fp)
-	blt $t2, $t3, label538
-	j label539
-label538:
-	lw $t4, -3696($fp)
-	li $t4, 1
-	sw $t4, -3696($fp)
-label539:
-	lw $a0, -3696($fp)
-	lw $a1, -3692($fp)
-	lw $a2, -3688($fp)
-	lw $a3, -3680($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_FxEuB
-	move $t5, $v0
-	sw $t5, -3704($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t6, -3704($fp)
-	bne $t6, 0, label534
-	j label533
-label534:
-	j label533
-label532:
-	lw $t0, -3676($fp)
-	li $t0, 1
-	sw $t0, -3676($fp)
-label533:
-	li $t1, 0
-	sw $t1, -3708($fp)
-	lw $t2, -320($fp)
-	bne $t2, 0, label541
-	j label540
-label540:
-	lw $t3, -3708($fp)
+	sw $t6, -172($fp)
+#500<_____________===
+	lw $t2, -172($fp)
+	lw $s4, 0($t2)
+	ble $s4, 11245, label142
+#501<_____________===
+	j label143
+#502<_____________===
+label142:
+#503<_____________===
+	lw $t3, -164($fp)
 	li $t3, 1
-	sw $t3, -3708($fp)
-label541:
-	li $t4, 0
-	sw $t4, -3712($fp)
-	lw $t5, -104($fp)
-	bne $t5, 0, label542
-	j label543
-label542:
-	lw $t6, -3712($fp)
-	li $t6, 1
-	sw $t6, -3712($fp)
-label543:
-	lw $a0, -3712($fp)
-	lw $a1, -3708($fp)
-	lw $a2, -76($fp)
-	lw $a3, -3676($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t0, $v0
-	sw $t0, -3716($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 0
-	sw $t1, -3720($fp)
-	li $t2, 0
-	sw $t2, -3724($fp)
-	j label550
-label550:
-	lw $t3, -12($fp)
-	bne $t3, 0, label548
-	j label549
-label548:
-	lw $t4, -3724($fp)
-	li $t4, 1
-	sw $t4, -3724($fp)
-label549:
+	sw $t3, -164($fp)
+#504<_____________===
+label143:
+#505<_____________===
 	li $t5, 0
-	sw $t5, -3728($fp)
-	li $t6, 0
-	sw $t6, -3732($fp)
-	lw $t0, -296($fp)
-	ble $t0, 7761, label553
-	j label554
-label553:
-	lw $t1, -3732($fp)
-	li $t1, 1
-	sw $t1, -3732($fp)
-label554:
-	lw $t2, -3732($fp)
-	lw $t3, -208($fp)
-	bne $t2, $t3, label551
-	j label552
-label551:
-	lw $t4, -3728($fp)
-	li $t4, 1
-	sw $t4, -3728($fp)
-label552:
-	lw $t6, -204($fp)
-	li $t0, 61531
-	div $t6, $t0
-	mflo $t5
-	sw $t5, -3736($fp)
-	li $t2, 0
-	lw $t3, -3736($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -3740($fp)
-	li $t4, 0
-	sw $t4, -3744($fp)
-	lw $t5, -312($fp)
-	bne $t5, 0, label556
-	j label555
-label555:
-	lw $t6, -3744($fp)
-	li $t6, 1
-	sw $t6, -3744($fp)
-label556:
-	lw $t1, -3744($fp)
-	lw $t2, -308($fp)
-	div $t1, $t2
-	mflo $t0
-	sw $t0, -3748($fp)
-	lw $a0, -3748($fp)
-	lw $a1, -3740($fp)
-	lw $a2, -3728($fp)
-	lw $a3, -3724($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t3, $v0
-	sw $t3, -3752($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t4, -3752($fp)
-	bne $t4, 0, label547
-	j label546
-label546:
-	lw $t5, -3720($fp)
-	li $t5, 1
-	sw $t5, -3720($fp)
-label547:
-	li $t0, 0
-	lw $t1, -3720($fp)
-	sub $t6, $t0, $t1
-	sw $t6, -3756($fp)
-	lw $t2, -3756($fp)
-	bne $t2, 0, label544
-	j label545
-label544:
-	lw $t3, -3588($fp)
+	lw $t6, -12($fp)
+	sub $t4, $t5, $t6
+	sw $t4, -176($fp)
+#506<_____________===
+	lw $t0, -164($fp)
+	lw $t1, -176($fp)
+	blt $t0, $t1, label140
+#507<_____________===
+	j label141
+#508<_____________===
+label140:
+#509<_____________===
+	lw $t2, -160($fp)
+	li $t2, 1
+	sw $t2, -160($fp)
+#510<_____________===
+label141:
+#511<_____________===
+	lw $t3, -160($fp)
 	move $v0, $t3
 	addi $sp, $sp, 800
 	addi $sp, $sp, 4
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
-	j label557
-label545:
-	li $t4, 0
-	sw $t4, -3760($fp)
-	lw $t5, -4($fp)
-	bne $t5, 0, label558
-	j label559
-label558:
-	lw $t6, -3760($fp)
-	li $t6, 1
-	sw $t6, -3760($fp)
-label559:
-	lw $t1, -144($fp)
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -3764($fp)
-	lw $t4, -140($fp)
-	lw $t5, -3764($fp)
-	add $t3, $t4, $t5
-	sw $t3, -3768($fp)
-	lw $t6, -100($fp)
-	lw $t0, -308($fp)
-	move $t6, $t0
-	sw $t6, -100($fp)
-	lw $t2, -308($fp)
-	move $t1, $t2
-	sw $t1, -3772($fp)
-	li $t3, 0
-	sw $t3, -3776($fp)
-	lw $t5, -88($fp)
-	li $t6, 32346
-	sub $t4, $t5, $t6
-	sw $t4, -3780($fp)
-	lw $t0, -3780($fp)
-	bne $t0, 0, label562
-	j label561
-label562:
-	j label561
-label560:
-	lw $t1, -3776($fp)
-	li $t1, 1
-	sw $t1, -3776($fp)
-label561:
-	li $t2, 0
-	sw $t2, -3784($fp)
+#512<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -8($fp)
+	move $a0, $t4
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#513<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -12($fp)
+	move $a0, $t5
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#514<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -16($fp)
+	move $a0, $t6
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#515<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -20($fp)
+	move $a0, $t0
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#516<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -24($fp)
+	move $a0, $t1
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#517<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -28($fp)
+	move $a0, $t2
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#518<_____________===
 	li $t4, 0
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -3788($fp)
-	lw $t0, -176($fp)
-	lw $t1, -3788($fp)
+	sw $t3, -180($fp)
+#519<_____________===
+	lw $t0, -44($fp)
+	lw $t1, -180($fp)
 	add $t6, $t0, $t1
-	sw $t6, -3792($fp)
-	lw $t2, -3792($fp)
-	lw $s3, 0($t2)
-	bne $s3, 0, label565
-	j label564
-label565:
-	j label564
-label563:
-	lw $t3, -3784($fp)
-	li $t3, 1
-	sw $t3, -3784($fp)
-label564:
-	lw $a0, -3784($fp)
-	lw $a1, -3776($fp)
-	lw $a2, -3772($fp)
-	lw $s1, -3768($fp)
-	lw $a3, 0($s1)
+	sw $t6, -184($fp)
+#520<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t4, $v0
-	sw $t4, -3796($fp)
+	lw $t2, -184($fp)
+	lw $a0, 0($t2)
+	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
-	lw $t6, -3796($fp)
-	li $t0, 58379
-	mul $t5, $t6, $t0
-	sw $t5, -3800($fp)
-	lw $t2, -3760($fp)
-	lw $t3, -3800($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -3804($fp)
-	lw $t5, -3804($fp)
-	lw $t6, -208($fp)
-	add $t4, $t5, $t6
-	sw $t4, -3808($fp)
-	lw $t0, -3808($fp)
-	move $v0, $t0
+#521<_____________===
+	li $t4, 1
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -188($fp)
+#522<_____________===
+	lw $t0, -44($fp)
+	lw $t1, -188($fp)
+	add $t6, $t0, $t1
+	sw $t6, -192($fp)
+#523<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -192($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#524<_____________===
+	li $t4, 2
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -196($fp)
+#525<_____________===
+	lw $t0, -44($fp)
+	lw $t1, -196($fp)
+	add $t6, $t0, $t1
+	sw $t6, -200($fp)
+#526<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -200($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#527<_____________===
+	li $t3, 0
+	sw $t3, -204($fp)
+#528<_____________===
+	lw $t5, -20($fp)
+	lw $t6, -12($fp)
+	mul $t4, $t5, $t6
+	sw $t4, -208($fp)
+#529<_____________===
+	lw $t0, -208($fp)
+	ble $t0, 283, label144
+#530<_____________===
+	j label145
+#531<_____________===
+label144:
+#532<_____________===
+	lw $t1, -204($fp)
+	li $t1, 1
+	sw $t1, -204($fp)
+#533<_____________===
+label145:
+#534<_____________===
+	lw $t2, -24($fp)
+	lw $t3, -204($fp)
+	move $t2, $t3
+	sw $t2, -24($fp)
+#535<_____________===
+	lw $t5, -204($fp)
+	move $t4, $t5
+	sw $t4, -212($fp)
+#536<_____________===
+	lw $t6, -212($fp)
+	move $v0, $t6
 	addi $sp, $sp, 800
 	addi $sp, $sp, 4
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
-label557:
-label566:
-	li $t2, 27219
-	li $t3, 32963
-	mul $t1, $t2, $t3
-	sw $t1, -3812($fp)
-	lw $t5, -3812($fp)
-	li $t6, 58998
-	div $t5, $t6
-	mflo $t4
-	sw $t4, -3816($fp)
-	lw $t0, -4($fp)
-	lw $t1, -3816($fp)
-	bge $t0, $t1, label567
-	j label569
-label569:
-	li $t2, 0
-	sw $t2, -3820($fp)
-	li $t3, 0
-	sw $t3, -3824($fp)
-	j label573
-label572:
-	lw $t4, -3824($fp)
-	li $t4, 1
-	sw $t4, -3824($fp)
-label573:
-	li $t5, 0
-	sw $t5, -3828($fp)
-	lw $t6, -92($fp)
-	beq $t6, 33347, label574
-	j label576
-label576:
-	j label575
-label574:
-	lw $t0, -3828($fp)
-	li $t0, 1
-	sw $t0, -3828($fp)
-label575:
-	li $t2, 0
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -3832($fp)
-	lw $t5, -3620($fp)
-	lw $t6, -3832($fp)
-	add $t4, $t5, $t6
-	sw $t4, -3836($fp)
+#537<_____________===
+label146:
+#538<_____________===
+	li $t0, 0
+	sw $t0, -216($fp)
+#539<_____________===
 	li $t1, 0
-	lw $t2, -3836($fp)
-	lw $s4, 0($t2)
-	sub $t0, $t1, $s4
-	sw $t0, -3840($fp)
-	lw $t3, -3624($fp)
-	lw $t4, -160($fp)
-	move $t3, $t4
-	sw $t3, -3624($fp)
-	lw $t6, -160($fp)
-	move $t5, $t6
-	sw $t5, -3844($fp)
-	lw $a0, -3844($fp)
-	lw $a1, -3840($fp)
-	lw $a2, -3828($fp)
-	lw $a3, -3824($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t0, $v0
-	sw $t0, -3848($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t1, -3848($fp)
-	bne $t1, 28209, label570
-	j label571
-label570:
-	lw $t2, -3820($fp)
-	li $t2, 1
-	sw $t2, -3820($fp)
-label571:
-	lw $t4, -304($fp)
-	lw $t5, -96($fp)
-	add $t3, $t4, $t5
-	sw $t3, -3852($fp)
-	lw $t6, -3820($fp)
-	lw $t0, -3852($fp)
-	beq $t6, $t0, label567
-	j label568
-label567:
-	la $t1, -3896($fp)
-	sw $t1, -3900($fp)
-	lw $t2, -3856($fp)
-	li $t2, 65070
-	sw $t2, -3856($fp)
-	lw $t3, -3860($fp)
-	li $t3, 25883
-	sw $t3, -3860($fp)
-	li $t5, 0
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3916($fp)
-	lw $t1, -3900($fp)
-	lw $t2, -3916($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3920($fp)
-	lw $t3, -3920($fp)
-	li $s2, 20856
-	sw $t3, -3920($fp)
-	sw $s2, 0($t3)
-	li $t5, 1
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3924($fp)
-	lw $t1, -3900($fp)
-	lw $t2, -3924($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3928($fp)
-	lw $t3, -3928($fp)
-	li $s2, 6585
-	sw $t3, -3928($fp)
-	sw $s2, 0($t3)
-	li $t5, 2
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3932($fp)
-	lw $t1, -3900($fp)
-	lw $t2, -3932($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3936($fp)
-	lw $t3, -3936($fp)
-	li $s2, 29007
-	sw $t3, -3936($fp)
-	sw $s2, 0($t3)
-	li $t5, 3
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3940($fp)
-	lw $t1, -3900($fp)
-	lw $t2, -3940($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3944($fp)
-	lw $t3, -3944($fp)
-	li $s2, 33859
-	sw $t3, -3944($fp)
-	sw $s2, 0($t3)
-	li $t5, 4
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3948($fp)
-	lw $t1, -3900($fp)
-	lw $t2, -3948($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3952($fp)
-	lw $t3, -3952($fp)
-	li $s2, 2821
-	sw $t3, -3952($fp)
-	sw $s2, 0($t3)
-	li $t5, 5
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3956($fp)
-	lw $t1, -3900($fp)
-	lw $t2, -3956($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3960($fp)
-	lw $t3, -3960($fp)
-	li $s2, 14320
-	sw $t3, -3960($fp)
-	sw $s2, 0($t3)
-	li $t5, 6
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3964($fp)
-	lw $t1, -3900($fp)
-	lw $t2, -3964($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3968($fp)
-	lw $t3, -3968($fp)
-	li $s2, 13664
-	sw $t3, -3968($fp)
-	sw $s2, 0($t3)
-	li $t5, 7
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3972($fp)
-	lw $t1, -3900($fp)
-	lw $t2, -3972($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3976($fp)
-	lw $t3, -3976($fp)
-	li $s2, 36547
-	sw $t3, -3976($fp)
-	sw $s2, 0($t3)
-	li $t5, 8
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -3980($fp)
-	lw $t1, -3900($fp)
-	lw $t2, -3980($fp)
-	add $t0, $t1, $t2
-	sw $t0, -3984($fp)
-	lw $t3, -3984($fp)
-	li $s2, 63246
-	sw $t3, -3984($fp)
-	sw $s2, 0($t3)
-	lw $t4, -3904($fp)
-	li $t4, 32502
-	sw $t4, -3904($fp)
-	lw $t5, -3908($fp)
-	li $t5, 33909
-	sw $t5, -3908($fp)
-	lw $t6, -3912($fp)
-	li $t6, 5471
-	sw $t6, -3912($fp)
-	li $t0, 0
-	sw $t0, -3988($fp)
-	li $t2, 0
-	lw $t3, -156($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -3992($fp)
-	lw $t4, -3992($fp)
-	bne $t4, 0, label581
-	j label580
-label580:
-	lw $t5, -3988($fp)
-	li $t5, 1
-	sw $t5, -3988($fp)
-label581:
-	li $t0, 28497
-	lw $t1, -3988($fp)
-	mul $t6, $t0, $t1
-	sw $t6, -3996($fp)
-	li $t3, 0
-	lw $t4, -3996($fp)
-	sub $t2, $t3, $t4
-	sw $t2, -4000($fp)
-	lw $t5, -4000($fp)
-	bne $t5, 0, label577
-	j label579
-label579:
-	lw $t0, -40($fp)
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -4004($fp)
-	lw $t3, -3900($fp)
-	lw $t4, -4004($fp)
-	add $t2, $t3, $t4
-	sw $t2, -4008($fp)
-	li $t6, 719
-	li $t0, 31505
-	mul $t5, $t6, $t0
-	sw $t5, -4012($fp)
-	lw $t2, -4012($fp)
-	lw $t3, -160($fp)
-	mul $t1, $t2, $t3
-	sw $t1, -4016($fp)
-	lw $t5, -296($fp)
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -4020($fp)
-	lw $t1, -68($fp)
-	lw $t2, -4020($fp)
-	add $t0, $t1, $t2
-	sw $t0, -4024($fp)
-	li $t3, 0
-	sw $t3, -4028($fp)
-	j label583
-label585:
-	lw $t4, -92($fp)
-	bne $t4, 0, label584
-	j label583
-label584:
-	lw $t5, -3588($fp)
-	bne $t5, 0, label582
-	j label583
-label582:
-	lw $t6, -4028($fp)
-	li $t6, 1
-	sw $t6, -4028($fp)
-label583:
-	li $t0, 0
-	sw $t0, -4032($fp)
-	lw $t2, -96($fp)
-	li $t3, 4
-	mul $t1, $t2, $t3
-	sw $t1, -4036($fp)
-	lw $t5, -36($fp)
-	lw $t6, -4036($fp)
-	add $t4, $t5, $t6
-	sw $t4, -4040($fp)
-	lw $t0, -4040($fp)
-	lw $s3, 0($t0)
-	bne $s3, 0, label586
-	j label588
-label588:
-	lw $t1, -4($fp)
-	bne $t1, 0, label586
-	j label587
-label586:
-	lw $t2, -4032($fp)
-	li $t2, 1
-	sw $t2, -4032($fp)
-label587:
-	lw $a0, -4032($fp)
-	lw $a1, -4028($fp)
-	lw $s1, -4024($fp)
-	lw $a2, 0($s1)
-	lw $a3, -4016($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_FxEuB
-	move $t3, $v0
-	sw $t3, -4044($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t5, -4008($fp)
-	lw $t6, -4044($fp)
-	lw $s3, 0($t5)
-	div $s3, $t6
-	mflo $t4
-	sw $t4, -4048($fp)
-	li $t1, 0
-	lw $t2, -4048($fp)
-	sub $t0, $t1, $t2
-	sw $t0, -4052($fp)
-	lw $t3, -4052($fp)
-	bne $t3, 0, label577
-	j label578
-label577:
-label589:
-	li $t4, 0
-	sw $t4, -4056($fp)
-	li $t5, 0
-	sw $t5, -4060($fp)
-	lw $t6, -3856($fp)
-	bne $t6, 24780, label594
-	j label595
-label594:
-	lw $t0, -4060($fp)
-	li $t0, 1
-	sw $t0, -4060($fp)
-label595:
-	lw $t1, -4060($fp)
-	lw $t2, -148($fp)
-	beq $t1, $t2, label592
-	j label593
-label592:
-	lw $t3, -4056($fp)
+	sw $t1, -220($fp)
+#540<_____________===
+	lw $t2, -16($fp)
+	bge $t2, 55173, label151
+#541<_____________===
+	j label152
+#542<_____________===
+label151:
+#543<_____________===
+	lw $t3, -220($fp)
 	li $t3, 1
-	sw $t3, -4056($fp)
-label593:
-	li $t4, 0
-	sw $t4, -4064($fp)
-	li $t5, 0
-	sw $t5, -4068($fp)
-	lw $t6, -200($fp)
-	bne $t6, 24762, label598
-	j label599
-label598:
-	lw $t0, -4068($fp)
-	li $t0, 1
-	sw $t0, -4068($fp)
-label599:
-	lw $t1, -4068($fp)
-	lw $t2, -208($fp)
-	bne $t1, $t2, label596
-	j label597
-label596:
-	lw $t3, -4064($fp)
-	li $t3, 1
-	sw $t3, -4064($fp)
-label597:
-	li $t4, 0
-	sw $t4, -4072($fp)
-	j label602
-label602:
-	lw $t5, -296($fp)
-	bne $t5, 0, label600
-	j label601
-label600:
-	lw $t6, -4072($fp)
-	li $t6, 1
-	sw $t6, -4072($fp)
-label601:
-	lw $t1, -4($fp)
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -4076($fp)
-	lw $t4, -244($fp)
-	lw $t5, -4076($fp)
-	add $t3, $t4, $t5
-	sw $t3, -4080($fp)
-	li $t0, 0
-	lw $t1, -4080($fp)
-	lw $s4, 0($t1)
-	sub $t6, $t0, $s4
-	sw $t6, -4084($fp)
-	lw $a0, -4084($fp)
-	lw $a1, -4072($fp)
-	lw $a2, -4064($fp)
-	lw $a3, -4056($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_FxEuB
-	move $t2, $v0
-	sw $t2, -4088($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 0
-	sw $t3, -4092($fp)
-	lw $t4, -3860($fp)
-	bne $t4, 0, label603
-	j label604
-label603:
-	lw $t5, -4092($fp)
+	sw $t3, -220($fp)
+#544<_____________===
+label152:
+#545<_____________===
+	lw $t4, -220($fp)
+	bge $t4, 31292, label149
+#546<_____________===
+	j label150
+#547<_____________===
+label149:
+#548<_____________===
+	lw $t5, -216($fp)
 	li $t5, 1
-	sw $t5, -4092($fp)
-label604:
-	lw $t0, -4088($fp)
-	lw $t1, -4092($fp)
-	div $t0, $t1
-	mflo $t6
-	sw $t6, -4096($fp)
-	li $t2, 0
-	sw $t2, -4100($fp)
-	lw $t3, -208($fp)
-	bne $t3, 0, label606
-	j label605
-label605:
-	lw $t4, -4100($fp)
-	li $t4, 1
-	sw $t4, -4100($fp)
-label606:
-	lw $t6, -4096($fp)
-	lw $t0, -4100($fp)
-	sub $t5, $t6, $t0
-	sw $t5, -4104($fp)
-	lw $t1, -4104($fp)
-	bne $t1, 0, label590
-	j label591
-label590:
-	j label608
-label609:
-	li $t2, 0
-	sw $t2, -4108($fp)
-	li $t3, 0
-	sw $t3, -4112($fp)
-	lw $t4, -300($fp)
-	bgt $t4, 57726, label612
-	j label613
-label612:
-	lw $t5, -4112($fp)
-	li $t5, 1
-	sw $t5, -4112($fp)
-label613:
-	lw $t6, -4112($fp)
-	bne $t6, 23742, label610
-	j label611
-label610:
-	lw $t0, -4108($fp)
-	li $t0, 1
-	sw $t0, -4108($fp)
-label611:
-	lw $t2, -4($fp)
-	lw $t3, -3588($fp)
-	mul $t1, $t2, $t3
-	sw $t1, -4116($fp)
-	lw $t4, -4108($fp)
-	lw $t5, -4116($fp)
-	beq $t4, $t5, label607
-	j label608
-label607:
-label608:
-	j label589
-label591:
-	j label614
-label578:
-label615:
-	li $t6, 0
-	sw $t6, -4120($fp)
-	lw $t1, -3904($fp)
-	lw $t2, -84($fp)
-	div $t1, $t2
-	mflo $t0
-	sw $t0, -4124($fp)
-	lw $t3, -4124($fp)
-	bgt $t3, 38847, label618
-	j label619
-label618:
-	lw $t4, -4120($fp)
-	li $t4, 1
-	sw $t4, -4120($fp)
-label619:
-	li $a0, 43981
+	sw $t5, -216($fp)
+#549<_____________===
+label150:
+#550<_____________===
+	lw $a0, -216($fp)
+#551<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	jal id_xj7kF
-	move $t5, $v0
-	sw $t5, -4128($fp)
+	move $t6, $v0
+	sw $t6, -224($fp)
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#552<_____________===
+	lw $t1, -224($fp)
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -228($fp)
+#553<_____________===
+	lw $t4, -44($fp)
+	lw $t5, -228($fp)
+	add $t3, $t4, $t5
+	sw $t3, -232($fp)
+#554<_____________===
+	li $t6, 0
+	sw $t6, -236($fp)
+#555<_____________===
+	li $t1, 0
+	lw $t2, -20($fp)
+	sub $t0, $t1, $t2
+	sw $t0, -240($fp)
+#556<_____________===
+	lw $t4, -240($fp)
+	li $t5, 28201
+	add $t3, $t4, $t5
+	sw $t3, -244($fp)
+#557<_____________===
+	lw $a0, -244($fp)
+#558<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t6, $v0
+	sw $t6, -248($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#559<_____________===
+	lw $t0, -248($fp)
+	bne $t0, 0, label154
+#560<_____________===
+	j label153
+#561<_____________===
+label153:
+#562<_____________===
+	lw $t1, -236($fp)
+	li $t1, 1
+	sw $t1, -236($fp)
+#563<_____________===
+label154:
+#564<_____________===
+	lw $t3, -232($fp)
+	lw $t4, -236($fp)
+	lw $s3, 0($t3)
+	sub $t2, $s3, $t4
+	sw $t2, -252($fp)
+#565<_____________===
+	lw $t5, -252($fp)
+	bne $t5, 0, label147
+#566<_____________===
+	j label148
+#567<_____________===
+label147:
+#568<_____________===
+	li $a0, 5801
+#569<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t6, $v0
+	sw $t6, -256($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#570<_____________===
+	j label146
+#571<_____________===
+label148:
+#572<_____________===
 	li $t0, 0
-	lw $t1, -4128($fp)
-	sub $t6, $t0, $t1
-	sw $t6, -4132($fp)
-	lw $t3, -84($fp)
-	lw $t4, -3908($fp)
+	sw $t0, -260($fp)
+#573<_____________===
+	li $t1, 0
+	sw $t1, -264($fp)
+#574<_____________===
+	lw $t2, -4($fp)
+	bne $t2, 23323, label160
+#575<_____________===
+	j label161
+#576<_____________===
+label160:
+#577<_____________===
+	lw $t3, -264($fp)
+	li $t3, 1
+	sw $t3, -264($fp)
+#578<_____________===
+label161:
+#579<_____________===
+	lw $t4, -264($fp)
+	beq $t4, 38823, label158
+#580<_____________===
+	j label159
+#581<_____________===
+label158:
+#582<_____________===
+	lw $t5, -260($fp)
+	li $t5, 1
+	sw $t5, -260($fp)
+#583<_____________===
+label159:
+#584<_____________===
+	lw $a0, -260($fp)
+#585<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t6, $v0
+	sw $t6, -268($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#586<_____________===
+	lw $t1, -268($fp)
+	li $t2, 38788
+	sub $t0, $t1, $t2
+	sw $t0, -272($fp)
+#587<_____________===
+	lw $t4, -8($fp)
+	li $t5, 22579
+	div $t4, $t5
+	mflo $t3
+	sw $t3, -276($fp)
+#588<_____________===
+	lw $t0, -272($fp)
+	lw $t1, -276($fp)
+	add $t6, $t0, $t1
+	sw $t6, -280($fp)
+#589<_____________===
+	li $t3, 8005
+	lw $t4, -20($fp)
 	mul $t2, $t3, $t4
-	sw $t2, -4136($fp)
-	lw $t6, -4136($fp)
-	lw $t0, -188($fp)
-	div $t6, $t0
-	mflo $t5
-	sw $t5, -4140($fp)
-	lw $a0, -4140($fp)
-	li $a1, 57089
-	lw $a2, -4132($fp)
-	lw $a3, -4120($fp)
+	sw $t2, -284($fp)
+#590<_____________===
+	lw $t6, -284($fp)
+	li $t0, 10112
+	sub $t5, $t6, $t0
+	sw $t5, -288($fp)
+#591<_____________===
+	lw $t1, -280($fp)
+	lw $t2, -288($fp)
+	beq $t1, $t2, label155
+#592<_____________===
+	j label157
+#593<_____________===
+label157:
+#594<_____________===
+	li $t4, 0
+	lw $t5, -12($fp)
+	sub $t3, $t4, $t5
+	sw $t3, -292($fp)
+#595<_____________===
+	lw $t6, -292($fp)
+	bne $t6, 0, label155
+#596<_____________===
+	j label156
+#597<_____________===
+label155:
+#598<_____________===
+label156:
+#599<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -8($fp)
+	move $a0, $t0
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#600<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -12($fp)
+	move $a0, $t1
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#601<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -16($fp)
+	move $a0, $t2
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#602<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -20($fp)
+	move $a0, $t3
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#603<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -24($fp)
+	move $a0, $t4
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#604<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -28($fp)
+	move $a0, $t5
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#605<_____________===
+	li $t0, 0
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -296($fp)
+#606<_____________===
+	lw $t3, -44($fp)
+	lw $t4, -296($fp)
+	add $t2, $t3, $t4
+	sw $t2, -300($fp)
+#607<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -300($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#608<_____________===
+	li $t0, 1
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -304($fp)
+#609<_____________===
+	lw $t3, -44($fp)
+	lw $t4, -304($fp)
+	add $t2, $t3, $t4
+	sw $t2, -308($fp)
+#610<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -308($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#611<_____________===
+	li $t0, 2
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -312($fp)
+#612<_____________===
+	lw $t3, -44($fp)
+	lw $t4, -312($fp)
+	add $t2, $t3, $t4
+	sw $t2, -316($fp)
+#613<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -316($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#614<_____________===
+	li $t0, 0
+	lw $t1, -8($fp)
+	sub $t6, $t0, $t1
+	sw $t6, -320($fp)
+#615<_____________===
+	lw $a0, -320($fp)
+#616<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t2, $v0
+	sw $t2, -324($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#617<_____________===
+	lw $t4, -324($fp)
+	lw $t5, -8($fp)
+	add $t3, $t4, $t5
+	sw $t3, -328($fp)
+#618<_____________===
+	lw $t6, -328($fp)
+	move $v0, $t6
+	addi $sp, $sp, 800
+	addi $sp, $sp, 4
+	lw $fp, 0($sp)
+	addi $sp, $sp, 4
+	jr $ra
+#619<_____________===
+id_FxEuB:
+	addi $sp, $sp, -4
+	sw $fp, 0($sp)
+	move $fp, $sp
+	addi $sp, $sp, -4
+	subu $sp, $sp, 800
+#620<_____________===
+	sw $a3, -4($fp)
+#621<_____________===
+	sw $a2, -8($fp)
+#622<_____________===
+	sw $a1, -12($fp)
+#623<_____________===
+	sw $a0, -16($fp)
+#624<_____________===
+#625<_____________===
+	la $t0, -48($fp)
+	sw $t0, -52($fp)
+#626<_____________===
+#627<_____________===
+#628<_____________===
+	la $t1, -60($fp)
+	sw $t1, -64($fp)
+#629<_____________===
+#630<_____________===
+	li $t3, 0
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -72($fp)
+#631<_____________===
+	lw $t6, -52($fp)
+	lw $t0, -72($fp)
+	add $t5, $t6, $t0
+	sw $t5, -76($fp)
+#632<_____________===
+	lw $t1, -76($fp)
+	li $s2, 4947
+	sw $t1, -76($fp)
+	sw $s2, 0($t1)
+#633<_____________===
+	li $t3, 1
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -80($fp)
+#634<_____________===
+	lw $t6, -52($fp)
+	lw $t0, -80($fp)
+	add $t5, $t6, $t0
+	sw $t5, -84($fp)
+#635<_____________===
+	lw $t1, -84($fp)
+	li $s2, 52595
+	sw $t1, -84($fp)
+	sw $s2, 0($t1)
+#636<_____________===
+	li $t3, 2
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -88($fp)
+#637<_____________===
+	lw $t6, -52($fp)
+	lw $t0, -88($fp)
+	add $t5, $t6, $t0
+	sw $t5, -92($fp)
+#638<_____________===
+	lw $t1, -92($fp)
+	li $s2, 64234
+	sw $t1, -92($fp)
+	sw $s2, 0($t1)
+#639<_____________===
+	li $t3, 3
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -96($fp)
+#640<_____________===
+	lw $t6, -52($fp)
+	lw $t0, -96($fp)
+	add $t5, $t6, $t0
+	sw $t5, -100($fp)
+#641<_____________===
+	lw $t1, -100($fp)
+	li $s2, 6679
+	sw $t1, -100($fp)
+	sw $s2, 0($t1)
+#642<_____________===
+	li $t3, 4
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -104($fp)
+#643<_____________===
+	lw $t6, -52($fp)
+	lw $t0, -104($fp)
+	add $t5, $t6, $t0
+	sw $t5, -108($fp)
+#644<_____________===
+	lw $t1, -108($fp)
+	li $s2, 44868
+	sw $t1, -108($fp)
+	sw $s2, 0($t1)
+#645<_____________===
+	li $t3, 5
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -112($fp)
+#646<_____________===
+	lw $t6, -52($fp)
+	lw $t0, -112($fp)
+	add $t5, $t6, $t0
+	sw $t5, -116($fp)
+#647<_____________===
+	lw $t1, -116($fp)
+	li $s2, 35326
+	sw $t1, -116($fp)
+	sw $s2, 0($t1)
+#648<_____________===
+	li $t3, 6
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -120($fp)
+#649<_____________===
+	lw $t6, -52($fp)
+	lw $t0, -120($fp)
+	add $t5, $t6, $t0
+	sw $t5, -124($fp)
+#650<_____________===
+	lw $t1, -124($fp)
+	li $s2, 54563
+	sw $t1, -124($fp)
+	sw $s2, 0($t1)
+#651<_____________===
+	li $t3, 7
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -128($fp)
+#652<_____________===
+	lw $t6, -52($fp)
+	lw $t0, -128($fp)
+	add $t5, $t6, $t0
+	sw $t5, -132($fp)
+#653<_____________===
+	lw $t1, -132($fp)
+	li $s2, 61384
+	sw $t1, -132($fp)
+	sw $s2, 0($t1)
+#654<_____________===
+	lw $t2, -56($fp)
+	li $t2, 23447
+	sw $t2, -56($fp)
+#655<_____________===
+	li $t4, 0
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -136($fp)
+#656<_____________===
+	lw $t0, -64($fp)
+	lw $t1, -136($fp)
+	add $t6, $t0, $t1
+	sw $t6, -140($fp)
+#657<_____________===
+	lw $t2, -140($fp)
+	li $s2, 17272
+	sw $t2, -140($fp)
+	sw $s2, 0($t2)
+#658<_____________===
+	lw $t3, -68($fp)
+	li $t3, 57277
+	sw $t3, -68($fp)
+#659<_____________===
+label162:
+#660<_____________===
+	li $t4, 0
+	sw $t4, -144($fp)
+#661<_____________===
+	lw $t6, -56($fp)
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -148($fp)
+#662<_____________===
+	lw $t2, -64($fp)
+	lw $t3, -148($fp)
+	add $t1, $t2, $t3
+	sw $t1, -152($fp)
+#663<_____________===
+	lw $t4, -152($fp)
+	lw $s3, 0($t4)
+	bne $s3, 0, label167
+#664<_____________===
+	j label166
+#665<_____________===
+label166:
+#666<_____________===
+	lw $t5, -144($fp)
+	li $t5, 1
+	sw $t5, -144($fp)
+#667<_____________===
+label167:
+#668<_____________===
+	li $t0, 35567
+	lw $t1, -144($fp)
+	add $t6, $t0, $t1
+	sw $t6, -156($fp)
+#669<_____________===
+	lw $t2, -156($fp)
+	bne $t2, 0, label163
+#670<_____________===
+	j label165
+#671<_____________===
+label165:
+#672<_____________===
+	lw $t4, -8($fp)
+	li $t5, 19790
+	div $t4, $t5
+	mflo $t3
+	sw $t3, -160($fp)
+#673<_____________===
+	lw $t6, -160($fp)
+	lw $t0, -56($fp)
+	bgt $t6, $t0, label168
+#674<_____________===
+	j label164
+#675<_____________===
+label168:
+#676<_____________===
+	lw $t1, -4($fp)
+	bne $t1, 0, label163
+#677<_____________===
+	j label164
+#678<_____________===
+label163:
+#679<_____________===
+	li $t2, 0
+	sw $t2, -164($fp)
+#680<_____________===
+	lw $t4, -12($fp)
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -168($fp)
+#681<_____________===
+	lw $t0, -52($fp)
+	lw $t1, -168($fp)
+	add $t6, $t0, $t1
+	sw $t6, -172($fp)
+#682<_____________===
+	li $t3, 0
+	li $t4, 52925
+	sub $t2, $t3, $t4
+	sw $t2, -176($fp)
+#683<_____________===
+	lw $t6, -176($fp)
+	lw $t0, -56($fp)
+	add $t5, $t6, $t0
+	sw $t5, -180($fp)
+#684<_____________===
+	lw $t1, -172($fp)
+	lw $t2, -180($fp)
+	lw $s3, 0($t1)
+	bge $s3, $t2, label171
+#685<_____________===
+	j label172
+#686<_____________===
+label171:
+#687<_____________===
+	lw $t3, -164($fp)
+	li $t3, 1
+	sw $t3, -164($fp)
+#688<_____________===
+label172:
+#689<_____________===
+	li $t4, 0
+	sw $t4, -184($fp)
+#690<_____________===
+	li $t5, 12766
+	li $t6, 0
+	bne $t5, $t6, label176
+#691<_____________===
+	j label175
+#692<_____________===
+label176:
+#693<_____________===
+	lw $t0, -56($fp)
+	bne $t0, 0, label173
+#694<_____________===
+	j label175
+#695<_____________===
+label175:
+#696<_____________===
+	li $t1, 33194
+	li $t2, 0
+	bne $t1, $t2, label173
+#697<_____________===
+	j label174
+#698<_____________===
+label173:
+#699<_____________===
+	lw $t3, -184($fp)
+	li $t3, 1
+	sw $t3, -184($fp)
+#700<_____________===
+label174:
+#701<_____________===
+	lw $a0, -184($fp)
+#702<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t4, $v0
+	sw $t4, -188($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#703<_____________===
+	lw $t5, -164($fp)
+	lw $t6, -188($fp)
+	ble $t5, $t6, label169
+#704<_____________===
+	j label170
+#705<_____________===
+label169:
+#706<_____________===
+label170:
+#707<_____________===
+	j label162
+#708<_____________===
+label164:
+#709<_____________===
+	li $t1, 3
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -192($fp)
+#710<_____________===
+	lw $t4, -52($fp)
+	lw $t5, -192($fp)
+	add $t3, $t4, $t5
+	sw $t3, -196($fp)
+#711<_____________===
+	li $t0, 0
+	lw $t1, -196($fp)
+	lw $s4, 0($t1)
+	sub $t6, $t0, $s4
+	sw $t6, -200($fp)
+#712<_____________===
+	lw $t2, -200($fp)
+	bne $t2, 0, label177
+#713<_____________===
+	j label178
+#714<_____________===
+label177:
+#715<_____________===
+	j label179
+#716<_____________===
+label178:
+#717<_____________===
+	li $t3, 0
+	sw $t3, -204($fp)
+#718<_____________===
+	li $t4, 0
+	sw $t4, -208($fp)
+#719<_____________===
+	li $t5, 0
+	sw $t5, -212($fp)
+#720<_____________===
+	lw $t6, -4($fp)
+	beq $t6, 17477, label186
+#721<_____________===
+	j label188
+#722<_____________===
+label188:
+#723<_____________===
+	lw $t0, -56($fp)
+	bne $t0, 0, label186
+#724<_____________===
+	j label187
+#725<_____________===
+label186:
+#726<_____________===
+	lw $t1, -212($fp)
+	li $t1, 1
+	sw $t1, -212($fp)
+#727<_____________===
+label187:
+#728<_____________===
+	lw $t2, -8($fp)
+	lw $t3, -12($fp)
+	move $t2, $t3
+	sw $t2, -8($fp)
+#729<_____________===
+	lw $t5, -12($fp)
+	move $t4, $t5
+	sw $t4, -216($fp)
+#730<_____________===
+	lw $t6, -68($fp)
+	li $t6, 24295
+	sw $t6, -68($fp)
+#731<_____________===
+	li $t0, 24295
+	sw $t0, -220($fp)
+#732<_____________===
+	li $t2, 63339
+	li $t3, 48769
+	add $t1, $t2, $t3
+	sw $t1, -224($fp)
+#733<_____________===
+	lw $a0, -224($fp)
+#734<_____________===
+	lw $a1, -220($fp)
+#735<_____________===
+	lw $a2, -216($fp)
+#736<_____________===
+	lw $a3, -212($fp)
+#737<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	jal id_FxEuB
-	move $t1, $v0
-	sw $t1, -4144($fp)
+	move $t4, $v0
+	sw $t4, -228($fp)
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
-	lw $t2, -4144($fp)
-	bne $t2, 0, label616
-	j label617
-label616:
-	li $t4, 56832
-	li $t5, 44645
-	div $t4, $t5
-	mflo $t3
-	sw $t3, -4148($fp)
-	lw $t0, -4148($fp)
-	li $t1, 46510
+#738<_____________===
+	lw $t5, -228($fp)
+	bne $t5, 0, label185
+#739<_____________===
+	j label184
+#740<_____________===
+label184:
+#741<_____________===
+	lw $t6, -208($fp)
+	li $t6, 1
+	sw $t6, -208($fp)
+#742<_____________===
+label185:
+#743<_____________===
+	li $t1, 0
+	li $t2, 52496
+	sub $t0, $t1, $t2
+	sw $t0, -232($fp)
+#744<_____________===
+	lw $t4, -208($fp)
+	lw $t5, -232($fp)
+	sub $t3, $t4, $t5
+	sw $t3, -236($fp)
+#745<_____________===
+	lw $t6, -236($fp)
+	beq $t6, 3604, label182
+#746<_____________===
+	j label183
+#747<_____________===
+label182:
+#748<_____________===
+	lw $t0, -204($fp)
+	li $t0, 1
+	sw $t0, -204($fp)
+#749<_____________===
+label183:
+#750<_____________===
+	li $t2, 0
+	lw $t3, -16($fp)
+	sub $t1, $t2, $t3
+	sw $t1, -240($fp)
+#751<_____________===
+	lw $t4, -204($fp)
+	lw $t5, -240($fp)
+	bge $t4, $t5, label180
+#752<_____________===
+	j label181
+#753<_____________===
+label180:
+#754<_____________===
+label181:
+#755<_____________===
+label179:
+#756<_____________===
+	li $t0, 0
+	li $t1, 4
 	mul $t6, $t0, $t1
-	sw $t6, -4152($fp)
-	li $t3, 0
-	lw $t4, -4152($fp)
-	sub $t2, $t3, $t4
-	sw $t2, -4156($fp)
-	lw $t5, -4156($fp)
-	bne $t5, 0, label623
-	j label622
-label623:
-	lw $t0, -3912($fp)
-	lw $t1, -100($fp)
-	add $t6, $t0, $t1
-	sw $t6, -4160($fp)
-	lw $t2, -4160($fp)
-	bne $t2, 0, label620
-	j label622
-label622:
-	lw $t4, -308($fp)
-	lw $t5, -4($fp)
-	mul $t3, $t4, $t5
-	sw $t3, -4164($fp)
-	li $t0, 19506
-	lw $t1, -4164($fp)
-	sub $t6, $t0, $t1
-	sw $t6, -4168($fp)
-	lw $t2, -4168($fp)
-	bne $t2, 0, label620
-	j label621
-label620:
-label621:
-	j label615
-label617:
-label614:
-	li $t3, 0
-	sw $t3, -4172($fp)
-	lw $t4, -180($fp)
-	bne $t4, 0, label625
-	j label624
-label624:
-	lw $t5, -4172($fp)
-	li $t5, 1
-	sw $t5, -4172($fp)
-label625:
-	lw $t6, -92($fp)
-	li $t6, 6857
-	sw $t6, -92($fp)
-	li $t0, 6857
-	sw $t0, -4176($fp)
-	lw $t1, -4($fp)
-	lw $t2, -312($fp)
-	move $t1, $t2
-	sw $t1, -4($fp)
-	lw $t4, -312($fp)
-	move $t3, $t4
-	sw $t3, -4180($fp)
-	lw $a0, -4180($fp)
-	lw $a1, -4176($fp)
-	lw $a2, -4172($fp)
-	li $a3, 44179
+	sw $t6, -244($fp)
+#757<_____________===
+	lw $t3, -52($fp)
+	lw $t4, -244($fp)
+	add $t2, $t3, $t4
+	sw $t2, -248($fp)
+#758<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t5, $v0
-	sw $t5, -4184($fp)
+	lw $t5, -248($fp)
+	lw $a0, 0($t5)
+	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
-	j label566
-label568:
+#759<_____________===
+	li $t0, 1
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -252($fp)
+#760<_____________===
+	lw $t3, -52($fp)
+	lw $t4, -252($fp)
+	add $t2, $t3, $t4
+	sw $t2, -256($fp)
+#761<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -256($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#762<_____________===
+	li $t0, 2
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -260($fp)
+#763<_____________===
+	lw $t3, -52($fp)
+	lw $t4, -260($fp)
+	add $t2, $t3, $t4
+	sw $t2, -264($fp)
+#764<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -264($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#765<_____________===
+	li $t0, 3
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -268($fp)
+#766<_____________===
+	lw $t3, -52($fp)
+	lw $t4, -268($fp)
+	add $t2, $t3, $t4
+	sw $t2, -272($fp)
+#767<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -272($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#768<_____________===
+	li $t0, 4
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -276($fp)
+#769<_____________===
+	lw $t3, -52($fp)
+	lw $t4, -276($fp)
+	add $t2, $t3, $t4
+	sw $t2, -280($fp)
+#770<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -280($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#771<_____________===
+	li $t0, 5
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -284($fp)
+#772<_____________===
+	lw $t3, -52($fp)
+	lw $t4, -284($fp)
+	add $t2, $t3, $t4
+	sw $t2, -288($fp)
+#773<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -288($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#774<_____________===
+	li $t0, 6
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -292($fp)
+#775<_____________===
+	lw $t3, -52($fp)
+	lw $t4, -292($fp)
+	add $t2, $t3, $t4
+	sw $t2, -296($fp)
+#776<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -296($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#777<_____________===
+	li $t0, 7
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -300($fp)
+#778<_____________===
+	lw $t3, -52($fp)
+	lw $t4, -300($fp)
+	add $t2, $t3, $t4
+	sw $t2, -304($fp)
+#779<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -304($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#780<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -56($fp)
+	move $a0, $t6
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#781<_____________===
+	li $t1, 0
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -308($fp)
+#782<_____________===
+	lw $t4, -64($fp)
+	lw $t5, -308($fp)
+	add $t3, $t4, $t5
+	sw $t3, -312($fp)
+#783<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -312($fp)
+	lw $a0, 0($t6)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#784<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -68($fp)
+	move $a0, $t0
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#785<_____________===
+	li $t1, 0
+	sw $t1, -316($fp)
+#786<_____________===
+	lw $t3, -8($fp)
+	li $t4, 6556
+	sub $t2, $t3, $t4
+	sw $t2, -320($fp)
+#787<_____________===
+	lw $t6, -320($fp)
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -324($fp)
+#788<_____________===
+	lw $t2, -64($fp)
+	lw $t3, -324($fp)
+	add $t1, $t2, $t3
+	sw $t1, -328($fp)
+#789<_____________===
+	lw $t5, -56($fp)
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -332($fp)
+#790<_____________===
+	lw $t1, -64($fp)
+	lw $t2, -332($fp)
+	add $t0, $t1, $t2
+	sw $t0, -336($fp)
+#791<_____________===
+	lw $t4, -336($fp)
+	li $t5, 25783
+	lw $s3, 0($t4)
+	div $s3, $t5
+	mflo $t3
+	sw $t3, -340($fp)
+#792<_____________===
+	lw $t6, -328($fp)
+	lw $t0, -340($fp)
+	lw $s3, 0($t6)
+	bge $s3, $t0, label191
+#793<_____________===
+	j label190
+#794<_____________===
+label191:
+#795<_____________===
+	li $t2, 0
+	li $t3, 42392
+	sub $t1, $t2, $t3
+	sw $t1, -344($fp)
+#796<_____________===
+	lw $t5, -344($fp)
+	li $t6, 29136
+	add $t4, $t5, $t6
+	sw $t4, -348($fp)
+#797<_____________===
+	lw $t0, -348($fp)
+	bne $t0, 0, label189
+#798<_____________===
+	j label190
+#799<_____________===
+label189:
+#800<_____________===
+	lw $t1, -316($fp)
+	li $t1, 1
+	sw $t1, -316($fp)
+#801<_____________===
+label190:
+#802<_____________===
+	lw $t2, -316($fp)
+	move $v0, $t2
+	addi $sp, $sp, 800
+	addi $sp, $sp, 4
+	lw $fp, 0($sp)
+	addi $sp, $sp, 4
+	jr $ra
+#803<_____________===
+id_mvJF5:
+	addi $sp, $sp, -4
+	sw $fp, 0($sp)
+	move $fp, $sp
+	addi $sp, $sp, -4
+	subu $sp, $sp, 800
+#804<_____________===
+	sw $a3, -4($fp)
+#805<_____________===
+	sw $a2, -8($fp)
+#806<_____________===
+	sw $a1, -12($fp)
+#807<_____________===
+	sw $a0, -16($fp)
+#808<_____________===
+#809<_____________===
+	la $t3, -36($fp)
+	sw $t3, -40($fp)
+#810<_____________===
+	li $t5, 0
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -44($fp)
+#811<_____________===
+	lw $t1, -40($fp)
+	lw $t2, -44($fp)
+	add $t0, $t1, $t2
+	sw $t0, -48($fp)
+#812<_____________===
+	lw $t3, -48($fp)
+	li $s2, 33788
+	sw $t3, -48($fp)
+	sw $s2, 0($t3)
+#813<_____________===
+	li $t5, 1
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -52($fp)
+#814<_____________===
+	lw $t1, -40($fp)
+	lw $t2, -52($fp)
+	add $t0, $t1, $t2
+	sw $t0, -56($fp)
+#815<_____________===
+	lw $t3, -56($fp)
+	li $s2, 52505
+	sw $t3, -56($fp)
+	sw $s2, 0($t3)
+#816<_____________===
+	li $t5, 2
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -60($fp)
+#817<_____________===
+	lw $t1, -40($fp)
+	lw $t2, -60($fp)
+	add $t0, $t1, $t2
+	sw $t0, -64($fp)
+#818<_____________===
+	lw $t3, -64($fp)
+	li $s2, 34083
+	sw $t3, -64($fp)
+	sw $s2, 0($t3)
+#819<_____________===
+	li $t5, 3
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -68($fp)
+#820<_____________===
+	lw $t1, -40($fp)
+	lw $t2, -68($fp)
+	add $t0, $t1, $t2
+	sw $t0, -72($fp)
+#821<_____________===
+	lw $t3, -72($fp)
+	li $s2, 20847
+	sw $t3, -72($fp)
+	sw $s2, 0($t3)
+#822<_____________===
+	li $t5, 4
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -76($fp)
+#823<_____________===
+	lw $t1, -40($fp)
+	lw $t2, -76($fp)
+	add $t0, $t1, $t2
+	sw $t0, -80($fp)
+#824<_____________===
+	lw $t3, -80($fp)
+	li $s2, 51203
+	sw $t3, -80($fp)
+	sw $s2, 0($t3)
+#825<_____________===
+	li $t5, 0
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -84($fp)
+#826<_____________===
+	lw $t1, -40($fp)
+	lw $t2, -84($fp)
+	add $t0, $t1, $t2
+	sw $t0, -88($fp)
+#827<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -88($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#828<_____________===
+	li $t5, 1
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -92($fp)
+#829<_____________===
+	lw $t1, -40($fp)
+	lw $t2, -92($fp)
+	add $t0, $t1, $t2
+	sw $t0, -96($fp)
+#830<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -96($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#831<_____________===
+	li $t5, 2
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -100($fp)
+#832<_____________===
+	lw $t1, -40($fp)
+	lw $t2, -100($fp)
+	add $t0, $t1, $t2
+	sw $t0, -104($fp)
+#833<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -104($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#834<_____________===
+	li $t5, 3
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -108($fp)
+#835<_____________===
+	lw $t1, -40($fp)
+	lw $t2, -108($fp)
+	add $t0, $t1, $t2
+	sw $t0, -112($fp)
+#836<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -112($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#837<_____________===
+	li $t5, 4
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -116($fp)
+#838<_____________===
+	lw $t1, -40($fp)
+	lw $t2, -116($fp)
+	add $t0, $t1, $t2
+	sw $t0, -120($fp)
+#839<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -120($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#840<_____________===
+	lw $t5, -4($fp)
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -124($fp)
+#841<_____________===
+	lw $t1, -40($fp)
+	lw $t2, -124($fp)
+	add $t0, $t1, $t2
+	sw $t0, -128($fp)
+#842<_____________===
+	li $t4, 0
+	lw $t5, -4($fp)
+	sub $t3, $t4, $t5
+	sw $t3, -132($fp)
+#843<_____________===
+	lw $t0, -128($fp)
+	lw $t1, -132($fp)
+	lw $s3, 0($t0)
+	mul $t6, $s3, $t1
+	sw $t6, -136($fp)
+#844<_____________===
+	lw $t3, -136($fp)
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -140($fp)
+#845<_____________===
+	lw $t6, -40($fp)
+	lw $t0, -140($fp)
+	add $t5, $t6, $t0
+	sw $t5, -144($fp)
+#846<_____________===
+	lw $t1, -144($fp)
+	move $v0, $t1
+	addi $sp, $sp, 800
+	addi $sp, $sp, 4
+	lw $fp, 0($sp)
+	addi $sp, $sp, 4
+	jr $ra
+#847<_____________===
+id_CYq6iXzc:
+	addi $sp, $sp, -4
+	sw $fp, 0($sp)
+	move $fp, $sp
+	addi $sp, $sp, -4
+	subu $sp, $sp, 800
+#848<_____________===
+	sw $a0, -4($fp)
+#849<_____________===
+#850<_____________===
+#851<_____________===
+#852<_____________===
+	la $t2, -32($fp)
+	sw $t2, -36($fp)
+#853<_____________===
+#854<_____________===
+#855<_____________===
+	la $t3, -64($fp)
+	sw $t3, -68($fp)
+#856<_____________===
+#857<_____________===
+#858<_____________===
+#859<_____________===
+#860<_____________===
+#861<_____________===
+#862<_____________===
+#863<_____________===
+#864<_____________===
+#865<_____________===
+#866<_____________===
+	la $t4, -136($fp)
+	sw $t4, -140($fp)
+#867<_____________===
+#868<_____________===
+#869<_____________===
+#870<_____________===
+#871<_____________===
+#872<_____________===
+#873<_____________===
+	la $t5, -172($fp)
+	sw $t5, -176($fp)
+#874<_____________===
+#875<_____________===
+#876<_____________===
+#877<_____________===
+#878<_____________===
+#879<_____________===
+#880<_____________===
+#881<_____________===
+#882<_____________===
+#883<_____________===
+	la $t6, -240($fp)
+	sw $t6, -244($fp)
+#884<_____________===
+#885<_____________===
+	la $t0, -284($fp)
+	sw $t0, -288($fp)
+#886<_____________===
+#887<_____________===
+#888<_____________===
+#889<_____________===
+#890<_____________===
+#891<_____________===
+#892<_____________===
+#893<_____________===
+#894<_____________===
+	lw $t1, -8($fp)
+	li $t1, 40762
+	sw $t1, -8($fp)
+#895<_____________===
+	lw $t2, -12($fp)
+	li $t2, 179
+	sw $t2, -12($fp)
+#896<_____________===
+	li $t4, 0
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -324($fp)
+#897<_____________===
+	lw $t0, -36($fp)
+	lw $t1, -324($fp)
+	add $t6, $t0, $t1
+	sw $t6, -328($fp)
+#898<_____________===
+	lw $t2, -328($fp)
+	li $s2, 20993
+	sw $t2, -328($fp)
+	sw $s2, 0($t2)
+#899<_____________===
+	li $t4, 1
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -332($fp)
+#900<_____________===
+	lw $t0, -36($fp)
+	lw $t1, -332($fp)
+	add $t6, $t0, $t1
+	sw $t6, -336($fp)
+#901<_____________===
+	lw $t2, -336($fp)
+	li $s2, 29789
+	sw $t2, -336($fp)
+	sw $s2, 0($t2)
+#902<_____________===
+	li $t4, 2
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -340($fp)
+#903<_____________===
+	lw $t0, -36($fp)
+	lw $t1, -340($fp)
+	add $t6, $t0, $t1
+	sw $t6, -344($fp)
+#904<_____________===
+	lw $t2, -344($fp)
+	li $s2, 61564
+	sw $t2, -344($fp)
+	sw $s2, 0($t2)
+#905<_____________===
+	li $t4, 3
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -348($fp)
+#906<_____________===
+	lw $t0, -36($fp)
+	lw $t1, -348($fp)
+	add $t6, $t0, $t1
+	sw $t6, -352($fp)
+#907<_____________===
+	lw $t2, -352($fp)
+	li $s2, 44441
+	sw $t2, -352($fp)
+	sw $s2, 0($t2)
+#908<_____________===
+	li $t4, 4
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -356($fp)
+#909<_____________===
+	lw $t0, -36($fp)
+	lw $t1, -356($fp)
+	add $t6, $t0, $t1
+	sw $t6, -360($fp)
+#910<_____________===
+	lw $t2, -360($fp)
+	li $s2, 47061
+	sw $t2, -360($fp)
+	sw $s2, 0($t2)
+#911<_____________===
+	lw $t3, -40($fp)
+	li $t3, 53305
+	sw $t3, -40($fp)
+#912<_____________===
+	li $t5, 0
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -364($fp)
+#913<_____________===
+	lw $t1, -68($fp)
+	lw $t2, -364($fp)
+	add $t0, $t1, $t2
+	sw $t0, -368($fp)
+#914<_____________===
+	lw $t3, -368($fp)
+	li $s2, 14472
+	sw $t3, -368($fp)
+	sw $s2, 0($t3)
+#915<_____________===
+	li $t5, 1
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -372($fp)
+#916<_____________===
+	lw $t1, -68($fp)
+	lw $t2, -372($fp)
+	add $t0, $t1, $t2
+	sw $t0, -376($fp)
+#917<_____________===
+	lw $t3, -376($fp)
+	li $s2, 1316
+	sw $t3, -376($fp)
+	sw $s2, 0($t3)
+#918<_____________===
+	li $t5, 2
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -380($fp)
+#919<_____________===
+	lw $t1, -68($fp)
+	lw $t2, -380($fp)
+	add $t0, $t1, $t2
+	sw $t0, -384($fp)
+#920<_____________===
+	lw $t3, -384($fp)
+	li $s2, 40694
+	sw $t3, -384($fp)
+	sw $s2, 0($t3)
+#921<_____________===
+	li $t5, 3
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -388($fp)
+#922<_____________===
+	lw $t1, -68($fp)
+	lw $t2, -388($fp)
+	add $t0, $t1, $t2
+	sw $t0, -392($fp)
+#923<_____________===
+	lw $t3, -392($fp)
+	li $s2, 27238
+	sw $t3, -392($fp)
+	sw $s2, 0($t3)
+#924<_____________===
+	li $t5, 4
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -396($fp)
+#925<_____________===
+	lw $t1, -68($fp)
+	lw $t2, -396($fp)
+	add $t0, $t1, $t2
+	sw $t0, -400($fp)
+#926<_____________===
+	lw $t3, -400($fp)
+	li $s2, 34510
+	sw $t3, -400($fp)
+	sw $s2, 0($t3)
+#927<_____________===
+	li $t5, 5
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -404($fp)
+#928<_____________===
+	lw $t1, -68($fp)
+	lw $t2, -404($fp)
+	add $t0, $t1, $t2
+	sw $t0, -408($fp)
+#929<_____________===
+	lw $t3, -408($fp)
+	li $s2, 63513
+	sw $t3, -408($fp)
+	sw $s2, 0($t3)
+#930<_____________===
+	lw $t4, -72($fp)
+	li $t4, 51250
+	sw $t4, -72($fp)
+#931<_____________===
+	lw $t5, -76($fp)
+	li $t5, 42676
+	sw $t5, -76($fp)
+#932<_____________===
+	lw $t6, -80($fp)
+	li $t6, 15454
+	sw $t6, -80($fp)
+#933<_____________===
+	lw $t0, -84($fp)
+	li $t0, 10009
+	sw $t0, -84($fp)
+#934<_____________===
+	lw $t1, -88($fp)
+	li $t1, 40479
+	sw $t1, -88($fp)
+#935<_____________===
+	lw $t2, -92($fp)
+	li $t2, 64223
+	sw $t2, -92($fp)
+#936<_____________===
+	lw $t3, -96($fp)
+	li $t3, 62505
+	sw $t3, -96($fp)
+#937<_____________===
+	lw $t4, -100($fp)
+	li $t4, 44083
+	sw $t4, -100($fp)
+#938<_____________===
+	lw $t5, -104($fp)
+	li $t5, 5244
+	sw $t5, -104($fp)
+#939<_____________===
+	li $t0, 0
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -412($fp)
+#940<_____________===
+	lw $t3, -140($fp)
+	lw $t4, -412($fp)
+	add $t2, $t3, $t4
+	sw $t2, -416($fp)
+#941<_____________===
+	lw $t5, -416($fp)
+	li $s2, 22753
+	sw $t5, -416($fp)
+	sw $s2, 0($t5)
+#942<_____________===
+	li $t0, 1
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -420($fp)
+#943<_____________===
+	lw $t3, -140($fp)
+	lw $t4, -420($fp)
+	add $t2, $t3, $t4
+	sw $t2, -424($fp)
+#944<_____________===
+	lw $t5, -424($fp)
+	li $s2, 20940
+	sw $t5, -424($fp)
+	sw $s2, 0($t5)
+#945<_____________===
+	li $t0, 2
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -428($fp)
+#946<_____________===
+	lw $t3, -140($fp)
+	lw $t4, -428($fp)
+	add $t2, $t3, $t4
+	sw $t2, -432($fp)
+#947<_____________===
+	lw $t5, -432($fp)
+	li $s2, 34380
+	sw $t5, -432($fp)
+	sw $s2, 0($t5)
+#948<_____________===
+	li $t0, 3
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -436($fp)
+#949<_____________===
+	lw $t3, -140($fp)
+	lw $t4, -436($fp)
+	add $t2, $t3, $t4
+	sw $t2, -440($fp)
+#950<_____________===
+	lw $t5, -440($fp)
+	li $s2, 56541
+	sw $t5, -440($fp)
+	sw $s2, 0($t5)
+#951<_____________===
+	li $t0, 4
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -444($fp)
+#952<_____________===
+	lw $t3, -140($fp)
+	lw $t4, -444($fp)
+	add $t2, $t3, $t4
+	sw $t2, -448($fp)
+#953<_____________===
+	lw $t5, -448($fp)
+	li $s2, 7909
+	sw $t5, -448($fp)
+	sw $s2, 0($t5)
+#954<_____________===
+	li $t0, 5
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -452($fp)
+#955<_____________===
+	lw $t3, -140($fp)
+	lw $t4, -452($fp)
+	add $t2, $t3, $t4
+	sw $t2, -456($fp)
+#956<_____________===
+	lw $t5, -456($fp)
+	li $s2, 2927
+	sw $t5, -456($fp)
+	sw $s2, 0($t5)
+#957<_____________===
+	li $t0, 6
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -460($fp)
+#958<_____________===
+	lw $t3, -140($fp)
+	lw $t4, -460($fp)
+	add $t2, $t3, $t4
+	sw $t2, -464($fp)
+#959<_____________===
+	lw $t5, -464($fp)
+	li $s2, 11853
+	sw $t5, -464($fp)
+	sw $s2, 0($t5)
+#960<_____________===
+	li $t0, 7
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -468($fp)
+#961<_____________===
+	lw $t3, -140($fp)
+	lw $t4, -468($fp)
+	add $t2, $t3, $t4
+	sw $t2, -472($fp)
+#962<_____________===
+	lw $t5, -472($fp)
+	li $s2, 59112
+	sw $t5, -472($fp)
+	sw $s2, 0($t5)
+#963<_____________===
+	lw $t6, -144($fp)
+	li $t6, 43689
+	sw $t6, -144($fp)
+#964<_____________===
+	lw $t0, -148($fp)
+	li $t0, 12032
+	sw $t0, -148($fp)
+#965<_____________===
+	lw $t1, -152($fp)
+	li $t1, 14570
+	sw $t1, -152($fp)
+#966<_____________===
+	lw $t2, -156($fp)
+	li $t2, 7943
+	sw $t2, -156($fp)
+#967<_____________===
+	lw $t3, -160($fp)
+	li $t3, 8060
+	sw $t3, -160($fp)
+#968<_____________===
+	li $t5, 0
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -476($fp)
+#969<_____________===
+	lw $t1, -176($fp)
+	lw $t2, -476($fp)
+	add $t0, $t1, $t2
+	sw $t0, -480($fp)
+#970<_____________===
+	lw $t3, -480($fp)
+	li $s2, 59011
+	sw $t3, -480($fp)
+	sw $s2, 0($t3)
+#971<_____________===
+	li $t5, 1
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -484($fp)
+#972<_____________===
+	lw $t1, -176($fp)
+	lw $t2, -484($fp)
+	add $t0, $t1, $t2
+	sw $t0, -488($fp)
+#973<_____________===
+	lw $t3, -488($fp)
+	li $s2, 55004
+	sw $t3, -488($fp)
+	sw $s2, 0($t3)
+#974<_____________===
+	li $t5, 2
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -492($fp)
+#975<_____________===
+	lw $t1, -176($fp)
+	lw $t2, -492($fp)
+	add $t0, $t1, $t2
+	sw $t0, -496($fp)
+#976<_____________===
+	lw $t3, -496($fp)
+	li $s2, 61365
+	sw $t3, -496($fp)
+	sw $s2, 0($t3)
+#977<_____________===
+	lw $t4, -180($fp)
+	li $t4, 7947
+	sw $t4, -180($fp)
+#978<_____________===
+	lw $t5, -184($fp)
+	li $t5, 56320
+	sw $t5, -184($fp)
+#979<_____________===
+	lw $t6, -188($fp)
+	li $t6, 36523
+	sw $t6, -188($fp)
+#980<_____________===
+	lw $t0, -192($fp)
+	li $t0, 35185
+	sw $t0, -192($fp)
+#981<_____________===
+	lw $t1, -196($fp)
+	li $t1, 25295
+	sw $t1, -196($fp)
+#982<_____________===
+	lw $t2, -200($fp)
+	li $t2, 34500
+	sw $t2, -200($fp)
+#983<_____________===
+	lw $t3, -204($fp)
+	li $t3, 20899
+	sw $t3, -204($fp)
+#984<_____________===
+	lw $t4, -208($fp)
+	li $t4, 2435
+	sw $t4, -208($fp)
+#985<_____________===
+	li $t6, 0
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -500($fp)
+#986<_____________===
+	lw $t2, -244($fp)
+	lw $t3, -500($fp)
+	add $t1, $t2, $t3
+	sw $t1, -504($fp)
+#987<_____________===
+	lw $t4, -504($fp)
+	li $s2, 49954
+	sw $t4, -504($fp)
+	sw $s2, 0($t4)
+#988<_____________===
+	li $t6, 1
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -508($fp)
+#989<_____________===
+	lw $t2, -244($fp)
+	lw $t3, -508($fp)
+	add $t1, $t2, $t3
+	sw $t1, -512($fp)
+#990<_____________===
+	lw $t4, -512($fp)
+	li $s2, 30908
+	sw $t4, -512($fp)
+	sw $s2, 0($t4)
+#991<_____________===
+	li $t6, 2
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -516($fp)
+#992<_____________===
+	lw $t2, -244($fp)
+	lw $t3, -516($fp)
+	add $t1, $t2, $t3
+	sw $t1, -520($fp)
+#993<_____________===
+	lw $t4, -520($fp)
+	li $s2, 42915
+	sw $t4, -520($fp)
+	sw $s2, 0($t4)
+#994<_____________===
+	li $t6, 3
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -524($fp)
+#995<_____________===
+	lw $t2, -244($fp)
+	lw $t3, -524($fp)
+	add $t1, $t2, $t3
+	sw $t1, -528($fp)
+#996<_____________===
+	lw $t4, -528($fp)
+	li $s2, 48642
+	sw $t4, -528($fp)
+	sw $s2, 0($t4)
+#997<_____________===
+	li $t6, 4
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -532($fp)
+#998<_____________===
+	lw $t2, -244($fp)
+	lw $t3, -532($fp)
+	add $t1, $t2, $t3
+	sw $t1, -536($fp)
+#999<_____________===
+	lw $t4, -536($fp)
+	li $s2, 27878
+	sw $t4, -536($fp)
+	sw $s2, 0($t4)
+#1000<_____________===
+	li $t6, 5
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -540($fp)
+#1001<_____________===
+	lw $t2, -244($fp)
+	lw $t3, -540($fp)
+	add $t1, $t2, $t3
+	sw $t1, -544($fp)
+#1002<_____________===
+	lw $t4, -544($fp)
+	li $s2, 21462
+	sw $t4, -544($fp)
+	sw $s2, 0($t4)
+#1003<_____________===
+	li $t6, 6
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -548($fp)
+#1004<_____________===
+	lw $t2, -244($fp)
+	lw $t3, -548($fp)
+	add $t1, $t2, $t3
+	sw $t1, -552($fp)
+#1005<_____________===
+	lw $t4, -552($fp)
+	li $s2, 53886
+	sw $t4, -552($fp)
+	sw $s2, 0($t4)
+#1006<_____________===
+	li $t6, 7
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -556($fp)
+#1007<_____________===
+	lw $t2, -244($fp)
+	lw $t3, -556($fp)
+	add $t1, $t2, $t3
+	sw $t1, -560($fp)
+#1008<_____________===
+	lw $t4, -560($fp)
+	li $s2, 50631
+	sw $t4, -560($fp)
+	sw $s2, 0($t4)
+#1009<_____________===
+	li $t6, 0
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -564($fp)
+#1010<_____________===
+	lw $t2, -288($fp)
+	lw $t3, -564($fp)
+	add $t1, $t2, $t3
+	sw $t1, -568($fp)
+#1011<_____________===
+	lw $t4, -568($fp)
+	li $s2, 42402
+	sw $t4, -568($fp)
+	sw $s2, 0($t4)
+#1012<_____________===
+	li $t6, 1
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -572($fp)
+#1013<_____________===
+	lw $t2, -288($fp)
+	lw $t3, -572($fp)
+	add $t1, $t2, $t3
+	sw $t1, -576($fp)
+#1014<_____________===
+	lw $t4, -576($fp)
+	li $s2, 22730
+	sw $t4, -576($fp)
+	sw $s2, 0($t4)
+#1015<_____________===
+	li $t6, 2
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -580($fp)
+#1016<_____________===
+	lw $t2, -288($fp)
+	lw $t3, -580($fp)
+	add $t1, $t2, $t3
+	sw $t1, -584($fp)
+#1017<_____________===
+	lw $t4, -584($fp)
+	li $s2, 41636
+	sw $t4, -584($fp)
+	sw $s2, 0($t4)
+#1018<_____________===
+	li $t6, 3
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -588($fp)
+#1019<_____________===
+	lw $t2, -288($fp)
+	lw $t3, -588($fp)
+	add $t1, $t2, $t3
+	sw $t1, -592($fp)
+#1020<_____________===
+	lw $t4, -592($fp)
+	li $s2, 50311
+	sw $t4, -592($fp)
+	sw $s2, 0($t4)
+#1021<_____________===
+	li $t6, 4
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -596($fp)
+#1022<_____________===
+	lw $t2, -288($fp)
+	lw $t3, -596($fp)
+	add $t1, $t2, $t3
+	sw $t1, -600($fp)
+#1023<_____________===
+	lw $t4, -600($fp)
+	li $s2, 25657
+	sw $t4, -600($fp)
+	sw $s2, 0($t4)
+#1024<_____________===
+	li $t6, 5
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -604($fp)
+#1025<_____________===
+	lw $t2, -288($fp)
+	lw $t3, -604($fp)
+	add $t1, $t2, $t3
+	sw $t1, -608($fp)
+#1026<_____________===
+	lw $t4, -608($fp)
+	li $s2, 53489
+	sw $t4, -608($fp)
+	sw $s2, 0($t4)
+#1027<_____________===
+	li $t6, 6
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -612($fp)
+#1028<_____________===
+	lw $t2, -288($fp)
+	lw $t3, -612($fp)
+	add $t1, $t2, $t3
+	sw $t1, -616($fp)
+#1029<_____________===
+	lw $t4, -616($fp)
+	li $s2, 43888
+	sw $t4, -616($fp)
+	sw $s2, 0($t4)
+#1030<_____________===
+	li $t6, 7
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -620($fp)
+#1031<_____________===
+	lw $t2, -288($fp)
+	lw $t3, -620($fp)
+	add $t1, $t2, $t3
+	sw $t1, -624($fp)
+#1032<_____________===
+	lw $t4, -624($fp)
+	li $s2, 3810
+	sw $t4, -624($fp)
+	sw $s2, 0($t4)
+#1033<_____________===
+	li $t6, 8
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -628($fp)
+#1034<_____________===
+	lw $t2, -288($fp)
+	lw $t3, -628($fp)
+	add $t1, $t2, $t3
+	sw $t1, -632($fp)
+#1035<_____________===
+	lw $t4, -632($fp)
+	li $s2, 65522
+	sw $t4, -632($fp)
+	sw $s2, 0($t4)
+#1036<_____________===
+	li $t6, 9
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -636($fp)
+#1037<_____________===
+	lw $t2, -288($fp)
+	lw $t3, -636($fp)
+	add $t1, $t2, $t3
+	sw $t1, -640($fp)
+#1038<_____________===
+	lw $t4, -640($fp)
+	li $s2, 58458
+	sw $t4, -640($fp)
+	sw $s2, 0($t4)
+#1039<_____________===
+	lw $t5, -292($fp)
+	li $t5, 11753
+	sw $t5, -292($fp)
+#1040<_____________===
+	lw $t6, -296($fp)
+	li $t6, 8046
+	sw $t6, -296($fp)
+#1041<_____________===
+	lw $t0, -300($fp)
+	li $t0, 51933
+	sw $t0, -300($fp)
+#1042<_____________===
+	lw $t1, -304($fp)
+	li $t1, 1222
+	sw $t1, -304($fp)
+#1043<_____________===
+	lw $t2, -308($fp)
+	li $t2, 3876
+	sw $t2, -308($fp)
+#1044<_____________===
+	lw $t3, -312($fp)
+	li $t3, 59880
+	sw $t3, -312($fp)
+#1045<_____________===
+	lw $t4, -316($fp)
+	li $t4, 57542
+	sw $t4, -316($fp)
+#1046<_____________===
+	lw $t5, -320($fp)
+	li $t5, 40399
+	sw $t5, -320($fp)
+#1047<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t6, -8($fp)
@@ -8853,6 +3828,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1048<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t0, -12($fp)
@@ -8860,81 +3836,97 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1049<_____________===
 	li $t2, 0
 	li $t3, 4
 	mul $t1, $t2, $t3
-	sw $t1, -4188($fp)
+	sw $t1, -644($fp)
+#1050<_____________===
 	lw $t5, -36($fp)
-	lw $t6, -4188($fp)
+	lw $t6, -644($fp)
 	add $t4, $t5, $t6
-	sw $t4, -4192($fp)
+	sw $t4, -648($fp)
+#1051<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t0, -4192($fp)
+	lw $t0, -648($fp)
 	lw $a0, 0($t0)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1052<_____________===
 	li $t2, 1
 	li $t3, 4
 	mul $t1, $t2, $t3
-	sw $t1, -4196($fp)
+	sw $t1, -652($fp)
+#1053<_____________===
 	lw $t5, -36($fp)
-	lw $t6, -4196($fp)
+	lw $t6, -652($fp)
 	add $t4, $t5, $t6
-	sw $t4, -4200($fp)
+	sw $t4, -656($fp)
+#1054<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t0, -4200($fp)
+	lw $t0, -656($fp)
 	lw $a0, 0($t0)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1055<_____________===
 	li $t2, 2
 	li $t3, 4
 	mul $t1, $t2, $t3
-	sw $t1, -4204($fp)
+	sw $t1, -660($fp)
+#1056<_____________===
 	lw $t5, -36($fp)
-	lw $t6, -4204($fp)
+	lw $t6, -660($fp)
 	add $t4, $t5, $t6
-	sw $t4, -4208($fp)
+	sw $t4, -664($fp)
+#1057<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t0, -4208($fp)
+	lw $t0, -664($fp)
 	lw $a0, 0($t0)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1058<_____________===
 	li $t2, 3
 	li $t3, 4
 	mul $t1, $t2, $t3
-	sw $t1, -4212($fp)
+	sw $t1, -668($fp)
+#1059<_____________===
 	lw $t5, -36($fp)
-	lw $t6, -4212($fp)
+	lw $t6, -668($fp)
 	add $t4, $t5, $t6
-	sw $t4, -4216($fp)
+	sw $t4, -672($fp)
+#1060<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t0, -4216($fp)
+	lw $t0, -672($fp)
 	lw $a0, 0($t0)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1061<_____________===
 	li $t2, 4
 	li $t3, 4
 	mul $t1, $t2, $t3
-	sw $t1, -4220($fp)
+	sw $t1, -676($fp)
+#1062<_____________===
 	lw $t5, -36($fp)
-	lw $t6, -4220($fp)
+	lw $t6, -676($fp)
 	add $t4, $t5, $t6
-	sw $t4, -4224($fp)
+	sw $t4, -680($fp)
+#1063<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t0, -4224($fp)
+	lw $t0, -680($fp)
 	lw $a0, 0($t0)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1064<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t1, -40($fp)
@@ -8942,96 +3934,115 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1065<_____________===
 	li $t3, 0
 	li $t4, 4
 	mul $t2, $t3, $t4
-	sw $t2, -4228($fp)
+	sw $t2, -684($fp)
+#1066<_____________===
 	lw $t6, -68($fp)
-	lw $t0, -4228($fp)
+	lw $t0, -684($fp)
 	add $t5, $t6, $t0
-	sw $t5, -4232($fp)
+	sw $t5, -688($fp)
+#1067<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t1, -4232($fp)
+	lw $t1, -688($fp)
 	lw $a0, 0($t1)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1068<_____________===
 	li $t3, 1
 	li $t4, 4
 	mul $t2, $t3, $t4
-	sw $t2, -4236($fp)
+	sw $t2, -692($fp)
+#1069<_____________===
 	lw $t6, -68($fp)
-	lw $t0, -4236($fp)
+	lw $t0, -692($fp)
 	add $t5, $t6, $t0
-	sw $t5, -4240($fp)
+	sw $t5, -696($fp)
+#1070<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t1, -4240($fp)
+	lw $t1, -696($fp)
 	lw $a0, 0($t1)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1071<_____________===
 	li $t3, 2
 	li $t4, 4
 	mul $t2, $t3, $t4
-	sw $t2, -4244($fp)
+	sw $t2, -700($fp)
+#1072<_____________===
 	lw $t6, -68($fp)
-	lw $t0, -4244($fp)
+	lw $t0, -700($fp)
 	add $t5, $t6, $t0
-	sw $t5, -4248($fp)
+	sw $t5, -704($fp)
+#1073<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t1, -4248($fp)
+	lw $t1, -704($fp)
 	lw $a0, 0($t1)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1074<_____________===
 	li $t3, 3
 	li $t4, 4
 	mul $t2, $t3, $t4
-	sw $t2, -4252($fp)
+	sw $t2, -708($fp)
+#1075<_____________===
 	lw $t6, -68($fp)
-	lw $t0, -4252($fp)
+	lw $t0, -708($fp)
 	add $t5, $t6, $t0
-	sw $t5, -4256($fp)
+	sw $t5, -712($fp)
+#1076<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t1, -4256($fp)
+	lw $t1, -712($fp)
 	lw $a0, 0($t1)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1077<_____________===
 	li $t3, 4
 	li $t4, 4
 	mul $t2, $t3, $t4
-	sw $t2, -4260($fp)
+	sw $t2, -716($fp)
+#1078<_____________===
 	lw $t6, -68($fp)
-	lw $t0, -4260($fp)
+	lw $t0, -716($fp)
 	add $t5, $t6, $t0
-	sw $t5, -4264($fp)
+	sw $t5, -720($fp)
+#1079<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t1, -4264($fp)
+	lw $t1, -720($fp)
 	lw $a0, 0($t1)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1080<_____________===
 	li $t3, 5
 	li $t4, 4
 	mul $t2, $t3, $t4
-	sw $t2, -4268($fp)
+	sw $t2, -724($fp)
+#1081<_____________===
 	lw $t6, -68($fp)
-	lw $t0, -4268($fp)
+	lw $t0, -724($fp)
 	add $t5, $t6, $t0
-	sw $t5, -4272($fp)
+	sw $t5, -728($fp)
+#1082<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t1, -4272($fp)
+	lw $t1, -728($fp)
 	lw $a0, 0($t1)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1083<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t2, -72($fp)
@@ -9039,6 +4050,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1084<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t3, -76($fp)
@@ -9046,6 +4058,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1085<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t4, -80($fp)
@@ -9053,6 +4066,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1086<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t5, -84($fp)
@@ -9060,6 +4074,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1087<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t6, -88($fp)
@@ -9067,6 +4082,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1088<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t0, -92($fp)
@@ -9074,6 +4090,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1089<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t1, -96($fp)
@@ -9081,6 +4098,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1090<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t2, -100($fp)
@@ -9088,6 +4106,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1091<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t3, -104($fp)
@@ -9095,126 +4114,151 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1092<_____________===
 	li $t5, 0
 	li $t6, 4
 	mul $t4, $t5, $t6
-	sw $t4, -4276($fp)
+	sw $t4, -732($fp)
+#1093<_____________===
 	lw $t1, -140($fp)
-	lw $t2, -4276($fp)
+	lw $t2, -732($fp)
 	add $t0, $t1, $t2
-	sw $t0, -4280($fp)
+	sw $t0, -736($fp)
+#1094<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t3, -4280($fp)
+	lw $t3, -736($fp)
 	lw $a0, 0($t3)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1095<_____________===
 	li $t5, 1
 	li $t6, 4
 	mul $t4, $t5, $t6
-	sw $t4, -4284($fp)
+	sw $t4, -740($fp)
+#1096<_____________===
 	lw $t1, -140($fp)
-	lw $t2, -4284($fp)
+	lw $t2, -740($fp)
 	add $t0, $t1, $t2
-	sw $t0, -4288($fp)
+	sw $t0, -744($fp)
+#1097<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t3, -4288($fp)
+	lw $t3, -744($fp)
 	lw $a0, 0($t3)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1098<_____________===
 	li $t5, 2
 	li $t6, 4
 	mul $t4, $t5, $t6
-	sw $t4, -4292($fp)
+	sw $t4, -748($fp)
+#1099<_____________===
 	lw $t1, -140($fp)
-	lw $t2, -4292($fp)
+	lw $t2, -748($fp)
 	add $t0, $t1, $t2
-	sw $t0, -4296($fp)
+	sw $t0, -752($fp)
+#1100<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t3, -4296($fp)
+	lw $t3, -752($fp)
 	lw $a0, 0($t3)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1101<_____________===
 	li $t5, 3
 	li $t6, 4
 	mul $t4, $t5, $t6
-	sw $t4, -4300($fp)
+	sw $t4, -756($fp)
+#1102<_____________===
 	lw $t1, -140($fp)
-	lw $t2, -4300($fp)
+	lw $t2, -756($fp)
 	add $t0, $t1, $t2
-	sw $t0, -4304($fp)
+	sw $t0, -760($fp)
+#1103<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t3, -4304($fp)
+	lw $t3, -760($fp)
 	lw $a0, 0($t3)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1104<_____________===
 	li $t5, 4
 	li $t6, 4
 	mul $t4, $t5, $t6
-	sw $t4, -4308($fp)
+	sw $t4, -764($fp)
+#1105<_____________===
 	lw $t1, -140($fp)
-	lw $t2, -4308($fp)
+	lw $t2, -764($fp)
 	add $t0, $t1, $t2
-	sw $t0, -4312($fp)
+	sw $t0, -768($fp)
+#1106<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t3, -4312($fp)
+	lw $t3, -768($fp)
 	lw $a0, 0($t3)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1107<_____________===
 	li $t5, 5
 	li $t6, 4
 	mul $t4, $t5, $t6
-	sw $t4, -4316($fp)
+	sw $t4, -772($fp)
+#1108<_____________===
 	lw $t1, -140($fp)
-	lw $t2, -4316($fp)
+	lw $t2, -772($fp)
 	add $t0, $t1, $t2
-	sw $t0, -4320($fp)
+	sw $t0, -776($fp)
+#1109<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t3, -4320($fp)
+	lw $t3, -776($fp)
 	lw $a0, 0($t3)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1110<_____________===
 	li $t5, 6
 	li $t6, 4
 	mul $t4, $t5, $t6
-	sw $t4, -4324($fp)
+	sw $t4, -780($fp)
+#1111<_____________===
 	lw $t1, -140($fp)
-	lw $t2, -4324($fp)
+	lw $t2, -780($fp)
 	add $t0, $t1, $t2
-	sw $t0, -4328($fp)
+	sw $t0, -784($fp)
+#1112<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t3, -4328($fp)
+	lw $t3, -784($fp)
 	lw $a0, 0($t3)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1113<_____________===
 	li $t5, 7
 	li $t6, 4
 	mul $t4, $t5, $t6
-	sw $t4, -4332($fp)
+	sw $t4, -788($fp)
+#1114<_____________===
 	lw $t1, -140($fp)
-	lw $t2, -4332($fp)
+	lw $t2, -788($fp)
 	add $t0, $t1, $t2
-	sw $t0, -4336($fp)
+	sw $t0, -792($fp)
+#1115<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t3, -4336($fp)
+	lw $t3, -792($fp)
 	lw $a0, 0($t3)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1116<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t4, -144($fp)
@@ -9222,6 +4266,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1117<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t5, -148($fp)
@@ -9229,6 +4274,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1118<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t6, -152($fp)
@@ -9236,6 +4282,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1119<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t0, -156($fp)
@@ -9243,6 +4290,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1120<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t1, -160($fp)
@@ -9250,51 +4298,61 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1121<_____________===
 	li $t3, 0
 	li $t4, 4
 	mul $t2, $t3, $t4
-	sw $t2, -4340($fp)
+	sw $t2, -796($fp)
+#1122<_____________===
 	lw $t6, -176($fp)
-	lw $t0, -4340($fp)
+	lw $t0, -796($fp)
 	add $t5, $t6, $t0
-	sw $t5, -4344($fp)
+	sw $t5, -800($fp)
+#1123<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t1, -4344($fp)
+	lw $t1, -800($fp)
 	lw $a0, 0($t1)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1124<_____________===
 	li $t3, 1
 	li $t4, 4
 	mul $t2, $t3, $t4
-	sw $t2, -4348($fp)
+	sw $t2, -804($fp)
+#1125<_____________===
 	lw $t6, -176($fp)
-	lw $t0, -4348($fp)
+	lw $t0, -804($fp)
 	add $t5, $t6, $t0
-	sw $t5, -4352($fp)
+	sw $t5, -808($fp)
+#1126<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t1, -4352($fp)
+	lw $t1, -808($fp)
 	lw $a0, 0($t1)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1127<_____________===
 	li $t3, 2
 	li $t4, 4
 	mul $t2, $t3, $t4
-	sw $t2, -4356($fp)
+	sw $t2, -812($fp)
+#1128<_____________===
 	lw $t6, -176($fp)
-	lw $t0, -4356($fp)
+	lw $t0, -812($fp)
 	add $t5, $t6, $t0
-	sw $t5, -4360($fp)
+	sw $t5, -816($fp)
+#1129<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t1, -4360($fp)
+	lw $t1, -816($fp)
 	lw $a0, 0($t1)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1130<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t2, -180($fp)
@@ -9302,6 +4360,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1131<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t3, -184($fp)
@@ -9309,6 +4368,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1132<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t4, -188($fp)
@@ -9316,6 +4376,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1133<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t5, -192($fp)
@@ -9323,6 +4384,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1134<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t6, -196($fp)
@@ -9330,6 +4392,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1135<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t0, -200($fp)
@@ -9337,6 +4400,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1136<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t1, -204($fp)
@@ -9344,6 +4408,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1137<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t2, -208($fp)
@@ -9351,276 +4416,331 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1138<_____________===
 	li $t4, 0
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4364($fp)
+	sw $t3, -820($fp)
+#1139<_____________===
 	lw $t0, -244($fp)
-	lw $t1, -4364($fp)
+	lw $t1, -820($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4368($fp)
+	sw $t6, -824($fp)
+#1140<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4368($fp)
+	lw $t2, -824($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1141<_____________===
 	li $t4, 1
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4372($fp)
+	sw $t3, -828($fp)
+#1142<_____________===
 	lw $t0, -244($fp)
-	lw $t1, -4372($fp)
+	lw $t1, -828($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4376($fp)
+	sw $t6, -832($fp)
+#1143<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4376($fp)
+	lw $t2, -832($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1144<_____________===
 	li $t4, 2
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4380($fp)
+	sw $t3, -836($fp)
+#1145<_____________===
 	lw $t0, -244($fp)
-	lw $t1, -4380($fp)
+	lw $t1, -836($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4384($fp)
+	sw $t6, -840($fp)
+#1146<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4384($fp)
+	lw $t2, -840($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1147<_____________===
 	li $t4, 3
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4388($fp)
+	sw $t3, -844($fp)
+#1148<_____________===
 	lw $t0, -244($fp)
-	lw $t1, -4388($fp)
+	lw $t1, -844($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4392($fp)
+	sw $t6, -848($fp)
+#1149<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4392($fp)
+	lw $t2, -848($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1150<_____________===
 	li $t4, 4
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4396($fp)
+	sw $t3, -852($fp)
+#1151<_____________===
 	lw $t0, -244($fp)
-	lw $t1, -4396($fp)
+	lw $t1, -852($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4400($fp)
+	sw $t6, -856($fp)
+#1152<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4400($fp)
+	lw $t2, -856($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1153<_____________===
 	li $t4, 5
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4404($fp)
+	sw $t3, -860($fp)
+#1154<_____________===
 	lw $t0, -244($fp)
-	lw $t1, -4404($fp)
+	lw $t1, -860($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4408($fp)
+	sw $t6, -864($fp)
+#1155<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4408($fp)
+	lw $t2, -864($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1156<_____________===
 	li $t4, 6
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4412($fp)
+	sw $t3, -868($fp)
+#1157<_____________===
 	lw $t0, -244($fp)
-	lw $t1, -4412($fp)
+	lw $t1, -868($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4416($fp)
+	sw $t6, -872($fp)
+#1158<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4416($fp)
+	lw $t2, -872($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1159<_____________===
 	li $t4, 7
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4420($fp)
+	sw $t3, -876($fp)
+#1160<_____________===
 	lw $t0, -244($fp)
-	lw $t1, -4420($fp)
+	lw $t1, -876($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4424($fp)
+	sw $t6, -880($fp)
+#1161<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4424($fp)
+	lw $t2, -880($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1162<_____________===
 	li $t4, 0
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4428($fp)
+	sw $t3, -884($fp)
+#1163<_____________===
 	lw $t0, -288($fp)
-	lw $t1, -4428($fp)
+	lw $t1, -884($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4432($fp)
+	sw $t6, -888($fp)
+#1164<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4432($fp)
+	lw $t2, -888($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1165<_____________===
 	li $t4, 1
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4436($fp)
+	sw $t3, -892($fp)
+#1166<_____________===
 	lw $t0, -288($fp)
-	lw $t1, -4436($fp)
+	lw $t1, -892($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4440($fp)
+	sw $t6, -896($fp)
+#1167<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4440($fp)
+	lw $t2, -896($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1168<_____________===
 	li $t4, 2
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4444($fp)
+	sw $t3, -900($fp)
+#1169<_____________===
 	lw $t0, -288($fp)
-	lw $t1, -4444($fp)
+	lw $t1, -900($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4448($fp)
+	sw $t6, -904($fp)
+#1170<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4448($fp)
+	lw $t2, -904($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1171<_____________===
 	li $t4, 3
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4452($fp)
+	sw $t3, -908($fp)
+#1172<_____________===
 	lw $t0, -288($fp)
-	lw $t1, -4452($fp)
+	lw $t1, -908($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4456($fp)
+	sw $t6, -912($fp)
+#1173<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4456($fp)
+	lw $t2, -912($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1174<_____________===
 	li $t4, 4
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4460($fp)
+	sw $t3, -916($fp)
+#1175<_____________===
 	lw $t0, -288($fp)
-	lw $t1, -4460($fp)
+	lw $t1, -916($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4464($fp)
+	sw $t6, -920($fp)
+#1176<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4464($fp)
+	lw $t2, -920($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1177<_____________===
 	li $t4, 5
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4468($fp)
+	sw $t3, -924($fp)
+#1178<_____________===
 	lw $t0, -288($fp)
-	lw $t1, -4468($fp)
+	lw $t1, -924($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4472($fp)
+	sw $t6, -928($fp)
+#1179<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4472($fp)
+	lw $t2, -928($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1180<_____________===
 	li $t4, 6
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4476($fp)
+	sw $t3, -932($fp)
+#1181<_____________===
 	lw $t0, -288($fp)
-	lw $t1, -4476($fp)
+	lw $t1, -932($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4480($fp)
+	sw $t6, -936($fp)
+#1182<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4480($fp)
+	lw $t2, -936($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1183<_____________===
 	li $t4, 7
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4484($fp)
+	sw $t3, -940($fp)
+#1184<_____________===
 	lw $t0, -288($fp)
-	lw $t1, -4484($fp)
+	lw $t1, -940($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4488($fp)
+	sw $t6, -944($fp)
+#1185<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4488($fp)
+	lw $t2, -944($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1186<_____________===
 	li $t4, 8
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4492($fp)
+	sw $t3, -948($fp)
+#1187<_____________===
 	lw $t0, -288($fp)
-	lw $t1, -4492($fp)
+	lw $t1, -948($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4496($fp)
+	sw $t6, -952($fp)
+#1188<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4496($fp)
+	lw $t2, -952($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1189<_____________===
 	li $t4, 9
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -4500($fp)
+	sw $t3, -956($fp)
+#1190<_____________===
 	lw $t0, -288($fp)
-	lw $t1, -4500($fp)
+	lw $t1, -956($fp)
 	add $t6, $t0, $t1
-	sw $t6, -4504($fp)
+	sw $t6, -960($fp)
+#1191<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4504($fp)
+	lw $t2, -960($fp)
 	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1192<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t3, -292($fp)
@@ -9628,6 +4748,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1193<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t4, -296($fp)
@@ -9635,6 +4756,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1194<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t5, -300($fp)
@@ -9642,6 +4764,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1195<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t6, -304($fp)
@@ -9649,6 +4772,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1196<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t0, -308($fp)
@@ -9656,6 +4780,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1197<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t1, -312($fp)
@@ -9663,6 +4788,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1198<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t2, -316($fp)
@@ -9670,6 +4796,7 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1199<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	lw $t3, -320($fp)
@@ -9677,1328 +4804,10421 @@ label568:
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#1200<_____________===
 	li $t4, 0
-	sw $t4, -4508($fp)
-	li $t6, 40362
-	lw $t0, -316($fp)
-	mul $t5, $t6, $t0
-	sw $t5, -4512($fp)
-	li $t2, 0
-	lw $t3, -4512($fp)
+	sw $t4, -964($fp)
+#1201<_____________===
+	li $t6, 29529
+	lw $t0, -196($fp)
+	div $t6, $t0
+	mflo $t5
+	sw $t5, -968($fp)
+#1202<_____________===
+	lw $t2, -968($fp)
+	li $t3, 17301
 	sub $t1, $t2, $t3
-	sw $t1, -4516($fp)
-	lw $t5, -4516($fp)
+	sw $t1, -972($fp)
+#1203<_____________===
+	lw $t4, -972($fp)
+	bne $t4, 0, label192
+#1204<_____________===
+	j label194
+#1205<_____________===
+label194:
+#1206<_____________===
+	li $t6, 9364
+	lw $t0, -208($fp)
+	sub $t5, $t6, $t0
+	sw $t5, -976($fp)
+#1207<_____________===
+	lw $a0, -976($fp)
+#1208<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_CYq6iXzc
+	move $t1, $v0
+	sw $t1, -980($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1209<_____________===
+	lw $t2, -980($fp)
+	bne $t2, 0, label192
+#1210<_____________===
+	j label193
+#1211<_____________===
+label192:
+#1212<_____________===
+	lw $t3, -964($fp)
+	li $t3, 1
+	sw $t3, -964($fp)
+#1213<_____________===
+label193:
+#1214<_____________===
+	lw $t4, -192($fp)
+	lw $t5, -964($fp)
+	move $t4, $t5
+	sw $t4, -192($fp)
+#1215<_____________===
+	lw $t0, -964($fp)
+	move $t6, $t0
+	sw $t6, -984($fp)
+#1216<_____________===
+	lw $t1, -984($fp)
+	move $v0, $t1
+	addi $sp, $sp, 800
+	addi $sp, $sp, 4
+	lw $fp, 0($sp)
+	addi $sp, $sp, 4
+	jr $ra
+#1217<_____________===
+#1218<_____________===
+#1219<_____________===
+#1220<_____________===
+	la $t2, -996($fp)
+	sw $t2, -1000($fp)
+#1221<_____________===
+#1222<_____________===
+#1223<_____________===
+#1224<_____________===
+#1225<_____________===
+#1226<_____________===
+#1227<_____________===
+#1228<_____________===
+	la $t3, -1048($fp)
+	sw $t3, -1052($fp)
+#1229<_____________===
+#1230<_____________===
+	la $t4, -1088($fp)
+	sw $t4, -1092($fp)
+#1231<_____________===
+#1232<_____________===
+#1233<_____________===
+#1234<_____________===
+#1235<_____________===
+#1236<_____________===
+#1237<_____________===
+#1238<_____________===
+#1239<_____________===
+#1240<_____________===
+#1241<_____________===
+	la $t5, -1140($fp)
+	sw $t5, -1144($fp)
+#1242<_____________===
+#1243<_____________===
+	la $t6, -1176($fp)
+	sw $t6, -1180($fp)
+#1244<_____________===
+#1245<_____________===
+	la $t0, -1220($fp)
+	sw $t0, -1224($fp)
+#1246<_____________===
+#1247<_____________===
+	lw $t1, -988($fp)
+	li $t1, 50429
+	sw $t1, -988($fp)
+#1248<_____________===
+	lw $t2, -992($fp)
+	li $t2, 19737
+	sw $t2, -992($fp)
+#1249<_____________===
+	li $t4, 0
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -1232($fp)
+#1250<_____________===
+	lw $t0, -1000($fp)
+	lw $t1, -1232($fp)
+	add $t6, $t0, $t1
+	sw $t6, -1236($fp)
+#1251<_____________===
+	lw $t2, -1236($fp)
+	li $s2, 59318
+	sw $t2, -1236($fp)
+	sw $s2, 0($t2)
+#1252<_____________===
+	lw $t3, -1004($fp)
+	li $t3, 15801
+	sw $t3, -1004($fp)
+#1253<_____________===
+	lw $t4, -1008($fp)
+	li $t4, 62652
+	sw $t4, -1008($fp)
+#1254<_____________===
+	lw $t5, -1012($fp)
+	li $t5, 42424
+	sw $t5, -1012($fp)
+#1255<_____________===
+	lw $t6, -1016($fp)
+	li $t6, 43679
+	sw $t6, -1016($fp)
+#1256<_____________===
+	lw $t0, -1020($fp)
+	li $t0, 18578
+	sw $t0, -1020($fp)
+#1257<_____________===
+	lw $t1, -1024($fp)
+	li $t1, 30774
+	sw $t1, -1024($fp)
+#1258<_____________===
+	li $t3, 0
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1240($fp)
+#1259<_____________===
+	lw $t6, -1052($fp)
+	lw $t0, -1240($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1244($fp)
+#1260<_____________===
+	lw $t1, -1244($fp)
+	li $s2, 28774
+	sw $t1, -1244($fp)
+	sw $s2, 0($t1)
+#1261<_____________===
+	li $t3, 1
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1248($fp)
+#1262<_____________===
+	lw $t6, -1052($fp)
+	lw $t0, -1248($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1252($fp)
+#1263<_____________===
+	lw $t1, -1252($fp)
+	li $s2, 60981
+	sw $t1, -1252($fp)
+	sw $s2, 0($t1)
+#1264<_____________===
+	li $t3, 2
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1256($fp)
+#1265<_____________===
+	lw $t6, -1052($fp)
+	lw $t0, -1256($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1260($fp)
+#1266<_____________===
+	lw $t1, -1260($fp)
+	li $s2, 53504
+	sw $t1, -1260($fp)
+	sw $s2, 0($t1)
+#1267<_____________===
+	li $t3, 3
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1264($fp)
+#1268<_____________===
+	lw $t6, -1052($fp)
+	lw $t0, -1264($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1268($fp)
+#1269<_____________===
+	lw $t1, -1268($fp)
+	li $s2, 4875
+	sw $t1, -1268($fp)
+	sw $s2, 0($t1)
+#1270<_____________===
+	li $t3, 4
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1272($fp)
+#1271<_____________===
+	lw $t6, -1052($fp)
+	lw $t0, -1272($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1276($fp)
+#1272<_____________===
+	lw $t1, -1276($fp)
+	li $s2, 45756
+	sw $t1, -1276($fp)
+	sw $s2, 0($t1)
+#1273<_____________===
+	li $t3, 5
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1280($fp)
+#1274<_____________===
+	lw $t6, -1052($fp)
+	lw $t0, -1280($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1284($fp)
+#1275<_____________===
+	lw $t1, -1284($fp)
+	li $s2, 13625
+	sw $t1, -1284($fp)
+	sw $s2, 0($t1)
+#1276<_____________===
+	li $t3, 0
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1288($fp)
+#1277<_____________===
+	lw $t6, -1092($fp)
+	lw $t0, -1288($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1292($fp)
+#1278<_____________===
+	lw $t1, -1292($fp)
+	li $s2, 58364
+	sw $t1, -1292($fp)
+	sw $s2, 0($t1)
+#1279<_____________===
+	li $t3, 1
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1296($fp)
+#1280<_____________===
+	lw $t6, -1092($fp)
+	lw $t0, -1296($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1300($fp)
+#1281<_____________===
+	lw $t1, -1300($fp)
+	li $s2, 24108
+	sw $t1, -1300($fp)
+	sw $s2, 0($t1)
+#1282<_____________===
+	li $t3, 2
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1304($fp)
+#1283<_____________===
+	lw $t6, -1092($fp)
+	lw $t0, -1304($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1308($fp)
+#1284<_____________===
+	lw $t1, -1308($fp)
+	li $s2, 17436
+	sw $t1, -1308($fp)
+	sw $s2, 0($t1)
+#1285<_____________===
+	li $t3, 3
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1312($fp)
+#1286<_____________===
+	lw $t6, -1092($fp)
+	lw $t0, -1312($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1316($fp)
+#1287<_____________===
+	lw $t1, -1316($fp)
+	li $s2, 58350
+	sw $t1, -1316($fp)
+	sw $s2, 0($t1)
+#1288<_____________===
+	li $t3, 4
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1320($fp)
+#1289<_____________===
+	lw $t6, -1092($fp)
+	lw $t0, -1320($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1324($fp)
+#1290<_____________===
+	lw $t1, -1324($fp)
+	li $s2, 17030
+	sw $t1, -1324($fp)
+	sw $s2, 0($t1)
+#1291<_____________===
+	li $t3, 5
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1328($fp)
+#1292<_____________===
+	lw $t6, -1092($fp)
+	lw $t0, -1328($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1332($fp)
+#1293<_____________===
+	lw $t1, -1332($fp)
+	li $s2, 29189
+	sw $t1, -1332($fp)
+	sw $s2, 0($t1)
+#1294<_____________===
+	li $t3, 6
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1336($fp)
+#1295<_____________===
+	lw $t6, -1092($fp)
+	lw $t0, -1336($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1340($fp)
+#1296<_____________===
+	lw $t1, -1340($fp)
+	li $s2, 861
+	sw $t1, -1340($fp)
+	sw $s2, 0($t1)
+#1297<_____________===
+	li $t3, 7
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1344($fp)
+#1298<_____________===
+	lw $t6, -1092($fp)
+	lw $t0, -1344($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1348($fp)
+#1299<_____________===
+	lw $t1, -1348($fp)
+	li $s2, 3427
+	sw $t1, -1348($fp)
+	sw $s2, 0($t1)
+#1300<_____________===
+	li $t3, 8
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1352($fp)
+#1301<_____________===
+	lw $t6, -1092($fp)
+	lw $t0, -1352($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1356($fp)
+#1302<_____________===
+	lw $t1, -1356($fp)
+	li $s2, 30411
+	sw $t1, -1356($fp)
+	sw $s2, 0($t1)
+#1303<_____________===
+	lw $t2, -1096($fp)
+	li $t2, 4737
+	sw $t2, -1096($fp)
+#1304<_____________===
+	lw $t3, -1100($fp)
+	li $t3, 63307
+	sw $t3, -1100($fp)
+#1305<_____________===
+	lw $t4, -1104($fp)
+	li $t4, 22418
+	sw $t4, -1104($fp)
+#1306<_____________===
+	lw $t5, -1108($fp)
+	li $t5, 45136
+	sw $t5, -1108($fp)
+#1307<_____________===
+	lw $t6, -1112($fp)
+	li $t6, 27301
+	sw $t6, -1112($fp)
+#1308<_____________===
+	lw $t0, -1116($fp)
+	li $t0, 39719
+	sw $t0, -1116($fp)
+#1309<_____________===
+	lw $t1, -1120($fp)
+	li $t1, 54500
+	sw $t1, -1120($fp)
+#1310<_____________===
+	lw $t2, -1124($fp)
+	li $t2, 12194
+	sw $t2, -1124($fp)
+#1311<_____________===
+	lw $t3, -1128($fp)
+	li $t3, 59456
+	sw $t3, -1128($fp)
+#1312<_____________===
+	li $t5, 0
 	li $t6, 4
 	mul $t4, $t5, $t6
-	sw $t4, -4520($fp)
-	lw $t1, -288($fp)
-	lw $t2, -4520($fp)
+	sw $t4, -1360($fp)
+#1313<_____________===
+	lw $t1, -1144($fp)
+	lw $t2, -1360($fp)
 	add $t0, $t1, $t2
-	sw $t0, -4524($fp)
-	lw $t3, -4524($fp)
-	lw $s3, 0($t3)
-	bne $s3, 0, label628
-	j label627
-label628:
-	li $t5, 50764
-	li $t6, 35865
-	sub $t4, $t5, $t6
-	sw $t4, -4528($fp)
-	lw $t1, -4528($fp)
-	lw $t2, -320($fp)
-	sub $t0, $t1, $t2
-	sw $t0, -4532($fp)
-	lw $t4, -292($fp)
-	lw $t5, -4($fp)
-	sub $t3, $t4, $t5
-	sw $t3, -4536($fp)
-	lw $t6, -4532($fp)
-	lw $t0, -4536($fp)
-	blt $t6, $t0, label626
-	j label627
-label626:
-	lw $t1, -4508($fp)
+	sw $t0, -1364($fp)
+#1314<_____________===
+	lw $t3, -1364($fp)
+	li $s2, 48283
+	sw $t3, -1364($fp)
+	sw $s2, 0($t3)
+#1315<_____________===
+	li $t5, 1
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1368($fp)
+#1316<_____________===
+	lw $t1, -1144($fp)
+	lw $t2, -1368($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1372($fp)
+#1317<_____________===
+	lw $t3, -1372($fp)
+	li $s2, 27995
+	sw $t3, -1372($fp)
+	sw $s2, 0($t3)
+#1318<_____________===
+	li $t5, 2
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1376($fp)
+#1319<_____________===
+	lw $t1, -1144($fp)
+	lw $t2, -1376($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1380($fp)
+#1320<_____________===
+	lw $t3, -1380($fp)
+	li $s2, 56572
+	sw $t3, -1380($fp)
+	sw $s2, 0($t3)
+#1321<_____________===
+	li $t5, 0
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1384($fp)
+#1322<_____________===
+	lw $t1, -1180($fp)
+	lw $t2, -1384($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1388($fp)
+#1323<_____________===
+	lw $t3, -1388($fp)
+	li $s2, 25171
+	sw $t3, -1388($fp)
+	sw $s2, 0($t3)
+#1324<_____________===
+	li $t5, 1
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1392($fp)
+#1325<_____________===
+	lw $t1, -1180($fp)
+	lw $t2, -1392($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1396($fp)
+#1326<_____________===
+	lw $t3, -1396($fp)
+	li $s2, 6139
+	sw $t3, -1396($fp)
+	sw $s2, 0($t3)
+#1327<_____________===
+	li $t5, 2
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1400($fp)
+#1328<_____________===
+	lw $t1, -1180($fp)
+	lw $t2, -1400($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1404($fp)
+#1329<_____________===
+	lw $t3, -1404($fp)
+	li $s2, 9615
+	sw $t3, -1404($fp)
+	sw $s2, 0($t3)
+#1330<_____________===
+	li $t5, 3
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1408($fp)
+#1331<_____________===
+	lw $t1, -1180($fp)
+	lw $t2, -1408($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1412($fp)
+#1332<_____________===
+	lw $t3, -1412($fp)
+	li $s2, 55946
+	sw $t3, -1412($fp)
+	sw $s2, 0($t3)
+#1333<_____________===
+	li $t5, 4
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1416($fp)
+#1334<_____________===
+	lw $t1, -1180($fp)
+	lw $t2, -1416($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1420($fp)
+#1335<_____________===
+	lw $t3, -1420($fp)
+	li $s2, 34913
+	sw $t3, -1420($fp)
+	sw $s2, 0($t3)
+#1336<_____________===
+	li $t5, 5
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1424($fp)
+#1337<_____________===
+	lw $t1, -1180($fp)
+	lw $t2, -1424($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1428($fp)
+#1338<_____________===
+	lw $t3, -1428($fp)
+	li $s2, 5060
+	sw $t3, -1428($fp)
+	sw $s2, 0($t3)
+#1339<_____________===
+	li $t5, 6
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1432($fp)
+#1340<_____________===
+	lw $t1, -1180($fp)
+	lw $t2, -1432($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1436($fp)
+#1341<_____________===
+	lw $t3, -1436($fp)
+	li $s2, 43914
+	sw $t3, -1436($fp)
+	sw $s2, 0($t3)
+#1342<_____________===
+	li $t5, 7
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1440($fp)
+#1343<_____________===
+	lw $t1, -1180($fp)
+	lw $t2, -1440($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1444($fp)
+#1344<_____________===
+	lw $t3, -1444($fp)
+	li $s2, 39788
+	sw $t3, -1444($fp)
+	sw $s2, 0($t3)
+#1345<_____________===
+	li $t5, 0
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1448($fp)
+#1346<_____________===
+	lw $t1, -1224($fp)
+	lw $t2, -1448($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1452($fp)
+#1347<_____________===
+	lw $t3, -1452($fp)
+	li $s2, 50816
+	sw $t3, -1452($fp)
+	sw $s2, 0($t3)
+#1348<_____________===
+	li $t5, 1
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1456($fp)
+#1349<_____________===
+	lw $t1, -1224($fp)
+	lw $t2, -1456($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1460($fp)
+#1350<_____________===
+	lw $t3, -1460($fp)
+	li $s2, 57540
+	sw $t3, -1460($fp)
+	sw $s2, 0($t3)
+#1351<_____________===
+	li $t5, 2
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1464($fp)
+#1352<_____________===
+	lw $t1, -1224($fp)
+	lw $t2, -1464($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1468($fp)
+#1353<_____________===
+	lw $t3, -1468($fp)
+	li $s2, 32617
+	sw $t3, -1468($fp)
+	sw $s2, 0($t3)
+#1354<_____________===
+	li $t5, 3
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1472($fp)
+#1355<_____________===
+	lw $t1, -1224($fp)
+	lw $t2, -1472($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1476($fp)
+#1356<_____________===
+	lw $t3, -1476($fp)
+	li $s2, 9389
+	sw $t3, -1476($fp)
+	sw $s2, 0($t3)
+#1357<_____________===
+	li $t5, 4
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1480($fp)
+#1358<_____________===
+	lw $t1, -1224($fp)
+	lw $t2, -1480($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1484($fp)
+#1359<_____________===
+	lw $t3, -1484($fp)
+	li $s2, 9440
+	sw $t3, -1484($fp)
+	sw $s2, 0($t3)
+#1360<_____________===
+	li $t5, 5
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1488($fp)
+#1361<_____________===
+	lw $t1, -1224($fp)
+	lw $t2, -1488($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1492($fp)
+#1362<_____________===
+	lw $t3, -1492($fp)
+	li $s2, 25431
+	sw $t3, -1492($fp)
+	sw $s2, 0($t3)
+#1363<_____________===
+	li $t5, 6
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1496($fp)
+#1364<_____________===
+	lw $t1, -1224($fp)
+	lw $t2, -1496($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1500($fp)
+#1365<_____________===
+	lw $t3, -1500($fp)
+	li $s2, 26419
+	sw $t3, -1500($fp)
+	sw $s2, 0($t3)
+#1366<_____________===
+	li $t5, 7
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1504($fp)
+#1367<_____________===
+	lw $t1, -1224($fp)
+	lw $t2, -1504($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1508($fp)
+#1368<_____________===
+	lw $t3, -1508($fp)
+	li $s2, 38629
+	sw $t3, -1508($fp)
+	sw $s2, 0($t3)
+#1369<_____________===
+	li $t5, 8
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1512($fp)
+#1370<_____________===
+	lw $t1, -1224($fp)
+	lw $t2, -1512($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1516($fp)
+#1371<_____________===
+	lw $t3, -1516($fp)
+	li $s2, 26292
+	sw $t3, -1516($fp)
+	sw $s2, 0($t3)
+#1372<_____________===
+	li $t5, 9
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -1520($fp)
+#1373<_____________===
+	lw $t1, -1224($fp)
+	lw $t2, -1520($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1524($fp)
+#1374<_____________===
+	lw $t3, -1524($fp)
+	li $s2, 29847
+	sw $t3, -1524($fp)
+	sw $s2, 0($t3)
+#1375<_____________===
+	lw $t4, -1228($fp)
+	li $t4, 3505
+	sw $t4, -1228($fp)
+#1376<_____________===
+	li $t6, 31029
+	li $t0, 25924
+	div $t6, $t0
+	mflo $t5
+	sw $t5, -1528($fp)
+#1377<_____________===
+	li $t1, 0
+	sw $t1, -1532($fp)
+#1378<_____________===
+	li $t3, 0
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1536($fp)
+#1379<_____________===
+	lw $t6, -36($fp)
+	lw $t0, -1536($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1540($fp)
+#1380<_____________===
+	lw $t1, -1540($fp)
+	lw $s3, 0($t1)
+	bne $s3, 0, label199
+#1381<_____________===
+	j label198
+#1382<_____________===
+label198:
+#1383<_____________===
+	lw $t2, -1532($fp)
+	li $t2, 1
+	sw $t2, -1532($fp)
+#1384<_____________===
+label199:
+#1385<_____________===
+	lw $t4, -1528($fp)
+	lw $t5, -1532($fp)
+	mul $t3, $t4, $t5
+	sw $t3, -1544($fp)
+#1386<_____________===
+	lw $t6, -1544($fp)
+	bne $t6, 0, label195
+#1387<_____________===
+	j label197
+#1388<_____________===
+label197:
+#1389<_____________===
+	li $t1, 65130
+	li $t2, 1577
+	div $t1, $t2
+	mflo $t0
+	sw $t0, -1548($fp)
+#1390<_____________===
+	lw $t3, -1548($fp)
+	bne $t3, 106, label195
+#1391<_____________===
+	j label196
+#1392<_____________===
+label195:
+#1393<_____________===
+#1394<_____________===
+#1395<_____________===
+	la $t4, -1568($fp)
+	sw $t4, -1572($fp)
+#1396<_____________===
+	lw $t5, -1552($fp)
+	li $t5, 59563
+	sw $t5, -1552($fp)
+#1397<_____________===
+	li $t0, 0
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -1576($fp)
+#1398<_____________===
+	lw $t3, -1572($fp)
+	lw $t4, -1576($fp)
+	add $t2, $t3, $t4
+	sw $t2, -1580($fp)
+#1399<_____________===
+	lw $t5, -1580($fp)
+	li $s2, 47877
+	sw $t5, -1580($fp)
+	sw $s2, 0($t5)
+#1400<_____________===
+	li $t0, 1
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -1584($fp)
+#1401<_____________===
+	lw $t3, -1572($fp)
+	lw $t4, -1584($fp)
+	add $t2, $t3, $t4
+	sw $t2, -1588($fp)
+#1402<_____________===
+	lw $t5, -1588($fp)
+	li $s2, 29573
+	sw $t5, -1588($fp)
+	sw $s2, 0($t5)
+#1403<_____________===
+	li $t0, 2
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -1592($fp)
+#1404<_____________===
+	lw $t3, -1572($fp)
+	lw $t4, -1592($fp)
+	add $t2, $t3, $t4
+	sw $t2, -1596($fp)
+#1405<_____________===
+	lw $t5, -1596($fp)
+	li $s2, 50599
+	sw $t5, -1596($fp)
+	sw $s2, 0($t5)
+#1406<_____________===
+	li $t0, 3
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -1600($fp)
+#1407<_____________===
+	lw $t3, -1572($fp)
+	lw $t4, -1600($fp)
+	add $t2, $t3, $t4
+	sw $t2, -1604($fp)
+#1408<_____________===
+	lw $t5, -1604($fp)
+	li $s2, 7513
+	sw $t5, -1604($fp)
+	sw $s2, 0($t5)
+#1409<_____________===
+#1410<_____________===
+	la $t6, -1636($fp)
+	sw $t6, -1640($fp)
+#1411<_____________===
+	li $t1, 0
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -1644($fp)
+#1412<_____________===
+	lw $t4, -1640($fp)
+	lw $t5, -1644($fp)
+	add $t3, $t4, $t5
+	sw $t3, -1648($fp)
+#1413<_____________===
+	lw $t6, -1648($fp)
+	li $s2, 35712
+	sw $t6, -1648($fp)
+	sw $s2, 0($t6)
+#1414<_____________===
 	li $t1, 1
-	sw $t1, -4508($fp)
-label627:
-	lw $t2, -4508($fp)
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -1652($fp)
+#1415<_____________===
+	lw $t4, -1640($fp)
+	lw $t5, -1652($fp)
+	add $t3, $t4, $t5
+	sw $t3, -1656($fp)
+#1416<_____________===
+	lw $t6, -1656($fp)
+	li $s2, 60214
+	sw $t6, -1656($fp)
+	sw $s2, 0($t6)
+#1417<_____________===
+	li $t1, 2
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -1660($fp)
+#1418<_____________===
+	lw $t4, -1640($fp)
+	lw $t5, -1660($fp)
+	add $t3, $t4, $t5
+	sw $t3, -1664($fp)
+#1419<_____________===
+	lw $t6, -1664($fp)
+	li $s2, 63459
+	sw $t6, -1664($fp)
+	sw $s2, 0($t6)
+#1420<_____________===
+	li $t1, 3
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -1668($fp)
+#1421<_____________===
+	lw $t4, -1640($fp)
+	lw $t5, -1668($fp)
+	add $t3, $t4, $t5
+	sw $t3, -1672($fp)
+#1422<_____________===
+	lw $t6, -1672($fp)
+	li $s2, 5089
+	sw $t6, -1672($fp)
+	sw $s2, 0($t6)
+#1423<_____________===
+	li $t1, 4
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -1676($fp)
+#1424<_____________===
+	lw $t4, -1640($fp)
+	lw $t5, -1676($fp)
+	add $t3, $t4, $t5
+	sw $t3, -1680($fp)
+#1425<_____________===
+	lw $t6, -1680($fp)
+	li $s2, 65274
+	sw $t6, -1680($fp)
+	sw $s2, 0($t6)
+#1426<_____________===
+	li $t1, 5
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -1684($fp)
+#1427<_____________===
+	lw $t4, -1640($fp)
+	lw $t5, -1684($fp)
+	add $t3, $t4, $t5
+	sw $t3, -1688($fp)
+#1428<_____________===
+	lw $t6, -1688($fp)
+	li $s2, 41837
+	sw $t6, -1688($fp)
+	sw $s2, 0($t6)
+#1429<_____________===
+	li $t1, 6
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -1692($fp)
+#1430<_____________===
+	lw $t4, -1640($fp)
+	lw $t5, -1692($fp)
+	add $t3, $t4, $t5
+	sw $t3, -1696($fp)
+#1431<_____________===
+	lw $t6, -1696($fp)
+	li $s2, 44878
+	sw $t6, -1696($fp)
+	sw $s2, 0($t6)
+#1432<_____________===
+	li $t1, 7
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -1700($fp)
+#1433<_____________===
+	lw $t4, -1640($fp)
+	lw $t5, -1700($fp)
+	add $t3, $t4, $t5
+	sw $t3, -1704($fp)
+#1434<_____________===
+	lw $t6, -1704($fp)
+	li $s2, 50555
+	sw $t6, -1704($fp)
+	sw $s2, 0($t6)
+#1435<_____________===
+	lw $a0, -156($fp)
+#1436<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t0, $v0
+	sw $t0, -1708($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1437<_____________===
+	li $t1, 0
+	sw $t1, -1712($fp)
+#1438<_____________===
+	lw $t2, -308($fp)
+	bne $t2, 0, label204
+#1439<_____________===
+	j label203
+#1440<_____________===
+label203:
+#1441<_____________===
+	lw $t3, -1712($fp)
+	li $t3, 1
+	sw $t3, -1712($fp)
+#1442<_____________===
+label204:
+#1443<_____________===
+	lw $t5, -1712($fp)
+	li $t6, 33841
+	mul $t4, $t5, $t6
+	sw $t4, -1716($fp)
+#1444<_____________===
+	lw $t0, -1708($fp)
+	lw $t1, -1716($fp)
+	ble $t0, $t1, label202
+#1445<_____________===
+	j label201
+#1446<_____________===
+label202:
+#1447<_____________===
+	li $t2, 11959
+	li $t3, 0
+	bne $t2, $t3, label200
+#1448<_____________===
+	j label201
+#1449<_____________===
+label200:
+#1450<_____________===
+label201:
+#1451<_____________===
+	li $t4, 0
+	sw $t4, -1720($fp)
+#1452<_____________===
+	li $t5, 0
+	sw $t5, -1724($fp)
+#1453<_____________===
+	li $t6, 59944
+	li $t0, 0
+	bne $t6, $t0, label208
+#1454<_____________===
+	j label207
+#1455<_____________===
+label207:
+#1456<_____________===
+	lw $t1, -1724($fp)
+	li $t1, 1
+	sw $t1, -1724($fp)
+#1457<_____________===
+label208:
+#1458<_____________===
+	lw $t2, -1724($fp)
+	lw $t3, -1108($fp)
+	bgt $t2, $t3, label205
+#1459<_____________===
+	j label206
+#1460<_____________===
+label205:
+#1461<_____________===
+	lw $t4, -1720($fp)
+	li $t4, 1
+	sw $t4, -1720($fp)
+#1462<_____________===
+label206:
+#1463<_____________===
+	lw $a0, -1720($fp)
+#1464<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_CYq6iXzc
+	move $t5, $v0
+	sw $t5, -1728($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1465<_____________===
+	lw $t6, -200($fp)
+	li $t6, 43281
+	sw $t6, -200($fp)
+#1466<_____________===
+	li $t0, 43281
+	sw $t0, -1732($fp)
+#1467<_____________===
+	lw $t1, -1228($fp)
+	li $t1, 37390
+	sw $t1, -1228($fp)
+#1468<_____________===
+	li $t2, 37390
+	sw $t2, -1736($fp)
+#1469<_____________===
+	li $t3, 0
+	sw $t3, -1740($fp)
+#1470<_____________===
+	li $t5, 20827
+	lw $t6, -208($fp)
+	mul $t4, $t5, $t6
+	sw $t4, -1744($fp)
+#1471<_____________===
+	lw $t0, -1744($fp)
+	bne $t0, 0, label211
+#1472<_____________===
+	j label210
+#1473<_____________===
+label211:
+#1474<_____________===
+	lw $t1, -8($fp)
+	bne $t1, 0, label209
+#1475<_____________===
+	j label210
+#1476<_____________===
+label209:
+#1477<_____________===
+	lw $t2, -1740($fp)
+	li $t2, 1
+	sw $t2, -1740($fp)
+#1478<_____________===
+label210:
+#1479<_____________===
+	lw $t4, -992($fp)
+	li $t5, 16375
+	sub $t3, $t4, $t5
+	sw $t3, -1748($fp)
+#1480<_____________===
+	lw $a0, -1748($fp)
+#1481<_____________===
+	lw $a1, -1740($fp)
+#1482<_____________===
+	lw $a2, -1736($fp)
+#1483<_____________===
+	lw $a3, -1732($fp)
+#1484<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_FxEuB
+	move $t6, $v0
+	sw $t6, -1752($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1485<_____________===
+	li $t0, 0
+	sw $t0, -1756($fp)
+#1486<_____________===
+	lw $t1, -88($fp)
+	beq $t1, 63683, label212
+#1487<_____________===
+	j label213
+#1488<_____________===
+label212:
+#1489<_____________===
+	lw $t2, -1756($fp)
+	li $t2, 1
+	sw $t2, -1756($fp)
+#1490<_____________===
+label213:
+#1491<_____________===
+	lw $t4, -1756($fp)
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -1760($fp)
+#1492<_____________===
+	lw $t0, -1640($fp)
+	lw $t1, -1760($fp)
+	add $t6, $t0, $t1
+	sw $t6, -1764($fp)
+#1493<_____________===
+	lw $t3, -1752($fp)
+	lw $t4, -1764($fp)
+	lw $s4, 0($t4)
+	mul $t2, $t3, $s4
+	sw $t2, -1768($fp)
+#1494<_____________===
+	li $t6, 0
+	lw $t0, -1768($fp)
+	sub $t5, $t6, $t0
+	sw $t5, -1772($fp)
+#1495<_____________===
+#1496<_____________===
+#1497<_____________===
+	lw $t1, -1776($fp)
+	li $t1, 50674
+	sw $t1, -1776($fp)
+#1498<_____________===
+	lw $t2, -1780($fp)
+	li $t2, 19880
+	sw $t2, -1780($fp)
+#1499<_____________===
+	li $t3, 0
+	sw $t3, -1784($fp)
+#1500<_____________===
+	li $t4, 0
+	sw $t4, -1788($fp)
+#1501<_____________===
+	li $t5, 0
+	sw $t5, -1792($fp)
+#1502<_____________===
+	li $t6, 0
+	sw $t6, -1796($fp)
+#1503<_____________===
+	li $t0, 29176
+	li $t1, 12757
+	ble $t0, $t1, label223
+#1504<_____________===
+	j label224
+#1505<_____________===
+label223:
+#1506<_____________===
+	lw $t2, -1796($fp)
+	li $t2, 1
+	sw $t2, -1796($fp)
+#1507<_____________===
+label224:
+#1508<_____________===
+	lw $t3, -1796($fp)
+	bge $t3, 45803, label221
+#1509<_____________===
+	j label222
+#1510<_____________===
+label221:
+#1511<_____________===
+	lw $t4, -1792($fp)
+	li $t4, 1
+	sw $t4, -1792($fp)
+#1512<_____________===
+label222:
+#1513<_____________===
+	li $t6, 39806
+	lw $t0, -192($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1800($fp)
+#1514<_____________===
+	lw $t1, -1792($fp)
+	lw $t2, -1800($fp)
+	bne $t1, $t2, label219
+#1515<_____________===
+	j label220
+#1516<_____________===
+label219:
+#1517<_____________===
+	lw $t3, -1788($fp)
+	li $t3, 1
+	sw $t3, -1788($fp)
+#1518<_____________===
+label220:
+#1519<_____________===
+	li $t4, 0
+	sw $t4, -1804($fp)
+#1520<_____________===
+	lw $t5, -1776($fp)
+	bne $t5, 0, label226
+#1521<_____________===
+	j label225
+#1522<_____________===
+label225:
+#1523<_____________===
+	lw $t6, -1804($fp)
+	li $t6, 1
+	sw $t6, -1804($fp)
+#1524<_____________===
+label226:
+#1525<_____________===
+	lw $t0, -1788($fp)
+	lw $t1, -1804($fp)
+	bne $t0, $t1, label217
+#1526<_____________===
+	j label218
+#1527<_____________===
+label217:
+#1528<_____________===
+	lw $t2, -1784($fp)
+	li $t2, 1
+	sw $t2, -1784($fp)
+#1529<_____________===
+label218:
+#1530<_____________===
+	lw $t3, -1784($fp)
+	lw $t4, -100($fp)
+	bgt $t3, $t4, label216
+#1531<_____________===
+	j label215
+#1532<_____________===
+label216:
+#1533<_____________===
+	li $t6, 2140
+	li $t0, 45909
+	sub $t5, $t6, $t0
+	sw $t5, -1808($fp)
+#1534<_____________===
+	li $t2, 0
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -1812($fp)
+#1535<_____________===
+	lw $t5, -288($fp)
+	lw $t6, -1812($fp)
+	add $t4, $t5, $t6
+	sw $t4, -1816($fp)
+#1536<_____________===
+	lw $t1, -1816($fp)
+	lw $t2, -96($fp)
+	lw $s3, 0($t1)
+	sub $t0, $s3, $t2
+	sw $t0, -1820($fp)
+#1537<_____________===
+	lw $t4, -1780($fp)
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -1824($fp)
+#1538<_____________===
+	lw $t0, -288($fp)
+	lw $t1, -1824($fp)
+	add $t6, $t0, $t1
+	sw $t6, -1828($fp)
+#1539<_____________===
+	lw $t3, -1828($fp)
+	li $t4, 39936
+	lw $s3, 0($t3)
+	add $t2, $s3, $t4
+	sw $t2, -1832($fp)
+#1540<_____________===
+	li $t5, 0
+	sw $t5, -1836($fp)
+#1541<_____________===
+	lw $t6, -1228($fp)
+	bne $t6, 0, label228
+#1542<_____________===
+	j label227
+#1543<_____________===
+label227:
+#1544<_____________===
+	lw $t0, -1836($fp)
+	li $t0, 1
+	sw $t0, -1836($fp)
+#1545<_____________===
+label228:
+#1546<_____________===
+	li $t2, 0
+	lw $t3, -1836($fp)
+	sub $t1, $t2, $t3
+	sw $t1, -1840($fp)
+#1547<_____________===
+	lw $a0, -1840($fp)
+#1548<_____________===
+	lw $a1, -1832($fp)
+#1549<_____________===
+	lw $a2, -1820($fp)
+#1550<_____________===
+	lw $a3, -1808($fp)
+#1551<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t4, $v0
+	sw $t4, -1844($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1552<_____________===
+	li $t6, 0
+	lw $t0, -1844($fp)
+	sub $t5, $t6, $t0
+	sw $t5, -1848($fp)
+#1553<_____________===
+	lw $t1, -1848($fp)
+	bne $t1, 0, label214
+#1554<_____________===
+	j label215
+#1555<_____________===
+label214:
+#1556<_____________===
+label215:
+#1557<_____________===
+	li $t2, 0
+	sw $t2, -1852($fp)
+#1558<_____________===
+	li $t4, 0
+	li $t5, 21742
+	sub $t3, $t4, $t5
+	sw $t3, -1856($fp)
+#1559<_____________===
+	lw $t6, -84($fp)
+	lw $t0, -1856($fp)
+	bgt $t6, $t0, label231
+#1560<_____________===
+	j label232
+#1561<_____________===
+label231:
+#1562<_____________===
+	lw $t1, -1852($fp)
+	li $t1, 1
+	sw $t1, -1852($fp)
+#1563<_____________===
+label232:
+#1564<_____________===
+	lw $t2, -1852($fp)
+	lw $t3, -100($fp)
+	bne $t2, $t3, label229
+#1565<_____________===
+	j label230
+#1566<_____________===
+label229:
+#1567<_____________===
+label230:
+#1568<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -1552($fp)
+	move $a0, $t4
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1569<_____________===
+	li $t6, 0
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -1860($fp)
+#1570<_____________===
+	lw $t2, -1572($fp)
+	lw $t3, -1860($fp)
+	add $t1, $t2, $t3
+	sw $t1, -1864($fp)
+#1571<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -1864($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1572<_____________===
+	li $t6, 1
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -1868($fp)
+#1573<_____________===
+	lw $t2, -1572($fp)
+	lw $t3, -1868($fp)
+	add $t1, $t2, $t3
+	sw $t1, -1872($fp)
+#1574<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -1872($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1575<_____________===
+	li $t6, 2
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -1876($fp)
+#1576<_____________===
+	lw $t2, -1572($fp)
+	lw $t3, -1876($fp)
+	add $t1, $t2, $t3
+	sw $t1, -1880($fp)
+#1577<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -1880($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1578<_____________===
+	li $t6, 3
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -1884($fp)
+#1579<_____________===
+	lw $t2, -1572($fp)
+	lw $t3, -1884($fp)
+	add $t1, $t2, $t3
+	sw $t1, -1888($fp)
+#1580<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -1888($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1581<_____________===
+	li $t5, 0
+	sw $t5, -1892($fp)
+#1582<_____________===
+	li $t6, 0
+	sw $t6, -1896($fp)
+#1583<_____________===
+	li $t0, 0
+	sw $t0, -1900($fp)
+#1584<_____________===
+	lw $t1, -1004($fp)
+	beq $t1, 33291, label237
+#1585<_____________===
+	j label238
+#1586<_____________===
+label237:
+#1587<_____________===
+	lw $t2, -1900($fp)
+	li $t2, 1
+	sw $t2, -1900($fp)
+#1588<_____________===
+label238:
+#1589<_____________===
+	lw $t4, -1900($fp)
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -1904($fp)
+#1590<_____________===
+	lw $t0, -36($fp)
+	lw $t1, -1904($fp)
+	add $t6, $t0, $t1
+	sw $t6, -1908($fp)
+#1591<_____________===
+	lw $t3, -1908($fp)
+	li $t4, 25000
+	lw $s3, 0($t3)
+	div $s3, $t4
+	mflo $t2
+	sw $t2, -1912($fp)
+#1592<_____________===
+	li $t6, 3
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -1916($fp)
+#1593<_____________===
+	lw $t2, -140($fp)
+	lw $t3, -1916($fp)
+	add $t1, $t2, $t3
+	sw $t1, -1920($fp)
+#1594<_____________===
+	lw $t4, -1912($fp)
+	lw $t5, -1920($fp)
+	lw $s4, 0($t5)
+	beq $t4, $s4, label235
+#1595<_____________===
+	j label236
+#1596<_____________===
+label235:
+#1597<_____________===
+	lw $t6, -1896($fp)
+	li $t6, 1
+	sw $t6, -1896($fp)
+#1598<_____________===
+label236:
+#1599<_____________===
+	lw $t1, -204($fp)
+	lw $t2, -1228($fp)
+	add $t0, $t1, $t2
+	sw $t0, -1924($fp)
+#1600<_____________===
+	lw $t3, -1896($fp)
+	lw $t4, -1924($fp)
+	ble $t3, $t4, label233
+#1601<_____________===
+	j label234
+#1602<_____________===
+label233:
+#1603<_____________===
+	lw $t5, -1892($fp)
+	li $t5, 1
+	sw $t5, -1892($fp)
+#1604<_____________===
+label234:
+#1605<_____________===
+	lw $t6, -1892($fp)
+	move $v0, $t6
+	addi $sp, $sp, 800
+	addi $sp, $sp, 4
+	lw $fp, 0($sp)
+	addi $sp, $sp, 4
+	jr $ra
+#1606<_____________===
+	li $t0, 19678
+	li $t1, 0
+	bne $t0, $t1, label239
+#1607<_____________===
+	j label240
+#1608<_____________===
+label239:
+#1609<_____________===
+label241:
+#1610<_____________===
+	li $t3, 0
+	lw $t4, -1020($fp)
+	sub $t2, $t3, $t4
+	sw $t2, -1928($fp)
+#1611<_____________===
+	li $t6, 0
+	lw $t0, -1928($fp)
+	sub $t5, $t6, $t0
+	sw $t5, -1932($fp)
+#1612<_____________===
+	lw $t2, -192($fp)
+	li $t3, 27178
+	div $t2, $t3
+	mflo $t1
+	sw $t1, -1936($fp)
+#1613<_____________===
+	lw $t5, -1932($fp)
+	lw $t6, -1936($fp)
+	add $t4, $t5, $t6
+	sw $t4, -1940($fp)
+#1614<_____________===
+	lw $t0, -1940($fp)
+	bne $t0, 0, label242
+#1615<_____________===
+	j label243
+#1616<_____________===
+label242:
+#1617<_____________===
+	li $t1, 0
+	sw $t1, -1944($fp)
+#1618<_____________===
+	lw $t3, -1552($fp)
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -1948($fp)
+#1619<_____________===
+	lw $t6, -288($fp)
+	lw $t0, -1948($fp)
+	add $t5, $t6, $t0
+	sw $t5, -1952($fp)
+#1620<_____________===
+	lw $t1, -1952($fp)
+	lw $s3, 0($t1)
+	bne $s3, 0, label247
+#1621<_____________===
+	j label246
+#1622<_____________===
+label246:
+#1623<_____________===
+	lw $t2, -1944($fp)
+	li $t2, 1
+	sw $t2, -1944($fp)
+#1624<_____________===
+label247:
+#1625<_____________===
+	li $t4, 0
+	lw $t5, -1944($fp)
+	sub $t3, $t4, $t5
+	sw $t3, -1956($fp)
+#1626<_____________===
+	li $t6, 0
+	sw $t6, -1960($fp)
+#1627<_____________===
+	li $t1, 1
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -1964($fp)
+#1628<_____________===
+	lw $t4, -1572($fp)
+	lw $t5, -1964($fp)
+	add $t3, $t4, $t5
+	sw $t3, -1968($fp)
+#1629<_____________===
+	lw $t6, -1968($fp)
+	lw $s3, 0($t6)
+	bne $s3, 0, label249
+#1630<_____________===
+	j label248
+#1631<_____________===
+label248:
+#1632<_____________===
+	lw $t0, -1960($fp)
+	li $t0, 1
+	sw $t0, -1960($fp)
+#1633<_____________===
+label249:
+#1634<_____________===
+	lw $t2, -1956($fp)
+	lw $t3, -1960($fp)
+	sub $t1, $t2, $t3
+	sw $t1, -1972($fp)
+#1635<_____________===
+	li $t4, 0
+	sw $t4, -1976($fp)
+#1636<_____________===
+	li $t5, 3480
+	li $t6, 53434
+	ble $t5, $t6, label252
+#1637<_____________===
+	j label251
+#1638<_____________===
+label252:
+#1639<_____________===
+	lw $t0, -204($fp)
+	bne $t0, 0, label250
+#1640<_____________===
+	j label251
+#1641<_____________===
+label250:
+#1642<_____________===
+	lw $t1, -1976($fp)
+	li $t1, 1
+	sw $t1, -1976($fp)
+#1643<_____________===
+label251:
+#1644<_____________===
+	lw $a0, -1976($fp)
+#1645<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t2, $v0
+	sw $t2, -1980($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1646<_____________===
+	lw $t3, -1972($fp)
+	lw $t4, -1980($fp)
+	ble $t3, $t4, label244
+#1647<_____________===
+	j label245
+#1648<_____________===
+label244:
+#1649<_____________===
+label245:
+#1650<_____________===
+	j label241
+#1651<_____________===
+label243:
+#1652<_____________===
+	j label253
+#1653<_____________===
+label240:
+#1654<_____________===
+label253:
+#1655<_____________===
+	j label254
+#1656<_____________===
+label196:
+#1657<_____________===
+	li $t5, 0
+	sw $t5, -1984($fp)
+#1658<_____________===
+	li $t6, 4436
+	li $t0, 37321
+	beq $t6, $t0, label257
+#1659<_____________===
+	j label258
+#1660<_____________===
+label257:
+#1661<_____________===
+	lw $t1, -1984($fp)
+	li $t1, 1
+	sw $t1, -1984($fp)
+#1662<_____________===
+label258:
+#1663<_____________===
+	lw $t2, -308($fp)
+	lw $t3, -1984($fp)
+	move $t2, $t3
+	sw $t2, -308($fp)
+#1664<_____________===
+	lw $t5, -1984($fp)
+	move $t4, $t5
+	sw $t4, -1988($fp)
+#1665<_____________===
+	lw $t0, -1988($fp)
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -1992($fp)
+#1666<_____________===
+	lw $t3, -1180($fp)
+	lw $t4, -1992($fp)
+	add $t2, $t3, $t4
+	sw $t2, -1996($fp)
+#1667<_____________===
+	lw $t5, -1996($fp)
+	lw $s3, 0($t5)
+	bne $s3, 0, label255
+#1668<_____________===
+	j label256
+#1669<_____________===
+label255:
+#1670<_____________===
+label259:
+#1671<_____________===
+	li $t6, 0
+	sw $t6, -2000($fp)
+#1672<_____________===
+	lw $t0, -300($fp)
+	ble $t0, 65393, label262
+#1673<_____________===
+	j label263
+#1674<_____________===
+label262:
+#1675<_____________===
+	lw $t1, -2000($fp)
+	li $t1, 1
+	sw $t1, -2000($fp)
+#1676<_____________===
+label263:
+#1677<_____________===
+	lw $a0, -2000($fp)
+#1678<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_CYq6iXzc
+	move $t2, $v0
+	sw $t2, -2004($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1679<_____________===
+	li $t3, 0
+	sw $t3, -2008($fp)
+#1680<_____________===
+	lw $t4, -1004($fp)
+	bne $t4, 0, label265
+#1681<_____________===
+	j label264
+#1682<_____________===
+label264:
+#1683<_____________===
+	lw $t5, -2008($fp)
+	li $t5, 1
+	sw $t5, -2008($fp)
+#1684<_____________===
+label265:
+#1685<_____________===
+	lw $t0, -2008($fp)
+	lw $t1, -1100($fp)
+	mul $t6, $t0, $t1
+	sw $t6, -2012($fp)
+#1686<_____________===
+	lw $t2, -208($fp)
+	lw $t3, -1012($fp)
+	move $t2, $t3
+	sw $t2, -208($fp)
+#1687<_____________===
+	lw $t5, -1012($fp)
+	move $t4, $t5
+	sw $t4, -2016($fp)
+#1688<_____________===
+	lw $t6, -1104($fp)
+	lw $t0, -204($fp)
+	move $t6, $t0
+	sw $t6, -1104($fp)
+#1689<_____________===
+	lw $t2, -204($fp)
+	move $t1, $t2
+	sw $t1, -2020($fp)
+#1690<_____________===
+	li $t3, 0
+	sw $t3, -2024($fp)
+#1691<_____________===
+	li $t4, 15067
+	li $t5, 0
+	bne $t4, $t5, label267
+#1692<_____________===
+	j label266
+#1693<_____________===
+label266:
+#1694<_____________===
+	lw $t6, -2024($fp)
+	li $t6, 1
+	sw $t6, -2024($fp)
+#1695<_____________===
+label267:
+#1696<_____________===
+	lw $a0, -2024($fp)
+#1697<_____________===
+	lw $a1, -2020($fp)
+#1698<_____________===
+	li $a2, 64380
+#1699<_____________===
+	lw $a3, -2016($fp)
+#1700<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t0, $v0
+	sw $t0, -2028($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1701<_____________===
+	lw $t2, -2028($fp)
+	lw $t3, -988($fp)
+	sub $t1, $t2, $t3
+	sw $t1, -2032($fp)
+#1702<_____________===
+	lw $t5, -148($fp)
+	lw $t6, -992($fp)
+	div $t5, $t6
+	mflo $t4
+	sw $t4, -2036($fp)
+#1703<_____________===
+	lw $t1, -2036($fp)
+	lw $t2, -88($fp)
+	div $t1, $t2
+	mflo $t0
+	sw $t0, -2040($fp)
+#1704<_____________===
+	lw $a0, -2040($fp)
+#1705<_____________===
+	lw $a1, -2032($fp)
+#1706<_____________===
+	lw $a2, -2012($fp)
+#1707<_____________===
+	lw $a3, -2004($fp)
+#1708<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_FxEuB
+	move $t3, $v0
+	sw $t3, -2044($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1709<_____________===
+	li $t5, 0
+	li $t6, 37248
+	sub $t4, $t5, $t6
+	sw $t4, -2048($fp)
+#1710<_____________===
+	lw $t1, -2044($fp)
+	lw $t2, -2048($fp)
+	mul $t0, $t1, $t2
+	sw $t0, -2052($fp)
+#1711<_____________===
+	lw $t3, -2052($fp)
+	bne $t3, 0, label260
+#1712<_____________===
+	j label261
+#1713<_____________===
+label260:
+#1714<_____________===
+	li $t5, 0
+	lw $t6, -1024($fp)
+	sub $t4, $t5, $t6
+	sw $t4, -2056($fp)
+#1715<_____________===
+	li $t1, 19671
+	lw $t2, -2056($fp)
+	add $t0, $t1, $t2
+	sw $t0, -2060($fp)
+#1716<_____________===
+	lw $t3, -2060($fp)
+	bne $t3, 0, label268
+#1717<_____________===
+	j label269
+#1718<_____________===
+label268:
+#1719<_____________===
+	li $t5, 0
+	lw $t6, -80($fp)
+	sub $t4, $t5, $t6
+	sw $t4, -2064($fp)
+#1720<_____________===
+	li $t1, 0
+	lw $t2, -2064($fp)
+	sub $t0, $t1, $t2
+	sw $t0, -2068($fp)
+#1721<_____________===
+	lw $t3, -2068($fp)
+	bne $t3, 0, label270
+#1722<_____________===
+	j label271
+#1723<_____________===
+label270:
+#1724<_____________===
+#1725<_____________===
+#1726<_____________===
+	lw $t4, -2072($fp)
+	li $t4, 31442
+	sw $t4, -2072($fp)
+#1727<_____________===
+	lw $t5, -2076($fp)
+	li $t5, 35395
+	sw $t5, -2076($fp)
+#1728<_____________===
+	li $t6, 0
+	sw $t6, -2080($fp)
+#1729<_____________===
+	lw $t1, -156($fp)
+	li $t2, 4810
+	mul $t0, $t1, $t2
+	sw $t0, -2084($fp)
+#1730<_____________===
+	lw $t3, -2084($fp)
+	bne $t3, 0, label274
+#1731<_____________===
+	j label273
+#1732<_____________===
+label274:
+#1733<_____________===
+	lw $t4, -104($fp)
+	bne $t4, 0, label272
+#1734<_____________===
+	j label273
+#1735<_____________===
+label272:
+#1736<_____________===
+	lw $t5, -2080($fp)
+	li $t5, 1
+	sw $t5, -2080($fp)
+#1737<_____________===
+label273:
+#1738<_____________===
+	li $t6, 0
+	sw $t6, -2088($fp)
+#1739<_____________===
+	li $t1, 0
+	lw $t2, -152($fp)
+	sub $t0, $t1, $t2
+	sw $t0, -2092($fp)
+#1740<_____________===
+	lw $t3, -2092($fp)
+	bne $t3, 0, label276
+#1741<_____________===
+	j label275
+#1742<_____________===
+label275:
+#1743<_____________===
+	lw $t4, -2088($fp)
+	li $t4, 1
+	sw $t4, -2088($fp)
+#1744<_____________===
+label276:
+#1745<_____________===
+	li $t5, 0
+	sw $t5, -2096($fp)
+#1746<_____________===
+	lw $t6, -316($fp)
+	bne $t6, 0, label277
+#1747<_____________===
+	j label280
+#1748<_____________===
+label280:
+#1749<_____________===
+	lw $t0, -2072($fp)
+	bne $t0, 0, label277
+#1750<_____________===
+	j label279
+#1751<_____________===
+label279:
+#1752<_____________===
+	li $t1, 51322
+	li $t2, 0
+	bne $t1, $t2, label277
+#1753<_____________===
+	j label278
+#1754<_____________===
+label277:
+#1755<_____________===
+	lw $t3, -2096($fp)
+	li $t3, 1
+	sw $t3, -2096($fp)
+#1756<_____________===
+label278:
+#1757<_____________===
+	li $t4, 0
+	sw $t4, -2100($fp)
+#1758<_____________===
+	li $t5, 64571
+	li $t6, 0
+	bne $t5, $t6, label284
+#1759<_____________===
+	j label282
+#1760<_____________===
+label284:
+#1761<_____________===
+	lw $t0, -204($fp)
+	bne $t0, 0, label283
+#1762<_____________===
+	j label282
+#1763<_____________===
+label283:
+#1764<_____________===
+	li $t1, 17567
+	li $t2, 0
+	bne $t1, $t2, label281
+#1765<_____________===
+	j label282
+#1766<_____________===
+label281:
+#1767<_____________===
+	lw $t3, -2100($fp)
+	li $t3, 1
+	sw $t3, -2100($fp)
+#1768<_____________===
+label282:
+#1769<_____________===
+	lw $t5, -2076($fp)
+	lw $t6, -1108($fp)
+	add $t4, $t5, $t6
+	sw $t4, -2104($fp)
+#1770<_____________===
+	lw $t1, -2104($fp)
+	li $t2, 31589
+	sub $t0, $t1, $t2
+	sw $t0, -2108($fp)
+#1771<_____________===
+	li $t4, 38842
+	lw $t5, -1108($fp)
+	add $t3, $t4, $t5
+	sw $t3, -2112($fp)
+#1772<_____________===
+	lw $t0, -2112($fp)
+	lw $t1, -312($fp)
+	sub $t6, $t0, $t1
+	sw $t6, -2116($fp)
+#1773<_____________===
+	li $t3, 19707
+	li $t4, 11962
+	div $t3, $t4
+	mflo $t2
+	sw $t2, -2120($fp)
+#1774<_____________===
+	lw $t6, -2120($fp)
+	lw $t0, -1012($fp)
+	sub $t5, $t6, $t0
+	sw $t5, -2124($fp)
+#1775<_____________===
+	lw $a0, -2124($fp)
+#1776<_____________===
+	lw $a1, -2116($fp)
+#1777<_____________===
+	lw $a2, -2108($fp)
+#1778<_____________===
+	lw $a3, -2100($fp)
+#1779<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t1, $v0
+	sw $t1, -2128($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1780<_____________===
+	lw $t3, -2128($fp)
+	li $t4, 12707
+	div $t3, $t4
+	mflo $t2
+	sw $t2, -2132($fp)
+#1781<_____________===
+	lw $a0, -2132($fp)
+#1782<_____________===
+	lw $a1, -2096($fp)
+#1783<_____________===
+	lw $a2, -2088($fp)
+#1784<_____________===
+	lw $a3, -2080($fp)
+#1785<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_FxEuB
+	move $t5, $v0
+	sw $t5, -2136($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1786<_____________===
+	li $t0, 23425
+	li $t1, 51899
+	div $t0, $t1
+	mflo $t6
+	sw $t6, -2140($fp)
+#1787<_____________===
+	lw $t3, -2140($fp)
+	lw $t4, -184($fp)
+	div $t3, $t4
+	mflo $t2
+	sw $t2, -2144($fp)
+#1788<_____________===
+	j label285
+#1789<_____________===
+label271:
+#1790<_____________===
+	li $t5, 0
+	sw $t5, -2148($fp)
+#1791<_____________===
+	li $t0, 34449
+	lw $t1, -1124($fp)
+	div $t0, $t1
+	mflo $t6
+	sw $t6, -2152($fp)
+#1792<_____________===
+	li $t3, 56716
+	li $t4, 11363
+	mul $t2, $t3, $t4
+	sw $t2, -2156($fp)
+#1793<_____________===
+	lw $t5, -2152($fp)
+	lw $t6, -2156($fp)
+	bge $t5, $t6, label286
+#1794<_____________===
+	j label287
+#1795<_____________===
+label286:
+#1796<_____________===
+	lw $t0, -2148($fp)
+	li $t0, 1
+	sw $t0, -2148($fp)
+#1797<_____________===
+label287:
+#1798<_____________===
+	lw $t1, -1120($fp)
+	lw $t2, -2148($fp)
+	move $t1, $t2
+	sw $t1, -1120($fp)
+#1799<_____________===
+label285:
+#1800<_____________===
+	j label288
+#1801<_____________===
+label269:
+#1802<_____________===
+label289:
+#1803<_____________===
+	li $t3, 0
+	sw $t3, -2160($fp)
+#1804<_____________===
+	li $t4, 0
+	sw $t4, -2164($fp)
+#1805<_____________===
+	lw $t6, -988($fp)
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2168($fp)
+#1806<_____________===
+	lw $t2, -1092($fp)
+	lw $t3, -2168($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2172($fp)
+#1807<_____________===
+	lw $t4, -2172($fp)
+	lw $s3, 0($t4)
+	bne $s3, 0, label295
+#1808<_____________===
+	j label294
+#1809<_____________===
+label294:
+#1810<_____________===
+	lw $t5, -2164($fp)
+	li $t5, 1
+	sw $t5, -2164($fp)
+#1811<_____________===
+label295:
+#1812<_____________===
+	li $t0, 63705
+	li $t1, 60183
+	sub $t6, $t0, $t1
+	sw $t6, -2176($fp)
+#1813<_____________===
+	lw $t2, -2164($fp)
+	lw $t3, -2176($fp)
+	bne $t2, $t3, label292
+#1814<_____________===
+	j label293
+#1815<_____________===
+label292:
+#1816<_____________===
+	lw $t4, -2160($fp)
+	li $t4, 1
+	sw $t4, -2160($fp)
+#1817<_____________===
+label293:
+#1818<_____________===
+	li $t5, 0
+	sw $t5, -2180($fp)
+#1819<_____________===
+	li $t6, 31041
+	li $t0, 25347
+	bgt $t6, $t0, label298
+#1820<_____________===
+	j label297
+#1821<_____________===
+label298:
+#1822<_____________===
+	lw $t1, -1008($fp)
+	bne $t1, 0, label296
+#1823<_____________===
+	j label297
+#1824<_____________===
+label296:
+#1825<_____________===
+	lw $t2, -2180($fp)
+	li $t2, 1
+	sw $t2, -2180($fp)
+#1826<_____________===
+label297:
+#1827<_____________===
+	lw $a0, -2180($fp)
+#1828<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_CYq6iXzc
+	move $t3, $v0
+	sw $t3, -2184($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1829<_____________===
+	lw $t5, -2184($fp)
+	lw $t6, -84($fp)
+	div $t5, $t6
+	mflo $t4
+	sw $t4, -2188($fp)
+#1830<_____________===
+	lw $t0, -2160($fp)
+	lw $t1, -2188($fp)
+	beq $t0, $t1, label290
+#1831<_____________===
+	j label291
+#1832<_____________===
+label290:
+#1833<_____________===
+	li $t3, 3204
+	li $t4, 50458
+	mul $t2, $t3, $t4
+	sw $t2, -2192($fp)
+#1834<_____________===
+	li $t6, 0
+	lw $t0, -2192($fp)
+	sub $t5, $t6, $t0
+	sw $t5, -2196($fp)
+#1835<_____________===
+	lw $t2, -2196($fp)
+	lw $t3, -92($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2200($fp)
+#1836<_____________===
+	li $t4, 0
+	sw $t4, -2204($fp)
+#1837<_____________===
+	li $t5, 28827
+	li $t6, 56638
+	beq $t5, $t6, label299
+#1838<_____________===
+	j label301
+#1839<_____________===
+label301:
+#1840<_____________===
+	li $t0, 54894
+	li $t1, 0
+	bne $t0, $t1, label299
+#1841<_____________===
+	j label300
+#1842<_____________===
+label299:
+#1843<_____________===
+	lw $t2, -2204($fp)
+	li $t2, 1
+	sw $t2, -2204($fp)
+#1844<_____________===
+label300:
+#1845<_____________===
+	li $t3, 0
+	sw $t3, -2208($fp)
+#1846<_____________===
+	lw $t5, -1128($fp)
+	li $t6, 613
+	sub $t4, $t5, $t6
+	sw $t4, -2212($fp)
+#1847<_____________===
+	lw $t0, -2212($fp)
+	bne $t0, 0, label304
+#1848<_____________===
+	j label303
+#1849<_____________===
+label304:
+#1850<_____________===
+	li $t1, 56496
+	li $t2, 0
+	bne $t1, $t2, label302
+#1851<_____________===
+	j label303
+#1852<_____________===
+label302:
+#1853<_____________===
+	lw $t3, -2208($fp)
+	li $t3, 1
+	sw $t3, -2208($fp)
+#1854<_____________===
+label303:
+#1855<_____________===
+	li $t4, 0
+	sw $t4, -2216($fp)
+#1856<_____________===
+	li $t5, 53738
+	li $t6, 0
+	bne $t5, $t6, label308
+#1857<_____________===
+	j label307
+#1858<_____________===
+label308:
+#1859<_____________===
+	li $t0, 15680
+	li $t1, 0
+	bne $t0, $t1, label305
+#1860<_____________===
+	j label307
+#1861<_____________===
+label307:
+#1862<_____________===
+	li $t2, 28208
+	li $t3, 0
+	bne $t2, $t3, label305
+#1863<_____________===
+	j label306
+#1864<_____________===
+label305:
+#1865<_____________===
+	lw $t4, -2216($fp)
+	li $t4, 1
+	sw $t4, -2216($fp)
+#1866<_____________===
+label306:
+#1867<_____________===
+	li $t5, 0
+	sw $t5, -2220($fp)
+#1868<_____________===
+	lw $t0, -80($fp)
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -2224($fp)
+#1869<_____________===
+	lw $t3, -1052($fp)
+	lw $t4, -2224($fp)
+	add $t2, $t3, $t4
+	sw $t2, -2228($fp)
+#1870<_____________===
+	li $t5, 0
+	sw $t5, -2232($fp)
+#1871<_____________===
+	lw $t6, -72($fp)
+	bne $t6, 0, label311
+#1872<_____________===
+	j label313
+#1873<_____________===
+label313:
+#1874<_____________===
+	lw $t0, -1004($fp)
+	bne $t0, 0, label311
+#1875<_____________===
+	j label312
+#1876<_____________===
+label311:
+#1877<_____________===
+	lw $t1, -2232($fp)
+	li $t1, 1
+	sw $t1, -2232($fp)
+#1878<_____________===
+label312:
+#1879<_____________===
+	li $t2, 0
+	sw $t2, -2236($fp)
+#1880<_____________===
+	li $t3, 7874
+	li $t4, 47122
+	bgt $t3, $t4, label314
+#1881<_____________===
+	j label316
+#1882<_____________===
+label316:
+#1883<_____________===
+	li $t5, 63603
+	li $t6, 0
+	bne $t5, $t6, label314
+#1884<_____________===
+	j label315
+#1885<_____________===
+label314:
+#1886<_____________===
+	lw $t0, -2236($fp)
+	li $t0, 1
+	sw $t0, -2236($fp)
+#1887<_____________===
+label315:
+#1888<_____________===
+	li $t1, 0
+	sw $t1, -2240($fp)
+#1889<_____________===
+	li $t2, 0
+	sw $t2, -2244($fp)
+#1890<_____________===
+	li $t3, 0
+	sw $t3, -2248($fp)
+#1891<_____________===
+	li $t4, 0
+	sw $t4, -2252($fp)
+#1892<_____________===
+	lw $t5, -144($fp)
+	bne $t5, 0, label325
+#1893<_____________===
+	j label324
+#1894<_____________===
+label324:
+#1895<_____________===
+	lw $t6, -2252($fp)
+	li $t6, 1
+	sw $t6, -2252($fp)
+#1896<_____________===
+label325:
+#1897<_____________===
+	lw $t0, -2252($fp)
+	bgt $t0, 12684, label322
+#1898<_____________===
+	j label323
+#1899<_____________===
+label322:
+#1900<_____________===
+	lw $t1, -2248($fp)
+	li $t1, 1
+	sw $t1, -2248($fp)
+#1901<_____________===
+label323:
+#1902<_____________===
+	lw $a0, -2248($fp)
+#1903<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t2, $v0
+	sw $t2, -2256($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1904<_____________===
+	lw $t3, -2256($fp)
+	lw $t4, -76($fp)
+	beq $t3, $t4, label320
+#1905<_____________===
+	j label321
+#1906<_____________===
+label320:
+#1907<_____________===
+	lw $t5, -2244($fp)
+	li $t5, 1
+	sw $t5, -2244($fp)
+#1908<_____________===
+label321:
+#1909<_____________===
+	lw $a0, -2244($fp)
+#1910<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t6, $v0
+	sw $t6, -2260($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1911<_____________===
+	lw $t0, -2260($fp)
+	bne $t0, 0, label319
+#1912<_____________===
+	j label318
+#1913<_____________===
+label319:
+#1914<_____________===
+	lw $t1, -1024($fp)
+	bne $t1, 0, label317
+#1915<_____________===
+	j label318
+#1916<_____________===
+label317:
+#1917<_____________===
+	lw $t2, -2240($fp)
+	li $t2, 1
+	sw $t2, -2240($fp)
+#1918<_____________===
+label318:
+#1919<_____________===
+	lw $a0, -2240($fp)
+#1920<_____________===
+	lw $a1, -2236($fp)
+#1921<_____________===
+	lw $a2, -2232($fp)
+#1922<_____________===
+	lw $s1, -2228($fp)
+	lw $a3, 0($s1)
+#1923<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t3, $v0
+	sw $t3, -2264($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1924<_____________===
+	lw $t4, -2264($fp)
+	beq $t4, 32908, label309
+#1925<_____________===
+	j label310
+#1926<_____________===
+label309:
+#1927<_____________===
+	lw $t5, -2220($fp)
+	li $t5, 1
+	sw $t5, -2220($fp)
+#1928<_____________===
+label310:
+#1929<_____________===
+	lw $a0, -2220($fp)
+#1930<_____________===
+	lw $a1, -2216($fp)
+#1931<_____________===
+	lw $a2, -2208($fp)
+#1932<_____________===
+	lw $a3, -2204($fp)
+#1933<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t6, $v0
+	sw $t6, -2268($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1934<_____________===
+	li $t1, 0
+	lw $t2, -2268($fp)
+	sub $t0, $t1, $t2
+	sw $t0, -2272($fp)
+#1935<_____________===
+	lw $t4, -2200($fp)
+	lw $t5, -2272($fp)
+	add $t3, $t4, $t5
+	sw $t3, -2276($fp)
+#1936<_____________===
+	li $t6, 0
+	sw $t6, -2280($fp)
+#1937<_____________===
+	lw $t0, -84($fp)
+	lw $t1, -148($fp)
+	move $t0, $t1
+	sw $t0, -84($fp)
+#1938<_____________===
+	lw $t3, -148($fp)
+	move $t2, $t3
+	sw $t2, -2284($fp)
+#1939<_____________===
+	li $t4, 0
+	sw $t4, -2288($fp)
+#1940<_____________===
+	li $t5, 0
+	sw $t5, -2292($fp)
+#1941<_____________===
+	lw $t6, -1016($fp)
+	bne $t6, 0, label331
+#1942<_____________===
+	j label330
+#1943<_____________===
+label330:
+#1944<_____________===
+	lw $t0, -2292($fp)
+	li $t0, 1
+	sw $t0, -2292($fp)
+#1945<_____________===
+label331:
+#1946<_____________===
+	lw $t1, -2292($fp)
+	beq $t1, 62638, label328
+#1947<_____________===
+	j label329
+#1948<_____________===
+label328:
+#1949<_____________===
+	lw $t2, -2288($fp)
+	li $t2, 1
+	sw $t2, -2288($fp)
+#1950<_____________===
+label329:
+#1951<_____________===
+	li $a0, 30251
+#1952<_____________===
+	lw $a1, -2288($fp)
+#1953<_____________===
+	lw $a2, -2284($fp)
+#1954<_____________===
+	lw $a3, -100($fp)
+#1955<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_FxEuB
+	move $t3, $v0
+	sw $t3, -2296($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1956<_____________===
+	lw $t4, -2296($fp)
+	bne $t4, 0, label327
+#1957<_____________===
+	j label326
+#1958<_____________===
+label326:
+#1959<_____________===
+	lw $t5, -2280($fp)
+	li $t5, 1
+	sw $t5, -2280($fp)
+#1960<_____________===
+label327:
+#1961<_____________===
+	li $t0, 0
+	lw $t1, -2280($fp)
+	sub $t6, $t0, $t1
+	sw $t6, -2300($fp)
+#1962<_____________===
+	j label289
+#1963<_____________===
+label291:
+#1964<_____________===
+label288:
+#1965<_____________===
+	j label259
+#1966<_____________===
+label261:
+#1967<_____________===
+	j label332
+#1968<_____________===
+label256:
+#1969<_____________===
+	li $t2, 0
+	sw $t2, -2304($fp)
+#1970<_____________===
+	li $t4, 0
+	li $t5, 64497
+	sub $t3, $t4, $t5
+	sw $t3, -2308($fp)
+#1971<_____________===
+	li $t0, 0
+	lw $t1, -2308($fp)
+	sub $t6, $t0, $t1
+	sw $t6, -2312($fp)
+#1972<_____________===
+	li $t3, 0
+	lw $t4, -2312($fp)
+	sub $t2, $t3, $t4
+	sw $t2, -2316($fp)
+#1973<_____________===
+	lw $t5, -2316($fp)
+	bne $t5, 0, label334
+#1974<_____________===
+	j label333
+#1975<_____________===
+label333:
+#1976<_____________===
+	lw $t6, -2304($fp)
+	li $t6, 1
+	sw $t6, -2304($fp)
+#1977<_____________===
+label334:
+#1978<_____________===
+	li $t0, 0
+	sw $t0, -2320($fp)
+#1979<_____________===
+	lw $t1, -304($fp)
+	bne $t1, 0, label336
+#1980<_____________===
+	j label335
+#1981<_____________===
+label335:
+#1982<_____________===
+	lw $t2, -2320($fp)
+	li $t2, 1
+	sw $t2, -2320($fp)
+#1983<_____________===
+label336:
+#1984<_____________===
+	li $t4, 0
+	lw $t5, -2320($fp)
+	sub $t3, $t4, $t5
+	sw $t3, -2324($fp)
+#1985<_____________===
+	li $t0, 0
+	lw $t1, -2324($fp)
+	sub $t6, $t0, $t1
+	sw $t6, -2328($fp)
+#1986<_____________===
+label332:
+#1987<_____________===
+label254:
+#1988<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -988($fp)
+	move $a0, $t2
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1989<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -992($fp)
+	move $a0, $t3
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1990<_____________===
+	li $t5, 0
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -2332($fp)
+#1991<_____________===
+	lw $t1, -1000($fp)
+	lw $t2, -2332($fp)
+	add $t0, $t1, $t2
+	sw $t0, -2336($fp)
+#1992<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -2336($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1993<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -1004($fp)
+	move $a0, $t4
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1994<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -1008($fp)
+	move $a0, $t5
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1995<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -1012($fp)
+	move $a0, $t6
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1996<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -1016($fp)
+	move $a0, $t0
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1997<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -1020($fp)
+	move $a0, $t1
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1998<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -1024($fp)
+	move $a0, $t2
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#1999<_____________===
+	li $t4, 0
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2340($fp)
+#2000<_____________===
+	lw $t0, -1052($fp)
+	lw $t1, -2340($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2344($fp)
+#2001<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2344($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2002<_____________===
+	li $t4, 1
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2348($fp)
+#2003<_____________===
+	lw $t0, -1052($fp)
+	lw $t1, -2348($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2352($fp)
+#2004<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2352($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2005<_____________===
+	li $t4, 2
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2356($fp)
+#2006<_____________===
+	lw $t0, -1052($fp)
+	lw $t1, -2356($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2360($fp)
+#2007<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2360($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2008<_____________===
+	li $t4, 3
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2364($fp)
+#2009<_____________===
+	lw $t0, -1052($fp)
+	lw $t1, -2364($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2368($fp)
+#2010<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2368($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2011<_____________===
+	li $t4, 4
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2372($fp)
+#2012<_____________===
+	lw $t0, -1052($fp)
+	lw $t1, -2372($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2376($fp)
+#2013<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2376($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2014<_____________===
+	li $t4, 5
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2380($fp)
+#2015<_____________===
+	lw $t0, -1052($fp)
+	lw $t1, -2380($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2384($fp)
+#2016<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2384($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2017<_____________===
+	li $t4, 0
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2388($fp)
+#2018<_____________===
+	lw $t0, -1092($fp)
+	lw $t1, -2388($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2392($fp)
+#2019<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2392($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2020<_____________===
+	li $t4, 1
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2396($fp)
+#2021<_____________===
+	lw $t0, -1092($fp)
+	lw $t1, -2396($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2400($fp)
+#2022<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2400($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2023<_____________===
+	li $t4, 2
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2404($fp)
+#2024<_____________===
+	lw $t0, -1092($fp)
+	lw $t1, -2404($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2408($fp)
+#2025<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2408($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2026<_____________===
+	li $t4, 3
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2412($fp)
+#2027<_____________===
+	lw $t0, -1092($fp)
+	lw $t1, -2412($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2416($fp)
+#2028<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2416($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2029<_____________===
+	li $t4, 4
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2420($fp)
+#2030<_____________===
+	lw $t0, -1092($fp)
+	lw $t1, -2420($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2424($fp)
+#2031<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2424($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2032<_____________===
+	li $t4, 5
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2428($fp)
+#2033<_____________===
+	lw $t0, -1092($fp)
+	lw $t1, -2428($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2432($fp)
+#2034<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2432($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2035<_____________===
+	li $t4, 6
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2436($fp)
+#2036<_____________===
+	lw $t0, -1092($fp)
+	lw $t1, -2436($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2440($fp)
+#2037<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2440($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2038<_____________===
+	li $t4, 7
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2444($fp)
+#2039<_____________===
+	lw $t0, -1092($fp)
+	lw $t1, -2444($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2448($fp)
+#2040<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2448($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2041<_____________===
+	li $t4, 8
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2452($fp)
+#2042<_____________===
+	lw $t0, -1092($fp)
+	lw $t1, -2452($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2456($fp)
+#2043<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -2456($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2044<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -1096($fp)
+	move $a0, $t3
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2045<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -1100($fp)
+	move $a0, $t4
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2046<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -1104($fp)
+	move $a0, $t5
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2047<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -1108($fp)
+	move $a0, $t6
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2048<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -1112($fp)
+	move $a0, $t0
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2049<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -1116($fp)
+	move $a0, $t1
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2050<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -1120($fp)
+	move $a0, $t2
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2051<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -1124($fp)
+	move $a0, $t3
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2052<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -1128($fp)
+	move $a0, $t4
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2053<_____________===
+	li $t6, 0
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2460($fp)
+#2054<_____________===
+	lw $t2, -1144($fp)
+	lw $t3, -2460($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2464($fp)
+#2055<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2464($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2056<_____________===
+	li $t6, 1
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2468($fp)
+#2057<_____________===
+	lw $t2, -1144($fp)
+	lw $t3, -2468($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2472($fp)
+#2058<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2472($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2059<_____________===
+	li $t6, 2
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2476($fp)
+#2060<_____________===
+	lw $t2, -1144($fp)
+	lw $t3, -2476($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2480($fp)
+#2061<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2480($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2062<_____________===
+	li $t6, 0
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2484($fp)
+#2063<_____________===
+	lw $t2, -1180($fp)
+	lw $t3, -2484($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2488($fp)
+#2064<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2488($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2065<_____________===
+	li $t6, 1
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2492($fp)
+#2066<_____________===
+	lw $t2, -1180($fp)
+	lw $t3, -2492($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2496($fp)
+#2067<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2496($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2068<_____________===
+	li $t6, 2
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2500($fp)
+#2069<_____________===
+	lw $t2, -1180($fp)
+	lw $t3, -2500($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2504($fp)
+#2070<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2504($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2071<_____________===
+	li $t6, 3
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2508($fp)
+#2072<_____________===
+	lw $t2, -1180($fp)
+	lw $t3, -2508($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2512($fp)
+#2073<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2512($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2074<_____________===
+	li $t6, 4
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2516($fp)
+#2075<_____________===
+	lw $t2, -1180($fp)
+	lw $t3, -2516($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2520($fp)
+#2076<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2520($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2077<_____________===
+	li $t6, 5
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2524($fp)
+#2078<_____________===
+	lw $t2, -1180($fp)
+	lw $t3, -2524($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2528($fp)
+#2079<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2528($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2080<_____________===
+	li $t6, 6
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2532($fp)
+#2081<_____________===
+	lw $t2, -1180($fp)
+	lw $t3, -2532($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2536($fp)
+#2082<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2536($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2083<_____________===
+	li $t6, 7
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2540($fp)
+#2084<_____________===
+	lw $t2, -1180($fp)
+	lw $t3, -2540($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2544($fp)
+#2085<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2544($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2086<_____________===
+	li $t6, 0
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2548($fp)
+#2087<_____________===
+	lw $t2, -1224($fp)
+	lw $t3, -2548($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2552($fp)
+#2088<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2552($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2089<_____________===
+	li $t6, 1
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2556($fp)
+#2090<_____________===
+	lw $t2, -1224($fp)
+	lw $t3, -2556($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2560($fp)
+#2091<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2560($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2092<_____________===
+	li $t6, 2
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2564($fp)
+#2093<_____________===
+	lw $t2, -1224($fp)
+	lw $t3, -2564($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2568($fp)
+#2094<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2568($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2095<_____________===
+	li $t6, 3
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2572($fp)
+#2096<_____________===
+	lw $t2, -1224($fp)
+	lw $t3, -2572($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2576($fp)
+#2097<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2576($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2098<_____________===
+	li $t6, 4
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2580($fp)
+#2099<_____________===
+	lw $t2, -1224($fp)
+	lw $t3, -2580($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2584($fp)
+#2100<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2584($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2101<_____________===
+	li $t6, 5
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2588($fp)
+#2102<_____________===
+	lw $t2, -1224($fp)
+	lw $t3, -2588($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2592($fp)
+#2103<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2592($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2104<_____________===
+	li $t6, 6
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2596($fp)
+#2105<_____________===
+	lw $t2, -1224($fp)
+	lw $t3, -2596($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2600($fp)
+#2106<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2600($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2107<_____________===
+	li $t6, 7
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2604($fp)
+#2108<_____________===
+	lw $t2, -1224($fp)
+	lw $t3, -2604($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2608($fp)
+#2109<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2608($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2110<_____________===
+	li $t6, 8
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2612($fp)
+#2111<_____________===
+	lw $t2, -1224($fp)
+	lw $t3, -2612($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2616($fp)
+#2112<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2616($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2113<_____________===
+	li $t6, 9
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2620($fp)
+#2114<_____________===
+	lw $t2, -1224($fp)
+	lw $t3, -2620($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2624($fp)
+#2115<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -2624($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2116<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -1228($fp)
+	move $a0, $t5
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2117<_____________===
+	lw $t6, -76($fp)
+	move $v0, $t6
+	addi $sp, $sp, 800
+	addi $sp, $sp, 4
+	lw $fp, 0($sp)
+	addi $sp, $sp, 4
+	jr $ra
+#2118<_____________===
+	li $t0, 0
+	sw $t0, -2628($fp)
+#2119<_____________===
+	lw $t1, -308($fp)
+	bne $t1, 35944, label340
+#2120<_____________===
+	j label341
+#2121<_____________===
+label340:
+#2122<_____________===
+	lw $t2, -2628($fp)
+	li $t2, 1
+	sw $t2, -2628($fp)
+#2123<_____________===
+label341:
+#2124<_____________===
+	lw $t4, -2628($fp)
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2632($fp)
+#2125<_____________===
+	lw $t0, -1000($fp)
+	lw $t1, -2632($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2636($fp)
+#2126<_____________===
+	lw $t2, -2636($fp)
+	lw $s3, 0($t2)
+	bne $s3, 49958, label339
+#2127<_____________===
+	j label338
+#2128<_____________===
+label339:
+#2129<_____________===
+	lw $t4, -308($fp)
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2640($fp)
+#2130<_____________===
+	lw $t0, -1144($fp)
+	lw $t1, -2640($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2644($fp)
+#2131<_____________===
+	lw $t2, -2644($fp)
+	lw $s3, 0($t2)
+	bne $s3, 0, label338
+#2132<_____________===
+	j label337
+#2133<_____________===
+label337:
+#2134<_____________===
+#2135<_____________===
+	lw $t3, -2648($fp)
+	li $t3, 10923
+	sw $t3, -2648($fp)
+#2136<_____________===
+label342:
+#2137<_____________===
+	li $t4, 0
+	sw $t4, -2652($fp)
+#2138<_____________===
+	li $t5, 0
+	sw $t5, -2656($fp)
+#2139<_____________===
+	li $t0, 0
+	lw $t1, -1016($fp)
+	sub $t6, $t0, $t1
+	sw $t6, -2660($fp)
+#2140<_____________===
+	lw $t2, -2660($fp)
+	bge $t2, 48651, label347
+#2141<_____________===
+	j label348
+#2142<_____________===
+label347:
+#2143<_____________===
+	lw $t3, -2656($fp)
+	li $t3, 1
+	sw $t3, -2656($fp)
+#2144<_____________===
+label348:
+#2145<_____________===
+	li $t4, 0
+	sw $t4, -2664($fp)
+#2146<_____________===
+	li $t5, 7848
+	li $t6, 0
+	bne $t5, $t6, label350
+#2147<_____________===
+	j label349
+#2148<_____________===
+label349:
+#2149<_____________===
+	lw $t0, -2664($fp)
+	li $t0, 1
+	sw $t0, -2664($fp)
+#2150<_____________===
+label350:
+#2151<_____________===
+	lw $t2, -2664($fp)
+	li $t3, 62822
+	sub $t1, $t2, $t3
+	sw $t1, -2668($fp)
+#2152<_____________===
+	lw $t4, -2656($fp)
+	lw $t5, -2668($fp)
+	bne $t4, $t5, label345
+#2153<_____________===
+	j label346
+#2154<_____________===
+label345:
+#2155<_____________===
+	lw $t6, -2652($fp)
+	li $t6, 1
+	sw $t6, -2652($fp)
+#2156<_____________===
+label346:
+#2157<_____________===
+	lw $t1, -76($fp)
+	li $t2, 17565
+	add $t0, $t1, $t2
+	sw $t0, -2672($fp)
+#2158<_____________===
+	lw $t3, -2652($fp)
+	lw $t4, -2672($fp)
+	blt $t3, $t4, label343
+#2159<_____________===
+	j label344
+#2160<_____________===
+label343:
+#2161<_____________===
+	li $t5, 0
+	sw $t5, -2676($fp)
+#2162<_____________===
+	lw $t6, -92($fp)
+	beq $t6, 64564, label351
+#2163<_____________===
+	j label352
+#2164<_____________===
+label351:
+#2165<_____________===
+	lw $t0, -2676($fp)
+	li $t0, 1
+	sw $t0, -2676($fp)
+#2166<_____________===
+label352:
+#2167<_____________===
+	lw $t1, -80($fp)
+	lw $t2, -2676($fp)
+	move $t1, $t2
+	sw $t1, -80($fp)
+#2168<_____________===
+	lw $t4, -2676($fp)
+	move $t3, $t4
+	sw $t3, -2680($fp)
+#2169<_____________===
+	lw $t5, -296($fp)
+	lw $t6, -2680($fp)
+	move $t5, $t6
+	sw $t5, -296($fp)
+#2170<_____________===
+	j label342
+#2171<_____________===
+label344:
+#2172<_____________===
+label353:
+#2173<_____________===
+	li $t0, 0
+	sw $t0, -2684($fp)
+#2174<_____________===
+	li $t2, 8649
+	li $t3, 15734
+	add $t1, $t2, $t3
+	sw $t1, -2688($fp)
+#2175<_____________===
+	lw $t5, -2688($fp)
+	li $t6, 59212
+	add $t4, $t5, $t6
+	sw $t4, -2692($fp)
+#2176<_____________===
+	lw $t1, -2648($fp)
+	li $t2, 39691
+	sub $t0, $t1, $t2
+	sw $t0, -2696($fp)
+#2177<_____________===
+	lw $t3, -2692($fp)
+	lw $t4, -2696($fp)
+	bgt $t3, $t4, label356
+#2178<_____________===
+	j label357
+#2179<_____________===
+label356:
+#2180<_____________===
+	lw $t5, -2684($fp)
+	li $t5, 1
+	sw $t5, -2684($fp)
+#2181<_____________===
+label357:
+#2182<_____________===
+	lw $t6, -1116($fp)
+	lw $t0, -2684($fp)
+	move $t6, $t0
+	sw $t6, -1116($fp)
+#2183<_____________===
+	lw $t2, -2684($fp)
+	move $t1, $t2
+	sw $t1, -2700($fp)
+#2184<_____________===
+	lw $t3, -2700($fp)
+	bne $t3, 0, label354
+#2185<_____________===
+	j label355
+#2186<_____________===
+label354:
+#2187<_____________===
+	li $t5, 0
+	lw $t6, -156($fp)
+	sub $t4, $t5, $t6
+	sw $t4, -2704($fp)
+#2188<_____________===
+	lw $a0, -2704($fp)
+#2189<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t0, $v0
+	sw $t0, -2708($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2190<_____________===
+	li $t2, 0
+	li $t3, 41081
+	sub $t1, $t2, $t3
+	sw $t1, -2712($fp)
+#2191<_____________===
+	j label353
+#2192<_____________===
+label355:
+#2193<_____________===
+	li $t4, 0
+	sw $t4, -2716($fp)
+#2194<_____________===
+	lw $t5, -4($fp)
+	lw $t6, -152($fp)
+	bne $t5, $t6, label358
+#2195<_____________===
+	j label359
+#2196<_____________===
+label358:
+#2197<_____________===
+	lw $t0, -2716($fp)
+	li $t0, 1
+	sw $t0, -2716($fp)
+#2198<_____________===
+label359:
+#2199<_____________===
+	lw $t2, -2716($fp)
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -2720($fp)
+#2200<_____________===
+	lw $t5, -288($fp)
+	lw $t6, -2720($fp)
+	add $t4, $t5, $t6
+	sw $t4, -2724($fp)
+#2201<_____________===
+	lw $t1, -308($fp)
+	lw $t2, -2724($fp)
+	lw $s4, 0($t2)
+	add $t0, $t1, $s4
+	sw $t0, -2728($fp)
+#2202<_____________===
+	lw $t3, -2728($fp)
+	move $v0, $t3
+	addi $sp, $sp, 800
+	addi $sp, $sp, 4
+	lw $fp, 0($sp)
+	addi $sp, $sp, 4
+	jr $ra
+#2203<_____________===
+	j label360
+#2204<_____________===
+label338:
+#2205<_____________===
+	li $t4, 0
+	sw $t4, -2732($fp)
+#2206<_____________===
+	lw $t5, -92($fp)
+	bne $t5, 0, label364
+#2207<_____________===
+	j label365
+#2208<_____________===
+label365:
+#2209<_____________===
+	li $t6, 62416
+	li $t0, 0
+	bne $t6, $t0, label363
+#2210<_____________===
+	j label364
+#2211<_____________===
+label363:
+#2212<_____________===
+	lw $t1, -2732($fp)
+	li $t1, 1
+	sw $t1, -2732($fp)
+#2213<_____________===
+label364:
+#2214<_____________===
+	lw $a0, -2732($fp)
+#2215<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t2, $v0
+	sw $t2, -2736($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2216<_____________===
+	li $t3, 0
+	sw $t3, -2740($fp)
+#2217<_____________===
+	li $t4, 24613
+	li $t5, 0
+	bne $t4, $t5, label366
+#2218<_____________===
+	j label368
+#2219<_____________===
+label368:
+#2220<_____________===
+	li $t6, 4373
+	li $t0, 0
+	bne $t6, $t0, label366
+#2221<_____________===
+	j label367
+#2222<_____________===
+label366:
+#2223<_____________===
+	lw $t1, -2740($fp)
+	li $t1, 1
+	sw $t1, -2740($fp)
+#2224<_____________===
+label367:
+#2225<_____________===
+	lw $t2, -304($fp)
+	lw $t3, -1016($fp)
+	move $t2, $t3
+	sw $t2, -304($fp)
+#2226<_____________===
+	lw $t5, -1016($fp)
+	move $t4, $t5
+	sw $t4, -2744($fp)
+#2227<_____________===
+	li $t6, 0
+	sw $t6, -2748($fp)
+#2228<_____________===
+	li $t0, 0
+	sw $t0, -2752($fp)
+#2229<_____________===
+	lw $t1, -1096($fp)
+	lw $t2, -84($fp)
+	beq $t1, $t2, label371
+#2230<_____________===
+	j label372
+#2231<_____________===
+label371:
+#2232<_____________===
+	lw $t3, -2752($fp)
+	li $t3, 1
+	sw $t3, -2752($fp)
+#2233<_____________===
+label372:
+#2234<_____________===
+	lw $t4, -2752($fp)
+	lw $t5, -1012($fp)
+	bne $t4, $t5, label369
+#2235<_____________===
+	j label370
+#2236<_____________===
+label369:
+#2237<_____________===
+	lw $t6, -2748($fp)
+	li $t6, 1
+	sw $t6, -2748($fp)
+#2238<_____________===
+label370:
+#2239<_____________===
+	lw $a0, -2748($fp)
+#2240<_____________===
+	lw $a1, -2744($fp)
+#2241<_____________===
+	lw $a2, -2740($fp)
+#2242<_____________===
+	lw $a3, -2736($fp)
+#2243<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t0, $v0
+	sw $t0, -2756($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2244<_____________===
+	li $t1, 0
+	sw $t1, -2760($fp)
+#2245<_____________===
+	li $t2, 0
+	sw $t2, -2764($fp)
+#2246<_____________===
+	lw $t3, -92($fp)
+	bge $t3, 53518, label375
+#2247<_____________===
+	j label376
+#2248<_____________===
+label375:
+#2249<_____________===
+	lw $t4, -2764($fp)
+	li $t4, 1
+	sw $t4, -2764($fp)
+#2250<_____________===
+label376:
+#2251<_____________===
+	lw $t5, -2764($fp)
+	beq $t5, 13972, label373
+#2252<_____________===
+	j label374
+#2253<_____________===
+label373:
+#2254<_____________===
+	lw $t6, -2760($fp)
+	li $t6, 1
+	sw $t6, -2760($fp)
+#2255<_____________===
+label374:
+#2256<_____________===
+	lw $a0, -2760($fp)
+#2257<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_CYq6iXzc
+	move $t0, $v0
+	sw $t0, -2768($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2258<_____________===
+	lw $t2, -2756($fp)
+	lw $t3, -2768($fp)
+	sub $t1, $t2, $t3
+	sw $t1, -2772($fp)
+#2259<_____________===
+	lw $t4, -2772($fp)
+	bne $t4, 0, label361
+#2260<_____________===
+	j label362
+#2261<_____________===
+label361:
+#2262<_____________===
+#2263<_____________===
+	lw $t5, -2776($fp)
+	li $t5, 4986
+	sw $t5, -2776($fp)
+#2264<_____________===
+	li $t0, 2
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -2780($fp)
+#2265<_____________===
+	lw $t3, -1092($fp)
+	lw $t4, -2780($fp)
+	add $t2, $t3, $t4
+	sw $t2, -2784($fp)
+#2266<_____________===
+	li $t5, 0
+	sw $t5, -2788($fp)
+#2267<_____________===
+	li $t6, 10048
+	li $t0, 0
+	bne $t6, $t0, label380
+#2268<_____________===
+	j label379
+#2269<_____________===
+label379:
+#2270<_____________===
+	lw $t1, -2788($fp)
+	li $t1, 1
+	sw $t1, -2788($fp)
+#2271<_____________===
+label380:
+#2272<_____________===
+	lw $t3, -2788($fp)
+	li $t4, 2252
+	mul $t2, $t3, $t4
+	sw $t2, -2792($fp)
+#2273<_____________===
+	li $t6, 0
+	li $t0, 5217
+	sub $t5, $t6, $t0
+	sw $t5, -2796($fp)
+#2274<_____________===
+	lw $t2, -2792($fp)
+	lw $t3, -2796($fp)
+	div $t2, $t3
+	mflo $t1
+	sw $t1, -2800($fp)
+#2275<_____________===
+	lw $t4, -2784($fp)
+	lw $t5, -2800($fp)
+	lw $s3, 0($t4)
+	ble $s3, $t5, label377
+#2276<_____________===
+	j label378
+#2277<_____________===
+label377:
+#2278<_____________===
+label378:
+#2279<_____________===
+	li $t0, 0
+	lw $t1, -308($fp)
+	sub $t6, $t0, $t1
+	sw $t6, -2804($fp)
+#2280<_____________===
+	lw $t3, -2804($fp)
+	li $t4, 35160
+	add $t2, $t3, $t4
+	sw $t2, -2808($fp)
+#2281<_____________===
+	lw $t6, -72($fp)
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2812($fp)
+#2282<_____________===
+	lw $t2, -288($fp)
+	lw $t3, -2812($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2816($fp)
+#2283<_____________===
+	li $t4, 0
+	sw $t4, -2820($fp)
+#2284<_____________===
+	li $t5, 2320
+	li $t6, 52983
+	beq $t5, $t6, label381
+#2285<_____________===
+	j label382
+#2286<_____________===
+label381:
+#2287<_____________===
+	lw $t0, -2820($fp)
+	li $t0, 1
+	sw $t0, -2820($fp)
+#2288<_____________===
+label382:
+#2289<_____________===
+	li $t1, 0
+	sw $t1, -2824($fp)
+#2290<_____________===
+	lw $t2, -2776($fp)
+	bne $t2, 0, label384
+#2291<_____________===
+	j label383
+#2292<_____________===
+label383:
+#2293<_____________===
+	lw $t3, -2824($fp)
+	li $t3, 1
+	sw $t3, -2824($fp)
+#2294<_____________===
+label384:
+#2295<_____________===
+	lw $a0, -2824($fp)
+#2296<_____________===
+	lw $a1, -2820($fp)
+#2297<_____________===
+	lw $s1, -2816($fp)
+	lw $a2, 0($s1)
+#2298<_____________===
+	lw $a3, -2808($fp)
+#2299<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t4, $v0
+	sw $t4, -2828($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2300<_____________===
+	j label385
+#2301<_____________===
+label362:
+#2302<_____________===
+	li $t6, 8
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2832($fp)
+#2303<_____________===
+	lw $t2, -288($fp)
+	lw $t3, -2832($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2836($fp)
+#2304<_____________===
+	li $t4, 0
+	sw $t4, -2840($fp)
+#2305<_____________===
+	li $t5, 37406
+	li $t6, 0
+	bne $t5, $t6, label386
+#2306<_____________===
+	j label387
+#2307<_____________===
+label386:
+#2308<_____________===
+	lw $t0, -2840($fp)
+	li $t0, 1
+	sw $t0, -2840($fp)
+#2309<_____________===
+label387:
+#2310<_____________===
+	lw $t2, -2836($fp)
+	lw $t3, -2840($fp)
+	lw $s3, 0($t2)
+	div $s3, $t3
+	mflo $t1
+	sw $t1, -2844($fp)
+#2311<_____________===
+	li $t5, 0
+	lw $t6, -2844($fp)
+	sub $t4, $t5, $t6
+	sw $t4, -2848($fp)
+#2312<_____________===
+	li $t1, 0
+	lw $t2, -2848($fp)
+	sub $t0, $t1, $t2
+	sw $t0, -2852($fp)
+#2313<_____________===
+	lw $t4, -160($fp)
+	li $t5, 45044
+	mul $t3, $t4, $t5
+	sw $t3, -2856($fp)
+#2314<_____________===
+	li $t0, 0
+	lw $t1, -2856($fp)
+	sub $t6, $t0, $t1
+	sw $t6, -2860($fp)
+#2315<_____________===
+label385:
+#2316<_____________===
+label360:
+#2317<_____________===
+#2318<_____________===
+	lw $t2, -2864($fp)
+	li $t2, 21380
+	sw $t2, -2864($fp)
+#2319<_____________===
+	li $t3, 0
+	sw $t3, -2868($fp)
+#2320<_____________===
+	li $t5, 0
+	lw $t6, -1004($fp)
+	sub $t4, $t5, $t6
+	sw $t4, -2872($fp)
+#2321<_____________===
+	li $t1, 0
+	lw $t2, -2864($fp)
+	sub $t0, $t1, $t2
+	sw $t0, -2876($fp)
+#2322<_____________===
+	lw $t3, -2872($fp)
+	lw $t4, -2876($fp)
+	bgt $t3, $t4, label390
+#2323<_____________===
+	j label391
+#2324<_____________===
+label390:
+#2325<_____________===
+	lw $t5, -2868($fp)
+	li $t5, 1
+	sw $t5, -2868($fp)
+#2326<_____________===
+label391:
+#2327<_____________===
+	lw $t0, -2868($fp)
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -2880($fp)
+#2328<_____________===
+	lw $t3, -1052($fp)
+	lw $t4, -2880($fp)
+	add $t2, $t3, $t4
+	sw $t2, -2884($fp)
+#2329<_____________===
+	lw $t5, -2884($fp)
+	lw $s3, 0($t5)
+	bne $s3, 0, label388
+#2330<_____________===
+	j label389
+#2331<_____________===
+label388:
+#2332<_____________===
+	li $t6, 0
+	sw $t6, -2888($fp)
+#2333<_____________===
+	li $t0, 0
+	sw $t0, -2892($fp)
+#2334<_____________===
+	li $t2, 45254
+	li $t3, 42331
+	div $t2, $t3
+	mflo $t1
+	sw $t1, -2896($fp)
+#2335<_____________===
+	lw $t4, -2896($fp)
+	lw $t5, -100($fp)
+	blt $t4, $t5, label395
+#2336<_____________===
+	j label396
+#2337<_____________===
+label395:
+#2338<_____________===
+	lw $t6, -2892($fp)
+	li $t6, 1
+	sw $t6, -2892($fp)
+#2339<_____________===
+label396:
+#2340<_____________===
+	lw $a0, -2892($fp)
+#2341<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t0, $v0
+	sw $t0, -2900($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2342<_____________===
+	li $t2, 0
+	lw $t3, -2900($fp)
+	sub $t1, $t2, $t3
+	sw $t1, -2904($fp)
+#2343<_____________===
+	lw $t4, -2904($fp)
+	bne $t4, 0, label392
+#2344<_____________===
+	j label394
+#2345<_____________===
+label394:
+#2346<_____________===
+	li $t6, 0
+	li $t0, 38945
+	sub $t5, $t6, $t0
+	sw $t5, -2908($fp)
+#2347<_____________===
+	lw $t1, -2908($fp)
+	bne $t1, 0, label392
+#2348<_____________===
+	j label393
+#2349<_____________===
+label392:
+#2350<_____________===
+	lw $t2, -2888($fp)
+	li $t2, 1
+	sw $t2, -2888($fp)
+#2351<_____________===
+label393:
+#2352<_____________===
+	lw $t4, -2888($fp)
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -2912($fp)
+#2353<_____________===
+	lw $t0, -1092($fp)
+	lw $t1, -2912($fp)
+	add $t6, $t0, $t1
+	sw $t6, -2916($fp)
+#2354<_____________===
+	li $t2, 0
+	sw $t2, -2920($fp)
+#2355<_____________===
+	li $t3, 44282
+	li $t4, 0
+	bne $t3, $t4, label397
+#2356<_____________===
+	j label398
+#2357<_____________===
+label397:
+#2358<_____________===
+	lw $t5, -2920($fp)
+	li $t5, 1
+	sw $t5, -2920($fp)
+#2359<_____________===
+label398:
+#2360<_____________===
+	lw $t0, -2920($fp)
+	lw $t1, -304($fp)
+	mul $t6, $t0, $t1
+	sw $t6, -2924($fp)
+#2361<_____________===
+	li $t3, 54679
+	li $t4, 37958
+	add $t2, $t3, $t4
+	sw $t2, -2928($fp)
+#2362<_____________===
+	li $t5, 0
+	sw $t5, -2932($fp)
+#2363<_____________===
+	lw $t6, -1096($fp)
+	bne $t6, 25135, label401
+#2364<_____________===
+	j label403
+#2365<_____________===
+label403:
+#2366<_____________===
+	li $t0, 30224
+	li $t1, 0
+	bne $t0, $t1, label401
+#2367<_____________===
+	j label402
+#2368<_____________===
+label401:
+#2369<_____________===
+	lw $t2, -2932($fp)
+	li $t2, 1
+	sw $t2, -2932($fp)
+#2370<_____________===
+label402:
+#2371<_____________===
+	li $t3, 0
+	sw $t3, -2936($fp)
+#2372<_____________===
+	lw $t4, -104($fp)
+	bne $t4, 0, label405
+#2373<_____________===
+	j label404
+#2374<_____________===
+label404:
+#2375<_____________===
+	lw $t5, -2936($fp)
+	li $t5, 1
+	sw $t5, -2936($fp)
+#2376<_____________===
+label405:
+#2377<_____________===
+	lw $t0, -2936($fp)
+	li $t1, 34838
+	sub $t6, $t0, $t1
+	sw $t6, -2940($fp)
+#2378<_____________===
+	li $t3, 3
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -2944($fp)
+#2379<_____________===
+	lw $t6, -1224($fp)
+	lw $t0, -2944($fp)
+	add $t5, $t6, $t0
+	sw $t5, -2948($fp)
+#2380<_____________===
+	lw $t2, -2948($fp)
+	li $t3, 22821
+	lw $s3, 0($t2)
+	add $t1, $s3, $t3
+	sw $t1, -2952($fp)
+#2381<_____________===
+	lw $a0, -2952($fp)
+#2382<_____________===
+	lw $a1, -2940($fp)
+#2383<_____________===
+	lw $a2, -2932($fp)
+#2384<_____________===
+	lw $a3, -2928($fp)
+#2385<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_FxEuB
+	move $t4, $v0
+	sw $t4, -2956($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2386<_____________===
+	lw $t5, -2956($fp)
+	bgt $t5, 50980, label399
+#2387<_____________===
+	j label400
+#2388<_____________===
+label399:
+#2389<_____________===
+label400:
+#2390<_____________===
+label389:
+#2391<_____________===
+#2392<_____________===
+	lw $t6, -2960($fp)
+	li $t6, 63721
+	sw $t6, -2960($fp)
+#2393<_____________===
+	li $t0, 0
+	sw $t0, -2964($fp)
+#2394<_____________===
+	lw $t2, -192($fp)
+	li $t3, 39583
+	div $t2, $t3
+	mflo $t1
+	sw $t1, -2968($fp)
+#2395<_____________===
+	lw $t4, -2968($fp)
+	bne $t4, 0, label406
+#2396<_____________===
+	j label409
+#2397<_____________===
+label409:
+#2398<_____________===
+	li $t5, 1763
+	li $t6, 0
+	bne $t5, $t6, label406
+#2399<_____________===
+	j label408
+#2400<_____________===
+label408:
+#2401<_____________===
+	li $t0, 359
+	li $t1, 0
+	bne $t0, $t1, label406
+#2402<_____________===
+	j label407
+#2403<_____________===
+label406:
+#2404<_____________===
+	lw $t2, -2964($fp)
+	li $t2, 1
+	sw $t2, -2964($fp)
+#2405<_____________===
+label407:
+#2406<_____________===
+	lw $t3, -1104($fp)
+	lw $t4, -2964($fp)
+	move $t3, $t4
+	sw $t3, -1104($fp)
+#2407<_____________===
+	li $t6, 1
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -2972($fp)
+#2408<_____________===
+	lw $t2, -68($fp)
+	lw $t3, -2972($fp)
+	add $t1, $t2, $t3
+	sw $t1, -2976($fp)
+#2409<_____________===
+	li $t5, 8914
+	lw $t6, -2976($fp)
+	lw $s4, 0($t6)
+	mul $t4, $t5, $s4
+	sw $t4, -2980($fp)
+#2410<_____________===
+	li $t0, 0
+	sw $t0, -2984($fp)
+#2411<_____________===
+	lw $t1, -12($fp)
+	bne $t1, 0, label413
+#2412<_____________===
+	j label412
+#2413<_____________===
+label412:
+#2414<_____________===
+	lw $t2, -2984($fp)
+	li $t2, 1
+	sw $t2, -2984($fp)
+#2415<_____________===
+label413:
+#2416<_____________===
+	lw $t4, -2984($fp)
+	lw $t5, -208($fp)
+	sub $t3, $t4, $t5
+	sw $t3, -2988($fp)
+#2417<_____________===
+	lw $t6, -2980($fp)
+	lw $t0, -2988($fp)
+	blt $t6, $t0, label410
+#2418<_____________===
+	j label411
+#2419<_____________===
+label410:
+#2420<_____________===
+label411:
+#2421<_____________===
+	li $t1, 0
+	sw $t1, -2992($fp)
+#2422<_____________===
+	lw $t2, -2960($fp)
+	bne $t2, 0, label417
+#2423<_____________===
+	j label419
+#2424<_____________===
+label419:
+#2425<_____________===
+	li $t3, 14131
+	li $t4, 0
+	bne $t3, $t4, label417
+#2426<_____________===
+	j label418
+#2427<_____________===
+label417:
+#2428<_____________===
+	lw $t5, -2992($fp)
+	li $t5, 1
+	sw $t5, -2992($fp)
+#2429<_____________===
+label418:
+#2430<_____________===
+	lw $t0, -2992($fp)
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -2996($fp)
+#2431<_____________===
+	lw $t3, -1224($fp)
+	lw $t4, -2996($fp)
+	add $t2, $t3, $t4
+	sw $t2, -3000($fp)
+#2432<_____________===
+	lw $t5, -3000($fp)
+	lw $t6, -1228($fp)
+	lw $s3, 0($t5)
+	beq $s3, $t6, label414
+#2433<_____________===
+	j label416
+#2434<_____________===
+label416:
+#2435<_____________===
+	lw $t0, -308($fp)
+	bne $t0, 0, label420
+#2436<_____________===
+	j label415
+#2437<_____________===
+label420:
+#2438<_____________===
+	lw $t1, -196($fp)
+	bge $t1, 33140, label414
+#2439<_____________===
+	j label415
+#2440<_____________===
+label414:
+#2441<_____________===
+label415:
+#2442<_____________===
+	li $t3, 2
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -3004($fp)
+#2443<_____________===
+	lw $t6, -176($fp)
+	lw $t0, -3004($fp)
+	add $t5, $t6, $t0
+	sw $t5, -3008($fp)
+#2444<_____________===
+	li $t2, 0
+	li $t3, 20588
+	sub $t1, $t2, $t3
+	sw $t1, -3012($fp)
+#2445<_____________===
+	li $t5, 0
+	lw $t6, -3012($fp)
+	sub $t4, $t5, $t6
+	sw $t4, -3016($fp)
+#2446<_____________===
+	li $t0, 0
+	sw $t0, -3020($fp)
+#2447<_____________===
+	lw $t1, -188($fp)
+	bne $t1, 0, label424
+#2448<_____________===
+	j label423
+#2449<_____________===
+label423:
+#2450<_____________===
+	lw $t2, -3020($fp)
+	li $t2, 1
+	sw $t2, -3020($fp)
+#2451<_____________===
+label424:
+#2452<_____________===
+	lw $t3, -1100($fp)
+	lw $t4, -160($fp)
+	move $t3, $t4
+	sw $t3, -1100($fp)
+#2453<_____________===
+	lw $t6, -160($fp)
+	move $t5, $t6
+	sw $t5, -3024($fp)
+#2454<_____________===
+	lw $a0, -3024($fp)
+#2455<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_CYq6iXzc
+	move $t0, $v0
+	sw $t0, -3028($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2456<_____________===
+	lw $t2, -3020($fp)
+	lw $t3, -3028($fp)
+	sub $t1, $t2, $t3
+	sw $t1, -3032($fp)
+#2457<_____________===
+	li $t4, 0
+	sw $t4, -3036($fp)
+#2458<_____________===
+	lw $t5, -208($fp)
+	bne $t5, 0, label426
+#2459<_____________===
+	j label425
+#2460<_____________===
+label425:
+#2461<_____________===
+	lw $t6, -3036($fp)
+	li $t6, 1
+	sw $t6, -3036($fp)
+#2462<_____________===
+label426:
+#2463<_____________===
+	lw $t0, -3032($fp)
+	lw $t1, -3036($fp)
+	ble $t0, $t1, label421
+#2464<_____________===
+	j label422
+#2465<_____________===
+label421:
+#2466<_____________===
+label427:
+#2467<_____________===
+	li $t2, 0
+	sw $t2, -3040($fp)
+#2468<_____________===
+	li $t4, 4
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -3044($fp)
+#2469<_____________===
+	lw $t0, -244($fp)
+	lw $t1, -3044($fp)
+	add $t6, $t0, $t1
+	sw $t6, -3048($fp)
+#2470<_____________===
+	lw $t2, -3048($fp)
+	lw $s3, 0($t2)
+	bne $s3, 0, label430
+#2471<_____________===
+	j label433
+#2472<_____________===
+label433:
+#2473<_____________===
+	li $t3, 57994
+	li $t4, 0
+	bne $t3, $t4, label430
+#2474<_____________===
+	j label432
+#2475<_____________===
+label432:
+#2476<_____________===
+	lw $t5, -160($fp)
+	bne $t5, 45755, label430
+#2477<_____________===
+	j label431
+#2478<_____________===
+label430:
+#2479<_____________===
+	lw $t6, -3040($fp)
+	li $t6, 1
+	sw $t6, -3040($fp)
+#2480<_____________===
+label431:
+#2481<_____________===
+	lw $t1, -3040($fp)
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -3052($fp)
+#2482<_____________===
+	lw $t4, -68($fp)
+	lw $t5, -3052($fp)
+	add $t3, $t4, $t5
+	sw $t3, -3056($fp)
+#2483<_____________===
+	lw $t6, -3056($fp)
+	lw $s3, 0($t6)
+	bne $s3, 0, label428
+#2484<_____________===
+	j label429
+#2485<_____________===
+label428:
+#2486<_____________===
+#2487<_____________===
+	la $t0, -3076($fp)
+	sw $t0, -3080($fp)
+#2488<_____________===
+#2489<_____________===
+#2490<_____________===
+	li $t2, 0
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -3092($fp)
+#2491<_____________===
+	lw $t5, -3080($fp)
+	lw $t6, -3092($fp)
+	add $t4, $t5, $t6
+	sw $t4, -3096($fp)
+#2492<_____________===
+	lw $t0, -3096($fp)
+	li $s2, 10560
+	sw $t0, -3096($fp)
+	sw $s2, 0($t0)
+#2493<_____________===
+	li $t2, 1
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -3100($fp)
+#2494<_____________===
+	lw $t5, -3080($fp)
+	lw $t6, -3100($fp)
+	add $t4, $t5, $t6
+	sw $t4, -3104($fp)
+#2495<_____________===
+	lw $t0, -3104($fp)
+	li $s2, 37712
+	sw $t0, -3104($fp)
+	sw $s2, 0($t0)
+#2496<_____________===
+	li $t2, 2
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -3108($fp)
+#2497<_____________===
+	lw $t5, -3080($fp)
+	lw $t6, -3108($fp)
+	add $t4, $t5, $t6
+	sw $t4, -3112($fp)
+#2498<_____________===
+	lw $t0, -3112($fp)
+	li $s2, 22550
+	sw $t0, -3112($fp)
+	sw $s2, 0($t0)
+#2499<_____________===
+	li $t2, 3
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -3116($fp)
+#2500<_____________===
+	lw $t5, -3080($fp)
+	lw $t6, -3116($fp)
+	add $t4, $t5, $t6
+	sw $t4, -3120($fp)
+#2501<_____________===
+	lw $t0, -3120($fp)
+	li $s2, 49505
+	sw $t0, -3120($fp)
+	sw $s2, 0($t0)
+#2502<_____________===
+	li $t2, 4
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -3124($fp)
+#2503<_____________===
+	lw $t5, -3080($fp)
+	lw $t6, -3124($fp)
+	add $t4, $t5, $t6
+	sw $t4, -3128($fp)
+#2504<_____________===
+	lw $t0, -3128($fp)
+	li $s2, 16458
+	sw $t0, -3128($fp)
+	sw $s2, 0($t0)
+#2505<_____________===
+	lw $t1, -3084($fp)
+	li $t1, 7994
+	sw $t1, -3084($fp)
+#2506<_____________===
+	lw $t2, -3088($fp)
+	li $t2, 38648
+	sw $t2, -3088($fp)
+#2507<_____________===
+	li $t3, 0
+	sw $t3, -3132($fp)
+#2508<_____________===
+	li $t5, 54417
+	lw $t6, -3084($fp)
+	div $t5, $t6
+	mflo $t4
+	sw $t4, -3136($fp)
+#2509<_____________===
+	lw $t0, -3136($fp)
+	bne $t0, 0, label434
+#2510<_____________===
+	j label436
+#2511<_____________===
+label436:
+#2512<_____________===
+	li $t1, 33130
+	li $t2, 0
+	bne $t1, $t2, label434
+#2513<_____________===
+	j label435
+#2514<_____________===
+label434:
+#2515<_____________===
+	lw $t3, -3132($fp)
+	li $t3, 1
+	sw $t3, -3132($fp)
+#2516<_____________===
+label435:
+#2517<_____________===
+	lw $t5, -3132($fp)
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -3140($fp)
+#2518<_____________===
+	lw $t1, -3080($fp)
+	lw $t2, -3140($fp)
+	add $t0, $t1, $t2
+	sw $t0, -3144($fp)
+#2519<_____________===
+	li $t3, 0
+	sw $t3, -3148($fp)
+#2520<_____________===
+	li $t4, 0
+	sw $t4, -3152($fp)
+#2521<_____________===
+	lw $t5, -308($fp)
+	bge $t5, 3336, label439
+#2522<_____________===
+	j label440
+#2523<_____________===
+label439:
+#2524<_____________===
+	lw $t6, -3152($fp)
+	li $t6, 1
+	sw $t6, -3152($fp)
+#2525<_____________===
+label440:
+#2526<_____________===
+	lw $t0, -3152($fp)
+	bgt $t0, 23719, label437
+#2527<_____________===
+	j label438
+#2528<_____________===
+label437:
+#2529<_____________===
+	lw $t1, -3148($fp)
+	li $t1, 1
+	sw $t1, -3148($fp)
+#2530<_____________===
+label438:
+#2531<_____________===
+	lw $t3, -3148($fp)
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -3156($fp)
+#2532<_____________===
+	lw $t6, -36($fp)
+	lw $t0, -3156($fp)
+	add $t5, $t6, $t0
+	sw $t5, -3160($fp)
+#2533<_____________===
+	li $t1, 0
+	sw $t1, -3164($fp)
+#2534<_____________===
+	li $t3, 17343
+	li $t4, 37934
+	mul $t2, $t3, $t4
+	sw $t2, -3168($fp)
+#2535<_____________===
+	lw $t5, -3168($fp)
+	bne $t5, 0, label443
+#2536<_____________===
+	j label442
+#2537<_____________===
+label443:
+#2538<_____________===
+	lw $t6, -992($fp)
+	bne $t6, 0, label441
+#2539<_____________===
+	j label442
+#2540<_____________===
+label441:
+#2541<_____________===
+	lw $t0, -3164($fp)
+	li $t0, 1
+	sw $t0, -3164($fp)
+#2542<_____________===
+label442:
+#2543<_____________===
+	lw $a0, -3164($fp)
+#2544<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t1, $v0
+	sw $t1, -3172($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2545<_____________===
+	li $t3, 0
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -3176($fp)
+#2546<_____________===
+	lw $t6, -1000($fp)
+	lw $t0, -3176($fp)
+	add $t5, $t6, $t0
+	sw $t5, -3180($fp)
+#2547<_____________===
+	li $t2, 0
+	li $t3, 11981
+	sub $t1, $t2, $t3
+	sw $t1, -3184($fp)
+#2548<_____________===
+	lw $t5, -3180($fp)
+	lw $t6, -3184($fp)
+	lw $s3, 0($t5)
+	div $s3, $t6
+	mflo $t4
+	sw $t4, -3188($fp)
+#2549<_____________===
+	li $t1, 48304
+	li $t2, 15887
+	div $t1, $t2
+	mflo $t0
+	sw $t0, -3192($fp)
+#2550<_____________===
+	lw $t4, -3188($fp)
+	lw $t5, -3192($fp)
+	sub $t3, $t4, $t5
+	sw $t3, -3196($fp)
+#2551<_____________===
+	lw $t6, -3196($fp)
+	bne $t6, 0, label444
+#2552<_____________===
+	j label446
+#2553<_____________===
+label446:
+#2554<_____________===
+	li $t0, 6695
+	li $t1, 0
+	bne $t0, $t1, label444
+#2555<_____________===
+	j label445
+#2556<_____________===
+label444:
+#2557<_____________===
+label445:
+#2558<_____________===
+	j label427
+#2559<_____________===
+label429:
+#2560<_____________===
+	j label447
+#2561<_____________===
+label422:
+#2562<_____________===
+label448:
+#2563<_____________===
+	li $t2, 0
+	sw $t2, -3200($fp)
+#2564<_____________===
+	lw $t3, -200($fp)
+	bge $t3, 57218, label451
+#2565<_____________===
+	j label453
+#2566<_____________===
+label453:
+#2567<_____________===
+	lw $t4, -196($fp)
+	bne $t4, 0, label451
+#2568<_____________===
+	j label452
+#2569<_____________===
+label451:
+#2570<_____________===
+	lw $t5, -3200($fp)
+	li $t5, 1
+	sw $t5, -3200($fp)
+#2571<_____________===
+label452:
+#2572<_____________===
+	lw $t0, -3200($fp)
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -3204($fp)
+#2573<_____________===
+	lw $t3, -288($fp)
+	lw $t4, -3204($fp)
+	add $t2, $t3, $t4
+	sw $t2, -3208($fp)
+#2574<_____________===
+	lw $t6, -1112($fp)
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -3212($fp)
+#2575<_____________===
+	lw $t2, -1052($fp)
+	lw $t3, -3212($fp)
+	add $t1, $t2, $t3
+	sw $t1, -3216($fp)
+#2576<_____________===
+	lw $t5, -3216($fp)
+	li $t6, 26295
+	lw $s3, 0($t5)
+	div $s3, $t6
+	mflo $t4
+	sw $t4, -3220($fp)
+#2577<_____________===
+	lw $t0, -3208($fp)
+	lw $t1, -3220($fp)
+	lw $s3, 0($t0)
+	beq $s3, $t1, label449
+#2578<_____________===
+	j label450
+#2579<_____________===
+label449:
+#2580<_____________===
+	lw $t2, -1116($fp)
+	bne $t2, 0, label456
+#2581<_____________===
+	j label455
+#2582<_____________===
+label456:
+#2583<_____________===
+	lw $t3, -208($fp)
+	bne $t3, 0, label454
+#2584<_____________===
+	j label455
+#2585<_____________===
+label454:
+#2586<_____________===
+label455:
+#2587<_____________===
+	j label448
+#2588<_____________===
+label450:
+#2589<_____________===
+label447:
+#2590<_____________===
+#2591<_____________===
+#2592<_____________===
+	la $t4, -3240($fp)
+	sw $t4, -3244($fp)
+#2593<_____________===
+#2594<_____________===
+#2595<_____________===
+#2596<_____________===
+	lw $t5, -3224($fp)
+	li $t5, 3660
+	sw $t5, -3224($fp)
+#2597<_____________===
+	li $t0, 0
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -3260($fp)
+#2598<_____________===
+	lw $t3, -3244($fp)
+	lw $t4, -3260($fp)
+	add $t2, $t3, $t4
+	sw $t2, -3264($fp)
+#2599<_____________===
+	lw $t5, -3264($fp)
+	li $s2, 5813
+	sw $t5, -3264($fp)
+	sw $s2, 0($t5)
+#2600<_____________===
+	li $t0, 1
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -3268($fp)
+#2601<_____________===
+	lw $t3, -3244($fp)
+	lw $t4, -3268($fp)
+	add $t2, $t3, $t4
+	sw $t2, -3272($fp)
+#2602<_____________===
+	lw $t5, -3272($fp)
+	li $s2, 59436
+	sw $t5, -3272($fp)
+	sw $s2, 0($t5)
+#2603<_____________===
+	li $t0, 2
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -3276($fp)
+#2604<_____________===
+	lw $t3, -3244($fp)
+	lw $t4, -3276($fp)
+	add $t2, $t3, $t4
+	sw $t2, -3280($fp)
+#2605<_____________===
+	lw $t5, -3280($fp)
+	li $s2, 35786
+	sw $t5, -3280($fp)
+	sw $s2, 0($t5)
+#2606<_____________===
+	li $t0, 3
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -3284($fp)
+#2607<_____________===
+	lw $t3, -3244($fp)
+	lw $t4, -3284($fp)
+	add $t2, $t3, $t4
+	sw $t2, -3288($fp)
+#2608<_____________===
+	lw $t5, -3288($fp)
+	li $s2, 22265
+	sw $t5, -3288($fp)
+	sw $s2, 0($t5)
+#2609<_____________===
+	lw $t6, -3248($fp)
+	li $t6, 14488
+	sw $t6, -3248($fp)
+#2610<_____________===
+	lw $t0, -3252($fp)
+	li $t0, 36496
+	sw $t0, -3252($fp)
+#2611<_____________===
+	lw $t1, -3256($fp)
+	li $t1, 11445
+	sw $t1, -3256($fp)
+#2612<_____________===
+label457:
+#2613<_____________===
+	li $t3, 6946
+	li $t4, 16715
+	div $t3, $t4
+	mflo $t2
+	sw $t2, -3292($fp)
+#2614<_____________===
+	lw $t5, -3292($fp)
+	bne $t5, 0, label458
+#2615<_____________===
+	j label459
+#2616<_____________===
+label458:
+#2617<_____________===
+	li $t6, 0
+	sw $t6, -3296($fp)
+#2618<_____________===
+	li $t1, 0
+	li $t2, 22005
+	sub $t0, $t1, $t2
+	sw $t0, -3300($fp)
+#2619<_____________===
+	li $t4, 0
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -3304($fp)
+#2620<_____________===
+	lw $t0, -1000($fp)
+	lw $t1, -3304($fp)
+	add $t6, $t0, $t1
+	sw $t6, -3308($fp)
+#2621<_____________===
+	li $t2, 0
+	sw $t2, -3312($fp)
+#2622<_____________===
+	li $t3, 5974
+	li $t4, 0
+	bne $t3, $t4, label466
+#2623<_____________===
+	j label464
+#2624<_____________===
+label466:
+#2625<_____________===
+	lw $t5, -208($fp)
+	bne $t5, 0, label464
+#2626<_____________===
+	j label465
+#2627<_____________===
+label464:
+#2628<_____________===
+	lw $t6, -3312($fp)
+	li $t6, 1
+	sw $t6, -3312($fp)
+#2629<_____________===
+label465:
+#2630<_____________===
+	li $t0, 0
+	sw $t0, -3316($fp)
+#2631<_____________===
+	lw $t1, -8($fp)
+	blt $t1, 61116, label467
+#2632<_____________===
+	j label468
+#2633<_____________===
+label467:
+#2634<_____________===
+	lw $t2, -3316($fp)
+	li $t2, 1
+	sw $t2, -3316($fp)
+#2635<_____________===
+label468:
+#2636<_____________===
+	lw $a0, -3316($fp)
+#2637<_____________===
+	lw $a1, -3312($fp)
+#2638<_____________===
+	lw $s1, -3308($fp)
+	lw $a2, 0($s1)
+#2639<_____________===
+	lw $a3, -3300($fp)
+#2640<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t3, $v0
+	sw $t3, -3320($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2641<_____________===
+	lw $t5, -152($fp)
+	lw $t6, -8($fp)
+	mul $t4, $t5, $t6
+	sw $t4, -3324($fp)
+#2642<_____________===
+	lw $t1, -3324($fp)
+	lw $t2, -40($fp)
+	sub $t0, $t1, $t2
+	sw $t0, -3328($fp)
+#2643<_____________===
+	lw $t3, -3320($fp)
+	lw $t4, -3328($fp)
+	ble $t3, $t4, label462
+#2644<_____________===
+	j label463
+#2645<_____________===
+label462:
+#2646<_____________===
+	lw $t5, -3296($fp)
+	li $t5, 1
+	sw $t5, -3296($fp)
+#2647<_____________===
+label463:
+#2648<_____________===
+	lw $t6, -3296($fp)
+	beq $t6, 47260, label460
+#2649<_____________===
+	j label461
+#2650<_____________===
+label460:
+#2651<_____________===
+label461:
+#2652<_____________===
+	li $t0, 0
+	sw $t0, -3332($fp)
+#2653<_____________===
+	li $t1, 0
+	sw $t1, -3336($fp)
+#2654<_____________===
+	lw $t2, -184($fp)
+	bne $t2, 0, label474
+#2655<_____________===
+	j label473
+#2656<_____________===
+label473:
+#2657<_____________===
+	lw $t3, -3336($fp)
+	li $t3, 1
+	sw $t3, -3336($fp)
+#2658<_____________===
+label474:
+#2659<_____________===
+	li $t5, 0
+	lw $t6, -3336($fp)
+	sub $t4, $t5, $t6
+	sw $t4, -3340($fp)
+#2660<_____________===
+	li $t1, 44622
+	lw $t2, -1004($fp)
+	mul $t0, $t1, $t2
+	sw $t0, -3344($fp)
+#2661<_____________===
+	lw $t3, -3340($fp)
+	lw $t4, -3344($fp)
+	bne $t3, $t4, label471
+#2662<_____________===
+	j label472
+#2663<_____________===
+label471:
+#2664<_____________===
+	lw $t5, -3332($fp)
+	li $t5, 1
+	sw $t5, -3332($fp)
+#2665<_____________===
+label472:
+#2666<_____________===
+	li $t0, 49997
+	li $t1, 14854
+	add $t6, $t0, $t1
+	sw $t6, -3348($fp)
+#2667<_____________===
+	lw $t2, -3332($fp)
+	lw $t3, -3348($fp)
+	ble $t2, $t3, label469
+#2668<_____________===
+	j label470
+#2669<_____________===
+label469:
+#2670<_____________===
+label470:
+#2671<_____________===
+	lw $t4, -204($fp)
+	lw $t5, -104($fp)
+	move $t4, $t5
+	sw $t4, -204($fp)
+#2672<_____________===
+	lw $t0, -104($fp)
+	move $t6, $t0
+	sw $t6, -3352($fp)
+#2673<_____________===
+	lw $t2, -3352($fp)
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -3356($fp)
+#2674<_____________===
+	lw $t5, -1224($fp)
+	lw $t6, -3356($fp)
+	add $t4, $t5, $t6
+	sw $t4, -3360($fp)
+#2675<_____________===
+	lw $t1, -3360($fp)
+	li $t2, 47958
+	lw $s3, 0($t1)
+	mul $t0, $s3, $t2
+	sw $t0, -3364($fp)
+#2676<_____________===
+	li $t3, 0
+	sw $t3, -3368($fp)
+#2677<_____________===
+	li $t4, 32197
+	li $t5, 0
+	bne $t4, $t5, label476
+#2678<_____________===
+	j label475
+#2679<_____________===
+label475:
+#2680<_____________===
+	lw $t6, -3368($fp)
+	li $t6, 1
+	sw $t6, -3368($fp)
+#2681<_____________===
+label476:
+#2682<_____________===
+	lw $t0, -320($fp)
+	lw $t1, -3368($fp)
+	move $t0, $t1
+	sw $t0, -320($fp)
+#2683<_____________===
+	j label457
+#2684<_____________===
+label459:
+#2685<_____________===
+label477:
+#2686<_____________===
+	lw $t2, -1012($fp)
+	lw $t3, -308($fp)
+	move $t2, $t3
+	sw $t2, -1012($fp)
+#2687<_____________===
+	lw $t5, -308($fp)
+	move $t4, $t5
+	sw $t4, -3372($fp)
+#2688<_____________===
+	li $t6, 0
+	sw $t6, -3376($fp)
+#2689<_____________===
+	lw $t1, -1108($fp)
+	li $t2, 54721
+	sub $t0, $t1, $t2
+	sw $t0, -3380($fp)
+#2690<_____________===
+	lw $t3, -3380($fp)
+	lw $t4, -92($fp)
+	bgt $t3, $t4, label480
+#2691<_____________===
+	j label481
+#2692<_____________===
+label480:
+#2693<_____________===
+	lw $t5, -3376($fp)
+	li $t5, 1
+	sw $t5, -3376($fp)
+#2694<_____________===
+label481:
+#2695<_____________===
+	li $t6, 0
+	sw $t6, -3384($fp)
+#2696<_____________===
+	li $t1, 47725
+	lw $t2, -208($fp)
+	sub $t0, $t1, $t2
+	sw $t0, -3388($fp)
+#2697<_____________===
+	lw $t3, -3388($fp)
+	bne $t3, 0, label482
+#2698<_____________===
+	j label484
+#2699<_____________===
+label484:
+#2700<_____________===
+	lw $t4, -3252($fp)
+	bne $t4, 0, label482
+#2701<_____________===
+	j label483
+#2702<_____________===
+label482:
+#2703<_____________===
+	lw $t5, -3384($fp)
+	li $t5, 1
+	sw $t5, -3384($fp)
+#2704<_____________===
+label483:
+#2705<_____________===
+	lw $a0, -3384($fp)
+#2706<_____________===
+	lw $a1, -3376($fp)
+#2707<_____________===
+	lw $a2, -3372($fp)
+#2708<_____________===
+	li $a3, 20356
+#2709<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_FxEuB
+	move $t6, $v0
+	sw $t6, -3392($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2710<_____________===
+	li $t0, 0
+	sw $t0, -3396($fp)
+#2711<_____________===
+	lw $t1, -84($fp)
+	bne $t1, 0, label486
+#2712<_____________===
+	j label485
+#2713<_____________===
+label485:
+#2714<_____________===
+	lw $t2, -3396($fp)
+	li $t2, 1
+	sw $t2, -3396($fp)
+#2715<_____________===
+label486:
+#2716<_____________===
+	lw $t4, -3396($fp)
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -3400($fp)
+#2717<_____________===
+	lw $t0, -176($fp)
+	lw $t1, -3400($fp)
+	add $t6, $t0, $t1
+	sw $t6, -3404($fp)
+#2718<_____________===
+	lw $t3, -3392($fp)
+	lw $t4, -3404($fp)
+	lw $s4, 0($t4)
+	add $t2, $t3, $s4
+	sw $t2, -3408($fp)
+#2719<_____________===
+	lw $t5, -3408($fp)
+	bne $t5, 0, label478
+#2720<_____________===
+	j label479
+#2721<_____________===
+label478:
+#2722<_____________===
+	li $t6, 0
+	sw $t6, -3412($fp)
+#2723<_____________===
+	li $t0, 0
+	sw $t0, -3416($fp)
+#2724<_____________===
+	li $t1, 0
+	sw $t1, -3420($fp)
+#2725<_____________===
+	lw $t2, -152($fp)
+	bge $t2, 32338, label493
+#2726<_____________===
+	j label494
+#2727<_____________===
+label493:
+#2728<_____________===
+	lw $t3, -3420($fp)
+	li $t3, 1
+	sw $t3, -3420($fp)
+#2729<_____________===
+label494:
+#2730<_____________===
+	lw $t4, -3420($fp)
+	lw $t5, -1012($fp)
+	bne $t4, $t5, label491
+#2731<_____________===
+	j label492
+#2732<_____________===
+label491:
+#2733<_____________===
+	lw $t6, -3416($fp)
+	li $t6, 1
+	sw $t6, -3416($fp)
+#2734<_____________===
+label492:
+#2735<_____________===
+	li $t0, 0
+	sw $t0, -3424($fp)
+#2736<_____________===
+	li $t1, 37489
+	li $t2, 0
+	bne $t1, $t2, label495
+#2737<_____________===
+	j label496
+#2738<_____________===
+label495:
+#2739<_____________===
+	lw $t3, -3424($fp)
+	li $t3, 1
+	sw $t3, -3424($fp)
+#2740<_____________===
+label496:
+#2741<_____________===
+	li $t4, 0
+	sw $t4, -3428($fp)
+#2742<_____________===
+	li $t6, 63612
+	lw $t0, -1100($fp)
+	mul $t5, $t6, $t0
+	sw $t5, -3432($fp)
+#2743<_____________===
+	lw $t1, -3432($fp)
+	lw $t2, -104($fp)
+	beq $t1, $t2, label497
+#2744<_____________===
+	j label498
+#2745<_____________===
+label497:
+#2746<_____________===
+	lw $t3, -3428($fp)
+	li $t3, 1
+	sw $t3, -3428($fp)
+#2747<_____________===
+label498:
+#2748<_____________===
+	li $t5, 0
+	lw $t6, -3248($fp)
+	sub $t4, $t5, $t6
+	sw $t4, -3436($fp)
+#2749<_____________===
+	lw $a0, -3436($fp)
+#2750<_____________===
+	lw $a1, -3428($fp)
+#2751<_____________===
+	lw $a2, -3424($fp)
+#2752<_____________===
+	lw $a3, -3416($fp)
+#2753<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t0, $v0
+	sw $t0, -3440($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2754<_____________===
+	lw $t1, -3440($fp)
+	bne $t1, 0, label490
+#2755<_____________===
+	j label489
+#2756<_____________===
+label489:
+#2757<_____________===
+	lw $t2, -3412($fp)
+	li $t2, 1
+	sw $t2, -3412($fp)
+#2758<_____________===
+label490:
+#2759<_____________===
+	lw $t4, -3256($fp)
+	lw $t5, -3412($fp)
+	div $t4, $t5
+	mflo $t3
+	sw $t3, -3444($fp)
+#2760<_____________===
+	lw $t6, -3444($fp)
+	bne $t6, 0, label487
+#2761<_____________===
+	j label488
+#2762<_____________===
+label487:
+#2763<_____________===
+	li $t0, 0
+	sw $t0, -3448($fp)
+#2764<_____________===
+	li $t2, 5
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -3452($fp)
+#2765<_____________===
+	lw $t5, -1052($fp)
+	lw $t6, -3452($fp)
+	add $t4, $t5, $t6
+	sw $t4, -3456($fp)
+#2766<_____________===
+	lw $t0, -3456($fp)
+	lw $s3, 0($t0)
+	bne $s3, 0, label504
+#2767<_____________===
+	j label503
+#2768<_____________===
+label504:
+#2769<_____________===
+	lw $t1, -156($fp)
+	bne $t1, 0, label502
+#2770<_____________===
+	j label503
+#2771<_____________===
+label502:
+#2772<_____________===
+	lw $t2, -3448($fp)
+	li $t2, 1
+	sw $t2, -3448($fp)
+#2773<_____________===
+label503:
+#2774<_____________===
+	lw $t4, -188($fp)
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -3460($fp)
+#2775<_____________===
+	lw $t0, -1144($fp)
+	lw $t1, -3460($fp)
+	add $t6, $t0, $t1
+	sw $t6, -3464($fp)
+#2776<_____________===
+	lw $t3, -3464($fp)
+	lw $t4, -1004($fp)
+	lw $s3, 0($t3)
+	sub $t2, $s3, $t4
+	sw $t2, -3468($fp)
+#2777<_____________===
+	li $t5, 0
+	sw $t5, -3472($fp)
+#2778<_____________===
+	lw $t6, -308($fp)
+	lw $t0, -204($fp)
+	bne $t6, $t0, label505
+#2779<_____________===
+	j label506
+#2780<_____________===
+label505:
+#2781<_____________===
+	lw $t1, -3472($fp)
+	li $t1, 1
+	sw $t1, -3472($fp)
+#2782<_____________===
+label506:
+#2783<_____________===
+	li $t2, 0
+	sw $t2, -3476($fp)
+#2784<_____________===
+	li $t3, 0
+	sw $t3, -3480($fp)
+#2785<_____________===
+	li $t4, 24372
+	li $t5, 0
+	bne $t4, $t5, label510
+#2786<_____________===
+	j label509
+#2787<_____________===
+label509:
+#2788<_____________===
+	lw $t6, -3480($fp)
+	li $t6, 1
+	sw $t6, -3480($fp)
+#2789<_____________===
+label510:
+#2790<_____________===
+	lw $t0, -3480($fp)
+	lw $t1, -308($fp)
+	blt $t0, $t1, label507
+#2791<_____________===
+	j label508
+#2792<_____________===
+label507:
+#2793<_____________===
+	lw $t2, -3476($fp)
+	li $t2, 1
+	sw $t2, -3476($fp)
+#2794<_____________===
+label508:
+#2795<_____________===
+	lw $a0, -3476($fp)
+#2796<_____________===
+	lw $a1, -3472($fp)
+#2797<_____________===
+	lw $a2, -3468($fp)
+#2798<_____________===
+	lw $a3, -3448($fp)
+#2799<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_FxEuB
+	move $t3, $v0
+	sw $t3, -3484($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2800<_____________===
+	lw $a0, -3484($fp)
+#2801<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_CYq6iXzc
+	move $t4, $v0
+	sw $t4, -3488($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2802<_____________===
+	li $a0, 42693
+#2803<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_CYq6iXzc
+	move $t5, $v0
+	sw $t5, -3492($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2804<_____________===
+	lw $t0, -3488($fp)
+	lw $t1, -3492($fp)
+	mul $t6, $t0, $t1
+	sw $t6, -3496($fp)
+#2805<_____________===
+	li $t3, 0
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -3500($fp)
+#2806<_____________===
+	lw $t6, -140($fp)
+	lw $t0, -3500($fp)
+	add $t5, $t6, $t0
+	sw $t5, -3504($fp)
+#2807<_____________===
+	lw $t1, -3496($fp)
+	lw $t2, -3504($fp)
+	lw $s4, 0($t2)
+	bge $t1, $s4, label501
+#2808<_____________===
+	j label500
+#2809<_____________===
+label501:
+#2810<_____________===
+	lw $a0, -1112($fp)
+#2811<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_CYq6iXzc
+	move $t3, $v0
+	sw $t3, -3508($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2812<_____________===
+	lw $t4, -3508($fp)
+	bne $t4, 0, label499
+#2813<_____________===
+	j label500
+#2814<_____________===
+label499:
+#2815<_____________===
+label500:
+#2816<_____________===
+	j label511
+#2817<_____________===
+label488:
+#2818<_____________===
+	li $t5, 0
+	sw $t5, -3512($fp)
+#2819<_____________===
+	li $t6, 0
+	sw $t6, -3516($fp)
+#2820<_____________===
+	li $t0, 12943
+	li $t1, 57250
+	bgt $t0, $t1, label516
+#2821<_____________===
+	j label517
+#2822<_____________===
+label516:
+#2823<_____________===
+	lw $t2, -3516($fp)
+	li $t2, 1
+	sw $t2, -3516($fp)
+#2824<_____________===
+label517:
+#2825<_____________===
+	lw $t3, -3516($fp)
+	beq $t3, 32760, label514
+#2826<_____________===
+	j label515
+#2827<_____________===
+label514:
+#2828<_____________===
+	lw $t4, -3512($fp)
+	li $t4, 1
+	sw $t4, -3512($fp)
+#2829<_____________===
+label515:
+#2830<_____________===
+	lw $a0, -3512($fp)
+#2831<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t5, $v0
+	sw $t5, -3520($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2832<_____________===
+	lw $t6, -3520($fp)
+	bne $t6, 0, label512
+#2833<_____________===
+	j label513
+#2834<_____________===
+label512:
+#2835<_____________===
+	lw $t1, -180($fp)
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -3524($fp)
+#2836<_____________===
+	lw $t4, -288($fp)
+	lw $t5, -3524($fp)
+	add $t3, $t4, $t5
+	sw $t3, -3528($fp)
+#2837<_____________===
+	lw $t0, -3528($fp)
+	li $t1, 4
+	lw $s3, 0($t0)
+	mul $t6, $s3, $t1
+	sw $t6, -3532($fp)
+#2838<_____________===
+	lw $t3, -176($fp)
+	lw $t4, -3532($fp)
+	add $t2, $t3, $t4
+	sw $t2, -3536($fp)
+#2839<_____________===
+	lw $t6, -1012($fp)
+	lw $t0, -3536($fp)
+	lw $s4, 0($t0)
+	div $t6, $s4
+	mflo $t5
+	sw $t5, -3540($fp)
+#2840<_____________===
+	lw $t1, -3540($fp)
+	move $v0, $t1
+	addi $sp, $sp, 800
+	addi $sp, $sp, 4
+	lw $fp, 0($sp)
+	addi $sp, $sp, 4
+	jr $ra
+#2841<_____________===
+	j label518
+#2842<_____________===
+label513:
+#2843<_____________===
+	li $t2, 0
+	sw $t2, -3544($fp)
+#2844<_____________===
+	lw $t3, -1096($fp)
+	bne $t3, 0, label522
+#2845<_____________===
+	j label520
+#2846<_____________===
+label522:
+#2847<_____________===
+	li $t4, 49440
+	li $t5, 0
+	bne $t4, $t5, label521
+#2848<_____________===
+	j label520
+#2849<_____________===
+label521:
+#2850<_____________===
+	li $t6, 3159
+	li $t0, 0
+	bne $t6, $t0, label519
+#2851<_____________===
+	j label520
+#2852<_____________===
+label519:
+#2853<_____________===
+	lw $t1, -3544($fp)
+	li $t1, 1
+	sw $t1, -3544($fp)
+#2854<_____________===
+label520:
+#2855<_____________===
+	li $t2, 0
+	sw $t2, -3548($fp)
+#2856<_____________===
+	li $t3, 39706
+	li $t4, 0
+	bne $t3, $t4, label523
+#2857<_____________===
+	j label524
+#2858<_____________===
+label523:
+#2859<_____________===
+	lw $t5, -3548($fp)
+	li $t5, 1
+	sw $t5, -3548($fp)
+#2860<_____________===
+label524:
+#2861<_____________===
+	li $t0, 0
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -3552($fp)
+#2862<_____________===
+	lw $t3, -288($fp)
+	lw $t4, -3552($fp)
+	add $t2, $t3, $t4
+	sw $t2, -3556($fp)
+#2863<_____________===
+	li $t5, 0
+	sw $t5, -3560($fp)
+#2864<_____________===
+	lw $t0, -3224($fp)
+	li $t1, 18828
+	sub $t6, $t0, $t1
+	sw $t6, -3564($fp)
+#2865<_____________===
+	lw $t2, -3564($fp)
+	bne $t2, 0, label527
+#2866<_____________===
+	j label526
+#2867<_____________===
+label527:
+#2868<_____________===
+	li $t3, 39885
+	li $t4, 0
+	bne $t3, $t4, label525
+#2869<_____________===
+	j label526
+#2870<_____________===
+label525:
+#2871<_____________===
+	lw $t5, -3560($fp)
+	li $t5, 1
+	sw $t5, -3560($fp)
+#2872<_____________===
+label526:
+#2873<_____________===
+	lw $a0, -3560($fp)
+#2874<_____________===
+	lw $s1, -3556($fp)
+	lw $a1, 0($s1)
+#2875<_____________===
+	lw $a2, -3548($fp)
+#2876<_____________===
+	lw $a3, -3544($fp)
+#2877<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_FxEuB
+	move $t6, $v0
+	sw $t6, -3568($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2878<_____________===
+	li $t0, 0
+	sw $t0, -3572($fp)
+#2879<_____________===
+	li $t2, 0
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -3576($fp)
+#2880<_____________===
+	lw $t5, -3244($fp)
+	lw $t6, -3576($fp)
+	add $t4, $t5, $t6
+	sw $t4, -3580($fp)
+#2881<_____________===
+	lw $t0, -3580($fp)
+	lw $s3, 0($t0)
+	bne $s3, 0, label529
+#2882<_____________===
+	j label528
+#2883<_____________===
+label528:
+#2884<_____________===
+	lw $t1, -3572($fp)
+	li $t1, 1
+	sw $t1, -3572($fp)
+#2885<_____________===
+label529:
+#2886<_____________===
+	li $t3, 0
+	lw $t4, -3572($fp)
+	sub $t2, $t3, $t4
+	sw $t2, -3584($fp)
+#2887<_____________===
+label518:
+#2888<_____________===
+label511:
+#2889<_____________===
+	j label477
+#2890<_____________===
+label479:
+#2891<_____________===
+	li $t5, 21609
+	li $t6, 0
+	bne $t5, $t6, label531
+#2892<_____________===
+	j label530
+#2893<_____________===
+label530:
+#2894<_____________===
+label531:
+#2895<_____________===
+#2896<_____________===
+#2897<_____________===
+#2898<_____________===
+	la $t0, -3616($fp)
+	sw $t0, -3620($fp)
+#2899<_____________===
+#2900<_____________===
+	lw $t1, -3588($fp)
+	li $t1, 10224
+	sw $t1, -3588($fp)
+#2901<_____________===
+	lw $t2, -3592($fp)
+	li $t2, 64406
+	sw $t2, -3592($fp)
+#2902<_____________===
+	li $t4, 0
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -3628($fp)
+#2903<_____________===
+	lw $t0, -3620($fp)
+	lw $t1, -3628($fp)
+	add $t6, $t0, $t1
+	sw $t6, -3632($fp)
+#2904<_____________===
+	lw $t2, -3632($fp)
+	li $s2, 36463
+	sw $t2, -3632($fp)
+	sw $s2, 0($t2)
+#2905<_____________===
+	li $t4, 1
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -3636($fp)
+#2906<_____________===
+	lw $t0, -3620($fp)
+	lw $t1, -3636($fp)
+	add $t6, $t0, $t1
+	sw $t6, -3640($fp)
+#2907<_____________===
+	lw $t2, -3640($fp)
+	li $s2, 58182
+	sw $t2, -3640($fp)
+	sw $s2, 0($t2)
+#2908<_____________===
+	li $t4, 2
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -3644($fp)
+#2909<_____________===
+	lw $t0, -3620($fp)
+	lw $t1, -3644($fp)
+	add $t6, $t0, $t1
+	sw $t6, -3648($fp)
+#2910<_____________===
+	lw $t2, -3648($fp)
+	li $s2, 7051
+	sw $t2, -3648($fp)
+	sw $s2, 0($t2)
+#2911<_____________===
+	li $t4, 3
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -3652($fp)
+#2912<_____________===
+	lw $t0, -3620($fp)
+	lw $t1, -3652($fp)
+	add $t6, $t0, $t1
+	sw $t6, -3656($fp)
+#2913<_____________===
+	lw $t2, -3656($fp)
+	li $s2, 3124
+	sw $t2, -3656($fp)
+	sw $s2, 0($t2)
+#2914<_____________===
+	li $t4, 4
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -3660($fp)
+#2915<_____________===
+	lw $t0, -3620($fp)
+	lw $t1, -3660($fp)
+	add $t6, $t0, $t1
+	sw $t6, -3664($fp)
+#2916<_____________===
+	lw $t2, -3664($fp)
+	li $s2, 13003
+	sw $t2, -3664($fp)
+	sw $s2, 0($t2)
+#2917<_____________===
+	li $t4, 5
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -3668($fp)
+#2918<_____________===
+	lw $t0, -3620($fp)
+	lw $t1, -3668($fp)
+	add $t6, $t0, $t1
+	sw $t6, -3672($fp)
+#2919<_____________===
+	lw $t2, -3672($fp)
+	li $s2, 61772
+	sw $t2, -3672($fp)
+	sw $s2, 0($t2)
+#2920<_____________===
+	lw $t3, -3624($fp)
+	li $t3, 50849
+	sw $t3, -3624($fp)
+#2921<_____________===
+	li $t4, 0
+	sw $t4, -3676($fp)
+#2922<_____________===
+	li $t5, 0
+	sw $t5, -3680($fp)
+#2923<_____________===
+	lw $t6, -72($fp)
+	lw $t0, -3592($fp)
+	beq $t6, $t0, label537
+#2924<_____________===
+	j label536
+#2925<_____________===
+label537:
+#2926<_____________===
+	li $t1, 45341
+	li $t2, 0
+	bne $t1, $t2, label535
+#2927<_____________===
+	j label536
+#2928<_____________===
+label535:
+#2929<_____________===
+	lw $t3, -3680($fp)
+	li $t3, 1
+	sw $t3, -3680($fp)
+#2930<_____________===
+label536:
+#2931<_____________===
+	li $t5, 0
+	lw $t6, -8($fp)
+	sub $t4, $t5, $t6
+	sw $t4, -3684($fp)
+#2932<_____________===
+	lw $t1, -3684($fp)
+	lw $t2, -152($fp)
+	sub $t0, $t1, $t2
+	sw $t0, -3688($fp)
+#2933<_____________===
+	lw $t3, -184($fp)
+	lw $t4, -80($fp)
+	move $t3, $t4
+	sw $t3, -184($fp)
+#2934<_____________===
+	lw $t6, -80($fp)
+	move $t5, $t6
+	sw $t5, -3692($fp)
+#2935<_____________===
+	li $t0, 0
+	sw $t0, -3696($fp)
+#2936<_____________===
+	lw $t2, -84($fp)
+	li $t3, 33726
+	mul $t1, $t2, $t3
+	sw $t1, -3700($fp)
+#2937<_____________===
+	lw $t4, -3700($fp)
+	lw $t5, -76($fp)
+	blt $t4, $t5, label538
+#2938<_____________===
+	j label539
+#2939<_____________===
+label538:
+#2940<_____________===
+	lw $t6, -3696($fp)
+	li $t6, 1
+	sw $t6, -3696($fp)
+#2941<_____________===
+label539:
+#2942<_____________===
+	lw $a0, -3696($fp)
+#2943<_____________===
+	lw $a1, -3692($fp)
+#2944<_____________===
+	lw $a2, -3688($fp)
+#2945<_____________===
+	lw $a3, -3680($fp)
+#2946<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_FxEuB
+	move $t0, $v0
+	sw $t0, -3704($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2947<_____________===
+	lw $t1, -3704($fp)
+	bne $t1, 0, label534
+#2948<_____________===
+	j label533
+#2949<_____________===
+label534:
+#2950<_____________===
+	li $t2, 48925
+	li $t3, 0
+	bne $t2, $t3, label532
+#2951<_____________===
+	j label533
+#2952<_____________===
+label532:
+#2953<_____________===
+	lw $t4, -3676($fp)
+	li $t4, 1
+	sw $t4, -3676($fp)
+#2954<_____________===
+label533:
+#2955<_____________===
+	li $t5, 0
+	sw $t5, -3708($fp)
+#2956<_____________===
+	lw $t6, -320($fp)
+	bne $t6, 0, label541
+#2957<_____________===
+	j label540
+#2958<_____________===
+label540:
+#2959<_____________===
+	lw $t0, -3708($fp)
+	li $t0, 1
+	sw $t0, -3708($fp)
+#2960<_____________===
+label541:
+#2961<_____________===
+	li $t1, 0
+	sw $t1, -3712($fp)
+#2962<_____________===
+	lw $t2, -104($fp)
+	bne $t2, 0, label542
+#2963<_____________===
+	j label543
+#2964<_____________===
+label542:
+#2965<_____________===
+	lw $t3, -3712($fp)
+	li $t3, 1
+	sw $t3, -3712($fp)
+#2966<_____________===
+label543:
+#2967<_____________===
+	lw $a0, -3712($fp)
+#2968<_____________===
+	lw $a1, -3708($fp)
+#2969<_____________===
+	lw $a2, -76($fp)
+#2970<_____________===
+	lw $a3, -3676($fp)
+#2971<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t4, $v0
+	sw $t4, -3716($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#2972<_____________===
+	li $t5, 0
+	sw $t5, -3720($fp)
+#2973<_____________===
+	li $t6, 0
+	sw $t6, -3724($fp)
+#2974<_____________===
+	li $t0, 18838
+	li $t1, 62897
+	bne $t0, $t1, label548
+#2975<_____________===
+	j label550
+#2976<_____________===
+label550:
+#2977<_____________===
+	lw $t2, -12($fp)
+	bne $t2, 0, label548
+#2978<_____________===
+	j label549
+#2979<_____________===
+label548:
+#2980<_____________===
+	lw $t3, -3724($fp)
+	li $t3, 1
+	sw $t3, -3724($fp)
+#2981<_____________===
+label549:
+#2982<_____________===
+	li $t4, 0
+	sw $t4, -3728($fp)
+#2983<_____________===
+	li $t5, 0
+	sw $t5, -3732($fp)
+#2984<_____________===
+	lw $t6, -296($fp)
+	ble $t6, 7761, label553
+#2985<_____________===
+	j label554
+#2986<_____________===
+label553:
+#2987<_____________===
+	lw $t0, -3732($fp)
+	li $t0, 1
+	sw $t0, -3732($fp)
+#2988<_____________===
+label554:
+#2989<_____________===
+	lw $t1, -3732($fp)
+	lw $t2, -208($fp)
+	bne $t1, $t2, label551
+#2990<_____________===
+	j label552
+#2991<_____________===
+label551:
+#2992<_____________===
+	lw $t3, -3728($fp)
+	li $t3, 1
+	sw $t3, -3728($fp)
+#2993<_____________===
+label552:
+#2994<_____________===
+	lw $t5, -204($fp)
+	li $t6, 61531
+	div $t5, $t6
+	mflo $t4
+	sw $t4, -3736($fp)
+#2995<_____________===
+	li $t1, 0
+	lw $t2, -3736($fp)
+	sub $t0, $t1, $t2
+	sw $t0, -3740($fp)
+#2996<_____________===
+	li $t3, 0
+	sw $t3, -3744($fp)
+#2997<_____________===
+	lw $t4, -312($fp)
+	bne $t4, 0, label556
+#2998<_____________===
+	j label555
+#2999<_____________===
+label555:
+#3000<_____________===
+	lw $t5, -3744($fp)
+	li $t5, 1
+	sw $t5, -3744($fp)
+#3001<_____________===
+label556:
+#3002<_____________===
+	lw $t0, -3744($fp)
+	lw $t1, -308($fp)
+	div $t0, $t1
+	mflo $t6
+	sw $t6, -3748($fp)
+#3003<_____________===
+	lw $a0, -3748($fp)
+#3004<_____________===
+	lw $a1, -3740($fp)
+#3005<_____________===
+	lw $a2, -3728($fp)
+#3006<_____________===
+	lw $a3, -3724($fp)
+#3007<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t2, $v0
+	sw $t2, -3752($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3008<_____________===
+	lw $t3, -3752($fp)
+	bne $t3, 0, label547
+#3009<_____________===
+	j label546
+#3010<_____________===
+label546:
+#3011<_____________===
+	lw $t4, -3720($fp)
+	li $t4, 1
+	sw $t4, -3720($fp)
+#3012<_____________===
+label547:
+#3013<_____________===
+	li $t6, 0
+	lw $t0, -3720($fp)
+	sub $t5, $t6, $t0
+	sw $t5, -3756($fp)
+#3014<_____________===
+	lw $t1, -3756($fp)
+	bne $t1, 0, label544
+#3015<_____________===
+	j label545
+#3016<_____________===
+label544:
+#3017<_____________===
+	lw $t2, -3588($fp)
 	move $v0, $t2
 	addi $sp, $sp, 800
 	addi $sp, $sp, 4
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#3018<_____________===
+	j label557
+#3019<_____________===
+label545:
+#3020<_____________===
+	li $t3, 0
+	sw $t3, -3760($fp)
+#3021<_____________===
+	lw $t4, -4($fp)
+	bne $t4, 0, label558
+#3022<_____________===
+	j label559
+#3023<_____________===
+label558:
+#3024<_____________===
+	lw $t5, -3760($fp)
+	li $t5, 1
+	sw $t5, -3760($fp)
+#3025<_____________===
+label559:
+#3026<_____________===
+	lw $t0, -144($fp)
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -3764($fp)
+#3027<_____________===
+	lw $t3, -140($fp)
+	lw $t4, -3764($fp)
+	add $t2, $t3, $t4
+	sw $t2, -3768($fp)
+#3028<_____________===
+	lw $t5, -100($fp)
+	lw $t6, -308($fp)
+	move $t5, $t6
+	sw $t5, -100($fp)
+#3029<_____________===
+	lw $t1, -308($fp)
+	move $t0, $t1
+	sw $t0, -3772($fp)
+#3030<_____________===
+	li $t2, 0
+	sw $t2, -3776($fp)
+#3031<_____________===
+	lw $t4, -88($fp)
+	li $t5, 32346
+	sub $t3, $t4, $t5
+	sw $t3, -3780($fp)
+#3032<_____________===
+	lw $t6, -3780($fp)
+	bne $t6, 0, label562
+#3033<_____________===
+	j label561
+#3034<_____________===
+label562:
+#3035<_____________===
+	li $t0, 26033
+	li $t1, 0
+	bne $t0, $t1, label560
+#3036<_____________===
+	j label561
+#3037<_____________===
+label560:
+#3038<_____________===
+	lw $t2, -3776($fp)
+	li $t2, 1
+	sw $t2, -3776($fp)
+#3039<_____________===
+label561:
+#3040<_____________===
+	li $t3, 0
+	sw $t3, -3784($fp)
+#3041<_____________===
+	li $t5, 0
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -3788($fp)
+#3042<_____________===
+	lw $t1, -176($fp)
+	lw $t2, -3788($fp)
+	add $t0, $t1, $t2
+	sw $t0, -3792($fp)
+#3043<_____________===
+	lw $t3, -3792($fp)
+	lw $s3, 0($t3)
+	bne $s3, 0, label565
+#3044<_____________===
+	j label564
+#3045<_____________===
+label565:
+#3046<_____________===
+	li $t4, 58793
+	li $t5, 0
+	bne $t4, $t5, label563
+#3047<_____________===
+	j label564
+#3048<_____________===
+label563:
+#3049<_____________===
+	lw $t6, -3784($fp)
+	li $t6, 1
+	sw $t6, -3784($fp)
+#3050<_____________===
+label564:
+#3051<_____________===
+	lw $a0, -3784($fp)
+#3052<_____________===
+	lw $a1, -3776($fp)
+#3053<_____________===
+	lw $a2, -3772($fp)
+#3054<_____________===
+	lw $s1, -3768($fp)
+	lw $a3, 0($s1)
+#3055<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t0, $v0
+	sw $t0, -3796($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3056<_____________===
+	lw $t2, -3796($fp)
+	li $t3, 58379
+	mul $t1, $t2, $t3
+	sw $t1, -3800($fp)
+#3057<_____________===
+	lw $t5, -3760($fp)
+	lw $t6, -3800($fp)
+	sub $t4, $t5, $t6
+	sw $t4, -3804($fp)
+#3058<_____________===
+	lw $t1, -3804($fp)
+	lw $t2, -208($fp)
+	add $t0, $t1, $t2
+	sw $t0, -3808($fp)
+#3059<_____________===
+	lw $t3, -3808($fp)
+	move $v0, $t3
+	addi $sp, $sp, 800
+	addi $sp, $sp, 4
+	lw $fp, 0($sp)
+	addi $sp, $sp, 4
+	jr $ra
+#3060<_____________===
+label557:
+#3061<_____________===
+label566:
+#3062<_____________===
+	li $t5, 27219
+	li $t6, 32963
+	mul $t4, $t5, $t6
+	sw $t4, -3812($fp)
+#3063<_____________===
+	lw $t1, -3812($fp)
+	li $t2, 58998
+	div $t1, $t2
+	mflo $t0
+	sw $t0, -3816($fp)
+#3064<_____________===
+	lw $t3, -4($fp)
+	lw $t4, -3816($fp)
+	bge $t3, $t4, label567
+#3065<_____________===
+	j label569
+#3066<_____________===
+label569:
+#3067<_____________===
+	li $t5, 0
+	sw $t5, -3820($fp)
+#3068<_____________===
+	li $t6, 0
+	sw $t6, -3824($fp)
+#3069<_____________===
+	li $t0, 52383
+	li $t1, 51791
+	beq $t0, $t1, label572
+#3070<_____________===
+	j label573
+#3071<_____________===
+label572:
+#3072<_____________===
+	lw $t2, -3824($fp)
+	li $t2, 1
+	sw $t2, -3824($fp)
+#3073<_____________===
+label573:
+#3074<_____________===
+	li $t3, 0
+	sw $t3, -3828($fp)
+#3075<_____________===
+	lw $t4, -92($fp)
+	beq $t4, 33347, label574
+#3076<_____________===
+	j label576
+#3077<_____________===
+label576:
+#3078<_____________===
+	li $t5, 17985
+	li $t6, 0
+	bne $t5, $t6, label574
+#3079<_____________===
+	j label575
+#3080<_____________===
+label574:
+#3081<_____________===
+	lw $t0, -3828($fp)
+	li $t0, 1
+	sw $t0, -3828($fp)
+#3082<_____________===
+label575:
+#3083<_____________===
+	li $t2, 0
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -3832($fp)
+#3084<_____________===
+	lw $t5, -3620($fp)
+	lw $t6, -3832($fp)
+	add $t4, $t5, $t6
+	sw $t4, -3836($fp)
+#3085<_____________===
+	li $t1, 0
+	lw $t2, -3836($fp)
+	lw $s4, 0($t2)
+	sub $t0, $t1, $s4
+	sw $t0, -3840($fp)
+#3086<_____________===
+	lw $t3, -3624($fp)
+	lw $t4, -160($fp)
+	move $t3, $t4
+	sw $t3, -3624($fp)
+#3087<_____________===
+	lw $t6, -160($fp)
+	move $t5, $t6
+	sw $t5, -3844($fp)
+#3088<_____________===
+	lw $a0, -3844($fp)
+#3089<_____________===
+	lw $a1, -3840($fp)
+#3090<_____________===
+	lw $a2, -3828($fp)
+#3091<_____________===
+	lw $a3, -3824($fp)
+#3092<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t0, $v0
+	sw $t0, -3848($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3093<_____________===
+	lw $t1, -3848($fp)
+	bne $t1, 28209, label570
+#3094<_____________===
+	j label571
+#3095<_____________===
+label570:
+#3096<_____________===
+	lw $t2, -3820($fp)
+	li $t2, 1
+	sw $t2, -3820($fp)
+#3097<_____________===
+label571:
+#3098<_____________===
+	lw $t4, -304($fp)
+	lw $t5, -96($fp)
+	add $t3, $t4, $t5
+	sw $t3, -3852($fp)
+#3099<_____________===
+	lw $t6, -3820($fp)
+	lw $t0, -3852($fp)
+	beq $t6, $t0, label567
+#3100<_____________===
+	j label568
+#3101<_____________===
+label567:
+#3102<_____________===
+#3103<_____________===
+#3104<_____________===
+#3105<_____________===
+	la $t1, -3896($fp)
+	sw $t1, -3900($fp)
+#3106<_____________===
+#3107<_____________===
+#3108<_____________===
+#3109<_____________===
+	lw $t2, -3856($fp)
+	li $t2, 65070
+	sw $t2, -3856($fp)
+#3110<_____________===
+	lw $t3, -3860($fp)
+	li $t3, 25883
+	sw $t3, -3860($fp)
+#3111<_____________===
+	li $t5, 0
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -3916($fp)
+#3112<_____________===
+	lw $t1, -3900($fp)
+	lw $t2, -3916($fp)
+	add $t0, $t1, $t2
+	sw $t0, -3920($fp)
+#3113<_____________===
+	lw $t3, -3920($fp)
+	li $s2, 20856
+	sw $t3, -3920($fp)
+	sw $s2, 0($t3)
+#3114<_____________===
+	li $t5, 1
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -3924($fp)
+#3115<_____________===
+	lw $t1, -3900($fp)
+	lw $t2, -3924($fp)
+	add $t0, $t1, $t2
+	sw $t0, -3928($fp)
+#3116<_____________===
+	lw $t3, -3928($fp)
+	li $s2, 6585
+	sw $t3, -3928($fp)
+	sw $s2, 0($t3)
+#3117<_____________===
+	li $t5, 2
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -3932($fp)
+#3118<_____________===
+	lw $t1, -3900($fp)
+	lw $t2, -3932($fp)
+	add $t0, $t1, $t2
+	sw $t0, -3936($fp)
+#3119<_____________===
+	lw $t3, -3936($fp)
+	li $s2, 29007
+	sw $t3, -3936($fp)
+	sw $s2, 0($t3)
+#3120<_____________===
+	li $t5, 3
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -3940($fp)
+#3121<_____________===
+	lw $t1, -3900($fp)
+	lw $t2, -3940($fp)
+	add $t0, $t1, $t2
+	sw $t0, -3944($fp)
+#3122<_____________===
+	lw $t3, -3944($fp)
+	li $s2, 33859
+	sw $t3, -3944($fp)
+	sw $s2, 0($t3)
+#3123<_____________===
+	li $t5, 4
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -3948($fp)
+#3124<_____________===
+	lw $t1, -3900($fp)
+	lw $t2, -3948($fp)
+	add $t0, $t1, $t2
+	sw $t0, -3952($fp)
+#3125<_____________===
+	lw $t3, -3952($fp)
+	li $s2, 2821
+	sw $t3, -3952($fp)
+	sw $s2, 0($t3)
+#3126<_____________===
+	li $t5, 5
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -3956($fp)
+#3127<_____________===
+	lw $t1, -3900($fp)
+	lw $t2, -3956($fp)
+	add $t0, $t1, $t2
+	sw $t0, -3960($fp)
+#3128<_____________===
+	lw $t3, -3960($fp)
+	li $s2, 14320
+	sw $t3, -3960($fp)
+	sw $s2, 0($t3)
+#3129<_____________===
+	li $t5, 6
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -3964($fp)
+#3130<_____________===
+	lw $t1, -3900($fp)
+	lw $t2, -3964($fp)
+	add $t0, $t1, $t2
+	sw $t0, -3968($fp)
+#3131<_____________===
+	lw $t3, -3968($fp)
+	li $s2, 13664
+	sw $t3, -3968($fp)
+	sw $s2, 0($t3)
+#3132<_____________===
+	li $t5, 7
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -3972($fp)
+#3133<_____________===
+	lw $t1, -3900($fp)
+	lw $t2, -3972($fp)
+	add $t0, $t1, $t2
+	sw $t0, -3976($fp)
+#3134<_____________===
+	lw $t3, -3976($fp)
+	li $s2, 36547
+	sw $t3, -3976($fp)
+	sw $s2, 0($t3)
+#3135<_____________===
+	li $t5, 8
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -3980($fp)
+#3136<_____________===
+	lw $t1, -3900($fp)
+	lw $t2, -3980($fp)
+	add $t0, $t1, $t2
+	sw $t0, -3984($fp)
+#3137<_____________===
+	lw $t3, -3984($fp)
+	li $s2, 63246
+	sw $t3, -3984($fp)
+	sw $s2, 0($t3)
+#3138<_____________===
+	lw $t4, -3904($fp)
+	li $t4, 32502
+	sw $t4, -3904($fp)
+#3139<_____________===
+	lw $t5, -3908($fp)
+	li $t5, 33909
+	sw $t5, -3908($fp)
+#3140<_____________===
+	lw $t6, -3912($fp)
+	li $t6, 5471
+	sw $t6, -3912($fp)
+#3141<_____________===
+	li $t0, 0
+	sw $t0, -3988($fp)
+#3142<_____________===
+	li $t2, 0
+	lw $t3, -156($fp)
+	sub $t1, $t2, $t3
+	sw $t1, -3992($fp)
+#3143<_____________===
+	lw $t4, -3992($fp)
+	bne $t4, 0, label581
+#3144<_____________===
+	j label580
+#3145<_____________===
+label580:
+#3146<_____________===
+	lw $t5, -3988($fp)
+	li $t5, 1
+	sw $t5, -3988($fp)
+#3147<_____________===
+label581:
+#3148<_____________===
+	li $t0, 28497
+	lw $t1, -3988($fp)
+	mul $t6, $t0, $t1
+	sw $t6, -3996($fp)
+#3149<_____________===
+	li $t3, 0
+	lw $t4, -3996($fp)
+	sub $t2, $t3, $t4
+	sw $t2, -4000($fp)
+#3150<_____________===
+	lw $t5, -4000($fp)
+	bne $t5, 0, label577
+#3151<_____________===
+	j label579
+#3152<_____________===
+label579:
+#3153<_____________===
+	lw $t0, -40($fp)
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -4004($fp)
+#3154<_____________===
+	lw $t3, -3900($fp)
+	lw $t4, -4004($fp)
+	add $t2, $t3, $t4
+	sw $t2, -4008($fp)
+#3155<_____________===
+	li $t6, 719
+	li $t0, 31505
+	mul $t5, $t6, $t0
+	sw $t5, -4012($fp)
+#3156<_____________===
+	lw $t2, -4012($fp)
+	lw $t3, -160($fp)
+	mul $t1, $t2, $t3
+	sw $t1, -4016($fp)
+#3157<_____________===
+	lw $t5, -296($fp)
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -4020($fp)
+#3158<_____________===
+	lw $t1, -68($fp)
+	lw $t2, -4020($fp)
+	add $t0, $t1, $t2
+	sw $t0, -4024($fp)
+#3159<_____________===
+	li $t3, 0
+	sw $t3, -4028($fp)
+#3160<_____________===
+	li $t4, 37436
+	li $t5, 0
+	bne $t4, $t5, label585
+#3161<_____________===
+	j label583
+#3162<_____________===
+label585:
+#3163<_____________===
+	lw $t6, -92($fp)
+	bne $t6, 0, label584
+#3164<_____________===
+	j label583
+#3165<_____________===
+label584:
+#3166<_____________===
+	lw $t0, -3588($fp)
+	bne $t0, 0, label582
+#3167<_____________===
+	j label583
+#3168<_____________===
+label582:
+#3169<_____________===
+	lw $t1, -4028($fp)
+	li $t1, 1
+	sw $t1, -4028($fp)
+#3170<_____________===
+label583:
+#3171<_____________===
+	li $t2, 0
+	sw $t2, -4032($fp)
+#3172<_____________===
+	lw $t4, -96($fp)
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -4036($fp)
+#3173<_____________===
+	lw $t0, -36($fp)
+	lw $t1, -4036($fp)
+	add $t6, $t0, $t1
+	sw $t6, -4040($fp)
+#3174<_____________===
+	lw $t2, -4040($fp)
+	lw $s3, 0($t2)
+	bne $s3, 0, label586
+#3175<_____________===
+	j label588
+#3176<_____________===
+label588:
+#3177<_____________===
+	lw $t3, -4($fp)
+	bne $t3, 0, label586
+#3178<_____________===
+	j label587
+#3179<_____________===
+label586:
+#3180<_____________===
+	lw $t4, -4032($fp)
+	li $t4, 1
+	sw $t4, -4032($fp)
+#3181<_____________===
+label587:
+#3182<_____________===
+	lw $a0, -4032($fp)
+#3183<_____________===
+	lw $a1, -4028($fp)
+#3184<_____________===
+	lw $s1, -4024($fp)
+	lw $a2, 0($s1)
+#3185<_____________===
+	lw $a3, -4016($fp)
+#3186<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_FxEuB
+	move $t5, $v0
+	sw $t5, -4044($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3187<_____________===
+	lw $t0, -4008($fp)
+	lw $t1, -4044($fp)
+	lw $s3, 0($t0)
+	div $s3, $t1
+	mflo $t6
+	sw $t6, -4048($fp)
+#3188<_____________===
+	li $t3, 0
+	lw $t4, -4048($fp)
+	sub $t2, $t3, $t4
+	sw $t2, -4052($fp)
+#3189<_____________===
+	lw $t5, -4052($fp)
+	bne $t5, 0, label577
+#3190<_____________===
+	j label578
+#3191<_____________===
+label577:
+#3192<_____________===
+label589:
+#3193<_____________===
+	li $t6, 0
+	sw $t6, -4056($fp)
+#3194<_____________===
+	li $t0, 0
+	sw $t0, -4060($fp)
+#3195<_____________===
+	lw $t1, -3856($fp)
+	bne $t1, 24780, label594
+#3196<_____________===
+	j label595
+#3197<_____________===
+label594:
+#3198<_____________===
+	lw $t2, -4060($fp)
+	li $t2, 1
+	sw $t2, -4060($fp)
+#3199<_____________===
+label595:
+#3200<_____________===
+	lw $t3, -4060($fp)
+	lw $t4, -148($fp)
+	beq $t3, $t4, label592
+#3201<_____________===
+	j label593
+#3202<_____________===
+label592:
+#3203<_____________===
+	lw $t5, -4056($fp)
+	li $t5, 1
+	sw $t5, -4056($fp)
+#3204<_____________===
+label593:
+#3205<_____________===
+	li $t6, 0
+	sw $t6, -4064($fp)
+#3206<_____________===
+	li $t0, 0
+	sw $t0, -4068($fp)
+#3207<_____________===
+	lw $t1, -200($fp)
+	bne $t1, 24762, label598
+#3208<_____________===
+	j label599
+#3209<_____________===
+label598:
+#3210<_____________===
+	lw $t2, -4068($fp)
+	li $t2, 1
+	sw $t2, -4068($fp)
+#3211<_____________===
+label599:
+#3212<_____________===
+	lw $t3, -4068($fp)
+	lw $t4, -208($fp)
+	bne $t3, $t4, label596
+#3213<_____________===
+	j label597
+#3214<_____________===
+label596:
+#3215<_____________===
+	lw $t5, -4064($fp)
+	li $t5, 1
+	sw $t5, -4064($fp)
+#3216<_____________===
+label597:
+#3217<_____________===
+	li $t6, 0
+	sw $t6, -4072($fp)
+#3218<_____________===
+	li $t0, 30279
+	li $t1, 0
+	bne $t0, $t1, label600
+#3219<_____________===
+	j label602
+#3220<_____________===
+label602:
+#3221<_____________===
+	lw $t2, -296($fp)
+	bne $t2, 0, label600
+#3222<_____________===
+	j label601
+#3223<_____________===
+label600:
+#3224<_____________===
+	lw $t3, -4072($fp)
+	li $t3, 1
+	sw $t3, -4072($fp)
+#3225<_____________===
+label601:
+#3226<_____________===
+	lw $t5, -4($fp)
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -4076($fp)
+#3227<_____________===
+	lw $t1, -244($fp)
+	lw $t2, -4076($fp)
+	add $t0, $t1, $t2
+	sw $t0, -4080($fp)
+#3228<_____________===
+	li $t4, 0
+	lw $t5, -4080($fp)
+	lw $s4, 0($t5)
+	sub $t3, $t4, $s4
+	sw $t3, -4084($fp)
+#3229<_____________===
+	lw $a0, -4084($fp)
+#3230<_____________===
+	lw $a1, -4072($fp)
+#3231<_____________===
+	lw $a2, -4064($fp)
+#3232<_____________===
+	lw $a3, -4056($fp)
+#3233<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_FxEuB
+	move $t6, $v0
+	sw $t6, -4088($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3234<_____________===
+	li $t0, 0
+	sw $t0, -4092($fp)
+#3235<_____________===
+	lw $t1, -3860($fp)
+	bne $t1, 0, label603
+#3236<_____________===
+	j label604
+#3237<_____________===
+label603:
+#3238<_____________===
+	lw $t2, -4092($fp)
+	li $t2, 1
+	sw $t2, -4092($fp)
+#3239<_____________===
+label604:
+#3240<_____________===
+	lw $t4, -4088($fp)
+	lw $t5, -4092($fp)
+	div $t4, $t5
+	mflo $t3
+	sw $t3, -4096($fp)
+#3241<_____________===
+	li $t6, 0
+	sw $t6, -4100($fp)
+#3242<_____________===
+	lw $t0, -208($fp)
+	bne $t0, 0, label606
+#3243<_____________===
+	j label605
+#3244<_____________===
+label605:
+#3245<_____________===
+	lw $t1, -4100($fp)
+	li $t1, 1
+	sw $t1, -4100($fp)
+#3246<_____________===
+label606:
+#3247<_____________===
+	lw $t3, -4096($fp)
+	lw $t4, -4100($fp)
+	sub $t2, $t3, $t4
+	sw $t2, -4104($fp)
+#3248<_____________===
+	lw $t5, -4104($fp)
+	bne $t5, 0, label590
+#3249<_____________===
+	j label591
+#3250<_____________===
+label590:
+#3251<_____________===
+	li $t6, 51999
+	li $t0, 0
+	bne $t6, $t0, label609
+#3252<_____________===
+	j label608
+#3253<_____________===
+label609:
+#3254<_____________===
+	li $t1, 0
+	sw $t1, -4108($fp)
+#3255<_____________===
+	li $t2, 0
+	sw $t2, -4112($fp)
+#3256<_____________===
+	lw $t3, -300($fp)
+	bgt $t3, 57726, label612
+#3257<_____________===
+	j label613
+#3258<_____________===
+label612:
+#3259<_____________===
+	lw $t4, -4112($fp)
+	li $t4, 1
+	sw $t4, -4112($fp)
+#3260<_____________===
+label613:
+#3261<_____________===
+	lw $t5, -4112($fp)
+	bne $t5, 23742, label610
+#3262<_____________===
+	j label611
+#3263<_____________===
+label610:
+#3264<_____________===
+	lw $t6, -4108($fp)
+	li $t6, 1
+	sw $t6, -4108($fp)
+#3265<_____________===
+label611:
+#3266<_____________===
+	lw $t1, -4($fp)
+	lw $t2, -3588($fp)
+	mul $t0, $t1, $t2
+	sw $t0, -4116($fp)
+#3267<_____________===
+	lw $t3, -4108($fp)
+	lw $t4, -4116($fp)
+	beq $t3, $t4, label607
+#3268<_____________===
+	j label608
+#3269<_____________===
+label607:
+#3270<_____________===
+label608:
+#3271<_____________===
+	j label589
+#3272<_____________===
+label591:
+#3273<_____________===
+	j label614
+#3274<_____________===
+label578:
+#3275<_____________===
+label615:
+#3276<_____________===
+	li $t5, 0
+	sw $t5, -4120($fp)
+#3277<_____________===
+	lw $t0, -3904($fp)
+	lw $t1, -84($fp)
+	div $t0, $t1
+	mflo $t6
+	sw $t6, -4124($fp)
+#3278<_____________===
+	lw $t2, -4124($fp)
+	bgt $t2, 38847, label618
+#3279<_____________===
+	j label619
+#3280<_____________===
+label618:
+#3281<_____________===
+	lw $t3, -4120($fp)
+	li $t3, 1
+	sw $t3, -4120($fp)
+#3282<_____________===
+label619:
+#3283<_____________===
+	li $a0, 43981
+#3284<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_xj7kF
+	move $t4, $v0
+	sw $t4, -4128($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3285<_____________===
+	li $t6, 0
+	lw $t0, -4128($fp)
+	sub $t5, $t6, $t0
+	sw $t5, -4132($fp)
+#3286<_____________===
+	lw $t2, -84($fp)
+	lw $t3, -3908($fp)
+	mul $t1, $t2, $t3
+	sw $t1, -4136($fp)
+#3287<_____________===
+	lw $t5, -4136($fp)
+	lw $t6, -188($fp)
+	div $t5, $t6
+	mflo $t4
+	sw $t4, -4140($fp)
+#3288<_____________===
+	lw $a0, -4140($fp)
+#3289<_____________===
+	li $a1, 57089
+#3290<_____________===
+	lw $a2, -4132($fp)
+#3291<_____________===
+	lw $a3, -4120($fp)
+#3292<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_FxEuB
+	move $t0, $v0
+	sw $t0, -4144($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3293<_____________===
+	lw $t1, -4144($fp)
+	bne $t1, 0, label616
+#3294<_____________===
+	j label617
+#3295<_____________===
+label616:
+#3296<_____________===
+	li $t3, 56832
+	li $t4, 44645
+	div $t3, $t4
+	mflo $t2
+	sw $t2, -4148($fp)
+#3297<_____________===
+	lw $t6, -4148($fp)
+	li $t0, 46510
+	mul $t5, $t6, $t0
+	sw $t5, -4152($fp)
+#3298<_____________===
+	li $t2, 0
+	lw $t3, -4152($fp)
+	sub $t1, $t2, $t3
+	sw $t1, -4156($fp)
+#3299<_____________===
+	lw $t4, -4156($fp)
+	bne $t4, 0, label623
+#3300<_____________===
+	j label622
+#3301<_____________===
+label623:
+#3302<_____________===
+	lw $t6, -3912($fp)
+	lw $t0, -100($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4160($fp)
+#3303<_____________===
+	lw $t1, -4160($fp)
+	bne $t1, 0, label620
+#3304<_____________===
+	j label622
+#3305<_____________===
+label622:
+#3306<_____________===
+	lw $t3, -308($fp)
+	lw $t4, -4($fp)
+	mul $t2, $t3, $t4
+	sw $t2, -4164($fp)
+#3307<_____________===
+	li $t6, 19506
+	lw $t0, -4164($fp)
+	sub $t5, $t6, $t0
+	sw $t5, -4168($fp)
+#3308<_____________===
+	lw $t1, -4168($fp)
+	bne $t1, 0, label620
+#3309<_____________===
+	j label621
+#3310<_____________===
+label620:
+#3311<_____________===
+label621:
+#3312<_____________===
+	j label615
+#3313<_____________===
+label617:
+#3314<_____________===
+label614:
+#3315<_____________===
+	li $t2, 0
+	sw $t2, -4172($fp)
+#3316<_____________===
+	lw $t3, -180($fp)
+	bne $t3, 0, label625
+#3317<_____________===
+	j label624
+#3318<_____________===
+label624:
+#3319<_____________===
+	lw $t4, -4172($fp)
+	li $t4, 1
+	sw $t4, -4172($fp)
+#3320<_____________===
+label625:
+#3321<_____________===
+	lw $t5, -92($fp)
+	li $t5, 6857
+	sw $t5, -92($fp)
+#3322<_____________===
+	li $t6, 6857
+	sw $t6, -4176($fp)
+#3323<_____________===
+	lw $t0, -4($fp)
+	lw $t1, -312($fp)
+	move $t0, $t1
+	sw $t0, -4($fp)
+#3324<_____________===
+	lw $t3, -312($fp)
+	move $t2, $t3
+	sw $t2, -4180($fp)
+#3325<_____________===
+	lw $a0, -4180($fp)
+#3326<_____________===
+	lw $a1, -4176($fp)
+#3327<_____________===
+	lw $a2, -4172($fp)
+#3328<_____________===
+	li $a3, 44179
+#3329<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t4, $v0
+	sw $t4, -4184($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3330<_____________===
+	j label566
+#3331<_____________===
+label568:
+#3332<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -8($fp)
+	move $a0, $t5
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3333<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -12($fp)
+	move $a0, $t6
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3334<_____________===
+	li $t1, 0
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -4188($fp)
+#3335<_____________===
+	lw $t4, -36($fp)
+	lw $t5, -4188($fp)
+	add $t3, $t4, $t5
+	sw $t3, -4192($fp)
+#3336<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -4192($fp)
+	lw $a0, 0($t6)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3337<_____________===
+	li $t1, 1
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -4196($fp)
+#3338<_____________===
+	lw $t4, -36($fp)
+	lw $t5, -4196($fp)
+	add $t3, $t4, $t5
+	sw $t3, -4200($fp)
+#3339<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -4200($fp)
+	lw $a0, 0($t6)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3340<_____________===
+	li $t1, 2
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -4204($fp)
+#3341<_____________===
+	lw $t4, -36($fp)
+	lw $t5, -4204($fp)
+	add $t3, $t4, $t5
+	sw $t3, -4208($fp)
+#3342<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -4208($fp)
+	lw $a0, 0($t6)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3343<_____________===
+	li $t1, 3
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -4212($fp)
+#3344<_____________===
+	lw $t4, -36($fp)
+	lw $t5, -4212($fp)
+	add $t3, $t4, $t5
+	sw $t3, -4216($fp)
+#3345<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -4216($fp)
+	lw $a0, 0($t6)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3346<_____________===
+	li $t1, 4
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -4220($fp)
+#3347<_____________===
+	lw $t4, -36($fp)
+	lw $t5, -4220($fp)
+	add $t3, $t4, $t5
+	sw $t3, -4224($fp)
+#3348<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -4224($fp)
+	lw $a0, 0($t6)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3349<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -40($fp)
+	move $a0, $t0
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3350<_____________===
+	li $t2, 0
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -4228($fp)
+#3351<_____________===
+	lw $t5, -68($fp)
+	lw $t6, -4228($fp)
+	add $t4, $t5, $t6
+	sw $t4, -4232($fp)
+#3352<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -4232($fp)
+	lw $a0, 0($t0)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3353<_____________===
+	li $t2, 1
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -4236($fp)
+#3354<_____________===
+	lw $t5, -68($fp)
+	lw $t6, -4236($fp)
+	add $t4, $t5, $t6
+	sw $t4, -4240($fp)
+#3355<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -4240($fp)
+	lw $a0, 0($t0)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3356<_____________===
+	li $t2, 2
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -4244($fp)
+#3357<_____________===
+	lw $t5, -68($fp)
+	lw $t6, -4244($fp)
+	add $t4, $t5, $t6
+	sw $t4, -4248($fp)
+#3358<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -4248($fp)
+	lw $a0, 0($t0)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3359<_____________===
+	li $t2, 3
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -4252($fp)
+#3360<_____________===
+	lw $t5, -68($fp)
+	lw $t6, -4252($fp)
+	add $t4, $t5, $t6
+	sw $t4, -4256($fp)
+#3361<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -4256($fp)
+	lw $a0, 0($t0)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3362<_____________===
+	li $t2, 4
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -4260($fp)
+#3363<_____________===
+	lw $t5, -68($fp)
+	lw $t6, -4260($fp)
+	add $t4, $t5, $t6
+	sw $t4, -4264($fp)
+#3364<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -4264($fp)
+	lw $a0, 0($t0)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3365<_____________===
+	li $t2, 5
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -4268($fp)
+#3366<_____________===
+	lw $t5, -68($fp)
+	lw $t6, -4268($fp)
+	add $t4, $t5, $t6
+	sw $t4, -4272($fp)
+#3367<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -4272($fp)
+	lw $a0, 0($t0)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3368<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -72($fp)
+	move $a0, $t1
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3369<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -76($fp)
+	move $a0, $t2
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3370<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -80($fp)
+	move $a0, $t3
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3371<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -84($fp)
+	move $a0, $t4
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3372<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -88($fp)
+	move $a0, $t5
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3373<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -92($fp)
+	move $a0, $t6
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3374<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -96($fp)
+	move $a0, $t0
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3375<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -100($fp)
+	move $a0, $t1
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3376<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -104($fp)
+	move $a0, $t2
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3377<_____________===
+	li $t4, 0
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -4276($fp)
+#3378<_____________===
+	lw $t0, -140($fp)
+	lw $t1, -4276($fp)
+	add $t6, $t0, $t1
+	sw $t6, -4280($fp)
+#3379<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -4280($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3380<_____________===
+	li $t4, 1
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -4284($fp)
+#3381<_____________===
+	lw $t0, -140($fp)
+	lw $t1, -4284($fp)
+	add $t6, $t0, $t1
+	sw $t6, -4288($fp)
+#3382<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -4288($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3383<_____________===
+	li $t4, 2
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -4292($fp)
+#3384<_____________===
+	lw $t0, -140($fp)
+	lw $t1, -4292($fp)
+	add $t6, $t0, $t1
+	sw $t6, -4296($fp)
+#3385<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -4296($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3386<_____________===
+	li $t4, 3
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -4300($fp)
+#3387<_____________===
+	lw $t0, -140($fp)
+	lw $t1, -4300($fp)
+	add $t6, $t0, $t1
+	sw $t6, -4304($fp)
+#3388<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -4304($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3389<_____________===
+	li $t4, 4
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -4308($fp)
+#3390<_____________===
+	lw $t0, -140($fp)
+	lw $t1, -4308($fp)
+	add $t6, $t0, $t1
+	sw $t6, -4312($fp)
+#3391<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -4312($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3392<_____________===
+	li $t4, 5
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -4316($fp)
+#3393<_____________===
+	lw $t0, -140($fp)
+	lw $t1, -4316($fp)
+	add $t6, $t0, $t1
+	sw $t6, -4320($fp)
+#3394<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -4320($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3395<_____________===
+	li $t4, 6
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -4324($fp)
+#3396<_____________===
+	lw $t0, -140($fp)
+	lw $t1, -4324($fp)
+	add $t6, $t0, $t1
+	sw $t6, -4328($fp)
+#3397<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -4328($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3398<_____________===
+	li $t4, 7
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -4332($fp)
+#3399<_____________===
+	lw $t0, -140($fp)
+	lw $t1, -4332($fp)
+	add $t6, $t0, $t1
+	sw $t6, -4336($fp)
+#3400<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -4336($fp)
+	lw $a0, 0($t2)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3401<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -144($fp)
+	move $a0, $t3
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3402<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -148($fp)
+	move $a0, $t4
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3403<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -152($fp)
+	move $a0, $t5
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3404<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -156($fp)
+	move $a0, $t6
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3405<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -160($fp)
+	move $a0, $t0
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3406<_____________===
+	li $t2, 0
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -4340($fp)
+#3407<_____________===
+	lw $t5, -176($fp)
+	lw $t6, -4340($fp)
+	add $t4, $t5, $t6
+	sw $t4, -4344($fp)
+#3408<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -4344($fp)
+	lw $a0, 0($t0)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3409<_____________===
+	li $t2, 1
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -4348($fp)
+#3410<_____________===
+	lw $t5, -176($fp)
+	lw $t6, -4348($fp)
+	add $t4, $t5, $t6
+	sw $t4, -4352($fp)
+#3411<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -4352($fp)
+	lw $a0, 0($t0)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3412<_____________===
+	li $t2, 2
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -4356($fp)
+#3413<_____________===
+	lw $t5, -176($fp)
+	lw $t6, -4356($fp)
+	add $t4, $t5, $t6
+	sw $t4, -4360($fp)
+#3414<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -4360($fp)
+	lw $a0, 0($t0)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3415<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -180($fp)
+	move $a0, $t1
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3416<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -184($fp)
+	move $a0, $t2
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3417<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -188($fp)
+	move $a0, $t3
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3418<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -192($fp)
+	move $a0, $t4
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3419<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -196($fp)
+	move $a0, $t5
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3420<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -200($fp)
+	move $a0, $t6
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3421<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -204($fp)
+	move $a0, $t0
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3422<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -208($fp)
+	move $a0, $t1
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3423<_____________===
+	li $t3, 0
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4364($fp)
+#3424<_____________===
+	lw $t6, -244($fp)
+	lw $t0, -4364($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4368($fp)
+#3425<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4368($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3426<_____________===
+	li $t3, 1
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4372($fp)
+#3427<_____________===
+	lw $t6, -244($fp)
+	lw $t0, -4372($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4376($fp)
+#3428<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4376($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3429<_____________===
+	li $t3, 2
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4380($fp)
+#3430<_____________===
+	lw $t6, -244($fp)
+	lw $t0, -4380($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4384($fp)
+#3431<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4384($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3432<_____________===
+	li $t3, 3
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4388($fp)
+#3433<_____________===
+	lw $t6, -244($fp)
+	lw $t0, -4388($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4392($fp)
+#3434<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4392($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3435<_____________===
+	li $t3, 4
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4396($fp)
+#3436<_____________===
+	lw $t6, -244($fp)
+	lw $t0, -4396($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4400($fp)
+#3437<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4400($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3438<_____________===
+	li $t3, 5
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4404($fp)
+#3439<_____________===
+	lw $t6, -244($fp)
+	lw $t0, -4404($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4408($fp)
+#3440<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4408($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3441<_____________===
+	li $t3, 6
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4412($fp)
+#3442<_____________===
+	lw $t6, -244($fp)
+	lw $t0, -4412($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4416($fp)
+#3443<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4416($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3444<_____________===
+	li $t3, 7
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4420($fp)
+#3445<_____________===
+	lw $t6, -244($fp)
+	lw $t0, -4420($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4424($fp)
+#3446<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4424($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3447<_____________===
+	li $t3, 0
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4428($fp)
+#3448<_____________===
+	lw $t6, -288($fp)
+	lw $t0, -4428($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4432($fp)
+#3449<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4432($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3450<_____________===
+	li $t3, 1
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4436($fp)
+#3451<_____________===
+	lw $t6, -288($fp)
+	lw $t0, -4436($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4440($fp)
+#3452<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4440($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3453<_____________===
+	li $t3, 2
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4444($fp)
+#3454<_____________===
+	lw $t6, -288($fp)
+	lw $t0, -4444($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4448($fp)
+#3455<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4448($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3456<_____________===
+	li $t3, 3
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4452($fp)
+#3457<_____________===
+	lw $t6, -288($fp)
+	lw $t0, -4452($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4456($fp)
+#3458<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4456($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3459<_____________===
+	li $t3, 4
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4460($fp)
+#3460<_____________===
+	lw $t6, -288($fp)
+	lw $t0, -4460($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4464($fp)
+#3461<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4464($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3462<_____________===
+	li $t3, 5
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4468($fp)
+#3463<_____________===
+	lw $t6, -288($fp)
+	lw $t0, -4468($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4472($fp)
+#3464<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4472($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3465<_____________===
+	li $t3, 6
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4476($fp)
+#3466<_____________===
+	lw $t6, -288($fp)
+	lw $t0, -4476($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4480($fp)
+#3467<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4480($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3468<_____________===
+	li $t3, 7
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4484($fp)
+#3469<_____________===
+	lw $t6, -288($fp)
+	lw $t0, -4484($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4488($fp)
+#3470<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4488($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3471<_____________===
+	li $t3, 8
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4492($fp)
+#3472<_____________===
+	lw $t6, -288($fp)
+	lw $t0, -4492($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4496($fp)
+#3473<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4496($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3474<_____________===
+	li $t3, 9
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -4500($fp)
+#3475<_____________===
+	lw $t6, -288($fp)
+	lw $t0, -4500($fp)
+	add $t5, $t6, $t0
+	sw $t5, -4504($fp)
+#3476<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -4504($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3477<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -292($fp)
+	move $a0, $t2
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3478<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -296($fp)
+	move $a0, $t3
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3479<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -300($fp)
+	move $a0, $t4
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3480<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -304($fp)
+	move $a0, $t5
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3481<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -308($fp)
+	move $a0, $t6
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3482<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -312($fp)
+	move $a0, $t0
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3483<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -316($fp)
+	move $a0, $t1
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3484<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -320($fp)
+	move $a0, $t2
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3485<_____________===
+	li $t3, 0
+	sw $t3, -4508($fp)
+#3486<_____________===
+	li $t5, 40362
+	lw $t6, -316($fp)
+	mul $t4, $t5, $t6
+	sw $t4, -4512($fp)
+#3487<_____________===
+	li $t1, 0
+	lw $t2, -4512($fp)
+	sub $t0, $t1, $t2
+	sw $t0, -4516($fp)
+#3488<_____________===
+	lw $t4, -4516($fp)
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -4520($fp)
+#3489<_____________===
+	lw $t0, -288($fp)
+	lw $t1, -4520($fp)
+	add $t6, $t0, $t1
+	sw $t6, -4524($fp)
+#3490<_____________===
+	lw $t2, -4524($fp)
+	lw $s3, 0($t2)
+	bne $s3, 0, label628
+#3491<_____________===
+	j label627
+#3492<_____________===
+label628:
+#3493<_____________===
+	li $t4, 50764
+	li $t5, 35865
+	sub $t3, $t4, $t5
+	sw $t3, -4528($fp)
+#3494<_____________===
+	lw $t0, -4528($fp)
+	lw $t1, -320($fp)
+	sub $t6, $t0, $t1
+	sw $t6, -4532($fp)
+#3495<_____________===
+	lw $t3, -292($fp)
+	lw $t4, -4($fp)
+	sub $t2, $t3, $t4
+	sw $t2, -4536($fp)
+#3496<_____________===
+	lw $t5, -4532($fp)
+	lw $t6, -4536($fp)
+	blt $t5, $t6, label626
+#3497<_____________===
+	j label627
+#3498<_____________===
+label626:
+#3499<_____________===
+	lw $t0, -4508($fp)
+	li $t0, 1
+	sw $t0, -4508($fp)
+#3500<_____________===
+label627:
+#3501<_____________===
+	lw $t1, -4508($fp)
+	move $v0, $t1
+	addi $sp, $sp, 800
+	addi $sp, $sp, 4
+	lw $fp, 0($sp)
+	addi $sp, $sp, 4
+	jr $ra
+#3502<_____________===
 id_Y8n:
 	addi $sp, $sp, -4
 	sw $fp, 0($sp)
 	move $fp, $sp
 	addi $sp, $sp, -4
 	subu $sp, $sp, 800
+#3503<_____________===
 	sw $a2, -4($fp)
+#3504<_____________===
 	sw $a1, -8($fp)
+#3505<_____________===
 	sw $a0, -12($fp)
-	la $t3, -80($fp)
-	sw $t3, -84($fp)
-	lw $t4, -16($fp)
-	li $t4, 8685
-	sw $t4, -16($fp)
-	lw $t5, -20($fp)
-	li $t5, 53586
-	sw $t5, -20($fp)
-	lw $t6, -24($fp)
-	li $t6, 50185
-	sw $t6, -24($fp)
-	lw $t0, -28($fp)
-	li $t0, 22349
-	sw $t0, -28($fp)
-	lw $t1, -32($fp)
-	li $t1, 24597
-	sw $t1, -32($fp)
-	lw $t2, -36($fp)
-	li $t2, 47895
-	sw $t2, -36($fp)
-	lw $t3, -40($fp)
-	li $t3, 54851
-	sw $t3, -40($fp)
-	lw $t4, -44($fp)
-	li $t4, 58506
-	sw $t4, -44($fp)
-	li $t6, 0
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -104($fp)
-	lw $t2, -84($fp)
-	lw $t3, -104($fp)
-	add $t1, $t2, $t3
-	sw $t1, -108($fp)
-	lw $t4, -108($fp)
-	li $s2, 53367
-	sw $t4, -108($fp)
-	sw $s2, 0($t4)
-	li $t6, 1
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -112($fp)
-	lw $t2, -84($fp)
-	lw $t3, -112($fp)
-	add $t1, $t2, $t3
-	sw $t1, -116($fp)
-	lw $t4, -116($fp)
-	li $s2, 17812
-	sw $t4, -116($fp)
-	sw $s2, 0($t4)
-	li $t6, 2
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -120($fp)
-	lw $t2, -84($fp)
-	lw $t3, -120($fp)
-	add $t1, $t2, $t3
-	sw $t1, -124($fp)
-	lw $t4, -124($fp)
-	li $s2, 59226
-	sw $t4, -124($fp)
-	sw $s2, 0($t4)
-	li $t6, 3
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -128($fp)
-	lw $t2, -84($fp)
-	lw $t3, -128($fp)
-	add $t1, $t2, $t3
-	sw $t1, -132($fp)
-	lw $t4, -132($fp)
-	li $s2, 19336
-	sw $t4, -132($fp)
-	sw $s2, 0($t4)
+#3506<_____________===
+#3507<_____________===
+#3508<_____________===
+#3509<_____________===
+#3510<_____________===
+#3511<_____________===
+#3512<_____________===
+#3513<_____________===
+#3514<_____________===
+#3515<_____________===
+	la $t2, -80($fp)
+	sw $t2, -84($fp)
+#3516<_____________===
+#3517<_____________===
+#3518<_____________===
+#3519<_____________===
+#3520<_____________===
+	lw $t3, -16($fp)
+	li $t3, 8685
+	sw $t3, -16($fp)
+#3521<_____________===
+	lw $t4, -20($fp)
+	li $t4, 53586
+	sw $t4, -20($fp)
+#3522<_____________===
+	lw $t5, -24($fp)
+	li $t5, 50185
+	sw $t5, -24($fp)
+#3523<_____________===
+	lw $t6, -28($fp)
+	li $t6, 22349
+	sw $t6, -28($fp)
+#3524<_____________===
+	lw $t0, -32($fp)
+	li $t0, 24597
+	sw $t0, -32($fp)
+#3525<_____________===
+	lw $t1, -36($fp)
+	li $t1, 47895
+	sw $t1, -36($fp)
+#3526<_____________===
+	lw $t2, -40($fp)
+	li $t2, 54851
+	sw $t2, -40($fp)
+#3527<_____________===
+	lw $t3, -44($fp)
+	li $t3, 58506
+	sw $t3, -44($fp)
+#3528<_____________===
+	li $t5, 0
 	li $t6, 4
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -136($fp)
-	lw $t2, -84($fp)
-	lw $t3, -136($fp)
-	add $t1, $t2, $t3
-	sw $t1, -140($fp)
-	lw $t4, -140($fp)
+	mul $t4, $t5, $t6
+	sw $t4, -104($fp)
+#3529<_____________===
+	lw $t1, -84($fp)
+	lw $t2, -104($fp)
+	add $t0, $t1, $t2
+	sw $t0, -108($fp)
+#3530<_____________===
+	lw $t3, -108($fp)
+	li $s2, 53367
+	sw $t3, -108($fp)
+	sw $s2, 0($t3)
+#3531<_____________===
+	li $t5, 1
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -112($fp)
+#3532<_____________===
+	lw $t1, -84($fp)
+	lw $t2, -112($fp)
+	add $t0, $t1, $t2
+	sw $t0, -116($fp)
+#3533<_____________===
+	lw $t3, -116($fp)
+	li $s2, 17812
+	sw $t3, -116($fp)
+	sw $s2, 0($t3)
+#3534<_____________===
+	li $t5, 2
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -120($fp)
+#3535<_____________===
+	lw $t1, -84($fp)
+	lw $t2, -120($fp)
+	add $t0, $t1, $t2
+	sw $t0, -124($fp)
+#3536<_____________===
+	lw $t3, -124($fp)
+	li $s2, 59226
+	sw $t3, -124($fp)
+	sw $s2, 0($t3)
+#3537<_____________===
+	li $t5, 3
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -128($fp)
+#3538<_____________===
+	lw $t1, -84($fp)
+	lw $t2, -128($fp)
+	add $t0, $t1, $t2
+	sw $t0, -132($fp)
+#3539<_____________===
+	lw $t3, -132($fp)
+	li $s2, 19336
+	sw $t3, -132($fp)
+	sw $s2, 0($t3)
+#3540<_____________===
+	li $t5, 4
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -136($fp)
+#3541<_____________===
+	lw $t1, -84($fp)
+	lw $t2, -136($fp)
+	add $t0, $t1, $t2
+	sw $t0, -140($fp)
+#3542<_____________===
+	lw $t3, -140($fp)
 	li $s2, 55249
-	sw $t4, -140($fp)
-	sw $s2, 0($t4)
-	li $t6, 5
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -144($fp)
-	lw $t2, -84($fp)
-	lw $t3, -144($fp)
-	add $t1, $t2, $t3
-	sw $t1, -148($fp)
-	lw $t4, -148($fp)
+	sw $t3, -140($fp)
+	sw $s2, 0($t3)
+#3543<_____________===
+	li $t5, 5
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -144($fp)
+#3544<_____________===
+	lw $t1, -84($fp)
+	lw $t2, -144($fp)
+	add $t0, $t1, $t2
+	sw $t0, -148($fp)
+#3545<_____________===
+	lw $t3, -148($fp)
 	li $s2, 18470
-	sw $t4, -148($fp)
-	sw $s2, 0($t4)
-	li $t6, 6
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -152($fp)
-	lw $t2, -84($fp)
-	lw $t3, -152($fp)
-	add $t1, $t2, $t3
-	sw $t1, -156($fp)
-	lw $t4, -156($fp)
+	sw $t3, -148($fp)
+	sw $s2, 0($t3)
+#3546<_____________===
+	li $t5, 6
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -152($fp)
+#3547<_____________===
+	lw $t1, -84($fp)
+	lw $t2, -152($fp)
+	add $t0, $t1, $t2
+	sw $t0, -156($fp)
+#3548<_____________===
+	lw $t3, -156($fp)
 	li $s2, 44098
-	sw $t4, -156($fp)
-	sw $s2, 0($t4)
-	li $t6, 7
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -160($fp)
-	lw $t2, -84($fp)
-	lw $t3, -160($fp)
-	add $t1, $t2, $t3
-	sw $t1, -164($fp)
-	lw $t4, -164($fp)
+	sw $t3, -156($fp)
+	sw $s2, 0($t3)
+#3549<_____________===
+	li $t5, 7
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -160($fp)
+#3550<_____________===
+	lw $t1, -84($fp)
+	lw $t2, -160($fp)
+	add $t0, $t1, $t2
+	sw $t0, -164($fp)
+#3551<_____________===
+	lw $t3, -164($fp)
 	li $s2, 19992
-	sw $t4, -164($fp)
-	sw $s2, 0($t4)
-	li $t6, 8
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -168($fp)
-	lw $t2, -84($fp)
-	lw $t3, -168($fp)
-	add $t1, $t2, $t3
-	sw $t1, -172($fp)
-	lw $t4, -172($fp)
+	sw $t3, -164($fp)
+	sw $s2, 0($t3)
+#3552<_____________===
+	li $t5, 8
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -168($fp)
+#3553<_____________===
+	lw $t1, -84($fp)
+	lw $t2, -168($fp)
+	add $t0, $t1, $t2
+	sw $t0, -172($fp)
+#3554<_____________===
+	lw $t3, -172($fp)
 	li $s2, 4933
-	sw $t4, -172($fp)
-	sw $s2, 0($t4)
-	lw $t5, -88($fp)
-	li $t5, 36288
-	sw $t5, -88($fp)
-	lw $t6, -92($fp)
-	li $t6, 43734
-	sw $t6, -92($fp)
-	lw $t0, -96($fp)
-	li $t0, 43780
-	sw $t0, -96($fp)
-	lw $t1, -100($fp)
-	li $t1, 14734
-	sw $t1, -100($fp)
+	sw $t3, -172($fp)
+	sw $s2, 0($t3)
+#3555<_____________===
+	lw $t4, -88($fp)
+	li $t4, 36288
+	sw $t4, -88($fp)
+#3556<_____________===
+	lw $t5, -92($fp)
+	li $t5, 43734
+	sw $t5, -92($fp)
+#3557<_____________===
+	lw $t6, -96($fp)
+	li $t6, 43780
+	sw $t6, -96($fp)
+#3558<_____________===
+	lw $t0, -100($fp)
+	li $t0, 14734
+	sw $t0, -100($fp)
+#3559<_____________===
 label629:
-	li $t3, 0
-	lw $t4, -24($fp)
-	sub $t2, $t3, $t4
-	sw $t2, -176($fp)
-	lw $t6, -4($fp)
-	lw $t0, -176($fp)
+#3560<_____________===
+	li $t2, 0
+	lw $t3, -24($fp)
+	sub $t1, $t2, $t3
+	sw $t1, -176($fp)
+#3561<_____________===
+	lw $t5, -4($fp)
+	lw $t6, -176($fp)
+	div $t5, $t6
+	mflo $t4
+	sw $t4, -180($fp)
+#3562<_____________===
+	lw $t0, -180($fp)
+	bne $t0, 0, label630
+#3563<_____________===
+	j label631
+#3564<_____________===
+label630:
+#3565<_____________===
+	li $t2, 3
+	li $t3, 4
+	mul $t1, $t2, $t3
+	sw $t1, -184($fp)
+#3566<_____________===
+	lw $t5, -84($fp)
+	lw $t6, -184($fp)
+	add $t4, $t5, $t6
+	sw $t4, -188($fp)
+#3567<_____________===
+	li $t1, 0
+	lw $t2, -188($fp)
+	lw $s4, 0($t2)
+	sub $t0, $t1, $s4
+	sw $t0, -192($fp)
+#3568<_____________===
+	lw $t3, -192($fp)
+	bne $t3, 0, label636
+#3569<_____________===
+	j label634
+#3570<_____________===
+label636:
+#3571<_____________===
+	li $t4, 59379
+	li $t5, 0
+	bne $t4, $t5, label635
+#3572<_____________===
+	j label634
+#3573<_____________===
+label635:
+#3574<_____________===
+	li $t6, 16262
+	li $t0, 0
+	bne $t6, $t0, label634
+#3575<_____________===
+	j label632
+#3576<_____________===
+label634:
+#3577<_____________===
+	li $t1, 54583
+	li $t2, 0
+	bne $t1, $t2, label638
+#3578<_____________===
+	j label633
+#3579<_____________===
+label638:
+#3580<_____________===
+	lw $t3, -16($fp)
+	bne $t3, 0, label637
+#3581<_____________===
+	j label633
+#3582<_____________===
+label637:
+#3583<_____________===
+	lw $t5, -12($fp)
+	lw $t6, -92($fp)
+	mul $t4, $t5, $t6
+	sw $t4, -196($fp)
+#3584<_____________===
+	lw $t0, -196($fp)
+	bne $t0, 0, label632
+#3585<_____________===
+	j label633
+#3586<_____________===
+label632:
+#3587<_____________===
+	li $t1, 0
+	sw $t1, -200($fp)
+#3588<_____________===
+	lw $t3, -92($fp)
+	lw $t4, -40($fp)
+	mul $t2, $t3, $t4
+	sw $t2, -204($fp)
+#3589<_____________===
+	lw $t6, -204($fp)
+	li $t0, 38023
 	div $t6, $t0
 	mflo $t5
-	sw $t5, -180($fp)
-	lw $t1, -180($fp)
-	bne $t1, 0, label630
-	j label631
-label630:
-	li $t3, 3
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -184($fp)
-	lw $t6, -84($fp)
-	lw $t0, -184($fp)
-	add $t5, $t6, $t0
-	sw $t5, -188($fp)
+	sw $t5, -208($fp)
+#3590<_____________===
 	li $t2, 0
-	lw $t3, -188($fp)
-	lw $s4, 0($t3)
-	sub $t1, $t2, $s4
-	sw $t1, -192($fp)
-	lw $t4, -192($fp)
-	bne $t4, 0, label636
-	j label634
-label636:
-	j label634
-label635:
-	j label632
-label634:
-	j label633
-label638:
-	lw $t5, -16($fp)
-	bne $t5, 0, label637
-	j label633
-label637:
-	lw $t0, -12($fp)
-	lw $t1, -92($fp)
-	mul $t6, $t0, $t1
-	sw $t6, -196($fp)
-	lw $t2, -196($fp)
-	bne $t2, 0, label632
-	j label633
-label632:
-	li $t3, 0
-	sw $t3, -200($fp)
-	lw $t5, -92($fp)
-	lw $t6, -40($fp)
-	mul $t4, $t5, $t6
-	sw $t4, -204($fp)
-	lw $t1, -204($fp)
-	li $t2, 38023
-	div $t1, $t2
-	mflo $t0
-	sw $t0, -208($fp)
-	li $t4, 0
-	lw $t5, -208($fp)
-	sub $t3, $t4, $t5
-	sw $t3, -212($fp)
-	lw $t6, -212($fp)
-	lw $t0, -12($fp)
-	bne $t6, $t0, label642
+	lw $t3, -208($fp)
+	sub $t1, $t2, $t3
+	sw $t1, -212($fp)
+#3591<_____________===
+	lw $t4, -212($fp)
+	lw $t5, -12($fp)
+	bne $t4, $t5, label642
+#3592<_____________===
 	j label643
+#3593<_____________===
 label642:
-	lw $t1, -200($fp)
-	li $t1, 1
-	sw $t1, -200($fp)
+#3594<_____________===
+	lw $t6, -200($fp)
+	li $t6, 1
+	sw $t6, -200($fp)
+#3595<_____________===
 label643:
-	lw $t2, -200($fp)
-	lw $t3, -88($fp)
-	bge $t2, $t3, label641
+#3596<_____________===
+	lw $t0, -200($fp)
+	lw $t1, -88($fp)
+	bge $t0, $t1, label641
+#3597<_____________===
 	j label640
+#3598<_____________===
 label641:
+#3599<_____________===
+	li $t2, 23119
+	li $t3, 0
+	bne $t2, $t3, label640
+#3600<_____________===
 	j label639
+#3601<_____________===
 label639:
+#3602<_____________===
 	lw $t5, -92($fp)
 	li $t6, 4
 	mul $t4, $t5, $t6
 	sw $t4, -216($fp)
+#3603<_____________===
 	lw $t1, -84($fp)
 	lw $t2, -216($fp)
 	add $t0, $t1, $t2
 	sw $t0, -220($fp)
+#3604<_____________===
 	li $t4, 0
 	lw $t5, -92($fp)
 	sub $t3, $t4, $t5
 	sw $t3, -224($fp)
+#3605<_____________===
 	lw $t6, -220($fp)
 	lw $t0, -224($fp)
 	lw $s3, 0($t6)
 	beq $s3, $t0, label644
+#3606<_____________===
 	j label645
+#3607<_____________===
 label644:
+#3608<_____________===
 label645:
+#3609<_____________===
 	j label646
+#3610<_____________===
 label640:
+#3611<_____________===
 	li $t1, 0
 	sw $t1, -228($fp)
+#3612<_____________===
 	lw $t3, -96($fp)
 	li $t4, 29409
 	div $t3, $t4
 	mflo $t2
 	sw $t2, -232($fp)
+#3613<_____________===
 	lw $t6, -232($fp)
 	li $t0, 23251
 	mul $t5, $t6, $t0
 	sw $t5, -236($fp)
+#3614<_____________===
 	lw $t1, -236($fp)
 	bne $t1, 0, label647
+#3615<_____________===
 	j label649
+#3616<_____________===
 label649:
+#3617<_____________===
 	lw $t2, -92($fp)
 	bne $t2, 0, label647
+#3618<_____________===
 	j label648
+#3619<_____________===
 label647:
+#3620<_____________===
 	lw $t3, -228($fp)
 	li $t3, 1
 	sw $t3, -228($fp)
+#3621<_____________===
 label648:
+#3622<_____________===
 	lw $t4, -20($fp)
 	lw $t5, -228($fp)
 	move $t4, $t5
 	sw $t4, -20($fp)
+#3623<_____________===
 label646:
+#3624<_____________===
 	j label650
+#3625<_____________===
 label633:
+#3626<_____________===
 	li $t6, 0
 	sw $t6, -240($fp)
+#3627<_____________===
 	lw $t0, -92($fp)
 	bne $t0, 0, label653
+#3628<_____________===
 	j label656
+#3629<_____________===
 label656:
+#3630<_____________===
 	lw $t1, -8($fp)
 	bne $t1, 0, label653
+#3631<_____________===
 	j label655
+#3632<_____________===
 label655:
+#3633<_____________===
 	lw $t2, -20($fp)
 	bne $t2, 0, label653
+#3634<_____________===
 	j label654
+#3635<_____________===
 label653:
+#3636<_____________===
 	lw $t3, -240($fp)
 	li $t3, 1
 	sw $t3, -240($fp)
+#3637<_____________===
 label654:
+#3638<_____________===
 	li $t4, 0
 	sw $t4, -244($fp)
+#3639<_____________===
 	li $t6, 58984
 	lw $t0, -32($fp)
 	mul $t5, $t6, $t0
 	sw $t5, -248($fp)
+#3640<_____________===
 	lw $t1, -248($fp)
 	lw $t2, -96($fp)
 	beq $t1, $t2, label657
+#3641<_____________===
 	j label658
+#3642<_____________===
 label657:
+#3643<_____________===
 	lw $t3, -244($fp)
 	li $t3, 1
 	sw $t3, -244($fp)
+#3644<_____________===
 label658:
+#3645<_____________===
 	li $t4, 0
 	sw $t4, -252($fp)
+#3646<_____________===
 	lw $t6, -4($fp)
 	li $t0, 38094
 	sub $t5, $t6, $t0
 	sw $t5, -256($fp)
+#3647<_____________===
 	lw $t1, -256($fp)
 	bne $t1, 0, label661
+#3648<_____________===
 	j label660
+#3649<_____________===
 label661:
+#3650<_____________===
 	lw $t2, -16($fp)
 	bne $t2, 0, label659
+#3651<_____________===
 	j label660
+#3652<_____________===
 label659:
+#3653<_____________===
 	lw $t3, -252($fp)
 	li $t3, 1
 	sw $t3, -252($fp)
+#3654<_____________===
 label660:
+#3655<_____________===
 	li $t4, 0
 	sw $t4, -260($fp)
+#3656<_____________===
+	li $t5, 11301
+	li $t6, 0
+	bne $t5, $t6, label664
+#3657<_____________===
 	j label663
+#3658<_____________===
 label664:
-	lw $t5, -92($fp)
-	bne $t5, 0, label662
+#3659<_____________===
+	lw $t0, -92($fp)
+	bne $t0, 0, label662
+#3660<_____________===
 	j label663
+#3661<_____________===
 label662:
-	lw $t6, -260($fp)
-	li $t6, 1
-	sw $t6, -260($fp)
-label663:
-	lw $a0, -260($fp)
-	lw $a1, -252($fp)
-	lw $a2, -244($fp)
-	lw $a3, -240($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_mvJF5
-	move $t0, $v0
-	sw $t0, -264($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 0
-	lw $t3, -264($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -268($fp)
-	li $t5, 0
-	lw $t6, -268($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -272($fp)
-	lw $t0, -272($fp)
-	bne $t0, 0, label651
-	j label652
-label651:
-	li $t1, 0
-	sw $t1, -276($fp)
-	lw $t2, -44($fp)
-	bne $t2, 0, label665
-	j label668
-label668:
-	lw $t4, -100($fp)
-	lw $t5, -28($fp)
-	div $t4, $t5
-	mflo $t3
-	sw $t3, -280($fp)
-	lw $t6, -280($fp)
-	ble $t6, 43634, label665
-	j label667
-label667:
-	lw $t1, -16($fp)
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -284($fp)
-	lw $t4, -84($fp)
-	lw $t5, -284($fp)
-	add $t3, $t4, $t5
-	sw $t3, -288($fp)
-	lw $t0, -288($fp)
-	li $t1, 60443
-	lw $s3, 0($t0)
-	div $s3, $t1
-	mflo $t6
-	sw $t6, -292($fp)
-	lw $t3, -292($fp)
-	li $t4, 35899
-	div $t3, $t4
-	mflo $t2
-	sw $t2, -296($fp)
-	lw $t5, -296($fp)
-	bne $t5, 0, label665
-	j label666
-label665:
-	lw $t6, -276($fp)
-	li $t6, 1
-	sw $t6, -276($fp)
-label666:
-	lw $t0, -276($fp)
-	move $v0, $t0
-	addi $sp, $sp, 800
-	addi $sp, $sp, 4
-	lw $fp, 0($sp)
-	addi $sp, $sp, 4
-	jr $ra
-	j label669
-label652:
-	li $t1, 0
-	sw $t1, -300($fp)
-	li $t2, 0
-	sw $t2, -304($fp)
-	lw $t3, -92($fp)
-	lw $t4, -96($fp)
-	bne $t3, $t4, label674
-	j label676
-label676:
-	j label675
-label674:
-	lw $t5, -304($fp)
-	li $t5, 1
-	sw $t5, -304($fp)
-label675:
-	li $t6, 0
-	sw $t6, -308($fp)
-	li $t1, 0
-	li $t2, 49758
-	sub $t0, $t1, $t2
-	sw $t0, -312($fp)
-	lw $t3, -312($fp)
-	lw $t4, -92($fp)
-	bgt $t3, $t4, label677
-	j label678
-label677:
-	lw $t5, -308($fp)
-	li $t5, 1
-	sw $t5, -308($fp)
-label678:
-	li $t6, 0
-	sw $t6, -316($fp)
-	lw $t1, -20($fp)
-	li $t2, 28869
-	div $t1, $t2
-	mflo $t0
-	sw $t0, -320($fp)
-	lw $t3, -320($fp)
-	bne $t3, 13824, label679
-	j label680
-label679:
-	lw $t4, -316($fp)
-	li $t4, 1
-	sw $t4, -316($fp)
-label680:
-	li $t5, 0
-	sw $t5, -324($fp)
-	lw $t6, -96($fp)
-	lw $t0, -96($fp)
-	ble $t6, $t0, label681
-	j label682
-label681:
-	lw $t1, -324($fp)
+#3662<_____________===
+	lw $t1, -260($fp)
 	li $t1, 1
-	sw $t1, -324($fp)
-label682:
-	lw $a0, -324($fp)
-	lw $a1, -316($fp)
-	lw $a2, -308($fp)
-	lw $a3, -304($fp)
+	sw $t1, -260($fp)
+#3663<_____________===
+label663:
+#3664<_____________===
+	lw $a0, -260($fp)
+#3665<_____________===
+	lw $a1, -252($fp)
+#3666<_____________===
+	lw $a2, -244($fp)
+#3667<_____________===
+	lw $a3, -240($fp)
+#3668<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	jal id_mvJF5
 	move $t2, $v0
-	sw $t2, -328($fp)
+	sw $t2, -264($fp)
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
-	lw $t4, -328($fp)
-	li $t5, 2034
-	add $t3, $t4, $t5
-	sw $t3, -332($fp)
-	li $t0, 22559
-	li $t1, 33160
-	mul $t6, $t0, $t1
-	sw $t6, -336($fp)
-	li $t3, 0
-	lw $t4, -336($fp)
-	sub $t2, $t3, $t4
-	sw $t2, -340($fp)
-	lw $t6, -332($fp)
-	lw $t0, -340($fp)
-	add $t5, $t6, $t0
-	sw $t5, -344($fp)
-	li $t1, 0
-	sw $t1, -348($fp)
-	lw $t2, -44($fp)
-	bne $t2, 0, label684
-	j label683
-label683:
-	lw $t3, -348($fp)
-	li $t3, 1
-	sw $t3, -348($fp)
-label684:
-	lw $t5, -348($fp)
-	lw $t6, -40($fp)
-	add $t4, $t5, $t6
-	sw $t4, -352($fp)
-	lw $t0, -344($fp)
-	lw $t1, -352($fp)
-	beq $t0, $t1, label672
-	j label673
-label672:
-	lw $t2, -300($fp)
-	li $t2, 1
-	sw $t2, -300($fp)
-label673:
-	lw $t4, -44($fp)
-	li $t5, 57283
-	mul $t3, $t4, $t5
-	sw $t3, -356($fp)
-	lw $t6, -300($fp)
-	lw $t0, -356($fp)
-	ble $t6, $t0, label670
-	j label671
-label670:
-label671:
-label669:
-label650:
-	j label629
-label631:
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -16($fp)
-	move $a0, $t1
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -20($fp)
-	move $a0, $t2
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -24($fp)
-	move $a0, $t3
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -28($fp)
-	move $a0, $t4
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -32($fp)
-	move $a0, $t5
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -36($fp)
-	move $a0, $t6
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -40($fp)
-	move $a0, $t0
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -44($fp)
-	move $a0, $t1
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 0
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -360($fp)
-	lw $t6, -84($fp)
-	lw $t0, -360($fp)
-	add $t5, $t6, $t0
-	sw $t5, -364($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -364($fp)
-	lw $a0, 0($t1)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 1
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -368($fp)
-	lw $t6, -84($fp)
-	lw $t0, -368($fp)
-	add $t5, $t6, $t0
-	sw $t5, -372($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -372($fp)
-	lw $a0, 0($t1)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 2
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -376($fp)
-	lw $t6, -84($fp)
-	lw $t0, -376($fp)
-	add $t5, $t6, $t0
-	sw $t5, -380($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -380($fp)
-	lw $a0, 0($t1)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 3
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -384($fp)
-	lw $t6, -84($fp)
-	lw $t0, -384($fp)
-	add $t5, $t6, $t0
-	sw $t5, -388($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -388($fp)
-	lw $a0, 0($t1)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 4
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -392($fp)
-	lw $t6, -84($fp)
-	lw $t0, -392($fp)
-	add $t5, $t6, $t0
-	sw $t5, -396($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -396($fp)
-	lw $a0, 0($t1)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 5
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -400($fp)
-	lw $t6, -84($fp)
-	lw $t0, -400($fp)
-	add $t5, $t6, $t0
-	sw $t5, -404($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -404($fp)
-	lw $a0, 0($t1)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 6
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -408($fp)
-	lw $t6, -84($fp)
-	lw $t0, -408($fp)
-	add $t5, $t6, $t0
-	sw $t5, -412($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -412($fp)
-	lw $a0, 0($t1)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 7
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -416($fp)
-	lw $t6, -84($fp)
-	lw $t0, -416($fp)
-	add $t5, $t6, $t0
-	sw $t5, -420($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -420($fp)
-	lw $a0, 0($t1)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t3, 8
-	li $t4, 4
-	mul $t2, $t3, $t4
-	sw $t2, -424($fp)
-	lw $t6, -84($fp)
-	lw $t0, -424($fp)
-	add $t5, $t6, $t0
-	sw $t5, -428($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t1, -428($fp)
-	lw $a0, 0($t1)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -88($fp)
-	move $a0, $t2
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t3, -92($fp)
-	move $a0, $t3
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -96($fp)
-	move $a0, $t4
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t5, -100($fp)
-	move $a0, $t5
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 0
-	sw $t6, -432($fp)
-	li $t1, 41029
-	lw $t2, -40($fp)
-	div $t1, $t2
-	mflo $t0
-	sw $t0, -436($fp)
-	lw $t4, -436($fp)
-	lw $t5, -8($fp)
-	mul $t3, $t4, $t5
-	sw $t3, -440($fp)
-	lw $t6, -440($fp)
-	bne $t6, 0, label685
-	j label687
-label687:
+#3669<_____________===
+	li $t4, 0
+	lw $t5, -264($fp)
+	sub $t3, $t4, $t5
+	sw $t3, -268($fp)
+#3670<_____________===
 	li $t0, 0
-	sw $t0, -444($fp)
-	lw $t1, -36($fp)
-	bgt $t1, 11723, label690
-	j label689
-label690:
-	lw $t2, -100($fp)
-	bne $t2, 0, label688
-	j label689
-label688:
-	lw $t3, -444($fp)
-	li $t3, 1
-	sw $t3, -444($fp)
-label689:
-	lw $t4, -4($fp)
-	li $t4, 11740
-	sw $t4, -4($fp)
-	li $t5, 11740
-	sw $t5, -448($fp)
-	lw $a0, -448($fp)
-	lw $a1, -444($fp)
-	lw $a2, -16($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_Y8n
-	move $t6, $v0
-	sw $t6, -452($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t0, -452($fp)
-	bne $t0, 0, label685
-	j label686
-label685:
-	lw $t1, -432($fp)
-	li $t1, 1
-	sw $t1, -432($fp)
-label686:
-	lw $t3, -432($fp)
+	lw $t1, -268($fp)
+	sub $t6, $t0, $t1
+	sw $t6, -272($fp)
+#3671<_____________===
+	lw $t2, -272($fp)
+	bne $t2, 0, label651
+#3672<_____________===
+	j label652
+#3673<_____________===
+label651:
+#3674<_____________===
+	li $t3, 0
+	sw $t3, -276($fp)
+#3675<_____________===
+	lw $t4, -44($fp)
+	bne $t4, 0, label665
+#3676<_____________===
+	j label668
+#3677<_____________===
+label668:
+#3678<_____________===
+	lw $t6, -100($fp)
+	lw $t0, -28($fp)
+	div $t6, $t0
+	mflo $t5
+	sw $t5, -280($fp)
+#3679<_____________===
+	lw $t1, -280($fp)
+	ble $t1, 43634, label665
+#3680<_____________===
+	j label667
+#3681<_____________===
+label667:
+#3682<_____________===
+	lw $t3, -16($fp)
 	li $t4, 4
 	mul $t2, $t3, $t4
-	sw $t2, -456($fp)
+	sw $t2, -284($fp)
+#3683<_____________===
 	lw $t6, -84($fp)
-	lw $t0, -456($fp)
+	lw $t0, -284($fp)
 	add $t5, $t6, $t0
-	sw $t5, -460($fp)
-	lw $t1, -460($fp)
-	move $v0, $t1
+	sw $t5, -288($fp)
+#3684<_____________===
+	lw $t2, -288($fp)
+	li $t3, 60443
+	lw $s3, 0($t2)
+	div $s3, $t3
+	mflo $t1
+	sw $t1, -292($fp)
+#3685<_____________===
+	lw $t5, -292($fp)
+	li $t6, 35899
+	div $t5, $t6
+	mflo $t4
+	sw $t4, -296($fp)
+#3686<_____________===
+	lw $t0, -296($fp)
+	bne $t0, 0, label665
+#3687<_____________===
+	j label666
+#3688<_____________===
+label665:
+#3689<_____________===
+	lw $t1, -276($fp)
+	li $t1, 1
+	sw $t1, -276($fp)
+#3690<_____________===
+label666:
+#3691<_____________===
+	lw $t2, -276($fp)
+	move $v0, $t2
 	addi $sp, $sp, 800
 	addi $sp, $sp, 4
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#3692<_____________===
+	j label669
+#3693<_____________===
+label652:
+#3694<_____________===
+	li $t3, 0
+	sw $t3, -300($fp)
+#3695<_____________===
+	li $t4, 0
+	sw $t4, -304($fp)
+#3696<_____________===
+	lw $t5, -92($fp)
+	lw $t6, -96($fp)
+	bne $t5, $t6, label674
+#3697<_____________===
+	j label676
+#3698<_____________===
+label676:
+#3699<_____________===
+	li $t0, 25993
+	li $t1, 0
+	bne $t0, $t1, label674
+#3700<_____________===
+	j label675
+#3701<_____________===
+label674:
+#3702<_____________===
+	lw $t2, -304($fp)
+	li $t2, 1
+	sw $t2, -304($fp)
+#3703<_____________===
+label675:
+#3704<_____________===
+	li $t3, 0
+	sw $t3, -308($fp)
+#3705<_____________===
+	li $t5, 0
+	li $t6, 49758
+	sub $t4, $t5, $t6
+	sw $t4, -312($fp)
+#3706<_____________===
+	lw $t0, -312($fp)
+	lw $t1, -92($fp)
+	bgt $t0, $t1, label677
+#3707<_____________===
+	j label678
+#3708<_____________===
+label677:
+#3709<_____________===
+	lw $t2, -308($fp)
+	li $t2, 1
+	sw $t2, -308($fp)
+#3710<_____________===
+label678:
+#3711<_____________===
+	li $t3, 0
+	sw $t3, -316($fp)
+#3712<_____________===
+	lw $t5, -20($fp)
+	li $t6, 28869
+	div $t5, $t6
+	mflo $t4
+	sw $t4, -320($fp)
+#3713<_____________===
+	lw $t0, -320($fp)
+	bne $t0, 13824, label679
+#3714<_____________===
+	j label680
+#3715<_____________===
+label679:
+#3716<_____________===
+	lw $t1, -316($fp)
+	li $t1, 1
+	sw $t1, -316($fp)
+#3717<_____________===
+label680:
+#3718<_____________===
+	li $t2, 0
+	sw $t2, -324($fp)
+#3719<_____________===
+	lw $t3, -96($fp)
+	lw $t4, -96($fp)
+	ble $t3, $t4, label681
+#3720<_____________===
+	j label682
+#3721<_____________===
+label681:
+#3722<_____________===
+	lw $t5, -324($fp)
+	li $t5, 1
+	sw $t5, -324($fp)
+#3723<_____________===
+label682:
+#3724<_____________===
+	lw $a0, -324($fp)
+#3725<_____________===
+	lw $a1, -316($fp)
+#3726<_____________===
+	lw $a2, -308($fp)
+#3727<_____________===
+	lw $a3, -304($fp)
+#3728<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_mvJF5
+	move $t6, $v0
+	sw $t6, -328($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3729<_____________===
+	lw $t1, -328($fp)
+	li $t2, 2034
+	add $t0, $t1, $t2
+	sw $t0, -332($fp)
+#3730<_____________===
+	li $t4, 22559
+	li $t5, 33160
+	mul $t3, $t4, $t5
+	sw $t3, -336($fp)
+#3731<_____________===
+	li $t0, 0
+	lw $t1, -336($fp)
+	sub $t6, $t0, $t1
+	sw $t6, -340($fp)
+#3732<_____________===
+	lw $t3, -332($fp)
+	lw $t4, -340($fp)
+	add $t2, $t3, $t4
+	sw $t2, -344($fp)
+#3733<_____________===
+	li $t5, 0
+	sw $t5, -348($fp)
+#3734<_____________===
+	lw $t6, -44($fp)
+	bne $t6, 0, label684
+#3735<_____________===
+	j label683
+#3736<_____________===
+label683:
+#3737<_____________===
+	lw $t0, -348($fp)
+	li $t0, 1
+	sw $t0, -348($fp)
+#3738<_____________===
+label684:
+#3739<_____________===
+	lw $t2, -348($fp)
+	lw $t3, -40($fp)
+	add $t1, $t2, $t3
+	sw $t1, -352($fp)
+#3740<_____________===
+	lw $t4, -344($fp)
+	lw $t5, -352($fp)
+	beq $t4, $t5, label672
+#3741<_____________===
+	j label673
+#3742<_____________===
+label672:
+#3743<_____________===
+	lw $t6, -300($fp)
+	li $t6, 1
+	sw $t6, -300($fp)
+#3744<_____________===
+label673:
+#3745<_____________===
+	lw $t1, -44($fp)
+	li $t2, 57283
+	mul $t0, $t1, $t2
+	sw $t0, -356($fp)
+#3746<_____________===
+	lw $t3, -300($fp)
+	lw $t4, -356($fp)
+	ble $t3, $t4, label670
+#3747<_____________===
+	j label671
+#3748<_____________===
+label670:
+#3749<_____________===
+label671:
+#3750<_____________===
+label669:
+#3751<_____________===
+label650:
+#3752<_____________===
+	j label629
+#3753<_____________===
+label631:
+#3754<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -16($fp)
+	move $a0, $t5
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3755<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -20($fp)
+	move $a0, $t6
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3756<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -24($fp)
+	move $a0, $t0
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3757<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -28($fp)
+	move $a0, $t1
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3758<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -32($fp)
+	move $a0, $t2
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3759<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -36($fp)
+	move $a0, $t3
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3760<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -40($fp)
+	move $a0, $t4
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3761<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -44($fp)
+	move $a0, $t5
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3762<_____________===
+	li $t0, 0
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -360($fp)
+#3763<_____________===
+	lw $t3, -84($fp)
+	lw $t4, -360($fp)
+	add $t2, $t3, $t4
+	sw $t2, -364($fp)
+#3764<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -364($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3765<_____________===
+	li $t0, 1
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -368($fp)
+#3766<_____________===
+	lw $t3, -84($fp)
+	lw $t4, -368($fp)
+	add $t2, $t3, $t4
+	sw $t2, -372($fp)
+#3767<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -372($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3768<_____________===
+	li $t0, 2
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -376($fp)
+#3769<_____________===
+	lw $t3, -84($fp)
+	lw $t4, -376($fp)
+	add $t2, $t3, $t4
+	sw $t2, -380($fp)
+#3770<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -380($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3771<_____________===
+	li $t0, 3
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -384($fp)
+#3772<_____________===
+	lw $t3, -84($fp)
+	lw $t4, -384($fp)
+	add $t2, $t3, $t4
+	sw $t2, -388($fp)
+#3773<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -388($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3774<_____________===
+	li $t0, 4
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -392($fp)
+#3775<_____________===
+	lw $t3, -84($fp)
+	lw $t4, -392($fp)
+	add $t2, $t3, $t4
+	sw $t2, -396($fp)
+#3776<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -396($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3777<_____________===
+	li $t0, 5
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -400($fp)
+#3778<_____________===
+	lw $t3, -84($fp)
+	lw $t4, -400($fp)
+	add $t2, $t3, $t4
+	sw $t2, -404($fp)
+#3779<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -404($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3780<_____________===
+	li $t0, 6
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -408($fp)
+#3781<_____________===
+	lw $t3, -84($fp)
+	lw $t4, -408($fp)
+	add $t2, $t3, $t4
+	sw $t2, -412($fp)
+#3782<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -412($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3783<_____________===
+	li $t0, 7
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -416($fp)
+#3784<_____________===
+	lw $t3, -84($fp)
+	lw $t4, -416($fp)
+	add $t2, $t3, $t4
+	sw $t2, -420($fp)
+#3785<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -420($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3786<_____________===
+	li $t0, 8
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -424($fp)
+#3787<_____________===
+	lw $t3, -84($fp)
+	lw $t4, -424($fp)
+	add $t2, $t3, $t4
+	sw $t2, -428($fp)
+#3788<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -428($fp)
+	lw $a0, 0($t5)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3789<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t6, -88($fp)
+	move $a0, $t6
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3790<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t0, -92($fp)
+	move $a0, $t0
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3791<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -96($fp)
+	move $a0, $t1
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3792<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -100($fp)
+	move $a0, $t2
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3793<_____________===
+	li $t3, 0
+	sw $t3, -432($fp)
+#3794<_____________===
+	li $t5, 41029
+	lw $t6, -40($fp)
+	div $t5, $t6
+	mflo $t4
+	sw $t4, -436($fp)
+#3795<_____________===
+	lw $t1, -436($fp)
+	lw $t2, -8($fp)
+	mul $t0, $t1, $t2
+	sw $t0, -440($fp)
+#3796<_____________===
+	lw $t3, -440($fp)
+	bne $t3, 0, label685
+#3797<_____________===
+	j label687
+#3798<_____________===
+label687:
+#3799<_____________===
+	li $t4, 0
+	sw $t4, -444($fp)
+#3800<_____________===
+	lw $t5, -36($fp)
+	bgt $t5, 11723, label690
+#3801<_____________===
+	j label689
+#3802<_____________===
+label690:
+#3803<_____________===
+	lw $t6, -100($fp)
+	bne $t6, 0, label688
+#3804<_____________===
+	j label689
+#3805<_____________===
+label688:
+#3806<_____________===
+	lw $t0, -444($fp)
+	li $t0, 1
+	sw $t0, -444($fp)
+#3807<_____________===
+label689:
+#3808<_____________===
+	lw $t1, -4($fp)
+	li $t1, 11740
+	sw $t1, -4($fp)
+#3809<_____________===
+	li $t2, 11740
+	sw $t2, -448($fp)
+#3810<_____________===
+	lw $a0, -448($fp)
+#3811<_____________===
+	lw $a1, -444($fp)
+#3812<_____________===
+	lw $a2, -16($fp)
+#3813<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_Y8n
+	move $t3, $v0
+	sw $t3, -452($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3814<_____________===
+	lw $t4, -452($fp)
+	bne $t4, 0, label685
+#3815<_____________===
+	j label686
+#3816<_____________===
+label685:
+#3817<_____________===
+	lw $t5, -432($fp)
+	li $t5, 1
+	sw $t5, -432($fp)
+#3818<_____________===
+label686:
+#3819<_____________===
+	lw $t0, -432($fp)
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -456($fp)
+#3820<_____________===
+	lw $t3, -84($fp)
+	lw $t4, -456($fp)
+	add $t2, $t3, $t4
+	sw $t2, -460($fp)
+#3821<_____________===
+	lw $t5, -460($fp)
+	move $v0, $t5
+	addi $sp, $sp, 800
+	addi $sp, $sp, 4
+	lw $fp, 0($sp)
+	addi $sp, $sp, 4
+	jr $ra
+#3822<_____________===
 id_eSqhJ8:
 	addi $sp, $sp, -4
 	sw $fp, 0($sp)
 	move $fp, $sp
 	addi $sp, $sp, -4
 	subu $sp, $sp, 800
+#3823<_____________===
 	lw $v1, 4($fp)
 	sw $v1, -4($fp)
+#3824<_____________===
 	sw $a3, -8($fp)
+#3825<_____________===
 	sw $a2, -12($fp)
+#3826<_____________===
 	sw $a1, -16($fp)
+#3827<_____________===
 	sw $a0, -20($fp)
-	la $t2, -28($fp)
-	sw $t2, -32($fp)
-	li $t4, 0
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -40($fp)
-	lw $t0, -32($fp)
-	lw $t1, -40($fp)
-	add $t6, $t0, $t1
-	sw $t6, -44($fp)
-	lw $t2, -44($fp)
+#3828<_____________===
+#3829<_____________===
+	la $t6, -28($fp)
+	sw $t6, -32($fp)
+#3830<_____________===
+#3831<_____________===
+	li $t1, 0
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -40($fp)
+#3832<_____________===
+	lw $t4, -32($fp)
+	lw $t5, -40($fp)
+	add $t3, $t4, $t5
+	sw $t3, -44($fp)
+#3833<_____________===
+	lw $t6, -44($fp)
 	li $s2, 45963
-	sw $t2, -44($fp)
-	sw $s2, 0($t2)
-	li $t4, 1
+	sw $t6, -44($fp)
+	sw $s2, 0($t6)
+#3834<_____________===
+	li $t1, 1
+	li $t2, 4
+	mul $t0, $t1, $t2
+	sw $t0, -48($fp)
+#3835<_____________===
+	lw $t4, -32($fp)
+	lw $t5, -48($fp)
+	add $t3, $t4, $t5
+	sw $t3, -52($fp)
+#3836<_____________===
+	lw $t6, -52($fp)
+	li $s2, 48011
+	sw $t6, -52($fp)
+	sw $s2, 0($t6)
+#3837<_____________===
+	lw $t0, -36($fp)
+	li $t0, 55474
+	sw $t0, -36($fp)
+#3838<_____________===
+	li $t1, 0
+	sw $t1, -56($fp)
+#3839<_____________===
+	li $t2, 0
+	sw $t2, -60($fp)
+#3840<_____________===
+	lw $t4, -36($fp)
 	li $t5, 4
 	mul $t3, $t4, $t5
-	sw $t3, -48($fp)
+	sw $t3, -64($fp)
+#3841<_____________===
 	lw $t0, -32($fp)
-	lw $t1, -48($fp)
+	lw $t1, -64($fp)
 	add $t6, $t0, $t1
-	sw $t6, -52($fp)
-	lw $t2, -52($fp)
-	li $s2, 48011
-	sw $t2, -52($fp)
-	sw $s2, 0($t2)
-	lw $t3, -36($fp)
-	li $t3, 55474
-	sw $t3, -36($fp)
-	li $t4, 0
-	sw $t4, -56($fp)
-	li $t5, 0
-	sw $t5, -60($fp)
-	lw $t0, -36($fp)
-	li $t1, 4
-	mul $t6, $t0, $t1
-	sw $t6, -64($fp)
-	lw $t3, -32($fp)
-	lw $t4, -64($fp)
-	add $t2, $t3, $t4
-	sw $t2, -68($fp)
-	lw $t5, -68($fp)
-	lw $s3, 0($t5)
+	sw $t6, -68($fp)
+#3842<_____________===
+	lw $t2, -68($fp)
+	lw $s3, 0($t2)
 	bgt $s3, 24207, label693
+#3843<_____________===
 	j label694
+#3844<_____________===
 label693:
-	lw $t6, -60($fp)
-	li $t6, 1
-	sw $t6, -60($fp)
+#3845<_____________===
+	lw $t3, -60($fp)
+	li $t3, 1
+	sw $t3, -60($fp)
+#3846<_____________===
 label694:
+#3847<_____________===
 	lw $a0, -60($fp)
+#3848<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	jal id_xj7kF
-	move $t0, $v0
-	sw $t0, -72($fp)
+	move $t4, $v0
+	sw $t4, -72($fp)
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
-	lw $t1, -72($fp)
-	bne $t1, 0, label692
+#3849<_____________===
+	lw $t5, -72($fp)
+	bne $t5, 0, label692
+#3850<_____________===
 	j label691
+#3851<_____________===
 label691:
-	lw $t2, -56($fp)
-	li $t2, 1
-	sw $t2, -56($fp)
+#3852<_____________===
+	lw $t6, -56($fp)
+	li $t6, 1
+	sw $t6, -56($fp)
+#3853<_____________===
 label692:
-	li $t3, 0
-	sw $t3, -76($fp)
-	j label699
-label699:
-	lw $t4, -4($fp)
-	bne $t4, 0, label697
-	j label698
-label697:
-	lw $t5, -76($fp)
-	li $t5, 1
-	sw $t5, -76($fp)
-label698:
-	li $t6, 0
-	sw $t6, -80($fp)
-	j label700
-label700:
-	lw $t0, -80($fp)
-	li $t0, 1
-	sw $t0, -80($fp)
-label701:
-	li $t2, 0
-	lw $t3, -80($fp)
-	sub $t1, $t2, $t3
-	sw $t1, -84($fp)
-	li $t4, 0
-	sw $t4, -88($fp)
-	li $t6, 0
-	lw $t0, -20($fp)
-	sub $t5, $t6, $t0
-	sw $t5, -92($fp)
-	lw $t1, -92($fp)
-	bne $t1, 0, label703
-	j label702
-label702:
-	lw $t2, -88($fp)
-	li $t2, 1
-	sw $t2, -88($fp)
-label703:
-	li $t3, 0
-	sw $t3, -96($fp)
-	lw $t4, -4($fp)
-	bne $t4, 0, label705
-	j label704
-label704:
-	lw $t5, -96($fp)
-	li $t5, 1
-	sw $t5, -96($fp)
-label705:
-	lw $t0, -96($fp)
-	li $t1, 59284
-	mul $t6, $t0, $t1
-	sw $t6, -100($fp)
-	li $t2, 0
-	sw $t2, -104($fp)
-	lw $t3, -8($fp)
-	bne $t3, 0, label707
-	j label706
-label706:
-	lw $t4, -104($fp)
-	li $t4, 1
-	sw $t4, -104($fp)
-label707:
-	li $t5, 0
-	sw $t5, -108($fp)
+#3854<_____________===
 	li $t0, 0
-	li $t1, 56589
-	sub $t6, $t0, $t1
-	sw $t6, -112($fp)
-	lw $t2, -112($fp)
-	bne $t2, 0, label708
-	j label710
-label710:
-	lw $t3, -12($fp)
-	bne $t3, 0, label708
-	j label709
-label708:
-	lw $t4, -108($fp)
+	sw $t0, -76($fp)
+#3855<_____________===
+	li $t1, 62745
+	li $t2, 0
+	bne $t1, $t2, label698
+#3856<_____________===
+	j label699
+#3857<_____________===
+label699:
+#3858<_____________===
+	lw $t3, -4($fp)
+	bne $t3, 0, label697
+#3859<_____________===
+	j label698
+#3860<_____________===
+label697:
+#3861<_____________===
+	lw $t4, -76($fp)
 	li $t4, 1
-	sw $t4, -108($fp)
-label709:
+	sw $t4, -76($fp)
+#3862<_____________===
+label698:
+#3863<_____________===
 	li $t5, 0
-	sw $t5, -116($fp)
-	li $t6, 0
-	sw $t6, -120($fp)
-	j label714
-label713:
-	lw $t0, -120($fp)
-	li $t0, 1
-	sw $t0, -120($fp)
-label714:
-	lw $t1, -120($fp)
-	lw $t2, -16($fp)
-	beq $t1, $t2, label711
-	j label712
-label711:
-	lw $t3, -116($fp)
+	sw $t5, -80($fp)
+#3864<_____________===
+	li $t6, 25226
+	li $t0, 0
+	bne $t6, $t0, label701
+#3865<_____________===
+	j label700
+#3866<_____________===
+label700:
+#3867<_____________===
+	lw $t1, -80($fp)
+	li $t1, 1
+	sw $t1, -80($fp)
+#3868<_____________===
+label701:
+#3869<_____________===
+	li $t3, 0
+	lw $t4, -80($fp)
+	sub $t2, $t3, $t4
+	sw $t2, -84($fp)
+#3870<_____________===
+	li $t5, 0
+	sw $t5, -88($fp)
+#3871<_____________===
+	li $t0, 0
+	lw $t1, -20($fp)
+	sub $t6, $t0, $t1
+	sw $t6, -92($fp)
+#3872<_____________===
+	lw $t2, -92($fp)
+	bne $t2, 0, label703
+#3873<_____________===
+	j label702
+#3874<_____________===
+label702:
+#3875<_____________===
+	lw $t3, -88($fp)
 	li $t3, 1
-	sw $t3, -116($fp)
+	sw $t3, -88($fp)
+#3876<_____________===
+label703:
+#3877<_____________===
+	li $t4, 0
+	sw $t4, -96($fp)
+#3878<_____________===
+	lw $t5, -4($fp)
+	bne $t5, 0, label705
+#3879<_____________===
+	j label704
+#3880<_____________===
+label704:
+#3881<_____________===
+	lw $t6, -96($fp)
+	li $t6, 1
+	sw $t6, -96($fp)
+#3882<_____________===
+label705:
+#3883<_____________===
+	lw $t1, -96($fp)
+	li $t2, 59284
+	mul $t0, $t1, $t2
+	sw $t0, -100($fp)
+#3884<_____________===
+	li $t3, 0
+	sw $t3, -104($fp)
+#3885<_____________===
+	lw $t4, -8($fp)
+	bne $t4, 0, label707
+#3886<_____________===
+	j label706
+#3887<_____________===
+label706:
+#3888<_____________===
+	lw $t5, -104($fp)
+	li $t5, 1
+	sw $t5, -104($fp)
+#3889<_____________===
+label707:
+#3890<_____________===
+	li $t6, 0
+	sw $t6, -108($fp)
+#3891<_____________===
+	li $t1, 0
+	li $t2, 56589
+	sub $t0, $t1, $t2
+	sw $t0, -112($fp)
+#3892<_____________===
+	lw $t3, -112($fp)
+	bne $t3, 0, label708
+#3893<_____________===
+	j label710
+#3894<_____________===
+label710:
+#3895<_____________===
+	lw $t4, -12($fp)
+	bne $t4, 0, label708
+#3896<_____________===
+	j label709
+#3897<_____________===
+label708:
+#3898<_____________===
+	lw $t5, -108($fp)
+	li $t5, 1
+	sw $t5, -108($fp)
+#3899<_____________===
+label709:
+#3900<_____________===
+	li $t6, 0
+	sw $t6, -116($fp)
+#3901<_____________===
+	li $t0, 0
+	sw $t0, -120($fp)
+#3902<_____________===
+	li $t1, 41488
+	li $t2, 48331
+	bne $t1, $t2, label713
+#3903<_____________===
+	j label714
+#3904<_____________===
+label713:
+#3905<_____________===
+	lw $t3, -120($fp)
+	li $t3, 1
+	sw $t3, -120($fp)
+#3906<_____________===
+label714:
+#3907<_____________===
+	lw $t4, -120($fp)
+	lw $t5, -16($fp)
+	beq $t4, $t5, label711
+#3908<_____________===
+	j label712
+#3909<_____________===
+label711:
+#3910<_____________===
+	lw $t6, -116($fp)
+	li $t6, 1
+	sw $t6, -116($fp)
+#3911<_____________===
 label712:
+#3912<_____________===
 	lw $a0, -116($fp)
+#3913<_____________===
 	lw $a1, -108($fp)
+#3914<_____________===
 	lw $a2, -104($fp)
+#3915<_____________===
 	lw $a3, -100($fp)
+#3916<_____________===
 	lw $s0, -8($fp)
 	addi $sp, $sp, -4
-	lw $sp, 0($s0)
+	sw $s0, 0($sp)
+	addi $sp, $sp, 4
+#3917<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	jal id_eSqhJ8
+	move $t0, $v0
+	sw $t0, -124($fp)
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3918<_____________===
+	li $t2, 0
+	lw $t3, -124($fp)
+	sub $t1, $t2, $t3
+	sw $t1, -128($fp)
+#3919<_____________===
+	li $t4, 0
+	sw $t4, -132($fp)
+#3920<_____________===
+	lw $t6, -4($fp)
+	lw $t0, -8($fp)
+	add $t5, $t6, $t0
+	sw $t5, -136($fp)
+#3921<_____________===
+	lw $t1, -136($fp)
+	bne $t1, 0, label717
+#3922<_____________===
+	j label716
+#3923<_____________===
+label717:
+#3924<_____________===
+	li $t2, 29076
+	li $t3, 0
+	bne $t2, $t3, label715
+#3925<_____________===
+	j label716
+#3926<_____________===
+label715:
+#3927<_____________===
+	lw $t4, -132($fp)
+	li $t4, 1
+	sw $t4, -132($fp)
+#3928<_____________===
+label716:
+#3929<_____________===
+	lw $t6, -4($fp)
+	li $t0, 64608
+	mul $t5, $t6, $t0
+	sw $t5, -140($fp)
+#3930<_____________===
+	lw $t2, -4($fp)
+	li $t3, 12204
+	sub $t1, $t2, $t3
+	sw $t1, -144($fp)
+#3931<_____________===
+	lw $a0, -144($fp)
+#3932<_____________===
+	lw $a1, -140($fp)
+#3933<_____________===
+	lw $a2, -132($fp)
+#3934<_____________===
+	lw $a3, -128($fp)
+#3935<_____________===
+	lw $s0, -88($fp)
+	addi $sp, $sp, -4
+	sw $s0, 0($sp)
+	addi $sp, $sp, 4
+#3936<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	jal id_eSqhJ8
 	move $t4, $v0
-	sw $t4, -124($fp)
+	sw $t4, -148($fp)
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
-	li $t6, 0
-	lw $t0, -124($fp)
-	sub $t5, $t6, $t0
-	sw $t5, -128($fp)
-	li $t1, 0
-	sw $t1, -132($fp)
-	lw $t3, -4($fp)
-	lw $t4, -8($fp)
-	add $t2, $t3, $t4
-	sw $t2, -136($fp)
-	lw $t5, -136($fp)
-	bne $t5, 0, label717
-	j label716
-label717:
-	j label716
-label715:
-	lw $t6, -132($fp)
-	li $t6, 1
-	sw $t6, -132($fp)
-label716:
-	lw $t1, -4($fp)
-	li $t2, 64608
-	mul $t0, $t1, $t2
-	sw $t0, -140($fp)
-	lw $t4, -4($fp)
-	li $t5, 12204
-	sub $t3, $t4, $t5
-	sw $t3, -144($fp)
-	lw $a0, -144($fp)
-	lw $a1, -140($fp)
-	lw $a2, -132($fp)
-	lw $a3, -128($fp)
-	lw $s0, -88($fp)
-	addi $sp, $sp, -4
-	lw $sp, 0($s0)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	jal id_eSqhJ8
-	move $t6, $v0
-	sw $t6, -148($fp)
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	lw $t0, -36($fp)
+#3937<_____________===
+	lw $t5, -36($fp)
+	lw $t6, -16($fp)
+	move $t5, $t6
+	sw $t5, -36($fp)
+#3938<_____________===
 	lw $t1, -16($fp)
 	move $t0, $t1
-	sw $t0, -36($fp)
-	lw $t3, -16($fp)
-	move $t2, $t3
-	sw $t2, -152($fp)
-	li $t5, 0
-	lw $t6, -4($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -156($fp)
-	li $t1, 0
-	lw $t2, -156($fp)
-	sub $t0, $t1, $t2
-	sw $t0, -160($fp)
+	sw $t0, -152($fp)
+#3939<_____________===
+	li $t3, 0
+	lw $t4, -4($fp)
+	sub $t2, $t3, $t4
+	sw $t2, -156($fp)
+#3940<_____________===
+	li $t6, 0
+	lw $t0, -156($fp)
+	sub $t5, $t6, $t0
+	sw $t5, -160($fp)
+#3941<_____________===
 	lw $a0, -160($fp)
+#3942<_____________===
 	lw $a1, -152($fp)
+#3943<_____________===
 	lw $a2, -148($fp)
+#3944<_____________===
 	lw $a3, -84($fp)
+#3945<_____________===
 	lw $s0, -76($fp)
 	addi $sp, $sp, -4
-	lw $sp, 0($s0)
+	sw $s0, 0($sp)
+	addi $sp, $sp, 4
+#3946<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	jal id_eSqhJ8
-	move $t3, $v0
-	sw $t3, -164($fp)
+	move $t1, $v0
+	sw $t1, -164($fp)
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
-	lw $t5, -164($fp)
-	li $t6, 4
-	mul $t4, $t5, $t6
-	sw $t4, -168($fp)
-	lw $t1, -32($fp)
-	lw $t2, -168($fp)
-	add $t0, $t1, $t2
-	sw $t0, -172($fp)
-	li $t4, 52327
-	lw $t5, -16($fp)
-	mul $t3, $t4, $t5
-	sw $t3, -176($fp)
-	lw $t0, -176($fp)
-	li $t1, 58056
+#3947<_____________===
+	lw $t3, -164($fp)
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -168($fp)
+#3948<_____________===
+	lw $t6, -32($fp)
+	lw $t0, -168($fp)
+	add $t5, $t6, $t0
+	sw $t5, -172($fp)
+#3949<_____________===
+	li $t2, 52327
+	lw $t3, -16($fp)
+	mul $t1, $t2, $t3
+	sw $t1, -176($fp)
+#3950<_____________===
+	lw $t5, -176($fp)
+	li $t6, 58056
+	div $t5, $t6
+	mflo $t4
+	sw $t4, -180($fp)
+#3951<_____________===
+	lw $t1, -180($fp)
+	lw $t2, -4($fp)
+	div $t1, $t2
+	mflo $t0
+	sw $t0, -184($fp)
+#3952<_____________===
+	lw $t3, -172($fp)
+	lw $t4, -184($fp)
+	lw $s3, 0($t3)
+	bge $s3, $t4, label695
+#3953<_____________===
+	j label696
+#3954<_____________===
+label695:
+#3955<_____________===
+label696:
+#3956<_____________===
+	li $t6, 0
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -188($fp)
+#3957<_____________===
+	lw $t2, -32($fp)
+	lw $t3, -188($fp)
+	add $t1, $t2, $t3
+	sw $t1, -192($fp)
+#3958<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -192($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3959<_____________===
+	li $t6, 1
+	li $t0, 4
+	mul $t5, $t6, $t0
+	sw $t5, -196($fp)
+#3960<_____________===
+	lw $t2, -32($fp)
+	lw $t3, -196($fp)
+	add $t1, $t2, $t3
+	sw $t1, -200($fp)
+#3961<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t4, -200($fp)
+	lw $a0, 0($t4)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3962<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t5, -36($fp)
+	move $a0, $t5
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#3963<_____________===
+	li $t0, 50298
+	li $t1, 63629
 	div $t0, $t1
 	mflo $t6
-	sw $t6, -180($fp)
-	lw $t3, -180($fp)
-	lw $t4, -4($fp)
-	div $t3, $t4
-	mflo $t2
-	sw $t2, -184($fp)
-	lw $t5, -172($fp)
-	lw $t6, -184($fp)
-	lw $s3, 0($t5)
-	bge $s3, $t6, label695
-	j label696
-label695:
-label696:
-	li $t1, 0
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -188($fp)
-	lw $t4, -32($fp)
-	lw $t5, -188($fp)
-	add $t3, $t4, $t5
-	sw $t3, -192($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -192($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t1, 1
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -196($fp)
-	lw $t4, -32($fp)
-	lw $t5, -196($fp)
-	add $t3, $t4, $t5
-	sw $t3, -200($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t6, -200($fp)
-	lw $a0, 0($t6)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t0, -36($fp)
-	move $a0, $t0
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t2, 50298
-	li $t3, 63629
-	div $t2, $t3
-	mflo $t1
-	sw $t1, -204($fp)
-	li $t4, 0
-	sw $t4, -208($fp)
-	lw $t5, -16($fp)
-	bne $t5, 0, label719
+	sw $t6, -204($fp)
+#3964<_____________===
+	li $t2, 0
+	sw $t2, -208($fp)
+#3965<_____________===
+	lw $t3, -16($fp)
+	bne $t3, 0, label719
+#3966<_____________===
 	j label718
+#3967<_____________===
 label718:
-	lw $t6, -208($fp)
-	li $t6, 1
-	sw $t6, -208($fp)
+#3968<_____________===
+	lw $t4, -208($fp)
+	li $t4, 1
+	sw $t4, -208($fp)
+#3969<_____________===
 label719:
-	lw $t1, -204($fp)
-	lw $t2, -208($fp)
-	mul $t0, $t1, $t2
-	sw $t0, -212($fp)
-	lw $t3, -212($fp)
-	move $v0, $t3
+#3970<_____________===
+	lw $t6, -204($fp)
+	lw $t0, -208($fp)
+	mul $t5, $t6, $t0
+	sw $t5, -212($fp)
+#3971<_____________===
+	lw $t1, -212($fp)
+	move $v0, $t1
 	addi $sp, $sp, 800
 	addi $sp, $sp, 4
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#3972<_____________===
 id_mkmxUkG1U:
 	addi $sp, $sp, -4
 	sw $fp, 0($sp)
 	move $fp, $sp
 	addi $sp, $sp, -4
 	subu $sp, $sp, 800
+#3973<_____________===
 	sw $a2, -4($fp)
+#3974<_____________===
 	sw $a1, -8($fp)
+#3975<_____________===
 	sw $a0, -12($fp)
-	la $t4, -16($fp)
-	sw $t4, -20($fp)
-	li $t6, 0
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -24($fp)
-	lw $t2, -20($fp)
-	lw $t3, -24($fp)
-	add $t1, $t2, $t3
-	sw $t1, -28($fp)
-	lw $t4, -28($fp)
+#3976<_____________===
+#3977<_____________===
+	la $t2, -16($fp)
+	sw $t2, -20($fp)
+#3978<_____________===
+	li $t4, 0
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -24($fp)
+#3979<_____________===
+	lw $t0, -20($fp)
+	lw $t1, -24($fp)
+	add $t6, $t0, $t1
+	sw $t6, -28($fp)
+#3980<_____________===
+	lw $t2, -28($fp)
 	li $s2, 36154
-	sw $t4, -28($fp)
-	sw $s2, 0($t4)
-	li $t6, 0
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -32($fp)
-	lw $t2, -20($fp)
-	lw $t3, -32($fp)
-	add $t1, $t2, $t3
-	sw $t1, -36($fp)
+	sw $t2, -28($fp)
+	sw $s2, 0($t2)
+#3981<_____________===
+	li $t4, 0
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -32($fp)
+#3982<_____________===
+	lw $t0, -20($fp)
+	lw $t1, -32($fp)
+	add $t6, $t0, $t1
+	sw $t6, -36($fp)
+#3983<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t4, -36($fp)
-	lw $a0, 0($t4)
+	lw $t2, -36($fp)
+	lw $a0, 0($t2)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
-	li $t5, 0
-	sw $t5, -40($fp)
-	li $t6, 0
-	sw $t6, -44($fp)
-	lw $t0, -4($fp)
-	bne $t0, 0, label723
-	j label722
-label722:
-	lw $t1, -44($fp)
-	li $t1, 1
-	sw $t1, -44($fp)
-label723:
+#3984<_____________===
 	li $t3, 0
-	lw $t4, -44($fp)
-	sub $t2, $t3, $t4
-	sw $t2, -48($fp)
-	lw $t6, -48($fp)
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -52($fp)
-	lw $t2, -20($fp)
-	lw $t3, -52($fp)
-	add $t1, $t2, $t3
-	sw $t1, -56($fp)
+	sw $t3, -40($fp)
+#3985<_____________===
+	li $t4, 0
+	sw $t4, -44($fp)
+#3986<_____________===
 	lw $t5, -4($fp)
-	lw $t6, -4($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -60($fp)
+	bne $t5, 0, label723
+#3987<_____________===
+	j label722
+#3988<_____________===
+label722:
+#3989<_____________===
+	lw $t6, -44($fp)
+	li $t6, 1
+	sw $t6, -44($fp)
+#3990<_____________===
+label723:
+#3991<_____________===
+	li $t1, 0
+	lw $t2, -44($fp)
+	sub $t0, $t1, $t2
+	sw $t0, -48($fp)
+#3992<_____________===
+	lw $t4, -48($fp)
+	li $t5, 4
+	mul $t3, $t4, $t5
+	sw $t3, -52($fp)
+#3993<_____________===
+	lw $t0, -20($fp)
+	lw $t1, -52($fp)
+	add $t6, $t0, $t1
+	sw $t6, -56($fp)
+#3994<_____________===
+	lw $t3, -4($fp)
+	lw $t4, -4($fp)
+	sub $t2, $t3, $t4
+	sw $t2, -60($fp)
+#3995<_____________===
+	li $t5, 0
+	sw $t5, -64($fp)
+#3996<_____________===
+	li $t6, 45205
 	li $t0, 0
-	sw $t0, -64($fp)
+	bne $t6, $t0, label725
+#3997<_____________===
 	j label724
+#3998<_____________===
 label724:
+#3999<_____________===
 	lw $t1, -64($fp)
 	li $t1, 1
 	sw $t1, -64($fp)
+#4000<_____________===
 label725:
+#4001<_____________===
 	lw $t3, -60($fp)
 	lw $t4, -64($fp)
 	sub $t2, $t3, $t4
 	sw $t2, -68($fp)
+#4002<_____________===
 	lw $t5, -56($fp)
 	lw $t6, -68($fp)
 	lw $s3, 0($t5)
 	bne $s3, $t6, label720
+#4003<_____________===
 	j label721
+#4004<_____________===
 label720:
+#4005<_____________===
 	lw $t0, -40($fp)
 	li $t0, 1
 	sw $t0, -40($fp)
+#4006<_____________===
 label721:
+#4007<_____________===
 	lw $t1, -40($fp)
 	move $v0, $t1
 	addi $sp, $sp, 800
@@ -11006,706 +15226,946 @@ label721:
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#4008<_____________===
 id_KCz:
 	addi $sp, $sp, -4
 	sw $fp, 0($sp)
 	move $fp, $sp
 	addi $sp, $sp, -4
 	subu $sp, $sp, 800
+#4009<_____________===
+#4010<_____________===
 	la $t2, -20($fp)
 	sw $t2, -24($fp)
+#4011<_____________===
+#4012<_____________===
+#4013<_____________===
+#4014<_____________===
 	la $t3, -60($fp)
 	sw $t3, -64($fp)
+#4015<_____________===
+#4016<_____________===
 	la $t4, -76($fp)
 	sw $t4, -80($fp)
+#4017<_____________===
 	li $t6, 0
 	li $t0, 4
 	mul $t5, $t6, $t0
 	sw $t5, -84($fp)
+#4018<_____________===
 	lw $t2, -24($fp)
 	lw $t3, -84($fp)
 	add $t1, $t2, $t3
 	sw $t1, -88($fp)
+#4019<_____________===
 	lw $t4, -88($fp)
 	li $s2, 33992
 	sw $t4, -88($fp)
 	sw $s2, 0($t4)
+#4020<_____________===
 	li $t6, 1
 	li $t0, 4
 	mul $t5, $t6, $t0
 	sw $t5, -92($fp)
+#4021<_____________===
 	lw $t2, -24($fp)
 	lw $t3, -92($fp)
 	add $t1, $t2, $t3
 	sw $t1, -96($fp)
+#4022<_____________===
 	lw $t4, -96($fp)
 	li $s2, 62148
 	sw $t4, -96($fp)
 	sw $s2, 0($t4)
+#4023<_____________===
 	li $t6, 2
 	li $t0, 4
 	mul $t5, $t6, $t0
 	sw $t5, -100($fp)
+#4024<_____________===
 	lw $t2, -24($fp)
 	lw $t3, -100($fp)
 	add $t1, $t2, $t3
 	sw $t1, -104($fp)
+#4025<_____________===
 	lw $t4, -104($fp)
 	li $s2, 29427
 	sw $t4, -104($fp)
 	sw $s2, 0($t4)
+#4026<_____________===
 	li $t6, 3
 	li $t0, 4
 	mul $t5, $t6, $t0
 	sw $t5, -108($fp)
+#4027<_____________===
 	lw $t2, -24($fp)
 	lw $t3, -108($fp)
 	add $t1, $t2, $t3
 	sw $t1, -112($fp)
+#4028<_____________===
 	lw $t4, -112($fp)
 	li $s2, 62861
 	sw $t4, -112($fp)
 	sw $s2, 0($t4)
+#4029<_____________===
 	li $t6, 4
 	li $t0, 4
 	mul $t5, $t6, $t0
 	sw $t5, -116($fp)
+#4030<_____________===
 	lw $t2, -24($fp)
 	lw $t3, -116($fp)
 	add $t1, $t2, $t3
 	sw $t1, -120($fp)
+#4031<_____________===
 	lw $t4, -120($fp)
 	li $s2, 10436
 	sw $t4, -120($fp)
 	sw $s2, 0($t4)
+#4032<_____________===
 	lw $t5, -28($fp)
 	li $t5, 31462
 	sw $t5, -28($fp)
+#4033<_____________===
 	lw $t6, -32($fp)
 	li $t6, 19885
 	sw $t6, -32($fp)
+#4034<_____________===
 	li $t1, 0
 	li $t2, 4
 	mul $t0, $t1, $t2
 	sw $t0, -124($fp)
+#4035<_____________===
 	lw $t4, -64($fp)
 	lw $t5, -124($fp)
 	add $t3, $t4, $t5
 	sw $t3, -128($fp)
+#4036<_____________===
 	lw $t6, -128($fp)
 	li $s2, 43597
 	sw $t6, -128($fp)
 	sw $s2, 0($t6)
+#4037<_____________===
 	li $t1, 1
 	li $t2, 4
 	mul $t0, $t1, $t2
 	sw $t0, -132($fp)
+#4038<_____________===
 	lw $t4, -64($fp)
 	lw $t5, -132($fp)
 	add $t3, $t4, $t5
 	sw $t3, -136($fp)
+#4039<_____________===
 	lw $t6, -136($fp)
 	li $s2, 23209
 	sw $t6, -136($fp)
 	sw $s2, 0($t6)
+#4040<_____________===
 	li $t1, 2
 	li $t2, 4
 	mul $t0, $t1, $t2
 	sw $t0, -140($fp)
+#4041<_____________===
 	lw $t4, -64($fp)
 	lw $t5, -140($fp)
 	add $t3, $t4, $t5
 	sw $t3, -144($fp)
+#4042<_____________===
 	lw $t6, -144($fp)
 	li $s2, 60914
 	sw $t6, -144($fp)
 	sw $s2, 0($t6)
+#4043<_____________===
 	li $t1, 3
 	li $t2, 4
 	mul $t0, $t1, $t2
 	sw $t0, -148($fp)
+#4044<_____________===
 	lw $t4, -64($fp)
 	lw $t5, -148($fp)
 	add $t3, $t4, $t5
 	sw $t3, -152($fp)
+#4045<_____________===
 	lw $t6, -152($fp)
 	li $s2, 55320
 	sw $t6, -152($fp)
 	sw $s2, 0($t6)
+#4046<_____________===
 	li $t1, 4
 	li $t2, 4
 	mul $t0, $t1, $t2
 	sw $t0, -156($fp)
+#4047<_____________===
 	lw $t4, -64($fp)
 	lw $t5, -156($fp)
 	add $t3, $t4, $t5
 	sw $t3, -160($fp)
+#4048<_____________===
 	lw $t6, -160($fp)
 	li $s2, 34949
 	sw $t6, -160($fp)
 	sw $s2, 0($t6)
+#4049<_____________===
 	li $t1, 5
 	li $t2, 4
 	mul $t0, $t1, $t2
 	sw $t0, -164($fp)
+#4050<_____________===
 	lw $t4, -64($fp)
 	lw $t5, -164($fp)
 	add $t3, $t4, $t5
 	sw $t3, -168($fp)
+#4051<_____________===
 	lw $t6, -168($fp)
 	li $s2, 41341
 	sw $t6, -168($fp)
 	sw $s2, 0($t6)
+#4052<_____________===
 	li $t1, 6
 	li $t2, 4
 	mul $t0, $t1, $t2
 	sw $t0, -172($fp)
+#4053<_____________===
 	lw $t4, -64($fp)
 	lw $t5, -172($fp)
 	add $t3, $t4, $t5
 	sw $t3, -176($fp)
+#4054<_____________===
 	lw $t6, -176($fp)
 	li $s2, 37795
 	sw $t6, -176($fp)
 	sw $s2, 0($t6)
+#4055<_____________===
 	li $t1, 0
 	li $t2, 4
 	mul $t0, $t1, $t2
 	sw $t0, -180($fp)
+#4056<_____________===
 	lw $t4, -80($fp)
 	lw $t5, -180($fp)
 	add $t3, $t4, $t5
 	sw $t3, -184($fp)
+#4057<_____________===
 	lw $t6, -184($fp)
 	li $s2, 24888
 	sw $t6, -184($fp)
 	sw $s2, 0($t6)
+#4058<_____________===
 	li $t1, 1
 	li $t2, 4
 	mul $t0, $t1, $t2
 	sw $t0, -188($fp)
+#4059<_____________===
 	lw $t4, -80($fp)
 	lw $t5, -188($fp)
 	add $t3, $t4, $t5
 	sw $t3, -192($fp)
+#4060<_____________===
 	lw $t6, -192($fp)
 	li $s2, 13
 	sw $t6, -192($fp)
 	sw $s2, 0($t6)
+#4061<_____________===
 	li $t1, 2
 	li $t2, 4
 	mul $t0, $t1, $t2
 	sw $t0, -196($fp)
+#4062<_____________===
 	lw $t4, -80($fp)
 	lw $t5, -196($fp)
 	add $t3, $t4, $t5
 	sw $t3, -200($fp)
+#4063<_____________===
 	lw $t6, -200($fp)
 	li $s2, 35005
 	sw $t6, -200($fp)
 	sw $s2, 0($t6)
+#4064<_____________===
 	li $t1, 50114
 	lw $t2, -28($fp)
 	div $t1, $t2
 	mflo $t0
 	sw $t0, -204($fp)
+#4065<_____________===
 	lw $t4, -204($fp)
 	lw $t5, -28($fp)
 	mul $t3, $t4, $t5
 	sw $t3, -208($fp)
+#4066<_____________===
 	li $t6, 0
 	sw $t6, -212($fp)
+#4067<_____________===
+	li $t0, 59297
+	li $t1, 0
+	bne $t0, $t1, label730
+#4068<_____________===
 	j label729
+#4069<_____________===
 label729:
-	lw $t0, -212($fp)
-	li $t0, 1
-	sw $t0, -212($fp)
-label730:
-	lw $t2, -208($fp)
-	lw $t3, -212($fp)
-	add $t1, $t2, $t3
-	sw $t1, -216($fp)
-	li $t5, 0
-	lw $t6, -28($fp)
-	sub $t4, $t5, $t6
-	sw $t4, -220($fp)
-	lw $t1, -220($fp)
-	li $t2, 26058
-	add $t0, $t1, $t2
-	sw $t0, -224($fp)
-	lw $t3, -216($fp)
-	lw $t4, -224($fp)
-	bne $t3, $t4, label728
-	j label727
-label728:
-	li $t5, 0
-	sw $t5, -228($fp)
-	j label731
-label731:
-	lw $t6, -228($fp)
-	li $t6, 1
-	sw $t6, -228($fp)
-label732:
-	lw $t1, -32($fp)
-	lw $t2, -28($fp)
-	mul $t0, $t1, $t2
-	sw $t0, -232($fp)
-	lw $t4, -228($fp)
-	lw $t5, -232($fp)
-	sub $t3, $t4, $t5
-	sw $t3, -236($fp)
-	lw $t6, -236($fp)
-	bne $t6, 0, label726
-	j label727
-label726:
-	li $t0, 0
-	sw $t0, -240($fp)
-	j label734
-label735:
-	lw $t1, -32($fp)
-	bne $t1, 0, label733
-	j label734
-label733:
-	lw $t2, -240($fp)
+#4070<_____________===
+	lw $t2, -212($fp)
 	li $t2, 1
-	sw $t2, -240($fp)
-label734:
-	lw $t4, -240($fp)
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -244($fp)
-	lw $t0, -24($fp)
-	lw $t1, -244($fp)
-	add $t6, $t0, $t1
-	sw $t6, -248($fp)
-	j label736
-label727:
-	li $t2, 0
-	sw $t2, -252($fp)
-	li $t3, 0
-	sw $t3, -256($fp)
-	lw $t4, -28($fp)
-	bne $t4, 0, label741
-	j label740
-label740:
-	lw $t5, -256($fp)
-	li $t5, 1
-	sw $t5, -256($fp)
-label741:
-	lw $t6, -256($fp)
-	beq $t6, 25139, label739
-	j label738
-label739:
-	lw $t1, -28($fp)
-	li $t2, 4
-	mul $t0, $t1, $t2
-	sw $t0, -260($fp)
-	lw $t4, -24($fp)
-	lw $t5, -260($fp)
+	sw $t2, -212($fp)
+#4071<_____________===
+label730:
+#4072<_____________===
+	lw $t4, -208($fp)
+	lw $t5, -212($fp)
 	add $t3, $t4, $t5
-	sw $t3, -264($fp)
-	lw $t6, -264($fp)
-	lw $s3, 0($t6)
-	bne $s3, 0, label737
-	j label738
-label737:
-	lw $t0, -252($fp)
-	li $t0, 1
-	sw $t0, -252($fp)
-label738:
-	lw $t1, -32($fp)
-	lw $t2, -252($fp)
-	move $t1, $t2
-	sw $t1, -32($fp)
-label736:
+	sw $t3, -216($fp)
+#4073<_____________===
+	li $t0, 0
+	lw $t1, -28($fp)
+	sub $t6, $t0, $t1
+	sw $t6, -220($fp)
+#4074<_____________===
+	lw $t3, -220($fp)
+	li $t4, 26058
+	add $t2, $t3, $t4
+	sw $t2, -224($fp)
+#4075<_____________===
+	lw $t5, -216($fp)
+	lw $t6, -224($fp)
+	bne $t5, $t6, label728
+#4076<_____________===
+	j label727
+#4077<_____________===
+label728:
+#4078<_____________===
+	li $t0, 0
+	sw $t0, -228($fp)
+#4079<_____________===
+	li $t1, 26067
+	li $t2, 0
+	bne $t1, $t2, label732
+#4080<_____________===
+	j label731
+#4081<_____________===
+label731:
+#4082<_____________===
+	lw $t3, -228($fp)
+	li $t3, 1
+	sw $t3, -228($fp)
+#4083<_____________===
+label732:
+#4084<_____________===
+	lw $t5, -32($fp)
+	lw $t6, -28($fp)
+	mul $t4, $t5, $t6
+	sw $t4, -232($fp)
+#4085<_____________===
+	lw $t1, -228($fp)
+	lw $t2, -232($fp)
+	sub $t0, $t1, $t2
+	sw $t0, -236($fp)
+#4086<_____________===
+	lw $t3, -236($fp)
+	bne $t3, 0, label726
+#4087<_____________===
+	j label727
+#4088<_____________===
+label726:
+#4089<_____________===
 	li $t4, 0
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -268($fp)
-	lw $t0, -24($fp)
-	lw $t1, -268($fp)
-	add $t6, $t0, $t1
-	sw $t6, -272($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -272($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 1
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -276($fp)
-	lw $t0, -24($fp)
-	lw $t1, -276($fp)
-	add $t6, $t0, $t1
-	sw $t6, -280($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -280($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 2
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -284($fp)
-	lw $t0, -24($fp)
-	lw $t1, -284($fp)
-	add $t6, $t0, $t1
-	sw $t6, -288($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -288($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t4, 3
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -292($fp)
-	lw $t0, -24($fp)
-	lw $t1, -292($fp)
-	add $t6, $t0, $t1
-	sw $t6, -296($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t2, -296($fp)
-	lw $a0, 0($t2)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
+	sw $t4, -240($fp)
+#4090<_____________===
+	li $t5, 55134
+	li $t6, 0
+	bne $t5, $t6, label735
+#4091<_____________===
+	j label734
+#4092<_____________===
+label735:
+#4093<_____________===
+	lw $t0, -32($fp)
+	bne $t0, 0, label733
+#4094<_____________===
+	j label734
+#4095<_____________===
+label733:
+#4096<_____________===
+	lw $t1, -240($fp)
+	li $t1, 1
+	sw $t1, -240($fp)
+#4097<_____________===
+label734:
+#4098<_____________===
+	lw $t3, -240($fp)
 	li $t4, 4
-	li $t5, 4
-	mul $t3, $t4, $t5
-	sw $t3, -300($fp)
-	lw $t0, -24($fp)
-	lw $t1, -300($fp)
-	add $t6, $t0, $t1
-	sw $t6, -304($fp)
+	mul $t2, $t3, $t4
+	sw $t2, -244($fp)
+#4099<_____________===
+	lw $t6, -24($fp)
+	lw $t0, -244($fp)
+	add $t5, $t6, $t0
+	sw $t5, -248($fp)
+#4100<_____________===
+	j label736
+#4101<_____________===
+label727:
+#4102<_____________===
+	li $t1, 0
+	sw $t1, -252($fp)
+#4103<_____________===
+	li $t2, 0
+	sw $t2, -256($fp)
+#4104<_____________===
+	lw $t3, -28($fp)
+	bne $t3, 0, label741
+#4105<_____________===
+	j label740
+#4106<_____________===
+label740:
+#4107<_____________===
+	lw $t4, -256($fp)
+	li $t4, 1
+	sw $t4, -256($fp)
+#4108<_____________===
+label741:
+#4109<_____________===
+	lw $t5, -256($fp)
+	beq $t5, 25139, label739
+#4110<_____________===
+	j label738
+#4111<_____________===
+label739:
+#4112<_____________===
+	lw $t0, -28($fp)
+	li $t1, 4
+	mul $t6, $t0, $t1
+	sw $t6, -260($fp)
+#4113<_____________===
+	lw $t3, -24($fp)
+	lw $t4, -260($fp)
+	add $t2, $t3, $t4
+	sw $t2, -264($fp)
+#4114<_____________===
+	lw $t5, -264($fp)
+	lw $s3, 0($t5)
+	bne $s3, 0, label737
+#4115<_____________===
+	j label738
+#4116<_____________===
+label737:
+#4117<_____________===
+	lw $t6, -252($fp)
+	li $t6, 1
+	sw $t6, -252($fp)
+#4118<_____________===
+label738:
+#4119<_____________===
+	lw $t0, -32($fp)
+	lw $t1, -252($fp)
+	move $t0, $t1
+	sw $t0, -32($fp)
+#4120<_____________===
+label736:
+#4121<_____________===
+	li $t3, 0
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -268($fp)
+#4122<_____________===
+	lw $t6, -24($fp)
+	lw $t0, -268($fp)
+	add $t5, $t6, $t0
+	sw $t5, -272($fp)
+#4123<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -304($fp)
-	lw $a0, 0($t2)
+	lw $t1, -272($fp)
+	lw $a0, 0($t1)
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#4124<_____________===
+	li $t3, 1
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -276($fp)
+#4125<_____________===
+	lw $t6, -24($fp)
+	lw $t0, -276($fp)
+	add $t5, $t6, $t0
+	sw $t5, -280($fp)
+#4126<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t3, -28($fp)
+	lw $t1, -280($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4127<_____________===
+	li $t3, 2
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -284($fp)
+#4128<_____________===
+	lw $t6, -24($fp)
+	lw $t0, -284($fp)
+	add $t5, $t6, $t0
+	sw $t5, -288($fp)
+#4129<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -288($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4130<_____________===
+	li $t3, 3
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -292($fp)
+#4131<_____________===
+	lw $t6, -24($fp)
+	lw $t0, -292($fp)
+	add $t5, $t6, $t0
+	sw $t5, -296($fp)
+#4132<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -296($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4133<_____________===
+	li $t3, 4
+	li $t4, 4
+	mul $t2, $t3, $t4
+	sw $t2, -300($fp)
+#4134<_____________===
+	lw $t6, -24($fp)
+	lw $t0, -300($fp)
+	add $t5, $t6, $t0
+	sw $t5, -304($fp)
+#4135<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t1, -304($fp)
+	lw $a0, 0($t1)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4136<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t2, -28($fp)
+	move $a0, $t2
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4137<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -32($fp)
 	move $a0, $t3
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -32($fp)
-	move $a0, $t4
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 0
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -308($fp)
-	lw $t2, -64($fp)
-	lw $t3, -308($fp)
-	add $t1, $t2, $t3
-	sw $t1, -312($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -312($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 1
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -316($fp)
-	lw $t2, -64($fp)
-	lw $t3, -316($fp)
-	add $t1, $t2, $t3
-	sw $t1, -320($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -320($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 2
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -324($fp)
-	lw $t2, -64($fp)
-	lw $t3, -324($fp)
-	add $t1, $t2, $t3
-	sw $t1, -328($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -328($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 3
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -332($fp)
-	lw $t2, -64($fp)
-	lw $t3, -332($fp)
-	add $t1, $t2, $t3
-	sw $t1, -336($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -336($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
+#4138<_____________===
+	li $t5, 0
 	li $t6, 4
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -340($fp)
-	lw $t2, -64($fp)
-	lw $t3, -340($fp)
-	add $t1, $t2, $t3
-	sw $t1, -344($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -344($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 5
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -348($fp)
-	lw $t2, -64($fp)
-	lw $t3, -348($fp)
-	add $t1, $t2, $t3
-	sw $t1, -352($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -352($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 6
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -356($fp)
-	lw $t2, -64($fp)
-	lw $t3, -356($fp)
-	add $t1, $t2, $t3
-	sw $t1, -360($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -360($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 0
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -364($fp)
-	lw $t2, -80($fp)
-	lw $t3, -364($fp)
-	add $t1, $t2, $t3
-	sw $t1, -368($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -368($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 1
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -372($fp)
-	lw $t2, -80($fp)
-	lw $t3, -372($fp)
-	add $t1, $t2, $t3
-	sw $t1, -376($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -376($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 2
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -380($fp)
-	lw $t2, -80($fp)
-	lw $t3, -380($fp)
-	add $t1, $t2, $t3
-	sw $t1, -384($fp)
-	addi $sp, $sp, -4
-	sw $ra, 0($sp)
-	lw $t4, -384($fp)
-	lw $a0, 0($t4)
-	jal write
-	lw $ra, 0($sp)
-	addi $sp, $sp, 4
-	li $t6, 2
-	li $t0, 4
-	mul $t5, $t6, $t0
-	sw $t5, -388($fp)
-	lw $t2, -80($fp)
-	lw $t3, -388($fp)
-	add $t1, $t2, $t3
-	sw $t1, -392($fp)
-	lw $t5, -392($fp)
-	li $t6, 4
-	lw $s3, 0($t5)
-	mul $t4, $s3, $t6
-	sw $t4, -396($fp)
+	mul $t4, $t5, $t6
+	sw $t4, -308($fp)
+#4139<_____________===
 	lw $t1, -64($fp)
-	lw $t2, -396($fp)
+	lw $t2, -308($fp)
 	add $t0, $t1, $t2
-	sw $t0, -400($fp)
-	lw $t3, -400($fp)
-	move $v0, $t3
+	sw $t0, -312($fp)
+#4140<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -312($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4141<_____________===
+	li $t5, 1
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -316($fp)
+#4142<_____________===
+	lw $t1, -64($fp)
+	lw $t2, -316($fp)
+	add $t0, $t1, $t2
+	sw $t0, -320($fp)
+#4143<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -320($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4144<_____________===
+	li $t5, 2
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -324($fp)
+#4145<_____________===
+	lw $t1, -64($fp)
+	lw $t2, -324($fp)
+	add $t0, $t1, $t2
+	sw $t0, -328($fp)
+#4146<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -328($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4147<_____________===
+	li $t5, 3
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -332($fp)
+#4148<_____________===
+	lw $t1, -64($fp)
+	lw $t2, -332($fp)
+	add $t0, $t1, $t2
+	sw $t0, -336($fp)
+#4149<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -336($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4150<_____________===
+	li $t5, 4
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -340($fp)
+#4151<_____________===
+	lw $t1, -64($fp)
+	lw $t2, -340($fp)
+	add $t0, $t1, $t2
+	sw $t0, -344($fp)
+#4152<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -344($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4153<_____________===
+	li $t5, 5
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -348($fp)
+#4154<_____________===
+	lw $t1, -64($fp)
+	lw $t2, -348($fp)
+	add $t0, $t1, $t2
+	sw $t0, -352($fp)
+#4155<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -352($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4156<_____________===
+	li $t5, 6
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -356($fp)
+#4157<_____________===
+	lw $t1, -64($fp)
+	lw $t2, -356($fp)
+	add $t0, $t1, $t2
+	sw $t0, -360($fp)
+#4158<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -360($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4159<_____________===
+	li $t5, 0
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -364($fp)
+#4160<_____________===
+	lw $t1, -80($fp)
+	lw $t2, -364($fp)
+	add $t0, $t1, $t2
+	sw $t0, -368($fp)
+#4161<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -368($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4162<_____________===
+	li $t5, 1
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -372($fp)
+#4163<_____________===
+	lw $t1, -80($fp)
+	lw $t2, -372($fp)
+	add $t0, $t1, $t2
+	sw $t0, -376($fp)
+#4164<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -376($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4165<_____________===
+	li $t5, 2
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -380($fp)
+#4166<_____________===
+	lw $t1, -80($fp)
+	lw $t2, -380($fp)
+	add $t0, $t1, $t2
+	sw $t0, -384($fp)
+#4167<_____________===
+	addi $sp, $sp, -4
+	sw $ra, 0($sp)
+	lw $t3, -384($fp)
+	lw $a0, 0($t3)
+	jal write
+	lw $ra, 0($sp)
+	addi $sp, $sp, 4
+#4168<_____________===
+	li $t5, 2
+	li $t6, 4
+	mul $t4, $t5, $t6
+	sw $t4, -388($fp)
+#4169<_____________===
+	lw $t1, -80($fp)
+	lw $t2, -388($fp)
+	add $t0, $t1, $t2
+	sw $t0, -392($fp)
+#4170<_____________===
+	lw $t4, -392($fp)
+	li $t5, 4
+	lw $s3, 0($t4)
+	mul $t3, $s3, $t5
+	sw $t3, -396($fp)
+#4171<_____________===
+	lw $t0, -64($fp)
+	lw $t1, -396($fp)
+	add $t6, $t0, $t1
+	sw $t6, -400($fp)
+#4172<_____________===
+	lw $t2, -400($fp)
+	move $v0, $t2
 	addi $sp, $sp, 800
 	addi $sp, $sp, 4
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#4173<_____________===
 XPP:
 	addi $sp, $sp, -4
 	sw $fp, 0($sp)
 	move $fp, $sp
 	addi $sp, $sp, -4
 	subu $sp, $sp, 800
-	lw $t4, -4($fp)
-	li $t4, 17659
-	sw $t4, -4($fp)
-	lw $t5, -8($fp)
-	li $t5, 39060
-	sw $t5, -8($fp)
-	li $t6, 0
-	sw $t6, -12($fp)
-	li $t0, 0
-	sw $t0, -16($fp)
-	lw $t1, -8($fp)
-	lw $t2, -8($fp)
-	ble $t1, $t2, label744
-	j label745
-label744:
-	lw $t3, -16($fp)
-	li $t3, 1
-	sw $t3, -16($fp)
-label745:
-	lw $t4, -16($fp)
-	lw $t5, -4($fp)
-	blt $t4, $t5, label742
-	j label743
-label742:
-	lw $t6, -12($fp)
-	li $t6, 1
-	sw $t6, -12($fp)
-label743:
-	li $t0, 0
-	sw $t0, -20($fp)
-	lw $t1, -4($fp)
-	bne $t1, 0, label747
-	j label746
-label746:
-	lw $t2, -20($fp)
-	li $t2, 1
-	sw $t2, -20($fp)
-label747:
-	li $t3, 0
-	sw $t3, -24($fp)
-	li $t5, 0
-	li $t6, 40018
-	sub $t4, $t5, $t6
-	sw $t4, -28($fp)
-	lw $t0, -28($fp)
-	bne $t0, 0, label750
-	j label749
-label750:
-	j label749
-label748:
-	lw $t1, -24($fp)
-	li $t1, 1
-	sw $t1, -24($fp)
-label749:
-	li $t2, 0
-	sw $t2, -32($fp)
+#4174<_____________===
+#4175<_____________===
+#4176<_____________===
 	lw $t3, -4($fp)
-	bne $t3, 0, label751
+	li $t3, 17659
+	sw $t3, -4($fp)
+#4177<_____________===
+	lw $t4, -8($fp)
+	li $t4, 39060
+	sw $t4, -8($fp)
+#4178<_____________===
+	li $t5, 0
+	sw $t5, -12($fp)
+#4179<_____________===
+	li $t6, 0
+	sw $t6, -16($fp)
+#4180<_____________===
+	lw $t0, -8($fp)
+	lw $t1, -8($fp)
+	ble $t0, $t1, label744
+#4181<_____________===
+	j label745
+#4182<_____________===
+label744:
+#4183<_____________===
+	lw $t2, -16($fp)
+	li $t2, 1
+	sw $t2, -16($fp)
+#4184<_____________===
+label745:
+#4185<_____________===
+	lw $t3, -16($fp)
+	lw $t4, -4($fp)
+	blt $t3, $t4, label742
+#4186<_____________===
+	j label743
+#4187<_____________===
+label742:
+#4188<_____________===
+	lw $t5, -12($fp)
+	li $t5, 1
+	sw $t5, -12($fp)
+#4189<_____________===
+label743:
+#4190<_____________===
+	li $t6, 0
+	sw $t6, -20($fp)
+#4191<_____________===
+	lw $t0, -4($fp)
+	bne $t0, 0, label747
+#4192<_____________===
+	j label746
+#4193<_____________===
+label746:
+#4194<_____________===
+	lw $t1, -20($fp)
+	li $t1, 1
+	sw $t1, -20($fp)
+#4195<_____________===
+label747:
+#4196<_____________===
+	li $t2, 0
+	sw $t2, -24($fp)
+#4197<_____________===
+	li $t4, 0
+	li $t5, 40018
+	sub $t3, $t4, $t5
+	sw $t3, -28($fp)
+#4198<_____________===
+	lw $t6, -28($fp)
+	bne $t6, 0, label750
+#4199<_____________===
+	j label749
+#4200<_____________===
+label750:
+#4201<_____________===
+	li $t0, 53814
+	li $t1, 0
+	bne $t0, $t1, label748
+#4202<_____________===
+	j label749
+#4203<_____________===
+label748:
+#4204<_____________===
+	lw $t2, -24($fp)
+	li $t2, 1
+	sw $t2, -24($fp)
+#4205<_____________===
+label749:
+#4206<_____________===
+	li $t3, 0
+	sw $t3, -32($fp)
+#4207<_____________===
+	lw $t4, -4($fp)
+	bne $t4, 0, label751
+#4208<_____________===
 	j label754
+#4209<_____________===
 label754:
+#4210<_____________===
+	li $t5, 18729
+	li $t6, 0
+	bne $t5, $t6, label751
+#4211<_____________===
 	j label753
+#4212<_____________===
 label753:
+#4213<_____________===
+	li $t0, 8474
+	li $t1, 0
+	bne $t0, $t1, label751
+#4214<_____________===
 	j label752
+#4215<_____________===
 label751:
-	lw $t4, -32($fp)
-	li $t4, 1
-	sw $t4, -32($fp)
+#4216<_____________===
+	lw $t2, -32($fp)
+	li $t2, 1
+	sw $t2, -32($fp)
+#4217<_____________===
 label752:
+#4218<_____________===
 	lw $a0, -32($fp)
+#4219<_____________===
 	lw $a1, -24($fp)
+#4220<_____________===
 	lw $a2, -20($fp)
+#4221<_____________===
 	lw $a3, -12($fp)
+#4222<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	jal id_mvJF5
-	move $t5, $v0
-	sw $t5, -36($fp)
+	move $t3, $v0
+	sw $t3, -36($fp)
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#4223<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t6, -4($fp)
-	move $a0, $t6
+	lw $t4, -4($fp)
+	move $a0, $t4
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#4224<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t0, -8($fp)
-	move $a0, $t0
+	lw $t5, -8($fp)
+	move $a0, $t5
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#4225<_____________===
 	li $v0, 50426
 	addi $sp, $sp, 800
 	addi $sp, $sp, 4
 	lw $fp, 0($sp)
 	addi $sp, $sp, 4
 	jr $ra
+#4226<_____________===
 main:
 	addi $sp, $sp, -4
 	sw $fp, 0($sp)
 	move $fp, $sp
 	addi $sp, $sp, -4
 	subu $sp, $sp, 800
+#4227<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
 	jal XPP
-	move $t1, $v0
-	sw $t1, -4($fp)
+	move $t6, $v0
+	sw $t6, -4($fp)
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#4228<_____________===
 	addi $sp, $sp, -4
 	sw $ra, 0($sp)
-	lw $t2, -4($fp)
-	move $a0, $t2
+	lw $t0, -4($fp)
+	move $a0, $t0
 	jal write
 	lw $ra, 0($sp)
 	addi $sp, $sp, 4
+#4229<_____________===
 	li $v0, 0
 	addi $sp, $sp, 800
 	addi $sp, $sp, 4

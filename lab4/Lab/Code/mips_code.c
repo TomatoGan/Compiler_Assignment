@@ -546,7 +546,6 @@ void trans_ARG(InterCode cur_instr, FILE* fp){
 		} else{
 			sprintf(str, "\tlw $s0, 0($s1)\n");	fputs(str, fp); memset(str, 0, INSTR_LEN);
 			sprintf(str, "\taddi $sp, $sp, -%d\n", (ginfo.cur_arg - 3)*4);	fputs(str, fp); memset(str, 0, INSTR_LEN);
-			//fputs("\taddi $sp, $sp, -4\n", fp);
 			fputs("\tsw $s0, 0($sp)\n", fp);
 			sprintf(str, "\taddi $sp, $sp, %d\n", (ginfo.cur_arg - 3)*4);	fputs(str, fp); memset(str, 0, INSTR_LEN);
 		}
@@ -561,8 +560,6 @@ void trans_ARG(InterCode cur_instr, FILE* fp){
 		sprintf(str, "\taddi $sp, $sp, -%d\n", (ginfo.cur_arg - 3)*4);	fputs(str, fp); memset(str, 0, INSTR_LEN);
 		fputs("\tsw $s0, 0($sp)\n", fp);
 		sprintf(str, "\taddi $sp, $sp, %d\n", (ginfo.cur_arg - 3)*4);	fputs(str, fp); memset(str, 0, INSTR_LEN);	
-		//fputs("\taddi $sp, $sp, -4\n", fp);
-		//fputs("\tsw $s0, 0($sp)\n", fp);
 	}
 	TAG_CONST_FINISHED:
 	++ginfo.cur_arg;
@@ -695,27 +692,6 @@ int allocate_reg(Operand op, FILE* fp) {
 			load_word(i, cur_var, fp);
 		}
 	}
-	/*else if(op->kind == TADDRI) {
-		vinfo cur_var = find_var(name);
-		if(cur_var == NULL){
-			cur_var = malloc(sizeof(struct vinfo_));
-			cur_var->name = name;
-			ginfo.sp_offset -= 4;
-			cur_var->offset = ginfo.sp_offset;
-			add_var(cur_var);
-
-			reg_file[i].cur_var = cur_var;
-		} else{
-			char tmp[64];
-			memset(tmp, 0, 64);
-			sprintf(tmp, "\tlw $s3, %d($fp)\n",cur_var->offset);		fputs(tmp, fp); memset(tmp, 0, 64);
-			//reg_file[i].cur_var = cur_var;
-			sprintf(tmp, "\tlw $%s, 0($s3)\n", regName(i)); fputs(tmp, fp);//load_word(i, cur_var, fp);
-		}
-	}
-	*/
-
-	//printf("finish!\n");
 	return i;
 }
 
