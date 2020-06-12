@@ -553,7 +553,7 @@ void trans_ARG(InterCode cur_instr, FILE* fp){
 	} else{
 		sprintf(str, "\tlw $s0, %d($fp)\n", arg->offset);					fputs(str, fp); memset(str, 0, INSTR_LEN);
 		fputs("\taddi $sp, $sp, -4\n", fp);
-		fputs("\tlw $sp, 0($s0)\n", fp);
+		fputs("\tsw $s0, 0($sp)\n", fp);
 	}
 	TAG_CONST_FINISHED:
 	++ginfo.cur_arg;
