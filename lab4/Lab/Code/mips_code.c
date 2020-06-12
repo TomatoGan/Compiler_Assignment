@@ -52,7 +52,6 @@ void prt_mcode_head(FILE* fp) {
 }
 
 void prt_cur_instr(InterCode cur_instr, FILE* fp) {
-	//printf("%d<---==-=-=-=-=-=-=-=-=-\n", cur_instr->kind);
 	switch (cur_instr->kind) {
 		
 		case OP_ASSIGN:
@@ -61,7 +60,7 @@ void prt_cur_instr(InterCode cur_instr, FILE* fp) {
 		case OP_PLUS: 
 		case OP_MINUS: 
 		case OP_STAR: 
-		case OP_DIV: //printf("holy shit!\n");
+		case OP_DIV: 
 			trans_ARITH(cur_instr, fp);
 			break;
 		case OP_RETURN:
@@ -79,7 +78,7 @@ void prt_cur_instr(InterCode cur_instr, FILE* fp) {
 		case OP_READ:
 			trans_READ(cur_instr, fp);
 			break;
-		case OP_WRITE: //printf("hahahahhhahahahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\n");
+		case OP_WRITE: 
 			trans_WRITE(cur_instr, fp);
 			break;
 		case OP_CALL: 
@@ -465,6 +464,26 @@ void trans_IFGOTO(InterCode cur_instr, FILE* fp){
 			sprintf(str, "\tbge $%s, %s, label%ld\n",cur_regName_x, rightOp->u.value, label->u.vNum);
 		} else if(strcmp(op, "<=")==0){
 			sprintf(str, "\tble $%s, %s, label%ld\n",cur_regName_x, rightOp->u.value, label->u.vNum);
+		}
+	}
+	else if(rightOp->kind == CONSTI && leftOp->kind == CONSTI) {
+		int x = allocate_reg(leftOp, fp);
+		int y = allocate_reg(rightOp, fp);
+
+		
+		// bxx reg(x), reg(y), z
+		if(strcmp(op, "==")==0){
+			sprintf(str, "\tbeq $%s, $%s, label%ld\n",regName(x), regName(y), label->u.vNum);
+		} else if(strcmp(op, "!=")==0){
+			sprintf(str, "\tbne $%s, $%s, label%ld\n",regName(x), regName(y), label->u.vNum);
+		} else if(strcmp(op, ">")==0){
+			sprintf(str, "\tbgt $%s, $%s, label%ld\n",regName(x), regName(y), label->u.vNum);
+		} else if(strcmp(op, "<")==0){
+			sprintf(str, "\tblt $%s, $%s, label%ld\n",regName(x), regName(y), label->u.vNum);
+		} else if(strcmp(op, ">=")==0){
+			sprintf(str, "\tbge $%s, $%s, label%ld\n",regName(x), regName(y), label->u.vNum);
+		} else if(strcmp(op, "<=")==0){
+			sprintf(str, "\tble $%s, $%s, label%ld\n",regName(x), regName(y), label->u.vNum);
 		}
 	}
 	fputs(str, fp);
