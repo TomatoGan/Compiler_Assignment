@@ -18,9 +18,13 @@ struct mips_global_info {
     int cur_param;
     int sp_offset;
     int fp;
+    int fst_param;
+    int param_num;
 
     int cur_reg;
     int use_reg_num;
+
+    int stack_size;
 
     vinfo var_list;
 };
@@ -61,6 +65,6 @@ int allocate_reg(Operand op, FILE* fp);
 char* regName(int index);
 void store_word(int index, FILE* fp);
 void load_word(int index, vinfo cur_var, FILE* fp);
-void addVar(vinfo var);
-vinfo findVar(char *name);
+void add_var(vinfo var);
+vinfo find_var(char *name);
 #endif

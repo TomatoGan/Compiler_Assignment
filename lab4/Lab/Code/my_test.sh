@@ -17,9 +17,9 @@ for fileName in $targetDir
     if [[ ${fileName:0-3} == 'cmm' ]];  # 查找扩展名为 .cmm的文件
     then
        echo "shitajsdlkfjslfjjsdlfjasjflsjfjilsdh ->" ${fileName}
-      ./parser ../Test/Tests/Tests_n/1/${fileName} ../Test/Tests/Tests_n/output1/${fileName}.s
+      #./parser ../Test/Tests/Tests_n/1/${fileName} ../Test/Tests/Tests_n/output1/${fileName}.s
       #spim -file ../Test/Tests/Tests_n/output1/${fileName}.s > ../Test/Tests/Tests_n/output2/${fileName}.txt
-      #//./parser ../Test/Tests/Tests_a/Tests/${fileName} ../Test/Tests/Tests_a/output_4_1/${fileName}.s
+      ./parser ../Test/Tests/Tests_a/Tests/${fileName} ../Test/Tests/Tests_a/output_4_1/${fileName}.s
       #spim -file ../Test/Tests/Tests_a/output_4_1/${fileName}.s > ../Test/Tests/Tests_a/output_4_2/${fileName}.txt
 	#./parser ../Test/Tests/Tests_a/Tests/${fileName} ../Test/Tests/Tests_a/output/${fileName}.ir
 	    #./parser $1"/"${fileName}   $2/${fileName}.ir
@@ -40,8 +40,8 @@ for fileName in $targetDir
     if [[ ${fileName:0-3} == 'cmm' ]];  # 查找扩展名为 .cmm的文件
     then
        echo "shitajsdlkfjslfjjsdlfjasjflsjfjilsdh ->" ${fileName}
-      spim -file ../Test/Tests/Tests_n/output1/${fileName}.s > ../Test/Tests/Tests_n/output2/${fileName}.txt
-      #spim -file ../Test/Tests/Tests_a/output_4_1/${fileName}.s > ../Test/Tests/Tests_a/output_4_2/${fileName}.txt
+      #spim -file ../Test/Tests/Tests_n/output1/${fileName}.s > ../Test/Tests/Tests_n/output2/${fileName}.txt
+      spim -file ../Test/Tests/Tests_a/output_4_1/${fileName}.s > ../Test/Tests/Tests_a/output_4_2/${fileName}.txt
 	#./parser ../Test/Tests/Tests_a/Tests/${fileName} ../Test/Tests/Tests_a/output/${fileName}.ir
 	    #./parser $1"/"${fileName}   $2/${fileName}.ir
       #echo $1"/"$fileName >> $2/${fileName}.output
@@ -53,6 +53,6 @@ for fileName in $targetDir
  
 
 #readDir ../Test/Tests/Tests_a/Tests ./shit
-readDir ../Test/Tests/Tests_n/1/ ./shit
+readDir ../Test/Tests/Tests_a/ ./shit
 #$1 $2  #分别代表两个参数，即后面调用时传入的  '遍历目标文件夹路径' 和 '遍历结果保存路径
 

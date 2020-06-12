@@ -1,0 +1,57 @@
+FUNCTION mod :
+PARAM v0
+PARAM v1
+t1 := v0
+t5 := v0
+t6 := v1
+t3 := t5 / t6
+t4 := v1
+t2 := t3 * t4
+t0 := t1 - t2
+RETURN t0
+FUNCTION main :
+READ t7
+v2 := t7
+t10 := v2
+t11 := #400
+ARG t11
+ARG t10
+t8 := CALL mod
+t9 := #0
+IF t8 == t9 GOTO label0
+GOTO label1
+LABEL label0 :
+t12 := #1
+v3 := t12
+GOTO label2
+LABEL label1 :
+t15 := v2
+t16 := #4
+ARG t16
+ARG t15
+t13 := CALL mod
+t14 := #0
+IF t13 == t14 GOTO label6
+GOTO label4
+LABEL label6 :
+t19 := v2
+t20 := #100
+ARG t20
+ARG t19
+t17 := CALL mod
+t18 := #0
+IF t17 != t18 GOTO label3
+GOTO label4
+LABEL label3 :
+t21 := #1
+v3 := t21
+GOTO label5
+LABEL label4 :
+t22 := #0
+v3 := t22
+LABEL label5 :
+LABEL label2 :
+t23 := v3
+WRITE t23
+t24 := #0
+RETURN t24

@@ -1,0 +1,114 @@
+FUNCTION	mod	:
+PARAM	v_x	
+PARAM	v_y	
+t3	:=	v_x	/	v_y	
+t2	:=	t3	*	v_y	
+t0	:=	v_x	-	t2	
+RETURN	t0	
+FUNCTION	gcd	:
+PARAM	v_c	
+PARAM	v_d	
+IF	v_c	==	#0	GOTO	label0	
+GOTO	label1	
+LABEL	label0	:	
+RETURN	v_d	
+LABEL	label1	:	
+ARG	v_c	
+ARG	v_d	
+t11	:=	CALL	mod	
+ARG	v_c	
+ARG	t11	
+t10	:=	CALL	gcd	
+RETURN	t10	
+FUNCTION	lcm	:
+PARAM	v_e	
+PARAM	v_f	
+t16	:=	v_e	*	v_f	
+ARG	v_f	
+ARG	v_e	
+t19	:=	CALL	gcd	
+t15	:=	t16	/	t19	
+RETURN	t15	
+FUNCTION	main	:
+DEC	v_n	4
+DEC	v_i	4
+DEC	v_g	4
+DEC	v_tmp	4
+DEC	v_sum	4
+v_sum	:=	#0	
+DEC	t22	200
+v_a	:=	&t22	
+DEC	t23	200
+v_b	:=	&t23	
+READ	t25	
+v_n	:=	t25	
+v_i	:=	#0	
+LABEL	label2	:	
+IF	v_i	<	v_n	GOTO	label3	
+GOTO	label4	
+LABEL	label3	:	
+t33	:=	v_i	*	#4	
+t34	:=	v_a	+	t33	
+READ	t35	
+*t34	:=	t35	
+t39	:=	v_i	*	#4	
+t40	:=	v_b	+	t39	
+READ	t41	
+*t40	:=	t41	
+t43	:=	v_i	+	#1	
+v_i	:=	t43	
+GOTO	label2	
+LABEL	label4	:	
+t50	:=	#0	*	#4	
+t51	:=	v_b	+	t50	
+v_tmp	:=	*t51	
+v_i	:=	#1	
+LABEL	label5	:	
+IF	v_i	<	v_n	GOTO	label6	
+GOTO	label7	
+LABEL	label6	:	
+t62	:=	v_i	*	#4	
+t63	:=	v_b	+	t62	
+ARG	*t63	
+ARG	v_tmp	
+t57	:=	CALL	lcm	
+v_tmp	:=	t57	
+t65	:=	v_i	+	#1	
+v_i	:=	t65	
+GOTO	label5	
+LABEL	label7	:	
+v_i	:=	#0	
+LABEL	label8	:	
+IF	v_i	<	v_n	GOTO	label9	
+GOTO	label10	
+LABEL	label9	:	
+t79	:=	v_i	*	#4	
+t80	:=	v_a	+	t79	
+t86	:=	v_i	*	#4	
+t87	:=	v_b	+	t86	
+t81	:=	v_tmp	/	*t87	
+t75	:=	*t80	*	t81	
+t73	:=	v_sum	+	t75	
+v_sum	:=	t73	
+t89	:=	v_i	+	#1	
+v_i	:=	t89	
+GOTO	label8	
+LABEL	label10	:	
+ARG	v_tmp	
+ARG	v_sum	
+t93	:=	CALL	gcd	
+v_g	:=	t93	
+t97	:=	v_sum	/	v_g	
+v_sum	:=	t97	
+t101	:=	v_tmp	/	v_g	
+v_tmp	:=	t101	
+IF	v_tmp	==	#1	GOTO	label11	
+GOTO	label12	
+LABEL	label11	:	
+WRITE	v_sum	
+GOTO	label13	
+LABEL	label12	:	
+WRITE	v_sum	
+WRITE	v_tmp	
+LABEL	label13	:	
+RETURN	#0	
