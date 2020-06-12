@@ -76,8 +76,9 @@ void prt_intercode(char* fname)
 
 	InterCode iclist = iclist_head;
 	 //printf("%p<==== in intercode\n",iclist_head);
+	 int i = 1;
 	while(iclist!=NULL)
-	{	//printf("%p <===cur _poiinter in intercode.c\n", iclist);
+	{	printf("%p <===cur _poiinter in intercode.c %d\n", iclist,i); i++;
 		switch(iclist->kind)
 		{
 			case OP_ASSIGN:

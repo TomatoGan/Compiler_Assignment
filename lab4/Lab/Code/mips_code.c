@@ -8,9 +8,10 @@ void prt_mips_code(char *fileName){
 	#ifdef LAB4DEBUG
 	char* ssstr = malloc(80);
 	memset(ssstr, 0, 80);
-	strcpy(ssstr,"m");
-	strcat(ssstr, fileName);
+	strcpy(ssstr,fileName);
+	strcat(ssstr, "m");
 	//FILE* fp = fopen(fileName, "w");
+	printf("%s<===\n",ssstr);
 	FILE* fp = fopen(ssstr, "w");
 	#endif
 	
@@ -23,10 +24,12 @@ void prt_mips_code(char *fileName){
 	prt_mcode_head(fp);
 	InterCode itor = iclist_head; int i = 1;
 	while(itor != NULL){  //printf("%d<======cur instr index \n", i); i++;
-		//char shit[30];
-		//memset(shit, 0, 30);
+		#ifndef LAB4DEBUG
+		char shit[30];
+		memset(shit, 0, 30); 
 		//sprintf(shit,"%d<_____________===\n", i); fputs(shit, fp); i++;
-		//printf("%p <===cur _poiinter in mipscode.c\n", itor);
+		printf("%p <===cur _poiinter in mipscode.c in instr %d\n", itor,i); i++;
+		#endif
 		prt_cur_instr(itor, fp);
 		itor = itor->next;
 		//printf("finished\n");
@@ -87,7 +90,7 @@ void prt_cur_instr(InterCode cur_instr, FILE* fp) {
 		case OP_FUNCTION:
 			trans_FUNCTION(cur_instr, fp);
 			break;
-		case OP_PARAM:
+		case OP_PARAM: printf("11121111111111111111111111111115555555555555555555555555555555555555\n");
 			trans_PARAM(cur_instr, fp);
 			break;
 		case OP_DEC:
@@ -181,16 +184,25 @@ void trans_ASSIGN(InterCode cur_instr, FILE* fp){
 		// *x = y
 		if(rightOp->kind == CONSTI){
 			x = allocate_reg(leftOp, fp);
-			sprintf(str, "\tli $s3, %s\n", rightOp->u.value);		fputs(str, fp); memset(str, 0, sizeof(str));
-			sprintf(str,"\tsw $s3, 0($%s)\n", regName(x));			fputs(str, fp);
+			sprintf(str, "\tli $s2, %s\n", rightOp->u.value);		fputs(str, fp); memset(str, 0, sizeof(str));
+			sprintf(str,"\tsw $s2, 0($%s)\n", regName(x));			fputs(str, fp);
+			//store_word(x, fp);
 		} 
-		else if(rightOp->kind == VARI || rightOp->kind == TMPVARI || rightOp->kind == TADDRI){
+		else if(rightOp->kind == VARI || rightOp->kind == TMPVARI){
 			x = allocate_reg(leftOp, fp);
 			y = allocate_reg(rightOp, fp);
 			sprintf(str, "\tsw $%s, 0($%s)\n", regName(y), regName(x));		fputs(str, fp);
+			//store_word(x, fp);
+		}
+		else if(rightOp->kind == TADDRI) {
+			x = allocate_reg(leftOp, fp);
+			y = allocate_reg(rightOp, fp);
+			sprintf(str, "\tlw $s2, 0($%s)\n", regName(y));		fputs(str, fp); memset(str, 0, INSTR_LEN);
+			sprintf(str, "\tsw $s2, 0($%s)\n", regName(x));		fputs(str, fp);	
 		}
 	}
 	store_word(x, fp);
+	
 }
 
 void trans_ARITH(InterCode cur_instr, FILE* fp) {
@@ -275,6 +287,7 @@ void trans_ARITH(InterCode cur_instr, FILE* fp) {
 			sprintf(str, "\tsub $%s, $%s, $%s\n", regName(x), regName(y), regName(z));		fputs(str, fp);
 			break;
 		case OP_STAR:
+			printf("%ld<====leeft.name, %s<===right.name\n",leftOp->u.vNum, rightOp->u.value);
 			sprintf(str, "\tmul $%s, $%s, $%s\n", regName(x), regName(y), regName(z));		fputs(str, fp);
 			break;
 		case OP_DIV:
@@ -320,8 +333,14 @@ void trans_WRITE(InterCode cur_instr, FILE* fp) {
 		fputs("\tjal write\n", fp);
 	}
 
-	store_word(r, fp);
+	else if(cur_instr->u.sigop.op->kind == CONSTI) { printf("In the consssssssssst!\n");
+		sprintf(str, "\tli $a0, %s\n",cur_instr->u.sigop.op->u.value);  fputs(str, fp);	
+		fputs("\tjal write\n", fp);
+		goto END;
+	}
 
+	//store_word(r, fp);
+	END:
 	fputs("\tlw $ra, 0($sp)\n", fp);
 	fputs("\taddi $sp, $sp, 4\n", fp);
 }
@@ -356,13 +375,16 @@ void trans_RETURN(InterCode cur_instr, FILE* fp) {
 		// jr $ra
 		
 		sprintf(str, "\tmove $v0, $%s\n", regName(x));		fputs(str, fp); memset(str, 0, sizeof(str));
-		sprintf(str, "\taddi $sp, $sp, %d\n", stackSize);		fputs(str, fp);
+		//sprintf(str, "\taddi $sp, $sp, %d\n", stackSize);		fputs(str, fp);
+		//sprintf(str, "\taddi $sp, $sp, %d\n", ginfo.sp_offset);		fputs(str, fp);
 
 		
 	} else {
 		sprintf(str, "\tli $v0, %s\n", op->u.value);			fputs(str, fp); memset(str, 0, sizeof(str));
 		//sprintf(str, "\tmove $v0, %s\n", op->u.value);			fputs(str, fp); memset(str, 0, sizeof(str));
-		sprintf(str, "\taddi $sp, $sp, %d\n", stackSize);		fputs(str, fp);
+		//sprintf(str, "\taddi $sp, $sp, %d\n", stackSize);		fputs(str, fp);
+		sprintf(str, "\tmove $sp, $ra\n");		fputs(str, fp);	memset(str, 0, sizeof(str));
+		sprintf(str, "\taddi $sp, 4\n");		fputs(str, fp);
 	}
 	fputs("\tlw $fp, 0($sp)\n",fp);
 	fputs("\taddi $sp, $sp, 4\n",fp);
@@ -389,51 +411,89 @@ void trans_IFGOTO(InterCode cur_instr, FILE* fp){
 	if(leftOp->kind != CONSTI && rightOp->kind != CONSTI){
 		int x = allocate_reg(leftOp, fp);
 		int y = allocate_reg(rightOp, fp);
+		
+
+		char cur_regName_x[12];
+		char cur_regName_y[12];
+		memset(cur_regName_x, 0, 12);
+		memset(cur_regName_y, 0, 12);
+		if(leftOp->kind == TADDRI) {
+			sprintf(str, "\tlw $s3, 0($%s)\n",regName(x));  fputs(str, fp); memset(str, 0, INSTR_LEN);
+			strcpy(cur_regName_x, "s3");
+		}
+		else 
+			{strcpy(cur_regName_x, regName(x));}
+		if(rightOp->kind == TADDRI) {
+			sprintf(str, "\tlw $s4, 0($%s)\n",regName(y));  fputs(str, fp); memset(str, 0, INSTR_LEN);
+			strcpy(cur_regName_y, "s4");
+		}
+		else 
+			{strcpy(cur_regName_y, regName(y));}
+
+		
 		// bxx reg(x), reg(y), z
 		if(strcmp(op, "==")==0){
-			sprintf(str, "\tbeq $%s, $%s, label%ld\n",regName(x), regName(y), label->u.vNum);
+			sprintf(str, "\tbeq $%s, $%s, label%ld\n",cur_regName_x, cur_regName_y, label->u.vNum);
 		} else if(strcmp(op, "!=")==0){
-			sprintf(str, "\tbne $%s, $%s, label%ld\n",regName(x), regName(y), label->u.vNum);
+			sprintf(str, "\tbne $%s, $%s, label%ld\n",cur_regName_x, cur_regName_y, label->u.vNum);
 		} else if(strcmp(op, ">")==0){
-			sprintf(str, "\tbgt $%s, $%s, label%ld\n",regName(x), regName(y), label->u.vNum);
+			sprintf(str, "\tbgt $%s, $%s, label%ld\n",cur_regName_x, cur_regName_y, label->u.vNum);
 		} else if(strcmp(op, "<")==0){
-			sprintf(str, "\tblt $%s, $%s, label%ld\n",regName(x), regName(y), label->u.vNum);
+			sprintf(str, "\tblt $%s, $%s, label%ld\n",cur_regName_x, cur_regName_y, label->u.vNum);
 		} else if(strcmp(op, ">=")==0){
-			sprintf(str, "\tbge $%s, $%s, label%ld\n",regName(x), regName(y), label->u.vNum);
+			sprintf(str, "\tbge $%s, $%s, label%ld\n",cur_regName_x, cur_regName_y, label->u.vNum);
 		} else if(strcmp(op, "<=")==0){
-			sprintf(str, "\tble $%s, $%s, label%ld\n",regName(x), regName(y), label->u.vNum);
+			sprintf(str, "\tble $%s, $%s, label%ld\n",cur_regName_x, cur_regName_y, label->u.vNum);
 		}
 	} else if(leftOp->kind == CONSTI && rightOp->kind != CONSTI){
 		int y = allocate_reg(rightOp, fp);
+
+		char cur_regName_y[12];
+		memset(cur_regName_y, 0, 12);
+		if(leftOp->kind == TADDRI) {
+			sprintf(str, "\tlw $s4, 0($%s)\n",regName(y));  fputs(str, fp); memset(str, 0, INSTR_LEN);
+			strcpy(cur_regName_y, "s4");
+		}
+		else 
+			{strcpy(cur_regName_y, regName(y));}
 		// bxx reg(x), reg(y), z
 		if(strcmp(op, "==")==0){
-			sprintf(str, "\tbeq $%s, %s, label%ld\n", regName(y), leftOp->u.value, label->u.vNum);
+			sprintf(str, "\tbeq $%s, %s, label%ld\n", cur_regName_y, leftOp->u.value, label->u.vNum);
 		} else if(strcmp(op, "!=")==0){
-			sprintf(str, "\tbne $%s, %s, label%ld\n", regName(y), leftOp->u.value, label->u.vNum);
+			sprintf(str, "\tbne $%s, %s, label%ld\n", cur_regName_y, leftOp->u.value, label->u.vNum);
 		} else if(strcmp(op, ">")==0){
-			sprintf(str, "\tblt $%s, %s, label%ld\n", regName(y), leftOp->u.value, label->u.vNum);
+			sprintf(str, "\tblt $%s, %s, label%ld\n", cur_regName_y, leftOp->u.value, label->u.vNum);
 		} else if(strcmp(op, "<")==0){
-			sprintf(str, "\tbgt $%s, %s, label%ld\n", regName(y), leftOp->u.value, label->u.vNum);
+			sprintf(str, "\tbgt $%s, %s, label%ld\n", cur_regName_y, leftOp->u.value, label->u.vNum);
 		} else if(strcmp(op, ">=")==0){
-			sprintf(str, "\tble $%s, %s, label%ld\n", regName(y), leftOp->u.value, label->u.vNum);
+			sprintf(str, "\tble $%s, %s, label%ld\n", cur_regName_y, leftOp->u.value, label->u.vNum);
 		} else if(strcmp(op, "<=")==0){
-			sprintf(str, "\tbge $%s, %s, label%ld\n", regName(y), leftOp->u.value, label->u.vNum);
+			sprintf(str, "\tbge $%s, %s, label%ld\n", cur_regName_y, leftOp->u.value, label->u.vNum);
 		}
 	} else if(rightOp->kind == CONSTI && leftOp->kind != CONSTI){
 		int x = allocate_reg(leftOp, fp);
+
+		char cur_regName_x[12];
+		memset(cur_regName_x, 0, 12);
+		if(leftOp->kind == TADDRI) {
+			sprintf(str, "\tlw $s3, 0($%s)\n",regName(x));  fputs(str, fp); memset(str, 0, INSTR_LEN);
+			strcpy(cur_regName_x, "s3");
+		}
+		else 
+			{strcpy(cur_regName_x, regName(x));}
 		// bxx reg(x), reg(y), z
 		if(strcmp(op, "==")==0){
-			sprintf(str, "\tbeq $%s, %s, label%ld\n",regName(x), rightOp->u.value, label->u.vNum);
+			sprintf(str, "\tbeq $%s, %s, label%ld\n",cur_regName_x, rightOp->u.value, label->u.vNum);
 		} else if(strcmp(op, "!=")==0){
-			sprintf(str, "\tbne $%s, %s, label%ld\n",regName(x), rightOp->u.value, label->u.vNum);
+			sprintf(str, "\tbne $%s, %s, label%ld\n",cur_regName_x, rightOp->u.value, label->u.vNum);
 		} else if(strcmp(op, ">")==0){
-			sprintf(str, "\tbgt $%s, %s, label%ld\n",regName(x), rightOp->u.value, label->u.vNum);
+			sprintf(str, "\tbgt $%s, %s, label%ld\n",cur_regName_x, rightOp->u.value, label->u.vNum);
 		} else if(strcmp(op, "<")==0){
-			sprintf(str, "\tblt $%s, %s, label%ld\n",regName(x), rightOp->u.value, label->u.vNum);
+			sprintf(str, "\tblt $%s, %s, label%ld\n",cur_regName_x, rightOp->u.value, label->u.vNum);
 		} else if(strcmp(op, ">=")==0){
-			sprintf(str, "\tbge $%s, %s, label%ld\n",regName(x), rightOp->u.value, label->u.vNum);
+			sprintf(str, "\tbge $%s, %s, label%ld\n",cur_regName_x, rightOp->u.value, label->u.vNum);
 		} else if(strcmp(op, "<=")==0){
-			sprintf(str, "\tble $%s, %s, label%ld\n",regName(x), rightOp->u.value, label->u.vNum);
+			sprintf(str, "\tble $%s, %s, label%ld\n",cur_regName_x, rightOp->u.value, label->u.vNum);
 		}
 	}
 	fputs(str, fp);
@@ -448,7 +508,8 @@ void trans_FUNCTION(InterCode cur_instr, FILE* fp){ int stackSize = 800;
 	fputs("\taddi $sp, $sp, -4\n", fp);
 	fputs("\tsw $fp, 0($sp)\n", fp);
 	fputs("\tmove $fp, $sp\n", fp); 
-	sprintf(str, "\tsubu $sp, $sp, %d\n", stackSize);			fputs(str, fp);
+	fputs("\taddi $sp, $sp, -4\n", fp);
+	//sprintf(str, "\tsubu $sp, $sp, %d\n", stackSize);			fputs(str, fp);
 
 	ginfo.sp_offset = 0;
 	ginfo.cur_param = 0;
@@ -515,14 +576,14 @@ void trans_PARAM(InterCode cur_instr, FILE* fp){
 	memset(str, 0, sizeof(str));
 
 	vinfo param = malloc(sizeof(struct vinfo_));
-	param->name = cur_instr->u.sigop.op->u.value;
+	param->name = cur_instr->u.sigop.op->u.value; 
 	ginfo.sp_offset -= 4;
 	param->offset = ginfo.sp_offset;
 	addVar(param);
 	if(ginfo.cur_param<4){
-		sprintf(str, "\tsw $a%d, %d($fp)\n", ginfo.cur_param, param->offset);			
+		sprintf(str, "\tsw $a%d, %d($fp)\n", ginfo.cur_param, param->offset);	fputs(str, fp);
 	} else {
-		sprintf(str, "\tlw $a0, %d($fp)\n", (ginfo.cur_param-2)*4);		fputs(str, fp);
+		sprintf(str, "\tlw $a0, %d($fp)\n", (ginfo.cur_param-2)*4);		fputs(str, fp); memset(str, 0, INSTR_LEN);
 		sprintf(str, "\tsw $a0, %d($fp)\n", param->offset);					fputs(str, fp);
 	}
 	++ginfo.cur_param;
@@ -531,7 +592,7 @@ void trans_PARAM(InterCode cur_instr, FILE* fp){
 void trans_DEC(InterCode cur_instr, FILE* fp){
 	vinfo arrayHead = malloc(sizeof(struct vinfo_));
   	ginfo.sp_offset -= 4;
-  	arrayHead->offset = ginfo.sp_offset;
+  	arrayHead->offset = ginfo.sp_offset; printf("%d<==========================\n",cur_instr->u.decop.size);
 	ginfo.sp_offset -= cur_instr->u.decop.size;
 	if(cur_instr->u.decop.op->kind == VARI){
 		arrayHead->name = cur_instr->u.decop.op->u.value;
@@ -545,8 +606,8 @@ void trans_DEC(InterCode cur_instr, FILE* fp){
 
 	char str[INSTR_LEN];
 	memset(str, 0, sizeof(str));
- 	sprintf(str, "\taddi $s1, $fp, %d\n", ginfo.sp_offset);		fputs(str, fp); memset(str, 0, sizeof(str));
-	sprintf(str, "\tsw $s1, %d($fp)\n", arrayHead->offset);	fputs(str, fp);
+ 	//sprintf(str, "\taddi $s1, $fp, %d\n", ginfo.sp_offset);		fputs(str, fp); memset(str, 0, sizeof(str));
+	//sprintf(str, "\tsw $s1, %d($fp)\n", arrayHead->offset);	fputs(str, fp);
 	
 	
 }
@@ -569,7 +630,8 @@ void trans_GETADDR(InterCode cur_instr, FILE* fp){
 	int x = allocate_reg(leftOp, fp);
 	char str[INSTR_LEN];
 	memset(str, 0, sizeof(str));
-	sprintf(str, "\tlw $%s, %d($fp)\n", regName(x), arrayHead->offset);
+	//sprintf(str, "\tlw $%s, %d($fp)\n", regName(x), arrayHead->offset);
+	sprintf(str, "\tla $%s, %d($fp)\n", regName(x), arrayHead->offset);
 	fputs(str, fp);
 	store_word(x, fp);
 }
@@ -587,7 +649,7 @@ int allocate_reg(Operand op, FILE* fp) {
 		memset(name, 0, sizeof(name));
 		sprintf(name, "t%ld", op->u.name->u.vNum);
 	}	
-	else if(op->kind == VARI){
+	else if(op->kind == VARI){ printf("\n%s<===================================name\n",op->u.value);
 		name = op->u.value;
 	}
 
@@ -599,7 +661,22 @@ int allocate_reg(Operand op, FILE* fp) {
 		sprintf(tmp, "\tli $%s, %s\n", regName(i), op->u.value);
 		fputs(tmp, fp);
 	}
-	else {
+	else  { printf("%s<++++++++now_name\n",name);
+		vinfo cur_var = findVar(name);
+		if(cur_var == NULL){ printf(" its empty!!!!!!!!11\n");
+			cur_var = malloc(sizeof(struct vinfo_));
+			cur_var->name = name;
+			ginfo.sp_offset -= 4;
+			cur_var->offset = ginfo.sp_offset;
+			addVar(cur_var);
+
+			reg_file[i].cur_var = cur_var;
+		} else{ printf("%s:  %d\n",cur_var->name, cur_var->offset);
+			reg_file[i].cur_var = cur_var;
+			load_word(i, cur_var, fp);
+		}
+	}
+	/*else if(op->kind == TADDRI) {
 		vinfo cur_var = findVar(name);
 		if(cur_var == NULL){
 			cur_var = malloc(sizeof(struct vinfo_));
@@ -610,11 +687,16 @@ int allocate_reg(Operand op, FILE* fp) {
 
 			reg_file[i].cur_var = cur_var;
 		} else{
-			reg_file[i].cur_var = cur_var;
-			load_word(i, cur_var, fp);
+			char tmp[64];
+			memset(tmp, 0, 64);
+			sprintf(tmp, "\tlw $s3, %d($fp)\n",cur_var->offset);		fputs(tmp, fp); memset(tmp, 0, 64);
+			//reg_file[i].cur_var = cur_var;
+			sprintf(tmp, "\tlw $%s, 0($s3)\n", regName(i)); fputs(tmp, fp);//load_word(i, cur_var, fp);
 		}
 	}
+	*/
 
+	printf("finish!\n");
 	return i;
 }
 

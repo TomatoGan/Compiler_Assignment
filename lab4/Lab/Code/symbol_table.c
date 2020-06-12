@@ -78,7 +78,7 @@ void parse_sybol(node* root,char* fname) {
     process_func_dec();
   #endif
   #ifndef LAB3
-    if(have_struct == 0) {prt_intercode(fname);}
+    //if(have_struct == 0) {prt_intercode(fname);}
   #endif
   #ifndef LAB4
     prt_mips_code(fname);
