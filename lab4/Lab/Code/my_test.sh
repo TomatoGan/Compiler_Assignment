@@ -41,7 +41,8 @@ for fileName in $targetDir
     then
        echo "shitajsdlkfjslfjjsdlfjasjflsjfjilsdh ->" ${fileName}
       #spim -file ../Test/Tests/Tests_n/output1/${fileName}.s > ../Test/Tests/Tests_n/output2/${fileName}.txt
-      spim -file ../Test/Tests/Tests_a/output_4_1/${fileName}.s > ../Test/Tests/Tests_a/output_4_2/${fileName}.txt
+      #spim -file ../Test/Tests/Tests_a/output_4_1/${fileName}.s > ../Test/Tests/Tests_a/output_4_2/${fileName}.txt  ##########
+      ./mips-sim ../Test/Tests/Tests_a/output_4_1/${fileName}.s > ../Test/Tests/Tests_a/output_4_2/${fileName}.txt
 	#./parser ../Test/Tests/Tests_a/Tests/${fileName} ../Test/Tests/Tests_a/output/${fileName}.ir
 	    #./parser $1"/"${fileName}   $2/${fileName}.ir
       #echo $1"/"$fileName >> $2/${fileName}.output

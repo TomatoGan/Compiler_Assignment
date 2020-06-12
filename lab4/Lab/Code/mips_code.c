@@ -353,6 +353,7 @@ void trans_RETURN(InterCode cur_instr, FILE* fp) {
 		//sprintf(str, "\tmove $sp, $ra\n");						fputs(str, fp);	memset(str, 0, sizeof(str));
 		
 	}
+
 	fputs("\tlw $fp, 0($sp)\n",fp);
 	fputs("\taddi $sp, $sp, 4\n",fp);
 	fputs("\tjr $ra\n",fp);
@@ -526,8 +527,11 @@ void trans_ARG(InterCode cur_instr, FILE* fp){
 		}
 		else {
 			sprintf(str, "\tli $s0, %s\n", op->u.value);					fputs(str, fp); memset(str, 0, INSTR_LEN);
-			fputs("\taddi $sp, $sp, -4\n", fp);
-			fputs("\tlw $sp, 0($s0)\n", fp);		
+			//fputs("\taddi $sp, $sp, -4\n", fp);
+			//fputs("\tlw $sp, 0($s0)\n", fp);
+			sprintf(str, "\taddi $sp, $sp, -%d\n", (ginfo.cur_arg - 3)*4);	fputs(str, fp); memset(str, 0, INSTR_LEN);
+			fputs("\tsw $s0, 0($sp)\n", fp);
+			sprintf(str, "\taddi $sp, $sp, %d\n", (ginfo.cur_arg - 3)*4);	fputs(str, fp); memset(str, 0, INSTR_LEN);		
 		}
 		goto TAG_CONST_FINISHED;
 	}
@@ -541,8 +545,10 @@ void trans_ARG(InterCode cur_instr, FILE* fp){
 			sprintf(str, "\tlw $a%d, 0($s1)\n", ginfo.cur_arg);	fputs(str, fp); memset(str, 0, INSTR_LEN);
 		} else{
 			sprintf(str, "\tlw $s0, 0($s1)\n");	fputs(str, fp); memset(str, 0, INSTR_LEN);
-			fputs("\taddi $sp, $sp, -4\n", fp);
-			fputs("\tlw $sp, 0($s0)\n", fp);
+			sprintf(str, "\taddi $sp, $sp, -%d\n", (ginfo.cur_arg - 3)*4);	fputs(str, fp); memset(str, 0, INSTR_LEN);
+			//fputs("\taddi $sp, $sp, -4\n", fp);
+			fputs("\tsw $s0, 0($sp)\n", fp);
+			sprintf(str, "\taddi $sp, $sp, %d\n", (ginfo.cur_arg - 3)*4);	fputs(str, fp); memset(str, 0, INSTR_LEN);
 		}
 		goto TAG_CONST_FINISHED;
 	}
@@ -552,8 +558,11 @@ void trans_ARG(InterCode cur_instr, FILE* fp){
 		sprintf(str, "\tlw $a%d, %d($fp)\n", ginfo.cur_arg, arg->offset);	fputs(str, fp); memset(str, 0, INSTR_LEN);
 	} else{
 		sprintf(str, "\tlw $s0, %d($fp)\n", arg->offset);					fputs(str, fp); memset(str, 0, INSTR_LEN);
-		fputs("\taddi $sp, $sp, -4\n", fp);
+		sprintf(str, "\taddi $sp, $sp, -%d\n", (ginfo.cur_arg - 3)*4);	fputs(str, fp); memset(str, 0, INSTR_LEN);
 		fputs("\tsw $s0, 0($sp)\n", fp);
+		sprintf(str, "\taddi $sp, $sp, %d\n", (ginfo.cur_arg - 3)*4);	fputs(str, fp); memset(str, 0, INSTR_LEN);	
+		//fputs("\taddi $sp, $sp, -4\n", fp);
+		//fputs("\tsw $s0, 0($sp)\n", fp);
 	}
 	TAG_CONST_FINISHED:
 	++ginfo.cur_arg;
